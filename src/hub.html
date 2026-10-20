@@ -276,6 +276,9 @@ ul.plain{margin:0;padding-left:1.1rem;display:grid;gap:4px}
 .pick.right{background:var(--green-soft);border-color:var(--green)}.pick.wrong{background:var(--red-soft);border-color:var(--red)}
 .pick:disabled{cursor:default}
 .integrity{border-left:4px solid var(--accent)}
+.integrity .prose{white-space:pre-line}
+.frames{border:1px dashed var(--ui);border-radius:8px;padding:var(--s3) var(--s4)}
+.frames summary{cursor:pointer}
 .sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 input[type="checkbox"],.checklist input{width:20px;height:20px}
 .checklist label{padding-block:4px}
@@ -620,7 +623,7 @@ function renderPoints(){
 
 
 /* ---------- Spec currency notes ---------- */
-const STATUS_LABEL={replaced:"Replaced",renamed:"Renamed",repealed:"Repealed","reform-pending":"Reform under way","under-review":"Under review",historical:"Historical",unverified:"Not yet verified"};
+const STATUS_LABEL={replaced:"Replaced",renamed:"Renamed",repealed:"Repealed","reform-pending":"Reform under way","under-review":"Under review",historical:"Historical",varies:"Varies by area",unverified:"Not yet verified"};
 function currencyFor(u){return arr(DATA&&DATA.currency&&DATA.currency.entries).filter(e=>u==null||arr(e.units).includes(u))}
 function updCard(e){const host=s=>{try{return new URL(s).hostname.replace(/^www\./,"")}catch(x){return s}};
   return `<div class="upd ${esc(e.status)}"><div class="row" style="justify-content:space-between"><span><span class="was">${esc(e.spec)}</span> → <b>${esc(e.now)}</b></span><span class="chip">${esc(STATUS_LABEL[e.status]||e.status)}</span></div>
@@ -685,6 +688,18 @@ function walkthrough(u,code){
   }
   return `<div class="gw stack"><div class="row" style="justify-content:space-between"><span class="eyebrow">Guided walkthrough · ${esc(code)}</span><button class="btn small ghost" data-act="gwclose">Close</button></div><p class="muted" style="font-size:var(--t-sm)">Practice case only. Learn the thinking, then write your own. Don't copy these examples, or anything an AI writes, into your assignment.</p>${nav}${body}</div>`;
 }
+
+/* ---------- Writing frames ---------- */
+const TIERS=[["early","Getting started"],["developing","Building up"],["consolidating","Confident"]];
+function framesPanel(verb,key){const F=DATA&&DATA.frames&&DATA.frames.verbs;if(!F)return "";const v=F[verb]||F[String(verb||"").replace(/^./,c=>c.toUpperCase())];if(!v)return "";
+  const tier=S.frameTier||"developing";
+  return `<details class="frames" ${S.framesOpen===key?"open":""} data-fkey="${esc(key)}"><summary>Writing frames for <b>${esc(verb)}</b></summary><div class="stack" style="margin-top:var(--s3)">
+    <p class="muted" style="font-size:var(--t-sm)">${esc(v.means)} These frames give you structure only. Fill the gaps with your own facts and your own judgement.</p>
+    <div class="stack" style="gap:4px"><span class="eyebrow">The moves a top answer makes, in order</span><ol class="plain">${arr(v.moves).map(m=>`<li>${esc(m)}</li>`).join("")}</ol></div>
+    <div class="seg" role="group" aria-label="Frame level">${TIERS.map(([k,l])=>`<button data-act="ftier" data-v="${k}" aria-pressed="${tier===k}">${l}</button>`).join("")}</div>
+    <ul class="plain">${arr(v.tiers&&v.tiers[tier]).map(f=>`<li class="starter">${esc(f)}</li>`).join("")}</ul>
+    ${v.connectives?`<div class="twocol">${Object.entries(v.connectives).map(([k,l])=>`<div><span class="eyebrow">${esc(k)}</span><p style="font-size:var(--t-sm)">${arr(l).map(esc).join(" · ")}</p></div>`).join("")}</div>`:""}
+  </div></details>`}
 
 /* ---------- COACH VIEW ---------- */
 function coachFor(u){return DATA&&DATA.coach?DATA.coach[u]:null}
@@ -768,6 +783,7 @@ function dCard(u,code,text,c){
         ${arr(c.starters).length?`<div class="stack" style="gap:6px"><span class="eyebrow">Sentence starters</span>${arr(c.starters).map(s=>`<p class="starter">${esc(s)}</p>`).join("")}</div>`:""}
       </div>
       ${c.stretch?`<p><b>Outstanding looks like:</b> ${esc(c.stretch)}</p>`:""}
+      ${framesPanel(c.verb||(text||"").split(" ")[0],u+"|"+code)}
       ${walkthrough(u,code)}
     </div></article>`;
 }
@@ -868,6 +884,7 @@ function exLong(u,e){
       <div class="row" style="justify-content:space-between"><span class="eyebrow">${esc(q.topic)} · ${esc(q.command)}</span><span class="marks">${esc(q.marks)} marks · about ${Math.round(Number(q.marks)*1.0)} min</span></div>
       ${q.context?`<div class="casebox">${esc(q.context)}</div>`:""}
       <p class="q-stem">${esc(q.q)}</p>
+      ${framesPanel(q.command,"x|"+q.id)}
       <label for="draft-${esc(q.id)}" class="eyebrow">Your answer (saved as you type)</label>
       <textarea id="draft-${esc(q.id)}" data-act="draft" data-id="${esc(q.id)}" placeholder="Write under timed conditions first, then reveal the marking points.">${esc(draft)}</textarea>
       <div class="row" style="justify-content:space-between"><span class="wc" id="wc-${esc(q.id)}">${wordCount(draft)} words</span><button class="btn ${reveal?"":"primary"}" data-act="reveal" data-id="${esc(q.id)}">${reveal?"Hide marking guide":"Reveal marking guide"}</button></div>
@@ -924,7 +941,7 @@ function buildDaily(force){
 }
 function examCapDays(u){const d=S.dates[u];if(!d)return null;const n=dayDiff(todayISO(),d);return n>0?n:null}
 function srsAnswer(q,ok,conf){
-  const t=todayISO(); const s=S.srs[q.id]||{box:0,seen:0}; const early=s.due&&s.due>t;
+  const t=todayISO(); const s=S.srs[q.id]||{box:0,seen:0}; const early=s.due&&s.due>t; const priorBox=s.box||0;
   s.seen++;
   if(!ok){s.box=1;s.due=addDays(t,1);if(conf===3)s.flag=t}
   else if(early){/* reviewed before it was due: keep the schedule */}
@@ -933,7 +950,7 @@ function srsAnswer(q,ok,conf){
     if(left){gap=Math.min(gap,Math.max(1,Math.round(left*0.15)));if(left>3&&dayDiff(t,addDays(t,gap))>left-3)gap=left-3}
     s.due=addDays(t,gap)}
   S.srs[q.id]=s;
-  S.calLog=(S.calLog||[]).filter(e=>dayDiff(e.d,t)<=60); S.calLog.push({d:t,c:conf,ok,u:q.unit,tp:q.topic});
+  S.calLog=(S.calLog||[]).filter(e=>dayDiff(e.d,t)<=60); S.calLog.push({d:t,c:conf,ok,u:q.unit,tp:q.topic,b:priorBox,e:early?1:0});
   const k=S.quiz[q.id]||{n:0,c:0};k.n++;if(ok)k.c++;k.last=ok;S.quiz[q.id]=k;
   S.calib=S.calib||{1:{n:0,c:0},2:{n:0,c:0},3:{n:0,c:0}}; S.calib[conf].n++; if(ok)S.calib[conf].c++;
 }
@@ -1018,6 +1035,18 @@ function renderToday(){
   </div>`;
 }
 
+/* ---------- Pilot summary (numbers only, never the student's writing) ---------- */
+function pilotSummary(){const L=arr(S.calLog);const t=todayISO();
+  const byBox={};L.filter(e=>!e.e).forEach(e=>{const k=e.b||0;byBox[k]=byBox[k]||{n:0,c:0};byBox[k].n++;if(e.ok)byBox[k].c++});
+  const gap={0:"first try",1:"after 1 day",2:"after 3 days",3:"after 7 days",4:"after 14 days",5:"after 30 days"};
+  const recall=Object.fromEntries(Object.entries(byBox).map(([k,v])=>[gap[k]||k,{answered:v.n,correct:v.c,pct:Math.round(v.c/v.n*100)}]));
+  const cal={1:{n:0,c:0},2:{n:0,c:0},3:{n:0,c:0}};L.forEach(e=>{cal[e.c].n++;if(e.ok)cal[e.c].c++});
+  const gw=Object.values(S.guide||{});const days=new Set(L.map(e=>e.d));
+  return {generated:t,daysActive:days.size,sessionRun:S.streak||0,questionsAnswered:L.length,recallByGap:recall,
+    confidence:Object.fromEntries([[1,"guessing"],[2,"fairly sure"],[3,"certain"]].map(([k,l])=>[l,cal[k].n?{answered:cal[k].n,pctCorrect:Math.round(cal[k].c/cal[k].n*100)}:null])),
+    walkthroughSteps:{started:gw.filter(g=>g.pre).length,explained:gw.filter(g=>g.rev).length,checkCorrect:null,mappedYes:gw.filter(g=>g.st==="yes").length,mappedPartly:gw.filter(g=>g.st==="part").length},
+    tasksTicked:Object.keys(S.tasksDone||{}).length,assignmentsInCalendar:(S.cal||[]).length,unitsGraded:Object.fromEntries(Object.entries(S.grades||{}))}}
+
 /* ---------- PLANNER ---------- */
 function weakness(u,t){const c=topicRag(u,t);const n=c.r+c.a+c.g+c.n||1;return (c.r*3+c.a*2+c.n*2+c.g*1)/n}
 function buildPlan(u){
@@ -1083,6 +1112,7 @@ function renderPlanner(){
   <div class="panel stack">
     <h3>Backup</h3>
     <p class="muted">Signed in, your progress already saves to your account. The backup code is an extra copy: keep it somewhere safe, or paste it here and press Restore to bring progress back.</p>
+    <div class="row"><button class="btn" data-act="pilot">Copy pilot summary</button><span class="muted" style="font-size:var(--t-sm)">Numbers only (how much you remember over time, confidence, progress), never your writing. Share it with your tutor only if you want to.</span></div>
     <div class="row"><button class="btn primary" data-act="backup">Copy backup code</button><button class="btn" data-act="restore">Restore from code</button><button class="btn ghost" data-act="resetall">Clear everything</button></div>
     <textarea id="backupBox" style="min-height:90px" placeholder="Backup code appears here, or paste one to restore" aria-label="Backup code"></textarea>
     <div id="resetConfirm" hidden class="notice bad row"><span>This deletes all your grades, ratings and drafts in this browser.</span><button class="btn small" data-act="resetyes">Yes, clear it</button><button class="btn small ghost" data-act="resetno">Keep it</button></div>
@@ -1112,6 +1142,7 @@ document.addEventListener("click",e=>{
     case "backup": {const code=btoa(unescape(encodeURIComponent(JSON.stringify(S))));const box=$("#backupBox");box.value=code;
       const fallback=()=>{box.focus();box.select();toast("Code selected. Copy it now.")};
       try{navigator.clipboard.writeText(code).then(()=>toast("Backup code copied"),fallback)}catch(err){fallback()} return;}
+    case "pilot": {const txt=JSON.stringify(pilotSummary(),null,1);const box=$("#backupBox");box.value=txt;const fb=()=>{box.focus();box.select();toast("Summary selected. Copy it now.")};try{navigator.clipboard.writeText(txt).then(()=>toast("Pilot summary copied"),fb)}catch(e){fb()}return;}
     case "restore": {try{const obj=JSON.parse(decodeURIComponent(escape(atob($("#backupBox").value.trim()))));S=Object.assign(blank(),obj);save();toast("Progress restored")}catch(err){toast("That code didn't work. Check you pasted all of it.");return} break;}
     case "resetall": $("#resetConfirm").hidden=false; return;
     case "resetno": $("#resetConfirm").hidden=true; return;
@@ -1125,6 +1156,7 @@ document.addEventListener("click",e=>{
     case "glisten": {try{const p=document.getElementById("glossPop");const g=GLOSS.find(x=>x.term===p.dataset.term);const u=new SpeechSynthesisUtterance(g.term+". "+g.def);u.lang="en-GB";speechSynthesis.cancel();speechSynthesis.speak(u)}catch(e){}return;}
     case "fs": {const v=b.dataset.v;try{localStorage.setItem("hsc-fs",v)}catch(e){};document.documentElement.dataset.fs=v;return;}
     case "ls": {const on=document.documentElement.dataset.ls!=="wide";document.documentElement.dataset.ls=on?"wide":"";try{localStorage.setItem("hsc-ls",on?"wide":"")}catch(e){};return;}
+    case "ftier": S.frameTier=b.dataset.v; {const d=b.closest("details.frames");if(d)S.framesOpen=d.dataset.fkey} break;
     case "intack": S.integrityAck=todayISO(); break;
     case "gwpredone": {const st=gState(b.dataset.k);if(wordCount(st.pre)<5){toast("Write at least a sentence first");return}st.preDone=true;break;}
     case "gwrev": {const st=gState(b.dataset.k);if(wordCount(st.exp)<10){toast("Write at least 10 words first");return}st.rev=true;break;}
@@ -1165,7 +1197,7 @@ document.addEventListener("change",e=>{
   save(); render();
 });
 document.addEventListener("input",e=>{const el=e.target;if(el.dataset&&["gwexp","gwloc","gwpre"].includes(el.dataset.act)){gState(el.dataset.k)[{gwexp:"exp",gwloc:"loc",gwpre:"pre"}[el.dataset.act]]=el.value;save();return}if(el.dataset&&el.dataset.act==="draft"){S.drafts[el.dataset.id]=el.value;save();const w=document.getElementById("wc-"+el.dataset.id);if(w)w.textContent=wordCount(el.value)+" words"}});
-document.addEventListener("toggle",e=>{const d=e.target;if(d.matches&&d.matches("details.topic")){const [u,id]=d.dataset.topic.split("|");S["open"+u+id]=d.open;save()}},true);
+document.addEventListener("toggle",e=>{const d=e.target;if(d.matches&&d.matches("details.frames")){S.framesOpen=d.open?d.dataset.fkey:null;return}if(d.matches&&d.matches("details.topic")){const [u,id]=d.dataset.topic.split("|");S["open"+u+id]=d.open;save()}},true);
 
 /* ---------- Boot ---------- */
 const startTab=(location.hash||"").replace("#","");

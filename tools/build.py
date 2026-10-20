@@ -108,6 +108,21 @@ def check_items():
     return errors, warnings
 
 
+def check_frames():
+    """Writing frames must stay structure-only: every frame has a gap and none assumes results or experience."""
+    errors = []
+    f = load("content/frames.json") or {}
+    bad = re.compile(r"\b(my results|my supervisor|my placement showed|i observed)\b", re.I)
+    for verb, v in (f.get("verbs") or {}).items():
+        for tier, frames in (v.get("tiers") or {}).items():
+            for fr in frames:
+                if "…" not in fr and "..." not in fr:
+                    errors.append(f"frames {verb}/{tier}: no gap in '{fr}'")
+                if bad.search(fr):
+                    errors.append(f"frames {verb}/{tier}: assumes experience in '{fr}'")
+    return errors
+
+
 def write_sv_doc(reg):
     rows = [e for e in reg["entries"] if e["sv"]]
     rows.sort(key=lambda e: (min(e["units"]) if e["units"] else 99))
@@ -144,6 +159,7 @@ def main():
     reg = load("data/currency.json")
     errors, warnings = check_currency(reg)
     qe, qw = check_items()
+    qe += check_frames()
     errors += qe
     warnings += qw
     for w in warnings:
@@ -170,7 +186,7 @@ def main():
         part = load(f"content/{name}.json")
         if part:
             guide.update(part)
-    data = {"criteria": load("data/criteria.json"), "coach": coach, "exams": exams, "currency": reg, "guide": guide, "glossary": load("docs/audit/glossary.json") or []}
+    data = {"criteria": load("data/criteria.json"), "coach": coach, "exams": exams, "currency": reg, "guide": guide, "glossary": load("docs/audit/glossary.json") or [], "frames": load("content/frames.json")}
     blob = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
 
     src = (ROOT / "src/hub.html").read_text(encoding="utf-8")

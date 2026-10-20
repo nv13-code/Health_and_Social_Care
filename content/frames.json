@@ -1,0 +1,417 @@
+{
+ "verbs": {
+  "Evaluate": {
+   "means": "Look at the good and bad points of something, weigh them up, and give a reasoned judgement.",
+   "moves": [
+    "Say what you are judging",
+    "Give a strength with evidence",
+    "Give a limitation with evidence",
+    "Weigh them",
+    "Reach a judgement for this person or setting"
+   ],
+   "tiers": {
+    "early": [
+     "I am looking at … .",
+     "One good point is … .",
+     "One problem is … .",
+     "This is important for … because … .",
+     "Overall, … ."
+    ],
+    "developing": [
+     "… helps because …, but … limits this because … .",
+     "A strength of … is …. The evidence for this is … .",
+     "A limitation of … is …. This matters because … .",
+     "Weighing these up, … is more important because … .",
+     "So overall, … is (very / quite / not very) effective for … because … ."
+    ],
+    "consolidating": [
+     "Although …, the evidence suggests … .",
+     "However, … means that … for … .",
+     "The strongest evidence for … is …, because it shows … .",
+     "Weighing …  against …, the more significant factor is … since … .",
+     "To a large extent / only partly, … is effective for …, because … ."
+    ]
+   },
+   "connectives": {
+    "adding": [
+     "also",
+     "in addition",
+     "furthermore",
+     "another strength is"
+    ],
+    "contrasting": [
+     "but",
+     "however",
+     "although",
+     "on the other hand"
+    ],
+    "weighing": [
+     "more important",
+     "outweighs",
+     "to a large extent",
+     "only partly"
+    ],
+    "concluding": [
+     "overall",
+     "on balance",
+     "therefore",
+     "so"
+    ]
+   }
+  },
+  "Justify": {
+   "means": "Give clear reasons and evidence to show why a choice, decision or action is right or best.",
+   "moves": [
+    "State your choice or decision",
+    "Give a reason with evidence",
+    "Link the reason to the person or setting",
+    "Say why it is better than another option",
+    "Restate your decision with its main reason"
+   ],
+   "tiers": {
+    "early": [
+     "I chose … .",
+     "I chose … because … .",
+     "This is good for … because … .",
+     "Another reason is … .",
+     "So I think … is right because … ."
+    ],
+    "developing": [
+     "The best option is … because … .",
+     "This matters for … because … .",
+     "A second reason is … , which shows … .",
+     "I did not choose … because … .",
+     "For these reasons, … is the most suitable choice for … ."
+    ],
+    "consolidating": [
+     "I would recommend … over … because … .",
+     "This is stronger than …, since … .",
+     "This is justified by …, which means that … .",
+     "Although … is possible, … is more appropriate for … because … .",
+     "On balance, the decision to … is justified, because … ."
+    ]
+   },
+   "connectives": {
+    "adding": [
+     "also",
+     "in addition",
+     "a further reason is",
+     "as well as"
+    ],
+    "contrasting": [
+     "whereas",
+     "however",
+     "rather than",
+     "unlike"
+    ],
+    "weighing": [
+     "more suitable",
+     "stronger because",
+     "the main reason",
+     "since"
+    ],
+    "concluding": [
+     "therefore",
+     "as a result",
+     "this means that",
+     "for these reasons"
+    ]
+   }
+  },
+  "Analyse": {
+   "means": "Break something into parts, look closely at each part, and show how the parts connect or why they matter.",
+   "moves": [
+    "Name the parts or factors",
+    "Describe one part with evidence",
+    "Explain what it shows or causes",
+    "Link the parts together",
+    "Say what this means for the person or setting"
+   ],
+   "tiers": {
+    "early": [
+     "The parts are … and … .",
+     "One part is … .",
+     "This part is important because … .",
+     "This links to … because … .",
+     "This shows that … ."
+    ],
+    "developing": [
+     "One factor is …. This affects … because … .",
+     "This is linked to … because … .",
+     "The evidence for this is …, which shows … .",
+     "… and … are connected because … .",
+     "This means that for … , … ."
+    ],
+    "consolidating": [
+     "Looking closely at …, it can be seen that … .",
+     "This pattern suggests … , which in turn affects … .",
+     "… interacts with …, so … .",
+     "The relationship between … and … is significant because … .",
+     "Taken together, these factors show that … for … ."
+    ]
+   },
+   "connectives": {
+    "adding": [
+     "also",
+     "in addition",
+     "furthermore",
+     "linked to this"
+    ],
+    "contrasting": [
+     "however",
+     "whereas",
+     "in contrast",
+     "on the other hand"
+    ],
+    "weighing": [
+     "most significant",
+     "depends on",
+     "partly because",
+     "closely linked"
+    ],
+    "concluding": [
+     "this shows that",
+     "this means that",
+     "as a result",
+     "therefore"
+    ]
+   }
+  },
+  "Assess": {
+   "means": "Judge how important, effective or serious something is, using evidence, and say how far you agree.",
+   "moves": [
+    "Say what you are assessing and the criteria",
+    "Give evidence for one point",
+    "Say how much it matters",
+    "Consider another point or a limit",
+    "Give a judgement of how far it is true or effective"
+   ],
+   "tiers": {
+    "early": [
+     "I am assessing … .",
+     "One point is … .",
+     "This matters because … .",
+     "This is (very / quite / not very) … because … .",
+     "Overall, … ."
+    ],
+    "developing": [
+     "… is important because … .",
+     "The evidence shows … , so … is (very / quite / not very) effective for … .",
+     "The impact on … is … because … .",
+     "However, … might limit this because … .",
+     "Overall, I judge that … because … ."
+    ],
+    "consolidating": [
+     "The extent to which … depends on … .",
+     "The evidence suggests … is significant, although … .",
+     "… has a (major / limited) impact on … because … .",
+     "Considering both …  and …, it is likely that … because … .",
+     "On balance, … is (highly / partly / only slightly) … for …, since … ."
+    ]
+   },
+   "connectives": {
+    "adding": [
+     "also",
+     "in addition",
+     "as well as",
+     "another factor is"
+    ],
+    "contrasting": [
+     "however",
+     "although",
+     "even so",
+     "but"
+    ],
+    "weighing": [
+     "to some extent",
+     "to a large extent",
+     "mainly",
+     "partly"
+    ],
+    "concluding": [
+     "overall",
+     "on balance",
+     "in conclusion",
+     "so"
+    ]
+   }
+  },
+  "Discuss": {
+   "means": "Look at different points of view or factors on an issue, giving reasons and evidence for each.",
+   "moves": [
+    "Introduce the issue",
+    "Give one point of view or factor with evidence",
+    "Give another view or factor with evidence",
+    "Say how they connect or differ",
+    "Finish with a reasoned conclusion"
+   ],
+   "tiers": {
+    "early": [
+     "The issue is … .",
+     "One view is … .",
+     "Another view is … .",
+     "I think … because … .",
+     "In conclusion, … ."
+    ],
+    "developing": [
+     "Some people think … because … .",
+     "Other people think … because … .",
+     "This view is supported by … .",
+     "The two views are different because … .",
+     "So, in my view, … because … ."
+    ],
+    "consolidating": [
+     "It could be argued that … , as … .",
+     "On the other hand, … suggests … .",
+     "Both views have merit: … , whereas … .",
+     "The strength of the first view is …; however, … .",
+     "Taking everything into account, … because … ."
+    ]
+   },
+   "connectives": {
+    "adding": [
+     "also",
+     "in addition",
+     "furthermore",
+     "similarly"
+    ],
+    "contrasting": [
+     "however",
+     "on the other hand",
+     "whereas",
+     "in contrast"
+    ],
+    "weighing": [
+     "it could be argued",
+     "to some extent",
+     "depends on",
+     "more convincing"
+    ],
+    "concluding": [
+     "in conclusion",
+     "overall",
+     "therefore",
+     "taking everything into account"
+    ]
+   }
+  },
+  "Explain": {
+   "means": "Say what something is and give the reasons why or how it happens or works.",
+   "moves": [
+    "Say what you are explaining",
+    "Give the main reason",
+    "Add evidence or an example",
+    "Link cause to effect",
+    "Say why it matters for the person or setting"
+   ],
+   "tiers": {
+    "early": [
+     "… is … .",
+     "This happens because … .",
+     "For example, … .",
+     "This means … .",
+     "This is important for … because … ."
+    ],
+    "developing": [
+     "… happens because … .",
+     "This leads to … , which means … .",
+     "An example of this is … .",
+     "As a result, … for … .",
+     "This matters because … ."
+    ],
+    "consolidating": [
+     "… occurs as a result of … , which in turn … .",
+     "This is significant because , without … , … .",
+     "The reason for … is …; consequently, … .",
+     "This can be seen in … , where … .",
+     "This has an important effect on … because … ."
+    ]
+   },
+   "connectives": {
+    "adding": [
+     "also",
+     "in addition",
+     "for example",
+     "for instance"
+    ],
+    "contrasting": [
+     "however",
+     "but",
+     "although",
+     "whereas"
+    ],
+    "weighing": [
+     "mainly because",
+     "as a result",
+     "depends on",
+     "leading to"
+    ],
+    "concluding": [
+     "therefore",
+     "so",
+     "this means that",
+     "consequently"
+    ]
+   }
+  },
+  "Compare": {
+   "means": "Show how two or more things are alike and different, and say why the likeness or difference matters.",
+   "moves": [
+    "Say what you are comparing",
+    "Give a similarity with evidence",
+    "Give a difference with evidence",
+    "Say why the difference matters",
+    "Say which suits this person or setting better, and why"
+   ],
+   "tiers": {
+    "early": [
+     "I am comparing … and … .",
+     "… and … are the same because both … .",
+     "… is …, but … is … .",
+     "This difference is important because … .",
+     "So … is better for … because … ."
+    ],
+    "developing": [
+     "Both … and … are … , because … .",
+     "While … is …, … is … .",
+     "The main difference is … , which matters because … .",
+     "… is more … than … because … .",
+     "For … , … is more suitable because … ."
+    ],
+    "consolidating": [
+     "Although … and … both …, they differ in … .",
+     "Whereas … , … , which suggests … .",
+     "Unlike … , … , so the effect on … is … .",
+     "The most significant difference is …, since … .",
+     "Overall, … is better suited to … than … , because … ."
+    ]
+   },
+   "connectives": {
+    "adding": [
+     "both … and",
+     "similarly",
+     "likewise",
+     "in the same way"
+    ],
+    "contrasting": [
+     "whereas",
+     "while",
+     "in contrast",
+     "unlike"
+    ],
+    "weighing": [
+     "more … than",
+     "the main difference",
+     "more suitable",
+     "matters more"
+    ],
+    "concluding": [
+     "overall",
+     "therefore",
+     "so",
+     "in conclusion"
+    ]
+   }
+  }
+ }
+}

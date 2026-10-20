@@ -2,25 +2,489 @@
  "about": "Register of names in the Pearson BTEC Nationals HSC spec (Issue 10, June 2022) whose status has changed or is changing. Spec p.7 allows centres to substitute current references, subject to confirmation by the Standards Verifier. status: replaced | renamed | repealed | reform-pending | under-review | historical | unverified. 'lint' is a regex: any content string matching it must also contain the 'now' text (or a 'mustAlsoMention' alternative), otherwise the build fails (warns for unverified).",
  "lastFullCheck": "2026-10-20",
  "entries": [
-  {"id":"ccg","spec":"Clinical Commissioning Groups (CCGs)","units":[5,8,16],"status":"replaced","now":"Integrated Care Boards (ICBs)","since":"1 July 2022","detail":"Abolished by the Health and Care Act 2022; commissioning passed to Integrated Care Boards within Integrated Care Systems.","assignments":"Use ICBs. You may mention CCGs as the previous structure.","exams":"Recognise both names; answer using ICBs.","sv":true,"lint":"Clinical Commissioning Group|\\bCCGs?\\b","mustAlsoMention":["Integrated Care Board","ICB"],"sources":["https://www.legislation.gov.uk/ukpga/2022/31/pdfs/ukpga_20220031_en.pdf","https://www.england.nhs.uk/commissioning/who-commissions-nhs-services/"],"verified":"2026-10-20"},
-  {"id":"dh","spec":"Department of Health (DH), England","units":[5,8,16,22],"status":"renamed","now":"Department of Health and Social Care (DHSC)","since":"January 2018","detail":"Renamed when social care was added to the Secretary of State's title. In Northern Ireland the Department of Health (NI) is still the correct name.","assignments":"Use DHSC for England; Department of Health for Northern Ireland only.","exams":"Either name is recognisable; use DHSC for England.","sv":true,"lint":"Department of Health(?! and Social Care)(?! \\(N)","mustAlsoMention":["Department of Health and Social Care","DHSC","Northern Ireland"],"sources":["https://www.gov.uk/government/news/ministerial-appointments-january-2018"],"verified":"2026-10-20"},
-  {"id":"phe","spec":"Public Health England (PHE) guidance","units":[19],"status":"replaced","now":"UK Health Security Agency (UKHSA) and Office for Health Improvement and Disparities (OHID, part of DHSC)","since":"1 October 2021","detail":"PHE closed. Health protection moved to UKHSA; health improvement, including diet and nutrition guidance, moved to OHID within DHSC.","assignments":"Cite OHID or DHSC for current nutrition guidance; PHE documents can be cited as historical sources with their date.","exams":"Not named in exam units.","sv":true,"lint":"Public Health England|\\bPHE\\b","mustAlsoMention":["UKHSA","OHID","UK Health Security Agency","Office for Health Improvement"],"sources":["https://www.gov.uk/government/organisations/public-health-england/about","https://ukhsa.blog.gov.uk/2021/09/23/ukhsa-operational-launch-rebranding-digital-channels/"],"verified":"2026-10-20"},
-  {"id":"cssiw","spec":"Care and Social Services Inspectorate Wales (CSSIW)","units":[2],"status":"renamed","now":"Care Inspectorate Wales (CIW)","since":"January 2018","detail":"Renamed under the Regulation and Inspection of Social Care (Wales) Act 2016.","assignments":"Use CIW.","exams":"Spec lets learners study England, Wales or NI bodies; if studying Wales, recognise both names.","sv":true,"lint":"CSSIW|Care and Social Services Inspectorate","mustAlsoMention":["Care Inspectorate Wales","CIW"],"sources":["https://socialcare.wales/resources-guidance/information-and-learning-hub/regulation-and-inspection/overview","https://www.careinspectorate.wales/how-we-inspect-adult-and-childrens-services"],"verified":"2026-10-20"},
-  {"id":"ccw","spec":"Care Council for Wales","units":[2],"status":"renamed","now":"Social Care Wales","since":"April 2017","detail":"Replaced under the Regulation and Inspection of Social Care (Wales) Act 2016.","assignments":"Use Social Care Wales.","exams":"Recognise both if studying Wales.","sv":true,"lint":"Care Council for Wales","mustAlsoMention":["Social Care Wales"],"sources":["https://socialcare.wales/resources-guidance/information-and-learning-hub/regulation-and-inspection/overview"],"verified":"2026-10-20"},
-  {"id":"swe","spec":"Health and Care Professions Council (HCPC) as regulator of social workers in England","units":[2,5],"status":"replaced","now":"Social Work England","since":"2 December 2019","detail":"HCPC still regulates other professions (e.g. occupational therapists, physiotherapists, paramedics) but no longer social workers in England.","assignments":"Name Social Work England for social workers; HCPC for the allied health professions.","exams":"If asked about social worker regulation, Social Work England is correct; HCPC remains correct for allied health professions.","sv":true,"lint":"social workers?[^.]{0,60}HCPC|HCPC[^.]{0,60}social workers?","mustAlsoMention":["Social Work England"],"sources":["https://www.hcpc-uk.org/news-and-events/news/2019/the-regulation-of-social-workers-in-england-has-transferred-to-social-work-england/"],"verified":"2026-10-20"},
-  {"id":"hscb","spec":"Health and Social Care Board (Northern Ireland)","units":[5],"status":"replaced","now":"Department of Health (NI) Strategic Planning and Performance Group (SPPG)","since":"31 March 2022","detail":"HSCB closed; its functions moved into the Department of Health (NI), delivered through the SPPG.","assignments":"Use SPPG if writing about Northern Ireland.","exams":"Not named in exam units.","sv":true,"lint":"Health and Social Care Board","mustAlsoMention":["Strategic Planning and Performance Group","SPPG"],"sources":["https://www.health-ni.gov.uk/articles/closure-hscb-frequently-asked-questions"],"verified":"2026-10-20"},
-  {"id":"mha","spec":"Mental Health Act 1983 (amended 2007) / Mental Health Act 2007","units":[5,12,20],"status":"reform-pending","now":"Mental Health Act 1983 as amended, plus the Mental Health Act 2025 (being brought in gradually)","since":"Royal Assent 18 December 2025","detail":"The 2025 Act amends, not replaces, the 1983 Act. Most provisions are not yet in force and need commencement regulations; two sections came into force on 18 February 2026. The 2007 Act was itself an amending Act, so cite 'the Mental Health Act 1983 (as amended)'.","assignments":"Describe the 1983 Act (as amended) as the law in force and the 2025 Act as reform being phased in; check which parts are in force on the day you submit.","exams":"The 1983 Act (as amended) is safe; credit is likely for awareness of the 2025 reforms.","sv":true,"lint":"Mental Health Act (2007|1983)","mustAlsoMention":["2025","as amended"],"sources":["https://www.legislation.gov.uk/ukpga/2025/33/data.htm","https://www.gov.uk/government/news/mental-health-bill-receives-royal-assent-revolutionising-care"],"verified":"2026-10-20"},
-  {"id":"hrca","spec":"Human Reproductive Cloning Act 2001","units":[22],"status":"repealed","now":"Human Fertilisation and Embryology Act 1990 as amended by the HFE Act 2008","since":"1 October 2009","detail":"Repealed by the HFE Act 2008, which brought the ban on reproductive cloning into the amended 1990 Act.","assignments":"Cite the HFE Act 1990 (as amended 2008); mention the 2001 Act only as history.","exams":"Not named in exam units.","sv":true,"lint":"Human Reproductive Cloning Act","mustAlsoMention":["repealed"],"sources":["https://www.legislation.gov.uk/ukpga/2001/23/data.htm?view=plain"],"verified":"2026-10-20"},
-  {"id":"eulaw","spec":"Relevant sections of European Union legislation","units":[22],"status":"renamed","now":"Assimilated law (EU-derived law kept in UK law)","since":"1 January 2024","detail":"The Retained EU Law (Revocation and Reform) Act 2023 renamed retained EU law as 'assimilated law'. EU legislation no longer applies directly in Great Britain.","assignments":"Refer to UK legislation and assimilated law, not EU legislation as directly applicable.","exams":"Not named in exam units.","sv":true,"lint":"European Union legislation|EU legislation","mustAlsoMention":["assimilated"],"sources":["https://www.legislation.gov.uk/ukpga/2023/28","https://www.gov.uk/government/publications/retained-eu-law-dashboard"],"verified":"2026-10-20"},
-  {"id":"nba","spec":"National Blood Authority","units":[23],"status":"replaced","now":"NHS Blood and Transplant (NHSBT)","since":"October 2005","detail":"Abolished by the National Blood Authority and United Kingdom Transplant (Abolition) Order 2005; functions passed to NHSBT.","assignments":"Use NHSBT.","exams":"Not named in exam units.","sv":true,"lint":"National Blood Authority","mustAlsoMention":["NHS Blood and Transplant","NHSBT"],"sources":["https://www.legislation.gov.uk/uksi/2005/2532/made/data.xht?view=snippet&wrap=true","https://www.gov.uk/government/organisations/national-blood-authority"],"verified":"2026-10-20"},
-  {"id":"cft","spec":"Children's Food Trust recommendations and guidance","units":[19],"status":"replaced","now":"School Food Standards (DfE) and current DHSC/OHID guidance","since":"2017 (charity closed)","detail":"The charity closed in 2017. Only news sources were found for the closure, so confirm current school food guidance with DfE before using it.","assignments":"Use the statutory School Food Standards and current government guidance.","exams":"Not named in exam units.","sv":true,"lint":"Children[’']s Food Trust","mustAlsoMention":["closed"],"sources":["https://www.civilsociety.co.uk/news/children-s-food-trust-closes-with-loss-of-47-jobs.html"],"verified":"2026-10-20","secondarySourceOnly":true},
-  {"id":"cqcstd","spec":"Care Quality Commission Standards","units":[7],"status":"under-review","now":"Fundamental standards (2014 Regulations) assessed through CQC's single assessment framework","since":"Single assessment framework introduced 2023–24; CQC consulted on changes in October 2025","detail":"The framework is being revised after a 2024 review and a 2025 consultation. Check CQC's current assessment approach when writing.","assignments":"Refer to the fundamental standards and CQC's current assessment approach; date your reference.","exams":"Unit 2: CQC's role (registration, inspection, ratings, enforcement) is stable.","sv":false,"lint":"key lines of enquiry|\\bKLOEs?\\b","mustAlsoMention":["single assessment framework"],"sources":["https://www.cqc.org.uk/news/our-new-single-assessment-framework","https://www.cqc.org.uk/sites/default/files/2025-10/20251014%20CQC%20Consultation%20document%20FINAL.pdf"],"verified":"2026-10-20"},
-  {"id":"hsca2012","spec":"Health and Social Care Act 2012","units":[5,16],"status":"historical","now":"Health and Care Act 2022 (which amended and partly reversed the 2012 Act's structures)","since":"2022","detail":"The 2012 Act created CCGs and the competition rules; the 2022 Act abolished CCGs and introduced ICSs. Both can be discussed; present the 2022 Act as the current structure.","assignments":"Cover the 2012 Act as context and the 2022 Act as current law.","exams":"Not named in exam units.","sv":true,"lint":"Health and Social Care Act 2012","mustAlsoMention":["2022"],"sources":["https://www.legislation.gov.uk/ukpga/2022/31/pdfs/ukpga_20220031_en.pdf"],"verified":"2026-10-20"},
-  {"id":"nhse","spec":"NHS England (not named in the spec, but used widely in teaching)","units":[2,16],"status":"reform-pending","now":"Still exists; the Health Bill (introduced May 2026) would abolish it and move its functions into DHSC","since":"Bill in Parliament, 2026","detail":"Until the Bill is passed and commenced, NHS England is a live organisation.","assignments":"Describe NHS England as current, noting the planned merger into DHSC.","exams":"Safe to name NHS England.","sv":false,"lint":"NHS England will be abolished|NHS England was abolished|abolished NHS England","mustAlsoMention":["Bill"],"sources":["https://www.nuffieldtrust.org.uk/resource/whats-in-the-new-health-bill","https://www.gov.uk/government/publications/health-bill-role-and-functions-of-the-restructured-dhsc-fact-sheet/health-bill-role-and-functions-of-the-restructured-dhsc-fact-sheet"],"verified":"2026-10-20"},
-  {"id":"dpa","spec":"Data protection legislation","units":[2,4,5,7],"status":"reform-pending","now":"Data Protection Act 2018 and UK GDPR, as amended by the Data (Use and Access) Act 2025 (phased in)","since":"Royal Assent 19 June 2025; main data protection changes commencing during 2026","detail":"The 2025 Act amends rather than replaces the DPA 2018 and UK GDPR. The core principles students learn (lawful basis, confidentiality, security, purpose limitation) are unchanged.","assignments":"Cite DPA 2018 and UK GDPR; mention the 2025 amendments if relevant.","exams":"DPA 2018 / UK GDPR is safe.","sv":false,"lint":"Data Protection Act 1998","mustAlsoMention":["2018"],"sources":["https://www.legislation.gov.uk/uksi/2025/904/made","https://www.kennedyslaw.com/en/thought-leadership/article/2026/the-data-use-and-access-act-2025-commencement-dates-and-planned-guidance-for-2026"],"verified":"2026-10-20"},
-  {"id":"grcct","spec":"General Regulatory Council for Complementary Therapies (GRCCT)","units":[25],"status":"unverified","now":"Complementary and Natural Healthcare Council (CNHC), a Professional Standards Authority accredited register","since":"","detail":"No current primary source was found for the GRCCT. CNHC is confirmed as a PSA accredited register. Check before citing the GRCCT.","assignments":"Lead with CNHC; cite the GRCCT only after checking it still operates.","exams":"Not named in exam units.","sv":true,"lint":"GRCCT|General Regulatory Council","mustAlsoMention":["CNHC","check"],"sources":["https://en.wikipedia.org/wiki/Complementary_and_Natural_Healthcare_Council"],"verified":"2026-10-20","secondarySourceOnly":true},
-  {"id":"caf","spec":"Common Assessment Framework (CAF)","units":[5,12,18],"status":"unverified","now":"Local early help assessments under Working Together to Safeguard Children (England)","since":"","detail":"The CAF is widely described as replaced by local early help assessments, but this pass did not confirm it against a primary source.","assignments":"Ask your tutor which assessment framework your local authority uses.","exams":"Not named in exam units.","sv":true,"lint":"Common Assessment Framework","mustAlsoMention":["early help"],"sources":[],"verified":"2026-10-20"},
-  {"id":"nsfmh","spec":"National Service Framework for Mental Health","units":[12],"status":"unverified","now":"Historical (1999 ten-year framework); current national mental health policy should be cited instead","since":"","detail":"Not confirmed against a primary source in this pass.","assignments":"Cite it only as history; use current national mental health policy.","exams":"Not named in exam units.","sv":true,"lint":"National Service Framework","mustAlsoMention":["1999","historical"],"sources":[],"verified":"2026-10-20"},
-  {"id":"nascis","spec":"National Adult Social Care Intelligence Service","units":[5],"status":"unverified","now":"Check current adult social care data sources (e.g. official statistics published by NHS England)","since":"","detail":"Believed decommissioned; not confirmed against a primary source in this pass.","assignments":"Ask your tutor for the current data source.","exams":"Not named in exam units.","sv":true,"lint":"National Adult Social Care Intelligence","mustAlsoMention":["check"],"sources":[],"verified":"2026-10-20"}
+  {
+   "id": "ccg",
+   "spec": "Clinical Commissioning Groups (CCGs)",
+   "units": [
+    5,
+    8,
+    16
+   ],
+   "status": "replaced",
+   "now": "Integrated Care Boards (ICBs)",
+   "since": "1 July 2022",
+   "detail": "Abolished by the Health and Care Act 2022; commissioning passed to Integrated Care Boards within Integrated Care Systems.",
+   "assignments": "Use ICBs. You may mention CCGs as the previous structure.",
+   "exams": "Recognise both names; answer using ICBs.",
+   "sv": true,
+   "lint": "Clinical Commissioning Group|\\bCCGs?\\b",
+   "mustAlsoMention": [
+    "Integrated Care Board",
+    "ICB"
+   ],
+   "sources": [
+    "https://www.legislation.gov.uk/ukpga/2022/31/pdfs/ukpga_20220031_en.pdf",
+    "https://www.england.nhs.uk/commissioning/who-commissions-nhs-services/"
+   ],
+   "verified": "2026-10-20"
+  },
+  {
+   "id": "dh",
+   "spec": "Department of Health (DH), England",
+   "units": [
+    5,
+    8,
+    16,
+    22
+   ],
+   "status": "renamed",
+   "now": "Department of Health and Social Care (DHSC)",
+   "since": "January 2018",
+   "detail": "Renamed when social care was added to the Secretary of State's title. In Northern Ireland the Department of Health (NI) is still the correct name.",
+   "assignments": "Use DHSC for England; Department of Health for Northern Ireland only.",
+   "exams": "Either name is recognisable; use DHSC for England.",
+   "sv": true,
+   "lint": "Department of Health(?! and Social Care)(?! \\(N)",
+   "mustAlsoMention": [
+    "Department of Health and Social Care",
+    "DHSC",
+    "Northern Ireland"
+   ],
+   "sources": [
+    "https://www.gov.uk/government/news/ministerial-appointments-january-2018"
+   ],
+   "verified": "2026-10-20"
+  },
+  {
+   "id": "phe",
+   "spec": "Public Health England (PHE) guidance",
+   "units": [
+    19
+   ],
+   "status": "replaced",
+   "now": "UK Health Security Agency (UKHSA) and Office for Health Improvement and Disparities (OHID, part of DHSC)",
+   "since": "1 October 2021",
+   "detail": "PHE closed. Health protection moved to UKHSA; health improvement, including diet and nutrition guidance, moved to OHID within DHSC.",
+   "assignments": "Cite OHID or DHSC for current nutrition guidance; PHE documents can be cited as historical sources with their date.",
+   "exams": "Not named in exam units.",
+   "sv": true,
+   "lint": "Public Health England|\\bPHE\\b",
+   "mustAlsoMention": [
+    "UKHSA",
+    "OHID",
+    "UK Health Security Agency",
+    "Office for Health Improvement"
+   ],
+   "sources": [
+    "https://www.gov.uk/government/organisations/public-health-england/about",
+    "https://ukhsa.blog.gov.uk/2021/09/23/ukhsa-operational-launch-rebranding-digital-channels/"
+   ],
+   "verified": "2026-10-20"
+  },
+  {
+   "id": "cssiw",
+   "spec": "Care and Social Services Inspectorate Wales (CSSIW)",
+   "units": [
+    2
+   ],
+   "status": "renamed",
+   "now": "Care Inspectorate Wales (CIW)",
+   "since": "January 2018",
+   "detail": "Renamed under the Regulation and Inspection of Social Care (Wales) Act 2016.",
+   "assignments": "Use CIW.",
+   "exams": "Spec lets learners study England, Wales or NI bodies; if studying Wales, recognise both names.",
+   "sv": true,
+   "lint": "CSSIW|Care and Social Services Inspectorate",
+   "mustAlsoMention": [
+    "Care Inspectorate Wales",
+    "CIW"
+   ],
+   "sources": [
+    "https://socialcare.wales/resources-guidance/information-and-learning-hub/regulation-and-inspection/overview",
+    "https://www.careinspectorate.wales/how-we-inspect-adult-and-childrens-services"
+   ],
+   "verified": "2026-10-20"
+  },
+  {
+   "id": "ccw",
+   "spec": "Care Council for Wales",
+   "units": [
+    2
+   ],
+   "status": "renamed",
+   "now": "Social Care Wales",
+   "since": "April 2017",
+   "detail": "Replaced under the Regulation and Inspection of Social Care (Wales) Act 2016.",
+   "assignments": "Use Social Care Wales.",
+   "exams": "Recognise both if studying Wales.",
+   "sv": true,
+   "lint": "Care Council for Wales",
+   "mustAlsoMention": [
+    "Social Care Wales"
+   ],
+   "sources": [
+    "https://socialcare.wales/resources-guidance/information-and-learning-hub/regulation-and-inspection/overview"
+   ],
+   "verified": "2026-10-20"
+  },
+  {
+   "id": "swe",
+   "spec": "Health and Care Professions Council (HCPC) as regulator of social workers in England",
+   "units": [
+    2,
+    5
+   ],
+   "status": "replaced",
+   "now": "Social Work England",
+   "since": "2 December 2019",
+   "detail": "HCPC still regulates other professions (e.g. occupational therapists, physiotherapists, paramedics) but no longer social workers in England.",
+   "assignments": "Name Social Work England for social workers; HCPC for the allied health professions.",
+   "exams": "If asked about social worker regulation, Social Work England is correct; HCPC remains correct for allied health professions.",
+   "sv": true,
+   "lint": "social workers?[^.]{0,60}HCPC|HCPC[^.]{0,60}social workers?",
+   "mustAlsoMention": [
+    "Social Work England"
+   ],
+   "sources": [
+    "https://www.hcpc-uk.org/news-and-events/news/2019/the-regulation-of-social-workers-in-england-has-transferred-to-social-work-england/"
+   ],
+   "verified": "2026-10-20"
+  },
+  {
+   "id": "hscb",
+   "spec": "Health and Social Care Board (Northern Ireland)",
+   "units": [
+    5
+   ],
+   "status": "replaced",
+   "now": "Department of Health (NI) Strategic Planning and Performance Group (SPPG)",
+   "since": "31 March 2022",
+   "detail": "HSCB closed; its functions moved into the Department of Health (NI), delivered through the SPPG.",
+   "assignments": "Use SPPG if writing about Northern Ireland.",
+   "exams": "Not named in exam units.",
+   "sv": true,
+   "lint": "Health and Social Care Board",
+   "mustAlsoMention": [
+    "Strategic Planning and Performance Group",
+    "SPPG"
+   ],
+   "sources": [
+    "https://www.health-ni.gov.uk/articles/closure-hscb-frequently-asked-questions"
+   ],
+   "verified": "2026-10-20"
+  },
+  {
+   "id": "mha",
+   "spec": "Mental Health Act 1983 (amended 2007) / Mental Health Act 2007",
+   "units": [
+    5,
+    12,
+    20
+   ],
+   "status": "reform-pending",
+   "now": "Mental Health Act 1983 as amended, plus the Mental Health Act 2025 (being brought in gradually)",
+   "since": "Royal Assent 18 December 2025",
+   "detail": "The 2025 Act amends, not replaces, the 1983 Act. Most provisions are not yet in force and need commencement regulations; two sections came into force on 18 February 2026. The 2007 Act was itself an amending Act, so cite 'the Mental Health Act 1983 (as amended)'.",
+   "assignments": "Describe the 1983 Act (as amended) as the law in force and the 2025 Act as reform being phased in; check which parts are in force on the day you submit.",
+   "exams": "The 1983 Act (as amended) is safe; credit is likely for awareness of the 2025 reforms.",
+   "sv": true,
+   "lint": "Mental Health Act (2007|1983)",
+   "mustAlsoMention": [
+    "2025",
+    "as amended"
+   ],
+   "sources": [
+    "https://www.legislation.gov.uk/ukpga/2025/33/data.htm",
+    "https://www.gov.uk/government/news/mental-health-bill-receives-royal-assent-revolutionising-care"
+   ],
+   "verified": "2026-10-20"
+  },
+  {
+   "id": "hrca",
+   "spec": "Human Reproductive Cloning Act 2001",
+   "units": [
+    22
+   ],
+   "status": "repealed",
+   "now": "Human Fertilisation and Embryology Act 1990 as amended by the HFE Act 2008",
+   "since": "1 October 2009",
+   "detail": "Repealed by the HFE Act 2008, which brought the ban on reproductive cloning into the amended 1990 Act.",
+   "assignments": "Cite the HFE Act 1990 (as amended 2008); mention the 2001 Act only as history.",
+   "exams": "Not named in exam units.",
+   "sv": true,
+   "lint": "Human Reproductive Cloning Act",
+   "mustAlsoMention": [
+    "repealed"
+   ],
+   "sources": [
+    "https://www.legislation.gov.uk/ukpga/2001/23/data.htm?view=plain"
+   ],
+   "verified": "2026-10-20"
+  },
+  {
+   "id": "eulaw",
+   "spec": "Relevant sections of European Union legislation",
+   "units": [
+    22
+   ],
+   "status": "renamed",
+   "now": "Assimilated law (EU-derived law kept in UK law)",
+   "since": "1 January 2024",
+   "detail": "The Retained EU Law (Revocation and Reform) Act 2023 renamed retained EU law as 'assimilated law'. EU legislation no longer applies directly in Great Britain.",
+   "assignments": "Refer to UK legislation and assimilated law, not EU legislation as directly applicable.",
+   "exams": "Not named in exam units.",
+   "sv": true,
+   "lint": "European Union legislation|EU legislation",
+   "mustAlsoMention": [
+    "assimilated"
+   ],
+   "sources": [
+    "https://www.legislation.gov.uk/ukpga/2023/28",
+    "https://www.gov.uk/government/publications/retained-eu-law-dashboard"
+   ],
+   "verified": "2026-10-20"
+  },
+  {
+   "id": "nba",
+   "spec": "National Blood Authority",
+   "units": [
+    23
+   ],
+   "status": "replaced",
+   "now": "NHS Blood and Transplant (NHSBT)",
+   "since": "October 2005",
+   "detail": "Abolished by the National Blood Authority and United Kingdom Transplant (Abolition) Order 2005; functions passed to NHSBT.",
+   "assignments": "Use NHSBT.",
+   "exams": "Not named in exam units.",
+   "sv": true,
+   "lint": "National Blood Authority",
+   "mustAlsoMention": [
+    "NHS Blood and Transplant",
+    "NHSBT"
+   ],
+   "sources": [
+    "https://www.legislation.gov.uk/uksi/2005/2532/made/data.xht?view=snippet&wrap=true",
+    "https://www.gov.uk/government/organisations/national-blood-authority"
+   ],
+   "verified": "2026-10-20"
+  },
+  {
+   "id": "cft",
+   "spec": "Children's Food Trust recommendations and guidance",
+   "units": [
+    19
+   ],
+   "status": "replaced",
+   "now": "School Food Standards (DfE) and current DHSC/OHID guidance",
+   "since": "2017 (charity closed)",
+   "detail": "The charity closed in 2017. Only news sources were found for the closure, so confirm current school food guidance with DfE before using it.",
+   "assignments": "Use the statutory School Food Standards and current government guidance.",
+   "exams": "Not named in exam units.",
+   "sv": true,
+   "lint": "Children[’']s Food Trust",
+   "mustAlsoMention": [
+    "closed"
+   ],
+   "sources": [
+    "https://www.civilsociety.co.uk/news/children-s-food-trust-closes-with-loss-of-47-jobs.html"
+   ],
+   "verified": "2026-10-20",
+   "secondarySourceOnly": true
+  },
+  {
+   "id": "cqcstd",
+   "spec": "Care Quality Commission Standards",
+   "units": [
+    7
+   ],
+   "status": "under-review",
+   "now": "Fundamental standards (2014 Regulations) assessed through CQC's single assessment framework",
+   "since": "Single assessment framework introduced 2023–24; CQC consulted on changes in October 2025",
+   "detail": "The framework is being revised after a 2024 review and a 2025 consultation. Check CQC's current assessment approach when writing.",
+   "assignments": "Refer to the fundamental standards and CQC's current assessment approach; date your reference.",
+   "exams": "Unit 2: CQC's role (registration, inspection, ratings, enforcement) is stable.",
+   "sv": false,
+   "lint": "key lines of enquiry|\\bKLOEs?\\b",
+   "mustAlsoMention": [
+    "single assessment framework"
+   ],
+   "sources": [
+    "https://www.cqc.org.uk/news/our-new-single-assessment-framework",
+    "https://www.cqc.org.uk/sites/default/files/2025-10/20251014%20CQC%20Consultation%20document%20FINAL.pdf"
+   ],
+   "verified": "2026-10-20"
+  },
+  {
+   "id": "hsca2012",
+   "spec": "Health and Social Care Act 2012",
+   "units": [
+    5,
+    16
+   ],
+   "status": "historical",
+   "now": "Health and Care Act 2022 (which amended and partly reversed the 2012 Act's structures)",
+   "since": "2022",
+   "detail": "The 2012 Act created CCGs and the competition rules; the 2022 Act abolished CCGs and introduced ICSs. Both can be discussed; present the 2022 Act as the current structure.",
+   "assignments": "Cover the 2012 Act as context and the 2022 Act as current law.",
+   "exams": "Not named in exam units.",
+   "sv": true,
+   "lint": "Health and Social Care Act 2012",
+   "mustAlsoMention": [
+    "2022"
+   ],
+   "sources": [
+    "https://www.legislation.gov.uk/ukpga/2022/31/pdfs/ukpga_20220031_en.pdf"
+   ],
+   "verified": "2026-10-20"
+  },
+  {
+   "id": "nhse",
+   "spec": "NHS England (not named in the spec, but used widely in teaching)",
+   "units": [
+    2,
+    16
+   ],
+   "status": "reform-pending",
+   "now": "Still exists; the Health Bill (introduced May 2026) would abolish it and move its functions into DHSC",
+   "since": "Bill in Parliament, 2026",
+   "detail": "Until the Bill is passed and commenced, NHS England is a live organisation.",
+   "assignments": "Describe NHS England as current, noting the planned merger into DHSC.",
+   "exams": "Safe to name NHS England.",
+   "sv": false,
+   "lint": "NHS England will be abolished|NHS England was abolished|abolished NHS England",
+   "mustAlsoMention": [
+    "Bill"
+   ],
+   "sources": [
+    "https://www.nuffieldtrust.org.uk/resource/whats-in-the-new-health-bill",
+    "https://www.gov.uk/government/publications/health-bill-role-and-functions-of-the-restructured-dhsc-fact-sheet/health-bill-role-and-functions-of-the-restructured-dhsc-fact-sheet"
+   ],
+   "verified": "2026-10-20"
+  },
+  {
+   "id": "dpa",
+   "spec": "Data protection legislation",
+   "units": [
+    2,
+    4,
+    5,
+    7
+   ],
+   "status": "reform-pending",
+   "now": "Data Protection Act 2018 and UK GDPR, as amended by the Data (Use and Access) Act 2025 (phased in)",
+   "since": "Royal Assent 19 June 2025; main data protection changes commencing during 2026",
+   "detail": "The 2025 Act amends rather than replaces the DPA 2018 and UK GDPR. The core principles students learn (lawful basis, confidentiality, security, purpose limitation) are unchanged.",
+   "assignments": "Cite DPA 2018 and UK GDPR; mention the 2025 amendments if relevant.",
+   "exams": "DPA 2018 / UK GDPR is safe.",
+   "sv": false,
+   "lint": "Data Protection Act 1998",
+   "mustAlsoMention": [
+    "2018"
+   ],
+   "sources": [
+    "https://www.legislation.gov.uk/uksi/2025/904/made",
+    "https://www.kennedyslaw.com/en/thought-leadership/article/2026/the-data-use-and-access-act-2025-commencement-dates-and-planned-guidance-for-2026"
+   ],
+   "verified": "2026-10-20"
+  },
+  {
+   "id": "grcct",
+   "spec": "General Regulatory Council for Complementary Therapies (GRCCT)",
+   "units": [
+    25
+   ],
+   "status": "unverified",
+   "now": "Complementary and Natural Healthcare Council (CNHC), a Professional Standards Authority accredited register",
+   "since": "",
+   "detail": "Searches on 20 October 2026 found no current website or recent activity for the GRCCT. CNHC is confirmed as an active Professional Standards Authority accredited register. Check with your tutor before citing the GRCCT.",
+   "assignments": "Lead with CNHC; cite the GRCCT only after checking it still operates.",
+   "exams": "Not named in exam units.",
+   "sv": true,
+   "lint": "GRCCT|General Regulatory Council",
+   "mustAlsoMention": [
+    "CNHC",
+    "check"
+   ],
+   "sources": [
+    "https://cnhc.org.uk/assets/cnhc-ipm-workshop-presentation-19-june-25",
+    "https://en.wikipedia.org/wiki/Complementary_and_Natural_Healthcare_Council"
+   ],
+   "verified": "2026-10-20",
+   "secondarySourceOnly": false
+  },
+  {
+   "id": "caf",
+   "spec": "Common Assessment Framework (CAF)",
+   "units": [
+    5,
+    12,
+    18
+   ],
+   "status": "varies",
+   "now": "Local early help assessments (each local authority runs its own process; some still use the CAF name)",
+   "since": "",
+   "detail": "There is no single national replacement. Local authorities run their own early help assessments, and some still use the CAF name. Leeds says: 'The label (CAF) is changing but the principle remains the same.'",
+   "assignments": "Name the early help process your local authority uses; your tutor can confirm it.",
+   "exams": "Not named in exam units.",
+   "sv": true,
+   "lint": "Common Assessment Framework",
+   "mustAlsoMention": [
+    "early help",
+    "local"
+   ],
+   "sources": [
+    "https://www.leeds.gov.uk/children-and-families/common-assessment-framework",
+    "https://www.gateshead.gov.uk/article/13573/Gateshead-Early-Help-Assessment-EHA-and-Team-Around-the-Family-TAF",
+    "https://www.derby.gov.uk/health-and-social-care/children-and-family-care/early-help-assessment/"
+   ],
+   "verified": "2026-10-20"
+  },
+  {
+   "id": "nsfmh",
+   "spec": "National Service Framework for Mental Health",
+   "units": [
+    12
+   ],
+   "status": "historical",
+   "now": "Historical: a ten-year framework published in September 1999, followed by No Health Without Mental Health (2011) and later national mental health policy",
+   "since": "1999",
+   "detail": "The GOV.UK record shows a publication date of 10 September 1999. It was a ten-year framework, followed by the 2011 cross-government strategy No Health Without Mental Health.",
+   "assignments": "Cite it only as history; use current national mental health policy.",
+   "exams": "Not named in exam units.",
+   "sv": true,
+   "lint": "National Service Framework",
+   "mustAlsoMention": [
+    "1999",
+    "historical"
+   ],
+   "sources": [
+    "https://www.gov.uk/government/publications/quality-standards-for-mental-health-services",
+    "https://assets.publishing.service.gov.uk/media/5a7c348ae5274a25a914129d/dh_124058.pdf"
+   ],
+   "verified": "2026-10-20"
+  },
+  {
+   "id": "nascis",
+   "spec": "National Adult Social Care Intelligence Service",
+   "units": [
+    5
+   ],
+   "status": "historical",
+   "now": "Historical: national adult social care data is now published as official statistics",
+   "since": "",
+   "detail": "NASCIS was the national adult social care data service launched in 2009. Current national figures are published as official statistics. Only secondary sources were found for its closure.",
+   "assignments": "Ask your tutor for the current data source.",
+   "exams": "Not named in exam units.",
+   "sv": true,
+   "lint": "National Adult Social Care Intelligence",
+   "mustAlsoMention": [
+    "check"
+   ],
+   "sources": [
+    "https://www.communitycare.co.uk/2009/10/22/social-care-data-service-launched-to-boost-performance-management"
+   ],
+   "verified": "2026-10-20",
+   "secondarySourceOnly": true
+  }
  ]
 }
