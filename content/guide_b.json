@@ -1306,13 +1306,13 @@
       "check": {
        "q": "Which body now decides how NHS money is used locally, including for Quayside Surgery?",
        "options": [
-        "The Clinical Commissioning Group, which still commissions services.",
+        "The commissioning body that planned local services before 2022.",
         "The Integrated Care Board, which covers the surgery's local area.",
         "The Department of Health and Social Care, which commissions each practice.",
         "The council's social care committee, which funds GP practices."
        ],
        "answer": 1,
-       "why": "Integrated Care Boards replaced Clinical Commissioning Groups in 2022. The CCG option is tempting because it was the older name for the same role, so it is out of date."
+       "why": "Integrated Care Boards replaced Clinical Commissioning Groups in 2022. The pre-2022 body is tempting because it did the same job, but it no longer exists."
       }
      }
     ]
