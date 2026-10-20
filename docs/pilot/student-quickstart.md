@@ -23,6 +23,8 @@
 ## Your privacy
 The hub never asks your name and doesn't track you. What you type isn't saved: it disappears when you close the page, unless you turn on **Save my writing** in Planner → Your privacy. Your ticks and quiz progress are saved privately for you only. **Delete everything** removes them.
 
+**Back up once a week:** Planner → Backup → **Save backup file**. Tick **Include my writing** if you want to keep practice answers. Keep the file somewhere safe, such as your college drive. **Restore from file** brings everything back on any device.
+
 ## Keep it honest
 The hub never writes your assignment, and nothing you type in it is read by anyone. Don't paste its examples, or anything an AI writes, into your work. You sign a declaration that the work is yours.
 

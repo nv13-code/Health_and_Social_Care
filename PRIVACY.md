@@ -17,7 +17,7 @@ Assignment names in the calendar come from a fixed list (for example "Learning a
 
 ## Student controls
 - **Delete everything** (Planner → Backup) removes all saved progress from the browser and, if signed in, from their account.
-- The **backup code** contains only the structured progress above, never writing unless the student turned saving on.
+- **Backup** (Planner → Backup): **Save backup file** downloads a `.json` file to the student's own device, and **Restore from file** brings it back. A backup code works the same way as text. By default a backup holds only the structured progress above. The student can tick **Include my writing** to keep that visit's practice answers and notes in the file. The file stays with the student and is never sent anywhere. The Today tab reminds them weekly once they've made progress.
 - The **pilot summary** is anonymous numbers only: recall by time gap, confidence accuracy, counts of steps completed. No writing, grades, names or dates of birth. It's shared only if the student chooses.
 
 ## Things that leave the page only when the student acts

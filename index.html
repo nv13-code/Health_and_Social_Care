@@ -410,6 +410,15 @@ function storable(){const o=JSON.parse(JSON.stringify(S));
   delete o.gwOpen;return o}
 function save(){S._t=Date.now();try{localStorage.setItem(KEY,JSON.stringify(storable()))}catch(e){}cloudQueue()}
 const RETAIN_DAYS=365;
+let backupWithText=false;
+function backupObject(){const o=backupWithText?JSON.parse(JSON.stringify(S)):storable();delete o.gwOpen;return {app:"hsc-dstar",version:2,saved:new Date().toISOString().slice(0,10),includesWriting:backupWithText,progress:o}}
+async function saveBackupFile(){const data=JSON.stringify(backupObject(),null,1);const name=`hsc-dstar-backup-${todayISO()}.json`;
+  try{const dl=window.claude&&window.claude.use?await window.claude.use("downloads"):null;
+    if(dl){await dl.save({filename:name,data});S.lastBackup=todayISO();save();render();toast("Backup saved");return}}
+  catch(e){if(e&&e.code==="declined"){toast("Backup not saved");return}}
+  try{const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([data],{type:"application/json"}));a.download=name;document.body.appendChild(a);a.click();a.remove();S.lastBackup=todayISO();save();render();toast("Backup file downloaded")}
+  catch(e){toast("Couldn't save a file here. Use Copy backup code instead.")}}
+function restoreFrom(obj){const pr=obj&&obj.app==="hsc-dstar"?obj.progress:obj;if(!pr||typeof pr!=="object"||!("grades" in pr||"srs" in pr))throw new Error("bad");S=Object.assign(blank(),pr);if(obj.includesWriting)S.keepText=S.keepText||false;save();render();toast("Progress restored")}
 
 /* ---------- Account sync (claude.ai artifact db; private to the signed-in viewer) ---------- */
 const CLOUD={ref:null,state:"local",timer:null,busy:false,again:false};
@@ -1042,6 +1051,7 @@ function renderToday(){
       </div>
     </div>
   </div>
+  ${(!S.lastBackup||dayDiff(S.lastBackup,t)>=7)&&(S.calLog||[]).length>=10?`<p class="notice row" style="justify-content:space-between"><span>${S.lastBackup?"It's been a week since your last backup.":"You've made progress worth keeping."} A backup file means you won't lose it if this browser is cleared.</span><button class="btn small primary" data-act="backupfile">Save backup file</button></p>`:""}
   ${cl.length?cl.map(c=>`<p class="notice bad"><b>Busy week of ${esc(nice(c.week))}:</b> ${c.items.map(e=>esc(e.label.split(":")[0])).join(", ")} all fall in the same week. Start the earlier work sooner, or ask about the dates now rather than in that week.</p>`).join(""):""}
   <div class="panel stack">
     <div class="row" style="justify-content:space-between"><h3>This week</h3><button class="btn small" data-act="gotab" data-t="planner">Edit calendar</button></div>
@@ -1138,7 +1148,10 @@ function renderPlanner(){
     <h3>Backup</h3>
     <p class="muted">Signed in, your progress already saves to your account. The backup code is an extra copy: keep it somewhere safe, or paste it here and press Restore to bring progress back.</p>
     <div class="row"><button class="btn" data-act="pilot">Copy pilot summary</button><span class="muted" style="font-size:var(--t-sm)">Anonymous numbers only (how much you remember over time, confidence, progress), never your writing, grades or name. Share it with your tutor only if you want to.</span></div>
-    <div class="row"><button class="btn primary" data-act="backup">Copy backup code</button><button class="btn" data-act="restore">Restore from code</button><button class="btn ghost" data-act="resetall">Delete everything</button></div>
+    <p class="muted" style="font-size:var(--t-sm)">${S.lastBackup?`Last backup: ${esc(nice(S.lastBackup))}.`:"You haven't made a backup yet."} A backup file stays with you. Nothing is sent anywhere.</p>
+    <label class="inline" for="bkText"><input type="checkbox" id="bkText" data-act="bktext" ${backupWithText?"checked":""}> Include my writing (practice answers and notes from this visit)</label>
+    <div class="row"><button class="btn primary" data-act="backupfile">Save backup file</button><button class="btn" data-act="restorefile">Restore from file</button><input type="file" id="restoreFile" accept=".json,application/json" hidden></div>
+    <div class="row"><button class="btn" data-act="backup">Copy backup code</button><button class="btn" data-act="restore">Restore from code</button><button class="btn ghost" data-act="resetall">Delete everything</button></div>
     <textarea id="backupBox" style="min-height:90px" placeholder="Backup code appears here, or paste one to restore" aria-label="Backup code"></textarea>
     <div id="resetConfirm" hidden class="notice bad row"><span>This permanently deletes all your progress from this browser and, if you're signed in, from your account.</span><button class="btn small" data-act="resetyes">Yes, clear it</button><button class="btn small ghost" data-act="resetno">Keep it</button></div>
   </div>`;
@@ -1164,11 +1177,13 @@ document.addEventListener("click",e=>{
     case "quizexit": QZ=null; break;
     case "longpick": S["long"+S.examUnit]=Number(b.dataset.i); break;
     case "reveal": S["rev"+b.dataset.id]=!S["rev"+b.dataset.id]; break;
-    case "backup": {const code=btoa(unescape(encodeURIComponent(JSON.stringify(storable()))));const box=$("#backupBox");box.value=code;
+    case "backup": {S.lastBackup=todayISO();save();const code=btoa(unescape(encodeURIComponent(JSON.stringify(backupObject()))));const box=$("#backupBox");box.value=code;
       const fallback=()=>{box.focus();box.select();toast("Code selected. Copy it now.")};
       try{navigator.clipboard.writeText(code).then(()=>toast("Backup code copied"),fallback)}catch(err){fallback()} return;}
     case "pilot": {const txt=JSON.stringify(pilotSummary(),null,1);const box=$("#backupBox");box.value=txt;const fb=()=>{box.focus();box.select();toast("Summary selected. Copy it now.")};try{navigator.clipboard.writeText(txt).then(()=>toast("Pilot summary copied"),fb)}catch(e){fb()}return;}
-    case "restore": {try{const obj=JSON.parse(decodeURIComponent(escape(atob($("#backupBox").value.trim()))));S=Object.assign(blank(),obj);save();toast("Progress restored")}catch(err){toast("That code didn't work. Check you pasted all of it.");return} break;}
+    case "restore": {try{restoreFrom(JSON.parse(decodeURIComponent(escape(atob($("#backupBox").value.trim())))))}catch(err){toast("That code didn't work. Check you pasted all of it.")}return;}
+    case "backupfile": saveBackupFile(); return;
+    case "restorefile": $("#restoreFile").click(); return;
     case "resetall": $("#resetConfirm").hidden=false; return;
     case "resetno": $("#resetConfirm").hidden=true; return;
     case "resetyes": {S=blank();try{localStorage.removeItem(KEY);localStorage.removeItem("hsc-fs");localStorage.removeItem("hsc-ls")}catch(e){}
@@ -1216,6 +1231,7 @@ document.addEventListener("change",e=>{
     case "dailycap": S.dailyCap=Number(el.value); break;
     case "task": if(el.checked)S.tasksDone[el.dataset.k]=1; else delete S.tasksDone[el.dataset.k]; break;
     case "ownwork": {S.ownWork=S.ownWork||{};const a=new Set(S.ownWork[u]||[]);const i=Number(el.dataset.i);el.checked?a.add(i):a.delete(i);S.ownWork[u]=[...a];break;}
+    case "bktext": backupWithText=el.checked; return;
     case "keeptextbox": S.keepText=el.checked; break;
     case "caldec": {const c=S.cal.find(c=>c.id===el.dataset.id);if(c)c.decision=el.value;break;}
     case "bound": {const k=el.dataset.k;const v=Number(el.value);if(!isNaN(v))S.bounds[u][k]=v;break;}
@@ -1224,6 +1240,7 @@ document.addEventListener("change",e=>{
   }
   save(); render();
 });
+document.addEventListener("change",e=>{if(e.target&&e.target.id==="restoreFile"){const f=e.target.files&&e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{restoreFrom(JSON.parse(r.result))}catch(err){toast("That file isn't a hub backup.")}};r.readAsText(f);e.target.value=""}});
 document.addEventListener("input",e=>{const el=e.target;if(el.dataset&&["gwexp","gwloc","gwpre"].includes(el.dataset.act)){gState(el.dataset.k)[{gwexp:"exp",gwloc:"loc",gwpre:"pre"}[el.dataset.act]]=el.value;save();return}if(el.dataset&&el.dataset.act==="draft"){S.drafts[el.dataset.id]=el.value;save();const w=document.getElementById("wc-"+el.dataset.id);if(w)w.textContent=wordCount(el.value)+" words"}});
 document.addEventListener("toggle",e=>{const d=e.target;if(d.matches&&d.matches("details.frames")){S.framesOpen=d.open?d.dataset.fkey:null;return}if(d.matches&&d.matches("details.topic")){const [u,id]=d.dataset.topic.split("|");S["open"+u+id]=d.open;save()}},true);
 
