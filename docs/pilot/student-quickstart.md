@@ -2,7 +2,7 @@
 
 ## Set up (10 minutes, once)
 1. In your own Claude account, start a new chat and attach `hsc-dstar-v2.html`. Your tutor will give it to you, or you can download it from `dist/` in the GitHub repo.
-2. Paste this: *"Publish this HTML file as an artifact exactly as it is, with the capabilities db and user enabled so my progress saves to my account."*
+2. Paste this: *"Publish this HTML file as an artifact exactly as it is, with the capabilities db, user and downloads enabled, so my progress saves to my account and I can save backup files."*
 3. Open the artifact. The pill at the top right should change to **Saved to your account** after your first click.
 4. **Points tab:** choose your pathway and your five optional units.
 5. **Planner tab:** add your exam dates and every assignment's launch and hand-in dates from your college's assessment plan.
