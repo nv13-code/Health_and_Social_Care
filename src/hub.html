@@ -7,26 +7,27 @@
 <style>
 /* Layout: sticky care-chart header carrying the 18-point budget; four tabbed workspaces below, each a single readable column that splits into list + detail on wide screens. */
 :root{
-  --paper:#f4f7f6; --surface:#ffffff; --sunk:#eaf0ee; --ink:#15302c; --muted:#5a6e69; --line:#d3ddda;
+  --ui:#74857f;
+  --paper:#f4f7f6; --surface:#ffffff; --sunk:#eaf0ee; --ink:#15302c; --muted:#52665f; --line:#d3ddda;
   --accent:#8a2c5d; --accent-ink:#ffffff; --accent-soft:#f4e3ec;
-  --red:#b93b28; --red-soft:#f8e1dc; --amber:#a86c00; --amber-soft:#fbefd6; --green:#2b7748; --green-soft:#ddf0e3;
+  --red:#b93b28; --red-soft:#f8e1dc; --amber:#8f5a00; --amber-soft:#fbefd6; --green:#2b7748; --green-soft:#ddf0e3;
   --grid:#e2eae7;
   --f-display:"Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
   --f-body:"Atkinson Hyperlegible", "Segoe UI", system-ui, -apple-system, sans-serif;
   --f-mono:"IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
   --r:10px; --s1:4px; --s2:8px; --s3:12px; --s4:16px; --s5:24px; --s6:36px; --s7:56px;
-  --t-xs:.78rem; --t-sm:.88rem; --t-md:1rem; --t-lg:1.2rem; --t-xl:1.6rem; --t-2xl:2.4rem;
+  --t-xs:.875rem; --t-sm:.88rem; --t-md:1rem; --t-lg:1.2rem; --t-xl:1.6rem; --t-2xl:2.4rem;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --paper:#0e1716; --surface:#152220; --sunk:#1b2a28; --ink:#e3ece9; --muted:#97aba6; --line:#2b3c39;
   --accent:#e58cb8; --accent-ink:#2a0c1b; --accent-soft:#3a1f2d;
   --red:#f08a73; --red-soft:#3f211b; --amber:#e9b54c; --amber-soft:#3a2d12; --green:#74c993; --green-soft:#183323;
-  --grid:#20302d; color-scheme:dark }}
+  --grid:#20302d; --ui:#6d807b; color-scheme:dark }}
 :root[data-theme="dark"]{
   --paper:#0e1716; --surface:#152220; --sunk:#1b2a28; --ink:#e3ece9; --muted:#97aba6; --line:#2b3c39;
   --accent:#e58cb8; --accent-ink:#2a0c1b; --accent-soft:#3a1f2d;
   --red:#f08a73; --red-soft:#3f211b; --amber:#e9b54c; --amber-soft:#3a2d12; --green:#74c993; --green-soft:#183323;
-  --grid:#20302d; color-scheme:dark }
+  --grid:#20302d; --ui:#6d807b; color-scheme:dark }
 
 *{box-sizing:border-box}
 body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:var(--t-md);line-height:1.55;margin:0}
@@ -275,6 +276,23 @@ ul.plain{margin:0;padding-left:1.1rem;display:grid;gap:4px}
 .pick.right{background:var(--green-soft);border-color:var(--green)}.pick.wrong{background:var(--red-soft);border-color:var(--red)}
 .pick:disabled{cursor:default}
 .integrity{border-left:4px solid var(--accent)}
+.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+input[type="checkbox"],.checklist input{width:20px;height:20px}
+.checklist label{padding-block:4px}
+.rag button{min-width:36px;min-height:36px}
+.cal-form input,.cal-form select{width:100%;min-width:0}
+.topic summary{grid-template-columns:3rem minmax(0,1fr) auto}
+.ragbar{width:clamp(56px,20vw,110px)}
+.eyebrow{text-transform:none;letter-spacing:.02em}
+.boxes .bl{font-size:.8rem}
+select,input[type="number"],input[type="date"],input[type="text"],textarea,.btn,.seg,.opts button,.pick,.rag button,.gw-steps button,.unit-switch button,.unitlist button{border-color:var(--ui)}
+.gl{background:none;border:0;padding:0;font:inherit;color:inherit;text-decoration:underline dotted var(--accent);text-underline-offset:3px;cursor:help}
+.gloss-pop{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(64px + env(safe-area-inset-bottom,0px));max-width:min(520px,calc(100vw - 32px));background:var(--surface);border:1px solid var(--accent);border-radius:10px;padding:var(--s4);box-shadow:0 8px 24px rgb(0 0 0 / .2);z-index:60;display:grid;gap:8px}
+.cn{border-left-color:var(--accent);background:var(--accent-soft)}
+#help{border-top:1px solid var(--line);padding-block:var(--s5)}
+#help ul{margin:0;padding-left:1.1rem;display:grid;gap:4px}
+:root[data-fs="l"]{font-size:112.5%}:root[data-fs="xl"]{font-size:125%}
+:root[data-ls="wide"] body{letter-spacing:.03em;word-spacing:.12em;line-height:1.75}
 footer{border-top:1px solid var(--line);padding-block:var(--s5);color:var(--muted);font-size:var(--t-sm)}
 details.more>summary{cursor:pointer;font-weight:700}
 @media (prefers-reduced-motion:no-preference){.cells i{transition:background .25s,border-color .25s}.meter span{transition:width .3s}}
@@ -284,7 +302,7 @@ details.more>summary{cursor:pointer;font-weight:700}
   <div class="wrap">
     <div class="top-row">
       <div class="brand"><h1>HSC D<span class="star">*</span> Project</h1><small>BTEC National Extended Diploma</small></div>
-      <div class="budget-mini" aria-live="polite">
+      <div class="budget-mini"><span class="sr-only" id="miniLeft" aria-live="polite"></span>
         <span class="eyebrow">Points you can still lose</span>
         <div class="cells" id="miniCells" aria-hidden="true"></div>
         <span class="proj-pill" id="miniProj">D*D*D*</span>
@@ -292,30 +310,38 @@ details.more>summary{cursor:pointer;font-weight:700}
       </div>
     </div>
     <nav class="tabs" role="tablist" aria-label="Sections">
-      <button role="tab" data-tab="today" aria-selected="true">Today</button>
-      <button role="tab" data-tab="points" aria-selected="false">Points</button>
-      <button role="tab" data-tab="coach" aria-selected="false">Distinction coach</button>
-      <button role="tab" data-tab="exams" aria-selected="false">Exam revision</button>
-      <button role="tab" data-tab="planner" aria-selected="false">Planner</button>
+      <button role="tab" id="tab-today" aria-controls="view-today" data-tab="today" aria-selected="true" tabindex="0">Today</button>
+      <button role="tab" id="tab-points" aria-controls="view-points" data-tab="points" aria-selected="false" tabindex="-1">Points</button>
+      <button role="tab" id="tab-coach" aria-controls="view-coach" data-tab="coach" aria-selected="false" tabindex="-1">Distinction coach</button>
+      <button role="tab" id="tab-exams" aria-controls="view-exams" data-tab="exams" aria-selected="false" tabindex="-1">Exam revision</button>
+      <button role="tab" id="tab-planner" aria-controls="view-planner" data-tab="planner" aria-selected="false" tabindex="-1">Planner</button>
     </nav>
   </div>
 </header>
 
 <main class="wrap">
-  <section class="view" id="view-today"></section>
-  <section class="view" id="view-points" hidden></section>
-  <section class="view" id="view-coach" hidden></section>
-  <section class="view" id="view-exams" hidden></section>
-  <section class="view" id="view-planner" hidden></section>
+  <section class="view" role="tabpanel" aria-labelledby="tab-today" tabindex="-1" id="view-today"></section>
+  <section class="view" role="tabpanel" aria-labelledby="tab-points" tabindex="-1" id="view-points" hidden></section>
+  <section class="view" role="tabpanel" aria-labelledby="tab-coach" tabindex="-1" id="view-coach" hidden></section>
+  <section class="view" role="tabpanel" aria-labelledby="tab-exams" tabindex="-1" id="view-exams" hidden></section>
+  <section class="view" role="tabpanel" aria-labelledby="tab-planner" tabindex="-1" id="view-planner" hidden></section>
 </main>
+<section id="help" aria-labelledby="help-h"><div class="wrap stack" style="gap:8px"><h2 id="help-h">Need to talk to someone?</h2>
+<p>Some parts of this course cover hard topics. If something here, or something in your life, is getting to you, you don't have to cope alone.</p>
+<ul><li>At school or college: your tutor or the Designated Safeguarding Lead (DSL).</li><li>Childline (under 19): <b>0800 1111</b>. Free, 24 hours.</li><li>Samaritans: <b>116 123</b>. Free, 24 hours.</li><li>Shout: text <b>SHOUT</b> to <b>85258</b>. Free, 24 hours.</li><li>In danger now? Call <b>999</b>.</li></ul>
+<p class="muted">Nothing you type in this hub is read by anyone. If you want to tell someone something, use one of the contacts above or speak to a member of staff.</p></div></section>
 <footer><div class="wrap stack">
+  <div class="row" role="group" aria-label="Reading settings"><span class="muted">Text size</span><button class="btn small" data-act="fs" data-v="">Standard</button><button class="btn small" data-act="fs" data-v="l">Large</button><button class="btn small" data-act="fs" data-v="xl">Extra large</button><button class="btn small" data-act="ls">Wider spacing</button></div>
+  <p>Some cases and questions in this hub cover abuse, self-harm, suicide, bullying, dementia and mental ill health. They are factual, with no detail about methods. You can skip any of them. If a topic upsets you, help is listed above.</p>
   <p>Built from the Pearson BTEC Level 3 National Extended Diploma in Health and Social Care specification (Issue 10, June 2022). Default exam grade boundaries are from Pearson's June 2026 series. Boundaries change every series, so treat the points from raw marks as estimates. Your teacher's assessment decisions and Pearson's results are what count.</p>
   <p>When you open this page signed in to claude.ai, your progress saves privately to your account and follows you between devices. Nobody else can see it, including the page's owner. A copy also stays in this browser. <b>Backup</b> in the Planner tab gives you a code you can keep as an extra copy.</p>
 </div></footer>
-<div class="toast" id="toast" hidden></div>
+<div class="toast" id="toast" role="status" hidden></div>
+<div id="sr" class="sr-only" role="status" aria-live="polite"></div>
 
 <script>
 const DATA = /*__DATA__*/null;
+try{const f=localStorage.getItem("hsc-fs");if(f)document.documentElement.dataset.fs=f;const l=localStorage.getItem("hsc-ls");if(l)document.documentElement.dataset.ls=l}catch(e){}
 
 /* ---------- Spec facts ---------- */
 const UNITS = {
@@ -447,18 +473,44 @@ function calc(){
 }
 function cellsHTML(lost,big){let h="";for(let i=0;i<BUDGET;i++){h+=`<i class="${i<lost?"lost":""}"></i>`}return `<div class="cells${big?" big":""}" aria-hidden="true">${h}</div>`}
 
+/* ---------- Glossary (tap to define) ---------- */
+const GLOSS=(DATA&&DATA.glossary)||[];
+function glossify(view){const t3=GLOSS.filter(g=>g.tier===3||g.tier==="3");if(!t3.length)return;let n=0;const used=new Set();
+  const walker=document.createTreeWalker(view,NodeFilter.SHOW_TEXT,{acceptNode:nd=>{const p=nd.parentElement;if(!p||p.closest("button,a,input,textarea,select,h1,h2,h3,h4,.gl,summary,label,.opts,.pick,details:not([open])"))return NodeFilter.FILTER_REJECT;return nd.nodeValue.trim().length>3?NodeFilter.FILTER_ACCEPT:NodeFilter.FILTER_SKIP}});
+  const nodes=[];while(walker.nextNode())nodes.push(walker.currentNode);
+  for(const nd of nodes){if(n>=8)break;for(const g of t3){if(used.has(g.term))continue;const re=new RegExp("\\b("+g.term.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")+")\\b","i");const m=nd.nodeValue.match(re);if(!m)continue;
+    const before=nd.nodeValue.slice(0,m.index),after=nd.nodeValue.slice(m.index+m[0].length);const b=document.createElement("button");b.className="gl";b.dataset.act="gloss";b.dataset.term=g.term;b.textContent=m[0];b.setAttribute("aria-label",m[0]+": show definition");
+    const frag=document.createDocumentFragment();frag.append(before,b,after);nd.replaceWith(frag);used.add(g.term);n++;break}}}
+function openGloss(term){const g=GLOSS.find(x=>x.term===term);if(!g)return;let pop=document.getElementById("glossPop");if(!pop){pop=document.createElement("div");pop.id="glossPop";pop.className="gloss-pop";pop.setAttribute("role","dialog");pop.setAttribute("aria-label","Definition");document.body.appendChild(pop)}
+  pop.innerHTML=`<b>${esc(g.term)}</b><p>${esc(g.def)}</p><div class="row">${"speechSynthesis" in window?`<button class="btn small" data-act="glisten">Listen</button>`:""}<button class="btn small primary" data-act="glclose">Close</button></div>`;pop.dataset.term=g.term;pop.hidden=false;pop.querySelector("[data-act=glclose]").focus()}
+
 /* ---------- Tabs ---------- */
 const TABS=["today","points","coach","exams","planner"];
 function setTab(t,push){if(!TABS.includes(t))t="points";S.tab=t;save();
-  document.querySelectorAll("nav.tabs button").forEach(b=>b.setAttribute("aria-selected",b.dataset.tab===t));
+  document.querySelectorAll("nav.tabs button").forEach(b=>{const on=b.dataset.tab===t;b.setAttribute("aria-selected",on);b.tabIndex=on?0:-1});
   TABS.forEach(x=>$("#view-"+x).hidden=x!==t);
   render(t); if(push){try{history.replaceState(null,"","#"+t)}catch(e){}} window.scrollTo({top:0});
 }
+document.querySelector("nav.tabs").addEventListener("keydown",e=>{const tabs=[...e.currentTarget.querySelectorAll("button[data-tab]")];let i=tabs.indexOf(document.activeElement);if(i<0)return;
+  if(e.key==="ArrowRight")i=(i+1)%tabs.length;else if(e.key==="ArrowLeft")i=(i-1+tabs.length)%tabs.length;else if(e.key==="Home")i=0;else if(e.key==="End")i=tabs.length-1;else return;
+  e.preventDefault();tabs[i].focus();setTab(tabs[i].dataset.tab,true)});
 document.querySelector("nav.tabs").addEventListener("click",e=>{const b=e.target.closest("button[data-tab]");if(b)setTab(b.dataset.tab,true)});
 
 function renderHeader(){const c=calc();$("#miniCells").outerHTML=cellsHTML(Math.min(c.lost,BUDGET)).replace('class="cells','id="miniCells" class="cells');
+  $("#miniLeft").textContent=`${Math.max(0,c.left)} of ${BUDGET} points left to lose. Projected grade ${c.grade}.`;
   $("#miniProj").textContent=c.grade; $("#miniProj").title=`Projected ${c.projected} of 288 points`}
-function render(t){renderHeader(); ({today:renderToday,points:renderPoints,coach:renderCoach,exams:renderExams,planner:renderPlanner})[t||S.tab]()}
+function focusSel(el){if(!el||el===document.body)return null;if(el.id)return "#"+CSS.escape(el.id);
+  const a=["act","k","u","i","c","v","m","s","p","t","g","id"];const parts=a.filter(k=>el.dataset&&el.dataset[k]!=null).map(k=>`[data-${k}="${CSS.escape(el.dataset[k])}"]`);return parts.length?el.tagName.toLowerCase()+parts.join(""):null}
+function announce(msg){const s=document.getElementById("sr");if(s){s.textContent="";setTimeout(()=>s.textContent=msg,50)}}
+let lastFb="";
+function render(t){const sel=focusSel(document.activeElement);const inMain=document.activeElement&&document.activeElement.closest&&document.activeElement.closest("main");
+  renderInner(t);
+  const view=document.getElementById("view-"+(t||S.tab)); if(!view)return;
+  glossify(view);
+  const fb=view.querySelector(".feedback");const fbt=fb?fb.textContent.trim():"";if(fbt&&fbt!==lastFb)announce(fbt);lastFb=fbt;
+  if(inMain){let el=sel&&view.querySelector(sel);if(!el)el=view.querySelector('[data-act="dnext"],[data-act="quiznext"]');if(!el)el=view.querySelector('.q-card [data-act="conf"], .q-card .opts button:not([disabled])');
+    if(el)el.focus({preventScroll:true})}}
+function renderInner(t){renderHeader(); ({today:renderToday,points:renderPoints,coach:renderCoach,exams:renderExams,planner:renderPlanner})[t||S.tab]()}
 
 /* ---------- POINTS VIEW ---------- */
 function gradeSelect(u){
@@ -589,8 +641,10 @@ const AI_NOTE=`<details class="panel more"><summary>AI and your BTEC coursework<
 function guideFor(u){return DATA&&DATA.guide?DATA.guide[u]:null}
 function gState(k){S.guide=S.guide||{};return S.guide[k]||(S.guide[k]={})}
 function mapProgress(u,code){const g=guideFor(u);const reqs=arr(g&&g.criteria&&g.criteria[code]&&g.criteria[code].requirements);const yes=reqs.filter((_,i)=>(S.guide||{})[`${u}|${code}|${i}`]&&S.guide[`${u}|${code}|${i}`].st==="yes").length;return[yes,reqs.length]}
+const SENS={5:"self-harm and being treated unfairly",7:"abuse and neglect",11:"anger and low mood",12:"diagnosis of additional needs",17:"dementia",19:"bereavement and eating habits",20:"mental ill health",26:"pain, stress and illness"};
+function contentNote(topic){return topic?`<p class="notice cn"><b>Content note:</b> this covers ${esc(topic)}. It is factual and has no detail about methods. You can skip it without giving a reason. <a href="#help" data-act="tohelp">Need to talk to someone?</a></p>`:""}
 function parallelPanel(u){const g=guideFor(u);if(!g||!g.parallelCase)return "";
-  return `<div class="panel stack integrity"><span class="eyebrow">Practice case for the walkthroughs · made up</span><h3>${esc(g.parallelCase.title)}</h3><p class="prose">${esc(g.parallelCase.summary)}</p>
+  return `${contentNote(SENS[u])}<div class="panel stack integrity"><span class="eyebrow">Practice case for the walkthroughs · made up</span><h3>${esc(g.parallelCase.title)}</h3><p class="prose">${esc(g.parallelCase.summary)}</p>
   <p class="notice"><b>Your work must be your own.</b> The walkthrough examples use this made-up case on purpose. Learn the thinking from them, then apply it to your own brief in your own words. Don't copy the examples, or anything an AI writes for you, into your assignment: you sign a declaration that the work is yours.</p></div>`}
 function walkthrough(u,code){
   const g=guideFor(u); const reqs=arr(g&&g.criteria&&g.criteria[code]&&g.criteria[code].requirements); if(!reqs.length)return "";
@@ -660,8 +714,8 @@ function renderCoach(){
   </div>
   <div class="split">
     <div class="stack">
-      <div class="unitlist" role="list">
-        ${all.map(x=>{const[d,t]=unitCheckProgress(x);const g=S.grades[x];return `<button role="listitem" data-act="coachunit" data-u="${x}" aria-current="${x===u}"><span class="no">${x}</span><span class="nm">${esc(UNITS[x].t)}</span>${g?`<span class="chip ${g}">${g}</span>`:`<span class="chip">${t?Math.round(d/t*100)+"%":"–"}</span>`}</button>`}).join("")}
+      <div class="unitlist" role="group" aria-label="Units">
+        ${all.map(x=>{const[d,t]=unitCheckProgress(x);const g=S.grades[x];return `<button data-act="coachunit" data-u="${x}" aria-current="${x===u}"><span class="no">${x}</span><span class="nm">${esc(UNITS[x].t)}</span>${g?`<span class="chip ${g}">${g}</span>`:`<span class="chip">${t?Math.round(d/t*100)+"%":"–"}</span>`}</button>`}).join("")}
       </div>
       <label class="inline muted" style="font-size:var(--t-sm)"><input type="checkbox" id="coachAll" data-act="coachall" ${showAll?"checked":""}> Show all internal units</label>
       ${S.opt.length<5?`<p class="muted" style="font-size:var(--t-sm)">Choose your optional units in the Points tab to add them here.</p>`:""}
@@ -883,7 +937,7 @@ function srsAnswer(q,ok,conf){
   const k=S.quiz[q.id]||{n:0,c:0};k.n++;if(ok)k.c++;k.last=ok;S.quiz[q.id]=k;
   S.calib=S.calib||{1:{n:0,c:0},2:{n:0,c:0},3:{n:0,c:0}}; S.calib[conf].n++; if(ok)S.calib[conf].c++;
 }
-function finishDaily(){const t=todayISO();if(S.lastDone===t)return;S.streak=(S.lastDone===addDays(t,-1)?(S.streak||0)+1:1);S.lastDone=t}
+function finishDaily(){const t=todayISO();if(S.lastDone===t)return;S.streak=(S.lastDone&&dayDiff(S.lastDone,t)<=2?(S.streak||0)+1:1);S.lastDone=t}
 
 /* ---------- Assessment calendar ---------- */
 const MILESTONES=[[0,"Unpack the brief and open the guided walkthrough for each D criterion"],[.25,"Research and plan: sources, structure, which D requirements go where"],[.6,"First full draft of every learning aim"],[.85,"Map your draft against every D requirement in the walkthrough"],[1,"Final read, authenticity check and hand in"]];
@@ -936,7 +990,7 @@ function renderToday(){
     </div>`; }
   $("#view-today").innerHTML=`
   <div class="row" style="justify-content:space-between;align-items:baseline"><div class="stack" style="gap:2px"><span class="eyebrow">${esc(nice(t))}</span><h2>Today</h2></div>
-    <span class="mono" title="Days in a row you've finished the daily quiz">${S.streak&&(S.lastDone===t||S.lastDone===addDays(t,-1))?`${S.streak}-day streak`:"Start a streak today"}</span></div>
+    <span class="mono" title="Days in a row you've finished the daily quiz">${S.streak&&S.lastDone&&dayDiff(S.lastDone,t)<=2?`${S.streak} sessions in a row`:"Start a run of sessions today"}</span></div>
   <div class="split2">
     <div class="panel stack" style="min-width:0">
       <div class="row" style="justify-content:space-between"><h3>Daily retrieval · about 15 minutes</h3>
@@ -1066,6 +1120,11 @@ document.addEventListener("click",e=>{
     case "gwclose": S.gwOpen=null; break;
     case "gwstep": S.gwStep=Number(b.dataset.i); break;
     case "gwpick": gState(b.dataset.k).pick=b.dataset.v; break;
+    case "gloss": openGloss(b.dataset.term); return;
+    case "glclose": {const p=document.getElementById("glossPop");if(p)p.hidden=true;return;}
+    case "glisten": {try{const p=document.getElementById("glossPop");const g=GLOSS.find(x=>x.term===p.dataset.term);const u=new SpeechSynthesisUtterance(g.term+". "+g.def);u.lang="en-GB";speechSynthesis.cancel();speechSynthesis.speak(u)}catch(e){}return;}
+    case "fs": {const v=b.dataset.v;try{localStorage.setItem("hsc-fs",v)}catch(e){};document.documentElement.dataset.fs=v;return;}
+    case "ls": {const on=document.documentElement.dataset.ls!=="wide";document.documentElement.dataset.ls=on?"wide":"";try{localStorage.setItem("hsc-ls",on?"wide":"")}catch(e){};return;}
     case "intack": S.integrityAck=todayISO(); break;
     case "gwpredone": {const st=gState(b.dataset.k);if(wordCount(st.pre)<5){toast("Write at least a sentence first");return}st.preDone=true;break;}
     case "gwrev": {const st=gState(b.dataset.k);if(wordCount(st.exp)<10){toast("Write at least 10 words first");return}st.rev=true;break;}

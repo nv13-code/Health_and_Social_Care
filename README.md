@@ -28,3 +28,15 @@ The spec dates from 2022 and some of the bodies and laws it names have since cha
 - The hub shows the relevant updates on each unit's coaching page, on the exam overview, and in a full list on the Points tab.
 - `docs/standards-verifier-substitutions.md` is generated from the register. It is the one-page list of substitutions for Standards Verifier sign-off: spec p.7 allows substitutions, subject to the Standards Verifier's confirmation.
 - A scheduled re-check runs on 1 April and 1 November, ahead of the May/June and January exam series.
+
+## Quality and audit
+The hub was hardened against the Claude Education Skills Library. All 165 skills were triaged and 64 were used as audit lenses. The reports are in `docs/audit/`:
+- `skills-triage.md` lists every skill and whether it was used.
+- `assessment-quality.md` covers the MCQ keys, distractors and spec coverage (174 MCQs) and the walkthrough check questions.
+- `learning-science.md` covers spacing, intake, calibration and walkthrough sequencing.
+- `integrity-ai.md` covers authenticity, the JCQ AI guidance (April 2025 edition) and the own-work gate.
+- `inclusion-language.md` covers the axe accessibility scan, readability, the glossary, sensitive content and representation.
+
+`tools/build.py` checks every multiple-choice item for structure (4 options, a valid key, no duplicates) and flags cues: the key being the longest option, and answer-position bias.
+
+Still needing a human: a subject-expert review of the content, your college's DSL contact on the help panel, the representation fixes listed in the inclusion report, and confirming the current JCQ AI guidance before each academic year.

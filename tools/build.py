@@ -170,7 +170,7 @@ def main():
         part = load(f"content/{name}.json")
         if part:
             guide.update(part)
-    data = {"criteria": load("data/criteria.json"), "coach": coach, "exams": exams, "currency": reg, "guide": guide}
+    data = {"criteria": load("data/criteria.json"), "coach": coach, "exams": exams, "currency": reg, "guide": guide, "glossary": load("docs/audit/glossary.json") or []}
     blob = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
 
     src = (ROOT / "src/hub.html").read_text(encoding="utf-8")
