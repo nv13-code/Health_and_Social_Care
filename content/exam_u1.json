@@ -1,0 +1,1053 @@
+{
+ "unit": 1,
+ "title": "Human Lifespan Development",
+ "format": {
+  "marks": 90,
+  "time": "1 hour 30 minutes",
+  "summary": "One written examination of 90 marks lasting 1 hour 30 minutes, made up of short- and long-answer questions. Questions are set around contexts and data (short case studies about individuals at different life stages) and assess growth and development through the lifespan, the factors that affect growth and development, and the effects of ageing. Shorter questions (1 to 6 marks) test knowledge and understanding (AO1/AO2); longer evaluative questions (10 to 12 marks) test analysis, evaluation and your ability to connect theories, factors and ageing (AO3/AO4). Available in January and May/June.",
+  "tips": [
+   "You have 90 minutes for 90 marks: spend roughly 1 minute per mark, so a 12-mark question deserves about 12 minutes, including a minute to plan.",
+   "Always use the case study. Name the person, quote the detail from the scenario and say how it affects them. Generic answers that could be about anyone are capped in the lower bands.",
+   "Learn the life stage age ranges exactly as the spec gives them: infancy 0-2, early childhood 3-8, adolescence 9-18, early adulthood 19-45, middle adulthood 46-65, later adulthood 65+.",
+   "Use PIES (physical, intellectual, emotional, social) as a checklist for any question about effects of an event or factor; aim to cover more than one area and show how they link.",
+   "In 10-12 mark evaluate / to what extent / discuss questions, name a theory, apply it to the person, give a strength AND a limitation, consider another explanation, then finish with a supported judgement.",
+   "Read the command word and the mark tariff together: 'Identify' for 1-2 marks wants a short answer, while 'Explain' for 4-6 marks wants a point plus a reason for each mark.",
+   "Use specialist vocabulary precisely (schema, conservation, LAD, critical period, maturation, stress-diathesis, life course) because the Distinction descriptor rewards concise, professional articulation."
+  ]
+ },
+ "dDescriptor": "Learners are able to articulate arguments and views concisely and professionally to justify and evaluate physical, intellectual, emotional and social development across the human lifespan, factors affecting human growth and development and effects of ageing. They are able to use detailed analysis and research to make recommendations related to human development theories/models and factors affecting human growth and development. They can draw on knowledge and understanding of theories/models in relation to human development, factors affecting human growth and development and effects of ageing.",
+ "topics": [
+  {
+   "id": "A1",
+   "title": "Physical development across the life stages",
+   "points": [
+    "Explain the difference between growth (an increase in size, measured by height, weight and dimensions) and development (the orderly acquisition of skills and abilities).",
+    "Explain that growth is variable across different parts of the body and how centile charts are used to measure it.",
+    "Describe gross and fine motor skills in infancy (0-2) and the milestones of sitting up, standing, cruising and walking.",
+    "Give examples of gross and fine motor skills in early childhood (3-8), e.g. riding a tricycle, hopping, skipping; turning pages, buttoning clothing, writing own name, joined-up writing.",
+    "Describe the development of primary and secondary sexual characteristics in adolescence (9-18) for both sexes.",
+    "Explain the role of hormones (oestrogen, progesterone, testosterone, and the pituitary's role) in sexual maturity.",
+    "Describe physical maturity in early adulthood (19-45): peak strength, pregnancy and lactation.",
+    "Explain perimenopause: falling oestrogen, ovaries stop releasing an egg each month, and symptoms (hot flushes, night sweats, mood swings, loss of libido, vaginal dryness).",
+    "Explain the causes and effects of menopause in middle adulthood (46-65) and the role of hormones.",
+    "Describe the effects of ageing in middle and later adulthood (65+), including deterioration of health and intellectual abilities."
+   ]
+  },
+  {
+   "id": "A2",
+   "title": "Intellectual development across the life stages",
+   "points": [
+    "Outline Piaget's four stages of cognitive development with age ranges (sensorimotor, pre-operational, concrete operational, formal operational).",
+    "Explain schemas, assimilation, accommodation and equilibrium.",
+    "Describe Piaget's conservation tests and the three mountains test of egocentrism.",
+    "Use Piaget's model to explain a child's thoughts and actions in a scenario.",
+    "Explain Chomsky's Language Acquisition Device (LAD) and the idea of a critical period for language.",
+    "Explain how Chomsky's model accounts for children seeming to acquire language instinctively, and give a limitation.",
+    "Describe how thinking in early adulthood becomes realistic and pragmatic, with expert knowledge supporting judgement.",
+    "Explain the effects of age on memory and memory loss in later adulthood."
+   ]
+  },
+  {
+   "id": "A3",
+   "title": "Emotional development across the life stages",
+   "points": [
+    "Explain Bowlby's theory of attachment (monotropy, critical period, internal working model).",
+    "Describe Ainsworth's attachment types (secure, insecure-avoidant, insecure-resistant) and the Strange Situation.",
+    "Explain disruptions to attachment (separation, deprivation) and possible effects on later development.",
+    "Define self-concept, self-esteem and self-image.",
+    "Explain factors that lead to positive or negative self-esteem (e.g. relationships, appearance, achievement, abuse, media).",
+    "Explain factors that lead to positive or negative self-image and how self-image links to emotional wellbeing."
+   ]
+  },
+  {
+   "id": "A4",
+   "title": "Social development across the life stages",
+   "points": [
+    "Describe solo, parallel and co-operative play and the approximate ages at which they occur.",
+    "Explain the social benefits of friendships and friendship groups.",
+    "Explain the positive and negative effects of peer pressure on social development.",
+    "Describe how relationships with others develop across the life stages (family, friends, intimate and working relationships).",
+    "Explain how independence develops through peer influence in adolescence, starting employment, leaving home and starting a family."
+   ]
+  },
+  {
+   "id": "B1",
+   "title": "The nature/nurture debate related to factors",
+   "points": [
+    "Explain the nature side of the debate using Gesell's maturation theory (development unfolds in a genetically set sequence; norms and milestones).",
+    "Explain the nurture side using Bandura's social learning theory (observation, modelling, imitation, vicarious reinforcement, Bobo doll).",
+    "Explain the stress-diathesis model: a genetic vulnerability (diathesis) plus an environmental trigger (stress) leads to a condition.",
+    "Evaluate which explanation best fits a given case, recognising that both nature and nurture usually interact."
+   ]
+  },
+  {
+   "id": "B2",
+   "title": "Genetic factors that affect development",
+   "points": [
+    "Describe the genetic disorders named in the spec and their effects: cystic fibrosis, brittle bone disease, PKU, Huntington's disease, Klinefelter's syndrome, Down's syndrome, colour blindness, Duchenne muscular dystrophy.",
+    "Explain genetic susceptibility (predisposition) to diseases such as cancer, high blood cholesterol and diabetes.",
+    "Explain biological factors: foetal alcohol syndrome, effects of maternal infections (e.g. rubella) and lifestyle/diet during pregnancy.",
+    "Explain congenital defects and their possible effects across PIES."
+   ]
+  },
+  {
+   "id": "B3",
+   "title": "Environmental factors that affect development",
+   "points": [
+    "Explain how exposure to pollution is linked to respiratory disorders, cardiovascular problems and allergies.",
+    "Explain how poor housing (damp, cold, overcrowding) is linked to respiratory and cardiovascular problems, hypothermia, anxiety and depression.",
+    "Explain barriers to accessing health and social care services: transport, opening hours, and understanding the needs and requirements of services.",
+    "Apply environmental factors to a named individual and their life stage."
+   ]
+  },
+  {
+   "id": "B4",
+   "title": "Social factors that affect development",
+   "points": [
+    "Explain how family dysfunction (divorce or separation, sibling rivalry, parenting style) affects development.",
+    "Describe authoritarian, authoritative, permissive and neglectful parenting styles and likely effects.",
+    "Explain the effects of bullying on self-esteem and its links with self-harm and suicide risk.",
+    "Explain how culture, religion and belief can affect development, e.g. beliefs that may prevent medical intervention, dietary restrictions."
+   ]
+  },
+  {
+   "id": "B5",
+   "title": "Economic factors that affect development",
+   "points": [
+    "Explain how income and expenditure affect diet, housing, opportunities and stress.",
+    "Explain how employment status (employed, unemployed, retired) affects self-esteem, social contact and health.",
+    "Explain how education affects employment, income and health literacy.",
+    "Explain how lifestyle choices (diet, exercise, smoking, alcohol) are shaped by economic factors and affect development."
+   ]
+  },
+  {
+   "id": "B6",
+   "title": "Major life events that affect development",
+   "points": [
+    "Define predictable and unpredictable life events and explain that the same event can be either, depending on the life course.",
+    "Explain that any event can have positive or negative effects on health and wellbeing.",
+    "Apply PIES effects to events: starting school/nursery, moving house, marriage and divorce, starting a family, beginning employment, retirement, bereavement, accidents or injury, changing employment, leaving home, promotion or redundancy, serious illness.",
+    "Explain the Holmes-Rahe social readjustment rating scale (life change units) and how accumulated stress links to illness.",
+    "Evaluate the Holmes-Rahe scale (strengths and limitations)."
+   ]
+  },
+  {
+   "id": "C1",
+   "title": "The physical changes of ageing",
+   "points": [
+    "Explain how age increases risk of cardiovascular disease and how lifestyle can make this worse.",
+    "Explain degeneration of nervous tissue (slower reactions, reduced coordination).",
+    "Describe osteoarthritis and its effects on mobility and independence.",
+    "Explain degeneration of the sense organs (sight, hearing, taste, smell, touch) and its effects.",
+    "Explain reduced absorption of nutrients in later life.",
+    "Describe dementia, including Alzheimer's disease, and its effects across PIES.",
+    "Explain the effects of illnesses common in ageing on the individual and their family."
+   ]
+  },
+  {
+   "id": "C2",
+   "title": "The psychological changes of ageing",
+   "points": [
+    "Explain effects of ageing on confidence and self-esteem.",
+    "Explain effects of social change: role changes, loss of a partner, loss of friends, increased leisure time.",
+    "Explain financial concerns in later life.",
+    "Explain the effects of culture, religion and beliefs on the experience of ageing.",
+    "Explain social disengagement theory (Cumming and Henry) and its criticisms.",
+    "Explain activity theory (Havighurst) and compare it with disengagement theory."
+   ]
+  },
+  {
+   "id": "C3",
+   "title": "The societal effects of an ageing population",
+   "points": [
+    "Explain the demand an ageing population places on health and social care provision (e.g. residential care, domiciliary care, GP and hospital services).",
+    "Explain economic effects of an ageing population: pensions, taxation, workforce, and the positive contributions of older people (volunteering, grandparent childcare, spending).",
+    "Make justified recommendations about how services could respond to an ageing population."
+   ]
+  }
+ ],
+ "mcq": [
+  {
+   "id": "u1q01",
+   "topic": "A1",
+   "q": "Which statement best describes the difference between growth and development?",
+   "options": [
+    "Growth is the acquisition of skills; development is an increase in size",
+    "Growth and development mean the same thing",
+    "Growth is an increase in size or mass; development is the acquisition of skills and abilities",
+    "Growth only happens in infancy; development continues throughout life"
+   ],
+   "answer": 2,
+   "why": "Growth is measured using height, weight and dimensions; development follows an orderly sequence and is the gaining of skills and abilities."
+  },
+  {
+   "id": "u1q02",
+   "topic": "A1",
+   "q": "Baby Ola, aged 10 months, pulls herself up and moves around the room holding onto furniture. Which milestone is this?",
+   "options": [
+    "Cruising",
+    "Sitting unsupported",
+    "Walking",
+    "Crawling"
+   ],
+   "answer": 0,
+   "why": "Cruising is moving while holding onto furniture; it usually comes after standing with support and before independent walking."
+  },
+  {
+   "id": "u1q03",
+   "topic": "A1",
+   "q": "Which of these is a fine motor skill typically achieved in early childhood (3-8 years)?",
+   "options": [
+    "Hopping on one foot",
+    "Riding a tricycle",
+    "Running backwards",
+    "Buttoning and unbuttoning clothing"
+   ],
+   "answer": 3,
+   "why": "Fine motor skills use small muscles of the hands and fingers; the other three are gross motor skills."
+  },
+  {
+   "id": "u1q04",
+   "topic": "A1",
+   "q": "Which of the following is a secondary sexual characteristic?",
+   "options": [
+    "Production of eggs by the ovaries",
+    "Growth of facial hair in males",
+    "Production of sperm by the testes",
+    "The presence of a uterus"
+   ],
+   "answer": 1,
+   "why": "Secondary sexual characteristics develop at puberty but are not directly involved in reproduction; the others are primary characteristics."
+  },
+  {
+   "id": "u1q05",
+   "topic": "A1",
+   "q": "Perimenopause is mainly caused by:",
+   "options": [
+    "A rise in testosterone",
+    "A decrease in oestrogen levels",
+    "An increase in progesterone",
+    "A rise in growth hormone"
+   ],
+   "answer": 1,
+   "why": "Falling oestrogen causes the ovaries to stop releasing an egg each month and produces symptoms such as hot flushes and mood swings."
+  },
+  {
+   "id": "u1q06",
+   "topic": "A2",
+   "q": "Jamal, aged 4, thinks a tall thin glass holds more juice than a short wide glass, even after watching the same juice poured between them. According to Piaget, Jamal has not yet developed:",
+   "options": [
+    "Object permanence",
+    "A Language Acquisition Device",
+    "Abstract thinking",
+    "Conservation"
+   ],
+   "answer": 3,
+   "why": "Conservation is understanding that quantity stays the same when appearance changes; Piaget found it develops in the concrete operational stage (about 7-11)."
+  },
+  {
+   "id": "u1q07",
+   "topic": "A2",
+   "q": "In Piaget's theory, changing an existing schema to fit new information is called:",
+   "options": [
+    "Accommodation",
+    "Assimilation",
+    "Equilibrium",
+    "Egocentrism"
+   ],
+   "answer": 0,
+   "why": "Assimilation fits new information into an existing schema; accommodation changes the schema when the new information does not fit."
+  },
+  {
+   "id": "u1q08",
+   "topic": "A2",
+   "q": "Piaget's three mountains task was designed to test:",
+   "options": [
+    "Conservation of number",
+    "Language development",
+    "Egocentrism",
+    "Memory in later adulthood"
+   ],
+   "answer": 2,
+   "why": "Children were asked what a doll could see from a different position; pre-operational children tended to describe their own view, showing egocentrism."
+  },
+  {
+   "id": "u1q09",
+   "topic": "A2",
+   "q": "Chomsky argued that children acquire language because:",
+   "options": [
+    "They are rewarded each time they say a word correctly",
+    "They copy adults exactly",
+    "They are taught grammar rules at school",
+    "They have an innate Language Acquisition Device"
+   ],
+   "answer": 3,
+   "why": "Chomsky's nativist model proposes an inborn LAD that allows children to work out grammar from the language they hear, especially during a critical period."
+  },
+  {
+   "id": "u1q10",
+   "topic": "A2",
+   "q": "Which of these is the best evidence used to support Chomsky's idea of a critical period?",
+   "options": [
+    "Children learn words faster when praised",
+    "Children who were deprived of language until late childhood struggled to develop full grammar",
+    "Adults learn new vocabulary throughout life",
+    "Children copy the accent of their parents"
+   ],
+   "answer": 1,
+   "why": "Cases of severe language deprivation suggest grammar is hard to acquire after the critical period, supporting Chomsky's model (though such cases also involve other deprivation)."
+  },
+  {
+   "id": "u1q11",
+   "topic": "A2",
+   "q": "Which statement best describes intellectual development in early adulthood according to the spec?",
+   "options": [
+    "Thinking becomes egocentric",
+    "Abstract thought first appears",
+    "Thinking becomes realistic and pragmatic, based on expert practical knowledge",
+    "Memory starts to decline sharply"
+   ],
+   "answer": 2,
+   "why": "In early adulthood, thinking becomes realistic and pragmatic, allowing judgement about important practical matters."
+  },
+  {
+   "id": "u1q12",
+   "topic": "A3",
+   "q": "In Ainsworth's Strange Situation, a child who is very distressed when the carer leaves and both seeks and resists comfort on their return shows:",
+   "options": [
+    "Insecure-resistant attachment",
+    "Secure attachment",
+    "Insecure-avoidant attachment",
+    "Monotropy"
+   ],
+   "answer": 0,
+   "why": "Insecure-resistant (ambivalent) children show high separation distress and mixed behaviour at reunion."
+  },
+  {
+   "id": "u1q13",
+   "topic": "A3",
+   "q": "Bowlby's term for a child forming one primary attachment that is more important than all others is:",
+   "options": [
+    "Imprinting",
+    "Maturation",
+    "Monotropy",
+    "Accommodation"
+   ],
+   "answer": 2,
+   "why": "Monotropy is Bowlby's idea that infants form one special attachment, usually to the main caregiver."
+  },
+  {
+   "id": "u1q14",
+   "topic": "A3",
+   "q": "Self-esteem is best defined as:",
+   "options": [
+    "How much a person values and likes themselves",
+    "How a person sees their own physical appearance",
+    "The stage of play a child is in",
+    "How others describe a person"
+   ],
+   "answer": 0,
+   "why": "Self-esteem is the value a person places on themselves; self-image is how they see themselves; both are part of self-concept."
+  },
+  {
+   "id": "u1q15",
+   "topic": "A4",
+   "q": "Two 2-year-olds play side by side in a sandpit with their own buckets but do not interact. This is:",
+   "options": [
+    "Co-operative play",
+    "Solo play",
+    "Associative learning",
+    "Parallel play"
+   ],
+   "answer": 3,
+   "why": "Parallel play is playing alongside others without joining in, typical of around 2-3 years."
+  },
+  {
+   "id": "u1q16",
+   "topic": "A4",
+   "q": "Which is the best example of a positive effect of peer pressure in adolescence?",
+   "options": [
+    "Starting smoking to fit in",
+    "Joining a sports team because friends do, improving fitness and confidence",
+    "Skipping school with friends",
+    "Changing appearance to avoid bullying"
+   ],
+   "answer": 1,
+   "why": "Peer influence can be positive when it encourages healthy behaviour and a sense of belonging."
+  },
+  {
+   "id": "u1q17",
+   "topic": "B1",
+   "q": "Gesell's maturation theory suggests that development is mainly the result of:",
+   "options": [
+    "Observation and imitation",
+    "A genetically programmed sequence that unfolds over time",
+    "Rewards and punishments",
+    "Stressful life events"
+   ],
+   "answer": 1,
+   "why": "Gesell argued that development follows a biologically set sequence, which is why milestones and norms can be predicted."
+  },
+  {
+   "id": "u1q18",
+   "topic": "B1",
+   "q": "Ellie, 15, starts dieting after watching older girls she admires talk about weight on social media. Which theory best explains this?",
+   "options": [
+    "Gesell's maturation theory",
+    "Chomsky's LAD",
+    "Social disengagement theory",
+    "Bandura's social learning theory"
+   ],
+   "answer": 3,
+   "why": "Ellie is observing and imitating role models she identifies with, which is the core of social learning theory."
+  },
+  {
+   "id": "u1q19",
+   "topic": "B1",
+   "q": "The stress-diathesis model explains that some conditions develop when:",
+   "options": [
+    "A genetic vulnerability is triggered by environmental stress",
+    "A person inherits two recessive alleles",
+    "A child misses a critical period",
+    "A person has too many life change units"
+   ],
+   "answer": 0,
+   "why": "Diathesis is the inherited predisposition; stress is the environmental trigger; both are needed, linking nature and nurture."
+  },
+  {
+   "id": "u1q20",
+   "topic": "B2",
+   "q": "Phenylketonuria (PKU) is managed mainly by:",
+   "options": [
+    "Regular physiotherapy",
+    "Insulin injections",
+    "A low-protein diet that limits phenylalanine",
+    "Avoiding sunlight"
+   ],
+   "answer": 2,
+   "why": "People with PKU cannot break down phenylalanine; a restricted diet from birth helps prevent damage to brain development."
+  },
+  {
+   "id": "u1q21",
+   "topic": "B2",
+   "q": "Klinefelter's syndrome affects males who have:",
+   "options": [
+    "An extra copy of chromosome 21",
+    "A faulty CFTR gene",
+    "Only one X chromosome",
+    "An extra X chromosome (XXY)"
+   ],
+   "answer": 3,
+   "why": "Klinefelter's syndrome is a chromosome disorder in males with an extra X chromosome."
+  },
+  {
+   "id": "u1q22",
+   "topic": "B2",
+   "q": "Foetal alcohol syndrome is best classed as which kind of factor?",
+   "options": [
+    "A genetic disorder",
+    "A biological factor during pregnancy",
+    "An economic factor",
+    "A predictable life event"
+   ],
+   "answer": 1,
+   "why": "It is not inherited; it results from the mother's alcohol consumption affecting the developing foetus."
+  },
+  {
+   "id": "u1q23",
+   "topic": "B3",
+   "q": "Mr Hughes lives in a damp, poorly heated flat. Which combination of effects is most directly linked to his housing?",
+   "options": [
+    "Colour blindness and osteoarthritis",
+    "Down's syndrome and dementia",
+    "Respiratory disorders and risk of hypothermia",
+    "Increased fine motor skills"
+   ],
+   "answer": 2,
+   "why": "Damp and cold housing is linked to respiratory problems, cardiovascular strain, hypothermia, anxiety and depression."
+  },
+  {
+   "id": "u1q24",
+   "topic": "B3",
+   "q": "Which is an example of a barrier to accessing health and social care services named in the spec?",
+   "options": [
+    "Limited opening hours of services",
+    "Genetic predisposition",
+    "Parallel play",
+    "Menopause"
+   ],
+   "answer": 0,
+   "why": "Availability of transport, opening hours and understanding service requirements are listed as access factors."
+  },
+  {
+   "id": "u1q25",
+   "topic": "B4",
+   "q": "A parenting style with high warmth and clear, reasoned boundaries is called:",
+   "options": [
+    "Authoritarian",
+    "Permissive",
+    "Authoritative",
+    "Neglectful"
+   ],
+   "answer": 2,
+   "why": "Authoritative parenting combines warmth with consistent boundaries and is usually linked with higher self-esteem."
+  },
+  {
+   "id": "u1q26",
+   "topic": "B4",
+   "q": "A family's religious beliefs mean they refuse a blood transfusion for themselves. This is an example of:",
+   "options": [
+    "A belief that may prevent medical intervention",
+    "An economic factor",
+    "Family dysfunction",
+    "An unpredictable life event"
+   ],
+   "answer": 0,
+   "why": "The spec lists effects of culture, religion and belief, including beliefs that may prevent medical intervention."
+  },
+  {
+   "id": "u1q27",
+   "topic": "B5",
+   "q": "Which is the most likely chain of effects of long-term unemployment?",
+   "options": [
+    "Higher income, then better housing",
+    "Improved fine motor skills",
+    "Earlier puberty",
+    "Lower income, then poorer diet and housing, then lower self-esteem and poorer health"
+   ],
+   "answer": 3,
+   "why": "Economic factors interact: loss of income affects diet, housing and stress, which affect physical and emotional health."
+  },
+  {
+   "id": "u1q28",
+   "topic": "B6",
+   "q": "For most people, which of these is a predictable life event?",
+   "options": [
+    "Being made redundant",
+    "Starting school",
+    "A serious car accident",
+    "Sudden death of a friend"
+   ],
+   "answer": 1,
+   "why": "Starting school is expected at a particular age, though any event can be predictable or unpredictable depending on the life course."
+  },
+  {
+   "id": "u1q29",
+   "topic": "B6",
+   "q": "The Holmes-Rahe social readjustment rating scale measures:",
+   "options": [
+    "Intelligence at different ages",
+    "Stress from life events using life change units",
+    "Stages of play",
+    "Bone density in later life"
+   ],
+   "answer": 1,
+   "why": "Each life event has a life change unit score; a higher total over a year is linked with a greater risk of stress-related illness."
+  },
+  {
+   "id": "u1q30",
+   "topic": "B6",
+   "q": "Which is a valid limitation of the Holmes-Rahe scale?",
+   "options": [
+    "It does not include any life events",
+    "It only applies to children",
+    "It measures genetic disorders",
+    "It assumes an event affects everyone in the same way, ignoring individual perception and support"
+   ],
+   "answer": 3,
+   "why": "The same event (e.g. divorce) may be a relief for one person and devastating for another; the scale does not capture this."
+  },
+  {
+   "id": "u1q31",
+   "topic": "C1",
+   "q": "Osteoarthritis is best described as:",
+   "options": [
+    "Degeneration of joint cartilage causing pain and stiffness",
+    "A genetic disorder of the lungs",
+    "Loss of nerve cells in the brain",
+    "A deficiency of insulin"
+   ],
+   "answer": 0,
+   "why": "Osteoarthritis is wear and degeneration of cartilage in joints, reducing mobility and independence."
+  },
+  {
+   "id": "u1q32",
+   "topic": "C1",
+   "q": "Why might an older adult be at greater risk of malnutrition even with a normal diet?",
+   "options": [
+    "Increased absorption of nutrients",
+    "Faster metabolism",
+    "Reduced absorption of nutrients from the digestive system",
+    "Growth spurts"
+   ],
+   "answer": 2,
+   "why": "The spec lists reduced absorption of nutrients as a physical change of ageing."
+  },
+  {
+   "id": "u1q33",
+   "topic": "C2",
+   "q": "Social disengagement theory suggests that in later adulthood:",
+   "options": [
+    "Older people should stay as active as possible",
+    "Older people develop formal operational thought",
+    "Retirement always improves wellbeing",
+    "Older people and society naturally withdraw from each other"
+   ],
+   "answer": 3,
+   "why": "Cumming and Henry proposed mutual withdrawal; it has been criticised for ignoring the many older people who want to stay involved."
+  },
+  {
+   "id": "u1q34",
+   "topic": "C2",
+   "q": "Margaret, 72, volunteers at a charity shop and joins a walking group after retiring. Her wellbeing has improved. This best supports:",
+   "options": [
+    "Disengagement theory",
+    "Activity theory",
+    "Gesell's maturation theory",
+    "Chomsky's critical period"
+   ],
+   "answer": 1,
+   "why": "Activity theory argues older people stay happier and healthier by keeping roles and social contacts."
+  },
+  {
+   "id": "u1q35",
+   "topic": "C3",
+   "q": "Which is an economic effect of an ageing population?",
+   "options": [
+    "More children starting school",
+    "Fewer people needing GP services",
+    "Increased spending on pensions and care services",
+    "Lower demand for domiciliary care"
+   ],
+   "answer": 2,
+   "why": "More older people increases demand for pensions, health care and social care, while the proportion of working-age taxpayers may fall."
+  },
+  {
+   "id": "u1q36",
+   "topic": "C3",
+   "q": "Which is a positive contribution an ageing population can make to society?",
+   "options": [
+    "Providing informal childcare for grandchildren and volunteering",
+    "Reduced need for care",
+    "Higher birth rates",
+    "Lower life expectancy"
+   ],
+   "answer": 0,
+   "why": "Older people contribute through informal care, volunteering and spending; good answers balance costs against these benefits."
+  }
+ ],
+ "long": [
+  {
+   "id": "u1l01",
+   "topic": "B1",
+   "marks": 10,
+   "command": "Evaluate",
+   "context": "Daniel is 34. His father and grandfather both had depression. Daniel was made redundant six months ago and his relationship has recently ended. He has been diagnosed with depression.",
+   "q": "Evaluate the extent to which the stress-diathesis model can explain Daniel's depression.",
+   "markingPoints": [
+    "Defines the stress-diathesis model: an inherited vulnerability (diathesis) combined with environmental stress triggers the condition.",
+    "Identifies the diathesis in Daniel's case: family history of depression in father and grandfather suggests a genetic predisposition.",
+    "Identifies the stressors: redundancy (economic factor/unpredictable life event) and relationship breakdown.",
+    "Explains why neither factor alone may be sufficient: many people are made redundant without becoming depressed.",
+    "Strength: the model combines nature and nurture, so it is more complete than purely genetic or purely environmental explanations.",
+    "Strength: it explains why not everyone with a family history develops depression.",
+    "Limitation: family history could reflect shared environment or learned behaviour (social learning) rather than genes.",
+    "Limitation: hard to measure the size of the diathesis or how much stress is 'enough'.",
+    "Links to Holmes-Rahe: redundancy and separation both carry high life change scores, increasing stress.",
+    "Supported conclusion about how far the model explains Daniel's depression."
+   ],
+   "dHallmarks": [
+    "Applies every point to Daniel rather than describing the model in general terms.",
+    "Considers an alternative explanation (e.g. Bandura's social learning from his father's behaviour) and weighs it.",
+    "Uses precise terms (diathesis, predisposition, trigger, interaction).",
+    "Reaches a clear, qualified judgement, e.g. 'to a large extent, but...'."
+   ],
+   "model": "The stress-diathesis model proposes that a condition develops when an inherited vulnerability (the diathesis) is triggered by environmental stress. Daniel's family history of depression in both his father and grandfather suggests he may carry a genetic predisposition. However, he did not become depressed until he faced two major stressors in a short time: redundancy and the end of his relationship. On the Holmes-Rahe scale both events carry high life change scores, so the combined stress was considerable. The model therefore fits Daniel well because it explains why the depression appeared at this point in his life and not earlier. A key strength is that it combines nature and nurture, avoiding the oversimplification of purely genetic explanations, and it explains why many people with a family history never develop depression. However, the 'diathesis' may not be purely genetic. Daniel may have learned ways of coping, or not coping, by observing his father, which Bandura's social learning theory would explain as modelling. The model also cannot tell us how strong the predisposition is or how much stress is needed, so it is hard to test or use to predict risk. Overall, the stress-diathesis model explains Daniel's depression to a large extent because the timing links clearly to his stressors and his family history suggests vulnerability, but it should be combined with social learning theory to account for learned responses within the family."
+  },
+  {
+   "id": "u1l02",
+   "topic": "A2",
+   "marks": 10,
+   "command": "Evaluate",
+   "context": "Priya is 5. Her teacher notices that she insists her friend has 'more' sweets when the friend's sweets are spread out in a long line, even though both have six. Priya also describes a picture only from her own point of view.",
+   "q": "Evaluate how far Piaget's model of cognitive development can explain Priya's thinking.",
+   "markingPoints": [
+    "Identifies Priya is in the pre-operational stage (approx. 2-7 years).",
+    "Explains failure of conservation of number: she judges by appearance (length of line) rather than quantity.",
+    "Explains egocentrism: she sees the picture only from her own viewpoint (three mountains task).",
+    "Explains schemas: her schema of 'more' is based on how things look; accommodation will occur as she meets contradicting experience.",
+    "Strength: Piaget's model accurately predicts these typical behaviours; based on observation of children.",
+    "Limitation: later research suggests children can conserve earlier when tasks are made more child-friendly or meaningful (e.g. 'naughty teddy' type variations).",
+    "Limitation: stages may be too rigid; development is more gradual and varies between children.",
+    "Limitation: underplays the role of language and social interaction in learning.",
+    "Supported judgement on extent."
+   ],
+   "dHallmarks": [
+    "Uses Priya's behaviour as evidence for each stage feature.",
+    "Includes balanced criticism with reasons, not just a list.",
+    "Links to wider factors (e.g. language, adult support, school environment).",
+    "Clear conclusion that answers 'how far'."
+   ],
+   "model": "Priya's behaviour fits Piaget's pre-operational stage (roughly 2 to 7 years). She cannot yet conserve number: when her friend's six sweets are spread out, she judges by the length of the line rather than the quantity, showing her thinking is dominated by appearance. She also shows egocentrism by describing the picture only from her own viewpoint, which mirrors children's responses in Piaget's three mountains task. Piaget would explain that Priya's schema for 'more' is currently based on how things look; through experiences that contradict this, she will accommodate her schema and reach equilibrium, usually by the concrete operational stage. A strength of the model is that it predicts these common behaviours well and gives teachers a framework for planning practical, hands-on learning. However, researchers have since shown that when conservation tasks are made more meaningful to children, some younger children succeed, which suggests Piaget may have underestimated their ability and that the wording of his tasks confused them. His stages may also be too rigid, as children develop at different rates and may show skills from more than one stage. Piaget also gave less weight to language and support from adults, which are likely to help Priya progress. Overall, Piaget's model explains Priya's thinking to a large extent because her behaviour matches the pre-operational stage closely, but it may underestimate what she can achieve with suitable support."
+  },
+  {
+   "id": "u1l03",
+   "topic": "B6",
+   "marks": 12,
+   "command": "To what extent",
+   "context": "Gerald, 67, retired from his job as a bus driver last year. Three months later his wife died suddenly. He has stopped attending his social club and his daughter says he is eating poorly and seems confused at times.",
+   "q": "To what extent have life events affected Gerald's health and wellbeing? Refer to theories in your answer.",
+   "markingPoints": [
+    "Retirement: predictable event; loss of role, routine, income and social contact; possible effects on self-esteem.",
+    "Bereavement: unpredictable event; grief, loneliness, emotional distress.",
+    "Holmes-Rahe: death of spouse is the highest-scoring event; combined with retirement gives high life change units and higher risk of illness.",
+    "Physical effects: poor diet; risk of weight loss and malnutrition, also reduced absorption of nutrients with age.",
+    "Intellectual: confusion may be linked to depression, poor nutrition or early dementia; needs assessment.",
+    "Social: withdrawal from social club; isolation.",
+    "Disengagement theory would see withdrawal as natural; activity theory would see it as harmful and recommend re-engagement.",
+    "Evaluates theories: disengagement criticised for ignoring individual choice; activity theory may not suit everyone.",
+    "Positive possibilities: retirement can give leisure time; support from daughter.",
+    "Recommendations, e.g. bereavement support, GP check, befriending or community groups.",
+    "Supported conclusion on extent."
+   ],
+   "dHallmarks": [
+    "Makes links between PIES areas (e.g. grief leads to poor diet which may worsen confusion).",
+    "Compares two theories and judges which better fits Gerald.",
+    "Makes justified recommendations, as the Distinction descriptor requires.",
+    "Recognises other possible causes (ageing, illness) and so qualifies the judgement."
+   ],
+   "model": "Gerald has experienced two major life events in a short time. Retirement was predictable, but it removed his work role, daily routine, social contact with colleagues and some income. His wife's sudden death was unpredictable and is the highest-scoring event on the Holmes-Rahe social readjustment rating scale, so together these events give him a very high life change score and an increased risk of stress-related illness. The effects are visible across PIES. Emotionally he is likely to be grieving and lonely, and his self-esteem may be low after losing both his role as a worker and as a husband. Socially, he has stopped going to his club, increasing isolation. Physically, poor eating puts him at risk of malnutrition, especially as nutrient absorption reduces with age. His confusion may be intellectual decline, but it could also be linked to depression or poor nutrition, so it should not be assumed to be dementia. Disengagement theory would describe his withdrawal as a natural part of ageing, but this ignores the clear link to bereavement and the evidence that isolation harms health. Activity theory better fits Gerald, as it suggests that keeping roles and social contacts protects wellbeing, although it assumes all older people want to stay active. Not all effects are caused by the events: ageing itself may contribute to his confusion. I would recommend a GP review to rule out physical causes, bereavement support and encouraging him to return to his club or a befriending service. Overall, life events have affected Gerald's health and wellbeing to a great extent because the timing and pattern of changes link closely to retirement and bereavement, but ageing-related factors should also be assessed."
+  },
+  {
+   "id": "u1l04",
+   "topic": "B3",
+   "marks": 10,
+   "command": "Discuss",
+   "context": "The Okafor family (two parents and three children aged 2, 6 and 11) live in a small, overcrowded flat next to a busy main road. The flat has mould in the bedrooms. The nearest GP surgery is two bus rides away and is only open during working hours.",
+   "q": "Discuss how environmental factors may affect the growth and development of the Okafor children.",
+   "markingPoints": [
+    "Pollution from the main road: risk of respiratory disorders such as asthma, and allergies.",
+    "Damp and mould: respiratory disorders; worsening asthma; possible time off school.",
+    "Overcrowding: lack of space to play or study, affecting gross motor development and intellectual development of the 6- and 11-year-olds.",
+    "Overcrowding and poor housing linked to stress, anxiety and depression in parents and children; may affect attachment and family relationships.",
+    "Access to services: transport and opening hours mean appointments may be missed; health checks and immunisations delayed.",
+    "Different effects at different life stages: the 2-year-old is more vulnerable to respiratory illness; the 11-year-old may feel embarrassed and have lower self-esteem.",
+    "Interaction with economic factors: family may lack income to move or heat the home.",
+    "Considers that supportive family relationships can protect against some effects."
+   ],
+   "dHallmarks": [
+    "Considers how the factors interrelate (e.g. illness plus poor access means problems are not treated).",
+    "Distinguishes effects by each child's life stage.",
+    "Weighs importance: which factor is likely to have the greatest effect and why.",
+    "Uses PIES consistently."
+   ],
+   "model": "The Okafor children are exposed to several environmental factors that interact. Living by a busy road exposes them to air pollution, which is linked to respiratory disorders such as asthma and to allergies. Damp and mould in the bedrooms add to this risk, so the youngest child, aged 2, is particularly vulnerable because young children's airways are still developing. Repeated illness may lead to the 6- and 11-year-olds missing school, affecting their intellectual development. Overcrowding limits space to play, which may restrict the toddler's gross motor practice, and leaves the older children without a quiet place to study. Poor housing is also linked to anxiety and depression; stressed parents may have less time and patience, which could affect emotional development and relationships within the family. The 11-year-old may feel embarrassed about the home, lowering self-esteem and affecting friendships. These problems are made worse by poor access to services: two bus rides and opening hours that clash with work make it harder to attend appointments, so respiratory problems may go untreated and developmental checks or immunisations may be missed. The factors are therefore not separate; poor housing creates ill health and poor access prevents it being treated, which is likely to have the greatest overall effect. However, a warm, supportive family can protect the children's emotional development to some degree, so the effects will vary between the three children."
+  },
+  {
+   "id": "u1l05",
+   "topic": "A3",
+   "marks": 10,
+   "command": "Evaluate",
+   "context": "Leo is 3 and has spent the last year in foster care after being removed from his birth mother, who was unable to care for him consistently. His foster carer says he is wary of adults and rarely seeks comfort when upset.",
+   "q": "Evaluate how theories of attachment can help explain Leo's emotional development.",
+   "markingPoints": [
+    "Bowlby: monotropy and a critical period in the first years; disruption may harm later emotional development.",
+    "Internal working model: Leo may expect adults to be unreliable.",
+    "Ainsworth: behaviour suggests insecure-avoidant attachment (does not seek comfort, wary).",
+    "Disruption to attachment: inconsistent early care and separation.",
+    "Effects: possible low self-esteem, difficulty forming relationships, anxiety.",
+    "Strength: theories help professionals understand and plan support.",
+    "Limitation: Bowlby's critical period may be too strict; children can form secure attachments later with sensitive care (sensitive period).",
+    "Limitation: temperament and other factors also matter; Strange Situation may not reflect all cultures.",
+    "Recommendation: consistent, sensitive foster care can help Leo form a secure attachment.",
+    "Supported judgement."
+   ],
+   "dHallmarks": [
+    "Applies theory concepts to Leo's specific behaviour.",
+    "Challenges the deterministic view and offers a more hopeful alternative with reasons.",
+    "Gives a justified recommendation.",
+    "Concludes with a clear judgement on usefulness."
+   ],
+   "model": "Bowlby argued that infants form one main attachment (monotropy) during a critical period in the first years, and that this creates an internal working model for future relationships. Leo experienced inconsistent care from his birth mother and then separation, so he may have developed an internal working model that adults cannot be relied on, which explains why he is wary of adults. Ainsworth's Strange Situation identified attachment types; Leo's lack of comfort-seeking when upset suggests an insecure-avoidant pattern. These theories are useful because they help Leo's foster carer and social worker understand that his behaviour is a response to early experiences, not 'naughtiness', and they predict risks to his self-esteem and future relationships. However, Bowlby's critical period has been criticised as too rigid; many children form secure attachments later when they receive consistent, sensitive care, so it may be better described as a sensitive period. Attachment types may also be influenced by Leo's temperament, and the Strange Situation was developed in one culture, so it may not apply equally to all children. The theories also say less about how other relationships, such as with siblings or key workers, can support development. Overall, attachment theories are very useful for explaining Leo's current emotional behaviour, but they should not be used to predict a fixed future. A consistent foster carer who responds sensitively is likely to help Leo develop a more secure attachment."
+  },
+  {
+   "id": "u1l06",
+   "topic": "C3",
+   "marks": 12,
+   "command": "To what extent",
+   "context": "A local council report notes that the number of residents aged 85 and over in its area is rising. Many live alone and some have long-term conditions such as osteoarthritis and dementia.",
+   "q": "To what extent is an ageing population a challenge for health and social care provision?",
+   "markingPoints": [
+    "Increased demand for GP, hospital and community health services due to long-term conditions.",
+    "Increased demand for domiciliary care and residential care, especially for people with dementia living alone.",
+    "Economic effects: higher spending on pensions, health and care; possibly fewer working-age taxpayers relative to older people.",
+    "Workforce pressures: need for more trained carers and specialist staff.",
+    "Physical changes of ageing (osteoarthritis, sensory decline, dementia) increase need for adaptations and support.",
+    "Psychological effects such as isolation increase need for social care and community support.",
+    "Counter-argument: many older people are healthy, independent and contribute (volunteering, childcare, spending, working longer).",
+    "Counter-argument: preventive services and technology (telecare) can reduce demand.",
+    "Recommendations for services.",
+    "Supported conclusion on extent."
+   ],
+   "dHallmarks": [
+    "Balances challenge against contribution and opportunity.",
+    "Links effects of ageing (C1/C2) to societal demand (C3).",
+    "Makes justified recommendations.",
+    "Final judgement is qualified and clearly argued."
+   ],
+   "model": "An ageing population is a significant challenge because older people are more likely to have long-term conditions. Osteoarthritis reduces mobility, and dementia, including Alzheimer's disease, increases dependence on others, so demand rises for GP appointments, hospital care, domiciliary care and residential places. People aged 85 and over who live alone are especially likely to need care at home and are at risk of isolation, which links to low self-esteem and poorer mental health. Economically, more spending is needed on pensions and care, and if the proportion of working-age adults falls, there are fewer taxpayers to fund services. There is also pressure on the workforce, as more trained carers and specialist dementia staff are needed. However, it would be wrong to see older people only as a cost. Many remain healthy and independent, continue working, volunteer, provide childcare for grandchildren and contribute through spending, which supports the economy and families. Activity theory suggests that keeping older people engaged also protects their health, reducing demand. Preventive services, falls prevention, adaptations and telecare can help people stay at home longer, which is cheaper and preferred by most service users. I would recommend that the council invests in prevention, community groups and support for unpaid carers. Overall, an ageing population is a challenge to a large extent, particularly for dementia and domiciliary care, but the size of the challenge depends on how well services invest in prevention and value the contribution of older people."
+  }
+ ],
+ "commandWords": [
+  {
+   "word": "Identify",
+   "means": "Point out the main features or purpose of something, or pick out facts.",
+   "doThis": "Give a short, precise answer with no explanation needed. Usually 1-2 marks; one valid point per mark."
+  },
+  {
+   "word": "Which",
+   "means": "Specify one or more items from a definite set.",
+   "doThis": "Choose the correct item(s) from the options or scenario. Usually 1 mark."
+  },
+  {
+   "word": "Outline",
+   "means": "Give a summary, overview or brief description.",
+   "doThis": "Short points in sentences, no detailed reasons. Often 2-4 marks."
+  },
+  {
+   "word": "Describe",
+   "means": "Give a clear, objective account in your own words, showing recall and sometimes application.",
+   "doThis": "Say what something is or what happens, applied to the person in the scenario. Develop each point with detail. Usually 2-6 marks."
+  },
+  {
+   "word": "Explain",
+   "means": "Show understanding of origins, functions or purpose, giving reasons with clear details.",
+   "doThis": "Point + 'because/this means that' + link to the case. Roughly two marks per developed point. Usually 2-6 marks."
+  },
+  {
+   "word": "Discuss",
+   "means": "Consider different aspects of a topic, how they interrelate and how important they are.",
+   "doThis": "Cover several factors or effects, show how they link to each other, and weigh which matter most. A conclusion is helpful but not required. Often 10-12 marks."
+  },
+  {
+   "word": "Evaluate",
+   "means": "Draw on varied information, themes or concepts to consider strengths, weaknesses, alternatives and significance.",
+   "doThis": "Apply a theory or factor to the case, give strengths AND limitations, consider an alternative explanation, and finish with a supported judgement. Usually 10-12 marks."
+  },
+  {
+   "word": "Justify",
+   "means": "Give reasons or evidence to support an opinion or prove something right or reasonable.",
+   "doThis": "State your choice or recommendation, then back it with evidence from the case and theory; say why it is better than alternatives."
+  },
+  {
+   "word": "To what extent",
+   "means": "Give clear details and reasons/evidence to support a view, showing how a conclusion is reached.",
+   "doThis": "Argue both sides (how far it is true and how far it is not), then give a clear judgement such as 'to a large extent, because...'. Usually 10-12 marks."
+  }
+ ],
+ "theories": [
+  {
+   "name": "Piaget's model of cognitive development",
+   "area": "A2",
+   "summary": "Children actively build understanding through schemas and pass through four fixed stages: sensorimotor (0-2), pre-operational (2-7), concrete operational (7-11) and formal operational (11+). Each stage has typical abilities and limitations, such as egocentrism and lack of conservation in the pre-operational stage.",
+   "keyTerms": [
+    "schema",
+    "assimilation",
+    "accommodation",
+    "equilibrium",
+    "conservation",
+    "egocentrism",
+    "object permanence",
+    "three mountains task"
+   ],
+   "strengths": [
+    "Based on detailed observation of children and widely used in education",
+    "Explains many typical behaviours, e.g. failing conservation tasks",
+    "Sees children as active learners, which supports hands-on learning"
+   ],
+   "limitations": [
+    "Later research suggests children can show abilities earlier when tasks are made more meaningful",
+    "Stages may be too rigid; development varies between children",
+    "Underplays the role of language, culture and social interaction"
+   ],
+   "applyTo": "Identify the child's stage from their age and behaviour, use the scenario as evidence (e.g. judging by appearance = no conservation), then evaluate whether the child might do better with support or more familiar tasks."
+  },
+  {
+   "name": "Chomsky's model of language acquisition",
+   "area": "A2",
+   "summary": "Children are born with an innate Language Acquisition Device (LAD) that allows them to work out the rules of grammar from the language they hear. There is a critical period in childhood during which language is learned most easily.",
+   "keyTerms": [
+    "Language Acquisition Device (LAD)",
+    "critical period",
+    "universal grammar",
+    "nativist"
+   ],
+   "strengths": [
+    "Explains how children learn complex grammar quickly and in a similar sequence across cultures",
+    "Explains 'virtuous errors' such as 'I goed', which children have not heard from adults",
+    "Supported by cases of language deprivation after the critical period"
+   ],
+   "limitations": [
+    "The LAD has not been located in the brain, so it is hard to test",
+    "Underplays the role of interaction and adult input in language learning",
+    "Deprivation cases involve many other harmful factors, so they are not clear evidence"
+   ],
+   "applyTo": "Use it to explain why a young child in the scenario is developing language rapidly or why late exposure has caused difficulties; contrast with nurture explanations such as social learning."
+  },
+  {
+   "name": "Attachment theory (Bowlby; Ainsworth)",
+   "area": "A3",
+   "summary": "Bowlby argued infants form one main attachment (monotropy) in a critical period, creating an internal working model for later relationships. Ainsworth's Strange Situation identified secure, insecure-avoidant and insecure-resistant attachment types.",
+   "keyTerms": [
+    "monotropy",
+    "critical period",
+    "internal working model",
+    "maternal deprivation",
+    "Strange Situation",
+    "secure",
+    "insecure-avoidant",
+    "insecure-resistant"
+   ],
+   "strengths": [
+    "Has shaped practice, e.g. key person systems and keeping children with carers in hospital",
+    "Explains the effects of disruption, separation and inconsistent care",
+    "Ainsworth's method is standardised and allows comparison"
+   ],
+   "limitations": [
+    "Critical period may be too rigid; secure attachments can form later",
+    "Ignores multiple attachments, e.g. fathers, grandparents, siblings",
+    "Strange Situation may be culturally biased; temperament may also explain behaviour"
+   ],
+   "applyTo": "Use for scenarios about early care, separation, foster care or nursery. Link attachment type to emotional effects (self-esteem, trust), then challenge determinism and recommend consistent sensitive care."
+  },
+  {
+   "name": "Gesell's maturation theory",
+   "area": "B1",
+   "summary": "Development is mainly genetically programmed and unfolds in a fixed sequence, regardless of environment. Gesell produced norms (milestones) for when skills usually appear.",
+   "keyTerms": [
+    "maturation",
+    "norms",
+    "milestones",
+    "nature"
+   ],
+   "strengths": [
+    "Explains why development follows a predictable sequence",
+    "Milestones are used in developmental checks to spot delay early"
+   ],
+   "limitations": [
+    "Underplays environmental effects such as nutrition, stimulation and poverty",
+    "Norms were based on a narrow sample and may not reflect all children",
+    "Can lead to labelling children who develop at a different rate"
+   ],
+   "applyTo": "Use as the 'nature' side of a nature/nurture argument, e.g. for motor milestones, then evaluate by showing how environment can speed up or delay them."
+  },
+  {
+   "name": "Bandura's social learning theory",
+   "area": "B1",
+   "summary": "People learn behaviour by observing and imitating role models, especially those they identify with, and by seeing others rewarded (vicarious reinforcement). Demonstrated in the Bobo doll study.",
+   "keyTerms": [
+    "observation",
+    "modelling",
+    "imitation",
+    "role model",
+    "vicarious reinforcement",
+    "Bobo doll"
+   ],
+   "strengths": [
+    "Explains the influence of family, peers and media on behaviour",
+    "Supports health promotion through positive role models",
+    "Supported by experimental evidence"
+   ],
+   "limitations": [
+    "Ignores biological and genetic influences",
+    "Bobo doll study was artificial and used children only",
+    "Does not explain why some people do not imitate behaviour they see"
+   ],
+   "applyTo": "Use as the 'nurture' explanation for health behaviours (smoking, diet, aggression) learned from parents or peers in the scenario."
+  },
+  {
+   "name": "Stress-diathesis model",
+   "area": "B1",
+   "summary": "A condition develops when an inherited vulnerability (diathesis) is triggered by environmental stress. It shows how nature and nurture interact.",
+   "keyTerms": [
+    "diathesis",
+    "predisposition",
+    "trigger",
+    "interaction"
+   ],
+   "strengths": [
+    "Combines nature and nurture, so it is more complete",
+    "Explains why not everyone with a family history develops a condition",
+    "Useful for mental health conditions such as depression"
+   ],
+   "limitations": [
+    "Hard to measure the size of the vulnerability or the stress",
+    "Family patterns could be learned rather than inherited",
+    "Difficult to use to predict who will become ill"
+   ],
+   "applyTo": "Ideal for 10-12 mark questions about conditions with a family history plus a recent stressor. Name the diathesis and the stress from the case, then evaluate."
+  },
+  {
+   "name": "Holmes-Rahe social readjustment rating scale",
+   "area": "B6",
+   "summary": "A list of 43 life events, each scored in life change units according to how much readjustment it needs. A high total over a year is linked to a higher risk of stress-related illness.",
+   "keyTerms": [
+    "life change units",
+    "stress",
+    "readjustment",
+    "life events"
+   ],
+   "strengths": [
+    "Gives a simple way to measure and compare stress from life events",
+    "Supports the link between life events and illness",
+    "Includes positive events (e.g. marriage), showing change itself is stressful"
+   ],
+   "limitations": [
+    "Assumes events affect everyone the same way; ignores perception and coping",
+    "Ignores support networks that protect against stress",
+    "Correlation does not prove life events cause illness; some events are outdated"
+   ],
+   "applyTo": "Use when a person has several life events close together; say which events score highly, then evaluate by considering their support and personal response."
+  },
+  {
+   "name": "Social disengagement theory",
+   "area": "C2",
+   "summary": "Cumming and Henry proposed that older people and society naturally withdraw from each other as people age, which is seen as normal and mutually beneficial.",
+   "keyTerms": [
+    "withdrawal",
+    "role loss",
+    "mutual disengagement"
+   ],
+   "strengths": [
+    "Describes a pattern seen in some older people, e.g. after retirement or bereavement",
+    "Recognises that roles change in later life"
+   ],
+   "limitations": [
+    "Ignores the many older people who want to remain active",
+    "Withdrawal may be caused by barriers (ill health, money, transport) rather than choice",
+    "Can justify neglect or poor services for older people"
+   ],
+   "applyTo": "Use to describe an older person's withdrawal, then critique it using activity theory and the evidence that isolation harms health."
+  },
+  {
+   "name": "Activity theory",
+   "area": "C2",
+   "summary": "Havighurst argued that older people stay happier and healthier when they keep active and maintain roles, relationships and social contact, replacing lost roles with new ones.",
+   "keyTerms": [
+    "role replacement",
+    "social participation",
+    "successful ageing"
+   ],
+   "strengths": [
+    "Supported by links between social participation and better wellbeing",
+    "Encourages services such as day centres, volunteering and exercise groups"
+   ],
+   "limitations": [
+    "Not everyone wants or is able to stay active, e.g. due to illness or poverty",
+    "May ignore cultural differences in expectations of later life",
+    "Can put pressure on older people to stay busy"
+   ],
+   "applyTo": "Use to recommend re-engagement for an isolated older person in the case; balance by noting their health, preferences and resources."
+  }
+ ]
+}

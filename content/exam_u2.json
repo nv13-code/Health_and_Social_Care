@@ -1,0 +1,884 @@
+{
+ "unit": 2,
+ "title": "Working in Health and Social Care",
+ "format": {
+  "marks": 80,
+  "time": "1 hour 30 minutes",
+  "summary": "One written examination of 80 marks lasting 1 hour 30 minutes. The paper has four sections. Each section is based on a different short scenario describing a person with health and social care needs, and each scenario relates to a different service user group. Within each section, questions are worth 2, 4, 6 and 8 marks: 2-mark 'identify' questions (AO1 knowledge), 4-mark 'describe' questions (AO2 understanding), 6-mark 'explain' questions (AO3 analysis of roles, organisations, monitoring and regulation) and 8-mark 'discuss' questions (AO4 making connections, including multidisciplinary working). Available in January and May/June.",
+  "tips": [
+   "Each section is worth 20 marks (2+4+6+8). With 90 minutes for 80 marks, aim for about 20 minutes per section and keep roughly 10 minutes to check.",
+   "Read the whole scenario before the first question; the 8-mark question usually builds on details from the earlier ones.",
+   "2-mark 'identify': two short, distinct, relevant points. No explanation needed, so do not waste time.",
+   "4-mark 'describe': two developed points, or four clear features, each applied to the person in the scenario.",
+   "6-mark 'explain': three points each with a reason ('because...', 'this means...'), linked to the specific worker, organisation or regulation.",
+   "8-mark 'discuss': consider several aspects (e.g. different professionals, benefits and difficulties), show how they interrelate and weigh their importance. A short concluding judgement helps you reach the top band.",
+   "Name real roles, organisations, regulators and legislation accurately (e.g. CQC, NMC, Care Act 2014). Precise vocabulary is what separates Distinction answers from generic ones."
+  ]
+ },
+ "dDescriptor": "Learners demonstrate a thorough understanding of the roles and responsibilities of people who work in health and social care settings and the influence of organisations, in context. They can justify recommendations related to an employee's specific responsibilities, or multidisciplinary activities, but understand the organisational context in which those employees and teams operate. They can evaluate the impact and effectiveness of services in meeting the needs of different service users, and how monitoring and codes of practice impact on the work of employees within health and social care settings. Learners can analyse service user requirements in context and provide justified recommendations for service delivery for a variety of different service user groups underpinned by health and social care concepts and principles.",
+ "topics": [
+  {
+   "id": "A1",
+   "title": "The roles of people who work in health and social care settings",
+   "points": [
+    "Describe the role of a doctor (e.g. GP, hospital doctor): diagnosis, treatment, prescribing, referral.",
+    "Describe the role of a nurse (adult, children's, mental health, learning disability) and a midwife (care before, during and after birth).",
+    "Describe the role of a healthcare assistant and how it supports registered nurses.",
+    "Describe the role of a social worker: assessment, safeguarding, care and support planning, advocacy.",
+    "Describe the role of an occupational therapist: helping people carry out daily activities, equipment and adaptations.",
+    "Describe the role of a youth worker in supporting young people's personal and social development.",
+    "Describe the roles of care managers/assistants and support workers in residential, day and domiciliary settings.",
+    "Match the right professional to the needs of a person in a scenario."
+   ]
+  },
+  {
+   "id": "A2",
+   "title": "The responsibilities of people who work in health and social care settings",
+   "points": [
+    "Explain why workers follow the policies and procedures of their setting.",
+    "Explain responsibilities for healing and supporting recovery for people who are ill.",
+    "Explain enabling rehabilitation (e.g. after a stroke or fall).",
+    "Explain providing equipment and adaptations to support independence.",
+    "Explain providing personal care (washing, feeding, toileting) with dignity.",
+    "Explain supporting service users' routines: family life, education, employment, leisure.",
+    "Explain assessment and care and support planning that involves service users and their families."
+   ]
+  },
+  {
+   "id": "A3",
+   "title": "Specific responsibilities of people who work in health and social care settings",
+   "points": [
+    "Explain how workers apply care values and principles in practice.",
+    "Explain anti-discriminatory practice: implementing codes of practice and policies that identify and challenge discrimination, and adapting how services are provided for different service users.",
+    "Explain empowerment: person-centred/individualised care, dignity and independence, active support consistent with beliefs, culture and preferences, supporting people to express needs, promoting rights and choices.",
+    "Explain how to balance an individual's rights with the rights of other service users and staff.",
+    "Explain how conflict is dealt with in GP surgeries, hospital wards, residential homes for older people, residential homes for vulnerable children and young adults, and domiciliary care.",
+    "Explain how safety is ensured: risk assessments, safeguarding, illness prevention (clean toilets, hand-washing, safe drinking water), control of substances hazardous to health, PPE and infection control, reporting and recording accidents, complaints procedures, first aid.",
+    "Explain information management and confidentiality: data protection legislation, codes of practice, recording, storage and retrieval of information (electronic, mobile phones, social media, written records, photographs).",
+    "Explain when confidentiality can be broken and the procedures to follow when disclosure is legally required.",
+    "Explain accountability to professional bodies: codes of conduct, codes of practice, revalidation, safeguarding regulations, raising concerns/whistleblowing."
+   ]
+  },
+  {
+   "id": "A4",
+   "title": "Multidisciplinary working in the health and social care sector",
+   "points": [
+    "Explain the need for joined-up working between service providers.",
+    "Explain how service users, carers and advocates are involved in planning, decision-making and support.",
+    "Explain holistic approaches that meet physical, intellectual, emotional and social needs.",
+    "Discuss benefits (e.g. no repeated assessments, smoother discharge) and difficulties (e.g. communication breakdown, information sharing) of multidisciplinary working."
+   ]
+  },
+  {
+   "id": "A5",
+   "title": "Monitoring the work of people in health and social care settings",
+   "points": [
+    "Explain how line management (supervision, appraisal) monitors work.",
+    "Explain external inspection by relevant agencies such as CQC and Ofsted.",
+    "Explain whistleblowing as a way of identifying poor practice.",
+    "Explain how service user feedback is used to monitor and improve care.",
+    "Explain when criminal investigations may occur and their role in protecting service users."
+   ]
+  },
+  {
+   "id": "B1",
+   "title": "The roles of organisations in providing health and social care services",
+   "points": [
+    "Describe public sector provision: NHS Foundation Trusts (hospitals, mental health and community health services), adult social care, children's services, GP practices.",
+    "Describe voluntary sector provision (charities and community organisations) and how it complements statutory services.",
+    "Describe private sector provision (e.g. private care homes, domiciliary care agencies) and how it is funded.",
+    "Describe settings: hospitals, day care units, hospice care, residential care, domiciliary care, the workplace.",
+    "Choose and justify the most suitable setting for a person in a scenario."
+   ]
+  },
+  {
+   "id": "B2",
+   "title": "Issues that affect access to services",
+   "points": [
+    "Explain types of referral: self-referral, professional referral, third-party referral.",
+    "Explain the role of assessment (e.g. a needs assessment under the Care Act 2014).",
+    "Explain eligibility criteria and how they ration access to services.",
+    "Explain barriers to access: specific needs, individual preferences, financial, geographical, social and cultural barriers.",
+    "Suggest and justify ways to overcome barriers for a named service user."
+   ]
+  },
+  {
+   "id": "B3",
+   "title": "Ways organisations represent interests of service users",
+   "points": [
+    "Explain how charities and patient groups represent and campaign for service users.",
+    "Explain advocacy and when an advocate is needed (e.g. a person who lacks capacity or has difficulty expressing their views).",
+    "Explain complaints policies and how they protect and empower service users.",
+    "Explain whistleblowing policies and how they protect both service users and staff."
+   ]
+  },
+  {
+   "id": "B4",
+   "title": "The roles of organisations that regulate and inspect health and social care services",
+   "points": [
+    "Explain the role of the Care Quality Commission (CQC) in registering, inspecting and rating health and adult social care services in England.",
+    "Explain the role of Ofsted in inspecting children's services and early years settings.",
+    "Explain how regulation and inspection are carried out, how organisations respond, and how they lead to changes in working practice and improved services.",
+    "Explain the roles of professional regulators: Nursing and Midwifery Council (NMC), Health and Care Professions Council (HCPC), General Medical Council (GMC).",
+    "Explain how professional regulation works: registers, standards and codes, fitness to practise procedures, revalidation.",
+    "Know which bodies apply if you are studying Wales or Northern Ireland (only one UK country needs to be studied)."
+   ]
+  },
+  {
+   "id": "B5",
+   "title": "Responsibilities of organisations towards people who work in health and social care settings",
+   "points": [
+    "Explain how organisations ensure employees understand and implement codes of practice.",
+    "Explain National Occupational Standards (NOS) and why employees must meet them.",
+    "Explain continuing professional development (CPD) and why it matters.",
+    "Explain how employees are safeguarded: complaints procedures, whistleblowing, trade union/professional association membership, following regulatory body protocols."
+   ]
+  },
+  {
+   "id": "C1",
+   "title": "People with specific needs",
+   "points": [
+    "Describe the needs of people with physical and mental ill health.",
+    "Describe the needs of people with learning disabilities.",
+    "Describe the needs of people with physical and sensory disabilities.",
+    "Describe the needs of people in the early years and in later adulthood.",
+    "Identify which professionals and services meet each group's needs."
+   ]
+  },
+  {
+   "id": "C2",
+   "title": "Working practices",
+   "points": [
+    "Explain the skills needed to work with each specific needs group (e.g. communication adaptations, patience, observation).",
+    "Explain how policies and procedures affect people working in these areas.",
+    "Explain how regulation affects people working in these areas.",
+    "Explain how working practices affect people who use the services.",
+    "Discuss recent examples of how poor working practices have been identified and addressed (e.g. inquiries into Winterbourne View and Mid Staffordshire NHS Foundation Trust), and what changed as a result."
+   ]
+  }
+ ],
+ "mcq": [
+  {
+   "id": "u2q01",
+   "topic": "A1",
+   "q": "Which professional is most likely to assess Mrs Patel's home and recommend a stair rail and raised toilet seat after her hip replacement?",
+   "options": [
+    "Midwife",
+    "Youth worker",
+    "Occupational therapist",
+    "Healthcare assistant"
+   ],
+   "answer": 2,
+   "why": "Occupational therapists help people carry out daily activities, including assessing for equipment and adaptations."
+  },
+  {
+   "id": "u2q02",
+   "topic": "A1",
+   "q": "Which role mainly involves assessing needs, safeguarding vulnerable people and organising care and support plans in the community?",
+   "options": [
+    "Social worker",
+    "Doctor",
+    "Midwife",
+    "Healthcare assistant"
+   ],
+   "answer": 0,
+   "why": "Social workers assess needs, safeguard, plan care and support, and often coordinate other services."
+  },
+  {
+   "id": "u2q03",
+   "topic": "A1",
+   "q": "A healthcare assistant on a hospital ward is most likely to:",
+   "options": [
+    "Diagnose illnesses and prescribe medication",
+    "Lead safeguarding investigations",
+    "Deliver babies independently",
+    "Support registered nurses with personal care and observations"
+   ],
+   "answer": 3,
+   "why": "Healthcare assistants work under the supervision of registered nurses, providing personal care and routine tasks."
+  },
+  {
+   "id": "u2q04",
+   "topic": "A2",
+   "q": "Supporting a man who has had a stroke to relearn how to dress himself is an example of:",
+   "options": [
+    "Safeguarding",
+    "Enabling rehabilitation",
+    "Whistleblowing",
+    "Eligibility criteria"
+   ],
+   "answer": 1,
+   "why": "Rehabilitation helps people regain skills and independence after illness or injury."
+  },
+  {
+   "id": "u2q05",
+   "topic": "A2",
+   "q": "Which is the best example of involving a service user in care and support planning?",
+   "options": [
+    "The care manager writes the plan alone to save time",
+    "The service user and their family discuss goals and preferences with the social worker before the plan is agreed",
+    "The plan is copied from another resident's plan",
+    "The GP decides the plan without consultation"
+   ],
+   "answer": 1,
+   "why": "Care and support planning should involve the individual and, where appropriate, their family."
+  },
+  {
+   "id": "u2q06",
+   "topic": "A3",
+   "q": "A care home provides halal meals and a quiet prayer room for a Muslim resident. This is mainly an example of:",
+   "options": [
+    "Infection control",
+    "Revalidation",
+    "Line management",
+    "Adapting services to meet individual needs (anti-discriminatory practice)"
+   ],
+   "answer": 3,
+   "why": "Adapting services to beliefs and culture is part of anti-discriminatory, person-centred practice."
+  },
+  {
+   "id": "u2q07",
+   "topic": "A3",
+   "q": "Empowering a service user means:",
+   "options": [
+    "Supporting them to make choices and have control over their care",
+    "Making decisions for them to keep them safe",
+    "Giving them the same care as everyone else",
+    "Limiting their contact with family"
+   ],
+   "answer": 0,
+   "why": "Empowerment puts the individual at the heart of decisions and promotes their rights, choices and independence."
+  },
+  {
+   "id": "u2q08",
+   "topic": "A3",
+   "q": "Which legislation sets rules on how personal information about service users must be processed and stored?",
+   "options": [
+    "Health and Safety at Work etc. Act 1974",
+    "Children Act 1989",
+    "Data Protection Act 2018 (UK GDPR)",
+    "Equality Act 2010"
+   ],
+   "answer": 2,
+   "why": "Data protection legislation governs the collection, storage, use and sharing of personal data."
+  },
+  {
+   "id": "u2q09",
+   "topic": "A3",
+   "q": "When is a nurse most likely to be justified in sharing confidential information without consent?",
+   "options": [
+    "When a relative asks out of curiosity",
+    "When posting on social media without names",
+    "When a colleague from another ward wants to know",
+    "When there is a risk of serious harm to the person or others, or it is legally required"
+   ],
+   "answer": 3,
+   "why": "Confidentiality can be broken when there is a risk of serious harm or a legal requirement, following the correct procedure."
+  },
+  {
+   "id": "u2q10",
+   "topic": "A3",
+   "q": "Taking a photo of a resident's wound on a personal mobile phone to show a friend is:",
+   "options": [
+    "Acceptable if the face is not shown",
+    "A breach of confidentiality and data protection",
+    "Good record keeping",
+    "Required for revalidation"
+   ],
+   "answer": 1,
+   "why": "Photos are personal data; they must only be taken for care purposes, with consent and on approved devices."
+  },
+  {
+   "id": "u2q11",
+   "topic": "A3",
+   "q": "Which is an example of an illness prevention measure listed in the spec?",
+   "options": [
+    "Eligibility criteria",
+    "Appraisals",
+    "Hand-washing facilities and safe drinking water",
+    "Advocacy"
+   ],
+   "answer": 2,
+   "why": "Clean toilets, hand-washing facilities and safe drinking water are named illness prevention measures."
+  },
+  {
+   "id": "u2q12",
+   "topic": "A3",
+   "q": "A nurse must regularly show that they remain fit to practise in order to stay on the register. This process is called:",
+   "options": [
+    "Revalidation",
+    "Referral",
+    "Eligibility",
+    "Inspection"
+   ],
+   "answer": 0,
+   "why": "Revalidation is the NMC process nurses and midwives complete to renew their registration."
+  },
+  {
+   "id": "u2q13",
+   "topic": "A3",
+   "q": "A resident in a care home plays loud music late at night, disturbing others. What is the main principle the staff must apply?",
+   "options": [
+    "The resident's rights always come first",
+    "Removing the resident's music permanently",
+    "Balancing individual rights with the rights of other service users",
+    "Calling the police"
+   ],
+   "answer": 2,
+   "why": "Workers must balance one person's rights and choices with the rights and wellbeing of others."
+  },
+  {
+   "id": "u2q14",
+   "topic": "A4",
+   "q": "Which best describes a holistic approach to care?",
+   "options": [
+    "Meeting a person's physical, intellectual, emotional and social needs as a whole",
+    "Treating only the main medical condition",
+    "Each professional working separately",
+    "Providing care only in hospital"
+   ],
+   "answer": 0,
+   "why": "Holistic care looks at the whole person, which usually requires several professionals working together."
+  },
+  {
+   "id": "u2q15",
+   "topic": "A4",
+   "q": "What is a key benefit of multidisciplinary working when discharging an older patient from hospital?",
+   "options": [
+    "Each professional repeats the same assessment",
+    "It removes the need for consent",
+    "It reduces the patient's involvement",
+    "Care is coordinated so that equipment, home care and follow-up are ready when the patient gets home"
+   ],
+   "answer": 3,
+   "why": "Joined-up working avoids gaps and delays and supports a safe discharge."
+  },
+  {
+   "id": "u2q16",
+   "topic": "A4",
+   "q": "Which is a common difficulty of multidisciplinary working?",
+   "options": [
+    "Too much information about the service user",
+    "Communication and information-sharing problems between agencies",
+    "Service users always refuse",
+    "It is not allowed by law"
+   ],
+   "answer": 1,
+   "why": "Different systems, priorities and workloads can lead to poor communication, which serious case reviews often highlight."
+  },
+  {
+   "id": "u2q17",
+   "topic": "A5",
+   "q": "Regular supervision meetings and annual appraisals are examples of monitoring through:",
+   "options": [
+    "External inspection",
+    "Line management",
+    "Criminal investigation",
+    "Service user feedback"
+   ],
+   "answer": 1,
+   "why": "Line managers monitor staff performance and development through supervision and appraisal."
+  },
+  {
+   "id": "u2q18",
+   "topic": "A5",
+   "q": "A support worker reports to the CQC that her manager is ignoring residents' bruises. She is:",
+   "options": [
+    "Breaching confidentiality",
+    "Making a referral",
+    "Revalidating",
+    "Whistleblowing"
+   ],
+   "answer": 3,
+   "why": "Whistleblowing is raising concerns about wrongdoing or poor practice, internally or to an external body such as the CQC."
+  },
+  {
+   "id": "u2q19",
+   "topic": "B1",
+   "q": "Which of these is a voluntary sector organisation?",
+   "options": [
+    "A registered charity running a support group for carers",
+    "An NHS Foundation Trust hospital",
+    "A local authority children's services department",
+    "A privately owned care home chain"
+   ],
+   "answer": 0,
+   "why": "The voluntary sector consists of charities and not-for-profit organisations, often relying on donations and volunteers."
+  },
+  {
+   "id": "u2q20",
+   "topic": "B1",
+   "q": "Care provided by workers visiting a person in their own home is called:",
+   "options": [
+    "Residential care",
+    "Hospice care",
+    "Domiciliary care",
+    "Day care"
+   ],
+   "answer": 2,
+   "why": "Domiciliary care supports people to stay living in their own homes."
+  },
+  {
+   "id": "u2q21",
+   "topic": "B1",
+   "q": "Which setting specialises in palliative care for people with life-limiting illnesses?",
+   "options": [
+    "Day care unit",
+    "GP practice",
+    "Youth club",
+    "Hospice"
+   ],
+   "answer": 3,
+   "why": "Hospices provide palliative and end-of-life care, including support for families."
+  },
+  {
+   "id": "u2q22",
+   "topic": "B2",
+   "q": "Tom phones his GP surgery himself to make an appointment. This is a:",
+   "options": [
+    "Professional referral",
+    "Self-referral",
+    "Third-party referral",
+    "Eligibility assessment"
+   ],
+   "answer": 1,
+   "why": "Self-referral is when the individual contacts the service directly."
+  },
+  {
+   "id": "u2q23",
+   "topic": "B2",
+   "q": "Amira lives in a rural village with one bus a day and cannot get to the hospital clinic. This is a:",
+   "options": [
+    "Cultural barrier",
+    "Financial barrier",
+    "Geographical barrier",
+    "Specific needs barrier"
+   ],
+   "answer": 2,
+   "why": "Distance and lack of transport are geographical barriers to access."
+  },
+  {
+   "id": "u2q24",
+   "topic": "B2",
+   "q": "Eligibility criteria are used by services to:",
+   "options": [
+    "Decide who qualifies for a service based on level of need",
+    "Inspect care homes",
+    "Register nurses",
+    "Train staff"
+   ],
+   "answer": 0,
+   "why": "Eligibility criteria set the level of need a person must meet to receive a service, which helps allocate limited resources."
+  },
+  {
+   "id": "u2q25",
+   "topic": "B3",
+   "q": "Who is most likely to need an independent advocate?",
+   "options": [
+    "A healthy adult arranging their own GP appointment",
+    "A nurse on the NMC register",
+    "A person with a severe learning disability who has difficulty expressing their wishes in a care review",
+    "A care home manager"
+   ],
+   "answer": 2,
+   "why": "Advocates help people who find it hard to speak up for themselves to have their views heard."
+  },
+  {
+   "id": "u2q26",
+   "topic": "B4",
+   "q": "Which organisation inspects and rates adult social care services and hospitals in England?",
+   "options": [
+    "Care Quality Commission (CQC)",
+    "Ofsted",
+    "NMC",
+    "GMC"
+   ],
+   "answer": 0,
+   "why": "The CQC registers, inspects and rates health and adult social care services in England."
+  },
+  {
+   "id": "u2q27",
+   "topic": "B4",
+   "q": "Which organisation inspects children's homes and early years settings in England?",
+   "options": [
+    "CQC",
+    "HCPC",
+    "NMC",
+    "Ofsted"
+   ],
+   "answer": 3,
+   "why": "Ofsted regulates and inspects services for children and young people, including children's homes."
+  },
+  {
+   "id": "u2q28",
+   "topic": "B4",
+   "q": "An occupational therapist and a physiotherapist must both be registered with which regulator?",
+   "options": [
+    "GMC",
+    "HCPC",
+    "NMC",
+    "CQC"
+   ],
+   "answer": 1,
+   "why": "Both are registered with the Health and Care Professions Council (HCPC). Doctors are regulated by the GMC and nurses and midwives by the NMC; in England, social workers are now regulated by Social Work England."
+  },
+  {
+   "id": "u2q29",
+   "topic": "B4",
+   "q": "A CQC inspection rates a care home 'Inadequate'. What is the most likely immediate consequence?",
+   "options": [
+    "Nothing changes",
+    "The home is placed under closer scrutiny and must make improvements, with possible enforcement action",
+    "All staff are struck off",
+    "The home is automatically closed the next day"
+   ],
+   "answer": 1,
+   "why": "Poor ratings lead to action plans, re-inspection and possible enforcement, driving changes in working practice."
+  },
+  {
+   "id": "u2q30",
+   "topic": "B4",
+   "q": "What is the main purpose of a fitness to practise hearing by the NMC?",
+   "options": [
+    "To inspect a hospital ward",
+    "To set eligibility criteria",
+    "To assess a patient's needs",
+    "To decide whether a registered nurse or midwife is safe to continue practising"
+   ],
+   "answer": 3,
+   "why": "Professional regulators protect the public by investigating concerns about registered professionals."
+  },
+  {
+   "id": "u2q31",
+   "topic": "B5",
+   "q": "Attending a training course on dementia awareness to keep skills up to date is an example of:",
+   "options": [
+    "Continuing professional development (CPD)",
+    "Whistleblowing",
+    "Referral",
+    "Inspection"
+   ],
+   "answer": 0,
+   "why": "CPD is ongoing learning that keeps workers' knowledge and skills current."
+  },
+  {
+   "id": "u2q32",
+   "topic": "B5",
+   "q": "National Occupational Standards (NOS) describe:",
+   "options": [
+    "Eligibility for services",
+    "The CQC rating system",
+    "The standards of performance expected of workers in a job role",
+    "Patient rights"
+   ],
+   "answer": 2,
+   "why": "NOS set out the skills, knowledge and performance expected in a role and are used to design training."
+  },
+  {
+   "id": "u2q33",
+   "topic": "C1",
+   "q": "Which adaptation would best support a service user with a hearing impairment at a GP surgery?",
+   "options": [
+    "A larger car park",
+    "Longer opening hours",
+    "A ramp at the entrance",
+    "A hearing loop and a British Sign Language interpreter when needed"
+   ],
+   "answer": 3,
+   "why": "Hearing loops and BSL interpreters remove communication barriers for people with hearing impairments."
+  },
+  {
+   "id": "u2q34",
+   "topic": "C1",
+   "q": "Which skill is especially important when supporting a person with a learning disability?",
+   "options": [
+    "Speaking quickly to save time",
+    "Using clear, simple language and checking understanding, e.g. with easy-read or pictures",
+    "Making decisions for them",
+    "Avoiding eye contact"
+   ],
+   "answer": 1,
+   "why": "Adapting communication supports understanding, choice and empowerment."
+  },
+  {
+   "id": "u2q35",
+   "topic": "C2",
+   "q": "The public inquiry into poor care at Mid Staffordshire NHS Foundation Trust is an example of:",
+   "options": [
+    "Self-referral",
+    "Revalidation",
+    "Poor working practices being identified and addressed",
+    "An eligibility assessment"
+   ],
+   "answer": 2,
+   "why": "The inquiry identified serious failings and led to recommendations to improve openness, standards and patient safety."
+  },
+  {
+   "id": "u2q36",
+   "topic": "C2",
+   "q": "Which change in working practice is most likely after an inspection finds poor infection control in a care home?",
+   "options": [
+    "Staff retraining, audits of hand hygiene and updated infection control policies",
+    "Fewer hand-washing facilities",
+    "Stopping residents' visitors permanently",
+    "Reducing staff numbers"
+   ],
+   "answer": 0,
+   "why": "Regulation and inspection lead to changes in policy, training and monitoring that improve services."
+  }
+ ],
+ "long": [
+  {
+   "id": "u2l01",
+   "topic": "A1",
+   "marks": 2,
+   "command": "Identify",
+   "context": "Scenario set 1: Edna is 84 and lives alone. She has osteoarthritis and early-stage dementia. After a fall at home she was admitted to hospital with a fractured wrist and is now being prepared for discharge back home.",
+   "q": "Identify two professionals who may be involved in Edna's discharge from hospital.",
+   "markingPoints": [
+    "1 mark each for any two relevant professionals, e.g.:",
+    "Occupational therapist",
+    "Social worker",
+    "Nurse (e.g. discharge nurse or community/district nurse)",
+    "Doctor (hospital doctor or GP)",
+    "Physiotherapist",
+    "Domiciliary care worker/support worker"
+   ],
+   "dHallmarks": [
+    "Two distinct, correctly named professionals.",
+    "Short answers; no explanation needed for 2 marks.",
+    "Choose roles that clearly fit discharge rather than general ones."
+   ],
+   "model": "Occupational therapist. Social worker."
+  },
+  {
+   "id": "u2l02",
+   "topic": "A2",
+   "marks": 4,
+   "command": "Describe",
+   "context": "Scenario set 1 (continued): Edna wants to return home. Her daughter lives 50 miles away and works full time.",
+   "q": "Describe how an occupational therapist could support Edna to be independent at home.",
+   "markingPoints": [
+    "Home assessment to identify fall risks (e.g. rugs, stairs, poor lighting).",
+    "Provides equipment and adaptations, e.g. grab rails, raised toilet seat, perching stool, key safe.",
+    "Teaches or practises daily living skills with her fractured wrist, e.g. dressing and making a drink one-handed.",
+    "Recommends telecare such as a pendant alarm so Edna can call for help.",
+    "Supports her to keep routines that help her dementia, e.g. labelled cupboards.",
+    "Up to 4 marks: two developed points or four relevant points applied to Edna."
+   ],
+   "dHallmarks": [
+    "Every point is applied to Edna's specific needs (wrist, osteoarthritis, dementia, living alone).",
+    "Links support to independence and dignity.",
+    "Uses precise examples of equipment and adaptations."
+   ],
+   "model": "The occupational therapist could carry out a home assessment before Edna is discharged to identify hazards that caused her fall, such as loose rugs or poor lighting, and arrange for them to be removed or improved. They could provide equipment and adaptations, for example grab rails by the toilet and stairs and a perching stool in the kitchen, so she can carry out daily tasks safely despite her osteoarthritis and fractured wrist. They could also fit a pendant alarm so she can call for help if she falls again while living alone."
+  },
+  {
+   "id": "u2l03",
+   "topic": "B2",
+   "marks": 6,
+   "command": "Explain",
+   "context": "Scenario set 1 (continued): Edna's social worker carries out a needs assessment. Edna is worried about the cost of care and says she 'doesn't want strangers in the house'.",
+   "q": "Explain how barriers might affect Edna's access to the care and support she needs.",
+   "markingPoints": [
+    "Financial barrier: Edna is worried about cost, so she may refuse a package of care; financial assessment rules may require her to contribute.",
+    "Individual preference: she does not want strangers in her home, so she may decline domiciliary care, increasing risk of another fall.",
+    "Specific needs: early-stage dementia may affect her understanding of the assessment and her ability to explain needs; may need an advocate or her daughter present.",
+    "Geographical/social: her daughter lives 50 miles away, so informal support is limited.",
+    "Eligibility criteria: her needs must meet eligibility criteria under the Care Act 2014 for council-funded support.",
+    "Up to 6 marks: three explained points (point + reason + link to Edna)."
+   ],
+   "dHallmarks": [
+    "Each barrier explained with its consequence for Edna.",
+    "Shows understanding of the organisational context (assessment, eligibility).",
+    "Suggests, briefly, how a barrier could be reduced, showing analysis rather than description."
+   ],
+   "model": "Edna's worry about cost is a financial barrier; if she thinks she cannot afford care she may refuse a domiciliary care package, which would leave her at risk of falling again. Her preference not to have 'strangers in the house' is also a barrier, because domiciliary care is the main way she could be supported to live at home; this could be reduced if the same small team of carers visits so she can build trust. Her early-stage dementia is a specific need that may make it harder for her to understand the assessment and explain her needs, so she might underestimate the help she needs. The social worker could involve her daughter or an advocate to ensure her views are represented and she can make an informed decision."
+  },
+  {
+   "id": "u2l04",
+   "topic": "A4",
+   "marks": 8,
+   "command": "Discuss",
+   "context": "Scenario set 1 (continued): Edna has now been discharged home. She receives visits from a domiciliary care worker twice a day, sees a community nurse weekly and her GP is reviewing her medication.",
+   "q": "Discuss how multidisciplinary working could meet Edna's care and support needs.",
+   "markingPoints": [
+    "Joined-up working: social worker coordinates the care plan so services are not duplicated and gaps are avoided.",
+    "Each professional meets a different need: care worker (personal care, meals, prompting medication), community nurse (wrist and health checks), GP (medication review, dementia monitoring), OT (equipment).",
+    "Holistic approach covering physical, intellectual, emotional and social needs; e.g. day centre to reduce isolation.",
+    "Involving Edna and her daughter in planning and decisions promotes empowerment and person-centred care.",
+    "Information sharing must follow data protection legislation and be on a need-to-know basis with Edna's consent where possible.",
+    "Difficulties: poor communication between agencies, different record systems, staff changes, risk of things being missed.",
+    "Benefits for Edna: safer at home, fewer readmissions, maintains independence and dignity.",
+    "Supported judgement on how effectively multidisciplinary working meets her needs."
+   ],
+   "dHallmarks": [
+    "Shows how the professionals' roles interrelate, not just a list of who does what.",
+    "Weighs benefits against difficulties.",
+    "Refers to the organisational context (care plan, information management, legislation).",
+    "Ends with a concise judgement or justified recommendation."
+   ],
+   "model": "Multidisciplinary working can meet Edna's needs holistically because each professional addresses a different aspect of her care. Her domiciliary care worker supports personal care, meals and medication prompts, the community nurse monitors her wrist and general health, and her GP reviews her medication and dementia. The social worker coordinates these services through a care and support plan so that visits are not duplicated and nothing is missed. If the care worker notices Edna is becoming more confused, they can report this so the GP reviews her quickly, which shows how joined-up working allows early action. Involving Edna and her daughter in planning promotes empowerment, as Edna keeps control over decisions such as visit times, which may also reduce her anxiety about 'strangers'. Her social needs could be met by referral to a day centre or befriending service, preventing isolation. However, multidisciplinary working depends on good communication. Agencies may use different record systems, and frequent changes of care staff could mean concerns are not passed on. Information must also be shared appropriately under data protection legislation, only with those who need it. Overall, multidisciplinary working is the most effective way to keep Edna safe and independent at home, provided one person coordinates the plan and information is shared promptly and securely."
+  },
+  {
+   "id": "u2l05",
+   "topic": "B4",
+   "marks": 2,
+   "command": "Identify",
+   "context": "Scenario set 2: Kai is 15 and lives in a residential children's home after his placement with foster carers broke down. Staff have noticed he has become withdrawn and has unexplained injuries. A recent inspection rated the home as 'Requires improvement'.",
+   "q": "Identify two organisations that regulate the people or services involved in Kai's care.",
+   "markingPoints": [
+    "1 mark each for any two, e.g.:",
+    "Ofsted (inspects children's homes)",
+    "Health and Care Professions Council (HCPC) or Social Work England (regulates social workers in England)",
+    "Nursing and Midwifery Council (NMC) if a nurse is involved",
+    "General Medical Council (GMC) if a doctor is involved"
+   ],
+   "dHallmarks": [
+    "Correctly distinguishes a service regulator (Ofsted) from a professional regulator.",
+    "Does not name the CQC as the inspector of a children's home.",
+    "Brief answers only."
+   ],
+   "model": "Ofsted. The regulator of social workers (named in the specification as the Health and Care Professions Council)."
+  },
+  {
+   "id": "u2l06",
+   "topic": "A3",
+   "marks": 4,
+   "command": "Describe",
+   "context": "Scenario set 2 (continued): Kai tells his key worker that an older resident has been hurting him, but asks her not to tell anyone.",
+   "q": "Describe how Kai's key worker should respond to his disclosure.",
+   "markingPoints": [
+    "Listen calmly, take him seriously and do not ask leading questions.",
+    "Explain honestly that she cannot keep it a secret because he is at risk of harm and she must share it to keep him safe.",
+    "Record what Kai said accurately, in his own words, with date and time, factually.",
+    "Report immediately to the designated safeguarding lead/manager following the home's safeguarding policy.",
+    "Ensure Kai's immediate safety, e.g. supervision or separation from the other resident.",
+    "Up to 4 marks for relevant described actions applied to Kai."
+   ],
+   "dHallmarks": [
+    "Correctly explains the limit of confidentiality when there is risk of harm.",
+    "Follows safeguarding procedure in a logical order.",
+    "Keeps Kai at the centre: reassurance, honesty, informing him what happens next."
+   ],
+   "model": "The key worker should listen calmly and reassure Kai that he has done the right thing by telling her, without asking leading questions. She must explain honestly that she cannot keep the information secret because he is at risk of harm, and that she will only share it with people who need to know to keep him safe. She should then record exactly what he said, factually and in his own words, and report it straight away to the designated safeguarding lead, following the home's safeguarding procedure."
+  },
+  {
+   "id": "u2l07",
+   "topic": "A5",
+   "marks": 6,
+   "command": "Explain",
+   "context": "Scenario set 2 (continued): A new member of staff at Kai's home has noticed colleagues regularly falsifying records of night checks.",
+   "q": "Explain how the work of staff at Kai's children's home is monitored.",
+   "markingPoints": [
+    "Line management: supervision and appraisal allow managers to check records and practice and address poor performance.",
+    "External inspection by Ofsted checks records, talks to children and staff and rates the home; a poor rating requires improvement.",
+    "Whistleblowing: the new staff member can raise concerns internally or with Ofsted and is protected by the whistleblowing policy.",
+    "Service user feedback: children like Kai can complain or give feedback, including through an independent advocate.",
+    "Criminal investigations if abuse or neglect is suspected, e.g. police involvement.",
+    "Up to 6 marks: three explained methods linked to the scenario."
+   ],
+   "dHallmarks": [
+    "Links each method to the falsified records or Kai's situation.",
+    "Explains why monitoring matters (protecting children, improving practice).",
+    "Shows understanding of the regulatory context."
+   ],
+   "model": "Staff are monitored through line management; in supervision the manager should check night-check records against other evidence and challenge staff whose records are inaccurate. The home is also monitored externally by Ofsted, whose inspectors examine records and speak to children and staff, so falsified checks could be identified and the home required to improve, which has already happened with its 'Requires improvement' rating. The new member of staff can whistleblow by raising her concerns with the manager or directly with Ofsted; whistleblowing policies protect her from being treated unfairly, which encourages staff to report poor practice that puts children like Kai at risk."
+  },
+  {
+   "id": "u2l08",
+   "topic": "B4",
+   "marks": 8,
+   "command": "Discuss",
+   "context": "Scenario set 2 (continued): After the inspection, the home's manager must produce an action plan. Staff feel the changes are 'just more paperwork'.",
+   "q": "Discuss how regulation and inspection could improve the care that Kai receives.",
+   "markingPoints": [
+    "Ofsted inspection identifies weaknesses (e.g. record keeping, safeguarding) and requires an action plan, which drives change.",
+    "Changes in working practice: accurate recording, more supervision, safeguarding training, CPD.",
+    "Re-inspection holds the home accountable; risk of enforcement action or closure motivates improvement.",
+    "Professional regulators can investigate individual staff whose conduct is unsafe, protecting children.",
+    "Benefits for Kai: safer environment, concerns acted on, staff follow codes of practice, his views heard.",
+    "Counterpoint: inspections are snapshots; poor practice may be hidden; staff may focus on paperwork rather than relationships.",
+    "Staff attitudes matter: training and leadership needed so changes are embedded, not seen as tick-box.",
+    "Supported judgement on how far regulation improves Kai's care."
+   ],
+   "dHallmarks": [
+    "Evaluates impact and limitations, not just describes the process.",
+    "Links regulation to changes in employee practice and to outcomes for Kai.",
+    "Addresses the staff view that it is 'just paperwork'.",
+    "Clear concluding judgement."
+   ],
+   "model": "Regulation and inspection can improve Kai's care because Ofsted's findings force the home to act. The 'Requires improvement' rating means the manager must produce an action plan, for example improving safeguarding procedures and record keeping. This leads to changes in working practice such as more frequent supervision, audits of night-check records and safeguarding training as part of staff CPD. The threat of re-inspection and possible enforcement action holds the organisation accountable, while professional regulators can investigate individual staff whose conduct puts children at risk. For Kai, this should mean that disclosures like his are recorded and acted on quickly and that he is checked on properly at night. However, inspection is only a snapshot, and staff could hide poor practice during a visit. If staff see the changes as 'just more paperwork', they may complete records without improving their care, so the real culture may not change. Leadership is therefore essential: the manager needs to explain that accurate records protect children like Kai and staff themselves, and to involve children in giving feedback. Overall, regulation and inspection can significantly improve Kai's care by identifying failings and requiring change, but improvement will only last if staff understand the purpose and the home develops a culture of openness."
+  }
+ ],
+ "commandWords": [
+  {
+   "word": "Identify",
+   "means": "Indicate the main features or purpose of something, or pick out facts.",
+   "doThis": "Used for 2-mark questions. Write two short, separate, relevant points. No explanation required."
+  },
+  {
+   "word": "Describe",
+   "means": "Give a clear, objective account in your own words showing recall and application of relevant features.",
+   "doThis": "Used for 4-mark questions. Give two developed points (or four features) clearly applied to the person in the scenario."
+  },
+  {
+   "word": "Explain",
+   "means": "Show understanding of the origins, functions or purpose of something, giving reasons with clear details.",
+   "doThis": "Used for 6-mark questions. Make three points, each with a reason ('because', 'which means') and a link to the worker, organisation or service user in the scenario."
+  },
+  {
+   "word": "Discuss",
+   "means": "Consider different aspects of a topic, how they interrelate and the extent to which they are important.",
+   "doThis": "Used for 8-mark questions. Cover several aspects (roles, benefits, difficulties), show the links between them, weigh their importance and finish with a brief judgement or justified recommendation."
+  }
+ ],
+ "theories": [],
+ "keyFrameworks": [
+  {
+   "name": "Care values and the 6Cs",
+   "summary": "Care values include promoting dignity, respect, independence, choice, rights, equality and diversity, confidentiality and safety. The 6Cs (care, compassion, competence, communication, courage, commitment) describe the values expected of NHS and care staff.",
+   "examUse": "Use when asked how a worker should treat a service user; name the value and show what it looks like in that scenario."
+  },
+  {
+   "name": "Anti-discriminatory practice",
+   "summary": "Workers identify and challenge discrimination using codes of practice and policies, and adapt services for different service users. Underpinned by the Equality Act 2010.",
+   "examUse": "Use for scenarios involving culture, religion, disability or age; give a concrete adaptation (interpreter, dietary needs, access) and explain the benefit."
+  },
+  {
+   "name": "Empowerment and person-centred care",
+   "summary": "Putting the individual at the heart of services, promoting dignity, independence, rights and choice, and supporting people to express their needs and preferences. The Care Act 2014 promotes wellbeing and involvement in care planning.",
+   "examUse": "Link to care and support planning, advocacy and balancing rights with risk; strong in 8-mark discuss answers."
+  },
+  {
+   "name": "Safeguarding",
+   "summary": "Protecting people from abuse and neglect through risk assessment, policies, training, recognising signs and reporting concerns. Linked to the Care Act 2014 (adults) and Children Act 1989/2004 (children).",
+   "examUse": "Use in scenarios with disclosures, injuries or poor practice; explain the procedure and who is informed."
+  },
+  {
+   "name": "Confidentiality and disclosure",
+   "summary": "Personal information is recorded, stored and shared according to data protection legislation (Data Protection Act 2018/UK GDPR) and codes of practice. Confidentiality can be broken when there is a risk of serious harm or a legal requirement.",
+   "examUse": "Use for questions on records, social media, photos and information sharing between professionals; state the limit of confidentiality."
+  },
+  {
+   "name": "Multidisciplinary and partnership working",
+   "summary": "Professionals from different services work together, involving service users, carers and advocates, to provide joined-up, holistic care.",
+   "examUse": "The core of many 8-mark questions. Show how roles interrelate, give benefits and difficulties, and judge effectiveness."
+  },
+  {
+   "name": "Regulation and inspection of services (CQC and Ofsted)",
+   "summary": "The CQC registers, inspects and rates health and adult social care services in England; Ofsted inspects children's services. Inspections lead to action plans, enforcement and improved practice.",
+   "examUse": "Explain how inspection works, how organisations respond, how working practices change and how services improve."
+  },
+  {
+   "name": "Professional regulation (NMC, HCPC, GMC)",
+   "summary": "Professional regulators keep registers, set standards and codes of conduct, oversee revalidation and investigate fitness to practise to protect the public.",
+   "examUse": "Use when a scenario involves an individual professional's conduct; match the right regulator to the role."
+  },
+  {
+   "name": "Whistleblowing and raising concerns",
+   "summary": "Workers raise concerns about wrongdoing or poor practice internally or to external bodies. Policies protect whistleblowers from being treated unfairly.",
+   "examUse": "Use for monitoring questions and for discussing how poor practice is identified, e.g. high-profile inquiries into poor care."
+  }
+ ]
+}

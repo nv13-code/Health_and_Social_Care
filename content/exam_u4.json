@@ -1,0 +1,286 @@
+{
+ "unit": 4,
+ "title": "Enquiries into Current Research in Health and Social Care",
+ "format": {
+  "marks": 65,
+  "time": "Part A: released 4 weeks before Part B, with 6 hours of monitored note-making sessions. Part B: 3-hour supervised assessment in a single morning session set by Pearson.",
+  "summary": "Assessed under supervised conditions and set and marked by Pearson. Part A (a pre-released article about a piece of current research) is released four weeks before Part B so you can carry out secondary research into the issue and compile notes in monitored sessions totalling six hours. Part B is a three-hour supervised task based on the article and your own research, covering the research methods used, how to plan further research into the issue, and the implications of the research for health and social care practice and/or service provision. The unit is synoptic: draw on learning from across your programme. Available December/January and May/June.",
+  "tips": [
+   "Treat the 4-week window as a project: read the article many times, annotate the methods, sample, ethics, findings and stated limitations before you search for anything else.",
+   "Find secondary sources that do different jobs: one that supports the findings, one that challenges or complicates them, official statistics on the issue, and a policy or practice document showing how services currently work.",
+   "Check the current Part A instructions with your teacher for exactly what notes you may take into Part B, and prepare your notes to fit those rules.",
+   "In Part B, always tie your points back to the article – quote the method, sample size or figure you are judging.",
+   "For validity and reliability, do not just define the terms: say what specifically in this study strengthens or weakens them and why it matters for trusting the conclusions.",
+   "When planning further research, cover every B2 heading (rationale, objectives, methods, sample, timescale, monitoring, success measures, ethics) and justify each choice for this issue.",
+   "Plan your 3 hours: allocate time roughly in proportion to the marks and leave 10 minutes to check that every judgement has a reason and a conclusion."
+  ]
+ },
+ "dDescriptor": "Learners will make critical, rationalised judgements about the techniques and skills evidenced within the research around the issue/enquiry and its use in the health and social care sector. Their use of secondary research techniques and skills will demonstrate their understanding of the wider issue in context. They will evaluate the purpose, actions and results of the research against the principles of validity and reliability, and demonstrate a thorough understanding of how feasible ethical solutions to research can be planned and delivered in context. Learners will form conclusions linked to the implications of the research for future practice/provision in the sector. These conclusions, and any recommendations for adaptations, will be justified and articulated professionally.",
+ "topics": [
+  {"id": "A1", "title": "Purpose of research in health and social care", "points": [
+   "Purposes: improve outcomes for people using services, inform policy and practice, extend knowledge and understanding, identify gaps in provision",
+   "Give examples of research that has changed practice or policy (e.g. treatment of a condition, ways of providing care and support)"
+  ]},
+  {"id": "A2", "title": "Issues researched", "points": [
+   "Health conditions: effectiveness of treatments, health trends by area or age group, prevention strategies and their success",
+   "Lifestyle factors: prevalence by age group, contribution to care needs, effect on demand for services, mitigation",
+   "Social care and welfare needs: practice in supporting individuals with specific needs, promoting independence and wellbeing, effect of services on wellbeing"
+  ]},
+  {"id": "B1", "title": "Research methodologies", "points": [
+   "Organisations that carry out research: health authorities, local authorities, social services, charities and community organisations, ONS",
+   "Methods and their advantages/disadvantages: questionnaires, interviews, case studies, scientific experiments, checklists, observation",
+   "Analysing data (e.g. from local authorities and GP surgeries) to judge whether care or treatment works and to identify trends",
+   "Qualitative versus quantitative data",
+   "Conducting effective literature searches",
+   "Identifying, analysing and evaluating source material"
+  ]},
+  {"id": "B2", "title": "Planning research", "points": [
+   "Rationale for the research",
+   "Achievable objectives",
+   "Appropriate research methods",
+   "Target group and sample",
+   "Realistic timescales",
+   "How research will be monitored and modified",
+   "Measures for success",
+   "Ethical issues while carrying out research"
+  ]},
+  {"id": "B3", "title": "Ethical issues", "points": [
+   "Confidentiality of participants and settings",
+   "Informed consent; consent from parents/carers for under-18s or those lacking capacity",
+   "Research conduct, including professional distance",
+   "Data protection legislation: using data only for the stated purpose",
+   "Human rights legislation and how it relates to research",
+   "Use and misuse of results: the 1947 Nuremberg Code; Andrew Wakefield and the MMR research",
+   "Conflicts of interest, peer review, mentoring, research misconduct, disclosure and whistleblowing",
+   "Role of organisations such as the National Social Care Research Ethics Committee"
+  ]},
+  {"id": "B4", "title": "Research skills", "points": [
+   "Time management and organisation; making notes and keeping records from sources",
+   "Non-judgemental practice",
+   "Showing connections between sources",
+   "Methods of analysis and drawing conclusions; triangulation",
+   "Recognising bias and error; distinguishing fact from opinion",
+   "Interpreting graphs and tables; selecting relevant numerical data",
+   "Using percentages and averages (mean, median, mode)",
+   "Reading techniques: skimming and scanning",
+   "Conventions for bibliographies and reference lists"
+  ]},
+  {"id": "C1", "title": "Selecting appropriate secondary sources", "points": [
+   "Reliable sources: professional journals, professional bodies, textbooks, periodicals, websites, research organisations",
+   "Electronic searches: academic search engines, databases, keywords, advanced search tools, refining results",
+   "Judging suitability: ethics, confidentiality, conflicts of interest, fair representation of people using services",
+   "Selecting, interpreting and spotting bias in graphs, tables and statistics"
+  ]},
+  {"id": "C2", "title": "Evaluation of research", "points": [
+   "Examining the introduction, body and conclusion of sources; surveying structure",
+   "Advantages and limitations of sources and methodologies (e.g. access to data)",
+   "Validity and reliability: bias, error, use and misuse of statistics, ethics, generalisability",
+   "Recommendations for work with people who use services",
+   "Areas for further development of the research",
+   "Potential for development of working practice and service provision"
+  ]},
+  {"id": "C3", "title": "Wider applications of research", "points": [
+   "Recommendations for future areas of research",
+   "Implications for health and social care practice",
+   "Implications for health and social care service provision"
+  ]}
+ ],
+ "mcq": [
+  {"id": "u4q01", "topic": "B1", "q": "Which type of data is a count of hospital admissions for asthma per month?", "options": ["Qualitative", "Quantitative", "Anecdotal", "Ethnographic"], "answer": 1, "why": "It is numerical data that can be put into tables and graphs."},
+  {"id": "u4q02", "topic": "B1", "q": "Which method is most likely to produce rich qualitative data about carers' experiences?", "options": ["A closed-question questionnaire", "A checklist", "Semi-structured interviews", "Analysis of mortality statistics"], "answer": 2, "why": "Semi-structured interviews let participants explain their views in their own words and allow follow-up questions."},
+  {"id": "u4q03", "topic": "B1", "q": "A key disadvantage of postal or online questionnaires is that:", "options": ["they are expensive to analyse", "they can only collect qualitative data", "they always need ethical approval from the NHS", "response rates can be low and answers cannot be clarified"], "answer": 3, "why": "Respondents may not return them and the researcher cannot probe unclear answers, which can bias results."},
+  {"id": "u4q04", "topic": "B1", "q": "A researcher watches interactions in a day centre without taking part. This is:", "options": ["non-participant observation", "participant observation", "a case study", "a scientific experiment"], "answer": 0, "why": "The researcher observes from outside the group rather than joining in."},
+  {"id": "u4q05", "topic": "B1", "q": "What is the main advantage of a case study?", "options": ["Results easily generalise to the whole population", "It provides in-depth detail about one individual, group or setting", "It is always quick and cheap", "It removes all researcher bias"], "answer": 1, "why": "Case studies give rich detail, but findings may not generalise to others."},
+  {"id": "u4q06", "topic": "B1", "q": "Which is primary research?", "options": ["Reading a journal article about falls prevention", "Using ONS population data", "Interviewing care home staff yourself", "Reviewing NHS annual reports"], "answer": 2, "why": "Primary research is collected first-hand by the researcher; the others use data already collected by someone else."},
+  {"id": "u4q07", "topic": "B4", "q": "Validity refers to:", "options": ["whether the study measures what it claims to measure", "whether the results would be the same if repeated", "how many people took part", "whether the study was funded"], "answer": 0, "why": "Validity is about accuracy and truthfulness of the findings; reliability is about consistency."},
+  {"id": "u4q08", "topic": "B4", "q": "Reliability refers to:", "options": ["whether participants gave consent", "whether the findings are true for everyone", "how recent the research is", "whether the method gives consistent results when repeated"], "answer": 3, "why": "A reliable method produces similar results if repeated in the same way."},
+  {"id": "u4q09", "topic": "B4", "q": "Using questionnaires, interviews and GP records to check whether they point to the same conclusion is called:", "options": ["peer review", "triangulation", "sampling", "skimming"], "answer": 1, "why": "Triangulation uses several methods or sources to cross-check findings and improve validity."},
+  {"id": "u4q10", "topic": "B2", "q": "Selecting every 10th name from a list of registered patients is:", "options": ["random sampling", "opportunity sampling", "systematic sampling", "snowball sampling"], "answer": 2, "why": "Systematic sampling picks participants at regular intervals from a list."},
+  {"id": "u4q11", "topic": "B2", "q": "Interviewing whichever service users happen to be in the waiting room that morning is:", "options": ["stratified sampling", "random sampling", "systematic sampling", "opportunity sampling"], "answer": 3, "why": "Opportunity sampling uses whoever is available; it is quick but likely to be unrepresentative."},
+  {"id": "u4q12", "topic": "C2", "q": "Generalisability means:", "options": ["the extent to which findings can be applied to a wider population", "the number of variables measured", "how easy the report is to read", "whether data is qualitative"], "answer": 0, "why": "A small or unrepresentative sample limits how far findings can be generalised."},
+  {"id": "u4q13", "topic": "B4", "q": "Participants give the answers they think are socially acceptable rather than what they really do. This is:", "options": ["sampling error", "social desirability bias", "triangulation", "peer review"], "answer": 1, "why": "People may under-report behaviours such as drinking or smoking to appear in a better light."},
+  {"id": "u4q14", "topic": "B4", "q": "Illustrative data: five patients waited 10, 12, 12, 15 and 46 minutes. Which average best represents a typical wait?", "options": ["Mean (19 minutes)", "Range (36 minutes)", "Total (95 minutes)", "Median (12 minutes)"], "answer": 3, "why": "The 46-minute outlier pulls the mean up; the median is less affected by extreme values."},
+  {"id": "u4q15", "topic": "B4", "q": "Illustrative data: a service supported 80 clients last year and 100 this year. What is the percentage increase?", "options": ["20%", "25%", "80%", "125%"], "answer": 1, "why": "(100 − 80) ÷ 80 × 100 = 25%."},
+  {"id": "u4q16", "topic": "C1", "q": "A bar chart's vertical axis starts at 90% instead of 0%, making a small difference look huge. This is an example of:", "options": ["misleading presentation of statistics", "triangulation", "qualitative data", "a placebo effect"], "answer": 0, "why": "Truncated axes exaggerate differences – a form of bias in graphs."},
+  {"id": "u4q17", "topic": "B3", "q": "The Nuremberg Code (1947) is important in research ethics because it established that:", "options": ["research must be published in journals", "voluntary informed consent of participants is essential", "all research must be quantitative", "researchers must be doctors"], "answer": 1, "why": "Written after the trials of Nazi doctors, it set out principles including voluntary consent and avoiding unnecessary harm."},
+  {"id": "u4q18", "topic": "B3", "q": "Andrew Wakefield's MMR research is used as an example of:", "options": ["a well-designed randomised controlled trial", "research that improved vaccine uptake", "research misconduct and misuse of results that harmed public health", "good use of triangulation"], "answer": 2, "why": "The paper was retracted, Wakefield was struck off, and fear about MMR contributed to falling vaccination rates."},
+  {"id": "u4q19", "topic": "B3", "q": "A study of a new care product is funded by the company that makes it. The main ethical concern is:", "options": ["a conflict of interest", "lack of qualitative data", "too large a sample", "a lack of professional journals"], "answer": 0, "why": "The funder may benefit from positive findings, which could bias how results are reported; it should be disclosed."},
+  {"id": "u4q20", "topic": "B3", "q": "Researchers want to involve adults who may lack capacity to consent. What should happen?", "options": ["They are simply excluded from all research", "Consent can be skipped if the research is helpful", "Staff can sign on their behalf without any process", "Appropriate legal and ethical procedures must be followed, involving those who can advise on the person's interests"], "answer": 3, "why": "The spec stresses seeking consent from parents/carers where participants lack capacity, within the law and approved procedures."},
+  {"id": "u4q21", "topic": "B3", "q": "Replacing participants' names with codes and not naming the care home in a report protects:", "options": ["validity", "confidentiality", "generalisability", "reliability"], "answer": 1, "why": "Confidentiality covers both participants and settings."},
+  {"id": "u4q22", "topic": "B3", "q": "Under data protection principles, data collected for a study on falls should:", "options": ["be shared with marketing companies", "be kept forever in case it is useful", "be used only for the stated purpose and stored securely", "be published with names so it can be checked"], "answer": 2, "why": "Data must be used only for the purpose participants agreed to, kept secure and not kept longer than needed."},
+  {"id": "u4q23", "topic": "B3", "q": "What is the purpose of peer review?", "options": ["Experts check research for quality and validity before publication", "Participants review each other's answers", "The funder approves the results", "Researchers interview their friends"], "answer": 0, "why": "Independent experts scrutinise the methods and conclusions, which increases trust in published research."},
+  {"id": "u4q24", "topic": "B3", "q": "A research ethics committee's main role is to:", "options": ["fund research projects", "publish the findings", "collect the data", "review proposals to protect participants' rights, safety and wellbeing"], "answer": 3, "why": "Committees such as the National Social Care Research Ethics Committee approve research only if it is ethical."},
+  {"id": "u4q25", "topic": "B3", "q": "Keeping a professional distance in research means:", "options": ["avoiding personal relationships or influence that could bias participants or the findings", "never speaking to participants", "only using online questionnaires", "keeping the research secret"], "answer": 0, "why": "Professional conduct protects participants and the objectivity of the research."},
+  {"id": "u4q26", "topic": "C1", "q": "Which search strategy will narrow results most effectively in an academic database?", "options": ["Typing a full question as a sentence", "Using only one broad word such as 'health'", "Combining keywords with AND and adding filters such as date range and UK", "Using the first web result"], "answer": 2, "why": "Boolean operators and filters refine searches to a manageable, relevant set of sources."},
+  {"id": "u4q27", "topic": "C1", "q": "Which source is likely to be the most reliable for current national statistics on population ageing?", "options": ["A personal blog", "Office for National Statistics", "A social media post", "An advert for care homes"], "answer": 1, "why": "The ONS is an official statistics body using systematic, transparent methods."},
+  {"id": "u4q28", "topic": "B4", "q": "Which statement is an opinion rather than a fact?", "options": ["The study had 146 participants", "Loneliness scores fell by 1.5 points on average", "15% of participants dropped out", "Social prescribing is the best way to tackle loneliness"], "answer": 3, "why": "'Best' is a value judgement that needs supporting evidence; the others are measurable."},
+  {"id": "u4q29", "topic": "B4", "q": "In a Harvard-style reference list, sources are usually arranged:", "options": ["in the order you found them", "by date, newest first", "alphabetically by author surname", "by number of pages"], "answer": 2, "why": "Harvard referencing lists sources alphabetically by author, with year, title and publication details."},
+  {"id": "u4q30", "topic": "B4", "q": "Quickly running your eyes over an article to find a specific statistic is called:", "options": ["scanning", "skimming", "triangulating", "peer reviewing"], "answer": 0, "why": "Scanning looks for specific information; skimming reads quickly for the general gist."}
+ ],
+ "practiceArticle": {
+  "title": "FICTIONAL PRACTICE ARTICLE – Link-worker social prescribing and loneliness in older adults: a mixed-methods evaluation in 'Harbourford'",
+  "summary": "This article is invented for practice only; the town, researchers and figures are fictional. Researchers from a university health research unit evaluated a social prescribing service in the fictional coastal town of Harbourford. Three GP practices referred adults aged 70 and over who said they felt lonely to a 'link worker', who met them up to six times to agree goals and connect them with community groups such as walking clubs, lunch clubs and befriending services. Two other practices in the town, which did not yet offer the service, provided a comparison group. Participants were not randomly allocated; the service was available only at the three practices. Loneliness was measured using a short three-item self-report questionnaire (scores 3–9; higher means lonelier) at the start and after six months. The number of GP appointments in the six months before and after joining was taken from practice records with participants' consent. In addition, 18 participants from the service group took part in semi-structured interviews about their experiences. The study was approved by a university research ethics committee and was funded by Harbourford Council, which commissions the social prescribing service. Results (means): Social prescribing group (146 started, 124 completed) – loneliness score at start 7.1, at six months 5.6; GP appointments in the six months before 5.0, in the six months after 4.2. Comparison group (98 started, 89 completed) – loneliness score at start 7.0, at six months 6.8; GP appointments before 5.2, after 5.1. Interviewees described increased confidence, new friendships and having 'a reason to get up'. Several said transport and the cost of some activities were barriers, and two people with hearing loss said group activities were hard to join. The authors concluded that link-worker social prescribing 'appears to reduce loneliness and may reduce demand on GP services'. They noted limitations: groups were not randomly allocated; loneliness was self-reported; follow-up was only six months; 15% of the service group dropped out; and most participants were White British and English-speaking, so findings may not apply to all communities. They recommended a larger, longer study."
+ },
+ "long": [
+  {"id": "u4l01", "topic": "B1", "marks": 6, "command": "Explain", "context": "Use the fictional Harbourford practice article.", "q": "Explain why the researchers used a mixed-methods approach to investigate the effect of social prescribing on loneliness.", "markingPoints": [
+   "Quantitative questionnaire scores allow measurement of change and comparison between groups (7.1 → 5.6 vs 7.0 → 6.8)",
+   "GP records provide objective quantitative data on demand for services, less affected by self-report bias",
+   "Semi-structured interviews give qualitative data explaining why and how the service helped (confidence, friendships)",
+   "Interviews identify barriers (transport, cost, hearing loss) that numbers alone would miss",
+   "Combining methods allows triangulation, increasing validity of conclusions",
+   "Each method compensates for weaknesses of the other (breadth vs depth)"
+  ], "dHallmarks": [
+   "Refers to specific data and quotes from the article",
+   "Explains the purpose of each method, not just names it",
+   "Uses the term triangulation correctly and links it to validity"
+  ], "model": "The researchers used quantitative methods to measure whether loneliness changed: the three-item questionnaire gave scores that could be compared before and after and between the two groups, showing a fall from 7.1 to 5.6 in the service group compared with 7.0 to 6.8 in the comparison group. GP records added objective data on demand for appointments, which is less open to self-report bias. However, numbers cannot show why the service worked, so semi-structured interviews with 18 participants provided qualitative data on experiences such as increased confidence and new friendships, and revealed barriers such as transport, cost and hearing loss. Using several methods allowed the researchers to triangulate their findings, so the conclusion that loneliness fell is more valid than if it relied on one method."},
+  {"id": "u4l02", "topic": "B3", "marks": 6, "command": "Explain", "context": "Use the fictional Harbourford practice article.", "q": "Explain the ethical issues the researchers needed to consider when carrying out this research.", "markingPoints": [
+   "Informed consent for questionnaires, interviews and access to GP records; right to withdraw",
+   "Capacity: some older participants may have cognitive impairment – capacity to consent must be considered",
+   "Confidentiality and anonymity of participants and GP practices in reports and quotes",
+   "Data protection: secure storage of health records; use only for stated purpose",
+   "Vulnerability: lonely older adults may become distressed in interviews; support/signposting needed; professional distance",
+   "Ethics committee approval was obtained – shows proposal was reviewed",
+   "Conflict of interest: funded by the council that commissions the service – should be disclosed and managed",
+   "Fairness: comparison group did not receive the service – justification needed"
+  ], "dHallmarks": [
+   "Applies each issue to this study's participants and design",
+   "Includes the funding conflict of interest and the comparison group fairness issue",
+   "Explains how each issue should be managed, not just identified"
+  ], "model": "Because participants were older adults who felt lonely, they could be vulnerable, so researchers needed fully informed consent for the questionnaire, interviews and access to their GP records, and had to make clear they could withdraw at any time without affecting their care. Some participants might have memory problems, so capacity to consent should have been checked and appropriate procedures followed. Confidentiality required anonymising participants and practices, especially when quoting interviews, and data protection law required health records to be stored securely and used only for this study. Interviews about loneliness could cause distress, so researchers should keep a professional distance while signposting support. The study had ethics committee approval, which is a strength. However, it was funded by the council that commissions the service, creating a possible conflict of interest that should be openly disclosed. Finally, the comparison group did not receive the service, so the researchers should justify this, for example because the service was not yet available at those practices."},
+  {"id": "u4l03", "topic": "C2", "marks": 8, "command": "Analyse", "context": "Use the fictional Harbourford practice article and its results.", "q": "Analyse the validity and reliability of the findings that social prescribing reduces loneliness and demand on GP services.", "markingPoints": [
+   "Service group loneliness fell by 1.5 points versus 0.2 in the comparison group – a difference of 1.3 points, suggesting an effect",
+   "GP appointments fell by 0.8 per person in the service group versus 0.1 in the comparison group",
+   "Comparison group strengthens validity by showing what happens without the service",
+   "Non-random allocation: practices may differ (e.g. population, GP culture), threatening validity",
+   "Self-report questionnaires risk social desirability bias – participants may want to please link workers",
+   "Standardised questionnaire and GP records improve reliability (same measure each time)",
+   "15% dropout in service group – those who dropped out may have benefited least, inflating results",
+   "Six-month follow-up: effects may not last; seasonal effects possible",
+   "Sample mostly White British, English-speaking – limited generalisability",
+   "Funder conflict of interest could influence interpretation",
+   "Judgement on how far conclusions are justified ('appears to', 'may')"
+  ], "dHallmarks": [
+   "Calculates and uses the differences from the data",
+   "Distinguishes validity from reliability accurately",
+   "Explains how each weakness could change the result (direction of bias)",
+   "Concludes with a rationalised judgement on the strength of the evidence"
+  ], "model": "The findings suggest an effect: loneliness fell by 1.5 points in the service group but only 0.2 points in the comparison group, and GP appointments fell by 0.8 per person compared with 0.1. Having a comparison group strengthens validity because it shows that loneliness did not fall much without the service. Using the same standardised questionnaire at both points, and GP records rather than memory, improves reliability. However, validity is weakened because participants were not randomly allocated, so differences between practices could explain the results. Loneliness was self-reported, so participants may have under-reported loneliness to please their link worker. 15% of the service group dropped out; if these were people the service did not help, the average improvement is likely to be overstated. Follow-up lasted only six months, so we do not know whether the effect lasts, and most participants were White British and English-speaking, limiting generalisability. The council funded the study while commissioning the service, which could create pressure towards positive findings. Overall, the evidence is promising but only moderately valid, which is why the authors' cautious wording ('appears to', 'may') is justified."},
+  {"id": "u4l04", "topic": "B2", "marks": 12, "command": "Plan / Justify", "context": "The authors recommended a larger, longer study.", "q": "Plan a further piece of research into the effectiveness of social prescribing for reducing loneliness. Justify your choices.", "markingPoints": [
+   "Rationale: address the article's limitations (non-random allocation, short follow-up, unrepresentative sample) and growing demand on services",
+   "Achievable, specific objectives (e.g. measure change in loneliness at 6, 12 and 18 months; compare GP use; explore barriers for people with sensory loss or limited English)",
+   "Method: randomised controlled design or matched comparison; standardised questionnaire plus independent interviewer; qualitative interviews/focus groups; GP data",
+   "Sample: larger, stratified sample including different ethnic groups, languages, disabilities, urban and rural areas; interpreters and accessible formats",
+   "Timescale: realistic schedule (e.g. 2 years including recruitment, 18-month follow-up, analysis)",
+   "Monitoring and modification: steering group, interim reviews, adjusting recruitment if response is low",
+   "Measures of success: target recruitment/retention, statistically meaningful difference in loneliness scores, reduced GP use, participant-reported outcomes",
+   "Ethics: informed consent, capacity, waiting-list control so all eventually receive the service, confidentiality, data protection, independent funding or declared conflicts, ethics committee approval",
+   "Justification for each choice linked to validity, reliability and feasibility"
+  ], "dHallmarks": [
+   "Covers every B2 heading in a coherent plan",
+   "Every choice is justified with reference to the article's weaknesses",
+   "Ethical solutions are feasible and specific (e.g. waiting-list control)",
+   "Shows awareness of practical constraints (cost, time, access)"
+  ], "model": "Rationale: the Harbourford study suggests social prescribing reduces loneliness, but its non-random design, six-month follow-up and mainly White British sample mean the evidence is not strong enough to guide large-scale investment. Objectives: (1) measure loneliness at baseline, 6, 12 and 18 months; (2) compare GP appointment use; (3) explore barriers for people with sensory impairments or limited English. Method: a randomised design with a waiting-list control group, so participants are allocated fairly and the comparison is valid; the same validated loneliness questionnaire administered by an independent researcher to reduce social desirability bias; GP records for objective data; and semi-structured interviews with a purposive sub-sample to explain results. Sample: around 400 adults aged 70+ across urban and rural practices, stratified to include different ethnic and language groups and people with hearing or sight loss, with interpreters and accessible materials to improve generalisability. Timescale: two years – three months for ethics approval and recruitment, 18 months' follow-up, three months' analysis. Monitoring: a steering group including service users reviews recruitment and dropout every three months and modifies methods (e.g. home visits) if needed. Success measures: at least 80% retention, a clear difference in loneliness scores between groups, reduced GP use and positive participant-reported outcomes. Ethics: informed consent with capacity assessment, the right to withdraw, anonymised data stored securely under data protection law, independent funding or full disclosure of conflicts of interest, and approval from a research ethics committee; the waiting-list design ensures no one is permanently denied the service."},
+  {"id": "u4l05", "topic": "C3", "marks": 10, "command": "Discuss", "context": "Use the fictional Harbourford practice article and your own secondary research.", "q": "Discuss the implications of this research for health and social care practice and service provision.", "markingPoints": [
+   "Practice: GPs and practice staff could routinely ask older patients about loneliness and refer to link workers",
+   "Practice: link workers need person-centred skills, goal-setting and knowledge of community resources",
+   "Practice: adapt activities for people with hearing loss; accessible communication",
+   "Provision: commissioners may expand social prescribing across more practices",
+   "Provision: reduced GP appointments could free capacity, though evidence is limited",
+   "Provision: transport and cost barriers mean funding may be needed for community groups/transport schemes",
+   "Provision: voluntary sector capacity must grow to absorb referrals; multi-agency working",
+   "Equality: services must reach minority ethnic and non-English-speaking groups",
+   "Links to wider context from own secondary research (e.g. national policy on personalised care, ageing population)",
+   "Caution: limitations mean changes should be piloted and evaluated"
+  ], "dHallmarks": [
+   "Separates practice (how professionals work) from service provision (what is offered/funded)",
+   "Integrates own secondary research to show understanding of the wider issue",
+   "Balances benefits against barriers and the limits of the evidence"
+  ], "model": "For practice, the findings suggest GPs and receptionists could routinely ask older patients about loneliness and refer them to link workers, treating it as a health issue rather than just a social one. Link workers need person-centred skills to set meaningful goals and good knowledge of local groups, and staff running activities should adapt them for people with hearing loss, as two interviewees struggled to join in. For service provision, commissioners might expand social prescribing to more practices, especially given an ageing population and pressure on GP services; the drop in appointments from 5.0 to 4.2 suggests possible savings. However, interviewees identified transport and cost as barriers, so provision would need to include funding for community transport or subsidised activities, and voluntary groups would need resources to cope with more referrals, requiring joined-up working between the NHS, council and charities. The mainly White British sample means services must deliberately reach minority ethnic and non-English-speaking communities. My secondary research [students insert their own sources here] shows how this fits national moves towards personalised care. Because the evidence is limited, any expansion should be piloted and evaluated rather than assumed to work everywhere."},
+  {"id": "u4l06", "topic": "C2", "marks": 15, "command": "Evaluate", "context": "Use the fictional Harbourford practice article and your own secondary research.", "q": "Evaluate the extent to which this research provides a sound basis for expanding social prescribing services for older adults.", "markingPoints": [
+   "Purpose: the research addresses an important issue (loneliness and health in older age) and a gap in local evidence",
+   "Strengths: comparison group, mixed methods/triangulation, ethics approval, consent for records, clear measurable outcome",
+   "Results: 1.3-point greater fall in loneliness; 0.7 fewer GP appointments relative to comparison",
+   "Weaknesses: non-random allocation, self-report bias, 15% dropout, 6-month follow-up, unrepresentative sample, council funding conflict of interest",
+   "Qualitative findings add credibility and identify barriers that would affect expansion",
+   "Comparison with own secondary sources: do other studies/reviews support or challenge the findings?",
+   "Feasibility and cost of expansion; voluntary-sector capacity",
+   "Ethical considerations in scaling up (equity of access)",
+   "Recommendations for adaptations (accessible activities, transport, monitoring outcomes)",
+   "Supported overall judgement"
+  ], "dHallmarks": [
+   "Critical, rationalised judgements about each technique (not lists of pros and cons)",
+   "Evaluates against validity and reliability explicitly",
+   "Uses own secondary research to confirm or challenge the article",
+   "Professional, justified conclusion with recommended adaptations"
+  ], "model": "The research addresses an important issue: loneliness in older adults is linked to poorer health and greater use of services, so evidence on what works is valuable for commissioners. It has several strengths. The comparison group shows the service group's loneliness fell by 1.3 points more than expected, and GP appointments fell by 0.7 more per person. Combining questionnaires, GP records and interviews allowed triangulation, and the interviews explain how the service helped, which increases confidence that the effect is real. Ethical approval and consent for record access show the research was conducted responsibly. However, there are significant threats to validity. Participants were not randomly allocated, so differences between practices could explain the results. Loneliness was self-reported and could be influenced by wanting to please link workers. The 15% dropout may have removed those who benefited least, inflating the average improvement, and six months is too short to show lasting change. The mostly White British, English-speaking sample limits generalisability, which matters because expansion would serve more diverse communities. The council both funded the study and commissions the service, a conflict of interest that could encourage positive interpretation. [Students compare with their own secondary sources here: for example, whether larger reviews find similar, smaller or mixed effects.] Expansion would also depend on feasibility: voluntary groups need capacity and funding, and the barriers of transport and cost would need addressing. Overall, the research provides a promising but not yet sound basis for large-scale expansion. A justified approach would be a staged expansion with accessible activities, transport support and independent evaluation using a randomised design and longer follow-up."}
+ ],
+ "commandWords": [
+  {"word": "Explain", "means": "Give clear details and reasons to support a point.", "doThis": "Link each point to the article: what was done → why → effect on the research."},
+  {"word": "Analyse", "means": "Break information or data down to interpret relationships and trends.", "doThis": "Use the figures, calculate differences, and explain what each strength or weakness means for the findings."},
+  {"word": "Discuss", "means": "Consider different aspects of an issue and how they interrelate.", "doThis": "Cover several angles (practice, provision, different groups) and show how they connect."},
+  {"word": "Evaluate", "means": "Weigh strengths and weaknesses or alternatives to reach a supported judgement.", "doThis": "Judge each technique against validity and reliability, bring in your own sources, then conclude clearly."},
+  {"word": "Justify", "means": "Give reasons or evidence to support a choice or opinion.", "doThis": "For every planning decision, say why it is the best option for this issue and how it fixes a weakness."},
+  {"word": "Plan", "means": "Set out how a task would be carried out from start to finish to meet objectives.", "doThis": "Work through every B2 heading in order: rationale, objectives, methods, sample, timescale, monitoring, success measures, ethics."}
+ ],
+ "researchToolkit": {
+  "methods": [
+   {"name": "Questionnaire", "type": "both", "pros": ["Reaches large samples quickly and cheaply", "Closed questions give quantitative data that is easy to analyse and compare", "Anonymity can encourage honest answers"], "cons": ["Low response rates can bias the sample", "Cannot clarify or probe answers", "Closed questions limit depth; leading questions threaten validity", "Excludes people with literacy, language or sight barriers unless adapted"]},
+   {"name": "Interview (structured, semi-structured, unstructured)", "type": "qual (structured can be quant)", "pros": ["Rich, detailed data in participants' own words", "Researcher can probe and clarify", "Accessible for people who cannot complete written forms"], "cons": ["Time-consuming and costly, so samples are small", "Interviewer bias and social desirability bias", "Harder to analyse and compare", "Less generalisable"]},
+   {"name": "Case study", "type": "both", "pros": ["In-depth understanding of one individual, group or setting", "Can use several methods (triangulation)", "Useful for rare conditions or complex situations"], "cons": ["Findings may not generalise", "Researcher subjectivity", "Difficult to replicate, so reliability is limited"]},
+   {"name": "Scientific experiment / randomised controlled trial", "type": "quant", "pros": ["Controls variables, so cause and effect can be established", "Random allocation and blinding reduce bias", "Replicable, improving reliability"], "cons": ["Can be expensive and time-consuming", "Artificial conditions may reduce real-world validity", "Ethical issues in withholding treatment from control groups"]},
+   {"name": "Checklist", "type": "quant", "pros": ["Quick and consistent to complete", "Standardised, so results are comparable and reliable", "Useful for observing milestones or safety standards"], "cons": ["Little depth or explanation", "Items may miss important behaviours", "Observer may interpret items differently"]},
+   {"name": "Observation (participant / non-participant)", "type": "both", "pros": ["Shows what people actually do rather than what they say", "Useful for people who cannot easily communicate verbally", "Participant observation gives insider understanding"], "cons": ["Observer effect – people behave differently when watched", "Observer bias", "Ethical issues of consent and covert observation", "Time-consuming"]},
+   {"name": "Focus group", "type": "qual", "pros": ["Discussion can generate ideas and range of views", "Efficient way to hear several people", "Participants can build on each other's points"], "cons": ["Dominant voices can influence others (group conformity)", "Confidentiality harder to guarantee", "Hard to analyse; small samples"]},
+   {"name": "Literature review", "type": "secondary (both)", "pros": ["Summarises what is already known and identifies gaps", "Cheap, no participants needed, fewer ethical issues", "Can compare findings across many studies"], "cons": ["Depends on quality of existing studies", "Selection bias in which sources are included", "May be out of date"]},
+   {"name": "Secondary data analysis (e.g. ONS, GP or local authority data)", "type": "quant", "pros": ["Large datasets reveal trends over time and between areas", "Often collected systematically by official bodies", "Quick and inexpensive"], "cons": ["Data may not measure exactly what you need", "Researcher cannot control how it was collected", "Can be misused or misrepresented in graphs and statistics"]}
+  ],
+  "glossary": [
+   {"term": "Validity", "def": "The extent to which research measures what it claims to measure, so its conclusions are accurate."},
+   {"term": "Reliability", "def": "The extent to which a method gives consistent results if repeated in the same way."},
+   {"term": "Generalisability", "def": "How far findings from a sample can be applied to a wider population."},
+   {"term": "Triangulation", "def": "Using more than one method, source or researcher to cross-check findings and improve validity."},
+   {"term": "Sample", "def": "The group of people selected to take part, intended to represent the target population."},
+   {"term": "Random sampling", "def": "Every member of the target population has an equal chance of being chosen."},
+   {"term": "Stratified sampling", "def": "The population is divided into subgroups (e.g. age, ethnicity) and participants are chosen in proportion to each."},
+   {"term": "Opportunity sampling", "def": "Using whoever is available at the time; quick but often unrepresentative."},
+   {"term": "Sampling bias", "def": "When the sample does not represent the population, so findings are distorted."},
+   {"term": "Social desirability bias", "def": "Participants give answers that make them look good rather than truthful answers."},
+   {"term": "Researcher (interviewer) bias", "def": "The researcher's expectations or behaviour influence responses or interpretation."},
+   {"term": "Qualitative data", "def": "Descriptive data in words, e.g. from open questions, interviews or focus groups."},
+   {"term": "Quantitative data", "def": "Numerical data that can be counted, measured and shown in tables and graphs."},
+   {"term": "Primary research", "def": "Data collected first-hand by the researcher for their own purpose."},
+   {"term": "Secondary research", "def": "Using data and published research already collected by others."},
+   {"term": "Peer review", "def": "Independent experts check research for quality before publication."},
+   {"term": "Informed consent", "def": "Participants agree to take part after being told the purpose, procedures, risks and their right to withdraw."},
+   {"term": "Confidentiality / anonymity", "def": "Protecting participants' and settings' identities and information."},
+   {"term": "Conflict of interest", "def": "When a researcher or funder has an interest that could influence how research is conducted or reported."},
+   {"term": "Mean / median / mode", "def": "Mean: total ÷ number of values. Median: middle value in order. Mode: most frequent value. The median resists outliers."},
+   {"term": "Literature review", "def": "A critical summary of existing research on an issue, showing what is known and where gaps are."},
+   {"term": "Placebo / double-blind", "def": "A dummy treatment; double-blind means neither participants nor researchers know who receives which, reducing bias."}
+  ],
+  "partAPlan": [
+   "Day 1–2: read the article three times – first to skim for the gist, then to annotate the issue, methods, sample, ethics, findings and the authors' stated limitations, then to list questions you still have.",
+   "Day 3: write a one-paragraph summary and a 'methods table' (method, data type, strength, weakness, effect on validity/reliability).",
+   "Week 1: search for secondary sources with academic search engines and databases using keywords from the article combined with AND/OR, filtered to recent UK sources.",
+   "Aim for a balanced set: at least one source that supports the findings, one that challenges or complicates them, official statistics on the size of the issue, and one policy or practice document relevant to services.",
+   "Week 2: evaluate each source – who wrote it, purpose, date, methodology, sample, possible bias or conflict of interest – and note how it connects to the article.",
+   "Week 3: organise notes under assessment headings: AO1 methods/skills/ethics; AO2 applying them to this article; AO3 data and impact on practice/provision; AO4 validity, further research, implications.",
+   "Draft a further-research plan using every B2 heading, so you can adapt it quickly in Part B.",
+   "Week 4: rehearse timed answers to likely question types and refine your notes. Check the current Part A instructions with your teacher for exactly what notes, if any, you may take into Part B and in what format.",
+   "Keep a full reference list as you go (author, year, title, publisher or journal, URL and date accessed), arranged alphabetically in a consistent style such as Harvard.",
+   "Use the 6 hours of monitored note-making sessions efficiently: arrive with sources found and know which section of your notes you will build in each session."
+  ],
+  "planningFramework": [
+   "Rationale – why is this research needed? Link to gaps or weaknesses in the article and the scale of the issue.",
+   "Objectives – what exactly will you find out? Make them specific, measurable and achievable.",
+   "Research methods – which methods and why? Consider mixed methods for triangulation.",
+   "Target group and sample – who, how many, how selected? Aim for a representative sample.",
+   "Timescales – how long for each stage (ethics approval, recruitment, data collection, analysis, reporting)?",
+   "Monitoring and modification – how will you review progress and adapt if things go wrong?",
+   "Measures for success – how will you know the research has achieved its objectives?",
+   "Ethical issues – consent, capacity, confidentiality, data protection, harm, conflicts of interest, ethics committee approval."
+  ]
+ }
+}

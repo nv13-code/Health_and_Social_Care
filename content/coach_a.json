@@ -1,0 +1,890 @@
+{
+ "5": {
+  "title": "Meeting Individual Care and Support Needs",
+  "glh": 90,
+  "assignments": "Up to two assignments: one covering learning aims A, B and C (A.D1, BC.D2) and one covering learning aim D (D.D3, D.D4).",
+  "bigIdea": "At D you stop describing good care and start judging it: how well do anti-discriminatory practice, ethical decision-making, personalisation and multi-agency working actually work for specific named individuals, and why?",
+  "evidence": [
+   "Anchor every section to the specific individuals or case studies in your assignment brief — generic points about 'service users' rarely reach D.",
+   "Use the ethical theories named in the spec (consequentialism, deontology, principlism, virtue ethics) as tools to weigh options, not as a list of definitions.",
+   "Where you mention legislation or guidance (e.g. Equality Act 2010, Care Act 2014, Mental Capacity Act 2005), say what it requires a worker to do in this case. Check with your tutor that any legislation or guidance you name is current.",
+   "Write a clear concluding judgement for each 'evaluate' section — Appendix 2 says evaluation should lead to a supported judgement, often in a conclusion.",
+   "Check the M criteria are fully met first: Distinction criteria build on Merit evidence, they don't replace it."
+  ],
+  "criteria": {
+   "A.D1": {
+    "verb": "Evaluate",
+    "decode": "Judge how successful anti-discriminatory practice has been (or would be) for the specific individuals in your brief — what worked, what didn't, and how far it made a difference.",
+    "buildsOn": [
+     "A.P1",
+     "A.P2",
+     "A.M1",
+     "A.M2"
+    ],
+    "mustInclude": [
+     "At least two specific individuals with different needs, named from your brief",
+     "Specific anti-discriminatory actions (e.g. adapting communication, challenging discrimination, applying codes of practice and policies)",
+     "Strengths AND limitations of each action for each individual",
+     "Barriers that can reduce success (e.g. staff attitudes, resources, unconscious bias)",
+     "Links to relevant legislation and codes of practice and what they require in practice",
+     "A supported overall judgement on how successful it was, with a reason"
+    ],
+    "pitfalls": [
+     "Explaining what equality and diversity mean instead of judging success",
+     "Only giving positives",
+     "Talking about service users in general instead of the specific individuals",
+     "No conclusion"
+    ],
+    "starters": [
+     "The most successful aspect of anti-discriminatory practice for … was … because …",
+     "However, this was less effective for … since …",
+     "Overall, the evidence suggests that … because …"
+    ],
+    "stretch": "Compares how success differs between the individuals and explains why the same approach works better for one than another."
+   },
+   "BC.D2": {
+    "verb": "Justify",
+    "decode": "Give reasons and evidence why the strategies and techniques chosen to deal with ethical issues and challenges are the right ones for these individuals when care is planned and delivered.",
+    "buildsOn": [
+     "B.P3",
+     "C.P4",
+     "C.P5",
+     "B.M3",
+     "C.M4"
+    ],
+    "mustInclude": [
+     "The specific ethical issues each individual faces (e.g. conflicts of interest, balancing resources, choice vs risk)",
+     "The strategies and communication techniques used to address each issue",
+     "Reasons each strategy suits that individual's needs, preferences and rights",
+     "Reference to an ethical approach or theory to support your reasons",
+     "Reference to personalisation and how it shapes the plan",
+     "Alternatives that were considered and why the chosen strategy is better"
+    ],
+    "pitfalls": [
+     "Describing strategies without giving reasons why they are right",
+     "Ignoring the 'planning' part — only talking about delivery",
+     "Treating ethical issues and challenges as separate lists rather than linking them to strategies"
+    ],
+    "starters": [
+     "This strategy is justified because …",
+     "An alternative would be …, but this is less appropriate for … because …",
+     "From a … (e.g. deontological) perspective, this approach is right because …"
+    ],
+    "stretch": "Weighs competing rights (the individual, family, staff, other service users) and shows why the chosen balance is the most defensible."
+   },
+   "D.D3": {
+    "verb": "Justify",
+    "decode": "Explain with reasons and evidence why the way organisations and professionals work together is the right way to meet individual needs, while keeping information safe and confidential.",
+    "buildsOn": [
+     "D.P6",
+     "D.P7",
+     "D.P8",
+     "D.M5",
+     "D.M6"
+    ],
+    "mustInclude": [
+     "Named professionals and agencies involved with the individual(s) and their roles",
+     "How they share and manage information (records, meetings, electronic systems, consent)",
+     "Why this joint working meets the individual's needs better than single-agency working",
+     "How confidentiality is protected and when disclosure without consent may be justified",
+     "Relevant information-management legislation and codes of practice (e.g. data protection law, Caldicott principles). Check with your tutor that any legislation or guidance you name is current.",
+     "Reasons, not just descriptions, for each point"
+    ],
+    "pitfalls": [
+     "Listing job roles without linking them to the individual's needs",
+     "Treating confidentiality as 'never share anything'",
+     "Missing the information management half of the criterion"
+    ],
+    "starters": [
+     "Working together in this way is justified because …",
+     "Sharing this information is appropriate because …",
+     "Confidentiality is maintained through …, which is important because …"
+    ],
+    "stretch": "Shows the tension between sharing information to protect someone and respecting their privacy, and justifies where the line should be drawn."
+   },
+   "D.D4": {
+    "verb": "Evaluate",
+    "decode": "Weigh up how well multi-agency and multidisciplinary working meets the care and support needs of specific individuals, and reach a judgement.",
+    "buildsOn": [
+     "D.P6",
+     "D.P7",
+     "D.M5"
+    ],
+    "mustInclude": [
+     "Specific individuals and the range of needs they have (physical, intellectual, emotional, social)",
+     "Benefits of multi-agency and multidisciplinary working for each",
+     "Limitations and risks (e.g. communication breakdown, delays, unclear responsibility, information not shared)",
+     "Evidence or examples, such as case reviews where poor joint working had consequences (check examples with your tutor)",
+     "Factors that make joint working succeed or fail",
+     "A supported judgement on how far needs are met"
+    ],
+    "pitfalls": [
+     "One-sided — all benefits",
+     "No specific individual",
+     "No final judgement"
+    ],
+    "starters": [
+     "Multi-agency working meets …'s needs well in terms of …, because …",
+     "However, it is less effective when …",
+     "On balance, …"
+    ],
+    "stretch": "Recommends realistic improvements that would make joint working more effective for the individual."
+   }
+  }
+ },
+ "6": {
+  "title": "Work Experience in Health and Social Care",
+  "glh": 60,
+  "assignments": "Up to two assignments: learning aims A and B (AB.D1) before placement, and learning aims C and D (C.D2, D.D3) during and after placement.",
+  "bigIdea": "D work shows you prepared thoughtfully, performed with initiative in placement, and used honest reflection and feedback to shape real future plans.",
+  "evidence": [
+   "Keep your work experience log up to date every day — vague entries written afterwards cannot support D.D3.",
+   "Ask your placement supervisor for witness statements that mention specific situations where you used initiative and followed procedures (C.D2).",
+   "Make your goals SMART and link each one to a skill or attribute you need for your chosen career.",
+   "Use a recognised reflective model (e.g. Gibbs or Kolb) so your reflection goes beyond 'what happened'.",
+   "Keep feedback (supervisor, tutor, self) and show what you changed because of it."
+  ],
+  "criteria": {
+   "AB.D1": {
+    "verb": "Justify",
+    "decode": "Give reasons and evidence for why preparing for placement (research, goal-setting, planning) helped you understand what would be expected of you.",
+    "buildsOn": [
+     "A.P1",
+     "A.P2",
+     "B.P3",
+     "B.P4",
+     "A.M1",
+     "B.M2"
+    ],
+    "mustInclude": [
+     "Specific preparation you did (researching the setting, policies, roles, dress code, DBS/health checks, goals)",
+     "What each piece of preparation told you about expectations (responsibilities, limitations, professional behaviour)",
+     "Your SMART goals and why each one matters for your development",
+     "How preparation links to your career choices",
+     "Reasons and evidence for each point, not just a list"
+    ],
+    "pitfalls": [
+     "Describing the plan without justifying why it helps",
+     "Generic goals not linked to a career",
+     "Forgetting your limitations (what you must not do on placement)"
+    ],
+    "starters": [
+     "Researching … before my placement was valuable because …",
+     "Setting the goal … was justified because …",
+     "Without this preparation, I would not have understood …"
+    ],
+    "stretch": "Shows how preparation reduced risk to service users and to you, not just how it helped you learn."
+   },
+   "C.D2": {
+    "verb": "Demonstrate",
+    "decode": "Show — through observed practice — that you can do work-related tasks proficiently, take initiative within your role, follow procedures and choose the right skills for different situations.",
+    "buildsOn": [
+     "C.P5",
+     "C.P6",
+     "C.M3"
+    ],
+    "mustInclude": [
+     "Observation records or witness statements covering several different situations",
+     "Examples of taking initiative appropriately (within your responsibilities)",
+     "Evidence you followed the setting's procedures (e.g. confidentiality, safeguarding, hygiene)",
+     "Examples of adapting communication or skills to different people or situations",
+     "Log entries that explain your choice of skill and why"
+    ],
+    "pitfalls": [
+     "Witness statements that only say 'good placement'",
+     "Only one type of task observed",
+     "Initiative that goes beyond your role or breaks procedure"
+    ],
+    "starters": [
+     "In this situation I chose … because …",
+     "I took the initiative to … while following the setting's procedure for …",
+     "My supervisor observed …"
+    ],
+    "stretch": "Evidence shows you selecting different techniques for different service users and explaining the reasoning."
+   },
+   "D.D3": {
+    "verb": "Justify",
+    "decode": "Give reasons and evidence for how your planning and reflection during placement have shaped your future personal and professional development plans.",
+    "buildsOn": [
+     "D.P7",
+     "D.P8",
+     "D.M4"
+    ],
+    "mustInclude": [
+     "Clear links between your original goals and what actually happened",
+     "Reflection on strengths and areas for development using a reflective model",
+     "Feedback you received and how you responded",
+     "A personal and professional development plan with specific, timed actions",
+     "Reasons why each future action follows from your reflection",
+     "How this informs your career or further study choices"
+    ],
+    "pitfalls": [
+     "Reflection that just retells events",
+     "A development plan that isn't linked to the reflection",
+     "No feedback used"
+    ],
+    "starters": [
+     "Reflecting on … showed me that …, so I plan to …",
+     "Feedback from … highlighted …, which is why …",
+     "This is justified because …"
+    ],
+    "stretch": "Honest about weaknesses and shows a clear chain: experience → reflection → feedback → specific future action."
+   }
+  }
+ },
+ "7": {
+  "title": "Principles of Safe Practice in Health and Social Care",
+  "glh": 90,
+  "assignments": "Up to two assignments: learning aims A and B (A.D1, B.D2) and learning aims C and D (CD.D3, CD.D4). Most criteria refer to 'a selected health or social care setting'.",
+  "bigIdea": "D work is rooted in one real or realistic setting and judges how well duty of care, safeguarding, legislation and procedures actually keep people safe there.",
+  "evidence": [
+   "Choose your setting early and research its real policies (complaints, safeguarding, health and safety) where possible.",
+   "Every legislation point should say what it makes staff do in that setting. Check with your tutor that any legislation or guidance you name is current.",
+   "Use real-world case reviews and inquiries as evidence of what happens when procedures fail — check examples with your tutor.",
+   "End each D section with a clear judgement about effectiveness or significance."
+  ],
+  "criteria": {
+   "A.D1": {
+    "verb": "Evaluate",
+    "decode": "Judge how important duty of care and complaints procedures really are in keeping practice safe in your chosen setting, considering strengths and limitations.",
+    "buildsOn": [
+     "A.P1",
+     "A.P2",
+     "A.M1"
+    ],
+    "mustInclude": [
+     "What duty of care means in your setting with specific examples",
+     "Dilemmas between individual rights and duty of care (e.g. risk-taking, refusing care) and how they are handled",
+     "How the complaints procedure works and how it improves practice",
+     "Limitations (e.g. people not complaining, fear, poor follow-up)",
+     "Links to relevant legislation and regulators",
+     "A supported judgement on their significance for safe practice"
+    ],
+    "pitfalls": [
+     "Defining duty of care without applying it to the setting",
+     "Forgetting complaints procedures",
+     "No judgement"
+    ],
+    "starters": [
+     "Duty of care is highly significant in … because …",
+     "However, its effectiveness depends on …",
+     "Complaints procedures contribute to safety by …, although …"
+    ],
+    "stretch": "Shows how duty of care and complaints work together as a feedback loop that improves practice."
+   },
+   "B.D2": {
+    "verb": "Justify",
+    "decode": "Give reasons and evidence why the procedures for responding to concerns about abuse and neglect in your setting are the right ones.",
+    "buildsOn": [
+     "B.P3",
+     "B.P4",
+     "B.P5",
+     "B.M2"
+    ],
+    "mustInclude": [
+     "Types and signs of abuse and neglect relevant to the setting's service users",
+     "Factors that make these individuals vulnerable",
+     "Step-by-step response procedure (recognise, respond, record, report, refer)",
+     "Reasons each step matters (protecting the individual, evidence, preventing further harm)",
+     "Relevant safeguarding legislation and guidance for the service user group. Check with your tutor that any legislation or guidance you name is current.",
+     "How the procedure reduces the likelihood of abuse in future"
+    ],
+    "pitfalls": [
+     "Listing types of abuse without connecting to procedures",
+     "Missing the reasons why each step is right",
+     "Not tailoring to the setting's service users"
+    ],
+    "starters": [
+     "Recording concerns accurately is justified because …",
+     "Reporting to … rather than investigating yourself is important because …",
+     "This procedure protects … by …"
+    ],
+    "stretch": "Considers what happens if a step is skipped, using evidence from case reviews."
+   },
+   "CD.D3": {
+    "verb": "Justify",
+    "decode": "Give reasons and evidence why health and safety legislation, policies and procedures are effective in keeping people safe in your setting.",
+    "buildsOn": [
+     "C.P6",
+     "D.P7",
+     "D.P8",
+     "C.M3",
+     "D.M4"
+    ],
+    "mustInclude": [
+     "Key health and safety legislation and regulations relevant to the setting (e.g. HASAWA 1974, RIDDOR, COSHH, manual handling). Check with your tutor that any legislation or guidance you name is current.",
+     "The setting's policies and procedures that put the law into practice",
+     "Evidence of effectiveness (e.g. reduced incidents, inspection outcomes)",
+     "Reasons why each is effective for the specific risks in the setting",
+     "Limitations, and why they are still justified overall"
+    ],
+    "pitfalls": [
+     "Copying out what each Act says",
+     "No link to the chosen setting",
+     "Not addressing effectiveness"
+    ],
+    "starters": [
+     "… is effective in this setting because …",
+     "The policy on … puts the law into practice by …",
+     "This is justified because the main risk in this setting is …"
+    ],
+    "stretch": "Prioritises which laws and procedures matter most for that setting's risks and explains why."
+   },
+   "CD.D4": {
+    "verb": "Evaluate",
+    "decode": "Weigh up how important safe practice procedures and staff responsibilities are for the health, safety and welfare of service users in your setting, and reach a judgement.",
+    "buildsOn": [
+     "D.P7",
+     "D.P8",
+     "D.M4"
+    ],
+    "mustInclude": [
+     "Procedures for health and safety, accidents and emergencies (e.g. first aid, fire, infection control, security)",
+     "Responsibilities of employers, employees and others",
+     "How each protects welfare as well as physical safety",
+     "What happens when procedures or responsibilities are not followed",
+     "Strengths and limitations",
+     "A supported final judgement"
+    ],
+    "pitfalls": [
+     "Description of procedures only",
+     "Ignoring 'welfare'",
+     "No balance"
+    ],
+    "starters": [
+     "The most important procedure for service users' welfare is … because …",
+     "Responsibilities are only effective if …",
+     "Overall …"
+    ],
+    "stretch": "Recommends improvements to procedures based on your evaluation."
+   }
+  }
+ },
+ "8": {
+  "title": "Promoting Public Health",
+  "glh": 90,
+  "assignments": "Up to two assignments: learning aims A and B (AB.D1) and learning aims C and D (C.D2, D.D3, D.D4). Criteria refer to a specific demographic area and a selected health promotion campaign.",
+  "bigIdea": "D work uses real data about a specific area and a real campaign to judge how far public health strategies and promotion actually change health and behaviour.",
+  "evidence": [
+   "Choose a demographic area with accessible data and use current statistics (e.g. ONS, local public health profiles) — note dates on every statistic.",
+   "Choose a recent campaign with published aims and some evidence of impact.",
+   "Apply the behaviour change models in the spec (health belief model, stages of change, theory of reasoned action, theory of planned behaviour, social learning theory) to the campaign.",
+   "Use 'how far' language: give evidence for and against before you decide."
+  ],
+  "criteria": {
+   "AB.D1": {
+    "verb": "Evaluate",
+    "decode": "Judge how far strategies and monitoring of population health help public health policy reduce factors affecting health in a specific area.",
+    "buildsOn": [
+     "A.P1",
+     "A.P2",
+     "B.P3",
+     "B.P4",
+     "A.M1",
+     "B.M2",
+     "B.M3"
+    ],
+    "mustInclude": [
+     "A specific demographic area with data on health and ill health",
+     "Strategies used to develop public health policy (e.g. monitoring, partnership, legislation)",
+     "How monitoring (e.g. statistics, surveillance, screening data) informs policy",
+     "Factors affecting health in that area (socio-economic, lifestyle, environmental)",
+     "Evidence of what has and hasn't improved",
+     "A judgement on how far policy meets its aims"
+    ],
+    "pitfalls": [
+     "National data only — no specific area",
+     "Describing factors without linking to policy",
+     "No 'how far' judgement"
+    ],
+    "starters": [
+     "Data from … shows that …",
+     "This suggests the strategy has been partly successful because …",
+     "To a large extent / to a limited extent …"
+    ],
+    "stretch": "Explains why some groups within the area benefit more than others."
+   },
+   "C.D2": {
+    "verb": "Justify",
+    "decode": "Give reasons and evidence why the approaches a campaign uses to promote and protect health and prevent disease are appropriate.",
+    "buildsOn": [
+     "C.P5",
+     "C.P6",
+     "C.M4"
+    ],
+    "mustInclude": [
+     "The campaign's target audience and aims",
+     "Approaches used (e.g. education, behaviour change, legislation, screening, immunisation)",
+     "Reasons each approach suits the audience and the health issue",
+     "Evidence supporting the approaches",
+     "Ethical considerations (e.g. choice vs protection)",
+     "Why alternatives would be less suitable"
+    ],
+    "pitfalls": [
+     "Describing the campaign rather than justifying approaches",
+     "No evidence",
+     "Ignoring 'protect' and 'prevent'"
+    ],
+    "starters": [
+     "Using … is justified for this audience because …",
+     "Evidence from … supports this approach because …",
+     "An alternative such as … would be less suitable because …"
+    ],
+    "stretch": "Weighs individual freedom against population protection when justifying approaches."
+   },
+   "D.D3": {
+    "verb": "Evaluate",
+    "decode": "Judge how successful a specific campaign has been in changing people's health behaviour.",
+    "buildsOn": [
+     "D.P7",
+     "D.P8",
+     "D.M5"
+    ],
+    "mustInclude": [
+     "The campaign's behaviour change aims",
+     "A behaviour change model applied to explain how it aims to change behaviour",
+     "Evidence of behaviour change (statistics, evaluations) with dates",
+     "Barriers to participation and how far they were overcome",
+     "Strengths and weaknesses",
+     "A supported judgement on success"
+    ],
+    "pitfalls": [
+     "Measuring awareness rather than behaviour change",
+     "Model described but not applied",
+     "No evidence"
+    ],
+    "starters": [
+     "Using the … model, the campaign attempts to …",
+     "Evidence suggests behaviour has changed because …",
+     "However, …"
+    ],
+    "stretch": "Distinguishes between short-term and lasting behaviour change."
+   },
+   "D.D4": {
+    "verb": "Evaluate",
+    "decode": "Judge how far a recent campaign met public health policy aims for a demographic area through the strategies and approaches it used.",
+    "buildsOn": [
+     "D.P7",
+     "D.P8",
+     "C.M4",
+     "D.M5"
+    ],
+    "mustInclude": [
+     "The public health policy aims the campaign supports",
+     "Strategies and approaches used and how they relate to policy aims",
+     "Data for the demographic area before and after (where available)",
+     "Factors that limited impact (e.g. inequalities, funding, reach)",
+     "A clear 'how far' judgement",
+     "Recommendations"
+    ],
+    "pitfalls": [
+     "Not connecting campaign to policy",
+     "No specific area",
+     "Overclaiming success without evidence"
+    ],
+    "starters": [
+     "The campaign aligns with the policy aim of … by …",
+     "In …, data indicates …",
+     "Overall the campaign met policy aims to a … extent because …"
+    ],
+    "stretch": "Draws together A–D: policy → factors → approaches → behaviour change in one coherent judgement."
+   }
+  }
+ },
+ "9": {
+  "title": "Infection Prevention and Control",
+  "glh": 60,
+  "assignments": "Up to three assignments: one per learning aim (A.D1, B.D2, C.D3). B involves practical demonstration of infection control procedures.",
+  "bigIdea": "D work links the science of infection (cause and transmission) to the procedures and roles that break the chain of infection in real settings.",
+  "evidence": [
+   "Use the chain of infection as a framework throughout.",
+   "For the practical (B), make sure observation records describe how you adapted procedures for different situations.",
+   "Choose a named organisation for C and research its real infection control policies.",
+   "Legislation and guidance (e.g. health and safety, COSHH, hygiene codes) should be applied, not listed. Check with your tutor that any legislation or guidance you name is current."
+  ],
+  "criteria": {
+   "A.D1": {
+    "verb": "Analyse",
+    "decode": "Break down the different ways infections are caused, transmitted and contracted, showing how factors interact.",
+    "buildsOn": [
+     "A.P1",
+     "A.P2",
+     "A.M1"
+    ],
+    "mustInclude": [
+     "Different pathogens (bacteria, viruses, fungi, parasites) and how they cause disease",
+     "Routes of transmission with examples",
+     "Factors that increase susceptibility (age, immunity, setting)",
+     "How cause, transmission and contraction link together (e.g. chain of infection)",
+     "Specific diseases as examples",
+     "Interrelationships, not separate lists"
+    ],
+    "pitfalls": [
+     "Separate descriptions with no analysis of links",
+     "Too few examples",
+     "Confusing infection and disease"
+    ],
+    "starters": [
+     "This pathogen spreads by …, which means …",
+     "Susceptibility increases when …, because …",
+     "The link between … and … is …"
+    ],
+    "stretch": "Explains why the same pathogen causes disease in some people but not others."
+   },
+   "B.D2": {
+    "verb": "Justify",
+    "decode": "Give reasons why the infection control procedures and techniques you selected and adapted were right for the different situations.",
+    "buildsOn": [
+     "B.P3",
+     "B.P4",
+     "B.P5",
+     "B.M2"
+    ],
+    "mustInclude": [
+     "Each procedure you used (e.g. hand hygiene, PPE, waste disposal, decontamination)",
+     "The different situations and how you adapted",
+     "Reasons linked to the transmission route being blocked",
+     "Reference to guidance or policy",
+     "Evidence from observation records"
+    ],
+    "pitfalls": [
+     "Describing steps without reasons",
+     "No adaptation shown",
+     "Generic justification not linked to situations"
+    ],
+    "starters": [
+     "I chose … because the risk in this situation was …",
+     "I adapted … because …",
+     "This breaks the chain of infection at …"
+    ],
+    "stretch": "Explains the science behind why each step works."
+   },
+   "C.D3": {
+    "verb": "Evaluate",
+    "decode": "Judge how successfully the procedures and workers' roles in a named organisation prevent and control infection.",
+    "buildsOn": [
+     "C.P6",
+     "C.P7",
+     "C.M3"
+    ],
+    "mustInclude": [
+     "A named organisation and its key policies",
+     "Roles and responsibilities of different workers",
+     "Evidence of effectiveness (e.g. audits, inspection reports, infection rates)",
+     "Weaknesses and barriers (e.g. compliance, training, staffing)",
+     "A supported judgement"
+    ],
+    "pitfalls": [
+     "No named organisation",
+     "Listing roles without judging success",
+     "No evidence"
+    ],
+    "starters": [
+     "The organisation's … policy is effective because …",
+     "However, success depends on …",
+     "Overall …"
+    ],
+    "stretch": "Recommends specific improvements based on gaps you identify."
+   }
+  }
+ },
+ "10": {
+  "title": "Sociological Perspectives",
+  "glh": 60,
+  "assignments": "Up to two assignments: learning aims A and B (AB.D1) and learning aim C (C.D2, C.D3). Several criteria refer to a local health and social care setting.",
+  "bigIdea": "D work applies sociological perspectives and models of health to a real local setting and judges how useful they are for reducing inequality and improving services.",
+  "evidence": [
+   "Learn each perspective's view of health (e.g. functionalism, conflict/Marxism, feminism, interactionism, postmodernism) and its criticisms.",
+   "Use local demographic data and note the source and date of each figure.",
+   "Compare the biomedical model with an alternative (e.g. socio-medical) and link both to service provision.",
+   "Every perspective point should end with 'so what does this mean for the setting/service users?'"
+  ],
+  "criteria": {
+   "AB.D1": {
+    "verb": "Evaluate",
+    "decode": "Judge how useful sociological perspectives are in understanding society and models/concepts of health, and how this affects service provision in a local setting.",
+    "buildsOn": [
+     "A.P1",
+     "A.P2",
+     "B.P3",
+     "B.P4",
+     "A.M1",
+     "B.M2"
+    ],
+    "mustInclude": [
+     "Several perspectives with strengths and limitations",
+     "The biomedical model and an alternative model",
+     "Concepts of health, ill health and disability",
+     "A specific local setting and how these ideas shape its services",
+     "Comparison between perspectives",
+     "A supported judgement on their role"
+    ],
+    "pitfalls": [
+     "Describing perspectives without evaluating",
+     "No local setting",
+     "Not linking models to provision"
+    ],
+    "starters": [
+     "Functionalism helps explain … but fails to account for …",
+     "In the local setting, the biomedical model is reflected in …",
+     "The most useful perspective for this setting is … because …"
+    ],
+    "stretch": "Shows how a setting may combine models and why that matters for users."
+   },
+   "C.D2": {
+    "verb": "Evaluate",
+    "decode": "Judge sociological explanations for differences in health between social groups and how demographic data is used locally to reduce inequality.",
+    "buildsOn": [
+     "C.P5",
+     "C.P6",
+     "C.P7",
+     "C.M3",
+     "C.M4"
+    ],
+    "mustInclude": [
+     "Patterns and trends in health by group (e.g. class, gender, ethnicity, age, area)",
+     "Competing sociological explanations (e.g. cultural/behavioural, material/structural)",
+     "How demographic data is used in a local setting",
+     "Evidence of impact on inequality",
+     "Strengths and limitations of data and explanations",
+     "A supported judgement"
+    ],
+    "pitfalls": [
+     "Statistics with no explanation",
+     "Explanations with no data",
+     "No local application"
+    ],
+    "starters": [
+     "Data shows that … are more likely to …",
+     "A material explanation suggests …, whereas …",
+     "The setting uses data to …, which has …"
+    ],
+    "stretch": "Considers how data might misrepresent or miss certain groups."
+   },
+   "C.D3": {
+    "verb": "Evaluate",
+    "decode": "Judge how important sociological perspectives are in a setting for understanding society, reducing inequality and improving provision for different groups.",
+    "buildsOn": [
+     "C.M3",
+     "C.M4",
+     "A.M1"
+    ],
+    "mustInclude": [
+     "Pulls together perspectives from across the unit",
+     "Specific social groups and their needs",
+     "Practical examples of perspectives informing service provision",
+     "Limitations of applying perspectives",
+     "A clear overall judgement"
+    ],
+    "pitfalls": [
+     "Repeating AB.D1",
+     "No practical examples",
+     "No final judgement"
+    ],
+    "starters": [
+     "Perspectives are most important when …",
+     "However, in practice …",
+     "Overall …"
+    ],
+    "stretch": "Synthesises the whole unit into one clear argument."
+   }
+  }
+ },
+ "11": {
+  "title": "Psychological Perspectives",
+  "glh": 60,
+  "assignments": "Up to two assignments: learning aims A and B (AB.D1) and learning aim C (C.D2, C.D3). Learning aim C focuses on local settings and selected service users.",
+  "bigIdea": "D work shows how psychological perspectives explain development and behaviour and judges how well they help professionals manage, treat and support real service users.",
+  "evidence": [
+   "Cover the range of perspectives in the spec (e.g. behaviourist, social learning, psychodynamic, humanistic, cognitive, biological) with strengths and limitations.",
+   "Apply each perspective to a specific behaviour or service user, not in the abstract.",
+   "Link to real interventions (e.g. CBT, token economies, person-centred approaches).",
+   "Use 'social functioning' in your conclusions where the criteria ask for it."
+  ],
+  "criteria": {
+   "AB.D1": {
+    "verb": "Evaluate",
+    "decode": "Judge how useful different psychological perspectives are for understanding development and for managing and treating service users' behaviours.",
+    "buildsOn": [
+     "A.P1",
+     "A.P2",
+     "B.P3",
+     "B.P4",
+     "A.M1",
+     "B.M2"
+    ],
+    "mustInclude": [
+     "Several perspectives with key ideas",
+     "Application to specific behaviours",
+     "Strengths and limitations of each (e.g. evidence, reductionism, determinism)",
+     "Comparison between perspectives",
+     "Factors influencing development (nature/nurture)",
+     "A supported judgement"
+    ],
+    "pitfalls": [
+     "Theory descriptions only",
+     "No application",
+     "No comparison"
+    ],
+    "starters": [
+     "The behaviourist perspective is useful for … because …",
+     "However, it ignores …",
+     "Compared with …, …"
+    ],
+    "stretch": "Argues that combining perspectives gives a more complete picture and explains why."
+   },
+   "C.D2": {
+    "verb": "Evaluate",
+    "decode": "Judge how well psychological perspectives are applied in local settings to improve selected service users' social functioning.",
+    "buildsOn": [
+     "C.P5",
+     "C.P6",
+     "C.M3"
+    ],
+    "mustInclude": [
+     "Specific local settings and selected service users",
+     "Practices based on perspectives",
+     "Evidence of improved social functioning",
+     "Limitations and ethical issues",
+     "A supported judgement"
+    ],
+    "pitfalls": [
+     "Generic settings",
+     "No evidence of outcomes",
+     "No judgement"
+    ],
+    "starters": [
+     "In …, staff use … based on …",
+     "This improves social functioning by …",
+     "However …"
+    ],
+    "stretch": "Considers how individual differences affect the success of an approach."
+   },
+   "C.D3": {
+    "verb": "Evaluate",
+    "decode": "Judge the overall importance of psychological perspectives in health and social care for understanding development and managing behaviour.",
+    "buildsOn": [
+     "A.M1",
+     "B.M2",
+     "C.M3"
+    ],
+    "mustInclude": [
+     "Draws together learning aims A, B and C",
+     "Specific examples",
+     "Balance of value and limitations",
+     "A clear overall judgement"
+    ],
+    "pitfalls": [
+     "Repeating earlier work",
+     "No overall judgement"
+    ],
+    "starters": [
+     "Across health and social care, perspectives are important because …",
+     "Their value is limited when …",
+     "Overall …"
+    ],
+    "stretch": "Synthesises into a confident, well-supported conclusion."
+   }
+  }
+ },
+ "12": {
+  "title": "Supporting Individuals with Additional Needs",
+  "glh": 60,
+  "assignments": "Up to two assignments: learning aim A (A.D1) and learning aims B and C (BC.D2, BC.D3). Criteria refer to one child and one adult with different additional needs.",
+  "bigIdea": "D work follows two real or realistic individuals and judges the impact of diagnosis, support, adaptations and statutory provision on their wellbeing and life chances.",
+  "evidence": [
+   "Choose one child and one adult with clearly different additional needs and keep them throughout.",
+   "Use both the medical and social models of disability to frame your discussion.",
+   "Reference statutory provision for children and adults. Check with your tutor that any legislation or guidance you name is current.",
+   "Consider the individual, family and wider society in every judgement."
+  ],
+  "criteria": {
+   "A.D1": {
+    "verb": "Evaluate",
+    "decode": "Judge the significance of a diagnosis of additional needs for the individuals, their families and society.",
+    "buildsOn": [
+     "A.P1",
+     "A.M1"
+    ],
+    "mustInclude": [
+     "How additional needs are diagnosed or determined",
+     "Positive impacts of diagnosis (access to support, understanding)",
+     "Negative impacts (labelling, stigma, emotional effects)",
+     "Impacts on family",
+     "Impacts on society (services, costs, inclusion)",
+     "A supported judgement"
+    ],
+    "pitfalls": [
+     "Only positives",
+     "Forgetting family or society",
+     "No judgement"
+    ],
+    "starters": [
+     "A diagnosis is significant for … because …",
+     "For the family, …",
+     "Overall …"
+    ],
+    "stretch": "Compares significance for the child and the adult."
+   },
+   "BC.D2": {
+    "verb": "Justify",
+    "decode": "Give reasons why the support and adaptations for your two individuals help them overcome challenges to daily living, linked to statutory provision.",
+    "buildsOn": [
+     "B.P2",
+     "B.P3",
+     "C.P4",
+     "C.P5",
+     "B.M2",
+     "C.M3",
+     "C.M4"
+    ],
+    "mustInclude": [
+     "Challenges to daily living for each individual",
+     "Specific support and adaptations",
+     "Reasons each is appropriate",
+     "Links to statutory provision",
+     "Person-centred approaches",
+     "Alternatives considered"
+    ],
+    "pitfalls": [
+     "Describing support without reasons",
+     "No statutory links",
+     "Treating both individuals the same"
+    ],
+    "starters": [
+     "This adaptation is justified because …",
+     "Under … provision, …",
+     "This is more suitable than … because …"
+    ],
+    "stretch": "Shows how support reflects the social model of disability."
+   },
+   "BC.D3": {
+    "verb": "Evaluate",
+    "decode": "Judge the impact of support on the two individuals' wellbeing and life chances.",
+    "buildsOn": [
+     "B.M2",
+     "C.M3",
+     "C.M4"
+    ],
+    "mustInclude": [
+     "Impact on wellbeing (PIES)",
+     "Impact on life chances (education, employment, independence)",
+     "Strengths and limitations of support",
+     "Barriers remaining",
+     "A supported judgement for each individual"
+    ],
+    "pitfalls": [
+     "Description only",
+     "Ignoring life chances",
+     "No judgement"
+    ],
+    "starters": [
+     "Support has improved …'s wellbeing by …",
+     "However, … remains a barrier",
+     "Overall …"
+    ],
+    "stretch": "Recommends improvements to support."
+   }
+  }
+ }
+}

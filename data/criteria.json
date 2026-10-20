@@ -1,0 +1,469 @@
+{
+ "criteria": {
+  "5": {
+   "A.P1": "Explain the importance of promoting equality and diversity for individuals with different needs.",
+   "A.P2": "Explain the skills and personal attributes necessary for professionals who care for individuals with different needs.",
+   "B.P3": "Explain how to incorporate ethical principles into the provision of support for individuals with different needs.",
+   "C.P4": "Explain the strategies and communication techniques used with individuals different needs to overcome different challenges.",
+   "C.P5": "Explain the benefits of promoting personalisation when overcoming challenges faced by individuals with different needs.",
+   "D.P6": "Explain why meeting the needs of the individuals requires the involvement of different agencies.",
+   "D.P7": "Explain the roles and responsibilities of different members of the multidisciplinary team in meeting the needs of specific individuals.",
+   "D.P8": "Explain the arrangements for managing information between professionals.",
+   "A.M1": "Analyse the impact of preventing discrimination for individuals with different needs.",
+   "A.M2": "Assess different methods professionals might use when building relationships and establishing trust with individuals with needs.",
+   "B.M3": "Analyse how an ethical approach to providing support would benefit specific individuals with different needs.",
+   "C.M4": "Assess the strategies and communication techniques used to overcome different challenges faced by individuals with different care and support needs.",
+   "D.M5": "Assess the benefits of multidisciplinary and multi-agency working for specific individuals with care and support needs.",
+   "D.M6": "Analyse the impact of legislation and codes of practice relating to information management on multidisciplinary working.",
+   "A.D1": "Evaluate the success of promoting anti-discriminatory practice for specific individuals with different needs.",
+   "BC.D2": "Justify the strategies and techniques used to overcome ethical issues and challenges experienced by individuals with different needs when planning and providing care.",
+   "D.D3": "Justify how organisations and professionals work together to meet individual needs while managing information and maintaining confidentiality.",
+   "D.D4": "Evaluate how multi-agency and multidisciplinary working can meet the care and support needs of specific individuals."
+  },
+  "6": {
+   "A.P1": "Explain how work experience can support the development of own professional skills and personal attributes for work in the health and social care sector.",
+   "A.P2": "Discuss ways in which work experience can inform own career choices and help prepare for employment in the health and social care sector.",
+   "B.P3": "Explain own responsibilities and limitations on work experience placement.",
+   "B.P4": "Explain how to meet own specific personal and professional development goals while on work placement.",
+   "C.P5": "Demonstrate work-related skills to meet set objectives for work experience tasks.",
+   "C.P6": "Discuss ways in which work shadowing and observation can support development of own skills while on work placement.",
+   "D.P7": "Review own strengths and areas for development in response to feedback on work experience placement.",
+   "D.P8": "Produce a personal and professional development plan which identifies improvements to own skills for future development.",
+   "A.M1": "Analyse how work experience can provide support in gaining a realistic understanding of the health and social care sector.",
+   "B.M2": "Assess the importance of own work experience plan to support own learning and development.",
+   "C.M3": "Demonstrate work-related skills with confidence and proficiency to meet objectives in different situations.",
+   "D.M4": "Assess how self-reflection can contribute to personal and professional development in work experience placement.",
+   "AB.D1": "Justify the benefits of preparation in supporting own understanding of the expectations of work experience.",
+   "C.D2": "Demonstrate work-related skills proficiently, taking the initiative to carry out activities according to own responsibilities and setting’s procedures and selecting appropriate skills and techniques for different situations.",
+   "D.D3": "Justify how planning for and reflecting on skills developed during own work experience placement have informed own future plans for personal and professional development."
+  },
+  "7": {
+   "A.P1": "Explain the implications of a duty of care in a selected health or social care setting.",
+   "A.P2": "Discuss ways in which complaints and appeals procedures address failure in a duty of care in a selected health or social care setting.",
+   "B.P3": "Describe the types and signs of abuse and neglect that may be experienced by different individuals.",
+   "B.P4": "Explain the factors that may contribute to and reduce the likelihood of abuse and neglect for service users in health and social care.",
+   "B.P5": "Explain how to respond to concerns about abuse and neglect in the selected health or social care setting.",
+   "C.P6": "Compare the influence of different health and safety laws or policies on health and social care practice in a selected setting.",
+   "D.P7": "Explain how different procedures maintain health and safety in a selected health or social care setting.",
+   "D.P8": "Explain the health and safety responsibilities of employers, employees and others in a selected health or social care setting.",
+   "A.M1": "Assess the importance of balancing individual rights with a duty of care in a selected health or social care setting.",
+   "B.M2": "Assess the importance of recognising and responding to evidence or concerns about different types of abuse and neglect in health and social care.",
+   "C.M3": "Analyse how health and safety legislation or policies influence safe practice in a selected health or social care setting.",
+   "D.M4": "Analyse how individual responsibilities and health, safety and emergency procedures contribute to safe practice in a selected health or social care setting.",
+   "A.D1": "Evaluate the significance of a duty of care and complaints procedures in promoting safe practice in a selected health or social care setting.",
+   "B.D2": "Justify procedures for responding to concerns about abuse and neglect in the selected health or social care setting.",
+   "CD.D3": "Justify the effectiveness of health and safety legislation, policies and procedures in maintaining health and safety in a selected health or social care setting.",
+   "CD.D4": "Evaluate the importance of safe practice procedures and responsibilities in maintaining and promoting the health, safety and welfare of service users in a selected health or social care setting."
+  },
+  "8": {
+   "A.P1": "Explain the strategies used to develop public health policy in order for it to meet its aims.",
+   "A.P2": "Explain how monitoring information to determine patterns of health and ill health is used by government to inform the creation of public health policy.",
+   "B.P3": "Explain factors affecting current patterns of health and ill health in a specific demographic area.",
+   "B.P4": "Explain the impact of public health policy in minimising these factors in relation to a specific demographic area.",
+   "C.P5": "Explain how approaches to health promotion and protection have been applied in a selected health promotion campaign.",
+   "C.P6": "Explain how approaches to prevention and control have been applied in a selected campaign.",
+   "D.P7": "Explain how models or theories that justify behaviour change can be used to overcome barriers in relation to a selected health promotion campaign.",
+   "D.P8": "Explain the features of a selected health promotion campaign and the approaches used to increase public awareness.",
+   "A.M1": "Analyse how public health policy is influenced by strategies and patterns of health and ill health.",
+   "B.M2": "Assess the extent to which factors affect current patterns of health and ill health, with reference to a specific demographic area.",
+   "B.M3": "Assess how minimising the factors affecting health can contribute to improving the health of the population in relation to the area.",
+   "C.M4": "Assess the success of approaches used to promote and protect health and prevent disease in a selected health promotion campaign.",
+   "D.M5": "Analyse how theories or models and approaches have been used in a selected health promotion campaign to overcome barriers and increase public awareness.",
+   "AB.D1": "Evaluate how far the use of strategies and monitoring the health status of the population helps public health policy to meet its aims in reducing the factors that influence public health, with reference to a specific demographic area.",
+   "C.D2": "Justify the approaches used to promote and protect health and prevent disease in a selected health promotion campaign.",
+   "D.D3": "Evaluate the success of a specific public health campaign in encouraging behaviour change in relation to health.",
+   "D.D4": "Evaluate how far a recent health promotion campaign met the aims of public health policy through the strategies and approaches used to improve the health of a demographic area."
+  },
+  "9": {
+   "A.P1": "Explain the causes of different infections and the diseases that can result from them.",
+   "A.P2": "Explain how these diseases can be transmitted and contracted.",
+   "B.P3": "Demonstrate the correct use of standard procedures to prevent infection in a health or social care setting.",
+   "B.P4": "Demonstrate correct decontamination techniques in a health or social care setting.",
+   "B.P5": "Review how successfully use of own techniques prevented and controlled infection.",
+   "C.P6": "Explain how organisational policies and procedures apply legislation to prevent the transmission of different infections in a named health or social care organisation.",
+   "C.P7": "Discuss the roles and responsibilities of different health and social care workers in preventing and controlling infection in a named health or social care organisation.",
+   "A.M1": "Assess how the transmission and contraction of infectious diseases can be influenced by different factors.",
+   "B.M2": "Demonstrate the correct use of procedures to prevent and control infection, adapting them for different situations.",
+   "C.M3": "Analyse how, by implementing and following infection control policies and procedures, the health or social care organisation and workers help to prevent the transmission of infection.",
+   "A.D1": "Analyse potential ways in which infections are caused, transmitted and disease is contracted.",
+   "B.D2": "Justify the procedures and techniques selected and adapted to prevent and control infection with reference to the different situations.",
+   "C.D3": "Evaluate how procedures and workers’ roles and responsibilities in a named health or social care organisation successfully prevent and control the transmission of infection."
+  },
+  "10": {
+   "A.P1": "Explain how sociological perspectives are applied to the understanding of health and social care.",
+   "A.P2": "Explain how sociological perspectives contribute to the understanding of society.",
+   "B.P3": "Compare the biomedical model of health with an alternative model of health.",
+   "B.P4": "Explain the contribution of concepts of health, ill health and disability to service provision in a local health and social care setting.",
+   "C.P5": "Explain how social inequality affects different groups in society.",
+   "C.P6": "Explain how demographic data is used in service provision in a local health and social care setting.",
+   "C.P7": "Explain patterns and trends in health and ill health within different social groups.",
+   "A.M1": "Analyse the contribution of sociological perspectives to the understanding of health and social care and society.",
+   "B.M2": "Analyse how the biomedical and an alternative model of health, and concepts of health, ill health and disability affect service provision in a local health and social care setting.",
+   "C.M3": "Analyse the impact of social inequality on different groups in society.",
+   "C.M4": "Analyse the impact of the use of demographic data in a local health and social care setting in enabling the enhancement of service provision for different social groups.",
+   "AB.D1": "Evaluate the role of sociological perspectives in the understanding of society and models and concepts of health in relation to service provision in a local health and social care setting.",
+   "C.D2": "Evaluate sociological explanations for patterns and trends of health and ill health in different social groups, and how demographic data is used in service provision in a local health and social care setting to reduce social inequality affecting those groups.",
+   "C.D3": "Evaluate the importance of the sociological perspectives used in a health and social care setting in relation to understanding society, reducing social inequality and improving service provision for different social groups."
+  },
+  "11": {
+   "A.P1": "Explain how psychological perspectives are applied to the understanding of human development.",
+   "A.P2": "Explain how psychological perspectives contribute to the understanding of specific human behaviours.",
+   "B.P3": "Explain how different factors influence human development and specific behaviours.",
+   "B.P4": "Explain the contribution of psychological perspectives to the management and treatment of different service users’ behaviours.",
+   "C.P5": "Compare the application of psychological perspectives in local health and social care settings.",
+   "C.P6": "Explain how professionals use psychological perspectives to improve the social functioning of selected service users.",
+   "A.M1": "Analyse the contribution of psychological perspectives to the understanding of human development and behaviours.",
+   "B.M2": "Analyse the value of identifying factors influencing human development and behaviours in the application of psychological perspectives to the management and treatment of different service users’ behaviours.",
+   "C.M3": "Assess the impact of the use of psychological perspectives in local health and social care settings, in enabling professionals to enhance the social functioning of selected service users.",
+   "AB.D1": "Evaluate the role of psychological perspectives in the understanding of human development and the management and treatment of service users’ behaviours.",
+   "C.D2": "Evaluate the application of psychological perspectives in local health and social care settings in enabling professionals to enhance the social functioning of selected service users.",
+   "C.D3": "Evaluate the importance of the psychological perspectives used in health and social care settings, in relation to understanding human development and managing and treating behaviours to enhance the social functioning of service users."
+  },
+  "12": {
+   "A.P1": "Explain diagnostic procedures to determine additional needs for one child and one adult with different additional needs.",
+   "B.P2": "Explain how disability can be viewed as a social construct.",
+   "B.P3": "Describe how health or social care workers can help one child and one adult with different additional needs overcome challenges to daily living.",
+   "C.P4": "Explain the benefits of adaptations and support provided to one child and one adult with different additional needs.",
+   "C.P5": "Explain the impact of statutory provision on the support provided for one child and one adult with different additional needs.",
+   "A.M1": "Assess the requirements of one child and one adult with different additional needs.",
+   "B.M2": "Assess the impact of challenges to daily living that may be experienced by one child and one adult with different additional needs, and how effectively these challenges are overcome.",
+   "C.M3": "Analyse how the provision and support provided for one child and one adult with different additional needs have benefited them.",
+   "C.M4": "Analyse how statutory provision has impacted on current practice in caring for one child and one adult with different additional needs.",
+   "A.D1": "Evaluate the significance to the individuals, their families and society of a diagnosis of additional needs.",
+   "BC.D2": "Justify the support and adaptations provided for two individuals with different additional needs to help them overcome challenges to daily living, with reference to statutory provision.",
+   "BC.D3": "Evaluate the impact of providing support for two individuals diagnosed with different additional needs in improving their wellbeing and life chances."
+  },
+  "13": {
+   "A.P1": "Explain the procedures for a sample sent to a health-related laboratory.",
+   "A.P2": "Explain how in vitro and in vivo diagnostic tools are used safely in a health-related laboratory.",
+   "B.P3": "Perform and report on an aseptic technique involving accurate measurement of micro-organisms.",
+   "B.P4": "Perform and report on an experiment involving the correct preparation of standard solutions.",
+   "B.P5": "Perform and report on food analysis techniques to accurately measure lipid and acid content.",
+   "B.P6": "Perform and report on a practical investigation to accurately measure the effect of antiseptic/ disinfectant.",
+   "C.P7": "Perform a practical investigation involving the staining of cells and their temporary fixing on a slide.",
+   "C.P8": "Record observations of a prepared slide of cells seen under two different magnifications of a microscope.",
+   "A.M1": "Assess whether the health and safety requirements of a chosen health-related laboratory are adequate to deal with a pathogen sample.",
+   "B.M2": "Analyse the outcomes of practical investigations and relate them to work done in a health-related laboratory.",
+   "C.M3": "Analyse the advantages of using photomicrographs compared to slides fixed using a temporary fixing method.",
+   "A.D1": "Justify the procedures used in a health-related laboratory for sample analysis.",
+   "BC.D2": "Justify the laboratory techniques used for practical investigations in meeting desired outcomes.",
+   "BC.D3": "Evaluate the usefulness of the procedures and techniques used in health-related laboratories in providing a diagnosis for health professionals to work with."
+  },
+  "14": {
+   "A.P1": "Explain the causes, signs and symptoms of different types of physiological disorder on service users.",
+   "B.P2": "Compare investigative and diagnostic procedures for different physiological disorders.",
+   "C.P3": "Explain the treatment and support available for service users with different physiological disorders.",
+   "C.P4": "Compare the types of carers and care settings for service users with different physiological disorders.",
+   "D.P5": "Assess care needs of a selected service user with a physiological disorder.",
+   "D.P6": "Plan treatment to meet the needs of a selected service user with a physiological disorder.",
+   "D.P7": "Explain how the plan would improve the health and wellbeing of a selected service user.",
+   "A.M1": "Analyse the changes in body systems and functions resulting from different types of physiological disorder on service users.",
+   "B.M2": "Assess the importance of specific procedures in confirming the diagnosis of physiological disorders.",
+   "C.M3": "Assess the provision of treatment, support and types of care for service users with different physiological disorders.",
+   "D.M4": "Plan treatment to meet the needs of a selected service user with a physiological disorder, reviewing as appropriate to improve outcomes.",
+   "A.D1": "Evaluate the impact of physiological disorders on the health and wellbeing of service users.",
+   "BC.D2": "Justify the potential benefits of different investigations and treatment options for service users diagnosed with physiological disorders.",
+   "D.D3": "Justify the recommendations in the plan in relation to the needs of the service user and advantages and disadvantages of treatment options."
+  },
+  "15": {
+   "A.P1": "Explain the requirements that selected micro-organisms need to thrive and how these requirements can be controlled.",
+   "B.P2": "Compare the transmission routes of microbes involved in human diseases and relate them to specific infections.",
+   "B.P3": "Explain how the immune system is involved in protecting the human body from harmful micro-organisms.",
+   "C.P4": "Discuss the factors that might be involved in the control of separate outbreaks of two different diseases.",
+   "C.P5": "Explain the consequences of a disease outbreak, citing examples in each case.",
+   "D.P6": "Outline how micro-organisms are used by two different commercial enterprises.",
+   "A.M1": "Analyse the structure of selected micro-organisms and their reproductive methods, and how their transmission can be controlled.",
+   "B.M2": "Analyse the terms used in epidemiology to show how they apply to the transmission of infectious diseases and human immunity.",
+   "C.M3": "Assess the effectiveness of the factors involved in controlling diseases globally.",
+   "D.M4": "Analyse the social benefits to humans of three micro-organisms.",
+   "A.D1": "Justify the methods used to control two different micro-organisms.",
+   "BC.D2": "Evaluate the reasons for and consequences of the spread of diseases becoming more global.",
+   "D.D3": "Evaluate the positive and negative effects of the interrelationship between humans and micro-organisms."
+  },
+  "16": {
+   "A.P1": "Explain the role of government in making policy that affects a local health and social care setting.",
+   "B.P2": "Explain factors that influence the ways that policy is made in the health and social care sector.",
+   "B.P3": "Explain ways that organisations represent the needs of health and social care service users with a specific need.",
+   "C.P4": "Explain how the health and social care sector is affected by one piece of legislation.",
+   "C.P5": "Compare how different local health care or social care organisations implement legislation and policies.",
+   "C.P6": "Explain how policy affects health care or social care service users.",
+   "A.M1": "Assess ways local and central government work together to make policy affecting a local health and social care setting.",
+   "B.M2": "Assess ways that organisations in the health and social care sector meet objectives set out by the government and represent the needs of service users with a specific need.",
+   "C.M3": "Assess the impact of legislation and policy on workers and service users in different local health care or social care settings.",
+   "AB.D1": "Evaluate how practice of a local health and social care setting is affected by government policy and other factors in meeting objectives and a specific need of a service user group.",
+   "C.D2": "Evaluate ways that legislation and codes of practice affect workers and service users in different local health care or social care settings.",
+   "C.D3": "Evaluate whether policy making in health and social care has improved the health and wellbeing of service users in different local health care or social care settings."
+  },
+  "17": {
+   "A.P1": "Explain the causes of three different types of dementia.",
+   "A.P2": "Explain the symptoms of three different types of dementia.",
+   "B.P3": "Explain the effects of three different types of dementia on the mental and physical health of individuals who have the condition.",
+   "B.P4": "Discuss the effects of three different types of dementia on the quality of life and wellbeing of people who have the condition.",
+   "C.P5": "Explain how person-centred care is applied for one individual who has one type of dementia.",
+   "C.P6": "Explain why a flexible approach is needed when planning care for one individual who has one type of dementia.",
+   "A.M1": "Analyse how the different types of dementia might be identified by their symptoms.",
+   "B.M2": "Assess how the different types of dementia can have progressive effects on a person’s mental and physical health and their quality of life and wellbeing.",
+   "C.M3": "Assess why the principles of person-centred care are important to maintain the dignity, rights and entitlements of one individual who has dementia.",
+   "AB.D1": "Evaluate the importance of understanding how different types of dementia can have a progressive effect on all aspects of a person’s health and wellbeing.",
+   "C.D2": "Justify the impact and benefits of holistic person-centred care on one individual who has dementia.",
+   "C.D3": "Evaluate how current practice in dementia care meets the needs of an individual with dementia, through managing its effects and maintaining health and wellbeing."
+  },
+  "18": {
+   "A.P1": "Explain patterns of growth and development of selected children of different ages.",
+   "A.P2": "Explain principles and theories that contribute to an understanding of the children’s growth and development.",
+   "B.P3": "Discuss the influence of factors on children’s growth and development.",
+   "C.P4": "Explain methods used for the assessment of children’s growth and development from birth to eight years.",
+   "C.P5": "Plan for and observe children to identify their stages of development.",
+   "A.M1": "Analyse stages of growth and development across different areas for selected children of different ages.",
+   "A.M2": "Assess how theories can be used to identify the children’s stages of growth and development.",
+   "B.M3": "Assess how one area of development affected by factors may impact on other areas of development.",
+   "C.M4": "Effectively plan and implement appropriate methods of assessment to identify the children’s stages of development.",
+   "C.M5": "Assess the methods of observation selected for the assessment of each child’s growth and development.",
+   "A.D1": "Evaluate the extent to which theories of growth and development can be used to support the selected children’s growth and development.",
+   "BC.D2": "Justify approaches to assessment used for the early recognition and support for children with differing needs.",
+   "BC.D3": "Evaluate the extent to which professionals help children to meet their developmental milestones through the application of the theories of growth and development and use of assessment methods."
+  },
+  "19": {
+   "A.P1": "Explain how the concepts of nutritional health contribute to health and wellbeing.",
+   "A.P2": "Explain the sources of essential nutrients and their functions in the body.",
+   "B.P3": "Explain the health, socio-economic and cultural factors that can influence the nutritional health of the selected individuals.",
+   "B.P4": "Compare the dietary intake of the selected individuals with their nutritional requirements.",
+   "C.P5": "Produce clear plans to improve the nutritional health of two individuals with different dietary needs.",
+   "C.P6": "Explain how the recommendations will improve the nutritional health of the selected individuals.",
+   "A.M1": "Assess the impact of dietary intake and dietary deficiencies on nutritional health.",
+   "B.M2": "Assess how the dietary intake and nutritional health of the selected individuals are influenced by their dietary habits and lifestyle choices.",
+   "C.M3": "Produce professionally presented plans to improve the nutritional health of two individuals with different dietary needs.",
+   "C.M4": "Analyse how the recommendations will improve the nutritional health of the selected individuals.",
+   "AB.D1": "Evaluate the role of nutritional health in maintaining the selected individuals’ health and wellbeing, and the impact of influencing factors.",
+   "C.D2": "Justify the recommendations in the plans in relation to the needs and situations of the selected individuals.",
+   "C.D3": "Evaluate the importance of planning nutritional health for selected individuals to ensure their dietary needs are met, and that influencing factors are taken into account."
+  },
+  "20": {
+   "A.P1": "Explain factors that influence mental wellbeing and mental health.",
+   "B.P2": "Explain the impact of current classification systems on the diagnosis of mental ill-health conditions.",
+   "B.P3": "Discuss the strengths and limitations of current classification systems in recognising selected mental ill-health conditions and their symptoms.",
+   "C.P4": "Explain the impact of mental ill health on a selected individual.",
+   "C.P5": "Explain how mental ill health affects a selected individual’s relationships with others.",
+   "D.P6": "Explain strategies that can be applied to promote the mental wellbeing and mental health of a selected individual diagnosed with a mental ill-health condition.",
+   "A.M1": "Analyse factors that influence mental wellbeing and mental health with reference to a view on the nature of mental wellbeing and mental health.",
+   "B.M2": "Analyse the contribution of current classification systems in the diagnosis of selected mental ill-health conditions and their symptoms.",
+   "C.M3": "Analyse the impact of mental ill health on a selected individual’s relationships within their social networks with reference to factors that may have caused it.",
+   "D.M4": "Justify strategies that can be applied to promote the mental wellbeing and mental health of a selected individual diagnosed with a mental ill-health condition, making reference to relevant legislation, policies and codes of practice.",
+   "AB.D1": "Evaluate the nature of mental health and wellbeing and the role of current classification systems in improving the diagnosis of selected mental ill-health conditions and their symptoms.",
+   "CD.D2": "Evaluate the importance of promoting, protecting and restoring the mental wellbeing and mental health of a selected individual diagnosed with a mental ill-health condition.",
+   "D.D3": "Evaluate how accurate diagnosis of mental ill-health conditions leads to correct treatment."
+  },
+  "21": {
+   "A.P1": "Explain the principles and production of a laser and how it is used in diagnosis and treatment.",
+   "A.P2": "Explain the principles and production of imaging techniques used in non-ionising radiation diagnosis in relation to a specific service user.",
+   "B.P3": "Explain the principles and production of external and internal radiotherapy.",
+   "B.P4": "Explain the principles and production of x-ray images, CT and CAT scans for diagnosis and treatment in relation to a specific service user.",
+   "C.P5": "Explain the risks and side effects of ionising and non-ionising diagnosis and treatment techniques for operators and service users.",
+   "C.P6": "Explain the safety precautions for x-ray and MRI use for operators and service users.",
+   "A.M1": "Assess the suitability of different non-ionising radiation diagnosis and treatment techniques in relation to a specific service user.",
+   "B.M2": "Analyse the suitability of different ionising radiation techniques used for diagnosis and treatment in relation to a specific service user.",
+   "C.M3": "Analyse the risks and side-effects to operators and service users of ionising and non-ionising diagnosis and treatment techniques in relation to a specific service user.",
+   "AB.D1": "Evaluate the choice of ionising and non-ionising radiation diagnosis and treatment techniques in relation to a specific service user.",
+   "C.D2": "Evaluate the health and safety precautions for service users and operators using ionising and non-ionising diagnosis and treatment techniques in relation to a specific service user.",
+   "C.D3": "Justify a choice of ionising and non-ionising diagnosis and treatment technique with reference to risks, side-effects and safety precautions for a service user in relation to a specific service user."
+  },
+  "22": {
+   "A.P1": "Explain how genetics affects the process of human reproduction from conception to birth.",
+   "B.P2": "Explain how different genetic and environmental factors can affect pre- and post-natal development.",
+   "B.P3": "Explain how factors that affect healthy pre-natal development leading to developmental delay or impairment of normal body functioning influence post- natal development and care needs through the life course.",
+   "C.P4": "Explain how reproductive and gene technologies can contribute to promoting life chances.",
+   "C.P5": "Explain the effects that reproductive and gene technologies can have on a selected individual and society.",
+   "D.P6": "Explain how reproductive and gene technologies can cause ethical challenges associated with a specific genetic disorder for a selected individual and society.",
+   "A.M1": "Assess the role of genetics in the process of human reproduction from conception to birth.",
+   "B.M2": "Assess how genetic and environmental factors resulting in developmental delay or impairment of normal body functioning impact on post-natal development and care needs through the life course.",
+   "C.M3": "Analyse the impact of reproductive and gene technologies for a selected individual and society in relation to promoting life chances.",
+   "D.M4": "Analyse how a specific genetic disorder can affect the use of reproductive and gene technologies, and cause ethical challenges for a selected individual and society.",
+   "AB.D1": "Evaluate the role of genetics, the impact of factors affecting healthy pre-natal development, and difficulties related to reproduction affect post-natal development and care needs through the life course.",
+   "CD.D2": "Evaluate the role of reproductive and gene technologies in promoting life chances and causing ethical challenges for a selected individual with a specific genetic disorder and society.",
+   "D.D3": "Evaluate the importance of the role of genetics in pre and post-natal development and the contribution of reproductive and gene technologies in promoting individuals and society’s life chances, referring to ethical challenges."
+  },
+  "23": {
+   "A.P1": "Explain the specific and non-specific defence methods of the human body.",
+   "B.P2": "Describe the components of human blood by referring to their structure and functions.",
+   "B.P3": "Explain, by referring to the blood components, what diseases are associated with them.",
+   "B.P4": "Describe the diagnostic techniques used in haematology.",
+   "B.P5": "Explain the processes involved in producing safe blood products for transfusion.",
+   "C.P6": "Explain the causes of cell injury.",
+   "D.P7": "Explain two of the biochemistry systems in the human body.",
+   "D.P8": "Explain two biochemical tests used in monitoring the biochemistry of the human body.",
+   "A.M1": "Assess the effectiveness of specific, non-specific and inflammatory processes in helping the body defend itself against infection.",
+   "B.M2": "Discuss the clinical uses of blood products and the reasons for screening them before use.",
+   "B.M3": "Analyse the effectiveness of the screening processes in preventing the transmission of blood-born infections.",
+   "C.M4": "Analyse how cell pathology is used in disease identification.",
+   "D.M5": "Discuss the importance of balanced biochemical systems in the human body.",
+   "AB.D1": "Justify the prominent role of haematology as a diagnostic tool and in the transfusion processes.",
+   "CD.D2": "Evaluate how the results of cell pathology used in conjunction with biochemical investigations can be used as diagnostic tools.",
+   "CD.D3": "Evaluate the work done by laboratories into effectively diagnosing the causes and cures of diseases."
+  },
+  "24": {
+   "A.P1": "Explain the structures of carbon, hydrogen, nitrogen and oxygen, and how they produce organic and inorganic biological molecules.",
+   "A.P2": "Investigate the nature, function and role of atoms, and the structure and function of organic and inorganic molecules and their impact on metabolism.",
+   "B.P3": "Explain the structure, and physical and chemical properties of biomolecules and nucleic acids.",
+   "B.P4": "Investigate the factors affecting enzyme activity and the enzymatic extraction of DNA.",
+   "C.P5": "Explain the aetiology of metabolic disorders of genetic and endocrine origins.",
+   "C.P6": "Explain the concept and uses of enzymes in biochemistry in the diagnosis and treatment of metabolic disorders and diseases, including DNA profiling and sequencing.",
+   "A.M1": "Assess the relevance of the structures of carbon, hydrogen, nitrogen and oxygen to the metabolism of biological molecules, proteins, fats, carbohydrates and haemoglobin.",
+   "B.M2": "Assess the impact of factors affecting enzyme activity on metabolic processes and metabolic rates.",
+   "C.M3": "Assess the impact of DNA sequencing in the development of treatment therapy for metabolic disorders.",
+   "A.D1": "Evaluate the structure, function and role of inorganic and organic molecules, and their impact on metabolism",
+   "B.D2": "Evaluate how the structure, functions and action of biomolecules affect metabolic rates.",
+   "C.D3": "Evaluate how biological molecules and their role in metabolism influence current research and development of techniques and technology in treating metabolic disorders."
+  },
+  "25": {
+   "A.P1": "Explain the potential benefits of two different complementary therapies for service users with different needs.",
+   "B.P2": "Explain how service users can access complementary therapies with reference to factors affecting provision.",
+   "B.P3": "Explain the role of complementary therapies in relation to conventional medical treatment of two different disorders.",
+   "C.P4": "Explain the role of professional organisations in supporting the provision of complementary therapies.",
+   "C.P5": "Explain factors to be considered when providing complementary therapies.",
+   "A.M1": "Assess how complementary therapies can maintain health and wellbeing for service users with different needs.",
+   "B.M2": "Analyse the reasons why complementary therapies may be offered in addition to conventional medical treatment.",
+   "C.M3": "Analyse the importance of regulation in the provision of complementary therapies.",
+   "C.M4": "Assess the importance of different factors when providing complementary therapies in the health and social care sector.",
+   "A.D1": "Justify the contribution of complementary therapies in maintaining health and wellbeing for service users with different needs.",
+   "BC.D2": "Evaluate the provision of complementary therapies in relation to conventional medical treatments and factors to be considered.",
+   "BC.D3": "Evaluate the role of complementary therapies in providing a service within the health and social care sector."
+  },
+  "26": {
+   "A.P1": "Explain how concepts of health psychology, health and ill health influence health-related beliefs and behaviours.",
+   "B.P2": "Explain how health psychology can be used in the management of different contemporary issues in health.",
+   "C.P3": "Explain how stress can influence illness.",
+   "C.P4": "Explain potential strategies that a selected service user can apply to manage stress.",
+   "D.P5": "Explain how psychology contributes to the management of pain.",
+   "D.P6": "Explain how psychological theories can be applied to manage a service user’s illness.",
+   "A.M1": "Assess the extent to which concepts of health psychology, health and ill health influence health- related beliefs and behaviours.",
+   "B.M2": "Assess the contribution of health psychology in the management of different contemporary issues in health.",
+   "C.M3": "Analyse strategies that a selected service user can apply to manage stress with reference to their link to illness.",
+   "D.M4": "Justify how psychological theories can be applied to manage pain and ill health for a service user.",
+   "AB.D1": "Evaluate the role of health psychology, health and ill health concepts in the management of contemporary issues in health.",
+   "C.D2": "Evaluate the use of strategies and psychological theories in managing stress, pain and ill health for a selected service user.",
+   "D.D3": "Evaluate the importance of health psychology in helping individuals to deal with contemporary issues in health, stress, pain and illness."
+  }
+ },
+ "aims": {
+  "5": [
+   "A Examine principles, values and skills which underpin meeting the care and support needs of individuals",
+   "B Examine the ethical issues involved when providing care and support to meet individual needs",
+   "C Investigate the principles behind enabling individuals with care and support needs to overcome challenges",
+   "D Investigate the roles of professionals and how they work together to provide the care and support necessary to meet individual needs"
+  ],
+  "6": [
+   "A Examine the benefits of work experience in health and social care for own learning and development",
+   "B Develop a work experience plan to support own learning and development",
+   "C Carry out work experience tasks to meet set objectives",
+   "D Reflect on how work experience influences own personal and professional development"
+  ],
+  "7": [
+   "A Examine how a duty of care contributes to safe practice in health and social care settings",
+   "B Understand how to recognise and respond to concerns about abuse and neglect in health and social care settings",
+   "C Investigate the influence of health and safety legislation and policies in health and social care settings",
+   "D Explore procedures and responsibilities to maintain health and safety and respond to accidents and emergencies in health and social care settings"
+  ],
+  "8": [
+   "A Examine strategies for developing public health policy to improve the health of individuals and the population",
+   "B Examine the factors affecting health and the impact of addressing these factors to improve public health",
+   "C Investigate how health is promoted to improve the health of the population",
+   "D Investigate how health promotion encourages individuals to change their behaviour in relation to their own health"
+  ],
+  "9": [
+   "A Understand the causes of infections and transmission of infection",
+   "B Explore how to prevent and control the transmission of infection in health and social care settings",
+   "C Investigate the roles and responsibilities of health and social care organisations and workers in preventing and controlling infections"
+  ],
+  "10": [
+   "A Understand how sociological concepts and perspectives are applied to the study of health and social care",
+   "B Examine how sociological approaches support understanding of models and concepts of health",
+   "C Examine how social inequalities, demographic change, and patterns and trends affect health and social care delivery"
+  ],
+  "11": [
+   "A Examine how psychological perspectives contribute to the understanding of human development and behaviour",
+   "B Examine the contribution of psychological perspectives to the management and treatment of service users’ specific behaviours",
+   "C Examine how psychological perspectives are applied in health and social care settings"
+  ],
+  "12": [
+   "A Examine reasons why individuals may experience additional needs",
+   "B Examine how to overcome the challenges to daily living faced by people with additional needs",
+   "C Investigate current practice with respect to provision for individuals with additional needs"
+  ],
+  "13": [
+   "A Understand how a health-related laboratory deals with samples sent for analysis",
+   "B Carry out investigations using techniques similar to those in a health-related laboratory",
+   "C Carry out investigations using light microscopes similar to those in a health-related laboratory"
+  ],
+  "14": [
+   "A Investigate the causes and effects of physiological disorders",
+   "B Examine the investigation and diagnosis of physiological disorders",
+   "C Examine treatment and support for service users with physiological disorders",
+   "D Develop a treatment plan for service users with physiological disorders to meet their needs"
+  ],
+  "15": [
+   "A Understand the concepts of microbiology relevant to health science",
+   "B Examine the role of micro-organisms in human health and disease",
+   "C Investigate the impact of diseases and their treatment in a global context",
+   "D Investigate the health benefits of micro-organisms"
+  ],
+  "16": [
+   "A Understand the role of government in health and social care policy making",
+   "B Examine the factors that may influence policy making in health and social care",
+   "C Explore the impact of policy on local health and social care organisations and individuals"
+  ],
+  "17": [
+   "A Examine the types, causes and symptoms of dementia",
+   "B Examine the effects of dementia on people who have the condition",
+   "C Investigate the concept of person-centred care for people who have dementia to maintain quality of life and wellbeing"
+  ],
+  "18": [
+   "A Understand patterns, principles and theories that contribute to an understanding of growth and development in children from birth to eight years",
+   "B Examine factors that may impact on children’s growth and development",
+   "C Explore how assessment is used to identify children’s stages of growth and development and their support needs"
+  ],
+  "19": [
+   "A Understand concepts of nutritional health and characteristics of essential nutrients",
+   "B Examine factors affecting dietary intake and nutritional health",
+   "C Plan nutrition to improve individuals’ nutritional health"
+  ],
+  "20": [
+   "A Understand different views on the nature of mental wellbeing and mental health",
+   "B Examine how the main forms of mental ill health are classified",
+   "C Examine the impact of mental ill health on individuals and others in their social networks",
+   "D Examine strategies which promote mental wellbeing and mental health"
+  ],
+  "21": [
+   "A Understand how non-ionising radiation instrumentation techniques are used for diagnosis and treatment of the human body",
+   "B Understand how ionising radiation instrumentation techniques are used for diagnosis and treatment of the human body",
+   "C Explore the risks, side effects and health and safety precautions for ionising and non-ionising radiation"
+  ],
+  "22": [
+   "A Understand genetics and its role in human inheritance from conception to birth",
+   "B Examine the factors affecting pre- and post-natal development",
+   "C Investigate how advances in science can contribute to understanding reproductive and gene technologies",
+   "D Examine how legislation and ethical challenges influence the use of reproductive and gene technologies"
+  ],
+  "23": [
+   "A Understand the ways in which the body defends itself against infection",
+   "B Examine the principles of blood transfusion science and its importance to those working in haematology",
+   "C Investigate the importance of cell pathology as a diagnostic tool",
+   "D Explore how the chemical make-up of the body influences health and disease"
+  ],
+  "24": [
+   "A Explore how the structure of biological molecules affects metabolism",
+   "B Explore the action of biological molecules in metabolic processes",
+   "C Examine the principles of biochemistry in industry"
+  ],
+  "25": [
+   "A Investigate the potential benefits of complementary therapies in maintaining health and wellbeing",
+   "B Examine the provision of complementary therapies in relation to conventional medical treatments",
+   "C Investigate the factors to be considered when providing complementary therapies alongside conventional medical treatments"
+  ],
+  "26": [
+   "A Understand influences and beliefs towards health and ill health resulting in the development of health psychology as a discipline",
+   "B Examine how psychology contributes to the management of contemporary issues in health",
+   "C Investigate models of stress and related strategies for managing stress",
+   "D Explore the role of psychology in dealing with pain and ill health"
+  ]
+ }
+}

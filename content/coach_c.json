@@ -1,0 +1,627 @@
+{
+ "21": {
+  "title": "Medical Physics Applications in the Health Sector",
+  "glh": 60,
+  "assignments": "Up to two assignments. Assignment 1 covers learning aims A and B (non-ionising and ionising techniques for diagnosis and treatment, AB.D1), usually a case-study report. Assignment 2 covers learning aim C (risks, side effects and safety precautions, C.D2 and C.D3).",
+  "bigIdea": "Every technique is a trade-off: what it shows or treats, how the physics makes that possible, and what it costs the service user and the operator in risk. Distinction work keeps one service user at the centre and lets the physics drive the recommendation.",
+  "evidence": [
+   "Anchor everything to your case-study service user: their condition, age, medical history, implants, pregnancy status.",
+   "For every technique, link principle and production (e.g. hydrogen nuclei resonance and relaxation in MRI) to what the image or treatment can and cannot do.",
+   "Use comparison tables and annotated diagrams, but follow every table with written judgement - a table alone is not evaluation.",
+   "Keep A/B and C separate: in Assignment 1 judge diagnosis and treatment options; save risk and safety evaluation for Assignment 2.",
+   "Name the regulations you use (e.g. Ionising Radiations Regulations 2017, IR(ME)R) and check with your tutor that they are current."
+  ],
+  "criteria": {
+   "AB.D1": {
+    "verb": "Evaluate",
+    "decode": "Weigh up every ionising and non-ionising option, first for diagnosis then for treatment, for your specific service user, and reach a clear recommendation. The spec expects you to show the physical effect of each on the body at molecular and cellular level.",
+    "buildsOn": [
+     "A.P1",
+     "A.P2",
+     "B.P3",
+     "B.P4",
+     "A.M1",
+     "B.M2"
+    ],
+    "mustInclude": [
+     "All the spec techniques considered: laser, MRI, infrared thermography, ultrasound, gamma (external radiotherapy, PET tracers, brachytherapy), X-ray and CT",
+     "The physics of each linked to what happens in tissue at molecular and cellular level (e.g. ionisation damaging DNA versus non-ionising heating or vibration)",
+     "Diagnosis options judged first, then treatment options, as two clear stages",
+     "Strengths and limitations of each option for this service user's condition and medical history",
+     "A reasoned recommendation for diagnosis and for treatment, with reasons why the alternatives were rejected",
+     "Research evidence or clinical guidance supporting your judgements, referenced"
+    ],
+    "pitfalls": [
+     "Describing how each machine works with no judgement about the case study",
+     "Drifting into risk and side-effect evaluation, which belongs to learning aim C",
+     "Recommending a technique without saying why it beats the alternatives",
+     "Covering only diagnosis or only treatment"
+    ],
+    "starters": [
+     "For diagnosing [condition] in [service user], MRI is more suitable than CT because...",
+     "Although X-ray imaging is faster and cheaper, its limitation for this patient is...",
+     "Weighing these options, the most appropriate treatment is... because at a cellular level it..."
+    ],
+    "stretch": "End with a clear, concise diagnosis-then-treatment pathway that a clinician could act on."
+   },
+   "C.D2": {
+    "verb": "Evaluate",
+    "decode": "Judge how well the health and safety precautions protect both the service user and the operators for each technique used, and how far they reduce the risks and side effects.",
+    "buildsOn": [
+     "C.P5",
+     "C.P6",
+     "C.M3"
+    ],
+    "mustInclude": [
+     "Precautions for operators and for service users, treated separately",
+     "Ionising precautions: protective clothing, shielding, dose limits, film badges or dosimeters, HSE requirements",
+     "MRI precautions: removal of ferromagnetic items, pacemakers, hearing aids, implants, jewellery and piercings",
+     "Risks that precautions cannot fully remove (e.g. cumulative dose, cancer risk, unborn and young children, ultrasound probe discomfort)",
+     "Strengths and limitations of each precaution, applied to your service user",
+     "A supported judgement on how adequate the precautions are overall"
+    ],
+    "pitfalls": [
+     "Listing precautions without judging how well they work",
+     "Forgetting the staff who carry out the procedures",
+     "Treating ionising and non-ionising risks as equal",
+     "Ignoring the service user's specific circumstances, such as pregnancy or implants"
+    ],
+    "starters": [
+     "The most effective precaution for operators is... because...",
+     "However, this precaution has limits, for example...",
+     "Overall, the precautions are adequate / not fully adequate for [service user] because..."
+    ],
+    "stretch": "Rank the precautions by how much risk each removes, with a reason for each ranking."
+   },
+   "C.D3": {
+    "verb": "Justify",
+    "decode": "Give evidence-based reasons why your chosen ionising and non-ionising diagnosis and treatment techniques are right for this service user, once risks, side effects and safety precautions are taken into account. Draw on all three learning aims.",
+    "buildsOn": [
+     "C.P5",
+     "C.P6",
+     "C.M3",
+     "AB.D1"
+    ],
+    "mustInclude": [
+     "A clearly stated choice of diagnosis and treatment techniques",
+     "Benefits of the choice weighed against its risks and side effects for this service user",
+     "How safety precautions make the choice acceptable for service user and staff",
+     "Why the rejected alternatives carry more risk or less benefit",
+     "Research evidence supporting each justification",
+     "Concise, professional writing with a firm conclusion"
+    ],
+    "pitfalls": [
+     "Changing your recommendation from Assignment 1 without explaining why",
+     "Justifying with opinion rather than evidence",
+     "Ignoring side effects such as tiredness, hair loss or loss of fertility from gamma therapy"
+    ],
+    "starters": [
+     "I recommend [technique] because the benefit of... outweighs the risk of...",
+     "This choice is supported by... which shows that...",
+     "The risk of... is reduced to an acceptable level by..."
+    ],
+    "stretch": "Show how your research changed or confirmed your original recommendation."
+   }
+  }
+ },
+ "22": {
+  "title": "Genetics",
+  "glh": 60,
+  "assignments": "Up to two assignments. Assignment 1 covers learning aims A and B (genetics in reproduction, pre- and post-natal factors, AB.D1), usually a case-study report. Assignment 2 covers learning aims C and D (reproductive and gene technologies, legislation and ethics, CD.D2 and D.D3) for a selected individual with a specific genetic disorder.",
+  "bigIdea": "Genes set the starting point, environment shapes the journey, and technology plus law decide which choices people can make. Distinction work connects the science at the cell level to real consequences for one individual and for society.",
+  "evidence": [
+   "Choose your case-study individual and genetic disorder early; every section should come back to them.",
+   "Use annotated diagrams for DNA, meiosis, fertilisation and inheritance patterns, then explain them in writing.",
+   "Separate genetic (nature) and environmental (nurture) factors, then show how they interact.",
+   "Name the regulators and laws in the spec (HFEA, NICE, Human Fertilisation and Embryology Act 1990 as amended 2008, Human Rights Act 1998) and check currency with your tutor.",
+   "Present ethical arguments from more than one viewpoint before giving your own supported judgement."
+  ],
+  "criteria": {
+   "AB.D1": {
+    "verb": "Evaluate",
+    "decode": "Reach reasoned judgements about how much genetics, pre-natal factors and difficulties with reproduction shape post-natal development and care needs across the life course, using a detailed case.",
+    "buildsOn": [
+     "A.P1",
+     "B.P2",
+     "B.P3",
+     "A.M1",
+     "B.M2"
+    ],
+    "mustInclude": [
+     "Accurate genetic terminology: genome, genotype, phenotype, chromosomes, DNA",
+     "Conception, cell division and chromosomal behaviour from fertilisation to birth",
+     "Genetic factors (parental genotype, chromosome disorders such as Down's syndrome) and environmental factors (age, diet, health, drugs, alcohol, poverty, family functioning)",
+     "How these factors affect post-natal development and care needs at different life stages",
+     "Judgements on which factors matter most and why, including interaction between nature and nurture",
+     "Research evidence supporting your judgements"
+    ],
+    "pitfalls": [
+     "Describing biology without linking it to development or care needs",
+     "Listing factors without judging their relative importance",
+     "Stopping at birth instead of following effects through the life course"
+    ],
+    "starters": [
+     "The most significant factor for [individual] is likely to be... because...",
+     "While genetic inheritance determines..., environmental factors such as... can...",
+     "This suggests that care needs in later life will..."
+    ],
+    "stretch": "Show how a single genetic or pre-natal factor ripples through several life stages and services."
+   },
+   "CD.D2": {
+    "verb": "Evaluate",
+    "decode": "Weigh up how reproductive and gene technologies improve life chances for your selected individual with a specific genetic disorder and for society, against the ethical challenges they create.",
+    "buildsOn": [
+     "C.P4",
+     "C.P5",
+     "D.P6",
+     "C.M3",
+     "D.M4"
+    ],
+    "mustInclude": [
+     "Relevant technologies: screening, assisted reproduction, recombinant DNA, Human Genome Project, gene therapy, genetic modification",
+     "Benefits for the individual: psychological wellbeing, quality of life, benefit versus risk",
+     "Effects on society: values and beliefs, support systems, resources and cost",
+     "Ethical challenges: risk versus benefit, cost to society, pressure groups, enhancement rather than health use",
+     "How legislation and regulation limit or enable each technology",
+     "A balanced, supported conclusion"
+    ],
+    "pitfalls": [
+     "Writing generally about technology with no link to your selected disorder",
+     "Giving only one side of the ethical debate",
+     "Stating laws without explaining their effect on practice"
+    ],
+    "starters": [
+     "For someone with [disorder], [technology] offers... however...",
+     "From society's perspective, the main ethical challenge is...",
+     "On balance, the benefits outweigh / do not outweigh the challenges because..."
+    ],
+    "stretch": "Contrast the individual's view with society's view and explain where they conflict."
+   },
+   "D.D3": {
+    "verb": "Evaluate",
+    "decode": "Judge the overall importance of genetics in pre- and post-natal development and of reproductive and gene technologies in promoting life chances, with ethical challenges in view. This draws the whole unit together.",
+    "buildsOn": [
+     "D.P6",
+     "D.M4",
+     "AB.D1",
+     "CD.D2"
+    ],
+    "mustInclude": [
+     "A synoptic overview linking learning aims A to D",
+     "The role of genetics in development, compared with environmental influences",
+     "Contribution of technologies to individuals' and society's life chances",
+     "How legislation and regulation (HFEA, NICE, relevant Acts) shape what is possible, using research to judge their validity",
+     "Key ethical challenges for professionals working with these technologies",
+     "A justified overall conclusion on importance"
+    ],
+    "pitfalls": [
+     "Repeating CD.D2 instead of widening to the whole unit",
+     "No overall judgement",
+     "Unreferenced claims about future technology"
+    ],
+    "starters": [
+     "Overall, genetics is most important for... but less decisive for...",
+     "Technologies such as... have transformed life chances by...",
+     "These benefits are limited by ethical challenges, including..."
+    ],
+    "stretch": "Make a reasoned prediction about future impact, supported by current research."
+   }
+  }
+ },
+ "23": {
+  "title": "Biomedical Science",
+  "glh": 60,
+  "assignments": "Up to two assignments. Assignment 1 covers learning aims A and B (body defences, haematology and blood transfusion, AB.D1). Assignment 2 covers learning aims C and D (cell pathology and biochemistry, CD.D2 and CD.D3), usually a report based on your own research.",
+  "bigIdea": "Laboratories turn samples into decisions: blood, cell and biochemical tests tell clinicians what is wrong and whether treatment is working. Distinction work explains why each test is used and how results combine to reach a diagnosis.",
+  "evidence": [
+   "Always pair a component or system with a disease and the test that detects it; lists of components and diseases on their own do not meet the criteria.",
+   "Annotated diagrams can carry structure and function detail, but your judgements must be written.",
+   "Focus on the tests and what they look for, not detailed descriptions of analytical equipment.",
+   "Cell injury here means damage at cell level (pathogens, abnormal growth, inflammation), not physical injury from a cut or blow.",
+   "Use worked examples, such as urine protein levels alongside kidney cell samples, to show tests working together."
+  ],
+  "criteria": {
+   "AB.D1": {
+    "verb": "Justify",
+    "decode": "Give evidence-based reasons why haematology is so prominent as a diagnostic tool, why blood tests are often the first line of investigation, and why transfusion is prominent in treatment.",
+    "buildsOn": [
+     "A.P1",
+     "B.P2",
+     "B.P3",
+     "B.P4",
+     "B.P5",
+     "A.M1",
+     "B.M2",
+     "B.M3"
+    ],
+    "mustInclude": [
+     "Why blood tests are often the first investigation when a patient presents with something abnormal",
+     "Haematology tests and what each looks for: blood smears, red cell, reticulocyte and platelet counts, mean corpuscular volume, iron, coagulation, haemoglobin",
+     "Links from blood components to diseases (anaemias, thalassaemia, leukaemia, lymphomas, clotting disorders)",
+     "Processes that make blood products safe for transfusion: production, red cell compatibility, screening",
+     "Clinical uses of blood products, such as surgery, intensive care and inherited conditions",
+     "Limitations of screening, including diseases that may not be detected"
+    ],
+    "pitfalls": [
+     "Writing an account of the blood transfusion service rather than the processes",
+     "Describing tests without saying why they are chosen",
+     "Unsupported claims with no examples"
+    ],
+    "starters": [
+     "Blood tests are usually the first line of investigation because...",
+     "A full blood count would help diagnose... by showing...",
+     "Transfusion remains essential in treatment because..., although screening cannot..."
+    ],
+    "stretch": "Use a patient pathway example that moves from symptoms to blood test to diagnosis to transfusion."
+   },
+   "CD.D2": {
+    "verb": "Evaluate",
+    "decode": "Judge how effectively cell pathology results, combined with biochemical tests, work as diagnostic tools, using detailed analysis and research.",
+    "buildsOn": [
+     "C.P6",
+     "D.P7",
+     "D.P8",
+     "C.M4",
+     "D.M5"
+    ],
+    "mustInclude": [
+     "Cell collection methods: surgical removal, Pap smear, removal of surface cells, aspiration",
+     "How cell injury (ageing, neoplasia, lupus, allergic reactions) is identified",
+     "Biochemical tests: liver and kidney function, hormone levels, urine and CSF analysis, faecal analysis, toxicology",
+     "Worked examples of cell and biochemical results combining to confirm a diagnosis",
+     "Strengths and limitations of each approach alone and in combination",
+     "A supported judgement on their diagnostic value"
+    ],
+    "pitfalls": [
+     "Treating cell pathology and biochemistry as separate topics with no link",
+     "Only one example",
+     "No limitations, such as false results or sampling issues"
+    ],
+    "starters": [
+     "On its own, a urine test showing... suggests..., but combined with a kidney cell sample it...",
+     "The main strength of cell pathology is..., whereas biochemistry adds...",
+     "The combined approach is most effective when..."
+    ],
+    "stretch": "Compare two diseases where combined testing changes the diagnosis or treatment decision."
+   },
+   "CD.D3": {
+    "verb": "Evaluate",
+    "decode": "Judge the work of laboratories in detecting causes and supporting cures of disease, meaning the samples they receive, tests they run and reports they produce for health workers, drawing on your research across the whole unit.",
+    "buildsOn": [
+     "C.M4",
+     "D.M5",
+     "AB.D1",
+     "CD.D2"
+    ],
+    "mustInclude": [
+     "The laboratory process: sample received, tests carried out, report produced for clinicians",
+     "Examples from haematology, cell pathology and biochemistry",
+     "How lab reports guide diagnosis, treatment and monitoring (e.g. therapeutic drug monitoring)",
+     "Strengths and limitations of laboratory work",
+     "Justified recommendations or conclusions",
+     "Evidence from your own research, referenced"
+    ],
+    "pitfalls": [
+     "Writing about scientific research rather than diagnostic laboratory work",
+     "Ignoring limitations",
+     "No conclusion"
+    ],
+    "starters": [
+     "Laboratories contribute to diagnosis by...",
+     "A key limitation of laboratory testing is...",
+     "Overall, laboratory work is effective because..., although improvements could include..."
+    ],
+    "stretch": "Recommend one realistic improvement to laboratory practice and justify it."
+   }
+  }
+ },
+ "24": {
+  "title": "Biochemistry for Health",
+  "glh": 60,
+  "assignments": "Up to three assignments, one per learning aim: A (structure of atoms and molecules, metabolism, A.D1), B (biomolecules, enzymes and nucleic acids with investigations, B.D2) and C (metabolic disorders, biotechnology and research, C.D3).",
+  "bigIdea": "Structure determines function: the way atoms bond decides how molecules behave, which controls metabolic rate and explains metabolic disease. Distinction work traces the chain from atom to molecule to metabolism to disorder to treatment.",
+  "evidence": [
+   "Use your own experimental data from enzyme, food analysis and DNA investigations to support your evaluation.",
+   "Include clear diagrams of atoms, bonds and molecules, then explain them in writing.",
+   "Link every structure to a function and to metabolism; avoid isolated chemistry facts.",
+   "Write investigations as scientific reports: method, results, analysis, limitations, health and safety.",
+   "For learning aim C, focus on diabetes and glycogen storage disease as the spec's examples."
+  ],
+  "criteria": {
+   "A.D1": {
+    "verb": "Evaluate",
+    "decode": "Judge how the structure, function and role of inorganic and organic molecules affect metabolism, using research and experimental data.",
+    "buildsOn": [
+     "A.P1",
+     "A.P2",
+     "A.M1"
+    ],
+    "mustInclude": [
+     "How atomic structure and bonding (covalent, ionic, hydrogen) of C, H, N and O determine molecular properties",
+     "Inorganic molecules (water, ions, salts, acids) and their role, including water as solvent and buffer",
+     "Organic molecules (proteins, fats, carbohydrates, haemoglobin, membrane proteins, hormones) linked to function",
+     "Importance of both anabolism and catabolism",
+     "Comparison of aerobic and anaerobic respiration of glucose in terms of oxidation, reduction and energy released",
+     "Role of iron ions in oxygen transport and the danger of carbon dioxide if not removed",
+     "Experimental data used to support judgements"
+    ],
+    "pitfalls": [
+     "Describing structures without linking them to metabolism",
+     "Going into Krebs cycle detail that the spec says is not required, while missing the comparison of respiration types",
+     "Ignoring your experimental evidence"
+    ],
+    "starters": [
+     "The hydrogen bonding in water is significant for metabolism because...",
+     "Aerobic respiration releases more energy than anaerobic because...",
+     "My results showed..., which suggests that the structure of..."
+    ],
+    "stretch": "Explain how a change at atomic or bond level would disrupt a named metabolic process."
+   },
+   "B.D2": {
+    "verb": "Evaluate",
+    "decode": "Judge how the structure, functions and action of biomolecules, especially enzymes such as amylase, affect metabolic rates and can lead to metabolic disease.",
+    "buildsOn": [
+     "B.P3",
+     "B.P4",
+     "B.M2"
+    ],
+    "mustInclude": [
+     "Condensation and hydrolysis of organic polymers, glucose metabolism and cellular respiration",
+     "Enzyme structure, active site specificity, co-enzymes, co-factors, inhibitors and denaturation",
+     "Your investigation results on temperature, pH, concentration and specificity",
+     "How factors affecting amylase's action change metabolic rate and could result in metabolic disease",
+     "Intermediate molecules such as pyruvate and their relevance to respiration",
+     "Nucleic acids and protein synthesis linked to enzyme production",
+     "Limitations of your investigations"
+    ],
+    "pitfalls": [
+     "Reporting results without explaining them using enzyme structure",
+     "No link from enzyme activity to metabolic disease",
+     "Ignoring errors and reliability in your data"
+    ],
+    "starters": [
+     "Above the optimum temperature, the rate fell because the active site...",
+     "This matters for metabolism because...",
+     "If amylase activity were reduced in the body, metabolic rate would..."
+    ],
+    "stretch": "Use your own data to predict the effect of a named inhibitor or condition on metabolism."
+   },
+   "C.D3": {
+    "verb": "Evaluate",
+    "decode": "Judge how the properties and roles of biological molecules shape current research, drug development and treatment of metabolic disorders such as diabetes and glycogen storage disease.",
+    "buildsOn": [
+     "C.P5",
+     "C.P6",
+     "C.M3"
+    ],
+    "mustInclude": [
+     "Aetiology of diabetes and glycogen storage disease, including genetic and endocrine causes",
+     "How defects in biomolecule structure (e.g. insulin, enzymes) cause the disorder",
+     "DNA sequencing, DNA profiling and knowledge of the human genome in developing treatments",
+     "Biotechnology uses of enzymes (e.g. streptokinase, glucose isomerase)",
+     "Current research and the role of research councils such as BBSRC",
+     "Advantages and limitations of these developments, with a supported conclusion"
+    ],
+    "pitfalls": [
+     "Describing the disorders with no link to biochemistry or research",
+     "Out-of-date or unreferenced research claims",
+     "No judgement of how far research has improved treatment"
+    ],
+    "starters": [
+     "Because insulin is a protein, its structure means that...",
+     "DNA sequencing has changed treatment of... by...",
+     "However, these advances are limited by..."
+    ],
+    "stretch": "Evaluate one recent research development and judge its likely impact on patients."
+   }
+  }
+ },
+ "25": {
+  "title": "Complementary Therapies for Health and Social Care",
+  "glh": 60,
+  "assignments": "Up to two assignments. Assignment 1 covers learning aim A (types, role and benefits of therapies, A.D1). Assignment 2 covers learning aims B and C (provision alongside conventional treatment, regulation and factors to consider, BC.D2 and BC.D3).",
+  "bigIdea": "Complementary therapies can add real value alongside conventional medicine, but the strength of evidence, regulation and safety vary widely. Distinction work is balanced and evidence-led, neither dismissing nor overselling therapies.",
+  "evidence": [
+   "Match each therapy to a specific service user and disorder rather than writing generally.",
+   "Use research evidence (clinical studies, trials, NICE guidance) and note where evidence is weak or missing.",
+   "Cover both NHS and private provision, with referral routes and access barriers.",
+   "Name professional bodies from the spec (CNHC, FHT, GRCCT, NICE) and check current regulation with your tutor.",
+   "Include contraindications, such as pregnancy, prescription medication, diabetes or high blood pressure."
+  ],
+  "criteria": {
+   "A.D1": {
+    "verb": "Justify",
+    "decode": "Give evidence-based reasons why complementary therapies contribute to maintaining health and wellbeing for service users with different needs, taking a holistic approach.",
+    "buildsOn": [
+     "A.P1",
+     "A.M1"
+    ],
+    "mustInclude": [
+     "A range of therapy types: manipulative, touch and massage, natural remedies, holistic, specific therapies",
+     "Diagnostic and therapeutic roles, and provision alongside orthodox treatment",
+     "Benefits matched to service users with different needs (e.g. pain management, stress, chemotherapy side effects)",
+     "Holistic benefits, such as easing a disorder while aiding relaxation",
+     "Research evidence supporting the validity of your conclusions",
+     "Professional, concise arguments with clear reasons"
+    ],
+    "pitfalls": [
+     "Claiming benefits without evidence",
+     "Describing therapies without linking them to service users",
+     "Ignoring the limits of the evidence"
+    ],
+    "starters": [
+     "For [service user] with [condition], [therapy] is beneficial because...",
+     "This is supported by research showing...",
+     "Taking a holistic view, the therapy also..."
+    ],
+    "stretch": "Distinguish benefits backed by strong evidence from those based mainly on user reports."
+   },
+   "BC.D2": {
+    "verb": "Evaluate",
+    "decode": "Weigh up how complementary therapies are provided in relation to conventional medical treatment, including the factors that must be considered.",
+    "buildsOn": [
+     "B.P2",
+     "B.P3",
+     "C.P4",
+     "C.P5",
+     "B.M2",
+     "C.M3",
+     "C.M4"
+    ],
+    "mustInclude": [
+     "NHS and private provision, access and referral systems, service user choice",
+     "Factors affecting provision: availability, geography, cost, culture, public attitudes",
+     "Therapies alongside conventional treatment for named disorders (musculoskeletal, psychological, cancer, childbirth, etc.)",
+     "Research evidence, advantages, disadvantages and contraindications",
+     "Controversial issues: safety, unregistered practitioners, lack of scientific evidence",
+     "A supported judgement with recommendations justified by research"
+    ],
+    "pitfalls": [
+     "One-sided writing, either for or against therapies",
+     "Describing provision without judging it",
+     "Generic examples not tied to a disorder or service user"
+    ],
+    "starters": [
+     "Provision on the NHS is limited because...",
+     "Used alongside conventional pain relief, acupuncture can..., however...",
+     "The strongest argument against wider provision is..."
+    ],
+    "stretch": "Recommend how provision should change and justify it with evidence and cost."
+   },
+   "BC.D3": {
+    "verb": "Evaluate",
+    "decode": "Judge the overall role of complementary therapies as a service within the health and social care sector, drawing the whole unit together.",
+    "buildsOn": [
+     "B.M2",
+     "C.M3",
+     "C.M4",
+     "BC.D2"
+    ],
+    "mustInclude": [
+     "Position of complementary therapies in the sector today",
+     "Strengths and weaknesses, relevance and significance",
+     "Role of regulation, professional bodies, training and codes of ethics",
+     "Issues when provided alongside conventional medical treatment",
+     "Evidence from across all learning aims",
+     "A clear, supported conclusion"
+    ],
+    "pitfalls": [
+     "Repeating BC.D2 without widening to the whole sector",
+     "No conclusion",
+     "Ignoring regulation"
+    ],
+    "starters": [
+     "Overall, complementary therapies play a... role because...",
+     "Their value is limited by...",
+     "In conclusion, the evidence suggests..."
+    ],
+    "stretch": "Judge whether stronger regulation would increase or reduce their role, with reasons."
+   }
+  }
+ },
+ "26": {
+  "title": "Health Psychology",
+  "glh": 60,
+  "assignments": "Up to two assignments. Assignment 1 covers learning aims A and B (concepts, influences on beliefs and behaviour, contemporary health issues, AB.D1). Assignment 2 covers learning aims C and D (stress models and strategies, pain and ill health for a selected service user, C.D2 and D.D3).",
+  "bigIdea": "What people believe about health shapes what they do, and psychology offers tools to change behaviour, manage stress and cope with pain. Distinction work applies theory to real issues and a real-feeling service user, then judges what works.",
+  "evidence": [
+   "Name theories and models accurately (health belief model, biopsychosocial model, general adaptation syndrome, life events theory, locus of control).",
+   "Apply every theory to an example or your selected service user; theory alone stays at Pass.",
+   "Use research to support claims about influences on beliefs and behaviour.",
+   "Compare theories: say which explains the issue better and why.",
+   "Write about eating disorders and addiction factually and sensitively, using the spec's theoretical focus."
+  ],
+  "criteria": {
+   "AB.D1": {
+    "verb": "Evaluate",
+    "decode": "Judge how useful health psychology and concepts of health and ill health are in managing contemporary health issues such as smoking, alcohol, eating behaviour, exercise and childbirth.",
+    "buildsOn": [
+     "A.P1",
+     "B.P2",
+     "A.M1",
+     "B.M2"
+    ],
+    "mustInclude": [
+     "Definitions and models: WHO definition, medical model, biopsychosocial model, health belief model, sick role",
+     "Influences on beliefs and behaviour: culture, religion, socioeconomic, environmental, individual, education",
+     "Application of theory to at least two contemporary issues",
+     "Strengths and limitations of each theory or model",
+     "Research supporting the validity of influences",
+     "A supported judgement on the contribution of health psychology"
+    ],
+    "pitfalls": [
+     "Describing models without applying them to an issue",
+     "No limitations of theories",
+     "Treating influences as a list rather than explaining how they shape behaviour"
+    ],
+    "starters": [
+     "The health belief model helps explain smoking because...",
+     "However, it does not account for...",
+     "Overall, health psychology is most useful for... because..."
+    ],
+    "stretch": "Compare how two models would design different interventions for the same issue."
+   },
+   "C.D2": {
+    "verb": "Evaluate",
+    "decode": "Judge how well strategies and psychological theories manage stress, pain and ill health for your selected service user.",
+    "buildsOn": [
+     "C.P3",
+     "C.P4",
+     "D.P5",
+     "D.P6",
+     "C.M3",
+     "D.M4"
+    ],
+    "mustInclude": [
+     "Stress models: fight or flight, general adaptation syndrome, life events theory, psychosocial models, locus of control and personality type",
+     "Coping strategies: problem-focused, emotion-focused, defence mechanisms, positive and negative coping",
+     "The stress-illness link, including effects on the immune system and social support",
+     "Theories of pain and psychological approaches to pain control",
+     "Application of all of these to the selected service user's situation",
+     "Strengths and limitations of each strategy, with a supported conclusion"
+    ],
+    "pitfalls": [
+     "Generic strategies not tailored to the service user",
+     "Covering stress but not pain and ill health",
+     "No judgement on which strategies work best"
+    ],
+    "starters": [
+     "For [service user], a problem-focused strategy would... because...",
+     "This is likely to be less effective if...",
+     "The most suitable approach overall is... because..."
+    ],
+    "stretch": "Show how strategies should change as the service user's illness or pain progresses."
+   },
+   "D.D3": {
+    "verb": "Evaluate",
+    "decode": "Judge how important health psychology is in helping individuals deal with contemporary health issues, stress, pain and illness, drawing the whole unit together.",
+    "buildsOn": [
+     "D.P5",
+     "D.P6",
+     "D.M4",
+     "AB.D1",
+     "C.D2"
+    ],
+    "mustInclude": [
+     "Synoptic links across learning aims A to D",
+     "Concepts of pain: organic and psychogenic, acute and chronic, referred, measuring pain",
+     "Diagnosis and behaviour change, alleviation of symptoms, effects on families and dependants",
+     "Examples from illnesses such as heart disease, cancer, HIV/AIDS, back pain or asthma",
+     "Importance to professionals of knowing these strategies",
+     "Strengths and limitations of health psychology with a clear conclusion"
+    ],
+    "pitfalls": [
+     "Repeating C.D2 rather than widening to individuals generally",
+     "No overall judgement of importance",
+     "Ignoring families and dependants"
+    ],
+    "starters": [
+     "Health psychology is important because it recognises that...",
+     "Its contribution is limited where...",
+     "On balance, it is most valuable for... because..."
+    ],
+    "stretch": "Judge the importance of health psychology against purely medical approaches, with evidence."
+   }
+  }
+ }
+}

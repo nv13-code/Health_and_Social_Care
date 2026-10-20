@@ -1,0 +1,356 @@
+{
+ "unit": 3,
+ "title": "Anatomy and Physiology for Health and Social Care",
+ "format": {
+  "marks": 90,
+  "time": "1 hour 30 minutes",
+  "summary": "One written examination of 90 marks lasting 1 hour 30 minutes. Short- and long-answer questions and multiple-choice questions assessing understanding of the structure of human anatomy and the function of different body systems. Available in January and May/June.",
+  "tips": [
+   "90 marks in 90 minutes: roughly one mark per minute. Bank the 1-mark MCQs and 'state/define' items quickly so you have time for the 6–8 mark 'to what extent' questions.",
+   "Use precise anatomical vocabulary every time (e.g. 'alveoli', 'villi', 'vasodilation', 'beta cells of the islets of Langerhans') – vague words like 'stuff' or 'the tubes' cannot be credited.",
+   "For 'explain' questions, write in linked chains: structure → function → consequence ('because… which means… so…').",
+   "For data questions ('by how many', percentage change), show your working and include units; check whether the question wants a difference, a percentage or a percentage-point change.",
+   "For disorder questions, always name the body system, describe what normally happens, then what goes wrong and the effect on the person – and link to at least one other system.",
+   "'To what extent' needs a judgement: weigh the evidence and finish with a conclusion that answers the question directly.",
+   "If a question gives a case study or data, quote from it – the top band rewards applying knowledge to the detailed situation, not writing everything you know."
+  ]
+ },
+ "dDescriptor": "Learners will be able to articulate arguments and views concisely and professionally to justify the conclusions they reach in relation to the functioning of different body systems. Learners will be able to show a depth of understanding of how the knowledge applies to detailed situations in relation to human anatomy and physiology. They will evaluate concepts to reach reasoned and valid judgements. They will draw on and show a synthesis of knowledge and understanding of the different body systems.",
+ "topics": [
+  {"id": "A1", "title": "How cells work", "points": [
+   "Describe the cell membrane: controls what enters and leaves the cell",
+   "Describe the nucleus: contains DNA and controls cell activities",
+   "Describe ribosomes: site of protein synthesis",
+   "Distinguish rough ER (has ribosomes, makes and transports proteins) from smooth ER (makes lipids and steroids)",
+   "Describe mitochondria: site of aerobic respiration, releasing energy (ATP)",
+   "Describe centrioles: organise spindle fibres during cell division",
+   "Describe lysosomes: contain digestive enzymes that break down worn-out organelles and pathogens",
+   "Describe the Golgi apparatus: modifies, packages and secretes proteins",
+   "Link organelle numbers to cell function (e.g. muscle cells have many mitochondria)"
+  ]},
+  {"id": "A2", "title": "Characteristics of tissues", "points": [
+   "Simple epithelium: squamous (alveoli, capillaries), cuboidal (kidney tubules, glands), columnar (lining gut), ciliated (trachea, bronchi)",
+   "Compound epithelium: stratified (simple) and keratinised (skin) – protective layers",
+   "Connective tissue: blood, cartilage, bone, areolar, adipose – structure, location and function of each",
+   "Muscle tissue: striated/skeletal (voluntary), non-striated/smooth (involuntary, gut and vessel walls), cardiac (involuntary, does not fatigue)",
+   "Nervous tissue: neurones transmit impulses; neuroglia support and protect neurones",
+   "Link tissue structure to function (e.g. thin squamous cells give a short diffusion distance)"
+  ]},
+  {"id": "A3", "title": "The structure and function of body organs", "points": [
+   "Location, structure and function of the heart, lungs and brain",
+   "Location, structure and function of the stomach, liver, pancreas, duodenum, ileum and colon",
+   "Location, structure and function of the kidneys and bladder",
+   "Location, structure and function of the ovaries/testes and uterus",
+   "Structure and functions of the skin (protection, temperature regulation, sensation, vitamin D)"
+  ]},
+  {"id": "A4", "title": "Energy in the body", "points": [
+   "Energy transformations in the body: chemical, heat, sound, electrical, light",
+   "Role of energy in the body (movement, active transport, growth, maintaining temperature)",
+   "Anabolism: building larger molecules from smaller ones (requires energy)",
+   "Catabolism: breaking down larger molecules (releases energy)",
+   "Aerobic respiration: glucose + oxygen → carbon dioxide + water + energy (in mitochondria)",
+   "Anaerobic respiration in humans: glucose → lactic acid + less energy; oxygen debt",
+   "Basal metabolic rate (BMR) and factors affecting it (age, sex, body size, activity, thyroxine)"
+  ]},
+  {"id": "A5", "title": "Human genetics", "points": [
+   "Key terms: gene, allele, dominant, recessive, homozygous, heterozygous, genotype, phenotype, carrier",
+   "Use Punnett squares to work out probabilities of Mendelian inheritance",
+   "Autosomal recessive disorders: cystic fibrosis, PKU, sickle cell disease",
+   "Autosomal dominant disorder: Huntington's chorea",
+   "Chromosome disorder: Down's syndrome (trisomy 21)",
+   "Diagnostic testing: amniocentesis and chorionic villus sampling (CVS) – when, how, risks and benefits"
+  ]},
+  {"id": "B1", "title": "Homeostatic mechanisms", "points": [
+   "Define homeostasis and the internal environment",
+   "Explain negative feedback (receptor, control centre, effector, return to set point)",
+   "Temperature: heat production and loss; roles of the hypothalamus and autonomic nervous system",
+   "Responses to heat and cold: vasodilation/vasoconstriction of arterioles, sweating, shivering",
+   "Surface area to volume ratio and heat loss (e.g. infants lose heat faster); fever",
+   "Blood glucose: roles of the pancreas, liver, insulin and glucagon",
+   "Fluid balance: water intake, output and loss; role of the kidneys and renal system",
+   "Failure of homeostasis: hypothermia and dehydration"
+  ]},
+  {"id": "B2", "title": "Cardiovascular system", "points": [
+   "Heart structure: chambers, valves, septum, major vessels",
+   "Cardiac cycle: atrial systole, ventricular systole, diastole",
+   "Heart rate and its regulation; stroke volume; cardiac output = heart rate × stroke volume",
+   "Blood pressure (systolic/diastolic)",
+   "Blood vessels: arteries, arterioles, capillaries, venules, veins – structure related to function",
+   "Pulmonary and systemic circulation (double circulation)",
+   "Structure and function of blood: plasma, red cells, white cells, platelets",
+   "Disorders: coronary heart disease (CHD), stroke, anaemia, hypertension"
+  ]},
+  {"id": "B3", "title": "Respiratory system", "points": [
+   "Role of the nasal air passages (warming, moistening, filtering air)",
+   "Structure and function of the trachea, bronchi, bronchial tree, lungs and alveoli",
+   "Role of ciliated epithelial tissue and mucus",
+   "Respiratory muscles: intercostal muscles and diaphragm",
+   "Ventilation (inspiration/expiration) and its regulation",
+   "Gaseous exchange by diffusion at the alveoli",
+   "Disorders: smoking-related damage, asthma, COPD, pneumonia"
+  ]},
+  {"id": "B4", "title": "Skeletal system", "points": [
+   "Axial and appendicular skeleton",
+   "Types of bone: long, short, flat, irregular, sesamoid",
+   "Functions: support, protection, muscle attachment, blood cell production, mineral store",
+   "Ligaments and cartilage: structure and function",
+   "Locate the major bones named in the spec (cranium to metatarsals, vertebral column)",
+   "Joint classification: fibrous, cartilaginous, synovial; synovial joint structure",
+   "Movements: flexion, extension, circumduction, adduction, abduction, gliding",
+   "Disorders: fractures, osteoarthritis, osteoporosis, increase in rickets"
+  ]},
+  {"id": "B5", "title": "Muscular system", "points": [
+   "Structure of striated (skeletal) muscle",
+   "Attachment: tendons and fascia",
+   "Types of contraction: isometric, concentric, eccentric",
+   "Antagonistic pairs: agonist, antagonist, synergist, fixator",
+   "Location and action of the major muscles named in the spec",
+   "Disorder: muscular dystrophy"
+  ]},
+  {"id": "B6", "title": "Digestive system", "points": [
+   "Alimentary canal: oesophagus, stomach, duodenum, ileum, colon",
+   "Accessory organs: liver, pancreas, salivary glands",
+   "Processes: ingestion, peristalsis, digestion, absorption, egestion",
+   "Enzymes: amylases, proteases, lipases – site of secretion and action",
+   "Role of microorganisms (gut bacteria) in the gut",
+   "Products of digestion and their uses; storage of excess fat and carbohydrate",
+   "Deamination of excess amino acids in the liver; urea removed by the kidneys",
+   "Absorption into blood and lacteals; role of villi and microvilli",
+   "Disorders: ulcers, hepatitis, coeliac disease"
+  ]},
+  {"id": "B7", "title": "Nervous system", "points": [
+   "CNS (brain and spinal cord): coordination of voluntary and involuntary activity",
+   "Peripheral nervous system: sensory and motor neurones",
+   "Sympathetic ('fight or flight') and parasympathetic ('rest and digest') divisions",
+   "Conduction of nerve impulses to and from the CNS (including the role of myelin and synapses)",
+   "Disorders: Parkinson's disease, multiple sclerosis (MS), dementia"
+  ]},
+  {"id": "B8", "title": "Endocrine system", "points": [
+   "Hypothalamus: controls the pituitary via releasing hormones; daily rhythms",
+   "Pituitary: growth, sex organ function, osmoregulation (ADH)",
+   "Thyroid: regulation of growth and metabolism; blood calcium regulation",
+   "Ovaries (oestrogen, progesterone) and testes (androgens, sperm production)",
+   "Pancreas: insulin and glucagon",
+   "Adrenal glands: adrenaline (fight or flight) and aldosterone (blood pressure)",
+   "Disorders: diabetes mellitus (type 1 and type 2), diabetes insipidus, hypothyroidism"
+  ]},
+  {"id": "B9", "title": "Lymphatic and immune systems", "points": [
+   "Lymph: formed from tissue fluid and returned to the blood",
+   "Lymphatic vessels and lymphatic organs (formation and maturation of lymphocytes)",
+   "Immune response via T and B lymphocytes",
+   "Spleen: filtering blood and recycling parts of red blood cells",
+   "Disorders: Hodgkin's disease (lymphoma) and leukaemia"
+  ]},
+  {"id": "B10", "title": "Renal system", "points": [
+   "Kidneys: filter toxins from the blood; regulate water, salt balance and pH",
+   "Ureters carry urine to the bladder; bladder stores urine; urethra carries urine out",
+   "Disorders: urinary tract infections (UTIs) and renal failure"
+  ]},
+  {"id": "B11", "title": "Reproductive system", "points": [
+   "Female structures and functions: ovaries, fallopian tubes, uterus, cervix, vagina, vulva",
+   "Male structures and functions: penis, urethra, scrotum, testes, vas deferens, seminal vesicles, prostate gland",
+   "Disorders: endometriosis, polycystic ovary syndrome, hydrocele, prostate cancer/BPH",
+   "Gamete production by meiosis",
+   "Conception: fertilisation to birth, cell division and chromosome behaviour",
+   "Foetal development through the trimesters and birth",
+   "Mitosis and DNA replication for growth",
+   "Factors affecting prenatal development: genetics, maternal age, diet, health, smoking, alcohol",
+   "Teratogens and their effects; congenital disorders: spina bifida, cerebral palsy, effects of rubella"
+  ]},
+  {"id": "C1", "title": "Medical research: how data is collected and used", "points": [
+   "Clinical trials: placebo, double-blind design and why they reduce bias",
+   "Epidemiological studies: patterns and causes of disease in populations",
+   "Mortality (deaths) and morbidity (illness) statistics",
+   "Data analysis: calculate differences, percentages and percentage change from tables and graphs",
+   "Use data to evaluate the efficacy of medical procedures and the effects of lifestyle choices"
+  ]}
+ ],
+ "mcq": [
+  {"id": "u3q01", "topic": "A1", "q": "Which organelle is the site of aerobic respiration?", "options": ["Ribosome", "Mitochondrion", "Golgi apparatus", "Lysosome"], "answer": 1, "why": "Mitochondria carry out aerobic respiration, releasing energy as ATP."},
+  {"id": "u3q02", "topic": "A1", "q": "Which organelle modifies, packages and secretes proteins?", "options": ["Lysosome", "Smooth endoplasmic reticulum", "Centriole", "Golgi apparatus"], "answer": 3, "why": "The Golgi apparatus processes proteins from the rough ER and packages them into vesicles for secretion."},
+  {"id": "u3q03", "topic": "A1", "q": "Pancreatic cells secrete large amounts of digestive enzymes (which are proteins). Which organelle would you expect to find in large amounts in these cells?", "options": ["Rough endoplasmic reticulum", "Centrioles", "Smooth endoplasmic reticulum", "Vacuoles"], "answer": 0, "why": "Rough ER is studded with ribosomes, so it makes and transports large quantities of protein."},
+  {"id": "u3q04", "topic": "A2", "q": "Which tissue lines the trachea and moves mucus away from the lungs?", "options": ["Simple squamous epithelium", "Keratinised compound epithelium", "Ciliated columnar epithelium", "Adipose tissue"], "answer": 2, "why": "Ciliated epithelium has cilia that beat to sweep mucus and trapped particles up towards the throat."},
+  {"id": "u3q05", "topic": "A2", "q": "Why is simple squamous epithelium found lining the alveoli?", "options": ["It is thick and protects against infection", "It secretes mucus to trap dust", "It contracts to push air out", "It is one cell thick, giving a short diffusion distance"], "answer": 3, "why": "Flat, single-layer cells give a very short diffusion pathway for oxygen and carbon dioxide."},
+  {"id": "u3q06", "topic": "A2", "q": "Which type of muscle tissue is striated, involuntary and resistant to fatigue?", "options": ["Skeletal muscle", "Cardiac muscle", "Smooth muscle", "Non-striated muscle"], "answer": 1, "why": "Cardiac muscle is striated like skeletal muscle but contracts involuntarily and continuously without tiring."},
+  {"id": "u3q07", "topic": "A3", "q": "Which organ produces bile?", "options": ["Liver", "Gall bladder", "Pancreas", "Duodenum"], "answer": 0, "why": "Bile is made in the liver; the gall bladder only stores it."},
+  {"id": "u3q08", "topic": "A3", "q": "What is the main function of the ileum?", "options": ["Storing faeces", "Producing insulin", "Absorbing the products of digestion", "Making hydrochloric acid"], "answer": 2, "why": "The ileum is lined with villi that absorb digested food into the blood and lacteals."},
+  {"id": "u3q09", "topic": "A4", "q": "Which statement best describes anabolism?", "options": ["Breaking down large molecules to release energy", "Building larger molecules from smaller ones, using energy", "Respiration without oxygen", "Losing heat through the skin"], "answer": 1, "why": "Anabolic reactions build molecules (e.g. proteins from amino acids) and require energy; catabolism breaks them down."},
+  {"id": "u3q10", "topic": "A4", "q": "During intense exercise, muscle cells respire anaerobically. What is produced?", "options": ["Carbon dioxide and water", "Ethanol and carbon dioxide", "Glycogen", "Lactic acid"], "answer": 3, "why": "In humans, anaerobic respiration converts glucose to lactic acid, releasing much less energy than aerobic respiration."},
+  {"id": "u3q11", "topic": "A4", "q": "Basal metabolic rate (BMR) is best defined as:", "options": ["the minimum energy needed to keep vital functions going at rest", "the energy used during exercise", "the energy content of food eaten in a day", "the rate at which food is digested"], "answer": 0, "why": "BMR is the energy needed at complete rest for functions such as breathing, circulation and maintaining body temperature."},
+  {"id": "u3q12", "topic": "A5", "q": "Cystic fibrosis is an autosomal recessive disorder. Both parents are carriers. What is the probability that their child will have cystic fibrosis?", "options": ["0%", "50%", "25%", "75%"], "answer": 2, "why": "Ff × Ff gives FF, Ff, Ff, ff – one in four (25%) is ff and affected."},
+  {"id": "u3q13", "topic": "A5", "q": "Huntington's chorea is caused by a dominant allele. One parent is heterozygous and the other is unaffected. What is the probability their child inherits the condition?", "options": ["50%", "25%", "100%", "0%"], "answer": 0, "why": "Hh × hh gives Hh, Hh, hh, hh – half the offspring inherit the dominant allele."},
+  {"id": "u3q14", "topic": "A5", "q": "What causes Down's syndrome?", "options": ["A dominant allele on chromosome 4", "A recessive allele on chromosome 7", "A deletion on the X chromosome", "An extra copy of chromosome 21"], "answer": 3, "why": "Down's syndrome is a chromosome disorder (trisomy 21), usually caused by non-disjunction during meiosis."},
+  {"id": "u3q15", "topic": "A5", "q": "Which diagnostic test samples cells from the placenta and can be carried out earlier in pregnancy than amniocentesis?", "options": ["Heel-prick test", "Chorionic villus sampling", "Blood pressure monitoring", "Urinalysis"], "answer": 1, "why": "CVS takes a small sample of placental tissue (chorionic villi) and is usually done earlier in pregnancy than amniocentesis; both carry a small risk of miscarriage."},
+  {"id": "u3q16", "topic": "B1", "q": "Which statement describes negative feedback?", "options": ["It increases a change away from the normal level", "It only controls body temperature", "It only uses nerves, never hormones", "It reverses a change so a variable returns towards its set point"], "answer": 3, "why": "Negative feedback detects a deviation and triggers responses that bring the variable back towards normal."},
+  {"id": "u3q17", "topic": "B1", "q": "When core body temperature rises, what happens to the arterioles supplying skin capillaries?", "options": ["They vasodilate so more heat is lost from the skin", "They vasoconstrict so less heat is lost", "They close completely", "They have no role in temperature control"], "answer": 0, "why": "Vasodilation increases blood flow near the skin surface, increasing heat loss by radiation."},
+  {"id": "u3q18", "topic": "B1", "q": "After a large meal, blood glucose rises. Which response restores normal levels?", "options": ["Alpha cells release glucagon", "The adrenal glands release aldosterone", "Beta cells in the pancreas release insulin", "The pituitary releases ADH"], "answer": 2, "why": "Insulin causes cells to take up glucose and the liver to convert it to glycogen, lowering blood glucose."},
+  {"id": "u3q19", "topic": "B1", "q": "Why do newborn babies lose heat more quickly than adults?", "options": ["They have more sweat glands", "They have a larger surface area to volume ratio", "They shiver more", "Their hypothalamus is larger"], "answer": 1, "why": "A larger surface area relative to volume means more heat is lost through the skin."},
+  {"id": "u3q20", "topic": "B2", "q": "Illustrative data: at rest, heart rate = 70 bpm and stroke volume = 70 ml. During exercise, heart rate = 140 bpm and stroke volume = 100 ml. By how many ml/min does cardiac output increase?", "options": ["4900 ml/min", "14000 ml/min", "2100 ml/min", "9100 ml/min"], "answer": 3, "why": "Rest: 70 × 70 = 4900; exercise: 140 × 100 = 14000; increase = 14000 − 4900 = 9100 ml/min."},
+  {"id": "u3q21", "topic": "B2", "q": "Which blood vessel carries deoxygenated blood from the heart to the lungs?", "options": ["Pulmonary vein", "Aorta", "Pulmonary artery", "Vena cava"], "answer": 2, "why": "The pulmonary artery leaves the right ventricle carrying deoxygenated blood to the lungs."},
+  {"id": "u3q22", "topic": "B2", "q": "Which is a major long-term risk of untreated hypertension?", "options": ["Stroke", "Rickets", "Hydrocele", "Coeliac disease"], "answer": 0, "why": "High blood pressure damages artery walls and increases the risk of stroke and CHD."},
+  {"id": "u3q23", "topic": "B2", "q": "A person with iron-deficiency anaemia often feels tired and breathless because:", "options": ["their platelets cannot clot", "their blood has reduced capacity to carry oxygen", "their white cell count is too high", "their heart rate is too low"], "answer": 1, "why": "Less haemoglobin means less oxygen is delivered to tissues for aerobic respiration."},
+  {"id": "u3q24", "topic": "B3", "q": "What happens during inspiration?", "options": ["The diaphragm relaxes and domes upwards", "Thoracic volume decreases and pressure rises", "The external intercostals relax and ribs move down", "The diaphragm contracts and flattens and thoracic volume increases"], "answer": 3, "why": "Increased thoracic volume lowers pressure in the lungs below atmospheric pressure, so air flows in."},
+  {"id": "u3q25", "topic": "B3", "q": "Which feature of alveoli makes gas exchange efficient?", "options": ["Rings of cartilage", "Thick muscular walls", "A large surface area and a rich capillary network", "Ciliated cells"], "answer": 2, "why": "A large surface area, thin walls and a good blood supply maintain a steep concentration gradient for diffusion."},
+  {"id": "u3q26", "topic": "B3", "q": "Illustrative data: a patient's peak flow is 300 L/min. Their predicted peak flow is 450 L/min. What percentage of their predicted value is this?", "options": ["33%", "75%", "67%", "150%"], "answer": 2, "why": "300 ÷ 450 × 100 = 66.7%, which rounds to 67%."},
+  {"id": "u3q27", "topic": "B3", "q": "In emphysema (a form of COPD), why is gas exchange reduced?", "options": ["The alveolar walls break down, reducing surface area", "The diaphragm becomes larger", "The trachea becomes shorter", "Red blood cells carry too much oxygen"], "answer": 0, "why": "Damaged alveoli merge into larger air spaces with less total surface area for diffusion."},
+  {"id": "u3q28", "topic": "B4", "q": "The patella is an example of which type of bone?", "options": ["Long bone", "Flat bone", "Irregular bone", "Sesamoid bone"], "answer": 3, "why": "Sesamoid bones develop within a tendon; the patella sits in the quadriceps tendon."},
+  {"id": "u3q29", "topic": "B4", "q": "Moving the arm sideways away from the midline of the body is called:", "options": ["adduction", "abduction", "flexion", "gliding"], "answer": 1, "why": "Abduction moves a limb away from the midline; adduction brings it back towards the midline."},
+  {"id": "u3q30", "topic": "B4", "q": "Why are post-menopausal women at higher risk of osteoporosis?", "options": ["Falling oestrogen levels lead to loss of bone density", "Their cartilage becomes thicker", "They produce more vitamin D", "Their bones contain more calcium"], "answer": 0, "why": "Oestrogen helps maintain bone density; after the menopause bone is lost faster than it is replaced."},
+  {"id": "u3q31", "topic": "B5", "q": "During the lifting phase of a bicep curl, which muscle is the agonist?", "options": ["Triceps brachii", "Deltoid", "Biceps brachii", "Trapezius"], "answer": 2, "why": "The biceps brachii contracts to flex the elbow; the triceps is the antagonist and relaxes."},
+  {"id": "u3q32", "topic": "B5", "q": "A muscle lengthening while still under tension (e.g. lowering a weight slowly) is which type of contraction?", "options": ["Concentric", "Isometric", "Eccentric", "Voluntary"], "answer": 2, "why": "Eccentric contraction: the muscle lengthens under tension to control the movement."},
+  {"id": "u3q33", "topic": "B5", "q": "Which statement about muscular dystrophy is correct?", "options": ["It is caused by a bacterial infection", "It is a group of genetic conditions causing progressive muscle weakness", "It only affects cardiac muscle", "It is caused by lack of vitamin D"], "answer": 1, "why": "Muscular dystrophies are inherited conditions in which muscle fibres progressively weaken and break down."},
+  {"id": "u3q34", "topic": "B6", "q": "Which enzyme group digests proteins into peptides and amino acids?", "options": ["Proteases", "Amylases", "Lipases", "Lactases"], "answer": 0, "why": "Proteases (e.g. pepsin in the stomach) break down proteins."},
+  {"id": "u3q35", "topic": "B6", "q": "The products of fat digestion are mainly absorbed into which structures in the villi?", "options": ["Capillaries only", "The hepatic portal vein", "Microvilli of the colon", "Lacteals"], "answer": 3, "why": "Fatty acids and glycerol are absorbed into lacteals, part of the lymphatic system."},
+  {"id": "u3q36", "topic": "B6", "q": "In coeliac disease, why might a person lose weight and become malnourished?", "options": ["Gluten triggers an immune reaction that damages the villi, reducing absorption", "The stomach stops making acid", "The liver stops making bile", "The colon absorbs too much water"], "answer": 0, "why": "Flattened, damaged villi greatly reduce the surface area for absorption of nutrients."},
+  {"id": "u3q37", "topic": "B6", "q": "Where does deamination of excess amino acids take place?", "options": ["Kidneys", "Stomach", "Liver", "Pancreas"], "answer": 2, "why": "The liver removes the amino group, forming urea, which is carried in the blood to the kidneys for excretion."},
+  {"id": "u3q38", "topic": "B7", "q": "Which is an effect of the parasympathetic nervous system?", "options": ["Increases heart rate", "Dilates the pupils", "Releases adrenaline", "Decreases heart rate and stimulates digestion"], "answer": 3, "why": "The parasympathetic system is 'rest and digest': it slows the heart and increases digestive activity."},
+  {"id": "u3q39", "topic": "B7", "q": "Multiple sclerosis slows nerve impulse conduction because:", "options": ["the myelin sheath is damaged", "too many neurones are produced", "dopamine levels are too high", "the spinal cord is shortened"], "answer": 0, "why": "MS is an autoimmune condition that damages myelin, so impulses travel more slowly or are blocked."},
+  {"id": "u3q40", "topic": "B7", "q": "Parkinson's disease is associated with:", "options": ["damage to the myelin sheath", "loss of dopamine-producing neurones in the brain", "too much insulin", "infection of the meninges"], "answer": 1, "why": "Reduced dopamine causes tremor, rigidity and slow movement."},
+  {"id": "u3q41", "topic": "B8", "q": "Which hormone from the adrenal glands helps regulate blood pressure?", "options": ["Insulin", "Thyroxine", "Aldosterone", "Oestrogen"], "answer": 2, "why": "Aldosterone increases sodium (and so water) reabsorption by the kidneys, raising blood volume and pressure."},
+  {"id": "u3q42", "topic": "B8", "q": "A person passes very large volumes of dilute urine and is constantly thirsty, but their blood glucose is normal. Which condition is most likely?", "options": ["Diabetes mellitus", "Diabetes insipidus", "Hypothyroidism", "Anaemia"], "answer": 1, "why": "Diabetes insipidus involves lack of ADH (or kidney insensitivity to it), so water is not reabsorbed; glucose is unaffected."},
+  {"id": "u3q43", "topic": "B8", "q": "Which set of symptoms is typical of hypothyroidism?", "options": ["Weight loss, feeling hot, rapid heart rate", "Excess thirst and high blood glucose", "Tremor and rigidity", "Tiredness, weight gain and feeling cold"], "answer": 3, "why": "Low thyroxine reduces metabolic rate, causing fatigue, weight gain and cold intolerance."},
+  {"id": "u3q44", "topic": "B9", "q": "Which cells produce antibodies?", "options": ["B lymphocytes", "Red blood cells", "Platelets", "Neuroglia"], "answer": 0, "why": "B cells produce antibodies; T cells help coordinate the response and destroy infected cells."},
+  {"id": "u3q45", "topic": "B10", "q": "Why are urinary tract infections more common in females than males?", "options": ["Females have longer ureters", "Females have a shorter urethra, so bacteria reach the bladder more easily", "Females have smaller kidneys", "Females produce less urine"], "answer": 1, "why": "A shorter urethra close to the anus gives bacteria a shorter route to the bladder."},
+  {"id": "u3q46", "topic": "B11", "q": "Where does fertilisation normally take place?", "options": ["Uterus", "Cervix", "Ovary", "Fallopian tube (oviduct)"], "answer": 3, "why": "The egg is fertilised in the fallopian tube and the zygote then moves to the uterus to implant."},
+  {"id": "u3q47", "topic": "B11", "q": "Which statement about meiosis is correct?", "options": ["It produces two identical diploid cells", "It is used for growth and repair", "It produces four genetically different haploid gametes", "It only happens after birth"], "answer": 2, "why": "Meiosis halves the chromosome number and creates variation; mitosis produces identical cells for growth."},
+  {"id": "u3q48", "topic": "C1", "q": "Illustrative trial: 200 people took a new drug and 30 had a stroke; 200 people took a placebo and 50 had a stroke. By how many percentage points was the stroke rate lower in the drug group?", "options": ["20 percentage points", "40 percentage points", "15 percentage points", "10 percentage points"], "answer": 3, "why": "Drug: 30/200 = 15%; placebo: 50/200 = 25%; difference = 10 percentage points (a 40% relative reduction)."}
+ ],
+ "long": [
+  {"id": "u3l01", "topic": "B1", "marks": 6, "command": "Explain", "context": "Amira, aged 17, eats a large bowl of pasta and a fizzy drink at lunchtime. Two hours later, her blood glucose has returned to normal.", "q": "Explain how negative feedback returns Amira's blood glucose to normal after her meal.", "markingPoints": [
+   "Carbohydrate is digested to glucose, which is absorbed so blood glucose rises above the set point",
+   "The rise is detected by beta cells in the islets of Langerhans in the pancreas",
+   "Beta cells secrete insulin into the blood",
+   "Insulin increases glucose uptake by body cells (e.g. muscle) for respiration",
+   "Insulin stimulates the liver (and muscles) to convert glucose to glycogen for storage",
+   "Blood glucose falls back towards normal; as it returns, insulin secretion decreases (the response switches off – negative feedback)",
+   "If glucose fell too low, alpha cells would release glucagon to convert glycogen back to glucose"
+  ], "dHallmarks": [
+   "Uses the full feedback loop language: stimulus → receptor → control centre → effector → response → return to set point",
+   "Names specific cells and organs (beta cells, islets of Langerhans, liver) rather than 'the body'",
+   "Explains why the response switches off, showing what makes it negative feedback",
+   "Applies to Amira's meal throughout"
+  ], "model": "Amira's pasta is digested into glucose, which is absorbed in her ileum, so her blood glucose rises above its set point. This change is detected by beta cells in the islets of Langerhans in her pancreas, which secrete insulin into the blood. Insulin makes body cells such as muscle cells take up more glucose for respiration and stimulates her liver to convert glucose into glycogen for storage. As a result, her blood glucose falls back towards normal. Because the level is now back at the set point, the beta cells reduce insulin secretion, so the correction stops – this is negative feedback, because the response reverses the original change. If her level then dropped too low, alpha cells would release glucagon so the liver converts glycogen back to glucose."},
+  {"id": "u3l02", "topic": "B2", "marks": 4, "command": "Explain", "context": "", "q": "Explain the events of the cardiac cycle.", "markingPoints": [
+   "Diastole: heart muscle relaxes; atria fill with blood from the vena cava and pulmonary vein",
+   "Atrial systole: atria contract, pushing blood through the atrioventricular (tricuspid/bicuspid) valves into the ventricles",
+   "Ventricular systole: ventricles contract; AV valves close (preventing backflow) and blood is forced through the semilunar valves into the aorta and pulmonary artery",
+   "Semilunar valves close when ventricles relax, preventing backflow; the cycle repeats (around 0.8 s at rest)"
+  ], "dHallmarks": [
+   "Correct sequence with named chambers, valves and vessels",
+   "Explains why valves open and close (pressure differences)",
+   "Links each stage to its purpose (one-way flow)"
+  ], "model": "During diastole the heart muscle relaxes and blood flows into the atria from the vena cava (right) and pulmonary vein (left). In atrial systole the atria contract, raising pressure so blood is pushed through the tricuspid and bicuspid valves into the ventricles. In ventricular systole the ventricles contract; the rise in pressure shuts the atrioventricular valves to stop backflow and opens the semilunar valves, so blood is forced into the pulmonary artery and aorta. When the ventricles relax, pressure in them falls and the semilunar valves close, preventing blood flowing back, and the cycle begins again."},
+  {"id": "u3l03", "topic": "B6", "marks": 6, "command": "Explain", "context": "Jamal eats a cheese sandwich, which contains starch, protein and fat.", "q": "Explain the role of enzymes in the digestion and absorption of Jamal's sandwich.", "markingPoints": [
+   "Salivary amylase in the mouth begins breaking starch into maltose (sugars)",
+   "Pepsin (a protease) in the stomach breaks proteins into peptides; acid gives the optimum pH and kills bacteria",
+   "Pancreatic juice in the duodenum contains amylase, proteases (e.g. trypsin) and lipase",
+   "Bile from the liver emulsifies fats into small droplets, increasing surface area for lipase",
+   "Lipase breaks fats into fatty acids and glycerol",
+   "Enzymes on the ileum lining complete digestion to glucose and amino acids",
+   "Glucose and amino acids are absorbed into blood capillaries in the villi; fatty acids and glycerol into lacteals",
+   "Villi and microvilli give a large surface area for absorption"
+  ], "dHallmarks": [
+   "Matches each enzyme to its substrate, site of secretion and product",
+   "Explains (not just names) the role of bile and of villi",
+   "Follows the food through the alimentary canal in the correct order",
+   "Applies to the cheese sandwich components"
+  ], "model": "Digestion of the bread's starch starts in the mouth, where salivary amylase breaks it into sugars such as maltose. In the stomach, pepsin, a protease, begins breaking the cheese's protein into peptides, working best in the acidic conditions produced there. In the duodenum, pancreatic juice adds more amylase, proteases and lipase. Bile from the liver emulsifies the cheese's fat into tiny droplets, increasing the surface area for lipase, which breaks fats into fatty acids and glycerol. Enzymes in the ileum lining complete digestion to glucose and amino acids. These small molecules are absorbed by the villi: glucose and amino acids enter the blood capillaries, while fatty acids and glycerol enter the lacteals. The villi and microvilli provide a very large surface area, so absorption is fast and efficient."},
+  {"id": "u3l04", "topic": "B7", "marks": 4, "command": "Explain", "context": "Priya touches a hot pan and pulls her hand away.", "q": "Explain how nerve impulses travel to and from the central nervous system to produce Priya's response.", "markingPoints": [
+   "Receptors in the skin detect the heat (stimulus) and generate an impulse",
+   "The impulse travels along a sensory neurone to the CNS (spinal cord)",
+   "In the CNS the impulse passes across synapses (via relay neurones) using neurotransmitter chemicals",
+   "The impulse travels along a motor neurone to the effector (muscle in the arm), which contracts to move the hand",
+   "Myelin sheath insulates neurones and speeds up conduction"
+  ], "dHallmarks": [
+   "Correct pathway: receptor → sensory neurone → CNS → motor neurone → effector",
+   "Explains synaptic transmission and myelin, not just lists them",
+   "Links to the speed and protective purpose of the response"
+  ], "model": "Heat receptors in Priya's skin detect the stimulus and generate electrical impulses. These travel along a sensory neurone to her spinal cord, part of the CNS. At synapses the impulse is passed on chemically by neurotransmitters, via a relay neurone, to a motor neurone. The motor neurone carries the impulse to the effector – the muscles in her arm – which contract and pull her hand away. Because the neurones are myelinated, the impulse travels quickly, and because it is processed in the spinal cord it is very fast, protecting her from a burn."},
+  {"id": "u3l05", "topic": "B2", "marks": 4, "command": "Compare and contrast", "context": "", "q": "Compare and contrast the structure and function of arteries and veins.", "markingPoints": [
+   "Similarity: both are blood vessels with three layers in their walls and carry blood around the body",
+   "Arteries carry blood away from the heart; veins carry blood back towards the heart",
+   "Arteries have thick, muscular, elastic walls to withstand and maintain high pressure; veins have thinner walls",
+   "Veins have a wider lumen and valves to prevent backflow at low pressure; arteries (apart from the heart's exit) have no valves",
+   "Arteries usually carry oxygenated blood, veins deoxygenated (except pulmonary vessels)"
+  ], "dHallmarks": [
+   "Gives at least one genuine similarity as well as differences",
+   "Each structural difference is linked to function (pressure)",
+   "Notes the pulmonary exception"
+  ], "model": "Both arteries and veins are blood vessels with walls made of three layers, carrying blood as part of the double circulation. Arteries carry blood away from the heart at high pressure, so they have thick, muscular and elastic walls and a narrow lumen. Veins return blood to the heart at low pressure, so they have thinner walls, a wider lumen and valves that prevent backflow. Most arteries carry oxygenated blood and most veins deoxygenated blood, but the pulmonary artery and pulmonary vein are the exceptions."},
+  {"id": "u3l06", "topic": "B8", "marks": 8, "command": "To what extent", "context": "Dennis, aged 58, was diagnosed with type 2 diabetes three years ago. He has high blood pressure, his feet tingle, a small cut on his foot is slow to heal and his GP has found protein in his urine.", "q": "To what extent does type 2 diabetes affect body systems other than the endocrine system? Refer to Dennis in your answer.", "markingPoints": [
+   "Type 2 diabetes: cells become resistant to insulin (and/or insufficient insulin), so blood glucose stays high – an endocrine/homeostatic failure",
+   "Cardiovascular: high glucose damages blood vessel walls, contributing to atherosclerosis, hypertension, CHD and stroke risk – Dennis has high blood pressure",
+   "Renal: damage to kidney blood vessels reduces filtration; protein in urine suggests kidney damage, which may progress to renal failure",
+   "Nervous: high glucose damages peripheral nerves (neuropathy) – Dennis's tingling feet",
+   "Circulation and immunity: reduced blood flow to extremities and impaired healing mean infections and slow-healing wounds – his cut",
+   "Sense organs/eyes: damage to small vessels in the retina can affect vision",
+   "Links between systems: e.g. kidney damage worsens blood pressure, which further damages vessels",
+   "Judgement: the effects are wide-ranging and interlinked, so diabetes is a multi-system disorder; the extent depends on how well blood glucose, weight and blood pressure are controlled"
+  ], "dHallmarks": [
+   "Synthesises at least three systems and explains the mechanism (high glucose damaging vessels/nerves), not just lists effects",
+   "Uses every clue in the case (BP, tingling, slow healing, protein in urine)",
+   "Shows interrelationships between systems (e.g. renal–cardiovascular cycle)",
+   "Reaches a reasoned, qualified judgement answering 'to what extent'"
+  ], "model": "Type 2 diabetes begins as an endocrine problem: Dennis's cells have become resistant to insulin, so his blood glucose remains high. However, the persistently high glucose damages blood vessels and nerves throughout the body, so its effects extend well beyond the endocrine system. In the cardiovascular system it contributes to damage and narrowing of arteries, which helps explain Dennis's high blood pressure and increases his risk of coronary heart disease and stroke. In the renal system, damage to the small blood vessels in the kidneys reduces filtration, so protein leaks into his urine – an early sign that could progress to renal failure. Raised blood pressure and kidney damage worsen each other, showing how the systems are interlinked. His tingling feet suggest peripheral neuropathy, where high glucose damages sensory neurones, so he may not notice injuries. Combined with poor circulation to his feet and weaker immune responses, this explains why his cut is slow to heal and could become infected. Overall, type 2 diabetes affects the cardiovascular, renal, nervous and immune systems to a large extent, making it a multi-system disorder; however, the extent of damage is not fixed, as good control of his blood glucose, blood pressure and weight could slow its progression."},
+  {"id": "u3l07", "topic": "B3", "marks": 6, "command": "To what extent", "context": "Maureen, aged 67, smoked for 40 years and has chronic obstructive pulmonary disease (COPD). She is breathless climbing stairs, has a persistent productive cough and her oxygen saturation is lower than normal.", "q": "To what extent can Maureen's symptoms be explained by changes to her respiratory system caused by COPD?", "markingPoints": [
+   "Smoking damages cilia and increases mucus production; mucus is not cleared, causing a productive cough and infection risk",
+   "Airways (bronchi/bronchioles) become inflamed and narrowed (chronic bronchitis), increasing resistance to airflow",
+   "Alveolar walls break down (emphysema), reducing surface area for gaseous exchange",
+   "Lungs lose elasticity, so air is trapped and expiration is difficult",
+   "Less oxygen diffuses into the blood, lowering oxygen saturation; less oxygen reaches muscles for aerobic respiration, causing breathlessness and fatigue on exertion",
+   "Judgement: most symptoms are explained by respiratory changes, but the heart also has to work harder (cardiovascular link) and age-related decline/deconditioning may contribute"
+  ], "dHallmarks": [
+   "Links each symptom to a specific structural change",
+   "Uses diffusion/surface area reasoning to explain low oxygen saturation",
+   "Recognises other contributing factors before concluding"
+  ], "model": "Most of Maureen's symptoms can be explained by COPD. Long-term smoking has damaged the cilia in her airways and increased mucus production, so mucus builds up and she has a persistent productive cough. Her bronchi and bronchioles are inflamed and narrowed, making it harder to move air in and out. In emphysema, alveolar walls break down, reducing the surface area available for gaseous exchange, and the lungs lose elasticity, so air is trapped. As a result, less oxygen diffuses into her blood, explaining her low oxygen saturation, and her muscles receive less oxygen for aerobic respiration, so she becomes breathless climbing stairs. However, not everything is respiratory: her heart must work harder to supply oxygen, and her age and reduced fitness may add to breathlessness. Overall, COPD explains her symptoms to a large extent, but other systems also contribute."},
+  {"id": "u3l08", "topic": "C1", "marks": 8, "command": "Deduce / To what extent", "context": "Illustrative (fictional) data. A double-blind trial tested a new blood pressure drug. 240 adults with hypertension were randomly allocated: 120 to the drug and 120 to an identical-looking placebo. Results after 12 weeks: Drug group – mean systolic BP at start 158 mmHg, at 12 weeks 142 mmHg; 18 people reported side effects; 6 dropped out. Placebo group – start 157 mmHg, at 12 weeks 154 mmHg; 9 people reported side effects; 4 dropped out.", "q": "(a) Deduce by how many mmHg the reduction in mean systolic blood pressure was greater in the drug group than in the placebo group. (2) (b) To what extent does this trial show that the drug is effective and should be used? (6)", "markingPoints": [
+   "(a) Drug reduction = 158 − 142 = 16 mmHg; placebo reduction = 157 − 154 = 3 mmHg",
+   "(a) Difference = 13 mmHg greater reduction in the drug group",
+   "Double-blind design means neither participants nor researchers knew who received the drug, reducing bias",
+   "Placebo controls for the placebo effect – the small placebo fall shows some improvement occurs anyway",
+   "Random allocation makes groups comparable (similar starting BP)",
+   "Reasonable sample size (240) but only 12 weeks – long-term effects and outcomes such as strokes are unknown",
+   "Side effects were twice as common with the drug (18 vs 9), which must be weighed against benefits",
+   "Mean values hide individual variation; dropouts may bias results; only adults with hypertension – may not generalise",
+   "Judgement: good evidence the drug lowers BP in the short term, but more, longer research is needed before wide use"
+  ], "dHallmarks": [
+   "Correct calculation with units and working",
+   "Uses the data (starting BPs, side-effect counts, dropouts) rather than generic comments",
+   "Evaluates the design (double-blind, placebo, randomisation, duration, sample)",
+   "Balanced, qualified judgement linked to patient safety and efficacy"
+  ], "model": "(a) The drug group fell by 158 − 142 = 16 mmHg and the placebo group by 157 − 154 = 3 mmHg, so the drug group's reduction was 13 mmHg greater. (b) The trial gives fairly strong evidence that the drug lowers blood pressure. It was double-blind, so neither participants nor researchers could influence results through their expectations, and the placebo group shows that only a small fall (3 mmHg) happens without the drug. Random allocation produced groups with very similar starting blood pressures, so the comparison is fair, and 240 participants is a reasonable sample. However, the trial lasted only 12 weeks, so we do not know whether the effect lasts or whether it actually prevents strokes or heart attacks. Side effects were reported by twice as many people on the drug (18 compared with 9), and some participants dropped out, which could bias the means. Overall, the drug appears effective in the short term, but larger, longer trials looking at side effects and long-term outcomes would be needed before recommending it widely."}
+ ],
+ "commandWords": [
+  {"word": "State / Define / What / Which", "means": "Give a short, accurate fact or definition.", "doThis": "One precise sentence or term – no explanation needed. Use correct technical vocabulary."},
+  {"word": "Complete / Match", "means": "Fill in a table, diagram or sentence, or link items correctly.", "doThis": "Check every gap is filled and spelling of anatomical terms is accurate."},
+  {"word": "Describe", "means": "Give a clear account of features or a process.", "doThis": "Say what it is/what happens, in order, with detail – no reasons required."},
+  {"word": "Outline", "means": "Give a brief summary of the main points.", "doThis": "Key points only, one per mark."},
+  {"word": "Explain", "means": "Give reasons for how or why something happens.", "doThis": "Use linked chains: point → because → which means. One developed link per 1–2 marks."},
+  {"word": "Compare and contrast", "means": "Identify similarities and differences.", "doThis": "Include at least one similarity, then differences, using comparative words (whereas, both, however)."},
+  {"word": "By how many", "means": "Calculate a difference from data.", "doThis": "Show working, give units, and check whether a difference, percentage or percentage-point change is wanted."},
+  {"word": "Deduce", "means": "Reach a conclusion from the information given.", "doThis": "Use the data or case provided, show your reasoning step by step and state your conclusion."},
+  {"word": "Provide", "means": "Give relevant information or an example from the context.", "doThis": "Make it specific to the scenario rather than general."},
+  {"word": "To what extent", "means": "Judge how far something is true, weighing evidence.", "doThis": "Explain mechanisms across systems, consider other factors or limitations, then finish with a clear, justified conclusion."}
+ ],
+ "diagramsToLearn": [
+  "Generalised animal cell: membrane, nucleus, ribosomes, rough and smooth ER, mitochondria, centrioles, lysosomes, Golgi apparatus",
+  "Epithelial tissue types (squamous, cuboidal, columnar, ciliated, compound)",
+  "Heart: four chambers, septum, tricuspid/bicuspid and semilunar valves, aorta, pulmonary artery, pulmonary vein, vena cava",
+  "Cross-sections of an artery, vein and capillary",
+  "Double circulation (pulmonary and systemic)",
+  "Respiratory tract: nasal cavity, trachea, bronchi, bronchioles, lungs, alveoli, intercostal muscles, diaphragm",
+  "Alveolus with surrounding capillary showing the direction of gas exchange",
+  "Skeleton with the major bones named in the spec, including the vertebral column",
+  "Synovial joint: articular cartilage, synovial membrane, synovial fluid, joint capsule, ligaments",
+  "Major muscles (front and back views) named in the spec",
+  "Digestive system: oesophagus, stomach, liver, pancreas, duodenum, ileum, colon, salivary glands",
+  "Villus showing microvilli, blood capillaries and lacteal",
+  "Sensory and motor neurones (with myelin sheath) and the receptor–CNS–effector pathway",
+  "Location of endocrine glands: hypothalamus, pituitary, thyroid, pancreas, adrenal glands, ovaries, testes",
+  "Negative feedback loop (temperature and blood glucose)",
+  "Lymphatic system: lymph vessels, lymph nodes, spleen",
+  "Urinary system: kidneys, ureters, bladder, urethra",
+  "Female and male reproductive systems with the structures named in the spec"
+ ]
+}

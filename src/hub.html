@@ -1,0 +1,811 @@
+<title>HSC D* Project</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="A student hub for the Pearson BTEC Level 3 National Extended Diploma in Health and Social Care: track points towards D*D*D*, coach every internal unit to Distinction, and revise for Units 1–4.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+/* Layout: sticky care-chart header carrying the 18-point budget; four tabbed workspaces below, each a single readable column that splits into list + detail on wide screens. */
+:root{
+  --paper:#f4f7f6; --surface:#ffffff; --sunk:#eaf0ee; --ink:#15302c; --muted:#5a6e69; --line:#d3ddda;
+  --accent:#8a2c5d; --accent-ink:#ffffff; --accent-soft:#f4e3ec;
+  --red:#b93b28; --red-soft:#f8e1dc; --amber:#a86c00; --amber-soft:#fbefd6; --green:#2b7748; --green-soft:#ddf0e3;
+  --grid:#e2eae7;
+  --f-display:"Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --f-body:"Atkinson Hyperlegible", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --f-mono:"IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  --r:10px; --s1:4px; --s2:8px; --s3:12px; --s4:16px; --s5:24px; --s6:36px; --s7:56px;
+  --t-xs:.78rem; --t-sm:.88rem; --t-md:1rem; --t-lg:1.2rem; --t-xl:1.6rem; --t-2xl:2.4rem;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#0e1716; --surface:#152220; --sunk:#1b2a28; --ink:#e3ece9; --muted:#97aba6; --line:#2b3c39;
+  --accent:#e58cb8; --accent-ink:#2a0c1b; --accent-soft:#3a1f2d;
+  --red:#f08a73; --red-soft:#3f211b; --amber:#e9b54c; --amber-soft:#3a2d12; --green:#74c993; --green-soft:#183323;
+  --grid:#20302d; color-scheme:dark }}
+:root[data-theme="dark"]{
+  --paper:#0e1716; --surface:#152220; --sunk:#1b2a28; --ink:#e3ece9; --muted:#97aba6; --line:#2b3c39;
+  --accent:#e58cb8; --accent-ink:#2a0c1b; --accent-soft:#3a1f2d;
+  --red:#f08a73; --red-soft:#3f211b; --amber:#e9b54c; --amber-soft:#3a2d12; --green:#74c993; --green-soft:#183323;
+  --grid:#20302d; color-scheme:dark }
+
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:var(--t-md);line-height:1.55;margin:0}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--surface)}
+h1,h2,h3,h4{font-family:var(--f-display);line-height:1.15;text-wrap:balance;margin:0}
+h2{font-size:var(--t-xl);font-weight:700}
+h3{font-size:var(--t-lg);font-weight:700}
+h4{font-size:var(--t-md);font-weight:700}
+p{margin:0}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.mono,.num{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+.muted{color:var(--muted)}
+.eyebrow{font-family:var(--f-mono);font-size:var(--t-xs);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+a{color:var(--accent)}
+button,select,input,textarea{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+
+/* Header */
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--surface);border-bottom:1px solid var(--line)}
+.top-row{display:flex;flex-wrap:wrap;align-items:center;gap:var(--s3) var(--s5);padding-block:var(--s3)}
+.brand{display:flex;align-items:baseline;gap:var(--s2);min-width:0}
+.brand h1{font-size:1.35rem;font-weight:800;letter-spacing:-.01em}
+.brand h1 .star{color:var(--accent)}
+.brand small{color:var(--muted);font-size:var(--t-xs)}
+.budget-mini{display:flex;align-items:center;gap:var(--s3);margin-left:auto;flex-wrap:wrap}
+.cells{display:grid;grid-template-columns:repeat(18,1fr);gap:2px;width:min(260px,52vw)}
+.cells i{display:block;height:16px;border-radius:2px;background:var(--green-soft);border:1px solid var(--green)}
+.cells i.lost{background:var(--red);border-color:var(--red)}
+.cells i.over{background:var(--ink);border-color:var(--ink)}
+.cells.big{width:100%;gap:4px}
+.cells.big i{height:34px;border-radius:4px}
+.proj-pill{font-family:var(--f-mono);font-weight:600;font-size:var(--t-sm);padding:2px 10px;border-radius:999px;background:var(--accent-soft);color:var(--accent);white-space:nowrap}
+nav.tabs{display:flex;gap:var(--s1);overflow-x:auto;scrollbar-width:none}
+nav.tabs::-webkit-scrollbar{display:none}
+nav.tabs button{background:none;border:0;border-bottom:3px solid transparent;padding:var(--s2) var(--s3);font-family:var(--f-display);font-weight:700;font-size:1rem;color:var(--muted);cursor:pointer;white-space:nowrap}
+nav.tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent)}
+
+main{padding-block:var(--s5) var(--s7)}
+section.view>*,.stack>*,.stack-lg>*{min-width:0}
+select{min-width:0}
+.verbs .chip{justify-self:start}
+@media (max-width:600px){.brand small,.budget-mini .eyebrow{display:none}.top-row{padding-block:var(--s2);gap:var(--s2)}.brand h1{font-size:1.15rem}.budget-mini{margin-left:0;width:100%;justify-content:space-between}.cells{width:auto;flex:1}.cells i{height:12px}nav.tabs button{padding:6px 10px;font-size:.92rem}}
+section.view{display:grid;gap:var(--s5)}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:var(--s5)}
+.panel.flat{background:transparent;border:0;padding:0}
+.stack{display:grid;gap:var(--s3)}
+.stack-lg{display:grid;gap:var(--s5)}
+.row{display:flex;flex-wrap:wrap;gap:var(--s3);align-items:center}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:var(--s4)}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:var(--s4)}
+.lede{font-size:1.08rem;max-width:68ch}
+.prose{max-width:70ch}
+.prose p+p{margin-top:var(--s3)}
+
+/* Buttons & inputs */
+.btn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:7px 14px;cursor:pointer;font-weight:700;font-size:var(--t-sm)}
+.btn:hover{border-color:var(--accent)}
+.btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.btn.ghost{background:transparent}
+.btn.small{padding:4px 10px;font-size:var(--t-xs)}
+select,input[type="number"],input[type="date"],input[type="text"],textarea{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:6px 10px;max-width:100%}
+textarea{width:100%;min-height:160px;resize:vertical;line-height:1.5}
+label.inline{display:flex;gap:var(--s2);align-items:center}
+
+/* Seg control */
+.seg{display:inline-flex;flex-wrap:wrap;border:1px solid var(--line);border-radius:999px;padding:3px;gap:2px;background:var(--sunk)}
+.seg button{border:0;background:transparent;border-radius:999px;padding:5px 14px;cursor:pointer;font-weight:700;font-size:var(--t-sm);color:var(--muted)}
+.seg button[aria-pressed="true"]{background:var(--surface);color:var(--ink);box-shadow:0 1px 2px rgb(0 0 0 / .12)}
+
+/* Chips */
+.chip{display:inline-flex;align-items:center;gap:4px;font-family:var(--f-mono);font-size:var(--t-xs);font-weight:600;padding:1px 8px;border-radius:999px;border:1px solid var(--line);color:var(--muted);white-space:nowrap}
+.chip.D{background:var(--green-soft);color:var(--green);border-color:transparent}
+.chip.M{background:var(--amber-soft);color:var(--amber);border-color:transparent}
+.chip.P,.chip.N{background:var(--red-soft);color:var(--red);border-color:transparent}
+.chip.acc{background:var(--accent-soft);color:var(--accent);border-color:transparent}
+.chip.ext{border-color:var(--accent);color:var(--accent)}
+
+/* Points */
+.budget-hero{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:var(--s5);align-items:start}
+@media (max-width:760px){.budget-hero{grid-template-columns:1fr}}
+.bignum{font-family:var(--f-display);font-weight:800;font-size:var(--t-2xl);line-height:1}
+.scale{display:flex;justify-content:space-between;font-family:var(--f-mono);font-size:var(--t-xs);color:var(--muted);margin-top:4px}
+.ladder{display:grid;gap:2px}
+.ladder div{display:grid;grid-template-columns:5.2rem 1fr 3.4rem;gap:var(--s2);align-items:center;font-family:var(--f-mono);font-size:var(--t-sm);padding:3px 8px;border-radius:6px}
+.ladder div .bar{height:6px;border-radius:3px;background:var(--grid);position:relative;overflow:hidden}
+.ladder div .bar span{position:absolute;inset:0 auto 0 0;background:var(--muted);opacity:.35}
+.ladder div.hit{background:var(--accent-soft);color:var(--accent);font-weight:600}
+.ladder div.hit .bar span{background:var(--accent);opacity:1}
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r);background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:640px}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:middle}
+th{font-family:var(--f-mono);font-size:var(--t-xs);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:500;background:var(--sunk)}
+tr:last-child td{border-bottom:0}
+td.num,th.num{text-align:right}
+td .sub{display:block;font-size:var(--t-xs);color:var(--muted)}
+tr.group td{background:var(--sunk);font-family:var(--f-mono);font-size:var(--t-xs);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding-block:6px}
+.cost{font-family:var(--f-mono);font-weight:600}
+.cost.zero{color:var(--green)}
+.cost.neg{color:var(--red)}
+.mark-in{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.mark-in input{width:5.2rem}
+.notice{border-left:4px solid var(--amber);background:var(--amber-soft);padding:var(--s3) var(--s4);border-radius:0 8px 8px 0}
+.notice.bad{border-color:var(--red);background:var(--red-soft)}
+.notice.good{border-color:var(--green);background:var(--green-soft)}
+.costgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,150px),1fr));gap:var(--s3)}
+.cost-card{border:1px solid var(--line);border-radius:8px;padding:var(--s3);background:var(--surface)}
+.cost-card .num{font-size:1.4rem;font-weight:600;color:var(--red)}
+
+/* Phases */
+.phases{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:var(--s4);counter-reset:ph}
+.phase{border-top:3px solid var(--accent);padding-top:var(--s3);display:grid;gap:var(--s2);align-content:start}
+.phase .eyebrow{color:var(--accent)}
+.phase ul{margin:0;padding-left:1.1rem}
+
+/* Coach */
+.split{display:grid;grid-template-columns:280px minmax(0,1fr);gap:var(--s5);align-items:start}
+@media (max-width:860px){.split{grid-template-columns:1fr}}
+.unitlist{display:grid;gap:4px;position:sticky;top:120px}
+@media (max-width:860px){.unitlist{position:static;grid-template-columns:repeat(auto-fill,minmax(min(100%,220px),1fr))}}
+.unitlist button{display:grid;grid-template-columns:2.4rem 1fr auto;gap:var(--s2);align-items:center;text-align:left;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:8px 10px;cursor:pointer}
+.unitlist button[aria-current="true"]{border-color:var(--accent);box-shadow:inset 3px 0 0 var(--accent)}
+.unitlist .no{font-family:var(--f-mono);font-weight:600;color:var(--accent)}
+.unitlist .nm{font-size:var(--t-sm);line-height:1.25}
+.crit-ladder{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--s3)}
+@media (max-width:760px){.crit-ladder{grid-template-columns:1fr}}
+.crit-col{display:grid;gap:var(--s2);align-content:start}
+.crit-col h4{font-family:var(--f-mono);font-size:var(--t-xs);letter-spacing:.08em;text-transform:uppercase}
+.crit{border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-size:var(--t-sm);background:var(--surface)}
+.crit b{font-family:var(--f-mono);font-size:var(--t-xs);margin-right:6px}
+.crit-col.D .crit{border-color:var(--accent);background:var(--accent-soft)}
+.dcard{border:1px solid var(--line);border-radius:var(--r);background:var(--surface);overflow:hidden}
+.dcard-head{padding:var(--s4) var(--s5);background:var(--accent-soft);display:grid;gap:6px}
+.dcard-head .code{font-family:var(--f-mono);font-weight:600;color:var(--accent)}
+.dcard-body{padding:var(--s4) var(--s5);display:grid;gap:var(--s4)}
+.dcard-body .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:var(--s4)}
+.checklist{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.checklist label{display:grid;grid-template-columns:20px 1fr;gap:8px;align-items:start;cursor:pointer}
+.checklist input{margin-top:4px;accent-color:var(--accent);width:16px;height:16px}
+ul.plain{margin:0;padding-left:1.1rem;display:grid;gap:4px}
+.starter{font-style:italic;border-left:3px solid var(--line);padding-left:10px}
+.meter{height:8px;border-radius:4px;background:var(--grid);overflow:hidden}
+.meter span{display:block;height:100%;background:var(--accent)}
+.verbs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--s3)}
+@media (max-width:760px){.verbs{grid-template-columns:1fr}}
+.verbs .lvl{border-radius:8px;padding:var(--s3);display:grid;gap:6px;align-content:start}
+.verbs .lvl.P{background:var(--sunk)}
+.verbs .lvl.M{background:var(--amber-soft)}
+.verbs .lvl.D{background:var(--accent-soft)}
+.verbs dt{font-weight:700}
+.verbs dd{margin:0 0 6px;font-size:var(--t-sm)}
+
+/* Exams */
+.unit-switch{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--s2)}
+@media (max-width:700px){.unit-switch{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.unit-switch button{display:grid;gap:2px;text-align:left;border:1px solid var(--line);background:var(--surface);border-radius:var(--r);padding:var(--s3);cursor:pointer}
+.unit-switch button[aria-pressed="true"]{border-color:var(--accent);box-shadow:inset 0 -3px 0 var(--accent)}
+.unit-switch .u{font-family:var(--f-mono);font-size:var(--t-xs);color:var(--accent);font-weight:600}
+.unit-switch .t{font-family:var(--f-display);font-weight:700;line-height:1.2}
+.unit-switch .d{font-size:var(--t-xs);color:var(--muted)}
+.topic{border:1px solid var(--line);border-radius:var(--r);background:var(--surface)}
+.topic summary{list-style:none;display:grid;grid-template-columns:3rem 1fr auto;gap:var(--s3);align-items:center;padding:var(--s3) var(--s4);cursor:pointer}
+.topic summary::-webkit-details-marker{display:none}
+.topic summary .id{font-family:var(--f-mono);font-weight:600;color:var(--accent)}
+.ragbar{display:flex;width:110px;height:8px;border-radius:4px;overflow:hidden;background:var(--grid)}
+.ragbar i{display:block;height:100%}
+.ragbar .r{background:var(--red)} .ragbar .a{background:var(--amber)} .ragbar .g{background:var(--green)}
+.points{list-style:none;margin:0;padding:0 var(--s4) var(--s4);display:grid;gap:6px}
+.points li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:var(--s3);align-items:center;padding:6px 0;border-top:1px dashed var(--line)}
+.rag{display:inline-flex;gap:3px}
+.rag button{width:30px;height:26px;border-radius:6px;border:1px solid var(--line);background:var(--surface);cursor:pointer;font-family:var(--f-mono);font-size:var(--t-xs);font-weight:600;color:var(--muted)}
+.rag button.r[aria-pressed="true"]{background:var(--red);border-color:var(--red);color:var(--surface)}
+.rag button.a[aria-pressed="true"]{background:var(--amber);border-color:var(--amber);color:var(--surface)}
+.rag button.g[aria-pressed="true"]{background:var(--green);border-color:var(--green);color:var(--surface)}
+.q-card{display:grid;gap:var(--s4)}
+.q-stem{font-size:1.08rem;font-weight:700;white-space:pre-line}
+.opts{display:grid;gap:var(--s2)}
+.opts button{text-align:left;border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:10px 14px;cursor:pointer;display:grid;grid-template-columns:1.6rem 1fr;gap:8px}
+.opts button .k{font-family:var(--f-mono);font-weight:600;color:var(--muted)}
+.opts button:hover:not(:disabled){border-color:var(--accent)}
+.opts button.right{background:var(--green-soft);border-color:var(--green)}
+.opts button.wrong{background:var(--red-soft);border-color:var(--red)}
+.opts button:disabled{cursor:default}
+.feedback{padding:var(--s3) var(--s4);border-radius:8px;background:var(--sunk)}
+.progress-dots{display:flex;gap:4px;flex-wrap:wrap}
+.progress-dots i{width:14px;height:14px;border-radius:3px;background:var(--grid);display:block}
+.progress-dots i.ok{background:var(--green)} .progress-dots i.no{background:var(--red)} .progress-dots i.now{outline:2px solid var(--accent)}
+.longq{display:grid;gap:var(--s4)}
+.casebox{background:var(--sunk);border-radius:8px;padding:var(--s3) var(--s4);white-space:pre-line}
+.marks{font-family:var(--f-mono);font-weight:600;color:var(--accent)}
+.model{border-left:4px solid var(--accent);padding:var(--s3) var(--s4);background:var(--accent-soft);border-radius:0 8px 8px 0;white-space:pre-line}
+.wc{font-family:var(--f-mono);font-size:var(--t-xs);color:var(--muted)}
+.list-cards{display:grid;gap:var(--s3)}
+.mini-card{border:1px solid var(--line);border-radius:var(--r);background:var(--surface);padding:var(--s4);display:grid;gap:var(--s2);align-content:start}
+.twocol{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:var(--s3)}
+.plus{color:var(--green);font-weight:700} .minus{color:var(--red);font-weight:700}
+.article{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:var(--s5);white-space:pre-line;max-width:75ch}
+
+/* Planner */
+.weeks{display:grid;gap:var(--s3)}
+.week{display:grid;grid-template-columns:8.5rem minmax(0,1fr);gap:var(--s4);border-top:1px solid var(--line);padding-top:var(--s3)}
+@media (max-width:600px){.week{grid-template-columns:1fr;gap:var(--s2)}}
+.week .when{font-family:var(--f-mono);font-size:var(--t-sm)}
+.week .when b{display:block;font-family:var(--f-display);font-size:1rem}
+.sessions{display:flex;flex-wrap:wrap;gap:6px}
+.sess{border:1px solid var(--line);border-radius:6px;padding:4px 10px;font-size:var(--t-sm);background:var(--surface)}
+.sess.r{border-color:var(--red);background:var(--red-soft)}
+.sess.a{border-color:var(--amber);background:var(--amber-soft)}
+.sess.mock{border-color:var(--accent);background:var(--accent-soft);font-weight:700}
+.countdown{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:var(--s3)}
+.cd{border:1px solid var(--line);border-radius:var(--r);background:var(--surface);padding:var(--s4);display:grid;gap:6px}
+.cd .bignum{font-size:2rem}
+.deadline-row{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:var(--s2);align-items:center;padding:6px 0;border-bottom:1px solid var(--line)}
+.toast{position:fixed;left:50%;bottom:calc(16px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--paper);padding:8px 16px;border-radius:8px;font-weight:700;z-index:50}
+footer{border-top:1px solid var(--line);padding-block:var(--s5);color:var(--muted);font-size:var(--t-sm)}
+details.more>summary{cursor:pointer;font-weight:700}
+@media (prefers-reduced-motion:no-preference){.cells i{transition:background .25s,border-color .25s}.meter span{transition:width .3s}}
+</style>
+
+<header class="top">
+  <div class="wrap">
+    <div class="top-row">
+      <div class="brand"><h1>HSC D<span class="star">*</span> Project</h1><small>BTEC National Extended Diploma</small></div>
+      <div class="budget-mini" aria-live="polite">
+        <span class="eyebrow">Points you can still lose</span>
+        <div class="cells" id="miniCells" aria-hidden="true"></div>
+        <span class="proj-pill" id="miniProj">D*D*D*</span>
+      </div>
+    </div>
+    <nav class="tabs" role="tablist" aria-label="Sections">
+      <button role="tab" data-tab="points" aria-selected="true">Points</button>
+      <button role="tab" data-tab="coach" aria-selected="false">Distinction coach</button>
+      <button role="tab" data-tab="exams" aria-selected="false">Exam revision</button>
+      <button role="tab" data-tab="planner" aria-selected="false">Planner</button>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="view" id="view-points"></section>
+  <section class="view" id="view-coach" hidden></section>
+  <section class="view" id="view-exams" hidden></section>
+  <section class="view" id="view-planner" hidden></section>
+</main>
+<footer><div class="wrap stack">
+  <p>Built from the Pearson BTEC Level 3 National Extended Diploma in Health and Social Care specification (Issue 10, June 2022). Default exam grade boundaries are from Pearson's June 2026 series. Boundaries change every series, so treat the points from raw marks as estimates. Your teacher's assessment decisions and Pearson's results are what count.</p>
+  <p>Progress is saved in this browser only. Use <b>Backup</b> in the Planner tab to move it to another device.</p>
+</div></footer>
+<div class="toast" id="toast" hidden></div>
+
+<script>
+const DATA = /*__DATA__*/null;
+
+/* ---------- Spec facts ---------- */
+const UNITS = {
+  1:{t:"Human Lifespan Development",glh:90,ext:true},
+  2:{t:"Working in Health and Social Care",glh:120,ext:true},
+  3:{t:"Anatomy and Physiology for Health and Social Care",glh:120,ext:true},
+  4:{t:"Enquiries into Current Research in Health and Social Care",glh:120,ext:true},
+  5:{t:"Meeting Individual Care and Support Needs",glh:90},
+  6:{t:"Work Experience in Health and Social Care",glh:60},
+  7:{t:"Principles of Safe Practice in Health and Social Care",glh:90},
+  8:{t:"Promoting Public Health",glh:90},
+  9:{t:"Infection Prevention and Control",glh:60},
+  10:{t:"Sociological Perspectives",glh:60},
+  11:{t:"Psychological Perspectives",glh:60},
+  12:{t:"Supporting Individuals with Additional Needs",glh:60},
+  13:{t:"Scientific Techniques for Health Science",glh:60},
+  14:{t:"Physiological Disorders and their Care",glh:60},
+  15:{t:"Microbiology for Health Science",glh:60},
+  16:{t:"Policy in Health and Social Care",glh:60},
+  17:{t:"Caring for Individuals with Dementia",glh:60},
+  18:{t:"Assessing Children’s Development Support Needs",glh:60},
+  19:{t:"Nutritional Health",glh:60},
+  20:{t:"Understanding Mental Wellbeing",glh:60},
+  21:{t:"Medical Physics Applications in the Health Sector",glh:60},
+  22:{t:"Genetics",glh:60},
+  23:{t:"Biomedical Science",glh:60},
+  24:{t:"Biochemistry for Health",glh:60},
+  25:{t:"Complementary Therapies for Health and Social Care",glh:60},
+  26:{t:"Health Psychology",glh:60}
+};
+const EXT = [1,2,3,4], MAND_INT = [5,6,7,8];
+const PATHWAYS = {
+  standard:{name:"Extended Diploma",A:[9,11,14,17,19,20,24],B:[10,12,16,18],rule:"2 from group A, 2 from group B and 1 more from either group",min:{A:2,B:2},max:{A:3,B:3}},
+  hs:{name:"Extended Diploma (Health Studies)",A:[9,11,14,17,19,20,24],B:[13,15,21,22,23,25,26],rule:"3 from group A and 2 from group B",min:{A:3,B:2},max:{A:3,B:2}}
+};
+const INT_PTS = {60:{U:0,P:6,M:10,D:16},90:{U:0,P:9,M:15,D:24}};
+const EXT_PTS = {90:{U:0,N:6,P:9,M:15,D:24},120:{U:0,N:8,P:12,M:20,D:32}};
+const THRESH = [[270,"D*D*D*"],[252,"D*D*D"],[234,"D*DD"],[216,"DDD"],[196,"DDM"],[176,"DMM"],[156,"MMM"],[140,"MMP"],[124,"MPP"],[108,"PPP"],[0,"U"]];
+const MAXPTS = 288, TARGET = 270, BUDGET = MAXPTS - TARGET;
+const DEFAULT_BOUNDS = {1:{max:90,D:54,M:42,P:30,N:18},2:{max:80,D:46,M:35,P:24,N:13},3:{max:90,D:47,M:32,P:17,N:8},4:{max:65,D:39,M:28,P:18,N:9}};
+const VERBS = {
+  P:[["Explain","Clear details plus reasons or evidence to support a view or argument."],["Describe","A clear, objective account in your own words."],["Discuss","Consider different aspects of a topic, how they interrelate and how important they are."]],
+  M:[["Analyse","Break a topic down methodically to show how the parts relate, or interpret trends in data."],["Assess","Weigh up varied factors in a specific situation, pick out the most important and arrive at a conclusion."],["Compare","Set out similarities, differences, advantages and disadvantages."]],
+  D:[["Evaluate","Use varied information to weigh strengths and weaknesses, alternatives and significance, ending in a supported judgement linked to the context."],["Justify","Give reasons or evidence that support an opinion or prove something is right or reasonable."]]
+};
+
+/* ---------- State ---------- */
+const KEY = "hsc-dstar-v1";
+function blank(){return {pathway:"standard",opt:[],grades:{},marks:{},extMode:{},bounds:JSON.parse(JSON.stringify(DEFAULT_BOUNDS)),status:{},checks:{},rag:{},quiz:{},drafts:{},selfmark:{},dates:{},deadlines:[],tab:"points",coachUnit:5,examUnit:1,examSub:"overview"}}
+let S = blank();
+try{const raw=localStorage.getItem(KEY); if(raw){S=Object.assign(blank(),JSON.parse(raw));}}catch(e){}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}}
+
+/* ---------- Helpers ---------- */
+const $ = (s,el=document)=>el.querySelector(s);
+const esc = s => String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const arr = x => Array.isArray(x)?x:[];
+function toast(msg){const t=$("#toast");t.textContent=msg;t.hidden=false;clearTimeout(toast._t);toast._t=setTimeout(()=>t.hidden=true,1800)}
+function daysUntil(iso){if(!iso)return null;const d=new Date(iso+"T09:00:00");const n=new Date();return Math.ceil((d-n)/86400000)}
+function fmtDate(d){return d.toLocaleDateString("en-GB",{day:"numeric",month:"short"})}
+function wordCount(s){return (s||"").trim().split(/\s+/).filter(Boolean).length}
+
+/* ---------- Points engine ---------- */
+function extFromMark(u,mark){
+  const b=S.bounds[u], p=EXT_PTS[UNITS[u].glh];
+  if(mark==null||mark===""||isNaN(mark))return null;
+  mark=Math.max(0,Math.min(b.max,Number(mark)));
+  const lerp=(lo,hi,plo,phi)=>Math.floor(plo+(mark-lo)/(hi-lo)*(phi-plo));
+  if(mark>=b.D)return{grade:"D",pts:p.D};
+  if(mark>=b.M)return{grade:"M",pts:lerp(b.M,b.D,p.M,p.D)};
+  if(mark>=b.P)return{grade:"P",pts:lerp(b.P,b.M,p.P,p.M)};
+  if(mark>=b.N)return{grade:"N",pts:lerp(b.N,b.P,p.N,p.P)};
+  return{grade:"U",pts:0};
+}
+function unitResult(u){
+  const glh=UNITS[u].glh;
+  if(UNITS[u].ext){
+    if(S.extMode[u]==="mark"){const r=extFromMark(u,S.marks[u]);return r?{...r,set:true}:{grade:null,pts:EXT_PTS[glh].D,set:false}}
+    const g=S.grades[u]; if(g)return{grade:g,pts:EXT_PTS[glh][g],set:true};
+    return{grade:null,pts:EXT_PTS[glh].D,set:false};
+  }
+  const g=S.grades[u]; if(g)return{grade:g,pts:INT_PTS[glh][g],set:true};
+  return{grade:null,pts:INT_PTS[glh].D,set:false};
+}
+function maxPts(u){return UNITS[u].ext?EXT_PTS[UNITS[u].glh].D:INT_PTS[UNITS[u].glh].D}
+function programme(){return [...EXT,...MAND_INT,...S.opt]}
+function calc(){
+  const units=programme(); let banked=0, projected=0, lost=0, setCount=0, glhPass=0, issues=[];
+  units.forEach(u=>{const r=unitResult(u); projected+=r.pts; if(r.set){banked+=r.pts;setCount++;lost+=maxPts(u)-r.pts}
+    if(r.set){ if(UNITS[u].ext){ if(r.grade==="U")issues.push(`Unit ${u} needs at least a Near Pass.`); if(r.grade!=="U")glhPass+=UNITS[u].glh }
+      else { if(r.grade==="U"&&MAND_INT.includes(u))issues.push(`Unit ${u} is mandatory and needs at least a Pass.`); if(r.grade!=="U")glhPass+=UNITS[u].glh } }
+    else glhPass+=UNITS[u].glh;
+  });
+  const slots=5-S.opt.length; projected+=slots*16; // empty optional slots assumed at D
+  if(glhPass<900)issues.push("At least 900 GLH must be at Pass or above (Near Pass or above for exams).");
+  const grade=(THRESH.find(t=>projected>=t[0])||THRESH[THRESH.length-1])[1];
+  return{banked,projected,lost,setCount,grade,issues,left:BUDGET-lost};
+}
+function cellsHTML(lost,big){let h="";for(let i=0;i<BUDGET;i++){h+=`<i class="${i<lost?"lost":""}"></i>`}return `<div class="cells${big?" big":""}" aria-hidden="true">${h}</div>`}
+
+/* ---------- Tabs ---------- */
+const TABS=["points","coach","exams","planner"];
+function setTab(t,push){if(!TABS.includes(t))t="points";S.tab=t;save();
+  document.querySelectorAll("nav.tabs button").forEach(b=>b.setAttribute("aria-selected",b.dataset.tab===t));
+  TABS.forEach(x=>$("#view-"+x).hidden=x!==t);
+  render(t); if(push){try{history.replaceState(null,"","#"+t)}catch(e){}} window.scrollTo({top:0});
+}
+document.querySelector("nav.tabs").addEventListener("click",e=>{const b=e.target.closest("button[data-tab]");if(b)setTab(b.dataset.tab,true)});
+
+function renderHeader(){const c=calc();$("#miniCells").outerHTML=cellsHTML(Math.min(c.lost,BUDGET)).replace('class="cells','id="miniCells" class="cells');
+  $("#miniProj").textContent=c.grade; $("#miniProj").title=`Projected ${c.projected} of 288 points`}
+function render(t){renderHeader(); ({points:renderPoints,coach:renderCoach,exams:renderExams,planner:renderPlanner})[t||S.tab]()}
+
+/* ---------- POINTS VIEW ---------- */
+function gradeSelect(u){
+  const opts=UNITS[u].ext?["","D","M","P","N","U"]:["","D","M","P","U"];
+  const names={"":"Not yet",D:"Distinction",M:"Merit",P:"Pass",N:"Near Pass",U:"Unclassified"};
+  return `<select id="g-${u}" data-act="grade" data-u="${u}" aria-label="Grade for Unit ${u}">${opts.map(o=>`<option value="${o}" ${S.grades[u]===o||(!S.grades[u]&&o==="")?"selected":""}>${names[o]}</option>`).join("")}</select>`;
+}
+function optionalSelect(i){
+  const pw=PATHWAYS[S.pathway]; const cur=S.opt[i]||"";
+  const taken=S.opt.filter((x,j)=>j!==i);
+  const o=(g,list)=>`<optgroup label="Group ${g}">${list.map(u=>`<option value="${u}" ${cur==u?"selected":""} ${taken.includes(u)?"disabled":""}>Unit ${u}: ${esc(UNITS[u].t)}</option>`).join("")}</optgroup>`;
+  return `<select id="opt-${i}" data-act="opt" data-i="${i}" aria-label="Optional unit ${i+1}" style="max-width:100%"><option value="">Choose optional unit…</option>${o("A",pw.A)}${o("B",pw.B)}</select>`;
+}
+function optionalCheck(){
+  const pw=PATHWAYS[S.pathway]; const a=S.opt.filter(u=>pw.A.includes(u)).length, b=S.opt.filter(u=>pw.B.includes(u)).length;
+  if(S.opt.length<5)return `<p class="notice">Pick your ${5-S.opt.length} remaining optional unit${S.opt.length===4?"":"s"}: ${pw.rule}. Empty slots are counted at Distinction for now.</p>`;
+  if(a<pw.min.A||b<pw.min.B||a>pw.max.A||b>pw.max.B)return `<p class="notice bad">This mix doesn't fit the rules for your pathway: ${pw.rule}. You have ${a} from A and ${b} from B.</p>`;
+  return `<p class="notice good">Your optional units fit the rules: ${a} from group A and ${b} from group B.</p>`;
+}
+function rowHTML(u,label){
+  const r=unitResult(u), m=maxPts(u), U=UNITS[u];
+  const cost=r.set?m-r.pts:0;
+  let input=gradeSelect(u);
+  if(U.ext){const mode=S.extMode[u]||"grade";
+    input=`<div class="mark-in"><div class="seg" role="group" aria-label="Enter grade or mark"><button data-act="extmode" data-u="${u}" data-m="grade" aria-pressed="${mode==="grade"}">Grade</button><button data-act="extmode" data-u="${u}" data-m="mark" aria-pressed="${mode==="mark"}">Raw mark</button></div>
+    ${mode==="mark"?`<input type="number" id="mk-${u}" min="0" max="${S.bounds[u].max}" value="${S.marks[u]??""}" data-act="mark" data-u="${u}" aria-label="Raw mark for Unit ${u}" placeholder="0–${S.bounds[u].max}"><span class="muted mono">/ ${S.bounds[u].max}</span>${r.set?`<span class="chip ${r.grade}">${r.grade}</span>`:""}`:gradeSelect(u)}</div>`}
+  return `<tr><td><span class="mono">${u}</span></td><td>${label||esc(U.t)}<span class="sub">${U.ext?"Exam / set task":"Internal assignment"} · ${U.glh} GLH</span></td><td>${input}</td>
+  <td class="num mono">${r.set?r.pts:`<span class="muted">${m}?</span>`}</td><td class="num"><span class="cost ${r.set?(cost?"neg":"zero"):""}">${r.set?(cost?"−"+cost:"0"):"–"}</span></td></tr>`;
+}
+function renderPoints(){
+  const c=calc(); const pw=PATHWAYS[S.pathway];
+  const ladder=THRESH.filter(t=>t[0]>0).map(([p,g])=>`<div class="${c.grade===g?"hit":""}"><span>${g}</span><span class="bar"><span style="width:${Math.min(100,p/MAXPTS*100)}%"></span></span><span class="num" style="text-align:right">${p}</span></div>`).join("");
+  const leftMsg = c.left>=0?`${c.left} of ${BUDGET}`:`${-c.left} over`;
+  let status;
+  if(c.setCount===0) status=`<p class="lede">The maximum is <b>288 points</b> and D*D*D* starts at <b>270</b>. That leaves you <b>18 points</b> to lose across all thirteen units. Enter grades below as they come in and watch the chart fill.</p>`;
+  else if(c.left>=0) status=`<p class="lede">You have <b>${c.left} point${c.left===1?"":"s"}</b> of slack left. If every remaining unit gets a Distinction you finish on <b>${c.projected}</b>, which is <b>${c.grade}</b>.</p>`;
+  else status=`<p class="lede">You've lost ${c.lost} points, so even with Distinctions on every remaining unit you finish on <b>${c.projected}</b> (<b>${c.grade}</b>). Push for top marks in any exam you can still resit.</p>`;
+  $("#view-points").innerHTML=`
+  <div class="panel budget-hero">
+    <div class="stack">
+      <span class="eyebrow">Your D*D*D* budget</span>
+      <div class="row" style="align-items:baseline"><span class="bignum num">${leftMsg}</span><span class="muted">points left to lose</span></div>
+      ${cellsHTML(Math.min(c.lost,BUDGET),true)}
+      <div class="scale"><span>0 lost</span><span>9</span><span>18 lost = 270</span></div>
+      ${status}
+      ${c.issues.map(i=>`<p class="notice bad">${esc(i)}</p>`).join("")}
+    </div>
+    <div class="stack">
+      <div class="row" style="justify-content:space-between"><span class="eyebrow">Grade thresholds</span><span class="mono muted" style="font-size:var(--t-xs)">projected ${c.projected} · banked ${c.banked}</span></div>
+      <div class="ladder">${ladder}</div>
+    </div>
+  </div>
+
+  <div class="stack">
+    <h2>What one slip costs</h2>
+    <div class="costgrid">
+      <div class="cost-card"><span class="num">−6</span><p>Merit instead of Distinction on a 60 GLH internal unit</p></div>
+      <div class="cost-card"><span class="num">−9</span><p>Merit on Units 5, 7 or 8 (90 GLH), or a low Merit on Unit 1</p></div>
+      <div class="cost-card"><span class="num">−12</span><p>Low Merit on Unit 2, 3 or 4 (120 GLH exams)</p></div>
+      <div class="cost-card"><span class="num">−1 to −11</span><p>A high Merit on a 120 GLH exam. Exam points slide with your mark, so every mark below the Distinction boundary counts.</p></div>
+    </div>
+  </div>
+
+  <div class="stack">
+    <div class="row" style="justify-content:space-between"><h2>Your units</h2>
+      <div class="seg" role="group" aria-label="Pathway"><button data-act="pathway" data-p="standard" aria-pressed="${S.pathway==="standard"}">Extended Diploma</button><button data-act="pathway" data-p="hs" aria-pressed="${S.pathway==="hs"}">Health Studies</button></div></div>
+    ${optionalCheck()}
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Unit</th><th>Title</th><th>Grade</th><th class="num">Points</th><th class="num">vs D</th></tr></thead>
+      <tbody>
+        <tr class="group"><td colspan="5">Mandatory · externally assessed</td></tr>
+        ${EXT.map(u=>rowHTML(u)).join("")}
+        <tr class="group"><td colspan="5">Mandatory · internally assessed</td></tr>
+        ${MAND_INT.map(u=>rowHTML(u)).join("")}
+        <tr class="group"><td colspan="5">Optional · ${esc(pw.rule)}</td></tr>
+        ${[0,1,2,3,4].map(i=>S.opt[i]?rowHTML(S.opt[i],`${optionalSelect(i)}`):`<tr><td class="mono muted">–</td><td colspan="2">${optionalSelect(i)}</td><td class="num mono muted">16?</td><td class="num">–</td></tr>`).join("")}
+      </tbody></table></div>
+    <p class="muted" style="font-size:var(--t-sm)">Points with a question mark are units without a result yet, counted at Distinction. Exam raw marks are converted on Pearson's sliding scale between boundaries, capped at the Distinction value.</p>
+  </div>
+
+  <details class="panel more">
+    <summary>Exam grade boundaries used for raw marks</summary>
+    <div class="stack" style="margin-top:var(--s4)">
+      <p class="muted">Defaults are Pearson's June 2026 boundaries. Update them when your series' boundaries are published.</p>
+      <div class="tbl-wrap"><table style="min-width:520px"><thead><tr><th>Unit</th><th class="num">Max</th><th class="num">D</th><th class="num">M</th><th class="num">P</th><th class="num">N</th></tr></thead><tbody>
+      ${EXT.map(u=>`<tr><td>Unit ${u}</td>${["max","D","M","P","N"].map(k=>`<td class="num"><input type="number" id="b-${u}-${k}" value="${S.bounds[u][k]}" data-act="bound" data-u="${u}" data-k="${k}" style="width:4.6rem" aria-label="Unit ${u} ${k} boundary"></td>`).join("")}</tr>`).join("")}
+      </tbody></table></div>
+      <div><button class="btn small" data-act="resetbounds">Reset to June 2026</button></div>
+    </div>
+  </details>
+
+  <div class="stack">
+    <h2>The project in four phases</h2>
+    <div class="phases">
+      <div class="phase"><span class="eyebrow">Phase 1 · Map</span><h3>Know the maths</h3><ul><li>Choose your optional units and check they fit the rules.</li><li>Learn the 18-point budget. One Merit on a 60 GLH unit uses a third of it.</li><li>Set your exam dates in the Planner.</li></ul></div>
+      <div class="phase"><span class="eyebrow">Phase 2 · Build</span><h3>Distinction first time</h3><ul><li>Before each assignment, open the unit in the Distinction coach and read every D criterion.</li><li>Tick the must-include checklist before you submit.</li><li>Only one resubmission is allowed, it needs Lead IV approval, and it must happen within 15 working days. Don't plan on it.</li></ul></div>
+      <div class="phase"><span class="eyebrow">Phase 3 · Bank</span><h3>Exams as points</h3><ul><li>Rate every topic red, amber or green, then quiz the reds.</li><li>Write one extended answer a week and self-mark it against the marking points.</li><li>Units 2, 3 and 4 are worth 32 points each, so every mark near the boundary matters.</li></ul></div>
+      <div class="phase"><span class="eyebrow">Phase 4 · Polish</span><h3>Close the gaps</h3><ul><li>Enter results as they arrive and see what's left in the budget.</li><li>You can resit an exam, and your best result counts. Plan resits with your teacher.</li><li>Unit 4 is synoptic, so bring in learning from across the course.</li></ul></div>
+    </div>
+  </div>`;
+}
+
+/* ---------- COACH VIEW ---------- */
+function coachFor(u){return DATA&&DATA.coach?DATA.coach[u]:null}
+function critFor(u){return (DATA&&DATA.criteria&&DATA.criteria.criteria[u])||{}}
+function aimsFor(u){return (DATA&&DATA.criteria&&DATA.criteria.aims[u])||[]}
+function coachUnits(){return [...MAND_INT,...S.opt]}
+function unitCheckProgress(u){const co=coachFor(u);if(!co)return[0,0];let t=0,d=0;Object.entries(co.criteria||{}).forEach(([code,c])=>{arr(c.mustInclude).forEach((_,i)=>{t++;if(S.checks[`${u}|${code}|${i}`])d++})});return[d,t]}
+const STATUSES=["Not started","Planning","Drafting","Submitted","Resubmitting","Graded"];
+function renderCoach(){
+  const list=coachUnits(); if(!list.includes(Number(S.coachUnit)))S.coachUnit=list[0];
+  const showAll=S.coachAll; const all=showAll?Object.keys(UNITS).map(Number).filter(u=>!UNITS[u].ext):list;
+  const u=Number(S.coachUnit); const U=UNITS[u]; const co=coachFor(u)||{}; const crit=critFor(u);
+  const codes=Object.keys(crit); const byLvl=l=>codes.filter(c=>c.split(".")[1][0]===l);
+  const [done,tot]=unitCheckProgress(u); const pts=INT_PTS[U.glh];
+  const r=unitResult(u);
+  $("#view-coach").innerHTML=`
+  <div class="stack">
+    <h2>Distinction coach</h2>
+    <p class="lede">At Distinction, assessors look for consistent, outstanding work across the whole unit. D criteria often join two learning aims (like <span class="mono">BC.D2</span>), so plan those sections together.</p>
+  </div>
+  <div class="panel stack">
+    <span class="eyebrow">The verb tells you the level</span>
+    <div class="verbs">
+      ${["P","M","D"].map(l=>`<div class="lvl ${l}"><span class="chip ${l==="D"?"acc":l}">${l==="P"?"Pass":l==="M"?"Merit":"Distinction"}</span><dl style="margin:0">${VERBS[l].map(([w,d])=>`<dt>${w}</dt><dd>${d}</dd>`).join("")}</dl></div>`).join("")}
+    </div>
+  </div>
+  <div class="split">
+    <div class="stack">
+      <div class="unitlist" role="list">
+        ${all.map(x=>{const[d,t]=unitCheckProgress(x);const g=S.grades[x];return `<button role="listitem" data-act="coachunit" data-u="${x}" aria-current="${x===u}"><span class="no">${x}</span><span class="nm">${esc(UNITS[x].t)}</span>${g?`<span class="chip ${g}">${g}</span>`:`<span class="chip">${t?Math.round(d/t*100)+"%":"–"}</span>`}</button>`}).join("")}
+      </div>
+      <label class="inline muted" style="font-size:var(--t-sm)"><input type="checkbox" id="coachAll" data-act="coachall" ${showAll?"checked":""}> Show all internal units</label>
+      ${S.opt.length<5?`<p class="muted" style="font-size:var(--t-sm)">Choose your optional units in the Points tab to add them here.</p>`:""}
+    </div>
+    <div class="stack-lg" style="min-width:0">
+      <div class="panel stack">
+        <div class="row" style="justify-content:space-between;align-items:flex-start">
+          <div class="stack" style="gap:4px"><span class="eyebrow">Unit ${u} · ${U.glh} GLH · ${MAND_INT.includes(u)?"Mandatory":"Optional"}</span><h3 style="font-size:var(--t-xl)">${esc(U.t)}</h3></div>
+          <div class="stack" style="gap:6px">
+            <span class="mono" style="font-size:var(--t-sm)">D = ${pts.D} pts · M costs <span class="minus">−${pts.D-pts.M}</span></span>
+            <div class="row" style="gap:6px"><select id="st-${u}" data-act="status" data-u="${u}" aria-label="Status">${STATUSES.map(s=>`<option ${S.status[u]===s?"selected":""}>${s}</option>`).join("")}</select>${gradeSelect(u)}</div>
+          </div>
+        </div>
+        ${co.bigIdea?`<p class="lede">${esc(co.bigIdea)}</p>`:""}
+        <div class="stack" style="gap:6px"><div class="row" style="justify-content:space-between"><span class="eyebrow">Distinction checklist ticked</span><span class="mono" style="font-size:var(--t-sm)">${done}/${tot}</span></div><div class="meter"><span style="width:${tot?done/tot*100:0}%"></span></div></div>
+        <div class="grid2">
+          <div class="stack" style="gap:6px"><span class="eyebrow">Learning aims</span><ul class="plain">${aimsFor(u).map(a=>`<li><b class="mono">${esc(a[0])}</b> ${esc(a.slice(2))}</li>`).join("")}</ul></div>
+          <div class="stack" style="gap:6px"><span class="eyebrow">How it's assessed</span>${co.assignments?`<p>${esc(co.assignments)}</p>`:""}${arr(co.evidence).length?`<ul class="plain">${arr(co.evidence).map(e=>`<li>${esc(e)}</li>`).join("")}</ul>`:""}</div>
+        </div>
+      </div>
+      <div class="stack">
+        <h3>All criteria, Pass to Distinction</h3>
+        <div class="crit-ladder">
+          ${["P","M","D"].map(l=>`<div class="crit-col ${l}"><h4 style="color:${l==="D"?"var(--accent)":"var(--muted)"}">${l==="P"?"Pass":l==="M"?"Merit":"Distinction"}</h4>${byLvl(l).map(c=>`<div class="crit"><b>${esc(c)}</b>${esc(crit[c])}</div>`).join("")}</div>`).join("")}
+        </div>
+      </div>
+      <div class="stack">
+        <h3>Coaching for each Distinction criterion</h3>
+        ${byLvl("D").map(code=>dCard(u,code,crit[code],(co.criteria||{})[code])).join("")||`<p class="muted">Coaching notes for this unit are on their way.</p>`}
+      </div>
+    </div>
+  </div>`;
+}
+function dCard(u,code,text,c){
+  c=c||{};
+  const items=arr(c.mustInclude);
+  const done=items.filter((_,i)=>S.checks[`${u}|${code}|${i}`]).length;
+  return `<article class="dcard">
+    <div class="dcard-head"><div class="row" style="justify-content:space-between"><span class="code">${esc(code)}${c.verb?` · ${esc(c.verb)}`:""}</span>${arr(c.buildsOn).length?`<span class="row" style="gap:4px"><span class="muted" style="font-size:var(--t-xs)">builds on</span>${arr(c.buildsOn).map(b=>`<span class="chip">${esc(b)}</span>`).join("")}</span>`:""}</div>
+      <p style="font-weight:700">${esc(text)}</p>
+      ${c.decode?`<p>${esc(c.decode)}</p>`:""}</div>
+    <div class="dcard-body">
+      ${items.length?`<div class="stack" style="gap:6px"><div class="row" style="justify-content:space-between"><span class="eyebrow">Before you submit</span><span class="mono" style="font-size:var(--t-xs)">${done}/${items.length}</span></div>
+      <ul class="checklist">${items.map((it,i)=>{const id=`ck-${u}-${code.replace(/\W/g,"")}-${i}`;return `<li><label for="${id}"><input type="checkbox" id="${id}" data-act="check" data-k="${u}|${code}|${i}" ${S.checks[`${u}|${code}|${i}`]?"checked":""}><span>${esc(it)}</span></label></li>`}).join("")}</ul></div>`:""}
+      <div class="cols">
+        ${arr(c.pitfalls).length?`<div class="stack" style="gap:6px"><span class="eyebrow">Why students miss it</span><ul class="plain">${arr(c.pitfalls).map(p=>`<li>${esc(p)}</li>`).join("")}</ul></div>`:""}
+        ${arr(c.starters).length?`<div class="stack" style="gap:6px"><span class="eyebrow">Sentence starters</span>${arr(c.starters).map(s=>`<p class="starter">${esc(s)}</p>`).join("")}</div>`:""}
+      </div>
+      ${c.stretch?`<p><b>Outstanding looks like:</b> ${esc(c.stretch)}</p>`:""}
+    </div></article>`;
+}
+
+/* ---------- EXAMS VIEW ---------- */
+function exam(u){return DATA&&DATA.exams?DATA.exams[u]:null}
+function ragKey(u,tid,i){return `${u}|${tid}|${i}`}
+function topicRag(u,t){const c={r:0,a:0,g:0,n:0};arr(t.points).forEach((_,i)=>{const v=S.rag[ragKey(u,t.id,i)];c[v||"n"]++});return c}
+function unitRag(u){const e=exam(u);const c={r:0,a:0,g:0,n:0};arr(e&&e.topics).forEach(t=>{const x=topicRag(u,t);for(const k in c)c[k]+=x[k]});return c}
+function quizStats(u,filter){const e=exam(u);let n=0,c=0;arr(e&&e.mcq).forEach(q=>{if(filter&&!filter(q))return;const s=S.quiz[q.id];if(s){n++;if(s.last)c++}});return{n,c}}
+function ragBar(c){const t=c.r+c.a+c.g+c.n||1;return `<span class="ragbar" title="${c.r} red, ${c.a} amber, ${c.g} green, ${c.n} not rated"><i class="r" style="width:${c.r/t*100}%"></i><i class="a" style="width:${c.a/t*100}%"></i><i class="g" style="width:${c.g/t*100}%"></i></span>`}
+const SUBS=[["overview","Overview"],["checklist","Topic checklist"],["quiz","Quiz"],["long","Extended answers"],["toolkit","Toolkit"]];
+let QZ=null; // live quiz round
+function renderExams(){
+  const u=Number(S.examUnit)||1; const e=exam(u);
+  const sub=S.examSub||"overview";
+  $("#view-exams").innerHTML=`
+  <div class="stack"><h2>Exam revision</h2><p class="lede">Units 1–4 are worth 116 of your 288 points. Revise them as points to bank: rate each topic honestly, quiz your reds, and practise the long answers where the Distinction marks are.</p></div>
+  <div class="unit-switch" role="group" aria-label="Exam unit">
+    ${EXT.map(x=>{const d=daysUntil(S.dates[x]);const rc=unitRag(x);return `<button data-act="examunit" data-u="${x}" aria-pressed="${x===u}"><span class="u">UNIT ${x} · ${UNITS[x].glh} GLH</span><span class="t">${esc(UNITS[x].t)}</span><span class="d">${d!=null&&d>=0?d+" days to go":"No date set"}</span>${ragBar(rc)}</button>`}).join("")}
+  </div>
+  <div class="seg" role="group" aria-label="Revision tool">${SUBS.map(([k,l])=>`<button data-act="examsub" data-s="${k}" aria-pressed="${sub===k}">${l}</button>`).join("")}</div>
+  <div id="examBody">${e?({overview:exOverview,checklist:exChecklist,quiz:exQuiz,long:exLong,toolkit:exToolkit})[sub](u,e):`<p class="muted">Revision content for this unit is on its way.</p>`}</div>`;
+}
+function exOverview(u,e){
+  const f=e.format||{}; const rc=unitRag(u); const qs=quizStats(u); const b=S.bounds[u];
+  const total=rc.r+rc.a+rc.g+rc.n;
+  return `<div class="stack-lg">
+  <div class="grid3">
+    <div class="mini-card"><span class="eyebrow">Paper</span><span class="bignum num" style="font-size:2rem">${esc(f.marks??b.max)} marks</span><span class="muted">${esc(f.time||"")}</span></div>
+    <div class="mini-card"><span class="eyebrow">Distinction boundary (June 2026)</span><span class="bignum num" style="font-size:2rem">${b.D}/${b.max}</span><span class="muted">${Math.round(b.D/b.max*100)}% of the marks. Worth ${EXT_PTS[UNITS[u].glh].D} points.</span></div>
+    <div class="mini-card"><span class="eyebrow">Your readiness</span>${ragBar(rc)}<span class="muted">${rc.g} of ${total} checklist points green · quiz ${qs.n?Math.round(qs.c/qs.n*100)+"% correct on last try":"not started"}</span></div>
+  </div>
+  ${f.summary?`<div class="panel stack"><h3>How the paper works</h3><p class="prose">${esc(f.summary)}</p>${arr(f.tips).length?`<ul class="plain">${arr(f.tips).map(t=>`<li>${esc(t)}</li>`).join("")}</ul>`:""}</div>`:""}
+  ${e.dDescriptor?`<div class="panel stack"><span class="eyebrow">What a Distinction candidate does (Pearson's descriptor)</span><p class="prose">${esc(e.dDescriptor)}</p></div>`:""}
+  ${arr(e.commandWords).length?`<div class="stack"><h3>Command words</h3><div class="grid2">${arr(e.commandWords).map(c=>`<div class="mini-card"><h4>${esc(c.word)}</h4><p class="muted">${esc(c.means)}</p><p>${esc(c.doThis)}</p></div>`).join("")}</div></div>`:""}
+  </div>`;
+}
+function exChecklist(u,e){
+  return `<div class="stack">
+  <p class="muted">Rate every point: <b>R</b> I can't do this yet, <b>A</b> I'm shaky, <b>G</b> I could explain it in the exam. Your reds feed the quiz and the planner.</p>
+  ${arr(e.topics).map(t=>{const c=topicRag(u,t);return `<details class="topic" ${S["open"+u+t.id]?"open":""} data-topic="${u}|${esc(t.id)}">
+    <summary><span class="id">${esc(t.id)}</span><span><b>${esc(t.title)}</b></span>${ragBar(c)}</summary>
+    <ul class="points">${arr(t.points).map((p,i)=>{const k=ragKey(u,t.id,i),v=S.rag[k];return `<li><span>${esc(p)}</span><span class="rag" role="group" aria-label="Rate">${["r","a","g"].map(x=>`<button class="${x}" data-act="rag" data-k="${esc(k)}" data-v="${x}" aria-pressed="${v===x}">${x.toUpperCase()}</button>`).join("")}</span></li>`}).join("")}</ul>
+  </details>`}).join("")}
+  </div>`;
+}
+function exQuiz(u,e){
+  const topics=arr(e.topics);
+  if(QZ&&QZ.u===u)return quizRound(u,e);
+  const redTopics=topics.filter(t=>{const c=topicRag(u,t);return c.r+c.a>0}).map(t=>t.id);
+  return `<div class="panel stack">
+    <h3>Start a 10-question round</h3>
+    <p class="muted">Pick where the questions come from. Questions you got wrong last time come up first.</p>
+    <div class="row">
+      <button class="btn primary" data-act="quizstart" data-mode="all">Mixed, all topics</button>
+      <button class="btn" data-act="quizstart" data-mode="weak" ${redTopics.length?"":"disabled"}>My red and amber topics${redTopics.length?"":" (rate topics first)"}</button>
+      <button class="btn" data-act="quizstart" data-mode="wrong">Ones I got wrong</button>
+    </div>
+    <label class="inline">Or one topic: <select id="quizTopic" data-act="quiztopic"><option value="">Choose…</option>${topics.map(t=>`<option value="${esc(t.id)}">${esc(t.id)} ${esc(t.title)}</option>`).join("")}</select></label>
+  </div>
+  <div class="stack"><h3>Accuracy by topic</h3><div class="tbl-wrap"><table style="min-width:420px"><thead><tr><th>Topic</th><th class="num">Tried</th><th class="num">Right last time</th></tr></thead><tbody>
+  ${topics.map(t=>{const s=quizStats(u,q=>q.topic===t.id);const tot=arr(e.mcq).filter(q=>q.topic===t.id).length;return `<tr><td><span class="mono">${esc(t.id)}</span> ${esc(t.title)}</td><td class="num mono">${s.n}/${tot}</td><td class="num mono">${s.n?Math.round(s.c/s.n*100)+"%":"–"}</td></tr>`}).join("")}
+  </tbody></table></div></div>`;
+}
+function startQuiz(u,mode,topic){
+  const e=exam(u); let pool=arr(e.mcq).slice();
+  if(mode==="weak"){const weak=arr(e.topics).filter(t=>{const c=topicRag(u,t);return c.r+c.a>0}).map(t=>t.id);pool=pool.filter(q=>weak.includes(q.topic))}
+  if(mode==="wrong")pool=pool.filter(q=>S.quiz[q.id]&&!S.quiz[q.id].last);
+  if(mode==="topic")pool=pool.filter(q=>q.topic===topic);
+  if(!pool.length){toast(mode==="wrong"?"Nothing wrong yet. Try a mixed round.":"No questions for that choice yet");return}
+  pool.sort(()=>Math.random()-.5);
+  pool.sort((a,b)=>((S.quiz[a.id]?S.quiz[a.id].last?2:0:1)-(S.quiz[b.id]?S.quiz[b.id].last?2:0:1)));
+  QZ={u,qs:pool.slice(0,10),i:0,res:[],picked:null};renderExams();
+}
+function quizRound(u,e){
+  const q=QZ.qs[QZ.i];
+  if(!q){const c=QZ.res.filter(Boolean).length;return `<div class="panel stack"><h3>Round complete: ${c}/${QZ.res.length}</h3><div class="progress-dots">${QZ.res.map(r=>`<i class="${r?"ok":"no"}"></i>`).join("")}</div><p>${c===QZ.res.length?"Clean round. Mark those topics green if you haven't.":"Rate the topics you missed as red or amber, then try a round on just those."}</p><div class="row"><button class="btn primary" data-act="quizagain">Another round</button><button class="btn" data-act="quizexit">Back to quiz menu</button></div></div>`}
+  const picked=QZ.picked; const t=arr(e.topics).find(t=>t.id===q.topic);
+  return `<div class="panel q-card">
+    <div class="row" style="justify-content:space-between"><span class="eyebrow">Question ${QZ.i+1} of ${QZ.qs.length} · ${esc(q.topic)} ${t?esc(t.title):""}</span><div class="progress-dots">${QZ.qs.map((_,i)=>`<i class="${i<QZ.res.length?(QZ.res[i]?"ok":"no"):""} ${i===QZ.i?"now":""}"></i>`).join("")}</div></div>
+    <p class="q-stem">${esc(q.q)}</p>
+    <div class="opts">${arr(q.options).map((o,i)=>`<button data-act="answer" data-i="${i}" ${picked!=null?"disabled":""} class="${picked!=null?(i===q.answer?"right":i===picked?"wrong":""):""}"><span class="k">${"ABCD"[i]}</span><span>${esc(o)}</span></button>`).join("")}</div>
+    ${picked!=null?`<div class="feedback"><b>${picked===q.answer?"Correct.":"Not quite. The answer is "+"ABCD"[q.answer]+"."}</b> ${esc(q.why)}</div><div><button class="btn primary" data-act="quiznext">${QZ.i+1<QZ.qs.length?"Next question":"See results"}</button></div>`:""}
+    <div><button class="btn ghost small" data-act="quizexit">End round</button></div>
+  </div>`;
+}
+function exLong(u,e){
+  const items=arr(e.long); const idx=Math.min(Number(S["long"+u]||0),Math.max(0,items.length-1)); const q=items[idx];
+  if(!q)return `<p class="muted">No extended questions yet.</p>`;
+  const sm=S.selfmark[q.id]||[]; const draft=S.drafts[q.id]||""; const reveal=S["rev"+q.id];
+  const art=(u===4&&e.practiceArticle)?`<details class="more"><summary>Read the practice article first</summary><div class="article" style="margin-top:var(--s3)"><h3 style="margin-bottom:var(--s2)">${esc(e.practiceArticle.title)}</h3>${esc(e.practiceArticle.summary)}</div></details>`:"";
+  return `<div class="stack-lg">
+    <div class="row">${items.map((x,i)=>`<button class="btn small ${i===idx?"primary":""}" data-act="longpick" data-i="${i}">${esc(x.command||"Q")} · ${esc(x.marks)}m${S.drafts[x.id]?" ✓":""}</button>`).join("")}</div>
+    ${art}
+    <div class="panel longq">
+      <div class="row" style="justify-content:space-between"><span class="eyebrow">${esc(q.topic)} · ${esc(q.command)}</span><span class="marks">${esc(q.marks)} marks · about ${Math.round(Number(q.marks)*1.0)} min</span></div>
+      ${q.context?`<div class="casebox">${esc(q.context)}</div>`:""}
+      <p class="q-stem">${esc(q.q)}</p>
+      <label for="draft-${esc(q.id)}" class="eyebrow">Your answer (saved as you type)</label>
+      <textarea id="draft-${esc(q.id)}" data-act="draft" data-id="${esc(q.id)}" placeholder="Write under timed conditions first, then reveal the marking points.">${esc(draft)}</textarea>
+      <div class="row" style="justify-content:space-between"><span class="wc" id="wc-${esc(q.id)}">${wordCount(draft)} words</span><button class="btn ${reveal?"":"primary"}" data-act="reveal" data-id="${esc(q.id)}">${reveal?"Hide marking guide":"Reveal marking guide"}</button></div>
+      ${reveal?`<div class="stack">
+        <div class="stack" style="gap:6px"><div class="row" style="justify-content:space-between"><span class="eyebrow">Tick each point your answer makes</span><span class="mono">${sm.length}/${arr(q.markingPoints).length}</span></div>
+        <ul class="checklist">${arr(q.markingPoints).map((p,i)=>`<li><label for="sm-${esc(q.id)}-${i}"><input type="checkbox" id="sm-${esc(q.id)}-${i}" data-act="selfmark" data-id="${esc(q.id)}" data-i="${i}" ${sm.includes(i)?"checked":""}><span>${esc(p)}</span></label></li>`).join("")}</ul></div>
+        ${arr(q.dHallmarks).length?`<div class="stack" style="gap:6px"><span class="eyebrow">What lifts it to the top band</span><ul class="plain">${arr(q.dHallmarks).map(h=>`<li>${esc(h)}</li>`).join("")}</ul></div>`:""}
+        ${q.model?`<div class="stack" style="gap:6px"><span class="eyebrow">Model answer</span><div class="model">${esc(q.model)}</div></div>`:""}
+      </div>`:""}
+    </div></div>`;
+}
+function exToolkit(u,e){
+  let h="";
+  if(arr(e.theories).length)h+=`<div class="stack"><h3>Theories and models</h3><div class="grid2">${arr(e.theories).map(t=>`<div class="mini-card"><div class="row" style="justify-content:space-between"><h4>${esc(t.name)}</h4>${t.area?`<span class="chip acc">${esc(t.area)}</span>`:""}</div><p>${esc(t.summary)}</p>${arr(t.keyTerms).length?`<p class="muted" style="font-size:var(--t-sm)">${arr(t.keyTerms).map(esc).join(" · ")}</p>`:""}<div class="twocol"><div><span class="plus">Strengths</span><ul class="plain">${arr(t.strengths).map(s=>`<li>${esc(s)}</li>`).join("")}</ul></div><div><span class="minus">Limitations</span><ul class="plain">${arr(t.limitations).map(s=>`<li>${esc(s)}</li>`).join("")}</ul></div></div>${t.applyTo?`<p><b>In a long answer:</b> ${esc(t.applyTo)}</p>`:""}</div>`).join("")}</div></div>`;
+  if(arr(e.keyFrameworks).length)h+=`<div class="stack"><h3>Key frameworks</h3><div class="grid2">${arr(e.keyFrameworks).map(t=>`<div class="mini-card"><h4>${esc(t.name)}</h4><p>${esc(t.summary)}</p>${t.examUse?`<p><b>In the exam:</b> ${esc(t.examUse)}</p>`:""}</div>`).join("")}</div></div>`;
+  if(arr(e.diagramsToLearn).length)h+=`<div class="panel stack"><h3>Diagrams to label from memory</h3><ul class="plain">${arr(e.diagramsToLearn).map(d=>`<li>${esc(d)}</li>`).join("")}</ul></div>`;
+  const rt=e.researchToolkit;
+  if(rt){
+    if(arr(rt.partAPlan).length)h+=`<div class="panel stack"><h3>Your Part A plan</h3><ol class="plain">${arr(rt.partAPlan).map(s=>`<li>${esc(s)}</li>`).join("")}</ol></div>`;
+    if(arr(rt.planningFramework).length)h+=`<div class="panel stack"><h3>Planning further research</h3><ul class="plain">${arr(rt.planningFramework).map(s=>`<li>${esc(s)}</li>`).join("")}</ul></div>`;
+    if(arr(rt.methods).length)h+=`<div class="stack"><h3>Research methods</h3><div class="grid2">${arr(rt.methods).map(m=>`<div class="mini-card"><div class="row" style="justify-content:space-between"><h4>${esc(m.name)}</h4><span class="chip">${esc(m.type)}</span></div><div class="twocol"><div><span class="plus">Advantages</span><ul class="plain">${arr(m.pros).map(s=>`<li>${esc(s)}</li>`).join("")}</ul></div><div><span class="minus">Disadvantages</span><ul class="plain">${arr(m.cons).map(s=>`<li>${esc(s)}</li>`).join("")}</ul></div></div></div>`).join("")}</div></div>`;
+    if(arr(rt.glossary).length)h+=`<div class="stack"><h3>Research vocabulary</h3><div class="tbl-wrap"><table style="min-width:480px"><tbody>${arr(rt.glossary).map(g=>`<tr><td style="width:30%"><b>${esc(g.term)}</b></td><td>${esc(g.def)}</td></tr>`).join("")}</tbody></table></div></div>`;
+  }
+  if(e.practiceArticle)h+=`<details class="panel more"><summary>Practice article (fictional)</summary><div class="article" style="margin-top:var(--s3);border:0;padding:0"><h3 style="margin-bottom:var(--s2)">${esc(e.practiceArticle.title)}</h3>${esc(e.practiceArticle.summary)}</div></details>`;
+  return `<div class="stack-lg">${h||`<p class="muted">Toolkit coming soon.</p>`}</div>`;
+}
+
+/* ---------- PLANNER ---------- */
+function weakness(u,t){const c=topicRag(u,t);const n=c.r+c.a+c.g+c.n||1;return (c.r*3+c.a*2+c.n*2+c.g*1)/n}
+function buildPlan(u){
+  const e=exam(u); const d=daysUntil(S.dates[u]); if(!e||d==null||d<1)return null;
+  const exam_=new Date(S.dates[u]+"T09:00:00"); const weeks=Math.max(1,Math.ceil(d/7));
+  const topics=arr(e.topics).slice().sort((a,b)=>weakness(u,b)-weakness(u,a));
+  const weak=topics.filter(t=>weakness(u,t)>=2);
+  const red=topics.filter(t=>topicRag(u,t).r>0);
+  const seq=[...topics.map(t=>({t,pass:1})),...weak.map(t=>({t,pass:2})),...(red.length?red:weak.slice(0,3)).map(t=>({t,pass:3}))];
+  const study=Math.max(1,weeks-1); const per=Math.max(2,Math.ceil(seq.length/study));
+  const out=[]; let k=0;
+  for(let w=0;w<weeks;w++){
+    const start=new Date(exam_); start.setDate(start.getDate()-7*(weeks-w));
+    const sessions=[];
+    if(w===weeks-1&&weeks>1){sessions.push({mock:true,label:`Full timed ${u===4?"Part B practice":"past paper"}`});sessions.push({mock:true,label:"Mark it, then re-quiz every red"});}
+    else{const used=new Set();for(let j=0;j<per&&k<seq.length;j++){const s=seq[k++];if(used.has(s.t.id)){continue}used.add(s.t.id);const c=topicRag(u,s.t);sessions.push({label:`${s.t.id} ${s.t.title}`,pass:s.pass,cls:c.r?"r":c.a?"a":""})}
+      if(w%2===1)sessions.push({mock:true,label:"One extended answer, self-marked"});}
+    out.push({start,sessions});
+  }
+  return out;
+}
+function renderPlanner(){
+  const plans=EXT.map(u=>({u,p:buildPlan(u)}));
+  $("#view-planner").innerHTML=`
+  <div class="stack"><h2>Planner</h2><p class="lede">Set your exam dates. The plan puts your weakest topics first, brings the red and amber ones back two more times, and finishes with timed practice. It updates every time you change a rating.</p></div>
+  <div class="countdown">
+    ${EXT.map(u=>{const d=daysUntil(S.dates[u]);return `<div class="cd"><span class="eyebrow">Unit ${u}${u===4?" · Part B":""}</span><label for="date-${u}" class="muted" style="font-size:var(--t-sm)">${esc(UNITS[u].t)}</label><input type="date" id="date-${u}" value="${S.dates[u]||""}" data-act="date" data-u="${u}"><span class="bignum num">${d!=null?(d>=0?d:"done"):"–"}</span><span class="muted" style="font-size:var(--t-sm)">${d!=null&&d>=0?"days to go":"set a date"}</span>${u===4&&S.dates[4]?`<span class="chip acc">Part A ≈ ${fmtDate(new Date(new Date(S.dates[4]+"T09:00:00").getTime()-28*86400000))}</span>`:""}</div>`}).join("")}
+  </div>
+  <p class="muted" style="font-size:var(--t-sm)">Exams run in January and May/June. Your exams officer has the exact dates for your entries.</p>
+  ${plans.map(({u,p})=>p?`<div class="panel stack"><div class="row" style="justify-content:space-between"><h3>Unit ${u}: ${esc(UNITS[u].t)}</h3><span class="row" style="gap:6px"><span class="sess r">red</span><span class="sess a">amber</span><span class="sess mock">practice</span></span></div>
+    <div class="weeks">${p.map(w=>`<div class="week"><div class="when"><b>Week of ${fmtDate(w.start)}</b>${w.start<new Date()?"this week or earlier":""}</div><div class="sessions">${w.sessions.length?w.sessions.map(s=>`<span class="sess ${s.mock?"mock":s.cls||""}">${s.pass>1?`<span class="mono" style="font-size:var(--t-xs)">↺${s.pass} </span>`:""}${esc(s.label)}</span>`).join(""):`<span class="muted">Mixed quiz rounds</span>`}</div></div>`).join("")}</div>
+    ${u===4?`<p class="notice">For Unit 4, the four weeks after Part A comes out are for researching the article. Follow the Part A plan in the Toolkit and check the current rules on notes with your teacher.</p>`:""}
+  </div>`:"").join("")}
+  <div class="panel stack">
+    <h3>Assignment deadlines</h3>
+    <p class="muted">Add your internal assignment deadlines so you can see them next to your exams. Missing a deadline without an agreed extension can mean no resubmission.</p>
+    <div class="row"><select id="dlUnit" aria-label="Unit">${coachUnits().map(u=>`<option value="${u}">Unit ${u}: ${esc(UNITS[u].t)}</option>`).join("")}</select><input type="text" id="dlName" placeholder="Assignment (e.g. LA A & B)" aria-label="Assignment name"><input type="date" id="dlDate" aria-label="Deadline"><button class="btn primary" data-act="dladd">Add</button></div>
+    <div>${S.deadlines.slice().sort((a,b)=>a.date<b.date?-1:1).map((d,i)=>{const n=daysUntil(d.date);return `<div class="deadline-row"><span><b class="mono">Unit ${d.u}</b> ${esc(d.name)}</span><span class="mono ${n!=null&&n<7&&n>=0?"minus":""}">${fmtDate(new Date(d.date+"T09:00:00"))} · ${n>=0?n+"d":"past"}</span><button class="btn small ghost" data-act="dldel" data-id="${esc(d.id)}" aria-label="Remove">Remove</button></div>`}).join("")||`<p class="muted">No deadlines added yet.</p>`}</div>
+  </div>
+  <div class="panel stack">
+    <h3>A D* week</h3>
+    <div class="grid3">
+      <div class="mini-card"><h4>3 × 25 min retrieval</h4><p>Quiz rounds on red topics. Retrieval beats rereading.</p></div>
+      <div class="mini-card"><h4>1 timed long answer</h4><p>Write first, then reveal the marking guide and tick honestly.</p></div>
+      <div class="mini-card"><h4>1 assignment checkpoint</h4><p>Open the Distinction coach and tick off the D checklist against your draft.</p></div>
+      <div class="mini-card"><h4>1 re-rating</h4><p>Update your topic ratings every Sunday so next week's plan adapts.</p></div>
+    </div>
+  </div>
+  <div class="panel stack">
+    <h3>Backup</h3>
+    <p class="muted">Your progress lives in this browser. Copy the backup code to keep it safe or move it to another device, then paste it there and press Restore.</p>
+    <div class="row"><button class="btn primary" data-act="backup">Copy backup code</button><button class="btn" data-act="restore">Restore from code</button><button class="btn ghost" data-act="resetall">Clear everything</button></div>
+    <textarea id="backupBox" style="min-height:90px" placeholder="Backup code appears here, or paste one to restore" aria-label="Backup code"></textarea>
+    <div id="resetConfirm" hidden class="notice bad row"><span>This deletes all your grades, ratings and drafts in this browser.</span><button class="btn small" data-act="resetyes">Yes, clear it</button><button class="btn small ghost" data-act="resetno">Keep it</button></div>
+  </div>`;
+}
+
+/* ---------- Events ---------- */
+document.addEventListener("click",e=>{
+  const b=e.target.closest("[data-act]"); if(!b)return; const a=b.dataset.act;
+  if(b.tagName==="SELECT"||b.type==="checkbox"||b.tagName==="TEXTAREA"||(b.tagName==="INPUT"&&b.type!=="button"))return;
+  const u=Number(b.dataset.u);
+  switch(a){
+    case "pathway": if(S.pathway!==b.dataset.p){S.pathway=b.dataset.p;S.opt=S.opt.filter(x=>PATHWAYS[S.pathway].A.includes(x)||PATHWAYS[S.pathway].B.includes(x))} break;
+    case "extmode": S.extMode[u]=b.dataset.m; break;
+    case "resetbounds": S.bounds=JSON.parse(JSON.stringify(DEFAULT_BOUNDS)); toast("Boundaries reset"); break;
+    case "coachunit": S.coachUnit=u; save(); render(); window.scrollTo({top:0,behavior:"smooth"}); return;
+    case "examunit": S.examUnit=u; QZ=null; break;
+    case "examsub": S.examSub=b.dataset.s; if(b.dataset.s!=="quiz")QZ=null; break;
+    case "rag": {const k=b.dataset.k; S.rag[k]=S.rag[k]===b.dataset.v?undefined:b.dataset.v; save(); const det=b.closest("details"); const st=window.scrollY; render(); window.scrollTo(0,st); return;}
+    case "quizstart": startQuiz(Number(S.examUnit),b.dataset.mode); return;
+    case "answer": {if(QZ.picked!=null)return;const i=Number(b.dataset.i);const q=QZ.qs[QZ.i];QZ.picked=i;const ok=i===q.answer;QZ.res.push(ok);const s=S.quiz[q.id]||{n:0,c:0};s.n++;if(ok)s.c++;s.last=ok;S.quiz[q.id]=s;save();break;}
+    case "quiznext": QZ.i++; QZ.picked=null; break;
+    case "quizagain": {const uu=QZ.u;QZ=null;startQuiz(uu,"all");return;}
+    case "quizexit": QZ=null; break;
+    case "longpick": S["long"+S.examUnit]=Number(b.dataset.i); break;
+    case "reveal": S["rev"+b.dataset.id]=!S["rev"+b.dataset.id]; break;
+    case "dladd": {const n=$("#dlName").value.trim(),dt=$("#dlDate").value; if(!dt){toast("Add a date first");return} S.deadlines.push({id:Date.now().toString(36),u:Number($("#dlUnit").value),name:n||"Assignment",date:dt}); toast("Deadline added"); break;}
+    case "dldel": S.deadlines=S.deadlines.filter(d=>d.id!==b.dataset.id); break;
+    case "backup": {const code=btoa(unescape(encodeURIComponent(JSON.stringify(S))));const box=$("#backupBox");box.value=code;
+      const fallback=()=>{box.focus();box.select();toast("Code selected. Copy it now.")};
+      try{navigator.clipboard.writeText(code).then(()=>toast("Backup code copied"),fallback)}catch(err){fallback()} return;}
+    case "restore": {try{const obj=JSON.parse(decodeURIComponent(escape(atob($("#backupBox").value.trim()))));S=Object.assign(blank(),obj);save();toast("Progress restored")}catch(err){toast("That code didn't work. Check you pasted all of it.");return} break;}
+    case "resetall": $("#resetConfirm").hidden=false; return;
+    case "resetno": $("#resetConfirm").hidden=true; return;
+    case "resetyes": S=blank(); save(); toast("Cleared"); break;
+    default: return;
+  }
+  save(); render();
+});
+document.addEventListener("change",e=>{
+  const el=e.target; const a=el.dataset&&el.dataset.act; if(!a)return; const u=Number(el.dataset.u);
+  switch(a){
+    case "grade": if(el.value)S.grades[u]=el.value; else delete S.grades[u]; if(UNITS[u].ext)S.extMode[u]="grade"; break;
+    case "opt": {const i=Number(el.dataset.i);const v=Number(el.value)||null;const o=S.opt.slice();if(v)o[i]=v;else o.splice(i,1);S.opt=o.filter(Boolean);break;}
+    case "status": S.status[u]=el.value; break;
+    case "check": if(el.checked)S.checks[el.dataset.k]=1; else delete S.checks[el.dataset.k]; save(); {const st=window.scrollY;render();window.scrollTo(0,st);} return;
+    case "selfmark": {const id=el.dataset.id,i=Number(el.dataset.i);const s=new Set(S.selfmark[id]||[]);el.checked?s.add(i):s.delete(i);S.selfmark[id]=[...s];save();const st=window.scrollY;render();window.scrollTo(0,st);return;}
+    case "coachall": S.coachAll=el.checked; break;
+    case "quiztopic": if(el.value)startQuiz(Number(S.examUnit),"topic",el.value); return;
+    case "date": S.dates[u]=el.value; break;
+    case "bound": {const k=el.dataset.k;const v=Number(el.value);if(!isNaN(v))S.bounds[u][k]=v;break;}
+    case "mark": S.marks[u]=el.value===""?null:Number(el.value); break;
+    default: return;
+  }
+  save(); render();
+});
+document.addEventListener("input",e=>{const el=e.target;if(el.dataset&&el.dataset.act==="draft"){S.drafts[el.dataset.id]=el.value;save();const w=document.getElementById("wc-"+el.dataset.id);if(w)w.textContent=wordCount(el.value)+" words"}});
+document.addEventListener("toggle",e=>{const d=e.target;if(d.matches&&d.matches("details.topic")){const [u,id]=d.dataset.topic.split("|");S["open"+u+id]=d.open;save()}},true);
+
+/* ---------- Boot ---------- */
+const startTab=(location.hash||"").replace("#","");
+setTab(TABS.includes(startTab)?startTab:(S.tab||"points"));
+</script>
