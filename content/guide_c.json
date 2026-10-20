@@ -376,7 +376,7 @@
             "fromSpec": "Learners show in-depth understanding of how legislation, policies and practice apply to strategies for mental wellbeing and mental health promotion.",
             "means": "Pick specific parts of laws and policies and say how they shape what happens for this person. Use current names, such as the Mental Health Act 1983 as amended and the 2025 reforms.",
             "example": "The Equality Act 2010 matters because Wren's employer must consider reasonable adjustments, such as shift patterns that protect sleep. The Mental Health Act 1983 (as amended) only applies if Wren needed detention, so its reforms matter mostly as a safeguard.",
-            "nearMiss": "The Equality Act 2010 protects people with disabilities, which can include long-term mental health conditions, from discrimination at work and requires employers to make reasonable adjustments. The Mental Health Act 1983 allows people to be detained for assessment and treatment.",
+            "nearMiss": "The Equality Act 2010 protects people with disabilities, which can include long-term mental health conditions, from discrimination at work and requires employers to make reasonable adjustments. The Mental Health Act 1983 (as amended, with the 2025 Act being phased in) allows people to be detained for assessment and treatment.",
             "whyNearMiss": "The provisions are accurate and specific, but neither is applied to Wren, so it stays a description of the law.",
             "explainPrompt": "Why might a law be relevant to Wren in theory but not in practice? Answer in your own words.",
             "check": {
