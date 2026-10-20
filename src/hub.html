@@ -580,6 +580,12 @@ function currencyPanel(u,title){const list=currencyFor(u);if(!list.length)return
 
 
 /* ---------- Guided walkthrough (parallel-case coaching) ---------- */
+const OWN_WORK=["I am checking a draft that I wrote myself.","The words in my draft are mine. I have not copied or adapted the hub's examples or sentence starters.","I have not used AI to write, rewrite or paraphrase my work, or to do my analysis, evaluation or judgements.","If I used an AI tool in a way my centre allows, I have named the tool and the date, kept a screenshot of my prompt and its answer, and said how I used it in my work.","Every case detail, result, observation and quote in my work is real. It comes from my brief, my own practical or placement, or a source I have referenced. I have not made anything up.","I have checked my facts against my class notes, the specification or another reliable source, not only against the hub or an AI tool.","I could explain any part of this work to my tutor, out loud, without notes.","I know that I will sign a declaration when I hand in, and that handing in work that isn't mine is malpractice."];
+function ownWorkDone(u){const o=(S.ownWork||{})[u]||[];return OWN_WORK.every((_,i)=>o.includes(i))}
+function ownWorkGate(u){const o=(S.ownWork||{})[u]||[];return `<div class="notice stack" style="gap:8px"><b>Before you use the evidence map, tick each line that is true.</b><ul class="checklist">${OWN_WORK.map((t,i)=>`<li><label for="ow-${u}-${i}"><input type="checkbox" id="ow-${u}-${i}" data-act="ownwork" data-u="${u}" data-i="${i}" ${o.includes(i)?"checked":""}><span>${esc(t)}</span></label></li>`).join("")}</ul><p style="font-size:var(--t-sm)">Ticking these doesn't replace the declaration you sign with your centre. The map is your own check. It isn't marked, and it doesn't prove your work is your own.</p></div>`}
+const INTEGRITY_FULL=`<div class="notice stack" style="gap:8px"><b>These examples are practice, not text to use.</b><p>Each example is about a made-up case. It shows you how Distinction thinking works. It is not a model to copy, change a few words in, or ask an AI tool to rewrite for your brief.</p><p>Your assessor can only give credit for what you show yourself. If you hand in sentences that came from these examples, or from an AI tool, as your own work, that counts as malpractice, even if you changed the names. The penalty can be a warning, a lost grade or losing the qualification.</p><p><b>Do this instead:</b> read the example, then cover it. Say the idea in your own words, out loud or on paper. Then write about your own brief, using your own facts, your own results and your own judgement.</p><p>You will sign a declaration when you hand in that the work is yours.</p><div><button class="btn primary" data-act="intack">I understand</button></div></div>`;
+const AI_NOTE=`<details class="panel more"><summary>AI and your BTEC coursework</summary><div class="stack prose" style="margin-top:var(--s3)"><p>The rules come from JCQ, which sets coursework rules for UK awarding organisations, and from Pearson, who award your BTEC. Your centre can set stricter limits for each assignment, so check your brief and ask your tutor before you use any AI tool.</p><p><b>You must not:</b></p><ul class="plain"><li>use AI to write, rewrite or paraphrase any part of your assignment</li><li>use AI to do the analysis, evaluation or judgements the Distinction criteria ask for</li><li>use AI to invent case details, results, observations, quotes or references</li><li>hand in any work, or any ideas, that you did not produce yourself</li></ul><p>Pearson will not give credit for work that doesn't show you met the criteria on your own, even if you say where the work came from.</p><p><b>Only if your centre says it's allowed</b>, you might use an AI tool to explain a word you don't understand, or to suggest what kinds of sources to look for. It must not be a way of getting your answer.</p><p><b>If you use AI at all, you must:</b></p><ol class="plain"><li>name the tool and the date (for example "ChatGPT, 12 March 2027", not just "AI")</li><li>keep a screenshot of your prompt and the answer</li><li>say briefly in your work how you used it</li><li>check any fact, name or reference it gave you in a reliable source. AI tools make things up and can invent references that look real.</li></ol><p>Using AI without saying so is malpractice. The penalties run from a warning to being disqualified from the qualification.</p><p class="muted">This hub doesn't write assignment text for you and has no AI feature. This is a short summary of JCQ's "AI Use in Assessments" (April 2025 edition); check jcq.org.uk and your centre's policy for the current rules.</p></div></details>`;
+
 function guideFor(u){return DATA&&DATA.guide?DATA.guide[u]:null}
 function gState(k){S.guide=S.guide||{};return S.guide[k]||(S.guide[k]={})}
 function mapProgress(u,code){const g=guideFor(u);const reqs=arr(g&&g.criteria&&g.criteria[code]&&g.criteria[code].requirements);const yes=reqs.filter((_,i)=>(S.guide||{})[`${u}|${code}|${i}`]&&S.guide[`${u}|${code}|${i}`].st==="yes").length;return[yes,reqs.length]}
@@ -590,10 +596,12 @@ function walkthrough(u,code){
   const g=guideFor(u); const reqs=arr(g&&g.criteria&&g.criteria[code]&&g.criteria[code].requirements); if(!reqs.length)return "";
   const open=S.gwOpen===`${u}|${code}`; const [yes,n]=mapProgress(u,code);
   if(!open)return `<div class="row" style="justify-content:space-between"><button class="btn primary" data-act="gwopen" data-k="${esc(u+"|"+code)}">Guided walkthrough · ${n} steps</button><span class="mono" style="font-size:var(--t-xs)">Evidence mapped: ${yes}/${n}</span></div>`;
+  if(!S.integrityAck)return `<div class="gw stack">${INTEGRITY_FULL}</div>`;
   const step=Math.min(Number(S.gwStep||0),n); 
   const nav=`<div class="gw-steps" role="group" aria-label="Walkthrough steps">${reqs.map((r,i)=>{const st=gState(`${u}|${code}|${i}`).st;return `<button data-act="gwstep" data-i="${i}" aria-current="${i===step}" class="${st||""}">${i+1}</button>`}).join("")}<button data-act="gwstep" data-i="${n}" aria-current="${step===n}">Map</button></div>`;
   let body;
-  if(step===n){
+  if(step===n&&!ownWorkDone(u)){body=ownWorkGate(u)}
+  else if(step===n){
     body=`<div class="stack"><h4>Your evidence map for ${esc(code)}</h4><p class="muted" style="font-size:var(--t-sm)">Before you submit, every row should say <b>Yes</b> with a location you could point your assessor to. This is your own check. Nothing here is marked.</p>
     <div class="tbl-wrap"><table style="min-width:480px"><thead><tr><th>Requirement</th><th>Where in my work</th><th>Status</th></tr></thead><tbody>${reqs.map((r,i)=>{const st=gState(`${u}|${code}|${i}`);return `<tr><td>${esc(r.need)}</td><td>${esc(st.loc||"–")}</td><td><span class="chip ${st.st==="yes"?"D":st.st==="part"?"M":"P"}">${st.st==="yes"?"Yes":st.st==="part"?"Partly":"Not yet"}</span></td></tr>`}).join("")}</tbody></table></div></div>`;
   } else {
@@ -603,20 +611,25 @@ function walkthrough(u,code){
     body=`<div class="stack-lg">
       <div class="stack" style="gap:6px"><span class="eyebrow">Step ${step+1} of ${n} · what the work must show</span><h4 style="font-size:var(--t-lg)">${esc(r.need)}</h4>
         <p>${esc(r.means)}</p><p class="muted" style="font-size:var(--t-sm)"><b>From the spec's assessment guidance:</b> ${esc(r.fromSpec)}</p></div>
-      <div class="stack" style="gap:6px"><span class="eyebrow">1 · Which of these shows Distinction-level thinking? (practice case)</span>
+      ${wordCount(st.pre)<5||!st.preDone?`<div class="stack" style="gap:6px"><label class="eyebrow" for="gp-${esc(k.replace(/\W/g,""))}">1 · Try it first</label><p>Before you look at any examples: in a sentence or two, what would strong evidence for this look like?</p>
+        <textarea id="gp-${esc(k.replace(/\W/g,""))}" style="min-height:70px" data-act="gwpre" data-k="${esc(k)}" placeholder="Your best guess is fine. Having a go first makes the examples easier to learn from.">${esc(st.pre||"")}</textarea>
+        <div><button class="btn primary" data-act="gwpredone" data-k="${esc(k)}">Show me the examples</button></div></div>`:`<div class="stack" style="gap:6px"><span class="eyebrow">Your first try</span><p class="starter">${esc(st.pre)}</p></div>
+      <div class="stack" style="gap:6px"><span class="eyebrow">2 · Which of these shows Distinction-level thinking? (practice case)</span>
         <div class="pair">${cards.map(([id,txt],j)=>`<button class="pick ${st.pick?(id==="a"?"right":st.pick===id?"wrong":""):""}" data-act="gwpick" data-k="${esc(k)}" data-v="${id}" ${st.pick?"disabled":""}><span class="k">${"AB"[j]}</span><span>${esc(txt)}</span></button>`).join("")}</div>
         ${st.pick?`<p class="muted" style="font-size:var(--t-sm)">You picked ${st.pick===(flip?"b":"a")?"A":"B"}. Explain your choice below before you see the answer.</p>`:""}</div>
-      ${st.pick?`<div class="stack" style="gap:6px"><label class="eyebrow" for="gx-${esc(k.replace(/\W/g,""))}">2 · Explain it in your own words</label><p>${esc(r.explainPrompt)}</p>
+      ${st.pick?`<div class="stack" style="gap:6px"><label class="eyebrow" for="gx-${esc(k.replace(/\W/g,""))}">3 · Explain it in your own words</label><p>${esc(r.explainPrompt)}</p>
         <textarea id="gx-${esc(k.replace(/\W/g,""))}" style="min-height:90px" data-act="gwexp" data-k="${esc(k)}" placeholder="At least a sentence or two. Writing it is what makes it stick.">${esc(st.exp||"")}</textarea>
         ${st.rev?`<div class="feedback"><b>${st.pick==="a"?"You picked the stronger one.":"The other one was stronger."}</b> The weaker one falls short because ${esc(String(r.whyNearMiss||"").replace(/^[A-Z]/,c=>c.toLowerCase()))} Compare that with what you wrote.</div>`:`<div><button class="btn" data-act="gwrev" data-k="${esc(k)}">Check my reasoning</button> <span class="muted" style="font-size:var(--t-xs)">Write at least 10 words first</span></div>`}</div>`:""}
-      ${st.rev&&chk.q?`<div class="stack" style="gap:6px"><span class="eyebrow">3 · Check</span><p style="font-weight:700">${esc(chk.q)}</p><div class="opts">${arr(chk.options).map((o,j)=>`<button data-act="gwchk" data-k="${esc(k)}" data-i="${j}" ${st.chk!=null?"disabled":""} class="${st.chk!=null?(j===chk.answer?"right":j===st.chk?"wrong":""):""}"><span class="k">${"ABCD"[j]}</span><span>${esc(o)}</span></button>`).join("")}</div>${st.chk!=null?`<div class="feedback"><b>${st.chk===chk.answer?"Correct.":"Not quite."}</b> ${esc(chk.why)}</div>`:""}</div>`:""}
-      ${st.chk!=null||(st.rev&&!chk.q)?`<div class="stack" style="gap:6px"><span class="eyebrow">4 · Now your own work</span><label for="gl-${esc(k.replace(/\W/g,""))}">Where does your draft show this? Give a page, heading or paragraph.</label>
+      ${st.rev&&chk.q?`<div class="stack" style="gap:6px"><span class="eyebrow">4 · Check</span><p style="font-weight:700">${esc(chk.q)}</p><div class="opts">${arr(chk.options).map((o,j)=>`<button data-act="gwchk" data-k="${esc(k)}" data-i="${j}" ${st.chk!=null?"disabled":""} class="${st.chk!=null?(j===chk.answer?"right":j===st.chk?"wrong":""):""}"><span class="k">${"ABCD"[j]}</span><span>${esc(o)}</span></button>`).join("")}</div>${st.chk!=null?`<div class="feedback"><b>${st.chk===chk.answer?"Correct.":"Not quite."}</b> ${esc(chk.why)}</div>`:""}</div>`:""}
+      ${(st.chk!=null||(st.rev&&!chk.q))&&!ownWorkDone(u)?`<div class="stack" style="gap:6px"><span class="eyebrow">5 · Now your own work</span>${ownWorkGate(u)}</div>`:""}
+      ${(st.chk!=null||(st.rev&&!chk.q))&&ownWorkDone(u)?`<div class="stack" style="gap:6px"><span class="eyebrow">5 · Now your own work</span><label for="gl-${esc(k.replace(/\W/g,""))}">Where does your draft show this? Give a page, heading or paragraph.</label>
         <input type="text" id="gl-${esc(k.replace(/\W/g,""))}" data-act="gwloc" data-k="${esc(k)}" value="${esc(st.loc||"")}" placeholder="e.g. Section 2, paragraphs 3–4">
         <div class="seg" role="group" aria-label="Does your draft show this?">${[["no","Not yet"],["part","Partly"],["yes","Yes"]].map(([v,l])=>`<button data-act="gwst" data-k="${esc(k)}" data-v="${v}" aria-pressed="${st.st===v}">${l}</button>`).join("")}</div></div>`:""}
+      `}
       <div class="row"><button class="btn" data-act="gwstep" data-i="${Math.max(0,step-1)}" ${step===0?"disabled":""}>Back</button><button class="btn primary" data-act="gwstep" data-i="${step+1}">${step+1<n?"Next step":"See evidence map"}</button></div>
     </div>`;
   }
-  return `<div class="gw stack"><div class="row" style="justify-content:space-between"><span class="eyebrow">Guided walkthrough · ${esc(code)}</span><button class="btn small ghost" data-act="gwclose">Close</button></div>${nav}${body}</div>`;
+  return `<div class="gw stack"><div class="row" style="justify-content:space-between"><span class="eyebrow">Guided walkthrough · ${esc(code)}</span><button class="btn small ghost" data-act="gwclose">Close</button></div><p class="muted" style="font-size:var(--t-sm)">Practice case only. Learn the thinking, then write your own. Don't copy these examples, or anything an AI writes, into your assignment.</p>${nav}${body}</div>`;
 }
 
 /* ---------- COACH VIEW ---------- */
@@ -638,6 +651,7 @@ function renderCoach(){
     <h2>Distinction coach</h2>
     <p class="lede">At Distinction, assessors look for consistent, outstanding work across the whole unit. D criteria often join two learning aims (like <span class="mono">BC.D2</span>), so plan those sections together.</p>
   </div>
+  ${AI_NOTE}
   <div class="panel stack">
     <span class="eyebrow">The verb tells you the level</span>
     <div class="verbs">
@@ -661,6 +675,7 @@ function renderCoach(){
             <div class="row" style="gap:6px"><select id="st-${u}" data-act="status" data-u="${u}" aria-label="Status">${STATUSES.map(s=>`<option ${S.status[u]===s?"selected":""}>${s}</option>`).join("")}</select>${gradeSelect(u)}</div>
           </div>
         </div>
+        ${["Submitted","Resubmitting","Graded"].includes(S.status[u])?`<p class="notice"><b>This unit is ${esc(S.status[u].toLowerCase())}.</b> After your work is assessed, nobody can coach you on how to improve that piece of evidence, and that includes this hub. ${S.status[u]==="Resubmitting"?"For a resubmission your Lead Internal Verifier has approved, the improvements must be your own work, done without further guidance. ":""}Use the walkthroughs here to prepare for your next units.</p>`:""}
         ${co.bigIdea?`<p class="lede">${esc(co.bigIdea)}</p>`:""}
         <div class="stack" style="gap:6px"><div class="row" style="justify-content:space-between"><span class="eyebrow">Distinction checklist ticked</span><span class="mono" style="font-size:var(--t-sm)">${done}/${tot}</span></div><div class="meter"><span style="width:${tot?done/tot*100:0}%"></span></div></div>
         <div class="grid2">
@@ -1051,6 +1066,8 @@ document.addEventListener("click",e=>{
     case "gwclose": S.gwOpen=null; break;
     case "gwstep": S.gwStep=Number(b.dataset.i); break;
     case "gwpick": gState(b.dataset.k).pick=b.dataset.v; break;
+    case "intack": S.integrityAck=todayISO(); break;
+    case "gwpredone": {const st=gState(b.dataset.k);if(wordCount(st.pre)<5){toast("Write at least a sentence first");return}st.preDone=true;break;}
     case "gwrev": {const st=gState(b.dataset.k);if(wordCount(st.exp)<10){toast("Write at least 10 words first");return}st.rev=true;break;}
     case "gwchk": gState(b.dataset.k).chk=Number(b.dataset.i); break;
     case "gwst": gState(b.dataset.k).st=b.dataset.v; break;
@@ -1080,6 +1097,7 @@ document.addEventListener("change",e=>{
     case "date": S.dates[u]=el.value; break;
     case "dailycap": S.dailyCap=Number(el.value); break;
     case "task": if(el.checked)S.tasksDone[el.dataset.k]=1; else delete S.tasksDone[el.dataset.k]; break;
+    case "ownwork": {S.ownWork=S.ownWork||{};const a=new Set(S.ownWork[u]||[]);const i=Number(el.dataset.i);el.checked?a.add(i):a.delete(i);S.ownWork[u]=[...a];break;}
     case "caldec": {const c=S.cal.find(c=>c.id===el.dataset.id);if(c)c.decision=el.value;break;}
     case "bound": {const k=el.dataset.k;const v=Number(el.value);if(!isNaN(v))S.bounds[u][k]=v;break;}
     case "mark": S.marks[u]=el.value===""?null:Number(el.value); break;
@@ -1087,7 +1105,7 @@ document.addEventListener("change",e=>{
   }
   save(); render();
 });
-document.addEventListener("input",e=>{const el=e.target;if(el.dataset&&(el.dataset.act==="gwexp"||el.dataset.act==="gwloc")){gState(el.dataset.k)[el.dataset.act==="gwexp"?"exp":"loc"]=el.value;save();return}if(el.dataset&&el.dataset.act==="draft"){S.drafts[el.dataset.id]=el.value;save();const w=document.getElementById("wc-"+el.dataset.id);if(w)w.textContent=wordCount(el.value)+" words"}});
+document.addEventListener("input",e=>{const el=e.target;if(el.dataset&&["gwexp","gwloc","gwpre"].includes(el.dataset.act)){gState(el.dataset.k)[{gwexp:"exp",gwloc:"loc",gwpre:"pre"}[el.dataset.act]]=el.value;save();return}if(el.dataset&&el.dataset.act==="draft"){S.drafts[el.dataset.id]=el.value;save();const w=document.getElementById("wc-"+el.dataset.id);if(w)w.textContent=wordCount(el.value)+" words"}});
 document.addEventListener("toggle",e=>{const d=e.target;if(d.matches&&d.matches("details.topic")){const [u,id]=d.dataset.topic.split("|");S["open"+u+id]=d.open;save()}},true);
 
 /* ---------- Boot ---------- */
