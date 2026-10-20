@@ -1,826 +1,826 @@
 {
- "13": {
-  "title": "Scientific Techniques for Health Science",
-  "glh": 60,
-  "assignments": "Up to two summative assignments: Assignment 1 covers learning aim A (A.P1, A.P2, A.M1, A.D1) – usually a research report on how a health-related laboratory handles samples. Assignment 2 covers learning aims B and C together (B.P3–C.P8, B.M2, C.M3, BC.D2, BC.D3) – practical work plus a report on lab techniques and microscopy.",
-  "bigIdea": "A Distinction shows you understand WHY each laboratory procedure exists – not just what you did, but how each step protects accuracy, safety and the patient's diagnosis.",
-  "evidence": [
-   "Keep a dated lab book during every practical: raw results, units, observations, anything that went wrong. Your report is only as strong as the records behind it.",
-   "Ask your tutor for an observation record or witness statement for each practical – Distinction evidence for B and C depends partly on what you actually did at the bench.",
-   "Present data properly: tables with headings and units, correctly calculated concentrations/dilution factors, labelled photomicrographs or drawings with magnification stated.",
-   "For aim A, research one real type of health-related laboratory (e.g. a hospital pathology lab) and keep references to every source you use.",
-   "Link every practical back to real laboratory work – D criteria are about relevance to diagnosis, not just doing the experiment."
-  ],
-  "criteria": {
-   "A.D1": {
-    "verb": "Justify",
-    "decode": "Give reasons and evidence for why a health-related laboratory follows each stage of its procedure for analysing a sample – from receipt to result – and why those procedures are the right ones.",
-    "buildsOn": [
-     "A.P1",
-     "A.P2",
-     "A.M1"
+  "13": {
+    "title": "Scientific Techniques for Health Science",
+    "glh": 60,
+    "assignments": "Up to two summative assignments: Assignment 1 covers learning aim A (A.P1, A.P2, A.M1, A.D1) – usually a research report on how a health-related laboratory handles samples. Assignment 2 covers learning aims B and C together (B.P3–C.P8, B.M2, C.M3, BC.D2, BC.D3) – practical work plus a report on lab techniques and microscopy.",
+    "bigIdea": "A Distinction shows you understand WHY each laboratory procedure exists – not just what you did, but how each step protects accuracy, safety and the patient's diagnosis.",
+    "evidence": [
+      "Keep a dated lab book during every practical: raw results, units, observations, anything that went wrong. Your report is only as strong as the records behind it.",
+      "Ask your tutor for an observation record or witness statement for each practical – Distinction evidence for B and C depends partly on what you actually did at the bench.",
+      "Present data properly: tables with headings and units, correctly calculated concentrations/dilution factors, labelled photomicrographs or drawings with magnification stated.",
+      "For aim A, research one real type of health-related laboratory (e.g. a hospital pathology lab) and keep references to every source you use.",
+      "Link every practical back to real laboratory work – D criteria are about relevance to diagnosis, not just doing the experiment."
     ],
-    "mustInclude": [
-     "Follow the sample journey step by step: receipt, labelling/identification, storage, testing, quality control, reporting.",
-     "For each step, state the reason it exists (accuracy, traceability, preventing contamination, patient safety).",
-     "Link procedures to health and safety requirements – COSHH, risk assessment, PPE, waste disposal (check current versions with your tutor).",
-     "Explain how quality assurance and quality control make results reliable enough for clinicians to act on.",
-     "Use at least one example of an in vitro test (e.g. blood or urine analysis) to illustrate the procedures.",
-     "Consider what could go wrong if a step were skipped – the consequence for the patient's diagnosis.",
-     "Finish with a supported judgement on how well the procedures as a whole protect accuracy and safety."
+    "criteria": {
+      "A.D1": {
+        "verb": "Justify",
+        "decode": "Give reasons and evidence for why a health-related laboratory follows each stage of its procedure for analysing a sample – from receipt to result – and why those procedures are the right ones.",
+        "buildsOn": [
+          "A.P1",
+          "A.P2",
+          "A.M1"
+        ],
+        "mustInclude": [
+          "Follow the sample journey step by step: receipt, labelling/identification, storage, testing, quality control, reporting.",
+          "For each step, state the reason it exists (accuracy, traceability, preventing contamination, patient safety).",
+          "Link procedures to health and safety requirements – COSHH, risk assessment, PPE, waste disposal (check current versions with your tutor).",
+          "Explain how quality assurance and quality control make results reliable enough for clinicians to act on.",
+          "Use at least one example of an in vitro test (e.g. blood or urine analysis) to illustrate the procedures.",
+          "Consider what could go wrong if a step were skipped – the consequence for the patient's diagnosis.",
+          "Finish with a supported judgement on how well the procedures as a whole protect accuracy and safety."
+        ],
+        "pitfalls": [
+          "Describing procedures without giving the reason for each one – that stays at Pass.",
+          "Listing health and safety laws without linking them to specific lab tasks.",
+          "Generic statements like 'this keeps everyone safe' with no evidence or example.",
+          "Forgetting the end user: the doctor and patient who rely on the result."
+        ],
+        "starters": [
+          "The role of this procedure is… because…",
+          "Without this stage, the risk would be… which could lead to…",
+          "Evidence about how effective this approach is includes…"
+        ],
+        "stretch": "Weigh up whether any procedure could be improved and justify why the current approach is still the best balance of speed, accuracy and safety."
+      },
+      "BC.D2": {
+        "verb": "Justify",
+        "decode": "Explain and give evidence for why the techniques you chose and used in your practical investigations were the right ones to get accurate, valid results.",
+        "buildsOn": [
+          "B.P3",
+          "B.P4",
+          "B.P5",
+          "B.P6",
+          "C.P7",
+          "C.P8",
+          "B.M2",
+          "C.M3"
+        ],
+        "mustInclude": [
+          "For each practical, state the desired outcome, then explain why the technique you used was suitable to achieve it.",
+          "Justify aseptic technique steps (e.g. flaming, sterile equipment, incubation conditions) with reference to avoiding contamination.",
+          "Show your concentration and dilution calculations and justify why accuracy in measuring matters.",
+          "Use your actual results as evidence – did the technique produce the expected outcome? Why or why not?",
+          "Identify sources of error and explain how the technique controls (or failed to control) them.",
+          "Justify your choice of stain, magnification and slide preparation in the microscopy work.",
+          "Relate each technique to how it is used in a real health-related laboratory."
+        ],
+        "pitfalls": [
+          "Writing a method recount ('first I…, then I…') instead of reasons.",
+          "Ignoring your own results or errors – D needs you to use them as evidence.",
+          "Not explaining why an alternative technique would have been less suitable.",
+          "Unlabelled data or missing units, which undermines your argument."
+        ],
+        "starters": [
+          "The technique chosen was… because the desired outcome was…",
+          "If my results show…, this supports or challenges the choice because…",
+          "An alternative would have been… however this was less suitable because…"
+        ],
+        "stretch": "Suggest a justified modification that would make one of your techniques more precise, and explain how a real lab achieves this."
+      },
+      "BC.D3": {
+        "verb": "Evaluate",
+        "decode": "Weigh up how useful laboratory procedures and techniques are in giving health professionals a reliable diagnosis to work with, and reach a supported conclusion.",
+        "buildsOn": [
+          "B.M2",
+          "C.M3"
+        ],
+        "mustInclude": [
+          "Consider strengths of the procedures and techniques (accuracy, speed, specificity, safety).",
+          "Consider limitations (cost, time, human error, sensitivity, need for skilled staff, limits of light microscopy).",
+          "Compare techniques, e.g. light microscopy vs other methods, or photomicrographs vs temporary slides.",
+          "Explain how lab results feed into clinical decision making and treatment.",
+          "Use evidence from your own practicals and from research on real laboratories.",
+          "Reach a clear, reasoned conclusion about overall usefulness for diagnosis."
+        ],
+        "pitfalls": [
+          "Only listing advantages – evaluation needs both sides.",
+          "No conclusion, or a conclusion that does not follow from your points.",
+          "Losing sight of the diagnosis and the health professional who uses the result."
+        ],
+        "starters": [
+          "A key strength of this technique for diagnosis is…; however…",
+          "On balance, the evidence suggests…",
+          "This matters to health professionals because…"
+        ],
+        "stretch": "Judge which technique is MOST valuable for diagnosis and explain why, using evidence."
+      }
+    }
+  },
+  "14": {
+    "title": "Physiological Disorders and their Care",
+    "glh": 60,
+    "assignments": "Up to two summative assignments: Assignment 1 covers learning aims A, B and C (A.P1, B.P2, C.P3, C.P4, A.M1, B.M2, C.M3, A.D1, BC.D2) – usually a report on two different physiological disorders. Assignment 2 covers learning aim D (D.P5–D.P7, D.M4, D.D3) – a treatment plan for a selected service user.",
+    "bigIdea": "Distinction work connects the biology of a disorder to the whole person – showing how causes, diagnosis and treatment choices affect physical, mental, social and emotional wellbeing, and why one option is better than another.",
+    "evidence": [
+      "Choose two disorders from different body systems so you can compare effects, investigations and treatments meaningfully.",
+      "Use reliable sources (NHS, NICE, relevant charities, textbooks) and comment on the validity and reliability of the information – this is part of the spec content for aim D.",
+      "Make the treatment plan look professional: clear aims, actions, timescales, locations, who is responsible, how and when it will be reviewed.",
+      "Keep the service user at the centre – reference their age, culture, religion, disability and preferences from the case study in your assignment brief.",
+      "Use body-system vocabulary accurately; link signs and symptoms to the underlying physiological change."
     ],
-    "pitfalls": [
-     "Describing procedures without giving the reason for each one – that stays at Pass.",
-     "Listing health and safety laws without linking them to specific lab tasks.",
-     "Generic statements like 'this keeps everyone safe' with no evidence or example.",
-     "Forgetting the end user: the doctor and patient who rely on the result."
+    "criteria": {
+      "A.D1": {
+        "verb": "Evaluate",
+        "decode": "Weigh up how strongly each physiological disorder affects a service user's health and wellbeing across all areas of their life, and reach a judgement.",
+        "buildsOn": [
+          "A.P1",
+          "A.M1"
+        ],
+        "mustInclude": [
+          "Explain the physiological change in the body system first, then follow it through to its impact.",
+          "Cover physical, mental, social and emotional (PIES/holistic) health and wellbeing.",
+          "Consider how causes (inherited, lifestyle, diet, environment) influence severity or progression.",
+          "Recognise that impact varies between individuals – age, support network, stage of disorder.",
+          "Consider short-term and long-term impacts and any positive coping factors.",
+          "Compare the impacts of your two disorders.",
+          "Reach a supported conclusion about which impacts are most significant and why."
+        ],
+        "pitfalls": [
+          "Listing symptoms without explaining their impact on the person's life.",
+          "Covering only physical effects.",
+          "No judgement or comparison – description of impacts is Pass/Merit level."
+        ],
+        "starters": [
+          "The most significant impact on wellbeing is… because…",
+          "This effect is likely to be greater for someone who…",
+          "In contrast, for a service user with…, the impact is…"
+        ],
+        "stretch": "Show how impacts interact – e.g. how a physical limitation leads to social isolation, which then affects mental health."
+      },
+      "BC.D2": {
+        "verb": "Justify",
+        "decode": "Give reasons and evidence for the benefits of specific investigations and treatment options for people with your selected disorders.",
+        "buildsOn": [
+          "B.P2",
+          "C.P3",
+          "C.P4",
+          "B.M2",
+          "C.M3"
+        ],
+        "mustInclude": [
+          "Name specific investigative and diagnostic procedures (e.g. blood tests, biopsy, imaging, lumbar puncture) and explain what each reveals.",
+          "Justify why each investigation is used – accuracy, early diagnosis, ruling out other conditions, non-specific symptoms.",
+          "Cover a range of treatment options: medication, surgery, rehabilitation, lifestyle advice, complementary therapies.",
+          "Justify the benefits of each option with evidence, and acknowledge drawbacks or risks.",
+          "Consider types of carers and care settings and why they suit the service user.",
+          "Link benefits to the service user's health and wellbeing, not just the disorder."
+        ],
+        "pitfalls": [
+          "Describing procedures without saying why they are beneficial.",
+          "Treating all service users the same – ignoring individual circumstances.",
+          "Not backing up claims with evidence from reliable sources."
+        ],
+        "starters": [
+          "This investigation is beneficial / limited because it allows…",
+          "Evidence from… suggests this treatment option…",
+          "Although this option carries the risk of…, the benefit of… outweighs / does not outweigh this because…"
+        ],
+        "stretch": "Rank treatment options for one service user and justify the ranking."
+      },
+      "D.D3": {
+        "verb": "Justify",
+        "decode": "Give clear reasons and evidence for each recommendation in your treatment plan, linked to the service user's needs and weighing up advantages and disadvantages of the treatment options.",
+        "buildsOn": [
+          "D.P5",
+          "D.P6",
+          "D.P7",
+          "D.M4"
+        ],
+        "mustInclude": [
+          "Start from a clear assessment of the service user's needs (health, personal, cultural, social).",
+          "For every recommendation, state the reason it meets a specific need.",
+          "Weigh advantages and disadvantages of options – benefit to service user, risks, cost to services, practicality.",
+          "Explain why rejected options were less suitable.",
+          "Show how barriers will be overcome and professional responsibilities met.",
+          "Justify timescales, scheduling and the review process (planning cycle).",
+          "Use evidence from reliable sources and comment on their reliability."
+        ],
+        "pitfalls": [
+          "A plan with no explanation of why each element was chosen.",
+          "Ignoring disadvantages or costs of recommended treatments.",
+          "Not reviewing the plan or explaining how it would be adapted (needed for D.M4 too)."
+        ],
+        "starters": [
+          "The option I recommend is… because the service user's need for… means…",
+          "An alternative would be…; however, this is less suitable because…",
+          "The main disadvantage of this option is…, which will be managed by…"
+        ],
+        "stretch": "Show how the plan would be reviewed and adapted if the service user's condition changed, and justify those adaptations."
+      }
+    }
+  },
+  "15": {
+    "title": "Microbiology for Health Science",
+    "glh": 60,
+    "assignments": "Up to three summative assignments: learning aim A (A.P1, A.M1, A.D1) – research report on four micro-organisms; learning aims B and C (B.P2, B.P3, C.P4, C.P5, B.M2, C.M3, BC.D2) – report on human interaction with micro-organisms and global disease; learning aim D (D.P6, D.M4, D.D3) – report on microbes that benefit society.",
+    "bigIdea": "Distinction work moves beyond facts about microbes to judgement: why one control method suits one organism, why disease spreads globally, and whether our relationship with microbes is overall beneficial or harmful.",
+    "evidence": [
+      "Choose contrasting micro-organisms (e.g. a virus, a bacterium, a fungus, a protozoan) so comparisons and justifications have depth.",
+      "Use accurate microbiological vocabulary: prokaryotic/eukaryotic, endemic/epidemic/pandemic, vector, fomite, community immunity.",
+      "Use current, reliable global sources such as the World Health Organization and UK public health bodies, and reference them.",
+      "Use real outbreaks as case studies to provide evidence – but check facts and dates carefully.",
+      "Annotated diagrams of structure and transmission routes can strengthen your report if you explain them."
     ],
-    "starters": [
-     "This procedure is essential because…",
-     "Without this stage, the risk would be… which could lead to…",
-     "The evidence that this approach is effective is…"
+    "criteria": {
+      "A.D1": {
+        "verb": "Justify",
+        "decode": "Give reasons and evidence for why particular methods are used to control two different micro-organisms, linked to the structure, growth needs and reproduction of each.",
+        "buildsOn": [
+          "A.P1",
+          "A.M1"
+        ],
+        "mustInclude": [
+          "Pick two different micro-organisms and explain their structure and growth requirements.",
+          "Identify the control methods used for each (e.g. antibiotics, disinfectants, autoclaving, refrigeration, vector control, barrier nursing).",
+          "Justify why each method works on that organism – link to structure/requirements (e.g. why antibiotics do not work on viruses).",
+          "Include infection-control policies and procedures used in Great Britain.",
+          "Compare the two organisms and explain why different methods are needed.",
+          "Acknowledge limitations, e.g. antibiotic resistance."
+        ],
+        "pitfalls": [
+          "Listing control methods without linking them to the organism's biology.",
+          "Claiming one method works for everything.",
+          "Mixing up bacteria and viruses."
+        ],
+        "starters": [
+          "This method is effective / ineffective against… because…",
+          "Compared with…, this organism…, so control focuses on…",
+          "This approach is… because evidence shows…"
+        ],
+        "stretch": "Discuss how resistance or vector behaviour could reduce the effectiveness of a control method and what would be justified instead."
+      },
+      "BC.D2": {
+        "verb": "Evaluate",
+        "decode": "Weigh up the causes of diseases spreading more globally and the consequences of this, reaching a supported conclusion.",
+        "buildsOn": [
+          "B.P2",
+          "B.P3",
+          "C.P4",
+          "C.P5",
+          "B.M2",
+          "C.M3"
+        ],
+        "mustInclude": [
+          "Explain reasons for global spread: travel, transmission routes, carriers/animal reservoirs, vectors, population density, misuse of antibiotics.",
+          "Use epidemiological terms accurately (endemic, epidemic, pandemic).",
+          "Evaluate consequences for individuals, families, communities and societies.",
+          "Include ethical considerations, e.g. untried drugs, exposing health workers to risk, local customs.",
+          "Consider the role and effectiveness of governments, NGOs and the WHO.",
+          "Use at least one real outbreak as evidence.",
+          "Conclude which reasons/consequences are most significant."
+        ],
+        "pitfalls": [
+          "Describing an outbreak without evaluating why it spread or how serious the consequences were.",
+          "No balance – only negatives or only positives of global responses.",
+          "No conclusion."
+        ],
+        "starters": [
+          "The most significant reason for global spread is… because…",
+          "The consequences were most severe for… as…",
+          "However, the response by… changed the impact by…"
+        ],
+        "stretch": "Judge how far global cooperation can realistically control a future outbreak, using evidence."
+      },
+      "D.D3": {
+        "verb": "Evaluate",
+        "decode": "Weigh up both the positive and negative effects of how humans and micro-organisms interact, and reach an overall judgement.",
+        "buildsOn": [
+          "D.P6",
+          "D.M4"
+        ],
+        "mustInclude": [
+          "Cover positive effects: food production, antibiotics, vaccines, insulin, genetic engineering, normal gut/skin flora.",
+          "Cover negative effects: infection, disease outbreaks, food spoilage, antibiotic resistance.",
+          "Analyse social and economic benefits of at least three micro-organisms.",
+          "Consider ethical or safety issues, e.g. in genetic engineering.",
+          "Balance positives against negatives with evidence.",
+          "Reach a supported conclusion about the overall relationship."
+        ],
+        "pitfalls": [
+          "Writing two separate lists with no weighing up.",
+          "Forgetting normal flora and symbiosis.",
+          "Unsupported opinions."
+        ],
+        "starters": [
+          "While micro-organisms…, they also…",
+          "The benefit of… outweighs / does not outweigh the risk because…",
+          "Overall, the interrelationship is… because…"
+        ],
+        "stretch": "Argue whether the balance of benefit and harm is changing, e.g. due to antibiotic resistance or biotechnology."
+      }
+    }
+  },
+  "16": {
+    "title": "Policy in Health and Social Care",
+    "glh": 60,
+    "assignments": "Up to two summative assignments: Assignment 1 covers learning aims A and B (A.P1, B.P2, B.P3, A.M1, B.M2, AB.D1) – report on how a local setting's practice is affected by government policy and other factors. Assignment 2 covers learning aim C (C.P4–C.P6, C.M3, C.D2, C.D3) – report on how legislation and codes of practice affect workers and service users.",
+    "bigIdea": "A Distinction shows you can trace a line from government policy and legislation all the way to what happens in a real local setting – and judge how well it works for workers and service users.",
+    "evidence": [
+      "Base your work on real local settings (a hospital trust, care home, GP practice, charity) – local examples are explicitly required in the criteria.",
+      "Check structures are current: the spec names the Department of Health and Clinical Commissioning Groups, but these have changed (now the Department of Health and Social Care and Integrated Care Boards in England). Confirm current names with your tutor.",
+      "Name specific sections of legislation (e.g. Care Act 2014, Equality Act 2010, Health and Social Care Act 2008/2012) rather than whole Acts, and check currency.",
+      "Use a range of sources: government publications, CQC reports for local settings, professional codes of practice (NMC, HCPC, GMC, Social Work England).",
+      "Evaluate – don't just describe policy. Every section should end with 'so how effective is this?'"
     ],
-    "stretch": "Weigh up whether any procedure could be improved and justify why the current approach is still the best balance of speed, accuracy and safety."
-   },
-   "BC.D2": {
-    "verb": "Justify",
-    "decode": "Explain and give evidence for why the techniques you chose and used in your practical investigations were the right ones to get accurate, valid results.",
-    "buildsOn": [
-     "B.P3",
-     "B.P4",
-     "B.P5",
-     "B.P6",
-     "C.P7",
-     "C.P8",
-     "B.M2",
-     "C.M3"
+    "criteria": {
+      "AB.D1": {
+        "verb": "Evaluate",
+        "decode": "Weigh up how a local setting's practice is shaped by government policy and other factors (pressure groups, media, research, demographics), and how well it meets objectives and the needs of a specific service user group.",
+        "buildsOn": [
+          "A.P1",
+          "B.P2",
+          "B.P3",
+          "A.M1",
+          "B.M2"
+        ],
+        "mustInclude": [
+          "Explain how central and local government work together to make and fund policy.",
+          "Identify specific objectives the local setting must meet and how it meets them.",
+          "Evaluate the influence of other factors – political parties, lobbying, research, media and social media, campaigns, service users.",
+          "Focus on one specific service user group and how well their needs are represented and met.",
+          "Weigh strengths against limitations (funding, staffing, competing priorities).",
+          "Use real evidence, e.g. inspection reports or published data.",
+          "Reach a supported conclusion."
+        ],
+        "pitfalls": [
+          "General descriptions of how laws are made with no link to a local setting.",
+          "Ignoring the 'other factors' – the criterion asks for more than government.",
+          "No judgement on how well objectives and service users' needs are met."
+        ],
+        "starters": [
+          "Government policy has influenced practice at… by…",
+          "However, the setting's ability to meet this objective is affected by…",
+          "On balance, the needs of… are met to a large/limited extent because…"
+        ],
+        "stretch": "Compare the influence of government with one other factor and judge which has had the greater impact on practice."
+      },
+      "C.D2": {
+        "verb": "Evaluate",
+        "decode": "Weigh up the ways legislation and codes of practice affect both workers and service users in different local health or social care settings.",
+        "buildsOn": [
+          "C.P4",
+          "C.P5",
+          "C.P6",
+          "C.M3"
+        ],
+        "mustInclude": [
+          "Use at least two different local settings.",
+          "Identify specific legislation and specific codes of practice relevant to each.",
+          "Explain how they shape everyday worker practice, e.g. hand washing, treatment, equipment use, involving third parties.",
+          "Explain how they affect service users: entitlement, access, having needs met, complaints, refusing treatment.",
+          "Weigh positives (protection, rights, consistency) against negatives (paperwork, cost, defensive practice).",
+          "Compare effects across the settings.",
+          "Reach a supported judgement."
+        ],
+        "pitfalls": [
+          "Describing what an Act says without showing its effect in practice.",
+          "Only covering workers or only covering service users.",
+          "Out-of-date legislation or organisation names."
+        ],
+        "starters": [
+          "In practice, this legislation requires workers at… to…",
+          "For service users, the effect is…, although…",
+          "Comparing the two settings, the impact is greater in… than in…, because…"
+        ],
+        "stretch": "Judge whether the codes of practice or the legislation have the greater day-to-day effect, with evidence."
+      },
+      "C.D3": {
+        "verb": "Evaluate",
+        "decode": "Make a supported judgement about whether policy making has actually improved the health and wellbeing of service users in different local settings.",
+        "buildsOn": [
+          "C.P6",
+          "C.M3"
+        ],
+        "mustInclude": [
+          "Identify a specific policy and the improvement it intended.",
+          "Use evidence (data, inspection reports, research) to judge whether wellbeing has improved.",
+          "Consider different local settings and service user groups.",
+          "Consider unintended consequences and barriers to implementation.",
+          "Balance successes against failures or gaps.",
+          "Reach a clear conclusion – has policy improved health and wellbeing, and for whom?"
+        ],
+        "pitfalls": [
+          "Assuming policy has worked because it exists.",
+          "No evidence of outcomes.",
+          "Sitting on the fence without a conclusion."
+        ],
+        "starters": [
+          "The policy aimed to…; evidence from… suggests…",
+          "However, this improvement was / was not seen for… because…",
+          "Overall, policy making has improved wellbeing to a… extent because…"
+        ],
+        "stretch": "Recommend a justified change to policy or implementation based on your evaluation."
+      }
+    }
+  },
+  "17": {
+    "title": "Caring for Individuals with Dementia",
+    "glh": 60,
+    "assignments": "Up to two summative assignments: Assignment 1 covers learning aims A and B (A.P1, A.P2, B.P3, B.P4, A.M1, B.M2, AB.D1) – report on types, causes, symptoms and progressive effects of dementia. Assignment 2 covers learning aim C (C.P5, C.P6, C.M3, C.D2, C.D3) – report based on a case study of one individual.",
+    "bigIdea": "Distinction work keeps the person, not the disease, at the centre: it shows how different dementias progress and why holistic, person-centred and flexible care protects dignity, rights and quality of life.",
+    "evidence": [
+      "Cover three types of dementia (e.g. Alzheimer's, vascular, dementia with Lewy bodies, frontotemporal) so you can compare causes, symptoms and progression.",
+      "Use reliable sources such as the NHS, Alzheimer's Society, Dementia UK and SCIE, and reference them.",
+      "For assignment 2, apply everything to the individual in your case study – refer to them throughout, not just at the start.",
+      "Show awareness of relevant legislation and safeguarding (e.g. Mental Capacity Act 2005, lasting power of attorney) and check currency with your tutor.",
+      "Use the care planning cycle to structure your discussion of flexible care."
     ],
-    "mustInclude": [
-     "For each practical, state the desired outcome, then explain why the technique you used was suitable to achieve it.",
-     "Justify aseptic technique steps (e.g. flaming, sterile equipment, incubation conditions) with reference to avoiding contamination.",
-     "Show your concentration and dilution calculations and justify why accuracy in measuring matters.",
-     "Use your actual results as evidence – did the technique produce the expected outcome? Why or why not?",
-     "Identify sources of error and explain how the technique controls (or failed to control) them.",
-     "Justify your choice of stain, magnification and slide preparation in the microscopy work.",
-     "Relate each technique to how it is used in a real health-related laboratory."
+    "criteria": {
+      "AB.D1": {
+        "verb": "Evaluate",
+        "decode": "Weigh up why it matters that carers understand how different types of dementia progressively affect every aspect of a person's health and wellbeing.",
+        "buildsOn": [
+          "A.P1",
+          "A.P2",
+          "B.P3",
+          "B.P4",
+          "A.M1",
+          "B.M2"
+        ],
+        "mustInclude": [
+          "Explain the causes and distinctive symptoms of three types of dementia.",
+          "Show how effects progress over time – early, middle and later stages.",
+          "Cover mental and physical health: reasoning, communication, information processing, sleep, behaviour, movement, anxiety and depression.",
+          "Cover quality of life: dignity, privacy, daily routines, managing affairs, social interaction, loss of status and skills.",
+          "Explain how understanding the specific type helps carers respond appropriately (e.g. falls risk in Lewy bodies, disinhibition in FTD).",
+          "Weigh the benefits of this understanding against limitations (mixed dementia, individual variation, diagnosis difficulties).",
+          "Conclude on how important this understanding is."
+        ],
+        "pitfalls": [
+          "Describing types of dementia without evaluating why understanding them matters.",
+          "Treating all dementias as the same.",
+          "Ignoring progression over time."
+        ],
+        "starters": [
+          "Understanding that… is important because carers can…",
+          "As… changes, the person may…, which means…",
+          "However, individual experiences vary, so…"
+        ],
+        "stretch": "Show how a misunderstanding of the type of dementia could lead to inappropriate care, and its consequences."
+      },
+      "C.D2": {
+        "verb": "Justify",
+        "decode": "Give reasons and evidence for the impact and benefits of holistic, person-centred care for the individual in your case study.",
+        "buildsOn": [
+          "C.P5",
+          "C.P6",
+          "C.M3"
+        ],
+        "mustInclude": [
+          "Apply the principles: dignity, privacy, respect, independence, rights, empowerment, cultural/religious needs, advocacy.",
+          "Cover holistic care – medication, diet and fluids, activity and exercise, sensory stimulation, reminiscence, complementary therapies.",
+          "Balance safeguarding and protection with independence and rights.",
+          "Link every benefit to the specific individual's needs, history and preferences.",
+          "Use evidence that person-centred approaches improve wellbeing.",
+          "Explain how involving the individual and family strengthens care."
+        ],
+        "pitfalls": [
+          "General points about person-centred care that never mention the individual.",
+          "Listing activities without justifying their benefit.",
+          "Ignoring tensions between safety and independence."
+        ],
+        "starters": [
+          "For [individual], this approach is beneficial / not beneficial because…",
+          "This relates to their right to… and to protecting them from…",
+          "Evidence suggests that… affects wellbeing by…"
+        ],
+        "stretch": "Justify how you would prioritise care if two principles conflicted for this individual."
+      },
+      "C.D3": {
+        "verb": "Evaluate",
+        "decode": "Weigh up how well current practice in dementia care meets the individual's needs by managing the effects of dementia and maintaining health and wellbeing.",
+        "buildsOn": [
+          "C.P5",
+          "C.P6",
+          "C.M3"
+        ],
+        "mustInclude": [
+          "Identify current practice used with the individual: assessment, aids and assistive technology, medication management, personal care, safe environments.",
+          "Judge how well each meets the individual's needs.",
+          "Evaluate the care planning cycle – regular reviews, responding to fluctuating abilities, focusing on strengths.",
+          "Consider limitations – resources, staffing, consistency, family capacity.",
+          "Use evidence from the case study and wider sources.",
+          "Reach a supported conclusion and suggest improvements."
+        ],
+        "pitfalls": [
+          "Describing care without judging its effectiveness.",
+          "Only positives.",
+          "No conclusion."
+        ],
+        "starters": [
+          "Current practice meets / does not meet [individual]'s need for… because…; however…",
+          "A limitation of this approach is…",
+          "Overall, current practice is effective in… but less effective in…"
+        ],
+        "stretch": "Recommend one evidence-based change to current practice and justify its expected impact."
+      }
+    }
+  },
+  "18": {
+    "title": "Assessing Children's Development Support Needs",
+    "glh": 60,
+    "assignments": "Up to two summative assignments: Assignment 1 covers learning aim A (A.P1, A.P2, A.M1, A.M2, A.D1) – report on case studies of children of different ages. Assignment 2 covers learning aims B and C (B.P3, C.P4, C.P5, B.M3, C.M4, C.M5, BC.D2, BC.D3) – report based on your own observations, including plans, records and a reflective account.",
+    "bigIdea": "Distinction work uses theory and observation together: you judge how far theories and assessment methods genuinely help professionals spot needs early and support children to reach their milestones.",
+    "evidence": [
+      "Your observations must be your own – plan them carefully (method, area of development, timing, permissions, confidentiality) and keep original records.",
+      "Use a range of observation/recording methods (e.g. checklist, time sample) so you can assess and justify your choices.",
+      "Compare children's development against milestones for their age, and acknowledge that rates of development vary.",
+      "Apply theorists from the spec accurately – e.g. Piaget, Vygotsky, Bandura, Skinner, Bowlby, Erikson, Chomsky.",
+      "Write the reflective account honestly: what worked, what didn't, what you'd change. Follow your setting's and tutor's ethical guidance throughout."
     ],
-    "pitfalls": [
-     "Writing a method recount ('first I…, then I…') instead of reasons.",
-     "Ignoring your own results or errors – D needs you to use them as evidence.",
-     "Not explaining why an alternative technique would have been less suitable.",
-     "Unlabelled data or missing units, which undermines your argument."
+    "criteria": {
+      "A.D1": {
+        "verb": "Evaluate",
+        "decode": "Weigh up how far theories of growth and development can actually be used to support the children in your case studies.",
+        "buildsOn": [
+          "A.P1",
+          "A.P2",
+          "A.M1",
+          "A.M2"
+        ],
+        "mustInclude": [
+          "Apply specific theories to each child's stage of development.",
+          "Show how each theory could inform practical support (e.g. scaffolding, positive reinforcement, secure attachment).",
+          "Consider strengths of each theory in this context.",
+          "Consider limitations – cultural bias, rigid stages, research methods, individual variation.",
+          "Compare theories and say which is most useful for each child.",
+          "Reach a supported judgement on the extent theories help."
+        ],
+        "pitfalls": [
+          "Describing theories without applying them to the children.",
+          "Only strengths – no limitations.",
+          "Saying 'to a large extent' with no reasoning."
+        ],
+        "starters": [
+          "The… theory helps / does not help support [child] because…; however…",
+          "A limitation of applying this theory is…",
+          "To a large/limited extent, theory supports [child] because…"
+        ],
+        "stretch": "Argue which combination of theories gives the best support for a child, and why."
+      },
+      "BC.D2": {
+        "verb": "Justify",
+        "decode": "Give reasons and evidence for the assessment approaches used to recognise children's needs early and support children with different needs.",
+        "buildsOn": [
+          "B.P3",
+          "C.P4",
+          "C.P5",
+          "B.M3",
+          "C.M4",
+          "C.M5"
+        ],
+        "mustInclude": [
+          "Explain the range of assessment methods: formal, informal, formative, summative, screening, growth monitoring and centile charts, assessment frameworks.",
+          "Justify why particular methods suit particular needs or areas of development.",
+          "Use your own observations as evidence – why you chose each method and what it revealed.",
+          "Explain how early recognition leads to earlier interventions (care plans, learning plans, behaviour plans, specialist referral).",
+          "Justify involving parents and sharing information with professionals, with attention to confidentiality.",
+          "Link the impact of factors (personal, prenatal, socio-economic, environmental, emotional, transitions) to the need for assessment."
+        ],
+        "pitfalls": [
+          "Describing assessment methods with no justification.",
+          "Not using your own observation evidence.",
+          "Ignoring ethics and permissions."
+        ],
+        "starters": [
+          "This method is the most appropriate for identifying… because…",
+          "If an observation of… showed…, it would support or challenge the use of… because…",
+          "Early recognition matters / matters less in this case because…"
+        ],
+        "stretch": "Justify how you would adapt your assessment approach for a child with atypical development."
+      },
+      "BC.D3": {
+        "verb": "Evaluate",
+        "decode": "Weigh up how far professionals help children reach developmental milestones by applying theories and using assessment methods.",
+        "buildsOn": [
+          "B.M3",
+          "C.M4",
+          "C.M5"
+        ],
+        "mustInclude": [
+          "Identify what professionals do: assessment, planning, intervention, monitoring and review.",
+          "Evaluate how well theory-informed practice supports milestones.",
+          "Evaluate how effective assessment methods are in practice, including limitations (observer bias, snapshot nature, time).",
+          "Consider factors that limit success (resources, family circumstances, multiple factors at once).",
+          "Use your reflective account and observation findings as evidence.",
+          "Reach a supported conclusion."
+        ],
+        "pitfalls": [
+          "Describing professional roles without judging effectiveness.",
+          "Forgetting to link back to milestones.",
+          "No conclusion."
+        ],
+        "starters": [
+          "Professionals are effective at… because…; however…",
+          "If observations of… show…, this suggests…",
+          "Overall, the extent to which professionals help children meet milestones is… because…"
+        ],
+        "stretch": "Suggest a justified improvement to how professionals combine theory and assessment."
+      }
+    }
+  },
+  "19": {
+    "title": "Nutritional Health",
+    "glh": 60,
+    "assignments": "Up to two summative assignments: Assignment 1 covers learning aims A and B (A.P1, A.P2, B.P3, B.P4, A.M1, B.M2, AB.D1) – report relating dietary intake and nutrients to two individuals with different needs. Assignment 2 covers learning aim C (C.P5, C.P6, C.M3, C.M4, C.D2, C.D3) – nutrition improvement plans for two individuals.",
+    "bigIdea": "Distinction work turns nutrition science into personalised, realistic plans – every recommendation is backed by numbers, nutrient functions and the individual's real circumstances.",
+    "evidence": [
+      "Analyse food diaries quantitatively: energy, protein, fat, iron, vitamin C, fibre, and proportion of energy from fat, compared with reference values (RNIs/DRVs).",
+      "Show your calculations and sources of nutritional data (food tables, packaging, databases).",
+      "Make plans professionally presented and realistic: meals, snacks, drinks, portion sizes, cooking methods, activity, monitoring.",
+      "Always link recommendations to the individual's culture, preferences, budget, health conditions and lifestyle.",
+      "Use current government guidance (e.g. the Eatwell Guide) and check that any guidance you cite is current with your tutor."
     ],
-    "starters": [
-     "I selected this technique because the desired outcome was…",
-     "My results support this choice because…",
-     "An alternative would have been… however this was less suitable because…"
+    "criteria": {
+      "AB.D1": {
+        "verb": "Evaluate",
+        "decode": "Weigh up how nutritional health maintains each individual's health and wellbeing and how strongly different factors influence it.",
+        "buildsOn": [
+          "A.P1",
+          "A.P2",
+          "B.P3",
+          "B.P4",
+          "A.M1",
+          "B.M2"
+        ],
+        "mustInclude": [
+          "Relate nutrient functions and deficiencies to each individual's health.",
+          "Use your dietary analysis to compare actual intake with recommendations.",
+          "Evaluate influencing factors: dietary habits, lifestyle, socio-economic, cultural, education, conditions such as diabetes or intolerances.",
+          "Judge which factors have the greatest impact for each individual.",
+          "Compare the two individuals.",
+          "Reach a supported conclusion."
+        ],
+        "pitfalls": [
+          "Describing nutrients in general rather than for the selected individuals.",
+          "Listing factors without judging their significance.",
+          "No use of dietary analysis data."
+        ],
+        "starters": [
+          "[Individual]'s intake of… compared with the RNI is…, which may affect… because…",
+          "The most significant factor influencing their diet is… because…",
+          "In comparison, [second individual]…"
+        ],
+        "stretch": "Show how factors interact, e.g. cost and access combining with cultural preferences."
+      },
+      "C.D2": {
+        "verb": "Justify",
+        "decode": "Give reasons and evidence for each recommendation in your nutrition plans, linked to the individuals' needs and situations.",
+        "buildsOn": [
+          "C.P5",
+          "C.P6",
+          "C.M3",
+          "C.M4"
+        ],
+        "mustInclude": [
+          "Link every recommendation to a specific need identified in your analysis.",
+          "Use nutrient functions and reference values as evidence.",
+          "Show recommendations are realistic for the person's budget, culture, preferences and lifestyle.",
+          "Explain why alternatives were rejected.",
+          "Justify activity recommendations and energy balance.",
+          "Justify how the plan will be monitored."
+        ],
+        "pitfalls": [
+          "Generic healthy eating advice not tailored to the individual.",
+          "No evidence or reference values.",
+          "Ignoring practical constraints."
+        ],
+        "starters": [
+          "My recommendation is… because the analysis for [individual] showed…",
+          "This is realistic for them because…",
+          "An alternative would be…; however…"
+        ],
+        "stretch": "Anticipate barriers to following the plan and justify how you would overcome them."
+      },
+      "C.D3": {
+        "verb": "Evaluate",
+        "decode": "Weigh up why planning nutritional health matters for the selected individuals so that dietary needs are met and influencing factors are considered.",
+        "buildsOn": [
+          "C.M3",
+          "C.M4"
+        ],
+        "mustInclude": [
+          "Explain the benefits of planning (meeting needs, preventing deficiency, managing conditions).",
+          "Consider the challenges and limitations of planning (compliance, cost, accuracy of food diaries).",
+          "Show how planning takes influencing factors into account.",
+          "Use evidence from your two plans.",
+          "Consider monitoring and review.",
+          "Reach a supported conclusion."
+        ],
+        "pitfalls": [
+          "Restating the plan rather than evaluating the importance of planning.",
+          "Ignoring limitations.",
+          "No conclusion."
+        ],
+        "starters": [
+          "Planning is important for [individual] because…",
+          "However, the plan's success depends on…",
+          "Overall,…"
+        ],
+        "stretch": "Judge which individual benefits most from planning and why."
+      }
+    }
+  },
+  "20": {
+    "title": "Understanding Mental Wellbeing",
+    "glh": 60,
+    "assignments": "Up to two summative assignments: Assignment 1 covers learning aims A and B (A.P1, B.P2, B.P3, A.M1, B.M2, AB.D1) – case study report on mental health and wellbeing and classification systems. Assignment 2 covers learning aims C and D (C.P4, C.P5, D.P6, C.M3, D.M4, CD.D2, D.D3) – report on promoting, protecting and restoring the mental wellbeing of a selected individual.",
+    "bigIdea": "Distinction work evaluates – it questions how mental health is defined and diagnosed, and judges how well strategies, legislation and treatment actually promote recovery for a real individual.",
+    "evidence": [
+      "Use the case study in your assignment brief throughout – apply every concept to the individual.",
+      "Refer accurately to classification systems (DSM and ICD) and their strengths and limitations.",
+      "Name relevant legislation and codes of practice (e.g. Mental Health Act 1983 as amended, Mental Capacity Act 2005, Equality Act 2010, Human Rights Act 1998); mental health law has been under reform, so check what is current with your tutor.",
+      "Use reliable sources (NHS, NICE, Mind, Rethink Mental Illness) and reference them.",
+      "Write sensitively and avoid stigmatising language."
     ],
-    "stretch": "Suggest a justified modification that would make one of your techniques more precise, and explain how a real lab achieves this."
-   },
-   "BC.D3": {
-    "verb": "Evaluate",
-    "decode": "Weigh up how useful laboratory procedures and techniques are in giving health professionals a reliable diagnosis to work with, and reach a supported conclusion.",
-    "buildsOn": [
-     "B.M2",
-     "C.M3"
-    ],
-    "mustInclude": [
-     "Consider strengths of the procedures and techniques (accuracy, speed, specificity, safety).",
-     "Consider limitations (cost, time, human error, sensitivity, need for skilled staff, limits of light microscopy).",
-     "Compare techniques, e.g. light microscopy vs other methods, or photomicrographs vs temporary slides.",
-     "Explain how lab results feed into clinical decision making and treatment.",
-     "Use evidence from your own practicals and from research on real laboratories.",
-     "Reach a clear, reasoned conclusion about overall usefulness for diagnosis."
-    ],
-    "pitfalls": [
-     "Only listing advantages – evaluation needs both sides.",
-     "No conclusion, or a conclusion that does not follow from your points.",
-     "Losing sight of the diagnosis and the health professional who uses the result."
-    ],
-    "starters": [
-     "A key strength of this technique for diagnosis is…; however…",
-     "On balance, the evidence suggests…",
-     "This matters to health professionals because…"
-    ],
-    "stretch": "Judge which technique is MOST valuable for diagnosis and explain why, using evidence."
-   }
+    "criteria": {
+      "AB.D1": {
+        "verb": "Evaluate",
+        "decode": "Weigh up different ways of understanding mental health and wellbeing, and how well current classification systems improve diagnosis of selected conditions.",
+        "buildsOn": [
+          "A.P1",
+          "B.P2",
+          "B.P3",
+          "A.M1",
+          "B.M2"
+        ],
+        "mustInclude": [
+          "Explain views on the nature of mental wellbeing, e.g. the Dual Axis model and mental capital.",
+          "Apply factors that influence mental health (biological, psychological, socio-economic, risk and protective factors).",
+          "Explain how DSM and ICD classify the selected conditions and their symptoms.",
+          "Evaluate strengths: shared language, awareness, research, treatment.",
+          "Evaluate limitations: labelling and stigma, atypical presentations, cultural bias, reliability.",
+          "Reach a supported conclusion."
+        ],
+        "pitfalls": [
+          "Describing conditions without evaluating classification.",
+          "One-sided arguments.",
+          "No link to the case study individual."
+        ],
+        "starters": [
+          "The… model suggests…, which helps to understand…",
+          "Classification affects diagnosis by…; however…",
+          "On balance,…"
+        ],
+        "stretch": "Judge whether classification systems help or hinder the selected individual most."
+      },
+      "CD.D2": {
+        "verb": "Evaluate",
+        "decode": "Weigh up why it is important to promote, protect and restore the mental wellbeing of the selected individual.",
+        "buildsOn": [
+          "C.P4",
+          "C.P5",
+          "D.P6",
+          "C.M3",
+          "D.M4"
+        ],
+        "mustInclude": [
+          "Explain the impact of mental ill health on the individual and their relationships.",
+          "Cover treatments and their outcomes, including ethical issues such as informed consent.",
+          "Evaluate strategies: early intervention, person-centred approaches, advocacy, self-management, recovery.",
+          "Link to legislation and codes of practice that protect the individual.",
+          "Consider the impact on family, informal carers and the community.",
+          "Reach a supported conclusion."
+        ],
+        "pitfalls": [
+          "Listing strategies without evaluating their importance.",
+          "Ignoring the social network.",
+          "No reference to legislation."
+        ],
+        "starters": [
+          "Promoting… for [individual] matters because…",
+          "Protecting their rights through… matters because…",
+          "Overall,…"
+        ],
+        "stretch": "Weigh which of promoting, protecting or restoring is most important for this individual now."
+      },
+      "D.D3": {
+        "verb": "Evaluate",
+        "decode": "Weigh up how far accurate diagnosis of mental ill-health conditions leads to the correct treatment.",
+        "buildsOn": [
+          "B.M2",
+          "D.M4"
+        ],
+        "mustInclude": [
+          "Explain the assessment process and the role of professionals.",
+          "Explain how accurate diagnosis informs treatment choices.",
+          "Consider problems: misdiagnosis, atypical presentations, comorbidity, stigma.",
+          "Consider that treatment also depends on individual preferences and needs.",
+          "Use evidence from the case study and research.",
+          "Reach a supported conclusion."
+        ],
+        "pitfalls": [
+          "Assuming diagnosis always leads to correct treatment.",
+          "No evidence.",
+          "No conclusion."
+        ],
+        "starters": [
+          "The importance of accurate diagnosis is…, because…",
+          "However, diagnosis alone does not guarantee…",
+          "Overall,…"
+        ],
+        "stretch": "Discuss how a person-centred approach can compensate for the limits of diagnosis."
+      }
+    }
   }
- },
- "14": {
-  "title": "Physiological Disorders and their Care",
-  "glh": 60,
-  "assignments": "Up to two summative assignments: Assignment 1 covers learning aims A, B and C (A.P1, B.P2, C.P3, C.P4, A.M1, B.M2, C.M3, A.D1, BC.D2) – usually a report on two different physiological disorders. Assignment 2 covers learning aim D (D.P5–D.P7, D.M4, D.D3) – a treatment plan for a selected service user.",
-  "bigIdea": "Distinction work connects the biology of a disorder to the whole person – showing how causes, diagnosis and treatment choices affect physical, mental, social and emotional wellbeing, and why one option is better than another.",
-  "evidence": [
-   "Choose two disorders from different body systems so you can compare effects, investigations and treatments meaningfully.",
-   "Use reliable sources (NHS, NICE, relevant charities, textbooks) and comment on the validity and reliability of the information – this is part of the spec content for aim D.",
-   "Make the treatment plan look professional: clear aims, actions, timescales, locations, who is responsible, how and when it will be reviewed.",
-   "Keep the service user at the centre – reference their age, culture, religion, disability and preferences from the case study in your assignment brief.",
-   "Use body-system vocabulary accurately; link signs and symptoms to the underlying physiological change."
-  ],
-  "criteria": {
-   "A.D1": {
-    "verb": "Evaluate",
-    "decode": "Weigh up how strongly each physiological disorder affects a service user's health and wellbeing across all areas of their life, and reach a judgement.",
-    "buildsOn": [
-     "A.P1",
-     "A.M1"
-    ],
-    "mustInclude": [
-     "Explain the physiological change in the body system first, then follow it through to its impact.",
-     "Cover physical, mental, social and emotional (PIES/holistic) health and wellbeing.",
-     "Consider how causes (inherited, lifestyle, diet, environment) influence severity or progression.",
-     "Recognise that impact varies between individuals – age, support network, stage of disorder.",
-     "Consider short-term and long-term impacts and any positive coping factors.",
-     "Compare the impacts of your two disorders.",
-     "Reach a supported conclusion about which impacts are most significant and why."
-    ],
-    "pitfalls": [
-     "Listing symptoms without explaining their impact on the person's life.",
-     "Covering only physical effects.",
-     "No judgement or comparison – description of impacts is Pass/Merit level."
-    ],
-    "starters": [
-     "The most significant impact on wellbeing is… because…",
-     "This effect is likely to be greater for someone who…",
-     "In contrast, for a service user with…, the impact is…"
-    ],
-    "stretch": "Show how impacts interact – e.g. how a physical limitation leads to social isolation, which then affects mental health."
-   },
-   "BC.D2": {
-    "verb": "Justify",
-    "decode": "Give reasons and evidence for the benefits of specific investigations and treatment options for people with your selected disorders.",
-    "buildsOn": [
-     "B.P2",
-     "C.P3",
-     "C.P4",
-     "B.M2",
-     "C.M3"
-    ],
-    "mustInclude": [
-     "Name specific investigative and diagnostic procedures (e.g. blood tests, biopsy, imaging, lumbar puncture) and explain what each reveals.",
-     "Justify why each investigation is used – accuracy, early diagnosis, ruling out other conditions, non-specific symptoms.",
-     "Cover a range of treatment options: medication, surgery, rehabilitation, lifestyle advice, complementary therapies.",
-     "Justify the benefits of each option with evidence, and acknowledge drawbacks or risks.",
-     "Consider types of carers and care settings and why they suit the service user.",
-     "Link benefits to the service user's health and wellbeing, not just the disorder."
-    ],
-    "pitfalls": [
-     "Describing procedures without saying why they are beneficial.",
-     "Treating all service users the same – ignoring individual circumstances.",
-     "Not backing up claims with evidence from reliable sources."
-    ],
-    "starters": [
-     "This investigation is particularly beneficial because it allows…",
-     "Evidence from… suggests this treatment option…",
-     "Although this option carries the risk of…, the benefit of… outweighs this because…"
-    ],
-    "stretch": "Rank treatment options for one service user and justify the ranking."
-   },
-   "D.D3": {
-    "verb": "Justify",
-    "decode": "Give clear reasons and evidence for each recommendation in your treatment plan, linked to the service user's needs and weighing up advantages and disadvantages of the treatment options.",
-    "buildsOn": [
-     "D.P5",
-     "D.P6",
-     "D.P7",
-     "D.M4"
-    ],
-    "mustInclude": [
-     "Start from a clear assessment of the service user's needs (health, personal, cultural, social).",
-     "For every recommendation, state the reason it meets a specific need.",
-     "Weigh advantages and disadvantages of options – benefit to service user, risks, cost to services, practicality.",
-     "Explain why rejected options were less suitable.",
-     "Show how barriers will be overcome and professional responsibilities met.",
-     "Justify timescales, scheduling and the review process (planning cycle).",
-     "Use evidence from reliable sources and comment on their reliability."
-    ],
-    "pitfalls": [
-     "A plan with no explanation of why each element was chosen.",
-     "Ignoring disadvantages or costs of recommended treatments.",
-     "Not reviewing the plan or explaining how it would be adapted (needed for D.M4 too)."
-    ],
-    "starters": [
-     "I have recommended… because the service user's need for… means…",
-     "An alternative would be…; however, this is less suitable because…",
-     "The main disadvantage of this option is…, which will be managed by…"
-    ],
-    "stretch": "Show how the plan would be reviewed and adapted if the service user's condition changed, and justify those adaptations."
-   }
-  }
- },
- "15": {
-  "title": "Microbiology for Health Science",
-  "glh": 60,
-  "assignments": "Up to three summative assignments: learning aim A (A.P1, A.M1, A.D1) – research report on four micro-organisms; learning aims B and C (B.P2, B.P3, C.P4, C.P5, B.M2, C.M3, BC.D2) – report on human interaction with micro-organisms and global disease; learning aim D (D.P6, D.M4, D.D3) – report on microbes that benefit society.",
-  "bigIdea": "Distinction work moves beyond facts about microbes to judgement: why one control method suits one organism, why disease spreads globally, and whether our relationship with microbes is overall beneficial or harmful.",
-  "evidence": [
-   "Choose contrasting micro-organisms (e.g. a virus, a bacterium, a fungus, a protozoan) so comparisons and justifications have depth.",
-   "Use accurate microbiological vocabulary: prokaryotic/eukaryotic, endemic/epidemic/pandemic, vector, fomite, community immunity.",
-   "Use current, reliable global sources such as the World Health Organization and UK public health bodies, and reference them.",
-   "Use real outbreaks as case studies to provide evidence – but check facts and dates carefully.",
-   "Annotated diagrams of structure and transmission routes can strengthen your report if you explain them."
-  ],
-  "criteria": {
-   "A.D1": {
-    "verb": "Justify",
-    "decode": "Give reasons and evidence for why particular methods are used to control two different micro-organisms, linked to the structure, growth needs and reproduction of each.",
-    "buildsOn": [
-     "A.P1",
-     "A.M1"
-    ],
-    "mustInclude": [
-     "Pick two different micro-organisms and explain their structure and growth requirements.",
-     "Identify the control methods used for each (e.g. antibiotics, disinfectants, autoclaving, refrigeration, vector control, barrier nursing).",
-     "Justify why each method works on that organism – link to structure/requirements (e.g. why antibiotics do not work on viruses).",
-     "Include infection-control policies and procedures used in Great Britain.",
-     "Compare the two organisms and explain why different methods are needed.",
-     "Acknowledge limitations, e.g. antibiotic resistance."
-    ],
-    "pitfalls": [
-     "Listing control methods without linking them to the organism's biology.",
-     "Claiming one method works for everything.",
-     "Mixing up bacteria and viruses."
-    ],
-    "starters": [
-     "This method is effective against… because its structure…",
-     "Unlike…, this organism requires…, so control focuses on…",
-     "This approach is justified because evidence shows…"
-    ],
-    "stretch": "Discuss how resistance or vector behaviour could reduce the effectiveness of a control method and what would be justified instead."
-   },
-   "BC.D2": {
-    "verb": "Evaluate",
-    "decode": "Weigh up the causes of diseases spreading more globally and the consequences of this, reaching a supported conclusion.",
-    "buildsOn": [
-     "B.P2",
-     "B.P3",
-     "C.P4",
-     "C.P5",
-     "B.M2",
-     "C.M3"
-    ],
-    "mustInclude": [
-     "Explain reasons for global spread: travel, transmission routes, carriers/animal reservoirs, vectors, population density, misuse of antibiotics.",
-     "Use epidemiological terms accurately (endemic, epidemic, pandemic).",
-     "Evaluate consequences for individuals, families, communities and societies.",
-     "Include ethical considerations, e.g. untried drugs, exposing health workers to risk, local customs.",
-     "Consider the role and effectiveness of governments, NGOs and the WHO.",
-     "Use at least one real outbreak as evidence.",
-     "Conclude which reasons/consequences are most significant."
-    ],
-    "pitfalls": [
-     "Describing an outbreak without evaluating why it spread or how serious the consequences were.",
-     "No balance – only negatives or only positives of global responses.",
-     "No conclusion."
-    ],
-    "starters": [
-     "The most significant reason for global spread is… because…",
-     "The consequences were most severe for… as…",
-     "However, the response by… limited the impact by…"
-    ],
-    "stretch": "Judge how far global cooperation can realistically control a future outbreak, using evidence."
-   },
-   "D.D3": {
-    "verb": "Evaluate",
-    "decode": "Weigh up both the positive and negative effects of how humans and micro-organisms interact, and reach an overall judgement.",
-    "buildsOn": [
-     "D.P6",
-     "D.M4"
-    ],
-    "mustInclude": [
-     "Cover positive effects: food production, antibiotics, vaccines, insulin, genetic engineering, normal gut/skin flora.",
-     "Cover negative effects: infection, disease outbreaks, food spoilage, antibiotic resistance.",
-     "Analyse social and economic benefits of at least three micro-organisms.",
-     "Consider ethical or safety issues, e.g. in genetic engineering.",
-     "Balance positives against negatives with evidence.",
-     "Reach a supported conclusion about the overall relationship."
-    ],
-    "pitfalls": [
-     "Writing two separate lists with no weighing up.",
-     "Forgetting normal flora and symbiosis.",
-     "Unsupported opinions."
-    ],
-    "starters": [
-     "While micro-organisms cause…, they are also essential for…",
-     "The benefit of… outweighs the risk because…",
-     "Overall, the interrelationship is… because…"
-    ],
-    "stretch": "Argue whether the balance of benefit and harm is changing, e.g. due to antibiotic resistance or biotechnology."
-   }
-  }
- },
- "16": {
-  "title": "Policy in Health and Social Care",
-  "glh": 60,
-  "assignments": "Up to two summative assignments: Assignment 1 covers learning aims A and B (A.P1, B.P2, B.P3, A.M1, B.M2, AB.D1) – report on how a local setting's practice is affected by government policy and other factors. Assignment 2 covers learning aim C (C.P4–C.P6, C.M3, C.D2, C.D3) – report on how legislation and codes of practice affect workers and service users.",
-  "bigIdea": "A Distinction shows you can trace a line from government policy and legislation all the way to what happens in a real local setting – and judge how well it works for workers and service users.",
-  "evidence": [
-   "Base your work on real local settings (a hospital trust, care home, GP practice, charity) – local examples are explicitly required in the criteria.",
-   "Check structures are current: the spec names the Department of Health and Clinical Commissioning Groups, but these have changed (now the Department of Health and Social Care and Integrated Care Boards in England). Confirm current names with your tutor.",
-   "Name specific sections of legislation (e.g. Care Act 2014, Equality Act 2010, Health and Social Care Act 2008/2012) rather than whole Acts, and check currency.",
-   "Use a range of sources: government publications, CQC reports for local settings, professional codes of practice (NMC, HCPC, GMC, Social Work England).",
-   "Evaluate – don't just describe policy. Every section should end with 'so how effective is this?'"
-  ],
-  "criteria": {
-   "AB.D1": {
-    "verb": "Evaluate",
-    "decode": "Weigh up how a local setting's practice is shaped by government policy and other factors (pressure groups, media, research, demographics), and how well it meets objectives and the needs of a specific service user group.",
-    "buildsOn": [
-     "A.P1",
-     "B.P2",
-     "B.P3",
-     "A.M1",
-     "B.M2"
-    ],
-    "mustInclude": [
-     "Explain how central and local government work together to make and fund policy.",
-     "Identify specific objectives the local setting must meet and how it meets them.",
-     "Evaluate the influence of other factors – political parties, lobbying, research, media and social media, campaigns, service users.",
-     "Focus on one specific service user group and how well their needs are represented and met.",
-     "Weigh strengths against limitations (funding, staffing, competing priorities).",
-     "Use real evidence, e.g. inspection reports or published data.",
-     "Reach a supported conclusion."
-    ],
-    "pitfalls": [
-     "General descriptions of how laws are made with no link to a local setting.",
-     "Ignoring the 'other factors' – the criterion asks for more than government.",
-     "No judgement on how well objectives and service users' needs are met."
-    ],
-    "starters": [
-     "Government policy has influenced practice at… by…",
-     "However, the setting's ability to meet this objective is limited by…",
-     "On balance, the needs of… are met to a large/limited extent because…"
-    ],
-    "stretch": "Compare the influence of government with one other factor and judge which has had the greater impact on practice."
-   },
-   "C.D2": {
-    "verb": "Evaluate",
-    "decode": "Weigh up the ways legislation and codes of practice affect both workers and service users in different local health or social care settings.",
-    "buildsOn": [
-     "C.P4",
-     "C.P5",
-     "C.P6",
-     "C.M3"
-    ],
-    "mustInclude": [
-     "Use at least two different local settings.",
-     "Identify specific legislation and specific codes of practice relevant to each.",
-     "Explain how they shape everyday worker practice, e.g. hand washing, treatment, equipment use, involving third parties.",
-     "Explain how they affect service users: entitlement, access, having needs met, complaints, refusing treatment.",
-     "Weigh positives (protection, rights, consistency) against negatives (paperwork, cost, defensive practice).",
-     "Compare effects across the settings.",
-     "Reach a supported judgement."
-    ],
-    "pitfalls": [
-     "Describing what an Act says without showing its effect in practice.",
-     "Only covering workers or only covering service users.",
-     "Out-of-date legislation or organisation names."
-    ],
-    "starters": [
-     "In practice, this legislation requires workers at… to…",
-     "For service users, the effect is…, although…",
-     "Comparing the two settings, the impact is greater in… because…"
-    ],
-    "stretch": "Judge whether the codes of practice or the legislation have the greater day-to-day effect, with evidence."
-   },
-   "C.D3": {
-    "verb": "Evaluate",
-    "decode": "Make a supported judgement about whether policy making has actually improved the health and wellbeing of service users in different local settings.",
-    "buildsOn": [
-     "C.P6",
-     "C.M3"
-    ],
-    "mustInclude": [
-     "Identify a specific policy and the improvement it intended.",
-     "Use evidence (data, inspection reports, research) to judge whether wellbeing has improved.",
-     "Consider different local settings and service user groups.",
-     "Consider unintended consequences and barriers to implementation.",
-     "Balance successes against failures or gaps.",
-     "Reach a clear conclusion – has policy improved health and wellbeing, and for whom?"
-    ],
-    "pitfalls": [
-     "Assuming policy has worked because it exists.",
-     "No evidence of outcomes.",
-     "Sitting on the fence without a conclusion."
-    ],
-    "starters": [
-     "The policy aimed to…; evidence from… suggests…",
-     "However, this improvement has not been seen for… because…",
-     "Overall, policy making has improved wellbeing to a… extent because…"
-    ],
-    "stretch": "Recommend a justified change to policy or implementation based on your evaluation."
-   }
-  }
- },
- "17": {
-  "title": "Caring for Individuals with Dementia",
-  "glh": 60,
-  "assignments": "Up to two summative assignments: Assignment 1 covers learning aims A and B (A.P1, A.P2, B.P3, B.P4, A.M1, B.M2, AB.D1) – report on types, causes, symptoms and progressive effects of dementia. Assignment 2 covers learning aim C (C.P5, C.P6, C.M3, C.D2, C.D3) – report based on a case study of one individual.",
-  "bigIdea": "Distinction work keeps the person, not the disease, at the centre: it shows how different dementias progress and why holistic, person-centred and flexible care protects dignity, rights and quality of life.",
-  "evidence": [
-   "Cover three types of dementia (e.g. Alzheimer's, vascular, dementia with Lewy bodies, frontotemporal) so you can compare causes, symptoms and progression.",
-   "Use reliable sources such as the NHS, Alzheimer's Society, Dementia UK and SCIE, and reference them.",
-   "For assignment 2, apply everything to the individual in your case study – refer to them throughout, not just at the start.",
-   "Show awareness of relevant legislation and safeguarding (e.g. Mental Capacity Act 2005, lasting power of attorney) and check currency with your tutor.",
-   "Use the care planning cycle to structure your discussion of flexible care."
-  ],
-  "criteria": {
-   "AB.D1": {
-    "verb": "Evaluate",
-    "decode": "Weigh up why it matters that carers understand how different types of dementia progressively affect every aspect of a person's health and wellbeing.",
-    "buildsOn": [
-     "A.P1",
-     "A.P2",
-     "B.P3",
-     "B.P4",
-     "A.M1",
-     "B.M2"
-    ],
-    "mustInclude": [
-     "Explain the causes and distinctive symptoms of three types of dementia.",
-     "Show how effects progress over time – early, middle and later stages.",
-     "Cover mental and physical health: reasoning, communication, information processing, sleep, behaviour, movement, anxiety and depression.",
-     "Cover quality of life: dignity, privacy, daily routines, managing affairs, social interaction, loss of status and skills.",
-     "Explain how understanding the specific type helps carers respond appropriately (e.g. falls risk in Lewy bodies, disinhibition in FTD).",
-     "Weigh the benefits of this understanding against limitations (mixed dementia, individual variation, diagnosis difficulties).",
-     "Conclude on how important this understanding is."
-    ],
-    "pitfalls": [
-     "Describing types of dementia without evaluating why understanding them matters.",
-     "Treating all dementias as the same.",
-     "Ignoring progression over time."
-    ],
-    "starters": [
-     "Understanding that… causes… is important because carers can…",
-     "As the condition progresses, the person may…, which means…",
-     "However, individual experiences vary, so…"
-    ],
-    "stretch": "Show how a misunderstanding of the type of dementia could lead to inappropriate care, and its consequences."
-   },
-   "C.D2": {
-    "verb": "Justify",
-    "decode": "Give reasons and evidence for the impact and benefits of holistic, person-centred care for the individual in your case study.",
-    "buildsOn": [
-     "C.P5",
-     "C.P6",
-     "C.M3"
-    ],
-    "mustInclude": [
-     "Apply the principles: dignity, privacy, respect, independence, rights, empowerment, cultural/religious needs, advocacy.",
-     "Cover holistic care – medication, diet and fluids, activity and exercise, sensory stimulation, reminiscence, complementary therapies.",
-     "Balance safeguarding and protection with independence and rights.",
-     "Link every benefit to the specific individual's needs, history and preferences.",
-     "Use evidence that person-centred approaches improve wellbeing.",
-     "Explain how involving the individual and family strengthens care."
-    ],
-    "pitfalls": [
-     "General points about person-centred care that never mention the individual.",
-     "Listing activities without justifying their benefit.",
-     "Ignoring tensions between safety and independence."
-    ],
-    "starters": [
-     "For [individual], this approach is beneficial because…",
-     "This respects their right to… while also protecting them from…",
-     "Evidence suggests that… improves wellbeing by…"
-    ],
-    "stretch": "Justify how you would prioritise care if two principles conflicted for this individual."
-   },
-   "C.D3": {
-    "verb": "Evaluate",
-    "decode": "Weigh up how well current practice in dementia care meets the individual's needs by managing the effects of dementia and maintaining health and wellbeing.",
-    "buildsOn": [
-     "C.P5",
-     "C.P6",
-     "C.M3"
-    ],
-    "mustInclude": [
-     "Identify current practice used with the individual: assessment, aids and assistive technology, medication management, personal care, safe environments.",
-     "Judge how well each meets the individual's needs.",
-     "Evaluate the care planning cycle – regular reviews, responding to fluctuating abilities, focusing on strengths.",
-     "Consider limitations – resources, staffing, consistency, family capacity.",
-     "Use evidence from the case study and wider sources.",
-     "Reach a supported conclusion and suggest improvements."
-    ],
-    "pitfalls": [
-     "Describing care without judging its effectiveness.",
-     "Only positives.",
-     "No conclusion."
-    ],
-    "starters": [
-     "Current practice meets [individual]'s need for… because…; however…",
-     "A limitation of this approach is…",
-     "Overall, current practice is effective in… but less effective in…"
-    ],
-    "stretch": "Recommend one evidence-based change to current practice and justify its expected impact."
-   }
-  }
- },
- "18": {
-  "title": "Assessing Children's Development Support Needs",
-  "glh": 60,
-  "assignments": "Up to two summative assignments: Assignment 1 covers learning aim A (A.P1, A.P2, A.M1, A.M2, A.D1) – report on case studies of children of different ages. Assignment 2 covers learning aims B and C (B.P3, C.P4, C.P5, B.M3, C.M4, C.M5, BC.D2, BC.D3) – report based on your own observations, including plans, records and a reflective account.",
-  "bigIdea": "Distinction work uses theory and observation together: you judge how far theories and assessment methods genuinely help professionals spot needs early and support children to reach their milestones.",
-  "evidence": [
-   "Your observations must be your own – plan them carefully (method, area of development, timing, permissions, confidentiality) and keep original records.",
-   "Use a range of observation/recording methods (e.g. checklist, time sample) so you can assess and justify your choices.",
-   "Compare children's development against milestones for their age, and acknowledge that rates of development vary.",
-   "Apply theorists from the spec accurately – e.g. Piaget, Vygotsky, Bandura, Skinner, Bowlby, Erikson, Chomsky.",
-   "Write the reflective account honestly: what worked, what didn't, what you'd change. Follow your setting's and tutor's ethical guidance throughout."
-  ],
-  "criteria": {
-   "A.D1": {
-    "verb": "Evaluate",
-    "decode": "Weigh up how far theories of growth and development can actually be used to support the children in your case studies.",
-    "buildsOn": [
-     "A.P1",
-     "A.P2",
-     "A.M1",
-     "A.M2"
-    ],
-    "mustInclude": [
-     "Apply specific theories to each child's stage of development.",
-     "Show how each theory could inform practical support (e.g. scaffolding, positive reinforcement, secure attachment).",
-     "Consider strengths of each theory in this context.",
-     "Consider limitations – cultural bias, rigid stages, research methods, individual variation.",
-     "Compare theories and say which is most useful for each child.",
-     "Reach a supported judgement on the extent theories help."
-    ],
-    "pitfalls": [
-     "Describing theories without applying them to the children.",
-     "Only strengths – no limitations.",
-     "Saying 'to a large extent' with no reasoning."
-    ],
-    "starters": [
-     "Piaget's theory helps support [child] because…; however…",
-     "A limitation of applying this theory is…",
-     "To a large/limited extent, theory supports [child] because…"
-    ],
-    "stretch": "Argue which combination of theories gives the best support for a child, and why."
-   },
-   "BC.D2": {
-    "verb": "Justify",
-    "decode": "Give reasons and evidence for the assessment approaches used to recognise children's needs early and support children with different needs.",
-    "buildsOn": [
-     "B.P3",
-     "C.P4",
-     "C.P5",
-     "B.M3",
-     "C.M4",
-     "C.M5"
-    ],
-    "mustInclude": [
-     "Explain the range of assessment methods: formal, informal, formative, summative, screening, growth monitoring and centile charts, assessment frameworks.",
-     "Justify why particular methods suit particular needs or areas of development.",
-     "Use your own observations as evidence – why you chose each method and what it revealed.",
-     "Explain how early recognition leads to earlier interventions (care plans, learning plans, behaviour plans, specialist referral).",
-     "Justify involving parents and sharing information with professionals, with attention to confidentiality.",
-     "Link the impact of factors (personal, prenatal, socio-economic, environmental, emotional, transitions) to the need for assessment."
-    ],
-    "pitfalls": [
-     "Describing assessment methods with no justification.",
-     "Not using your own observation evidence.",
-     "Ignoring ethics and permissions."
-    ],
-    "starters": [
-     "This method is the most appropriate for identifying… because…",
-     "My observation showed…, which supports the use of…",
-     "Early recognition is vital in this case because…"
-    ],
-    "stretch": "Justify how you would adapt your assessment approach for a child with atypical development."
-   },
-   "BC.D3": {
-    "verb": "Evaluate",
-    "decode": "Weigh up how far professionals help children reach developmental milestones by applying theories and using assessment methods.",
-    "buildsOn": [
-     "B.M3",
-     "C.M4",
-     "C.M5"
-    ],
-    "mustInclude": [
-     "Identify what professionals do: assessment, planning, intervention, monitoring and review.",
-     "Evaluate how well theory-informed practice supports milestones.",
-     "Evaluate how effective assessment methods are in practice, including limitations (observer bias, snapshot nature, time).",
-     "Consider factors that limit success (resources, family circumstances, multiple factors at once).",
-     "Use your reflective account and observation findings as evidence.",
-     "Reach a supported conclusion."
-    ],
-    "pitfalls": [
-     "Describing professional roles without judging effectiveness.",
-     "Forgetting to link back to milestones.",
-     "No conclusion."
-    ],
-    "starters": [
-     "Professionals are effective at… because…; however…",
-     "My observations suggest that…",
-     "Overall, the extent to which professionals help children meet milestones is… because…"
-    ],
-    "stretch": "Suggest a justified improvement to how professionals combine theory and assessment."
-   }
-  }
- },
- "19": {
-  "title": "Nutritional Health",
-  "glh": 60,
-  "assignments": "Up to two summative assignments: Assignment 1 covers learning aims A and B (A.P1, A.P2, B.P3, B.P4, A.M1, B.M2, AB.D1) – report relating dietary intake and nutrients to two individuals with different needs. Assignment 2 covers learning aim C (C.P5, C.P6, C.M3, C.M4, C.D2, C.D3) – nutrition improvement plans for two individuals.",
-  "bigIdea": "Distinction work turns nutrition science into personalised, realistic plans – every recommendation is backed by numbers, nutrient functions and the individual's real circumstances.",
-  "evidence": [
-   "Analyse food diaries quantitatively: energy, protein, fat, iron, vitamin C, fibre, and proportion of energy from fat, compared with reference values (RNIs/DRVs).",
-   "Show your calculations and sources of nutritional data (food tables, packaging, databases).",
-   "Make plans professionally presented and realistic: meals, snacks, drinks, portion sizes, cooking methods, activity, monitoring.",
-   "Always link recommendations to the individual's culture, preferences, budget, health conditions and lifestyle.",
-   "Use current government guidance (e.g. the Eatwell Guide) and check that any guidance you cite is current with your tutor."
-  ],
-  "criteria": {
-   "AB.D1": {
-    "verb": "Evaluate",
-    "decode": "Weigh up how nutritional health maintains each individual's health and wellbeing and how strongly different factors influence it.",
-    "buildsOn": [
-     "A.P1",
-     "A.P2",
-     "B.P3",
-     "B.P4",
-     "A.M1",
-     "B.M2"
-    ],
-    "mustInclude": [
-     "Relate nutrient functions and deficiencies to each individual's health.",
-     "Use your dietary analysis to compare actual intake with recommendations.",
-     "Evaluate influencing factors: dietary habits, lifestyle, socio-economic, cultural, education, conditions such as diabetes or intolerances.",
-     "Judge which factors have the greatest impact for each individual.",
-     "Compare the two individuals.",
-     "Reach a supported conclusion."
-    ],
-    "pitfalls": [
-     "Describing nutrients in general rather than for the selected individuals.",
-     "Listing factors without judging their significance.",
-     "No use of dietary analysis data."
-    ],
-    "starters": [
-     "[Individual]'s intake of… is below the RNI, which may affect… because…",
-     "The most significant factor influencing their diet is… because…",
-     "In comparison, [second individual]…"
-    ],
-    "stretch": "Show how factors interact, e.g. cost and access combining with cultural preferences."
-   },
-   "C.D2": {
-    "verb": "Justify",
-    "decode": "Give reasons and evidence for each recommendation in your nutrition plans, linked to the individuals' needs and situations.",
-    "buildsOn": [
-     "C.P5",
-     "C.P6",
-     "C.M3",
-     "C.M4"
-    ],
-    "mustInclude": [
-     "Link every recommendation to a specific need identified in your analysis.",
-     "Use nutrient functions and reference values as evidence.",
-     "Show recommendations are realistic for the person's budget, culture, preferences and lifestyle.",
-     "Explain why alternatives were rejected.",
-     "Justify activity recommendations and energy balance.",
-     "Justify how the plan will be monitored."
-    ],
-    "pitfalls": [
-     "Generic healthy eating advice not tailored to the individual.",
-     "No evidence or reference values.",
-     "Ignoring practical constraints."
-    ],
-    "starters": [
-     "I have recommended… because [individual]'s analysis showed…",
-     "This is realistic for them because…",
-     "An alternative would be…; however…"
-    ],
-    "stretch": "Anticipate barriers to following the plan and justify how you would overcome them."
-   },
-   "C.D3": {
-    "verb": "Evaluate",
-    "decode": "Weigh up why planning nutritional health matters for the selected individuals so that dietary needs are met and influencing factors are considered.",
-    "buildsOn": [
-     "C.M3",
-     "C.M4"
-    ],
-    "mustInclude": [
-     "Explain the benefits of planning (meeting needs, preventing deficiency, managing conditions).",
-     "Consider the challenges and limitations of planning (compliance, cost, accuracy of food diaries).",
-     "Show how planning takes influencing factors into account.",
-     "Use evidence from your two plans.",
-     "Consider monitoring and review.",
-     "Reach a supported conclusion."
-    ],
-    "pitfalls": [
-     "Restating the plan rather than evaluating the importance of planning.",
-     "Ignoring limitations.",
-     "No conclusion."
-    ],
-    "starters": [
-     "Planning is important for [individual] because…",
-     "However, the plan's success depends on…",
-     "Overall,…"
-    ],
-    "stretch": "Judge which individual benefits most from planning and why."
-   }
-  }
- },
- "20": {
-  "title": "Understanding Mental Wellbeing",
-  "glh": 60,
-  "assignments": "Up to two summative assignments: Assignment 1 covers learning aims A and B (A.P1, B.P2, B.P3, A.M1, B.M2, AB.D1) – case study report on mental health and wellbeing and classification systems. Assignment 2 covers learning aims C and D (C.P4, C.P5, D.P6, C.M3, D.M4, CD.D2, D.D3) – report on promoting, protecting and restoring the mental wellbeing of a selected individual.",
-  "bigIdea": "Distinction work evaluates – it questions how mental health is defined and diagnosed, and judges how well strategies, legislation and treatment actually promote recovery for a real individual.",
-  "evidence": [
-   "Use the case study in your assignment brief throughout – apply every concept to the individual.",
-   "Refer accurately to classification systems (DSM and ICD) and their strengths and limitations.",
-   "Name relevant legislation and codes of practice (e.g. Mental Health Act 1983 as amended, Mental Capacity Act 2005, Equality Act 2010, Human Rights Act 1998); mental health law has been under reform, so check what is current with your tutor.",
-   "Use reliable sources (NHS, NICE, Mind, Rethink Mental Illness) and reference them.",
-   "Write sensitively and avoid stigmatising language."
-  ],
-  "criteria": {
-   "AB.D1": {
-    "verb": "Evaluate",
-    "decode": "Weigh up different ways of understanding mental health and wellbeing, and how well current classification systems improve diagnosis of selected conditions.",
-    "buildsOn": [
-     "A.P1",
-     "B.P2",
-     "B.P3",
-     "A.M1",
-     "B.M2"
-    ],
-    "mustInclude": [
-     "Explain views on the nature of mental wellbeing, e.g. the Dual Axis model and mental capital.",
-     "Apply factors that influence mental health (biological, psychological, socio-economic, risk and protective factors).",
-     "Explain how DSM and ICD classify the selected conditions and their symptoms.",
-     "Evaluate strengths: shared language, awareness, research, treatment.",
-     "Evaluate limitations: labelling and stigma, atypical presentations, cultural bias, reliability.",
-     "Reach a supported conclusion."
-    ],
-    "pitfalls": [
-     "Describing conditions without evaluating classification.",
-     "One-sided arguments.",
-     "No link to the case study individual."
-    ],
-    "starters": [
-     "The Dual Axis model suggests…, which helps to understand…",
-     "Classification improves diagnosis by…; however…",
-     "On balance,…"
-    ],
-    "stretch": "Judge whether classification systems help or hinder the selected individual most."
-   },
-   "CD.D2": {
-    "verb": "Evaluate",
-    "decode": "Weigh up why it is important to promote, protect and restore the mental wellbeing of the selected individual.",
-    "buildsOn": [
-     "C.P4",
-     "C.P5",
-     "D.P6",
-     "C.M3",
-     "D.M4"
-    ],
-    "mustInclude": [
-     "Explain the impact of mental ill health on the individual and their relationships.",
-     "Cover treatments and their outcomes, including ethical issues such as informed consent.",
-     "Evaluate strategies: early intervention, person-centred approaches, advocacy, self-management, recovery.",
-     "Link to legislation and codes of practice that protect the individual.",
-     "Consider the impact on family, informal carers and the community.",
-     "Reach a supported conclusion."
-    ],
-    "pitfalls": [
-     "Listing strategies without evaluating their importance.",
-     "Ignoring the social network.",
-     "No reference to legislation."
-    ],
-    "starters": [
-     "Promoting wellbeing is important for [individual] because…",
-     "Protecting their rights through… matters because…",
-     "Overall,…"
-    ],
-    "stretch": "Weigh which of promoting, protecting or restoring is most important for this individual now."
-   },
-   "D.D3": {
-    "verb": "Evaluate",
-    "decode": "Weigh up how far accurate diagnosis of mental ill-health conditions leads to the correct treatment.",
-    "buildsOn": [
-     "B.M2",
-     "D.M4"
-    ],
-    "mustInclude": [
-     "Explain the assessment process and the role of professionals.",
-     "Explain how accurate diagnosis informs treatment choices.",
-     "Consider problems: misdiagnosis, atypical presentations, comorbidity, stigma.",
-     "Consider that treatment also depends on individual preferences and needs.",
-     "Use evidence from the case study and research.",
-     "Reach a supported conclusion."
-    ],
-    "pitfalls": [
-     "Assuming diagnosis always leads to correct treatment.",
-     "No evidence.",
-     "No conclusion."
-    ],
-    "starters": [
-     "Accurate diagnosis is important because…",
-     "However, diagnosis alone does not guarantee…",
-     "Overall,…"
-    ],
-    "stretch": "Discuss how a person-centred approach can compensate for the limits of diagnosis."
-   }
-  }
- }
 }
