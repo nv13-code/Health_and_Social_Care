@@ -163,13 +163,13 @@
    "topic": "A1",
    "q": "Which professional is most likely to assess Mrs Patel's home and recommend a stair rail and raised toilet seat after her hip replacement?",
    "options": [
-    "Midwife",
-    "Youth worker",
+    "Physiotherapist",
+    "Social worker",
     "Occupational therapist",
     "Healthcare assistant"
    ],
    "answer": 2,
-   "why": "Occupational therapists help people carry out daily activities, including assessing for equipment and adaptations."
+   "why": "Occupational therapists help people carry out daily activities, including assessing the home for equipment and adaptations such as rails and raised seats. A physiotherapist works on movement and exercise, a social worker may arrange the support but does not usually assess for equipment, and a healthcare assistant supports nurses."
   },
   {
    "id": "u2q02",
@@ -178,76 +178,76 @@
    "options": [
     "Social worker",
     "Doctor",
-    "Midwife",
+    "Occupational therapist",
     "Healthcare assistant"
    ],
    "answer": 0,
-   "why": "Social workers assess needs, safeguard, plan care and support, and often coordinate other services."
+   "why": "Social workers assess needs, safeguard, plan care and support, and often coordinate other services. Doctors diagnose and treat, occupational therapists focus on daily living skills and equipment, and healthcare assistants support nurses under supervision."
   },
   {
    "id": "u2q03",
    "topic": "A1",
    "q": "A healthcare assistant on a hospital ward is most likely to:",
    "options": [
-    "Diagnose illnesses and prescribe medication",
-    "Lead safeguarding investigations",
-    "Deliver babies independently",
-    "Support registered nurses with personal care and observations"
+    "Diagnose conditions and prescribe medication",
+    "Lead safeguarding investigations alone",
+    "Help nurses with personal care and observations",
+    "Plan and deliver care without supervision"
    ],
-   "answer": 3,
-   "why": "Healthcare assistants work under the supervision of registered nurses, providing personal care and routine tasks."
+   "answer": 2,
+   "why": "Healthcare assistants work under the supervision of registered nurses, providing personal care and routine observations. Diagnosing and prescribing are doctor roles, and an assistant does not plan care or lead safeguarding on their own; they report concerns to a registered colleague."
   },
   {
    "id": "u2q04",
    "topic": "A2",
    "q": "Supporting a man who has had a stroke to relearn how to dress himself is an example of:",
    "options": [
-    "Safeguarding",
+    "Providing personal care",
     "Enabling rehabilitation",
-    "Whistleblowing",
-    "Eligibility criteria"
+    "Safeguarding",
+    "Care and support planning"
    ],
    "answer": 1,
-   "why": "Rehabilitation helps people regain skills and independence after illness or injury."
+   "why": "Rehabilitation helps people regain skills and independence after illness or injury. The key word is 'relearn': personal care would be dressing him, whereas rehabilitation builds his ability to do it himself."
   },
   {
    "id": "u2q05",
    "topic": "A2",
    "q": "Which is the best example of involving a service user in care and support planning?",
    "options": [
-    "The care manager writes the plan alone to save time",
-    "The service user and their family discuss goals and preferences with the social worker before the plan is agreed",
-    "The plan is copied from another resident's plan",
-    "The GP decides the plan without consultation"
+    "The social worker writes the plan from the referral form and the service user signs to confirm",
+    "The service user and family talk through goals and preferences before the plan is agreed",
+    "The family chooses the plan for the service user without asking them",
+    "The service user is told about the plan at the review meeting after it is agreed"
    ],
    "answer": 1,
-   "why": "Care and support planning should involve the individual and, where appropriate, their family."
+   "why": "Care and support planning should involve the individual and, where appropriate, their family, in setting goals before the plan is agreed. A signature on a plan written for them, a plan chosen by the family, or being told afterwards is consultation after the event, not involvement."
   },
   {
    "id": "u2q06",
    "topic": "A3",
    "q": "A care home provides halal meals and a quiet prayer room for a Muslim resident. This is mainly an example of:",
    "options": [
-    "Infection control",
-    "Revalidation",
-    "Line management",
-    "Adapting services to meet individual needs (anti-discriminatory practice)"
+    "Safeguarding a vulnerable adult",
+    "Infection control and prevention",
+    "Raising a concern about poor practice",
+    "Anti-discriminatory practice (adapting services)"
    ],
    "answer": 3,
-   "why": "Adapting services to beliefs and culture is part of anti-discriminatory, person-centred practice."
+   "why": "Adapting services to beliefs and culture is part of anti-discriminatory, person-centred practice. Safeguarding protects people from harm, infection control prevents illness and whistleblowing is raising a concern about poor practice, so none of them describes meeting a resident's religious needs."
   },
   {
    "id": "u2q07",
    "topic": "A3",
    "q": "Empowering a service user means:",
    "options": [
-    "Supporting them to make choices and have control over their care",
-    "Making decisions for them to keep them safe",
-    "Giving them the same care as everyone else",
-    "Limiting their contact with family"
+    "Supporting them to make choices and control their care",
+    "Making decisions on their behalf to keep them safe",
+    "Giving everyone exactly the same care as everyone else",
+    "Limiting their contact with family to reduce stress"
    ],
    "answer": 0,
-   "why": "Empowerment puts the individual at the heart of decisions and promotes their rights, choices and independence."
+   "why": "Empowerment supports people to make choices and have control over their care. Making decisions for them 'to keep them safe' is paternalism, giving everyone identical care ignores individual needs, and limiting contact with family removes support rather than promoting independence."
   },
   {
    "id": "u2q08",
@@ -260,46 +260,46 @@
     "Equality Act 2010"
    ],
    "answer": 2,
-   "why": "Data protection legislation governs the collection, storage, use and sharing of personal data."
+   "why": "Data protection legislation governs how personal data is collected, stored, used and shared. The Equality Act 2010 deals with discrimination, the Health and Safety at Work etc. Act 1974 with workplace safety and the Children Act 1989 with children's welfare."
   },
   {
    "id": "u2q09",
    "topic": "A3",
    "q": "When is a nurse most likely to be justified in sharing confidential information without consent?",
    "options": [
-    "When a relative asks out of curiosity",
-    "When posting on social media without names",
-    "When a colleague from another ward wants to know",
-    "When there is a risk of serious harm to the person or others, or it is legally required"
+    "When a relative asks because they are worried",
+    "When the information is posted online without names",
+    "When a colleague from another ward is curious",
+    "When there is a risk of serious harm or a legal duty"
    ],
    "answer": 3,
-   "why": "Confidentiality can be broken when there is a risk of serious harm or a legal requirement, following the correct procedure."
+   "why": "Confidentiality can be broken when there is a risk of serious harm or a legal requirement, following the correct procedure. Worry or curiosity does not give a relative or colleague a right to know, and removing names does not make a post safe if the person can still be identified."
   },
   {
    "id": "u2q10",
    "topic": "A3",
    "q": "Taking a photo of a resident's wound on a personal mobile phone to show a friend is:",
    "options": [
-    "Acceptable if the face is not shown",
+    "Acceptable if the resident's face is not shown",
     "A breach of confidentiality and data protection",
     "Good record keeping",
-    "Required for revalidation"
+    "Allowed if the friend also works in care"
    ],
    "answer": 1,
-   "why": "Photos are personal data; they must only be taken for care purposes, with consent and on approved devices."
+   "why": "Photos are personal data and must only be taken for care purposes, with consent and on approved devices. Hiding the face does not make a wound photo anonymous, and a friend's job does not give them a need to know."
   },
   {
    "id": "u2q11",
    "topic": "A3",
    "q": "Which is an example of an illness prevention measure listed in the spec?",
    "options": [
-    "Eligibility criteria",
-    "Appraisals",
-    "Hand-washing facilities and safe drinking water",
-    "Advocacy"
+    "Eligibility criteria for services",
+    "Annual appraisals and supervision",
+    "Clean toilets and hand-washing facilities",
+    "Access to an independent advocate"
    ],
    "answer": 2,
-   "why": "Clean toilets, hand-washing facilities and safe drinking water are named illness prevention measures."
+   "why": "Clean toilets, hand-washing facilities and safe drinking water are named illness prevention measures. Eligibility criteria ration access, appraisals monitor staff and advocacy represents the person, so none of them prevents illness."
   },
   {
    "id": "u2q12",
@@ -312,59 +312,59 @@
     "Inspection"
    ],
    "answer": 0,
-   "why": "Revalidation is the NMC process nurses and midwives complete to renew their registration."
+   "why": "Revalidation is how nurses and midwives renew their NMC registration by showing they remain fit to practise. Inspection is the CQC checking a service, not an individual's registration, and eligibility and referral relate to access to services."
   },
   {
    "id": "u2q13",
    "topic": "A3",
    "q": "A resident in a care home plays loud music late at night, disturbing others. What is the main principle the staff must apply?",
    "options": [
-    "The resident's rights always come first",
-    "Removing the resident's music permanently",
-    "Balancing individual rights with the rights of other service users",
-    "Calling the police"
+    "Individual choice always overrides other residents' rights",
+    "Staff should take the music away to keep the peace",
+    "Balance the resident's rights with other residents' rights",
+    "Staff should call the police to deal with the noise"
    ],
    "answer": 2,
-   "why": "Workers must balance one person's rights and choices with the rights and wellbeing of others."
+   "why": "Workers must balance one person's rights and choices with the rights and wellbeing of others, for example by agreeing quiet hours or headphones. Giving one person's rights priority, or removing the music outright, ignores one side of the balance, and the police are not an appropriate first step."
   },
   {
    "id": "u2q14",
    "topic": "A4",
    "q": "Which best describes a holistic approach to care?",
    "options": [
-    "Meeting a person's physical, intellectual, emotional and social needs as a whole",
-    "Treating only the main medical condition",
-    "Each professional working separately",
-    "Providing care only in hospital"
+    "Treating the main medical condition before anything else",
+    "Each professional working separately within their own specialism",
+    "Meeting physical, intellectual, emotional and social needs together",
+    "Providing all of a person's care in a single hospital"
    ],
-   "answer": 0,
-   "why": "Holistic care looks at the whole person, which usually requires several professionals working together."
+   "answer": 2,
+   "why": "Holistic care looks at the whole person (PIES), which usually needs several professionals working together. Treating only the main condition or working in separate silos misses needs, and holistic care is not tied to one setting."
   },
   {
    "id": "u2q15",
    "topic": "A4",
    "q": "What is a key benefit of multidisciplinary working when discharging an older patient from hospital?",
    "options": [
-    "Each professional repeats the same assessment",
-    "It removes the need for consent",
-    "It reduces the patient's involvement",
-    "Care is coordinated so that equipment, home care and follow-up are ready when the patient gets home"
+    "Each professional repeats their own assessment so nothing is missed",
+    "The hospital doctor makes all the decisions so it is quicker",
+    "Information is shared without needing the patient's consent",
+    "Equipment, home care and follow-up are ready before discharge"
    ],
    "answer": 3,
-   "why": "Joined-up working avoids gaps and delays and supports a safe discharge."
+   "why": "Joint working coordinates services so equipment, home care and follow-up are in place, which supports a safe discharge. Repeated assessments are what multidisciplinary working is meant to avoid, the patient stays involved in decisions, and sharing information still needs a lawful basis."
   },
   {
    "id": "u2q16",
    "topic": "A4",
    "q": "Which is a common difficulty of multidisciplinary working?",
    "options": [
-    "Too much information about the service user",
-    "Communication and information-sharing problems between agencies",
-    "Service users always refuse",
-    "It is not allowed by law"
+    "Services must share all records without consent",
+    "Poor communication and information-sharing between agencies",
+    "Service users lose the right to refuse support",
+    "Professionals cannot work together under data protection law"
    ],
    "answer": 1,
-   "why": "Different systems, priorities and workloads can lead to poor communication, which serious case reviews often highlight."
+   "why": "Different systems, priorities and workloads can lead to communication breakdown, which serious case reviews often highlight. Data protection law allows sharing when it is justified, and joint working does not remove a service user's right to refuse."
   },
   {
    "id": "u2q17",
@@ -377,7 +377,7 @@
     "Service user feedback"
    ],
    "answer": 1,
-   "why": "Line managers monitor staff performance and development through supervision and appraisal."
+   "why": "Line managers monitor staff performance and development through supervision and appraisal. External inspection is by agencies such as the CQC or Ofsted, and service user feedback comes from the people who use the service, so neither is a manager's meeting."
   },
   {
    "id": "u2q18",
@@ -390,20 +390,20 @@
     "Whistleblowing"
    ],
    "answer": 3,
-   "why": "Whistleblowing is raising concerns about wrongdoing or poor practice, internally or to an external body such as the CQC."
+   "why": "Whistleblowing is raising concerns about wrongdoing or poor practice, internally or to an external body such as the CQC, and workers are legally protected for doing so. Reporting harm to residents is not a breach of confidentiality, because the concern is about the manager's practice and not about sharing residents' records."
   },
   {
    "id": "u2q19",
    "topic": "B1",
    "q": "Which of these is a voluntary sector organisation?",
    "options": [
-    "A registered charity running a support group for carers",
-    "An NHS Foundation Trust hospital",
-    "A local authority children's services department",
-    "A privately owned care home chain"
+    "A charity running a carers' support group",
+    "An NHS Foundation Trust mental health hospital",
+    "A local authority adult social care department",
+    "A privately owned chain of nursing homes"
    ],
    "answer": 0,
-   "why": "The voluntary sector consists of charities and not-for-profit organisations, often relying on donations and volunteers."
+   "why": "The voluntary sector is made up of charities and not-for-profit organisations, often relying on donations and volunteers. NHS Foundation Trusts and local authority departments are public (statutory) sector, and a privately owned chain is private sector."
   },
   {
    "id": "u2q20",
@@ -429,12 +429,12 @@
     "Hospice"
    ],
    "answer": 3,
-   "why": "Hospices provide palliative and end-of-life care, including support for families."
+   "why": "Hospices provide palliative and end-of-life care, including support for families. Day care units offer daytime support and social contact but not end-of-life care, and a GP practice provides primary care."
   },
   {
    "id": "u2q22",
    "topic": "B2",
-   "q": "Tom phones his GP surgery himself to make an appointment. This is a:",
+   "q": "Tom contacts the community physiotherapy service directly, without seeing his GP first. This is a:",
    "options": [
     "Professional referral",
     "Self-referral",
@@ -442,7 +442,7 @@
     "Eligibility assessment"
    ],
    "answer": 1,
-   "why": "Self-referral is when the individual contacts the service directly."
+   "why": "Self-referral is when the individual contacts the service directly. A professional referral is made by someone such as a GP, a third-party referral by a family member, friend or neighbour, and an eligibility assessment is a later decision about whether he qualifies."
   },
   {
    "id": "u2q23",
@@ -455,33 +455,33 @@
     "Specific needs barrier"
    ],
    "answer": 2,
-   "why": "Distance and lack of transport are geographical barriers to access."
+   "why": "Distance and lack of transport are geographical barriers. A financial barrier would be about the cost of travel, a cultural barrier about beliefs or language, and a specific needs barrier about a disability or sensory need."
   },
   {
    "id": "u2q24",
    "topic": "B2",
    "q": "Eligibility criteria are used by services to:",
    "options": [
-    "Decide who qualifies for a service based on level of need",
-    "Inspect care homes",
-    "Register nurses",
-    "Train staff"
+    "Decide who qualifies for a service by level of need",
+    "Check that care homes meet national standards",
+    "Decide which nurses can stay on the register",
+    "Decide which training staff must complete"
    ],
    "answer": 0,
-   "why": "Eligibility criteria set the level of need a person must meet to receive a service, which helps allocate limited resources."
+   "why": "Eligibility criteria set the level of need a person must meet to receive a service, which helps allocate limited resources. Checking homes is the CQC, registers are kept by regulators such as the NMC, and training standards come from NOS and CPD."
   },
   {
    "id": "u2q25",
    "topic": "B3",
    "q": "Who is most likely to need an independent advocate?",
    "options": [
-    "A healthy adult arranging their own GP appointment",
-    "A nurse on the NMC register",
-    "A person with a severe learning disability who has difficulty expressing their wishes in a care review",
-    "A care home manager"
+    "A confident adult asking their GP for a repeat prescription",
+    "A newly qualified nurse applying for revalidation",
+    "A person who finds it hard to express their wishes at a review",
+    "A carer attending their own appointment who understands the options"
    ],
    "answer": 2,
-   "why": "Advocates help people who find it hard to speak up for themselves to have their views heard."
+   "why": "Advocates help people who find it hard to speak up for themselves, such as those who lack capacity or have difficulty expressing their views, to have their wishes heard. People who can understand the options and speak for themselves do not usually need an independent advocate."
   },
   {
    "id": "u2q26",
@@ -490,24 +490,24 @@
    "options": [
     "Care Quality Commission (CQC)",
     "Ofsted",
-    "NMC",
-    "GMC"
+    "Nursing and Midwifery Council (NMC)",
+    "General Medical Council (GMC)"
    ],
    "answer": 0,
-   "why": "The CQC registers, inspects and rates health and adult social care services in England."
+   "why": "The CQC registers, inspects and rates health and adult social care services in England. Ofsted inspects children's services and early years, while the NMC and GMC regulate individual nurses, midwives and doctors rather than services."
   },
   {
    "id": "u2q27",
    "topic": "B4",
    "q": "Which organisation inspects children's homes and early years settings in England?",
    "options": [
-    "CQC",
-    "HCPC",
-    "NMC",
+    "Care Quality Commission (CQC)",
+    "Health and Care Professions Council (HCPC)",
+    "Nursing and Midwifery Council (NMC)",
     "Ofsted"
    ],
    "answer": 3,
-   "why": "Ofsted regulates and inspects services for children and young people, including children's homes."
+   "why": "Ofsted regulates and inspects children's homes and early years settings. The CQC covers health and adult social care, and the HCPC and NMC are professional regulators of individuals, not inspectors of settings."
   },
   {
    "id": "u2q28",
@@ -517,36 +517,36 @@
     "GMC",
     "HCPC",
     "NMC",
-    "CQC"
+    "Social Work England"
    ],
    "answer": 1,
-   "why": "Both are registered with the Health and Care Professions Council (HCPC). Doctors are regulated by the GMC and nurses and midwives by the NMC; in England, social workers are now regulated by Social Work England."
+   "why": "Both are registered with the Health and Care Professions Council (HCPC). Doctors are regulated by the GMC and nurses and midwives by the NMC; in England, social workers are now regulated by Social Work England, so that is a regulator of a different profession."
   },
   {
    "id": "u2q29",
    "topic": "B4",
    "q": "A CQC inspection rates a care home 'Inadequate'. What is the most likely immediate consequence?",
    "options": [
-    "Nothing changes",
-    "The home is placed under closer scrutiny and must make improvements, with possible enforcement action",
-    "All staff are struck off",
-    "The home is automatically closed the next day"
+    "The home must close the next day under an automatic rule",
+    "The home faces enforcement action and must improve before re-inspection",
+    "The CQC removes all staff from their professional registers",
+    "Nothing happens until the next routine inspection in several years"
    ],
    "answer": 1,
-   "why": "Poor ratings lead to action plans, re-inspection and possible enforcement, driving changes in working practice."
+   "why": "Poor ratings lead to action plans, re-inspection and possible enforcement, which drives changes in working practice. Closure is possible but not automatic or immediate, the CQC regulates services (not individual staff registration), and an Inadequate rating prompts much quicker follow-up."
   },
   {
    "id": "u2q30",
    "topic": "B4",
    "q": "What is the main purpose of a fitness to practise hearing by the NMC?",
    "options": [
-    "To inspect a hospital ward",
-    "To set eligibility criteria",
-    "To assess a patient's needs",
-    "To decide whether a registered nurse or midwife is safe to continue practising"
+    "To inspect a ward and give it a rating",
+    "To decide which patients qualify for a service",
+    "To assess whether a patient needs care and support",
+    "To decide whether a nurse is fit to keep practising"
    ],
    "answer": 3,
-   "why": "Professional regulators protect the public by investigating concerns about registered professionals."
+   "why": "Professional regulators protect the public by investigating concerns about registered professionals. Inspecting and rating wards is the CQC, eligibility decisions are made by the service, and needs are assessed by professionals such as social workers."
   },
   {
    "id": "u2q31",
@@ -554,9 +554,9 @@
    "q": "Attending a training course on dementia awareness to keep skills up to date is an example of:",
    "options": [
     "Continuing professional development (CPD)",
-    "Whistleblowing",
-    "Referral",
-    "Inspection"
+    "Raising a concern (whistleblowing)",
+    "Referring someone to a service",
+    "An external inspection"
    ],
    "answer": 0,
    "why": "CPD is ongoing learning that keeps workers' knowledge and skills current."
@@ -566,65 +566,143 @@
    "topic": "B5",
    "q": "National Occupational Standards (NOS) describe:",
    "options": [
-    "Eligibility for services",
-    "The CQC rating system",
-    "The standards of performance expected of workers in a job role",
-    "Patient rights"
+    "Which groups of people are eligible for a service",
+    "How the CQC rates the quality of a service",
+    "The performance expected of workers in a role",
+    "The legal rights of people using services"
    ],
    "answer": 2,
-   "why": "NOS set out the skills, knowledge and performance expected in a role and are used to design training."
+   "why": "NOS set out the skills, knowledge and performance expected in a job role and are used to design training. Eligibility, CQC ratings and service user rights are separate systems."
   },
   {
    "id": "u2q33",
    "topic": "C1",
    "q": "Which adaptation would best support a service user with a hearing impairment at a GP surgery?",
    "options": [
-    "A larger car park",
-    "Longer opening hours",
-    "A ramp at the entrance",
-    "A hearing loop and a British Sign Language interpreter when needed"
+    "A large car park near the entrance",
+    "Longer opening hours in the evening",
+    "A ramp and wider doors at the entrance",
+    "A hearing loop and BSL interpreters"
    ],
    "answer": 3,
-   "why": "Hearing loops and BSL interpreters remove communication barriers for people with hearing impairments."
+   "why": "Hearing loops and BSL interpreters remove the communication barrier for people with hearing impairments. The other options are real adaptations, but they address parking, access times and wheelchair access rather than hearing."
   },
   {
    "id": "u2q34",
    "topic": "C1",
    "q": "Which skill is especially important when supporting a person with a learning disability?",
    "options": [
-    "Speaking quickly to save time",
-    "Using clear, simple language and checking understanding, e.g. with easy-read or pictures",
-    "Making decisions for them",
-    "Avoiding eye contact"
+    "Speaking loudly so that they can hear",
+    "Asking a carer to answer on their behalf",
+    "Clear, simple language with understanding checked",
+    "Giving all the information in one go"
    ],
-   "answer": 1,
-   "why": "Adapting communication supports understanding, choice and empowerment."
+   "answer": 2,
+   "why": "Adapting communication, for example with easy-read or pictures and checking understanding, supports choice and empowerment. A learning disability is not a hearing problem, so loudness does not help, and speaking through a carer removes the person's voice."
   },
   {
    "id": "u2q35",
    "topic": "C2",
-   "q": "The public inquiry into poor care at Mid Staffordshire NHS Foundation Trust is an example of:",
+   "q": "Which change followed the public inquiry into poor care at Mid Staffordshire NHS Foundation Trust?",
    "options": [
-    "Self-referral",
-    "Revalidation",
-    "Poor working practices being identified and addressed",
-    "An eligibility assessment"
+    "Hospital inspections were scaled back to reduce costs",
+    "Nurses stopped needing to register with the NMC",
+    "A duty of candour requiring providers to be open about harm",
+    "The CQC was closed and its work passed to Ofsted"
    ],
    "answer": 2,
-   "why": "The inquiry identified serious failings and led to recommendations to improve openness, standards and patient safety."
+   "why": "The inquiry identified serious failings and led to recommendations to improve openness, standards and patient safety, including a statutory duty of candour. The CQC was strengthened rather than closed, and inspection and professional registration continued."
   },
   {
    "id": "u2q36",
    "topic": "C2",
    "q": "Which change in working practice is most likely after an inspection finds poor infection control in a care home?",
    "options": [
-    "Staff retraining, audits of hand hygiene and updated infection control policies",
-    "Fewer hand-washing facilities",
-    "Stopping residents' visitors permanently",
-    "Reducing staff numbers"
+    "Staff retraining, hand-hygiene audits and updated policies",
+    "A new manager automatically appointed by the CQC",
+    "Visitors banned permanently to prevent infections",
+    "Fewer staff on duty to cut the risk of spreading infection"
    ],
    "answer": 0,
-   "why": "Regulation and inspection lead to changes in policy, training and monitoring that improve services."
+   "why": "Regulation and inspection lead to changes in policy, training and monitoring that improve services. The CQC does not appoint managers, and banning visitors or cutting staff would harm residents without addressing the infection control failures."
+  },
+  {
+   "id": "u2q37",
+   "topic": "B2",
+   "q": "A local authority receives a referral about a 78-year-old man who is struggling to cope at home. Which step should come first?",
+   "options": [
+    "Decide whether he is eligible, then assess his needs if he qualifies",
+    "Carry out a needs assessment under the Care Act 2014",
+    "Arrange a CQC inspection of his home",
+    "Refer him straight to a residential care home"
+   ],
+   "answer": 1,
+   "why": "The Care Act 2014 requires an assessment of the person's needs first; eligibility is then decided from the assessment, and a care and support plan follows. Deciding eligibility before assessing is the usual muddle, the CQC inspects services not homes, and residential care is only one possible outcome."
+  },
+  {
+   "id": "u2q38",
+   "topic": "B3",
+   "q": "Why do health and social care organisations have a complaints policy?",
+   "options": [
+    "To protect the organisation from legal action",
+    "To replace the need for inspection by regulators",
+    "To let service users raise concerns to be put right",
+    "To record staff performance for appraisals"
+   ],
+   "answer": 2,
+   "why": "Complaints policies protect and empower service users by giving a clear way to raise concerns, and the learning can change practice. They do not replace regulators, are not designed to shield the organisation, and are separate from staff appraisal."
+  },
+  {
+   "id": "u2q39",
+   "topic": "A5",
+   "q": "When may a criminal investigation take place in a health or social care setting?",
+   "options": [
+    "Whenever a service receives an Inadequate rating",
+    "Whenever a service user makes a complaint",
+    "Whenever a member of staff is disciplined",
+    "When there is evidence of a crime such as abuse"
+   ],
+   "answer": 3,
+   "why": "Criminal investigations, usually by the police, happen when there is evidence that a crime such as abuse, neglect or theft may have been committed, and they help protect service users. A poor rating, a complaint or a disciplinary process leads to improvement or employment action, and only becomes criminal if a crime is suspected."
+  },
+  {
+   "id": "u2q40",
+   "topic": "B5",
+   "q": "A support worker wants independent advice about challenging a decision on her working hours. What is the best source of support?",
+   "options": [
+    "Joining a trade union or professional association",
+    "Asking a service user to speak to the manager",
+    "Waiting for the next CQC inspection to raise it",
+    "Reporting it to the CQC, which settles employment disputes"
+   ],
+   "answer": 0,
+   "why": "Organisations safeguard employees through complaints procedures, whistleblowing policies and trade union or professional association membership. The CQC inspects services and does not settle employment disputes, and service users should never be used as go-betweens."
+  },
+  {
+   "id": "u2q41",
+   "topic": "B1",
+   "q": "Which is a way that private sector care homes are funded?",
+   "options": [
+    "Mainly by donations and fundraising by volunteers",
+    "Entirely by government grants allocated by the CQC",
+    "Fees paid by residents, or by councils and the NHS",
+    "National insurance paid directly to each home"
+   ],
+   "answer": 2,
+   "why": "Private providers charge fees, paid by residents themselves or by local authorities and the NHS that purchase places. Donations and volunteers describe the voluntary sector, and the CQC regulates homes but does not fund them."
+  },
+  {
+   "id": "u2q42",
+   "topic": "A3",
+   "q": "Cleaning products in a care home can be harmful if swallowed or inhaled. Which regulations require the home to assess and control this risk?",
+   "options": [
+    "RIDDOR (reporting of injuries and dangerous occurrences)",
+    "COSHH (Control of Substances Hazardous to Health)",
+    "Mental Capacity Act 2005 (best interests decisions)",
+    "Data Protection Act 2018 and UK GDPR"
+   ],
+   "answer": 1,
+   "why": "COSHH covers controlling exposure to hazardous substances such as cleaning products. RIDDOR is the nearest distractor because it covers reporting accidents and incidents after they happen, not controlling the risk beforehand."
   }
  ],
  "long": [

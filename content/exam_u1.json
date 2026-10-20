@@ -172,13 +172,13 @@
    "topic": "A1",
    "q": "Which statement best describes the difference between growth and development?",
    "options": [
-    "Growth is the acquisition of skills; development is an increase in size",
-    "Growth and development mean the same thing",
-    "Growth is an increase in size or mass; development is the acquisition of skills and abilities",
-    "Growth only happens in infancy; development continues throughout life"
+    "Growth is the learning of new skills; development is an increase in height or weight",
+    "Growth and development mean the same thing and can be used interchangeably",
+    "Growth is an increase in size or mass; development is the gaining of skills and abilities",
+    "Growth stops after infancy, whereas development continues throughout life"
    ],
    "answer": 2,
-   "why": "Growth is measured using height, weight and dimensions; development follows an orderly sequence and is the gaining of skills and abilities."
+   "why": "Growth is a physical increase measured by height, weight and dimensions; development is the orderly gaining of skills and abilities. Swapping the two definitions is the commonest slip. Growth continues through childhood and adolescence, so it is not limited to infancy."
   },
   {
    "id": "u1q02",
@@ -191,7 +191,7 @@
     "Crawling"
    ],
    "answer": 0,
-   "why": "Cruising is moving while holding onto furniture; it usually comes after standing with support and before independent walking."
+   "why": "Cruising is moving along while holding furniture, usually at about 9-12 months. Walking alone comes later, and crawling is moving on hands and knees without needing support, so neither fits a baby who is holding on."
   },
   {
    "id": "u1q03",
@@ -201,10 +201,10 @@
     "Hopping on one foot",
     "Riding a tricycle",
     "Running backwards",
-    "Buttoning and unbuttoning clothing"
+    "Fastening buttons on clothing"
    ],
    "answer": 3,
-   "why": "Fine motor skills use small muscles of the hands and fingers; the other three are gross motor skills."
+   "why": "Fine motor skills use the small muscles of the hands and fingers. Hopping, riding a tricycle and running backwards use the large muscles of the legs, so they are gross motor skills even though they are also typical of early childhood."
   },
   {
    "id": "u1q04",
@@ -217,33 +217,33 @@
     "The presence of a uterus"
    ],
    "answer": 1,
-   "why": "Secondary sexual characteristics develop at puberty but are not directly involved in reproduction; the others are primary characteristics."
+   "why": "Secondary sexual characteristics (such as facial hair) appear at puberty but are not directly needed for reproduction. Producing eggs or sperm and having a uterus are primary characteristics. Do not assume that everything which appears at puberty is secondary."
   },
   {
    "id": "u1q05",
    "topic": "A1",
    "q": "Perimenopause is mainly caused by:",
    "options": [
-    "A rise in testosterone",
-    "A decrease in oestrogen levels",
-    "An increase in progesterone",
-    "A rise in growth hormone"
+    "Rising testosterone levels",
+    "Falling oestrogen levels",
+    "Rising progesterone levels",
+    "Falling thyroid hormone levels"
    ],
    "answer": 1,
-   "why": "Falling oestrogen causes the ovaries to stop releasing an egg each month and produces symptoms such as hot flushes and mood swings."
+   "why": "Perimenopause is driven by falling oestrogen as the ovaries stop releasing an egg each month, which causes hot flushes, night sweats and mood swings. Progesterone also falls rather than rises, and testosterone and thyroid hormone are not the cause."
   },
   {
    "id": "u1q06",
    "topic": "A2",
-   "q": "Jamal, aged 4, thinks a tall thin glass holds more juice than a short wide glass, even after watching the same juice poured between them. According to Piaget, Jamal has not yet developed:",
+   "q": "Jamal, aged 4, thinks a tall thin glass holds more juice than a short wide glass, even after watching the same juice poured between them. According to Piaget, which concept has Jamal not yet grasped?",
    "options": [
     "Object permanence",
-    "A Language Acquisition Device",
-    "Abstract thinking",
+    "Symbolic representation",
+    "Assimilation",
     "Conservation"
    ],
    "answer": 3,
-   "why": "Conservation is understanding that quantity stays the same when appearance changes; Piaget found it develops in the concrete operational stage (about 7-11)."
+   "why": "Conservation is understanding that a quantity stays the same when its appearance changes; Piaget placed it in the concrete operational stage (about 7-11). Jamal already has object permanence (sensorimotor stage) and uses words and pictures symbolically (pre-operational stage), and assimilation is available at every age."
   },
   {
    "id": "u1q07",
@@ -256,7 +256,7 @@
     "Egocentrism"
    ],
    "answer": 0,
-   "why": "Assimilation fits new information into an existing schema; accommodation changes the schema when the new information does not fit."
+   "why": "Accommodation changes the schema; assimilation fits new information into the existing one. A child who calls a cat 'doggy' is assimilating; creating a separate 'cat' schema is accommodation. Equilibrium is the balance restored afterwards and egocentrism is seeing things only from your own viewpoint."
   },
   {
    "id": "u1q08",
@@ -266,10 +266,10 @@
     "Conservation of number",
     "Language development",
     "Egocentrism",
-    "Memory in later adulthood"
+    "Object permanence"
    ],
    "answer": 2,
-   "why": "Children were asked what a doll could see from a different position; pre-operational children tended to describe their own view, showing egocentrism."
+   "why": "The doll was moved to a different position and children were asked what it could see; pre-operational children described their own view, showing egocentrism. Conservation tests change the appearance of a quantity, and object permanence is tested with hidden objects in infancy."
   },
   {
    "id": "u1q09",
@@ -282,20 +282,20 @@
     "They have an innate Language Acquisition Device"
    ],
    "answer": 3,
-   "why": "Chomsky's nativist model proposes an inborn LAD that allows children to work out grammar from the language they hear, especially during a critical period."
+   "why": "Chomsky's nativist model proposes an inborn Language Acquisition Device that works out grammar from the language heard, especially during a critical period. Rewards for correct words (behaviourist) and copying adults (social learning) are nurture explanations that Chomsky argued cannot account for how quickly children learn grammar."
   },
   {
    "id": "u1q10",
    "topic": "A2",
    "q": "Which of these is the best evidence used to support Chomsky's idea of a critical period?",
    "options": [
-    "Children learn words faster when praised",
-    "Children who were deprived of language until late childhood struggled to develop full grammar",
-    "Adults learn new vocabulary throughout life",
-    "Children copy the accent of their parents"
+    "Children learn new words faster when adults praise and reward them",
+    "Children denied language until late childhood struggle with grammar",
+    "Adults can keep learning new vocabulary throughout life",
+    "Children copy the accent of the adults around them"
    ],
    "answer": 1,
-   "why": "Cases of severe language deprivation suggest grammar is hard to acquire after the critical period, supporting Chomsky's model (though such cases also involve other deprivation)."
+   "why": "Cases of severe language deprivation suggest grammar is hard to acquire after the critical period, which supports Chomsky (though such cases also involve other deprivation). Praise and copying support nurture explanations, and adult vocabulary learning says nothing about a critical period for grammar."
   },
   {
    "id": "u1q11",
@@ -303,12 +303,12 @@
    "q": "Which statement best describes intellectual development in early adulthood according to the spec?",
    "options": [
     "Thinking becomes egocentric",
-    "Abstract thought first appears",
-    "Thinking becomes realistic and pragmatic, based on expert practical knowledge",
-    "Memory starts to decline sharply"
+    "Abstract thought appears for the first time",
+    "Thinking becomes realistic and pragmatic",
+    "Memory begins to decline sharply"
    ],
    "answer": 2,
-   "why": "In early adulthood, thinking becomes realistic and pragmatic, allowing judgement about important practical matters."
+   "why": "Early adulthood thinking becomes realistic and pragmatic, drawing on expert knowledge to make practical judgements. Abstract thought is a feature of adolescence in Piaget's model, egocentrism is typical of early childhood, and sharp memory decline is associated with later adulthood."
   },
   {
    "id": "u1q12",
@@ -318,10 +318,10 @@
     "Insecure-resistant attachment",
     "Secure attachment",
     "Insecure-avoidant attachment",
-    "Monotropy"
+    "Deprivation"
    ],
    "answer": 0,
-   "why": "Insecure-resistant (ambivalent) children show high separation distress and mixed behaviour at reunion."
+   "why": "Insecure-resistant children show high distress at separation and mixed behaviour at reunion (seeking comfort and resisting it). Secure children are distressed but are soothed quickly; avoidant children show little distress and ignore the carer. Deprivation is a disruption to attachment, not an attachment type."
   },
   {
    "id": "u1q13",
@@ -334,7 +334,7 @@
     "Accommodation"
    ],
    "answer": 2,
-   "why": "Monotropy is Bowlby's idea that infants form one special attachment, usually to the main caregiver."
+   "why": "Monotropy is Bowlby's idea that infants form one special attachment, usually to the main caregiver. Imprinting is a related term from Lorenz's work with geese, and maturation belongs to Gesell, so neither describes Bowlby's claim."
   },
   {
    "id": "u1q14",
@@ -342,12 +342,12 @@
    "q": "Self-esteem is best defined as:",
    "options": [
     "How much a person values and likes themselves",
-    "How a person sees their own physical appearance",
-    "The stage of play a child is in",
-    "How others describe a person"
+    "How a person sees their own appearance and abilities",
+    "A person's overall understanding of who they are",
+    "How other people describe and rate the person"
    ],
    "answer": 0,
-   "why": "Self-esteem is the value a person places on themselves; self-image is how they see themselves; both are part of self-concept."
+   "why": "Self-esteem is the value a person places on themselves. How they see their own appearance and abilities is self-image, and their overall understanding of who they are is self-concept, which includes both. Self-esteem is about the person's own view, not other people's descriptions."
   },
   {
    "id": "u1q15",
@@ -356,37 +356,37 @@
    "options": [
     "Co-operative play",
     "Solo play",
-    "Associative learning",
+    "Symbolic play",
     "Parallel play"
    ],
    "answer": 3,
-   "why": "Parallel play is playing alongside others without joining in, typical of around 2-3 years."
+   "why": "Parallel play is playing alongside others without joining in, typical of about 2-3 years. Solo play is playing alone, and co-operative play (about 4 and over) involves working together towards a shared aim, which these children are not doing."
   },
   {
    "id": "u1q16",
    "topic": "A4",
    "q": "Which is the best example of a positive effect of peer pressure in adolescence?",
    "options": [
-    "Starting smoking to fit in",
-    "Joining a sports team because friends do, improving fitness and confidence",
-    "Skipping school with friends",
-    "Changing appearance to avoid bullying"
+    "Starting to smoke because friends do",
+    "Joining a sports team because friends do",
+    "Skipping lessons because friends do",
+    "Changing appearance to avoid being teased"
    ],
    "answer": 1,
-   "why": "Peer influence can be positive when it encourages healthy behaviour and a sense of belonging."
+   "why": "Peer influence is positive when it encourages healthy behaviour and belonging, and here the same pressure (friends doing it) leads to a healthier outcome. The other options are negative effects. Do not assume peer pressure is always harmful; the spec asks for positive and negative effects."
   },
   {
    "id": "u1q17",
    "topic": "B1",
    "q": "Gesell's maturation theory suggests that development is mainly the result of:",
    "options": [
-    "Observation and imitation",
-    "A genetically programmed sequence that unfolds over time",
-    "Rewards and punishments",
-    "Stressful life events"
+    "Observation and imitation of role models",
+    "A genetically set sequence that unfolds with age",
+    "Rewards and punishments from carers",
+    "Stressful events in the environment"
    ],
    "answer": 1,
-   "why": "Gesell argued that development follows a biologically set sequence, which is why milestones and norms can be predicted."
+   "why": "Gesell argued that development follows a genetically set sequence, which is why milestones and norms can be predicted. Observation and imitation belong to Bandura, rewards and punishments to behaviourism, and stressful life events to the stress-diathesis and Holmes-Rahe approaches."
   },
   {
    "id": "u1q18",
@@ -395,11 +395,11 @@
    "options": [
     "Gesell's maturation theory",
     "Chomsky's LAD",
-    "Social disengagement theory",
+    "The stress-diathesis model",
     "Bandura's social learning theory"
    ],
    "answer": 3,
-   "why": "Ellie is observing and imitating role models she identifies with, which is the core of social learning theory."
+   "why": "Ellie is observing and imitating role models she identifies with, which is the core of social learning theory. The stress-diathesis model needs an inherited vulnerability, and nothing in the scenario suggests one; Gesell and Chomsky explain unfolding development and language, not imitated behaviour."
   },
   {
    "id": "u1q19",
@@ -412,20 +412,20 @@
     "A person has too many life change units"
    ],
    "answer": 0,
-   "why": "Diathesis is the inherited predisposition; stress is the environmental trigger; both are needed, linking nature and nurture."
+   "why": "Diathesis is the inherited predisposition and stress is the environmental trigger; both are needed. Inheriting two recessive alleles is a purely genetic explanation, missing a critical period is a different theory, and counting life change units belongs to the Holmes-Rahe scale."
   },
   {
    "id": "u1q20",
    "topic": "B2",
    "q": "Phenylketonuria (PKU) is managed mainly by:",
    "options": [
-    "Regular physiotherapy",
-    "Insulin injections",
-    "A low-protein diet that limits phenylalanine",
-    "Avoiding sunlight"
+    "Regular physiotherapy to clear the lungs",
+    "Daily insulin injections with meals",
+    "A restricted diet limiting phenylalanine",
+    "Calcium supplements to strengthen bones"
    ],
    "answer": 2,
-   "why": "People with PKU cannot break down phenylalanine; a restricted diet from birth helps prevent damage to brain development."
+   "why": "People with PKU cannot break down phenylalanine, so a restricted diet from birth helps prevent damage to brain development. Physiotherapy is used in cystic fibrosis, insulin in diabetes and calcium in brittle bone disease, so each wrong option is the management of a different condition."
   },
   {
    "id": "u1q21",
@@ -438,46 +438,46 @@
     "An extra X chromosome (XXY)"
    ],
    "answer": 3,
-   "why": "Klinefelter's syndrome is a chromosome disorder in males with an extra X chromosome."
+   "why": "Klinefelter's syndrome is a chromosome disorder in which males have an extra X chromosome (XXY). An extra chromosome 21 causes Down's syndrome, a faulty CFTR gene causes cystic fibrosis, and a single X chromosome is Turner's syndrome, which affects females."
   },
   {
    "id": "u1q22",
    "topic": "B2",
-   "q": "Foetal alcohol syndrome is best classed as which kind of factor?",
+   "q": "According to the spec, foetal alcohol syndrome is best classed as which kind of factor?",
    "options": [
-    "A genetic disorder",
-    "A biological factor during pregnancy",
-    "An economic factor",
-    "A predictable life event"
+    "A genetic disorder inherited from a parent",
+    "A biological factor affecting the foetus",
+    "An economic factor linked to low income",
+    "An environmental factor linked to pollution"
    ],
    "answer": 1,
-   "why": "It is not inherited; it results from the mother's alcohol consumption affecting the developing foetus."
+   "why": "It is not inherited; it results from the mother's alcohol consumption affecting the developing foetus, so the spec treats it as a biological factor during pregnancy. Confusing it with a genetic disorder is the common slip because it is present from birth."
   },
   {
    "id": "u1q23",
    "topic": "B3",
    "q": "Mr Hughes lives in a damp, poorly heated flat. Which combination of effects is most directly linked to his housing?",
    "options": [
-    "Colour blindness and osteoarthritis",
-    "Down's syndrome and dementia",
-    "Respiratory disorders and risk of hypothermia",
-    "Increased fine motor skills"
+    "Cataracts and osteoarthritis",
+    "Malnutrition and dementia",
+    "Respiratory disorders and hypothermia",
+    "Obesity and type 2 diabetes"
    ],
    "answer": 2,
-   "why": "Damp and cold housing is linked to respiratory problems, cardiovascular strain, hypothermia, anxiety and depression."
+   "why": "Damp, cold housing is linked to respiratory disorders, cardiovascular strain, hypothermia, anxiety and depression. Cataracts and osteoarthritis are age-related changes, malnutrition and dementia are not directly caused by damp, and obesity and type 2 diabetes are linked to lifestyle and genetic factors."
   },
   {
    "id": "u1q24",
    "topic": "B3",
-   "q": "Which is an example of a barrier to accessing health and social care services named in the spec?",
+   "q": "Which of these is a barrier to accessing health and social care services named in the spec?",
    "options": [
-    "Limited opening hours of services",
-    "Genetic predisposition",
-    "Parallel play",
-    "Menopause"
+    "Limited opening hours at the local service",
+    "A surgery within walking distance of home",
+    "Appointment letters in the person's preferred language",
+    "A friend who can give a lift to appointments"
    ],
    "answer": 0,
-   "why": "Availability of transport, opening hours and understanding service requirements are listed as access factors."
+   "why": "Transport, opening hours and understanding the service's requirements are the access barriers listed. The other options would make access easier, so they are enablers; reading 'barrier' as 'factor' is the slip this question tests."
   },
   {
    "id": "u1q25",
@@ -490,33 +490,33 @@
     "Neglectful"
    ],
    "answer": 2,
-   "why": "Authoritative parenting combines warmth with consistent boundaries and is usually linked with higher self-esteem."
+   "why": "Authoritative parenting combines warmth with clear, reasoned boundaries and is usually linked with higher self-esteem. Authoritarian is strict with little warmth, permissive is warm with few boundaries, and neglectful has neither warmth nor boundaries."
   },
   {
    "id": "u1q26",
    "topic": "B4",
    "q": "A family's religious beliefs mean they refuse a blood transfusion for themselves. This is an example of:",
    "options": [
-    "A belief that may prevent medical intervention",
-    "An economic factor",
-    "Family dysfunction",
-    "An unpredictable life event"
+    "A religious belief that limits treatment",
+    "An economic barrier to accessing care",
+    "A sign of family dysfunction in the household",
+    "An unpredictable life event for the family"
    ],
    "answer": 0,
-   "why": "The spec lists effects of culture, religion and belief, including beliefs that may prevent medical intervention."
+   "why": "The spec lists culture, religion and belief as social factors, including beliefs that may prevent medical intervention. The decision comes from the family's values, not from money, conflict in the family or an unexpected event."
   },
   {
    "id": "u1q27",
    "topic": "B5",
    "q": "Which is the most likely chain of effects of long-term unemployment?",
    "options": [
-    "Higher income, then better housing",
-    "Improved fine motor skills",
-    "Earlier puberty",
-    "Lower income, then poorer diet and housing, then lower self-esteem and poorer health"
+    "Lower income, then more time to cook, so a healthier diet and higher self-esteem",
+    "Lower income, then poorer diet and housing, then lower self-esteem and poorer health",
+    "Lower income, then no change in health because NHS care is free",
+    "Lower income, then stress that affects mood but has no physical effects"
    ],
-   "answer": 3,
-   "why": "Economic factors interact: loss of income affects diet, housing and stress, which affect physical and emotional health."
+   "answer": 1,
+   "why": "Economic factors interact: less income affects diet, housing and stress, which affect physical and emotional health. NHS care being free does not remove the effects of poor diet and housing, and stress also has physical effects. Work in PIES and link the areas."
   },
   {
    "id": "u1q28",
@@ -529,59 +529,59 @@
     "Sudden death of a friend"
    ],
    "answer": 1,
-   "why": "Starting school is expected at a particular age, though any event can be predictable or unpredictable depending on the life course."
+   "why": "Starting school is expected at a particular age, so it is predictable for most people. Redundancy, accidents and a sudden death are usually unexpected. Remember that any event can be predictable or unpredictable depending on the life course."
   },
   {
    "id": "u1q29",
    "topic": "B6",
    "q": "The Holmes-Rahe social readjustment rating scale measures:",
    "options": [
-    "Intelligence at different ages",
-    "Stress from life events using life change units",
-    "Stages of play",
-    "Bone density in later life"
+    "A person's self-esteem after each life event",
+    "Stress caused by life events, in life change units",
+    "How long a person takes to recover from an event",
+    "The risk of developing a genetic disorder"
    ],
    "answer": 1,
-   "why": "Each life event has a life change unit score; a higher total over a year is linked with a greater risk of stress-related illness."
+   "why": "Each life event has a life change unit score and a higher total over a year is linked with a greater risk of stress-related illness. The scale does not measure self-esteem or recovery time, and it does not predict genetic disorders."
   },
   {
    "id": "u1q30",
    "topic": "B6",
    "q": "Which is a valid limitation of the Holmes-Rahe scale?",
    "options": [
-    "It does not include any life events",
-    "It only applies to children",
-    "It measures genetic disorders",
-    "It assumes an event affects everyone in the same way, ignoring individual perception and support"
+    "It only counts negative events, so cannot show stress from happy events",
+    "It was designed for children, so it cannot be used with adults",
+    "It measures genetic risk, not stress from life events",
+    "It scores an event the same for everyone, ignoring individual perception"
    ],
    "answer": 3,
-   "why": "The same event (e.g. divorce) may be a relief for one person and devastating for another; the scale does not capture this."
+   "why": "The same event (such as divorce) may be a relief for one person and devastating for another, but the scale scores it identically. The scale does include positive events such as marriage, and it was built for adults, so those two options are false."
   },
   {
    "id": "u1q31",
    "topic": "C1",
    "q": "Osteoarthritis is best described as:",
    "options": [
-    "Degeneration of joint cartilage causing pain and stiffness",
-    "A genetic disorder of the lungs",
-    "Loss of nerve cells in the brain",
-    "A deficiency of insulin"
+    "Wear of joint cartilage causing pain and stiffness",
+    "A genetic disorder affecting the lungs",
+    "Loss of nerve cells in the brain and spinal cord",
+    "Loss of bone density that makes bones brittle"
    ],
    "answer": 0,
-   "why": "Osteoarthritis is wear and degeneration of cartilage in joints, reducing mobility and independence."
+   "why": "Osteoarthritis is wear and degeneration of joint cartilage, reducing mobility and independence. Loss of bone density is osteoporosis, the usual confusion; loss of nerve cells describes dementia and a genetic lung disorder describes cystic fibrosis."
   },
   {
    "id": "u1q32",
    "topic": "C1",
-   "q": "Why might an older adult be at greater risk of malnutrition even with a normal diet?",
+   "q": "Why might an older adult be at greater risk of malnutrition even when eating a normal diet?",
    "options": [
-    "Increased absorption of nutrients",
-    "Faster metabolism",
-    "Reduced absorption of nutrients from the digestive system",
-    "Growth spurts"
+    "Their metabolism speeds up so they burn more energy",
+    "Their bodies need more calories than in early adulthood",
+    "Their digestive system absorbs fewer nutrients from food",
+    "Their kidneys remove nutrients faster from the blood"
    ],
    "answer": 2,
-   "why": "The spec lists reduced absorption of nutrients as a physical change of ageing."
+   "why": "Reduced absorption of nutrients is a physical change of ageing, so the same diet delivers less. Metabolism usually slows with age rather than speeding up, and older adults tend to need fewer calories, not more."
   },
   {
    "id": "u1q33",
@@ -589,12 +589,12 @@
    "q": "Social disengagement theory suggests that in later adulthood:",
    "options": [
     "Older people should stay as active as possible",
-    "Older people develop formal operational thought",
+    "Older people withdraw only because of illness and poverty",
     "Retirement always improves wellbeing",
-    "Older people and society naturally withdraw from each other"
+    "Older people and society withdraw from each other"
    ],
    "answer": 3,
-   "why": "Cumming and Henry proposed mutual withdrawal; it has been criticised for ignoring the many older people who want to stay involved."
+   "why": "Cumming and Henry proposed mutual withdrawal as natural and inevitable; it is criticised for ignoring the many older people who want to stay involved. Staying active is activity theory, and the theory does not claim that illness or poverty alone causes withdrawal."
   },
   {
    "id": "u1q34",
@@ -603,37 +603,115 @@
    "options": [
     "Disengagement theory",
     "Activity theory",
-    "Gesell's maturation theory",
-    "Chomsky's critical period"
+    "The Holmes-Rahe scale",
+    "Bandura's social learning theory"
    ],
    "answer": 1,
-   "why": "Activity theory argues older people stay happier and healthier by keeping roles and social contacts."
+   "why": "Margaret keeps roles and social contacts and her wellbeing improves, which supports activity theory (Havighurst). Disengagement theory predicts the opposite, and the Holmes-Rahe scale measures stress from life events rather than explaining how to age well."
   },
   {
    "id": "u1q35",
    "topic": "C3",
    "q": "Which is an economic effect of an ageing population?",
    "options": [
-    "More children starting school",
+    "Rising demand for primary school places",
     "Fewer people needing GP services",
-    "Increased spending on pensions and care services",
+    "Higher spending on pensions and care",
     "Lower demand for domiciliary care"
    ],
    "answer": 2,
-   "why": "More older people increases demand for pensions, health care and social care, while the proportion of working-age taxpayers may fall."
+   "why": "More older people means higher spending on pensions, health care and social care, while the proportion of working-age taxpayers may fall. Fewer GP visits and lower domiciliary care demand are the reverse of what happens, and school places relate to children."
   },
   {
    "id": "u1q36",
    "topic": "C3",
    "q": "Which is a positive contribution an ageing population can make to society?",
    "options": [
-    "Providing informal childcare for grandchildren and volunteering",
-    "Reduced need for care",
-    "Higher birth rates",
-    "Lower life expectancy"
+    "Informal childcare and volunteering",
+    "Reduced demand for health and social care",
+    "A rising birth rate across the population",
+    "Lower costs for pensions and benefits"
    ],
    "answer": 0,
-   "why": "Older people contribute through informal care, volunteering and spending; good answers balance costs against these benefits."
+   "why": "Older people contribute through informal care, volunteering and spending. An ageing population increases, not reduces, the need for care and pension costs; do not describe only the costs, as good answers balance costs against these contributions."
+  },
+  {
+   "id": "u1q37",
+   "topic": "A1",
+   "q": "A health visitor plots a baby's weight on a centile chart and it falls on the 25th centile. What does this mean?",
+   "options": [
+    "The baby weighs 25% less than the average baby of that age",
+    "The baby has reached a quarter of the weight expected as an adult",
+    "About 25 in every 100 babies of that age and sex weigh less",
+    "The baby is underweight and must be referred immediately"
+   ],
+   "answer": 2,
+   "why": "A centile shows where a child sits compared with 100 children of the same age and sex: on the 25th centile about 25 weigh less and 75 weigh more. It is not a percentage of an average or adult weight, and a baby only needs review if the pattern of centiles changes or sits at the extremes."
+  },
+  {
+   "id": "u1q38",
+   "topic": "A1",
+   "q": "Which hormone is mainly responsible for developing male secondary sexual characteristics such as a deeper voice and facial hair?",
+   "options": [
+    "Oestrogen",
+    "Progesterone",
+    "Testosterone",
+    "Follicle stimulating hormone (FSH)"
+   ],
+   "answer": 2,
+   "why": "Testosterone, made by the testes, drives male secondary sexual characteristics. The pituitary hormones FSH and LH stimulate the testes or ovaries to work but are not the sex hormone that causes these changes. Oestrogen and progesterone are the main female sex hormones."
+  },
+  {
+   "id": "u1q39",
+   "topic": "A3",
+   "q": "As a teenager, Sam expects adults to let him down and avoids close friendships, because his carer was often unavailable when he was small. Which part of Bowlby's theory best explains how this expectation carries into later relationships?",
+   "options": [
+    "Monotropy",
+    "Imprinting",
+    "Assimilation",
+    "The internal working model"
+   ],
+   "answer": 3,
+   "why": "The internal working model is the mental template of relationships built from early attachment experience, which shapes expectations of others later. Monotropy is forming one special attachment, imprinting is Lorenz's term from animal research, and assimilation is a Piaget concept about schemas."
+  },
+  {
+   "id": "u1q40",
+   "topic": "B2",
+   "q": "Aisha's mother had breast cancer and Aisha has inherited a gene variant linked to a higher risk. What does genetic susceptibility mean for Aisha?",
+   "options": [
+    "She will certainly develop breast cancer in later life",
+    "She is a carrier and cannot develop the disease herself",
+    "Her chance is higher than average, but not certain",
+    "Her risk is no different because lifestyle alone causes cancer"
+   ],
+   "answer": 2,
+   "why": "Susceptibility (predisposition) raises the chance of a disease but does not make it certain; lifestyle and environment also matter. Treating it as a certainty, or as carrier status for a recessive disorder, confuses it with inherited disorders such as cystic fibrosis."
+  },
+  {
+   "id": "u1q41",
+   "topic": "C1",
+   "q": "Which statement about Alzheimer's disease is correct?",
+   "options": [
+    "It is a normal part of ageing that eventually affects everyone",
+    "It is the same thing as dementia, so the two terms are interchangeable",
+    "It is a short-term confusion caused by infection that clears with treatment",
+    "It is a progressive brain disease and the commonest cause of dementia"
+   ],
+   "answer": 3,
+   "why": "Dementia is the umbrella term for a group of symptoms and Alzheimer's disease is the most common cause. It is not an inevitable part of ageing, and it is progressive, unlike a delirium triggered by an infection, which can clear."
+  },
+  {
+   "id": "u1q42",
+   "topic": "B4",
+   "q": "Which statement about the effects of bullying is supported by the spec?",
+   "options": [
+    "It mainly affects physical development, with little effect on emotions",
+    "Its effects always end as soon as the bullying stops",
+    "It can lower self-esteem and raise the risk of self-harm and suicide",
+    "It only matters at school, so has no effect on adult relationships"
+   ],
+   "answer": 2,
+   "why": "The spec links bullying with lower self-esteem and increased risk of self-harm and suicide. Effects can last well after the bullying ends and can affect confidence and relationships in adulthood, and they are emotional and social as well as physical (use PIES)."
   }
  ],
  "long": [
