@@ -227,12 +227,12 @@
        "q": "Which organisation now commissions many NHS services locally in England?",
        "options": [
         "Integrated Care Boards",
-        "Clinical Commissioning Groups",
-        "Public Health England",
-        "The Department of Health"
+        "Health and Wellbeing Boards",
+        "NHS trusts",
+        "Local authority adult social care departments"
        ],
        "answer": 0,
-       "why": "Integrated Care Boards replaced Clinical Commissioning Groups in 2022."
+       "why": "Integrated Care Boards (which replaced Clinical Commissioning Groups in 2022) commission most local NHS services. Health and Wellbeing Boards plan and join up services, NHS trusts provide care, and local authorities commission social care."
       }
      },
      {
