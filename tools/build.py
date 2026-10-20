@@ -117,7 +117,12 @@ def main():
         e = load(f"content/exam_u{u}.json")
         if e:
             exams[str(u)] = e
-    data = {"criteria": load("data/criteria.json"), "coach": coach, "exams": exams, "currency": reg}
+    guide = {}
+    for name in ("guide_a", "guide_b", "guide_c"):
+        part = load(f"content/{name}.json")
+        if part:
+            guide.update(part)
+    data = {"criteria": load("data/criteria.json"), "coach": coach, "exams": exams, "currency": reg, "guide": guide}
     blob = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
 
     src = (ROOT / "src/hub.html").read_text(encoding="utf-8")
@@ -141,6 +146,7 @@ def main():
 
     print(f"coach units: {sorted(coach, key=int)}")
     print(f"exam units: {sorted(exams)}")
+    print(f"walkthrough units: {sorted(guide, key=int)}")
     print(f"index.html {len(full)//1024} KB, dist/artifact.html {len(body)//1024} KB")
 
 

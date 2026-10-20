@@ -251,6 +251,30 @@ ul.plain{margin:0;padding-left:1.1rem;display:grid;gap:4px}
 .upd .meta{font-family:var(--f-mono);font-size:var(--t-xs);color:var(--muted)}
 .upd dl{display:grid;grid-template-columns:auto 1fr;gap:2px 10px;margin:0;font-size:var(--t-sm)}
 .upd dt{font-weight:700}.upd dd{margin:0}
+.split2{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:var(--s4);align-items:start}
+@media (max-width:860px){.split2{grid-template-columns:1fr}}
+.calib{display:grid;grid-template-columns:6.5rem 1fr 3rem;gap:8px;align-items:center;font-size:var(--t-sm)}
+.boxes{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:4px}
+.boxes div{display:grid;gap:2px;text-align:center;background:var(--sunk);border-radius:6px;padding:6px 2px}
+.boxes .bn{font-size:1.1rem;font-weight:600}.boxes .bl{font-size:.68rem;color:var(--muted)}
+.boxes div:last-child{background:var(--green-soft)}
+.cal-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:var(--s2);align-items:center;padding:8px 0;border-bottom:1px solid var(--line)}
+.cal-form{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,150px),1fr));gap:var(--s2);align-items:end}
+.cal-form label{display:grid;gap:2px;font-size:var(--t-xs);color:var(--muted)}
+.ev{display:grid;grid-template-columns:7rem minmax(0,1fr) auto;gap:var(--s2);align-items:center;padding:5px 0;border-bottom:1px dashed var(--line);font-size:var(--t-sm)}
+@media (max-width:600px){.ev{grid-template-columns:1fr}}
+.ev.exam{font-weight:700}.ev.handin .mono{color:var(--red)}.ev.resub .mono{color:var(--amber)}
+.gw{border-top:1px solid var(--line);padding-top:var(--s4)}
+.gw-steps{display:flex;flex-wrap:wrap;gap:4px}
+.gw-steps button{min-width:34px;height:30px;border-radius:6px;border:1px solid var(--line);background:var(--surface);cursor:pointer;font-family:var(--f-mono);font-weight:600}
+.gw-steps button[aria-current="true"]{border-color:var(--accent);box-shadow:inset 0 -3px 0 var(--accent)}
+.gw-steps button.yes{background:var(--green-soft);border-color:var(--green)}.gw-steps button.part{background:var(--amber-soft);border-color:var(--amber)}
+.pair{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:var(--s2)}
+.pick{text-align:left;border:1px solid var(--line);background:var(--sunk);border-radius:8px;padding:10px 14px;cursor:pointer;display:grid;grid-template-columns:1.4rem 1fr;gap:8px;font-style:italic}
+.pick .k{font-family:var(--f-mono);font-style:normal;font-weight:600;color:var(--muted)}
+.pick.right{background:var(--green-soft);border-color:var(--green)}.pick.wrong{background:var(--red-soft);border-color:var(--red)}
+.pick:disabled{cursor:default}
+.integrity{border-left:4px solid var(--accent)}
 footer{border-top:1px solid var(--line);padding-block:var(--s5);color:var(--muted);font-size:var(--t-sm)}
 details.more>summary{cursor:pointer;font-weight:700}
 @media (prefers-reduced-motion:no-preference){.cells i{transition:background .25s,border-color .25s}.meter span{transition:width .3s}}
@@ -268,7 +292,8 @@ details.more>summary{cursor:pointer;font-weight:700}
       </div>
     </div>
     <nav class="tabs" role="tablist" aria-label="Sections">
-      <button role="tab" data-tab="points" aria-selected="true">Points</button>
+      <button role="tab" data-tab="today" aria-selected="true">Today</button>
+      <button role="tab" data-tab="points" aria-selected="false">Points</button>
       <button role="tab" data-tab="coach" aria-selected="false">Distinction coach</button>
       <button role="tab" data-tab="exams" aria-selected="false">Exam revision</button>
       <button role="tab" data-tab="planner" aria-selected="false">Planner</button>
@@ -277,7 +302,8 @@ details.more>summary{cursor:pointer;font-weight:700}
 </header>
 
 <main class="wrap">
-  <section class="view" id="view-points"></section>
+  <section class="view" id="view-today"></section>
+  <section class="view" id="view-points" hidden></section>
   <section class="view" id="view-coach" hidden></section>
   <section class="view" id="view-exams" hidden></section>
   <section class="view" id="view-planner" hidden></section>
@@ -338,7 +364,7 @@ const VERBS = {
 
 /* ---------- State ---------- */
 const KEY = "hsc-dstar-v1";
-function blank(){return {pathway:"standard",opt:[],grades:{},marks:{},extMode:{},bounds:JSON.parse(JSON.stringify(DEFAULT_BOUNDS)),status:{},checks:{},rag:{},quiz:{},drafts:{},selfmark:{},dates:{},deadlines:[],tab:"points",coachUnit:5,examUnit:1,examSub:"overview"}}
+function blank(){return {pathway:"standard",opt:[],grades:{},marks:{},extMode:{},bounds:JSON.parse(JSON.stringify(DEFAULT_BOUNDS)),status:{},checks:{},rag:{},quiz:{},drafts:{},selfmark:{},dates:{},deadlines:[],tab:"today",coachUnit:5,srs:{},calib:{1:{n:0,c:0},2:{n:0,c:0},3:{n:0,c:0}},daily:null,dailyCap:12,streak:0,lastDone:"",cal:[],tasksDone:{},guide:{},examUnit:1,examSub:"overview"}}
 let S = blank();
 try{const raw=localStorage.getItem(KEY); if(raw){S=Object.assign(blank(),JSON.parse(raw));}}catch(e){}
 function save(){S._t=Date.now();try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}cloudQueue()}
@@ -422,7 +448,7 @@ function calc(){
 function cellsHTML(lost,big){let h="";for(let i=0;i<BUDGET;i++){h+=`<i class="${i<lost?"lost":""}"></i>`}return `<div class="cells${big?" big":""}" aria-hidden="true">${h}</div>`}
 
 /* ---------- Tabs ---------- */
-const TABS=["points","coach","exams","planner"];
+const TABS=["today","points","coach","exams","planner"];
 function setTab(t,push){if(!TABS.includes(t))t="points";S.tab=t;save();
   document.querySelectorAll("nav.tabs button").forEach(b=>b.setAttribute("aria-selected",b.dataset.tab===t));
   TABS.forEach(x=>$("#view-"+x).hidden=x!==t);
@@ -432,7 +458,7 @@ document.querySelector("nav.tabs").addEventListener("click",e=>{const b=e.target
 
 function renderHeader(){const c=calc();$("#miniCells").outerHTML=cellsHTML(Math.min(c.lost,BUDGET)).replace('class="cells','id="miniCells" class="cells');
   $("#miniProj").textContent=c.grade; $("#miniProj").title=`Projected ${c.projected} of 288 points`}
-function render(t){renderHeader(); ({points:renderPoints,coach:renderCoach,exams:renderExams,planner:renderPlanner})[t||S.tab]()}
+function render(t){renderHeader(); ({today:renderToday,points:renderPoints,coach:renderCoach,exams:renderExams,planner:renderPlanner})[t||S.tab]()}
 
 /* ---------- POINTS VIEW ---------- */
 function gradeSelect(u){
@@ -552,6 +578,46 @@ function updCard(e){const host=s=>{try{return new URL(s).hostname.replace(/^www\
 function currencyPanel(u,title){const list=currencyFor(u);if(!list.length)return "";
   return `<div class="stack"><h3>${title||"Spec updates for this unit"}</h3><p class="muted" style="font-size:var(--t-sm)">The spec dates from 2022, so some of the names in it have since changed. Use the current name in your work. Your teacher confirms any substitution with Pearson's Standards Verifier.</p>${list.map(updCard).join("")}</div>`}
 
+
+/* ---------- Guided walkthrough (parallel-case coaching) ---------- */
+function guideFor(u){return DATA&&DATA.guide?DATA.guide[u]:null}
+function gState(k){S.guide=S.guide||{};return S.guide[k]||(S.guide[k]={})}
+function mapProgress(u,code){const g=guideFor(u);const reqs=arr(g&&g.criteria&&g.criteria[code]&&g.criteria[code].requirements);const yes=reqs.filter((_,i)=>(S.guide||{})[`${u}|${code}|${i}`]&&S.guide[`${u}|${code}|${i}`].st==="yes").length;return[yes,reqs.length]}
+function parallelPanel(u){const g=guideFor(u);if(!g||!g.parallelCase)return "";
+  return `<div class="panel stack integrity"><span class="eyebrow">Practice case for the walkthroughs · made up</span><h3>${esc(g.parallelCase.title)}</h3><p class="prose">${esc(g.parallelCase.summary)}</p>
+  <p class="notice"><b>Your work must be your own.</b> The walkthrough examples use this made-up case on purpose. Learn the thinking from them, then apply it to your own brief in your own words. Don't copy the examples, or anything an AI writes for you, into your assignment: you sign a declaration that the work is yours.</p></div>`}
+function walkthrough(u,code){
+  const g=guideFor(u); const reqs=arr(g&&g.criteria&&g.criteria[code]&&g.criteria[code].requirements); if(!reqs.length)return "";
+  const open=S.gwOpen===`${u}|${code}`; const [yes,n]=mapProgress(u,code);
+  if(!open)return `<div class="row" style="justify-content:space-between"><button class="btn primary" data-act="gwopen" data-k="${esc(u+"|"+code)}">Guided walkthrough · ${n} steps</button><span class="mono" style="font-size:var(--t-xs)">Evidence mapped: ${yes}/${n}</span></div>`;
+  const step=Math.min(Number(S.gwStep||0),n); 
+  const nav=`<div class="gw-steps" role="group" aria-label="Walkthrough steps">${reqs.map((r,i)=>{const st=gState(`${u}|${code}|${i}`).st;return `<button data-act="gwstep" data-i="${i}" aria-current="${i===step}" class="${st||""}">${i+1}</button>`}).join("")}<button data-act="gwstep" data-i="${n}" aria-current="${step===n}">Map</button></div>`;
+  let body;
+  if(step===n){
+    body=`<div class="stack"><h4>Your evidence map for ${esc(code)}</h4><p class="muted" style="font-size:var(--t-sm)">Before you submit, every row should say <b>Yes</b> with a location you could point your assessor to. This is your own check. Nothing here is marked.</p>
+    <div class="tbl-wrap"><table style="min-width:480px"><thead><tr><th>Requirement</th><th>Where in my work</th><th>Status</th></tr></thead><tbody>${reqs.map((r,i)=>{const st=gState(`${u}|${code}|${i}`);return `<tr><td>${esc(r.need)}</td><td>${esc(st.loc||"–")}</td><td><span class="chip ${st.st==="yes"?"D":st.st==="part"?"M":"P"}">${st.st==="yes"?"Yes":st.st==="part"?"Partly":"Not yet"}</span></td></tr>`}).join("")}</tbody></table></div></div>`;
+  } else {
+    const r=reqs[step]; const k=`${u}|${code}|${step}`; const st=gState(k); const flip=step%2===1;
+    const cards=[["a",r.example],["b",r.nearMiss]]; if(flip)cards.reverse();
+    const chk=r.check||{};
+    body=`<div class="stack-lg">
+      <div class="stack" style="gap:6px"><span class="eyebrow">Step ${step+1} of ${n} · what the work must show</span><h4 style="font-size:var(--t-lg)">${esc(r.need)}</h4>
+        <p>${esc(r.means)}</p><p class="muted" style="font-size:var(--t-sm)"><b>From the spec's assessment guidance:</b> ${esc(r.fromSpec)}</p></div>
+      <div class="stack" style="gap:6px"><span class="eyebrow">1 · Which of these shows Distinction-level thinking? (practice case)</span>
+        <div class="pair">${cards.map(([id,txt],j)=>`<button class="pick ${st.pick?(id==="a"?"right":st.pick===id?"wrong":""):""}" data-act="gwpick" data-k="${esc(k)}" data-v="${id}" ${st.pick?"disabled":""}><span class="k">${"AB"[j]}</span><span>${esc(txt)}</span></button>`).join("")}</div>
+        ${st.pick?`<div class="feedback"><b>${st.pick==="a"?"Yes.":"Look again."}</b> The weaker one falls short because ${esc(String(r.whyNearMiss||"").replace(/^[A-Z]/,c=>c.toLowerCase()))}</div>`:""}</div>
+      <div class="stack" style="gap:6px"><label class="eyebrow" for="gx-${esc(k.replace(/\W/g,""))}">2 · Explain it in your own words</label><p>${esc(r.explainPrompt)}</p>
+        <textarea id="gx-${esc(k.replace(/\W/g,""))}" style="min-height:90px" data-act="gwexp" data-k="${esc(k)}" placeholder="Writing your explanation is what makes it stick.">${esc(st.exp||"")}</textarea></div>
+      ${chk.q?`<div class="stack" style="gap:6px"><span class="eyebrow">3 · Check</span><p style="font-weight:700">${esc(chk.q)}</p><div class="opts">${arr(chk.options).map((o,j)=>`<button data-act="gwchk" data-k="${esc(k)}" data-i="${j}" ${st.chk!=null?"disabled":""} class="${st.chk!=null?(j===chk.answer?"right":j===st.chk?"wrong":""):""}"><span class="k">${"ABCD"[j]}</span><span>${esc(o)}</span></button>`).join("")}</div>${st.chk!=null?`<div class="feedback"><b>${st.chk===chk.answer?"Correct.":"Not quite."}</b> ${esc(chk.why)}</div>`:""}</div>`:""}
+      <div class="stack" style="gap:6px"><span class="eyebrow">4 · Now your own work</span><label for="gl-${esc(k.replace(/\W/g,""))}">Where does your draft show this? Give a page, heading or paragraph.</label>
+        <input type="text" id="gl-${esc(k.replace(/\W/g,""))}" data-act="gwloc" data-k="${esc(k)}" value="${esc(st.loc||"")}" placeholder="e.g. Section 2, paragraphs 3–4">
+        <div class="seg" role="group" aria-label="Does your draft show this?">${[["no","Not yet"],["part","Partly"],["yes","Yes"]].map(([v,l])=>`<button data-act="gwst" data-k="${esc(k)}" data-v="${v}" aria-pressed="${st.st===v}">${l}</button>`).join("")}</div></div>
+      <div class="row"><button class="btn" data-act="gwstep" data-i="${Math.max(0,step-1)}" ${step===0?"disabled":""}>Back</button><button class="btn primary" data-act="gwstep" data-i="${step+1}">${step+1<n?"Next step":"See evidence map"}</button></div>
+    </div>`;
+  }
+  return `<div class="gw stack"><div class="row" style="justify-content:space-between"><span class="eyebrow">Guided walkthrough · ${esc(code)}</span><button class="btn small ghost" data-act="gwclose">Close</button></div>${nav}${body}</div>`;
+}
+
 /* ---------- COACH VIEW ---------- */
 function coachFor(u){return DATA&&DATA.coach?DATA.coach[u]:null}
 function critFor(u){return (DATA&&DATA.criteria&&DATA.criteria.criteria[u])||{}}
@@ -610,6 +676,7 @@ function renderCoach(){
       </div>
       <div class="stack">
         <h3>Coaching for each Distinction criterion</h3>
+        ${parallelPanel(u)}
         ${byLvl("D").map(code=>dCard(u,code,crit[code],(co.criteria||{})[code])).join("")||`<p class="muted">Coaching notes for this unit are on their way.</p>`}
       </div>
     </div>
@@ -631,6 +698,7 @@ function dCard(u,code,text,c){
         ${arr(c.starters).length?`<div class="stack" style="gap:6px"><span class="eyebrow">Sentence starters</span>${arr(c.starters).map(s=>`<p class="starter">${esc(s)}</p>`).join("")}</div>`:""}
       </div>
       ${c.stretch?`<p><b>Outstanding looks like:</b> ${esc(c.stretch)}</p>`:""}
+      ${walkthrough(u,code)}
     </div></article>`;
 }
 
@@ -757,6 +825,115 @@ function exToolkit(u,e){
   return `<div class="stack-lg">${h||`<p class="muted">Toolkit coming soon.</p>`}</div>`;
 }
 
+/* ---------- Dates ---------- */
+function isoOf(d){const z=new Date(d);z.setMinutes(z.getMinutes()-z.getTimezoneOffset());return z.toISOString().slice(0,10)}
+function todayISO(){return isoOf(new Date())}
+function addDays(iso,n){const d=new Date(iso+"T12:00:00");d.setDate(d.getDate()+n);return isoOf(d)}
+function addWorkingDays(iso,n){let d=iso;while(n>0){d=addDays(d,1);const w=new Date(d+"T12:00:00").getDay();if(w!==0&&w!==6)n--}return d}
+function weekStart(iso){const d=new Date(iso+"T12:00:00");const w=(d.getDay()+6)%7;return addDays(iso,-w)}
+function dayDiff(a,b){return Math.round((new Date(b+"T12:00:00")-new Date(a+"T12:00:00"))/86400000)}
+function nice(iso){return new Date(iso+"T12:00:00").toLocaleDateString("en-GB",{weekday:"short",day:"numeric",month:"short"})}
+
+/* ---------- Spaced repetition (Leitner, question level) ---------- */
+const BOX_DAYS=[0,1,3,7,14,30];
+function allMCQ(){const out=[];EXT.forEach(u=>{const e=exam(u);arr(e&&e.mcq).forEach(q=>out.push({...q,unit:u}))});return out}
+function mcqById(id){return allMCQ().find(q=>q.id===id)}
+function interleave(list){const by={};list.forEach(q=>(by[q.unit]=by[q.unit]||[]).push(q));const keys=Object.keys(by);const out=[];let k=0;while(out.length<list.length){const b=by[keys[k%keys.length]];if(b&&b.length)out.push(b.shift());k++;if(k>list.length*8)break}return out}
+function weakFirst(q){const e=exam(q.unit);const t=arr(e&&e.topics).find(t=>t.id===q.topic);if(!t)return 1;const c=topicRag(q.unit,t);return c.r?0:c.a?1:c.n?2:3}
+function buildDaily(force){
+  const t=todayISO(); S.srs=S.srs||{};
+  if(!force&&S.daily&&S.daily.date===t)return S.daily;
+  const cap=Number(S.dailyCap)||12; const qs=allMCQ();
+  const due=qs.filter(q=>S.srs[q.id]&&S.srs[q.id].due<=t).sort((a,b)=>S.srs[a.id].due<S.srs[b.id].due?-1:S.srs[a.id].box-S.srs[b.id].box);
+  const fresh=qs.filter(q=>!S.srs[q.id]).sort((a,b)=>weakFirst(a)-weakFirst(b)||Math.random()-.5);
+  const pick=due.slice(0,cap); const room=Math.min(cap-pick.length,Math.max(4,cap-due.length));
+  pick.push(...interleave(fresh).slice(0,Math.max(0,room)));
+  S.daily={date:t,ids:interleave(pick).map(q=>q.id),i:0,res:[],requeued:[],conf:null,picked:null};
+  return S.daily;
+}
+function srsAnswer(q,ok,conf){
+  const t=todayISO(); const s=S.srs[q.id]||{box:0,seen:0};
+  s.seen++; s.box=ok?Math.min(5,s.box+1):1; s.due=addDays(t,ok?BOX_DAYS[s.box]:1); S.srs[q.id]=s;
+  const k=S.quiz[q.id]||{n:0,c:0};k.n++;if(ok)k.c++;k.last=ok;S.quiz[q.id]=k;
+  S.calib=S.calib||{1:{n:0,c:0},2:{n:0,c:0},3:{n:0,c:0}}; S.calib[conf].n++; if(ok)S.calib[conf].c++;
+}
+function finishDaily(){const t=todayISO();if(S.lastDone===t)return;S.streak=(S.lastDone===addDays(t,-1)?(S.streak||0)+1:1);S.lastDone=t}
+
+/* ---------- Assessment calendar ---------- */
+const MILESTONES=[[0,"Unpack the brief and open the guided walkthrough for each D criterion"],[.25,"Research and plan: sources, structure, which D requirements go where"],[.6,"First full draft of every learning aim"],[.85,"Map your draft against every D requirement in the walkthrough"],[1,"Final read, authenticity check and hand in"]];
+function migrateCal(){S.cal=S.cal||[];if(S.deadlines&&S.deadlines.length){S.deadlines.forEach(d=>S.cal.push({id:d.id,u:d.u,name:d.name,launch:"",handin:d.date,decision:""}));S.deadlines=[]}}
+function milestones(c){if(!c.handin)return[];const start=c.launch||addDays(c.handin,-21);const span=Math.max(1,dayDiff(start,c.handin));
+  const m=MILESTONES.map(([f,label],k)=>({id:`${c.id}|m${k}`,date:addDays(start,Math.round(span*f)),label:`Unit ${c.u} ${c.name}: ${label}`,kind:k===4?"handin":"milestone"}));
+  if(c.decision){m.push({id:`${c.id}|resub`,date:addWorkingDays(c.decision,15),label:`Unit ${c.u} ${c.name}: latest date for a resubmission, if your Lead IV approves one (15 working days)`,kind:"resub"})}
+  return m}
+function allEvents(){migrateCal();const ev=[];S.cal.forEach(c=>ev.push(...milestones(c)));EXT.forEach(u=>{if(S.dates[u])ev.push({id:`exam${u}`,date:S.dates[u],label:`Unit ${u} ${u===4?"Part B":"exam"}: ${UNITS[u].t}`,kind:"exam"});if(u===4&&S.dates[4])ev.push({id:"u4partA",date:addDays(S.dates[4],-28),label:"Unit 4 Part A released (about 4 weeks before Part B): start research notes",kind:"milestone"})});return ev.sort((a,b)=>a.date<b.date?-1:1)}
+function clashes(){const ev=allEvents();const hard=ev.filter(e=>e.kind==="handin"||e.kind==="exam");const byWeek={};hard.forEach(e=>{const w=weekStart(e.date);(byWeek[w]=byWeek[w]||[]).push(e)});
+  return Object.entries(byWeek).filter(([w,l])=>l.length>1&&dayDiff(todayISO(),w)>-7).map(([w,l])=>({week:w,items:l}))}
+function weekTasks(){const t=todayISO(),end=addDays(t,6);const tasks=[];
+  allEvents().forEach(e=>{if(e.kind==="exam")return;if((e.date>=t&&e.date<=end)||(e.date<t&&!S.tasksDone[e.id]&&dayDiff(e.date,t)<=14))tasks.push({id:e.id,date:e.date,label:e.label,kind:e.kind})});
+  const ws=weekStart(t);
+  const upcoming=EXT.filter(u=>S.dates[u]&&dayDiff(t,S.dates[u])>=0&&dayDiff(t,S.dates[u])<=120).sort((a,b)=>S.dates[a]<S.dates[b]?-1:1);
+  if(upcoming.length){const u=upcoming[0];tasks.push({id:`long|${u}|${ws}`,date:addDays(ws,2),label:`One timed extended answer for Unit ${u}, self-marked against the marking points`,kind:"practice",go:["exams",u,"long"]});
+    tasks.push({id:`rate|${ws}`,date:addDays(ws,6),label:`Re-rate your topic checklists for Unit${upcoming.length>1?"s":""} ${upcoming.join(", ")}`,kind:"practice",go:["exams",u,"checklist"]})}
+  return tasks.sort((a,b)=>a.date<b.date?-1:1)}
+
+/* ---------- Calendar export ---------- */
+function gcalLink(e,allDay){const d=e.date.replace(/-/g,"");const d2=addDays(e.date,1).replace(/-/g,"");
+  const p=new URLSearchParams({action:"TEMPLATE",text:e.label,dates:allDay===false?`${d}T170000/${d}T171500`:`${d}/${d2}`,details:"From your HSC D* Project hub"});if(e.recur)p.set("recur",e.recur);return "https://calendar.google.com/calendar/render?"+p.toString()}
+function icsText(){const esc_=s=>String(s).replace(/[\\,;]/g,m=>"\\"+m).replace(/\n/g,"\\n");const stamp=new Date().toISOString().replace(/[-:]/g,"").slice(0,15)+"Z";
+  const L=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//HSC D* Project//EN","CALSCALE:GREGORIAN"];
+  allEvents().forEach(e=>{L.push("BEGIN:VEVENT",`UID:${e.id.replace(/\W/g,"")}@hsc-dstar`,`DTSTAMP:${stamp}`,`DTSTART;VALUE=DATE:${e.date.replace(/-/g,"")}`,`DTEND;VALUE=DATE:${addDays(e.date,1).replace(/-/g,"")}`,`SUMMARY:${esc_(e.label)}`,"BEGIN:VALARM","ACTION:DISPLAY",`DESCRIPTION:${esc_(e.label)}`,"TRIGGER:-PT15H","END:VALARM","END:VEVENT")});
+  const last=EXT.map(u=>S.dates[u]).filter(Boolean).sort().pop();
+  if(last){L.push("BEGIN:VEVENT","UID:daily-retrieval@hsc-dstar",`DTSTAMP:${stamp}`,`DTSTART:${todayISO().replace(/-/g,"")}T170000`,`DTEND:${todayISO().replace(/-/g,"")}T171500`,`RRULE:FREQ=DAILY;UNTIL=${last.replace(/-/g,"")}T235959`,"SUMMARY:15 minutes: today's retrieval quiz (HSC D* hub)","BEGIN:VALARM","ACTION:DISPLAY","DESCRIPTION:Today's retrieval quiz","TRIGGER:PT0M","END:VALARM","END:VEVENT")}
+  L.push("END:VCALENDAR");return L.join("\r\n")}
+
+/* ---------- TODAY VIEW ---------- */
+function renderToday(){
+  migrateCal(); const D=buildDaily(); const t=todayISO();
+  const total=D.ids.length, i=D.i, q=i<total?mcqById(D.ids[i]):null;
+  const cb=S.calib||{1:{n:0,c:0},2:{n:0,c:0},3:{n:0,c:0}}; const pct=k=>cb[k].n?Math.round(cb[k].c/cb[k].n*100):null;
+  const boxes=[0,0,0,0,0,0]; allMCQ().forEach(x=>{const s=S.srs&&S.srs[x.id];boxes[s?s.box:0]++});
+  const tasks=weekTasks(); const cl=clashes();
+  let quiz;
+  if(!total) quiz=`<p class="muted">No questions yet.</p>`;
+  else if(!q){ quiz=`<div class="stack"><h3>Done for today: ${D.res.filter(Boolean).length}/${D.res.length}</h3><div class="progress-dots">${D.res.map(r=>`<i class="${r?"ok":"no"}"></i>`).join("")}</div><p>Questions you got right come back in ${BOX_DAYS.slice(1).join(", ")} days as you keep getting them right. Ones you missed come back tomorrow.</p><div><button class="btn" data-act="dailyextra">Six more questions</button></div></div>`; }
+  else { const conf=D.conf, picked=D.picked;
+    quiz=`<div class="q-card">
+      <div class="row" style="justify-content:space-between"><span class="eyebrow">Question ${i+1} of ${total} · Unit ${q.unit} · ${esc(q.topic)}</span><div class="progress-dots">${D.ids.map((_,k)=>`<i class="${k<D.res.length?(D.res[k]?"ok":"no"):""} ${k===i?"now":""}"></i>`).join("")}</div></div>
+      <p class="q-stem">${esc(q.q)}</p>
+      ${conf==null?`<div class="stack" style="gap:6px"><span class="eyebrow">Before you see the options: how sure are you that you know this?</span><div class="seg" role="group" aria-label="Confidence"><button data-act="conf" data-c="1">Guessing</button><button data-act="conf" data-c="2">Fairly sure</button><button data-act="conf" data-c="3">Certain</button></div></div>`:
+      `<div class="opts">${arr(q.options).map((o,k)=>`<button data-act="danswer" data-i="${k}" ${picked!=null?"disabled":""} class="${picked!=null?(k===q.answer?"right":k===picked?"wrong":""):""}"><span class="k">${"ABCD"[k]}</span><span>${esc(o)}</span></button>`).join("")}</div>`}
+      ${picked!=null?`<div class="feedback"><b>${picked===q.answer?(conf===1?"Right, but you were guessing. It'll come back soon to check.":"Correct."):(conf===3?"Not this time, and you were certain. That's the most useful kind of mistake to spot.":"Not quite. The answer is "+"ABCD"[q.answer]+".")}</b> ${esc(q.why)}</div><div><button class="btn primary" data-act="dnext">${i+1<total?"Next":"Finish"}</button></div>`:""}
+    </div>`; }
+  $("#view-today").innerHTML=`
+  <div class="row" style="justify-content:space-between;align-items:baseline"><div class="stack" style="gap:2px"><span class="eyebrow">${esc(nice(t))}</span><h2>Today</h2></div>
+    <span class="mono" title="Days in a row you've finished the daily quiz">${S.streak&&(S.lastDone===t||S.lastDone===addDays(t,-1))?`${S.streak}-day streak`:"Start a streak today"}</span></div>
+  <div class="split2">
+    <div class="panel stack" style="min-width:0">
+      <div class="row" style="justify-content:space-between"><h3>Daily retrieval · about 15 minutes</h3>
+        <label class="inline muted" style="font-size:var(--t-sm)">Questions a day <select id="dailyCap" data-act="dailycap">${[8,12,16,20].map(n=>`<option ${Number(S.dailyCap||12)===n?"selected":""}>${n}</option>`).join("")}</select></label></div>
+      ${quiz}
+    </div>
+    <div class="stack" style="min-width:0">
+      <div class="panel stack">
+        <h3>How sure vs how right</h3>
+        ${[3,2,1].map(k=>`<div class="calib"><span>${["","Guessing","Fairly sure","Certain"][k]}</span><span class="meter"><span style="width:${pct(k)??0}%"></span></span><span class="mono">${pct(k)==null?"–":pct(k)+"%"}</span></div>`).join("")}
+        <p class="muted" style="font-size:var(--t-sm)">${cb[3].n>=5&&pct(3)<85?"You're often wrong when you feel certain. Slow down on those topics and check the reasoning, not just the answer.":cb[1].n>=5&&pct(1)>60?"You know more than you think when you guess. Trust your first reasoning a bit more.":"Rate your confidence honestly. The gap between feeling sure and being right is what this tracks."}</p>
+      </div>
+      <div class="panel stack">
+        <h3>Memory strength</h3>
+        <div class="boxes">${boxes.map((n,k)=>`<div><span class="bn mono">${n}</span><span class="bl">${k===0?"Not seen":k===5?"Secure":"Box "+k}</span></div>`).join("")}</div>
+        <p class="muted" style="font-size:var(--t-sm)">${allMCQ().length} questions across Units 1–4. Each right answer moves a question up a box and pushes it further away: 1, 3, 7, 14, then 30 days.</p>
+      </div>
+    </div>
+  </div>
+  ${cl.length?cl.map(c=>`<p class="notice bad"><b>Busy week of ${esc(nice(c.week))}:</b> ${c.items.map(e=>esc(e.label.split(":")[0])).join(", ")} all fall in the same week. Start the earlier work sooner, or ask about the dates now rather than in that week.</p>`).join(""):""}
+  <div class="panel stack">
+    <div class="row" style="justify-content:space-between"><h3>This week</h3><button class="btn small" data-act="gotab" data-t="planner">Edit calendar</button></div>
+    ${tasks.length?`<ul class="checklist">${tasks.map(k=>{const id="tk-"+k.id.replace(/\W/g,"");return `<li><label for="${id}"><input type="checkbox" id="${id}" data-act="task" data-k="${esc(k.id)}" ${S.tasksDone[k.id]?"checked":""}><span><span class="mono" style="font-size:var(--t-xs)">${esc(nice(k.date))}${k.date<t?" · overdue":""}</span> ${esc(k.label)} ${k.go?`<button class="btn small ghost" data-act="go" data-g="${esc(k.go.join(","))}">Open</button>`:""}</span></label></li>`}).join("")}</ul>`:`<p class="muted">Nothing scheduled this week. Add your assignment dates and exam dates in the Planner so weekly tasks appear here.</p>`}
+  </div>`;
+}
+
 /* ---------- PLANNER ---------- */
 function weakness(u,t){const c=topicRag(u,t);const n=c.r+c.a+c.g+c.n||1;return (c.r*3+c.a*2+c.n*2+c.g*1)/n}
 function buildPlan(u){
@@ -791,10 +968,24 @@ function renderPlanner(){
     ${u===4?`<p class="notice">For Unit 4, the four weeks after Part A comes out are for researching the article. Follow the Part A plan in the Toolkit and check the current rules on notes with your teacher.</p>`:""}
   </div>`:"").join("")}
   <div class="panel stack">
-    <h3>Assignment deadlines</h3>
-    <p class="muted">Add your internal assignment deadlines so you can see them next to your exams. Missing a deadline without an agreed extension can mean no resubmission.</p>
-    <div class="row"><select id="dlUnit" aria-label="Unit">${coachUnits().map(u=>`<option value="${u}">Unit ${u}: ${esc(UNITS[u].t)}</option>`).join("")}</select><input type="text" id="dlName" placeholder="Assignment (e.g. LA A & B)" aria-label="Assignment name"><input type="date" id="dlDate" aria-label="Deadline"><button class="btn primary" data-act="dladd">Add</button></div>
-    <div>${S.deadlines.slice().sort((a,b)=>a.date<b.date?-1:1).map((d,i)=>{const n=daysUntil(d.date);return `<div class="deadline-row"><span><b class="mono">Unit ${d.u}</b> ${esc(d.name)}</span><span class="mono ${n!=null&&n<7&&n>=0?"minus":""}">${fmtDate(new Date(d.date+"T09:00:00"))} · ${n>=0?n+"d":"past"}</span><button class="btn small ghost" data-act="dldel" data-id="${esc(d.id)}" aria-label="Remove">Remove</button></div>`}).join("")||`<p class="muted">No deadlines added yet.</p>`}</div>
+    <h3>Assessment calendar</h3>
+    <p class="muted">Add each assignment's launch and hand-in dates from your centre's assessment plan. The hub spreads five milestones between them and puts each one in your weekly tasks. If your Lead IV approves a resubmission, add the date you got the assessment decision: a resubmission has to be in within 15 working days of it. Missing a deadline without an agreed extension can rule out a resubmission.</p>
+    <div class="cal-form">
+      <label for="calUnit">Unit<select id="calUnit">${coachUnits().map(u=>`<option value="${u}">Unit ${u}</option>`).join("")}</select></label>
+      <label for="calName">Assignment<input type="text" id="calName" placeholder="e.g. Learning aims A and B"></label>
+      <label for="calLaunch">Launch date<input type="date" id="calLaunch"></label>
+      <label for="calHandin">Hand-in date<input type="date" id="calHandin"></label>
+      <button class="btn primary" data-act="caladd">Add</button>
+    </div>
+    <div>${(migrateCal(),S.cal).slice().sort((a,b)=>a.handin<b.handin?-1:1).map(c=>`<div class="cal-row"><span><b class="mono">Unit ${c.u}</b> ${esc(c.name)} <span class="muted mono" style="font-size:var(--t-xs)">${c.launch?esc(nice(c.launch))+" → ":""}${esc(nice(c.handin))}</span>
+      <label class="inline muted" style="font-size:var(--t-xs);margin-top:4px">Assessment decision received <input type="date" id="dec-${esc(c.id)}" value="${esc(c.decision||"")}" data-act="caldec" data-id="${esc(c.id)}"></label></span>
+      <button class="btn small ghost" data-act="caldel" data-id="${esc(c.id)}">Remove</button></div>`).join("")||`<p class="muted">No assignments added yet.</p>`}</div>
+  </div>
+  <div class="panel stack">
+    <div class="row" style="justify-content:space-between"><h3>Everything coming up</h3>${window.claude?"":`<button class="btn primary small" data-act="ics">Download calendar (.ics)</button>`}</div>
+    <p class="muted" style="font-size:var(--t-sm)">Use <b>Add</b> to put a date in Google Calendar, or any calendar that accepts Google links. ${window.claude?"The full calendar file download is available from the GitHub copy of the hub.":"The .ics file works with Apple, Outlook and Google calendars and includes a daily 5pm reminder for your retrieval quiz."}</p>
+    <div class="ev"><span class="mono">Every day</span><span>15 minutes: today's retrieval quiz</span><a class="btn small ghost" target="_blank" rel="noopener" href="${esc(gcalLink({date:todayISO(),label:"15 minutes: today's retrieval quiz (HSC D* hub)",recur:"RRULE:FREQ=DAILY"},false))}">Add</a></div>
+    ${allEvents().filter(e=>e.date>=addDays(todayISO(),-7)).map(e=>`<div class="ev ${e.kind}"><span class="mono">${esc(nice(e.date))}</span><span>${esc(e.label)}</span><a class="btn small ghost" target="_blank" rel="noopener" href="${esc(gcalLink(e))}">Add</a></div>`).join("")||`<p class="muted">Add exam dates above and assignments to see your timeline.</p>`}
   </div>
   <div class="panel stack">
     <h3>A D* week</h3>
@@ -834,8 +1025,6 @@ document.addEventListener("click",e=>{
     case "quizexit": QZ=null; break;
     case "longpick": S["long"+S.examUnit]=Number(b.dataset.i); break;
     case "reveal": S["rev"+b.dataset.id]=!S["rev"+b.dataset.id]; break;
-    case "dladd": {const n=$("#dlName").value.trim(),dt=$("#dlDate").value; if(!dt){toast("Add a date first");return} S.deadlines.push({id:Date.now().toString(36),u:Number($("#dlUnit").value),name:n||"Assignment",date:dt}); toast("Deadline added"); break;}
-    case "dldel": S.deadlines=S.deadlines.filter(d=>d.id!==b.dataset.id); break;
     case "backup": {const code=btoa(unescape(encodeURIComponent(JSON.stringify(S))));const box=$("#backupBox");box.value=code;
       const fallback=()=>{box.focus();box.select();toast("Code selected. Copy it now.")};
       try{navigator.clipboard.writeText(code).then(()=>toast("Backup code copied"),fallback)}catch(err){fallback()} return;}
@@ -843,6 +1032,21 @@ document.addEventListener("click",e=>{
     case "resetall": $("#resetConfirm").hidden=false; return;
     case "resetno": $("#resetConfirm").hidden=true; return;
     case "resetyes": S=blank(); save(); toast("Cleared"); break;
+    case "gwopen": S.gwOpen=b.dataset.k; S.gwStep=0; break;
+    case "gwclose": S.gwOpen=null; break;
+    case "gwstep": S.gwStep=Number(b.dataset.i); break;
+    case "gwpick": gState(b.dataset.k).pick=b.dataset.v; break;
+    case "gwchk": gState(b.dataset.k).chk=Number(b.dataset.i); break;
+    case "gwst": gState(b.dataset.k).st=b.dataset.v; break;
+    case "conf": S.daily.conf=Number(b.dataset.c); break;
+    case "danswer": {const D=S.daily;if(D.picked!=null)return;const q=mcqById(D.ids[D.i]);const k=Number(b.dataset.i);D.picked=k;const ok=k===q.answer;D.res.push(ok);srsAnswer(q,ok,D.conf);if(!ok&&!D.requeued.includes(q.id)){D.requeued.push(q.id);D.ids.push(q.id)}break;}
+    case "dnext": {const D=S.daily;D.i++;D.conf=null;D.picked=null;if(D.i>=D.ids.length)finishDaily();break;}
+    case "dailyextra": {const D=S.daily;const t=todayISO();const rest=allMCQ().filter(q=>!D.ids.includes(q.id)).sort((a,b)=>((S.srs[a.id]||{due:"0"}).due<(S.srs[b.id]||{due:"0"}).due?-1:1));D.ids.push(...interleave(rest.slice(0,6)).map(q=>q.id));break;}
+    case "gotab": setTab(b.dataset.t,true); return;
+    case "go": {const [tab,u,sub]=b.dataset.g.split(",");S.examUnit=Number(u);S.examSub=sub;QZ=null;setTab(tab,true);return;}
+    case "caladd": {const h=$("#calHandin").value;if(!h){toast("Add a hand-in date");return}S.cal.push({id:"c"+Date.now().toString(36),u:Number($("#calUnit").value),name:$("#calName").value.trim()||"Assignment",launch:$("#calLaunch").value,handin:h,decision:""});toast("Added to your calendar");break;}
+    case "caldel": S.cal=S.cal.filter(c=>c.id!==b.dataset.id); break;
+    case "ics": {try{const blob=new Blob([icsText()],{type:"text/calendar"});const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="hsc-dstar-calendar.ics";document.body.appendChild(a);a.click();a.remove()}catch(e){toast("Download didn't start in this browser")}return;}
     default: return;
   }
   save(); render();
@@ -858,17 +1062,20 @@ document.addEventListener("change",e=>{
     case "coachall": S.coachAll=el.checked; break;
     case "quiztopic": if(el.value)startQuiz(Number(S.examUnit),"topic",el.value); return;
     case "date": S.dates[u]=el.value; break;
+    case "dailycap": S.dailyCap=Number(el.value); break;
+    case "task": if(el.checked)S.tasksDone[el.dataset.k]=1; else delete S.tasksDone[el.dataset.k]; break;
+    case "caldec": {const c=S.cal.find(c=>c.id===el.dataset.id);if(c)c.decision=el.value;break;}
     case "bound": {const k=el.dataset.k;const v=Number(el.value);if(!isNaN(v))S.bounds[u][k]=v;break;}
     case "mark": S.marks[u]=el.value===""?null:Number(el.value); break;
     default: return;
   }
   save(); render();
 });
-document.addEventListener("input",e=>{const el=e.target;if(el.dataset&&el.dataset.act==="draft"){S.drafts[el.dataset.id]=el.value;save();const w=document.getElementById("wc-"+el.dataset.id);if(w)w.textContent=wordCount(el.value)+" words"}});
+document.addEventListener("input",e=>{const el=e.target;if(el.dataset&&(el.dataset.act==="gwexp"||el.dataset.act==="gwloc")){gState(el.dataset.k)[el.dataset.act==="gwexp"?"exp":"loc"]=el.value;save();return}if(el.dataset&&el.dataset.act==="draft"){S.drafts[el.dataset.id]=el.value;save();const w=document.getElementById("wc-"+el.dataset.id);if(w)w.textContent=wordCount(el.value)+" words"}});
 document.addEventListener("toggle",e=>{const d=e.target;if(d.matches&&d.matches("details.topic")){const [u,id]=d.dataset.topic.split("|");S["open"+u+id]=d.open;save()}},true);
 
 /* ---------- Boot ---------- */
 const startTab=(location.hash||"").replace("#","");
-setTab(TABS.includes(startTab)?startTab:(S.tab||"points"));
+setTab(TABS.includes(startTab)?startTab:(S.tab||"today"));
 syncLabel(); cloudInit();
 </script>

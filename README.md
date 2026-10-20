@@ -5,12 +5,15 @@ An interactive student hub for the **Pearson BTEC Level 3 National Extended Dipl
 Open `index.html` in a browser, or host it on GitHub Pages or SciencePass. It's a single self-contained file.
 
 ## What's in it
+- **Today.** A daily retrieval quiz of about 15 minutes. Spaced repetition works on individual questions (Leitner boxes at 1, 3, 7, 14 and 30 days), with missed questions coming back tomorrow and units mixed together. Students rate their confidence before seeing the options, and a calibration panel compares how sure they felt with how often they were right. A weekly task list is built from the assessment calendar and exam dates, and weeks where hand-ins and exams pile up are flagged.
 - **Points.** The D*D*D* budget: 270 of 288 points, so students can lose only 18 across the course. Students enter grades, or raw exam marks (using June 2026 boundaries, which can be edited). Optional units are checked against the pathway rules (Extended Diploma or Health Studies).
+- **Guided walkthroughs.** Each Distinction criterion is broken into evidence requirements taken from the spec's "Essential information for assessment decisions". Every requirement has an explanation, a strong example and a near-miss to compare, a prompt to explain it in the student's own words, a check question, and an evidence map where students record where their own draft meets it. All the examples use a made-up practice case for each unit, so the hub coaches and never writes assignment text. That protects authenticity under BTEC and JCQ AI rules.
 - **Distinction coach.** Every internal unit (5–26) with its full P/M/D criteria from the spec. Each D criterion has a plain-words explanation, a must-include checklist, common pitfalls, sentence starters and what outstanding work looks like.
 - **Exam revision (Units 1–4).** Topic checklists students rate red, amber or green; 150 multiple-choice questions; extended-answer practice with marking points and model answers; theories and frameworks; and the Unit 4 research toolkit with a fictional practice article.
+- **Assessment calendar.** Launch and hand-in dates generate five milestones per assignment. Adding the date of an assessment decision works out the 15-working-day resubmission deadline. Events can be added to Google Calendar, and outside Claude the full calendar downloads as an .ics file with a daily 5pm quiz reminder.
 - **Planner.** Exam countdowns, a weekly revision plan that adapts to topic ratings, internal deadlines and backup codes.
 
-Progress is stored in the browser's localStorage.
+Progress saves privately to the viewer's claude.ai account when the hub is published as an artifact with the `db` and `user` capabilities. Otherwise it is kept in browser localStorage, and a backup code is available as an extra copy.
 
 ## Editing
 - `data/criteria.json` holds the learning aims and assessment criteria taken from the spec.
