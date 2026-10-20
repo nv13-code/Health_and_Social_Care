@@ -1,0 +1,2062 @@
+{
+ "19": {
+  "parallelCase": {
+   "title": "Ines and Mr Baptiste (fictional)",
+   "summary": "Ines Calloway-Reid is 16 and a competitive swimmer who trains six mornings a week before school. She has followed a vegan diet for a year, skips breakfast because of early training, and by the afternoon often snacks on sweets and energy drinks. A recent blood test showed low iron stores. Mr Baptiste Okello is 79, a widower in a remote village with one small shop and an infrequent bus. He has type 2 diabetes and badly fitting dentures, so he avoids hard foods. Since his wife died he mostly eats toast, tinned soup and biscuits, and his pension leaves little spare money for fresh food. He has lost weight without trying and rarely goes out. Ines's parents buy the family food on a tight weekly budget. Mr Baptiste's daughter lives two hours away and phones on Sundays. A community dietitian wants each person to have a nutritional plan that deals with their needs, their habits and the things getting in the way. Both people and the setting are made up."
+  },
+  "criteria": {
+   "AB.D1": {
+    "requirements": [
+     {
+      "need": "Show how nutritional health affects the overall health and wellbeing of each individual, not just their weight or physical health.",
+      "fromSpec": "Detailed analysis showing how nutritional health influences the overall health and wellbeing of the two individuals.",
+      "means": "Overall wellbeing means physical, emotional, social and intellectual health. Strong work follows the effects of food across all of these for each person.",
+      "example": "For Ines, low iron could cut her energy in the pool and her concentration in lessons, which may make her dread training and school work. That links diet to physical, emotional and intellectual wellbeing.",
+      "nearMiss": "Ines's diet is low in iron, so she might get anaemia. This is bad for her health.",
+      "whyNearMiss": "It names one physical effect but never shows what it does to her wider wellbeing.",
+      "explainPrompt": "Pick one effect of poor nutrition on Mr Baptiste. Say in your own words how it could spread into his mood or social life.",
+      "check": {
+       "q": "Which statement shows the widest view of nutrition and wellbeing?",
+       "options": [
+        "Poor nutrition can cause weight loss.",
+        "Poor nutrition is the reason people get ill.",
+        "Poor nutrition can reduce energy, which cuts activity, which can increase isolation and low mood.",
+        "Poor nutrition affects the body, and the body is what matters for health."
+       ],
+       "answer": 2,
+       "why": "A strong answer traces a chain from nutrition to physical, emotional and social effects."
+      }
+     },
+     {
+      "need": "Weigh how much each influencing factor affects the nutritional health of each individual, not just list the factors.",
+      "fromSpec": "Impact of influencing factors on nutritional health, for example cost, access to shops, snacking and low exercise.",
+      "means": "An influencing factor is anything that pushes food choices up or down, such as money, health, culture or habit. Evaluating means saying which matter most for this person and why.",
+      "example": "For Mr Baptiste, distance from shops and low income probably limit his choices more than his knowledge does, because he cannot easily reach or afford fresh produce. Fixing his dentures would matter, but would not solve the shopping problem.",
+      "nearMiss": "Mr Baptiste's nutrition is affected by his income, his dentures and living in a remote village.",
+      "whyNearMiss": "It lists the factors but does not say which matters most or how each one changes what he eats.",
+      "explainPrompt": "Choose two factors affecting Ines. Explain in your own words which one has the bigger effect on what she eats and why you think so.",
+      "check": {
+       "q": "What turns a list of factors into an evaluation?",
+       "options": [
+        "Saying which factor has the biggest effect on this person and giving a reason.",
+        "Adding more factors to the list.",
+        "Defining each factor in a textbook sentence.",
+        "Describing the factors in the same order for both people."
+       ],
+       "answer": 0,
+       "why": "Evaluation needs a judgement about importance, supported with a reason from the person's situation."
+      }
+     },
+     {
+      "need": "Use relevant numerical or graphical data, organised so it supports a judgement about each person.",
+      "fromSpec": "Research including numerical and graphical data must be relevant and organised to show how knowledge reaches suitable judgements.",
+      "means": "Data is only useful if you say what it shows about your individual. Place it next to your point and explain what it means.",
+      "example": "Comparing Ines's estimated iron intake from her food diary with the reference nutrient intake for her age shows a shortfall. That supports the judgement that her vegan diet needs planning, not that veganism is the problem.",
+      "nearMiss": "A pie chart of the Eatwell Guide is included, followed by a paragraph about healthy eating.",
+      "whyNearMiss": "The chart is generic and is not used to reach any judgement about either person.",
+      "explainPrompt": "What data about Mr Baptiste would you need to judge his diet fairly? Explain how each piece of data would change your judgement.",
+      "check": {
+       "q": "Which use of data is strongest for a Distinction?",
+       "options": [
+        "Pasting national statistics on obesity near the start.",
+        "Including a graph of average UK sugar intake without comment.",
+        "Showing a table of nutrients with their functions.",
+        "Comparing the person's own food record with recommended intakes and stating what the gap means."
+       ],
+       "answer": 3,
+       "why": "Data must be about the individual or clearly linked to them, and used to support a conclusion."
+      }
+     },
+     {
+      "need": "Reach a concise, professional conclusion that justifies your overall view of how nutrition and influencing factors affect both individuals.",
+      "fromSpec": "Learners articulate arguments and views concisely and professionally to justify their conclusions.",
+      "means": "A conclusion states your final view and the main reasons for it. It should be short, in professional language and follow from your evidence.",
+      "example": "Overall, Ines's difficulties mainly come from timing and planning of her meals around training, while Mr Baptiste's come from access and cost. Both are fixable but need different approaches.",
+      "nearMiss": "In conclusion, nutrition is very important for health and both people have things that influence what they eat.",
+      "whyNearMiss": "It repeats the question and gives no judgement or reasons specific to the two people.",
+      "explainPrompt": "Write a one-sentence conclusion about the difference between Ines and Mr Baptiste, in your own words, then underline the evidence you would use.",
+      "check": {
+       "q": "Which is the best sign of a strong conclusion?",
+       "options": [
+        "It restates the topic and says nutrition matters.",
+        "It takes a clear position and gives the main reasons from your findings.",
+        "It introduces a new factor not discussed earlier.",
+        "It is as long as possible so nothing is missed."
+       ],
+       "answer": 1,
+       "why": "A conclusion must commit to a judgement and be backed by earlier evidence."
+      }
+     }
+    ]
+   },
+   "C.D2": {
+    "requirements": [
+     {
+      "need": "Give a reason for each recommendation that links directly to the individual's needs.",
+      "fromSpec": "Learners justify recommendations in plans in relation to the needs and situations of the selected individuals.",
+      "means": "To justify means giving the reason why a recommendation is right for this person. The reason should refer to their needs, not general healthy-eating rules.",
+      "example": "Adding iron-rich plant foods with a vitamin C source at Ines's main meals suits her because she is a vegan athlete with low iron stores. Vitamin C helps absorption of iron from plant foods.",
+      "nearMiss": "Ines should eat more iron-rich foods because iron is important for health.",
+      "whyNearMiss": "The reason is generic and does not use Ines's diet, age or training.",
+      "explainPrompt": "Choose one recommendation for Mr Baptiste. Say in your own words what in his situation made you choose it.",
+      "check": {
+       "q": "What makes a recommendation justified?",
+       "options": [
+        "It gives a reason that points to the person's needs or situation.",
+        "It is based on a healthy-eating guideline.",
+        "It is written in clear language.",
+        "It is repeated in the plan for both individuals."
+       ],
+       "answer": 0,
+       "why": "A justification links the recommendation to a feature of the individual."
+      }
+     },
+     {
+      "need": "Show how each recommendation would improve intake or activity by comparing with recommended levels.",
+      "fromSpec": "Learners identify how each recommendation will improve nutritional health by comparing intake to recommended dietary intakes or activity to health targets.",
+      "means": "A strong plan shows the gap between what the person does now and what is recommended, and how the change closes it.",
+      "example": "Mr Baptiste's food diary shows almost no protein foods besides tinned soup. A softer protein choice such as eggs or tinned fish would move him toward the recommended protein intake and help maintain muscle.",
+      "nearMiss": "Mr Baptiste should eat more protein to help him stay healthy.",
+      "whyNearMiss": "It states a need but gives no comparison with current intake or recommended amounts.",
+      "explainPrompt": "For one recommendation, describe what your 'before' and 'after' figures would be. Why do they show an improvement?",
+      "check": {
+       "q": "What is missing from a recommendation that says 'eat less sugar'?",
+       "options": [
+        "A reference to government guidance.",
+        "A longer list of foods.",
+        "A comparison between current intake and a recommended limit for that person.",
+        "A warning about diabetes."
+       ],
+       "answer": 2,
+       "why": "Comparison with recommended levels shows how much improvement is needed and expected."
+      }
+     },
+     {
+      "need": "Apply knowledge to a less familiar situation, such as a medical condition, with recommendations that suit it.",
+      "fromSpec": "Learners apply valid knowledge to less familiar situations, such as recommendations for individuals with conditions like diabetes.",
+      "means": "Less familiar means the textbook rule needs adjusting because of a condition, a life stage or a combination. Show how you adapted advice.",
+      "example": "Mr Baptiste has type 2 diabetes, so simply 'eating more' would not be safe advice. Slower-release carbohydrates such as porridge or beans, spread across the day, suit his blood glucose better than large portions of white toast and biscuits.",
+      "nearMiss": "Mr Baptiste has diabetes so should avoid sugar and eat healthily.",
+      "whyNearMiss": "It repeats a general rule and does not adapt it to his food habits or situation.",
+      "explainPrompt": "Explain in your own words why a standard healthy-eating plan might not be right for Mr Baptiste.",
+      "check": {
+       "q": "Which shows application to a less familiar situation?",
+       "options": [
+        "Using more technical vocabulary for the same advice.",
+        "Adjusting standard advice because of a condition and explaining why the change is needed.",
+        "Choosing a very unusual food.",
+        "Listing the nutrients needed by all adults."
+       ],
+       "answer": 1,
+       "why": "Application shows how knowledge is adapted for a particular condition."
+      }
+     },
+     {
+      "need": "Make sure recommendations fit the person's choices, habits and influencing factors so they are realistic.",
+      "fromSpec": "Plans take into account personal choices and habits and the influencing factors, so recommendations are relevant to the specific situation.",
+      "means": "A good plan can actually be followed. Recommendations should respect budget, beliefs, routine and ability.",
+      "example": "Ines is vegan by choice, so the plan builds on that, using fortified plant foods and a portable snack for after training. It does not tell her to eat meat.",
+      "nearMiss": "Ines should eat red meat twice a week to improve her iron.",
+      "whyNearMiss": "It ignores her choice and would probably be rejected, so it is not realistic.",
+      "explainPrompt": "Think of one recommendation that Mr Baptiste would probably ignore. Explain in your own words why, and how you could change it.",
+      "check": {
+       "q": "Why do personal choices matter in a plan?",
+       "options": [
+        "Plans must always follow the person's wishes exactly.",
+        "They make the plan longer.",
+        "They are needed only for children.",
+        "People are more likely to follow advice that fits their life and beliefs."
+       ],
+       "answer": 3,
+       "why": "A realistic plan respects choices and constraints while still meeting needs."
+      }
+     }
+    ]
+   },
+   "C.D3": {
+    "requirements": [
+     {
+      "need": "Explain the importance of monitoring each individual's nutritional health, and say what would be monitored and why.",
+      "fromSpec": "Learners give reasons about the significance of monitoring the nutritional health of the individuals.",
+      "means": "Monitoring means checking progress over time. It shows whether the plan is working and when to change it.",
+      "example": "Mr Baptiste's weight and blood glucose should be checked regularly. Unplanned weight loss could mean the plan is not working and would need a review by the dietitian.",
+      "nearMiss": "The plan should be monitored to check Mr Baptiste is eating healthily.",
+      "whyNearMiss": "It says monitoring happens but not what is checked, how often or what the results would lead to.",
+      "explainPrompt": "What is one measure you would track for Ines? In your own words, what result would make you change the plan?",
+      "check": {
+       "q": "What makes a strong point about monitoring?",
+       "options": [
+        "It names what is measured and what the result would trigger.",
+        "It says monitoring is important.",
+        "It lists tests used in hospitals.",
+        "It states that a dietitian should do it."
+       ],
+       "answer": 0,
+       "why": "Monitoring is important because results guide decisions."
+      }
+     },
+     {
+      "need": "Use examples to show how improving nutrition can improve overall health and wellbeing.",
+      "fromSpec": "Learners use examples to demonstrate how improvements to nutrition can also improve overall health and wellbeing.",
+      "means": "Link a specific dietary change to a result in the person's body, mood or social life.",
+      "example": "If Ines regularly eats a balanced breakfast, she may have steadier energy for training and fewer sugar snacks later. That could also help her mood and concentration in school.",
+      "nearMiss": "Eating better improves your health and makes you feel better.",
+      "whyNearMiss": "It is true but general, with no example or person.",
+      "explainPrompt": "Describe one change that could help Mr Baptiste socially, not just physically. Explain in your own words how it might work.",
+      "check": {
+       "q": "Which example is strongest?",
+       "options": [
+        "Healthy eating makes people live longer.",
+        "Vegetables contain vitamins.",
+        "A named dietary change linked to a likely improvement in the person's energy, mood or activities.",
+        "Weight loss is a good goal for everyone."
+       ],
+       "answer": 2,
+       "why": "Examples must be concrete and connected to the individual."
+      }
+     },
+     {
+      "need": "Show how influencing factors are dealt with in the planning, not just identified.",
+      "fromSpec": "Learners consider influencing factors and how these should be dealt with when planning nutritional health.",
+      "means": "For each important factor you found, there should be a matching response in the plan.",
+      "example": "Because the village shop sells limited fresh food, the plan could suggest frozen vegetables, a delivered food service and a lunch club. These respond directly to Mr Baptiste's access and budget problems.",
+      "nearMiss": "Mr Baptiste lives far from shops. This affects his diet.",
+      "whyNearMiss": "It identifies the factor but the plan does nothing about it.",
+      "explainPrompt": "Pick one factor in Ines's life. Describe in your own words how a planner could respond to it.",
+      "check": {
+       "q": "What shows that a factor has been dealt with?",
+       "options": [
+        "A paragraph describing the factor in detail.",
+        "A recommendation in the plan that directly responds to it.",
+        "A reference to research on the factor.",
+        "A note saying the factor is hard to change."
+       ],
+       "answer": 1,
+       "why": "Dealing with a factor means the plan includes an action that responds to it."
+      }
+     },
+     {
+      "need": "Explain the nutrients needed at each life stage and the consequences of not meeting those needs.",
+      "fromSpec": "Learners consider the importance of essential nutrients at different life stages and the consequences of not meeting nutritional needs.",
+      "means": "Different ages need different nutrients. Say what happens if they are missing for this person's age.",
+      "example": "As a growing athlete, Ines needs enough iron, calcium and energy. If she doesn't get them, she may have tiredness, lower bone density and slower recovery. For Mr Baptiste, low protein and vitamin D could weaken muscles and bones, increasing his risk of falls.",
+      "nearMiss": "Teenagers and older people need different nutrients to stay healthy.",
+      "whyNearMiss": "It says needs differ but gives no nutrients or consequences.",
+      "explainPrompt": "Choose one life stage and explain in your own words why missing a particular nutrient then matters more than at other times.",
+      "check": {
+       "q": "Which statement shows a consequence of unmet needs?",
+       "options": [
+        "Older people eat less.",
+        "Calcium is a mineral found in dairy foods.",
+        "Vitamin D is made in skin in sunlight.",
+        "Low calcium and vitamin D in an older adult may weaken bones and raise fracture risk."
+       ],
+       "answer": 3,
+       "why": "A consequence links a missing nutrient to a health outcome for that age group."
+      }
+     }
+    ]
+   }
+  }
+ },
+ "20": {
+  "parallelCase": {
+   "title": "Wren Tallis (fictional)",
+   "summary": "Wren Tallis is 47 and drives long-distance coaches for a company in the made-up town of Marlowe Bay. For four years Wren was treated for depression with an antidepressant, but still had long, low periods. Between them were short spells of four or five days with very little sleep, fast speech, big spending and irritability. After a dangerous near-miss on the motorway, Wren's GP referred Wren to a community mental health team. A psychiatrist, using ICD-11 and DSM-5-TR criteria, diagnosed bipolar II disorder. Wren also describes constant, hard-to-control worry, so the team is assessing for generalised anxiety disorder alongside it. Wren's partner is exhausted and the teenage daughter has become withdrawn. Wren has lost touch with friends from work, and the employer is worried about fitness to drive. The plan includes a mood stabiliser, psychoeducation, cognitive behavioural therapy (CBT), a sleep routine and a crisis plan. The team has noted the Mental Health Act 1983 (as amended, with the 2025 reforms being phased in) but Wren has not been detained. Everyone here is fictional."
+  },
+  "criteria": {
+   "AB.D1": {
+    "requirements": [
+     {
+      "need": "Weigh up different ways mental health and wellbeing are understood and reach a reasoned judgement about which is most useful.",
+      "fromSpec": "Evaluate and reach reasoned and valid judgements on the ways in which mental wellbeing and mental health are understood.",
+      "means": "People define mental health differently, for example as absence of illness or as a continuum with positive wellbeing. Evaluating means saying which view is stronger and why.",
+      "example": "Seeing Wren's mental health as a continuum explains why Wren can have good days and still need support, which a simple 'ill or well' view misses. The medical view still helps by naming a condition that can be treated.",
+      "nearMiss": "Mental health can be seen as a medical issue or a wellbeing issue.",
+      "whyNearMiss": "It says there are views but doesn't compare them or reach a judgement.",
+      "explainPrompt": "Explain in your own words why Wren could be 'mentally unwell' and 'doing well at work' at the same time.",
+      "check": {
+       "q": "What makes your discussion of definitions evaluative?",
+       "options": [
+        "You compare the views and say which explains a situation better.",
+        "You define each term using a source.",
+        "You include a quotation from the World Health Organization.",
+        "You discuss only one definition in depth."
+       ],
+       "answer": 0,
+       "why": "Evaluation means comparing and choosing with reasons."
+      }
+     },
+     {
+      "need": "Use research to justify why specific factors affect mental wellbeing and mental health across the life span.",
+      "fromSpec": "Learners use research to justify the validity of factors affecting mental wellbeing and mental health across the life span.",
+      "means": "Name factors from different life stages and back them with a source. Say how reliable the source is.",
+      "example": "Wren's long, irregular night shifts are a plausible factor because sleep disruption is linked to mood episodes in people with bipolar disorder. A teenager like Wren's daughter faces different factors, such as exam pressure and peer relationships.",
+      "nearMiss": "Factors that affect mental health include stress, family and money.",
+      "whyNearMiss": "It lists general factors without evidence or links to life stages.",
+      "explainPrompt": "Choose one life stage. In your own words, explain why a factor affecting mental health there might not have the same effect at another stage.",
+      "check": {
+       "q": "Which statement uses research well?",
+       "options": [
+        "It quotes a statistic with no source.",
+        "It names a factor, gives a source's finding and says whether that finding fits this case.",
+        "It states that 'studies show' without naming any.",
+        "It lists many factors quickly."
+       ],
+       "answer": 1,
+       "why": "Justifying validity means linking evidence to the factor and judging its fit."
+      }
+     },
+     {
+      "need": "Judge the strengths and limitations of current classification systems in improving diagnosis of two different conditions.",
+      "fromSpec": "Learners make suitable justifications on current classification systems, their strengths and limitations in improving diagnosis of two different mental ill-health conditions.",
+      "means": "Classification systems such as ICD-11 and DSM-5-TR set out symptoms and criteria. Evaluate how well they help diagnose each condition.",
+      "example": "ICD-11 and DSM-5-TR give clinicians shared criteria, such as how long hypomanic episodes last, which helps separate bipolar II from depression. But criteria rely on what Wren remembers and reports, so a missed hypomanic spell can still lead to the wrong label.",
+      "nearMiss": "ICD-11 and DSM-5-TR list symptoms of mental health conditions and are used by doctors.",
+      "whyNearMiss": "It describes the systems but doesn't judge strengths or limitations for any condition.",
+      "explainPrompt": "In your own words, what is one thing a classification system cannot capture about Wren's experience?",
+      "check": {
+       "q": "Which is a limitation of classification systems?",
+       "options": [
+        "They are used only in hospitals.",
+        "They have been replaced and are not used.",
+        "They give the cause of each condition.",
+        "They depend on reported symptoms, and people's experiences may not fit neat categories."
+       ],
+       "answer": 3,
+       "why": "A limitation is something that can lead to inaccurate diagnosis in practice."
+      }
+     },
+     {
+      "need": "Compare the two conditions' symptoms and how classification helps or hinders telling them apart.",
+      "fromSpec": "Learners consider the symptoms of two different mental ill-health conditions and how classification improves diagnosis.",
+      "means": "Choose two conditions and show how overlapping symptoms can make diagnosis hard. Explain what classification contributes.",
+      "example": "Both bipolar II and generalised anxiety disorder can involve poor sleep and irritability, so criteria that look at duration and pattern help separate them. Wren's worry is present most days, while the elevated mood comes in distinct episodes.",
+      "nearMiss": "Bipolar disorder causes mood swings. Anxiety disorder causes worry.",
+      "whyNearMiss": "It gives basic features but doesn't compare or show how classification helps.",
+      "explainPrompt": "What could lead a clinician to confuse Wren's symptoms? Say in your own words.",
+      "check": {
+       "q": "What is the best way to show comparison?",
+       "options": [
+        "Describe each condition in a separate paragraph.",
+        "List symptoms in a table.",
+        "Identify overlapping symptoms and say what in the criteria separates the conditions.",
+        "Say they are both common."
+       ],
+       "answer": 2,
+       "why": "Comparison shows both similarity and difference, and why it matters."
+      }
+     }
+    ]
+   },
+   "CD.D2": {
+    "requirements": [
+     {
+      "need": "Justify conclusions about how the individual's mental ill health affects them and their relationships in their social networks.",
+      "fromSpec": "Learners justify conclusions on the impact of mental ill health on a selected individual and their relationships with others in their social networks.",
+      "means": "Look at the person and the people around them: family, friends, work. Use evidence and reasoning to say how big the impact is.",
+      "example": "Wren's unpredictable moods strain the partner, who now covers more of the household and sleeps badly, and have left the daughter unsure what to say. Wren's isolation from work friends removes a source of support, so the overall impact is wide, not limited to Wren.",
+      "nearMiss": "Wren's mental ill health affects Wren and the family.",
+      "whyNearMiss": "It names who is affected but doesn't explain how or to what degree.",
+      "explainPrompt": "Choose one person in Wren's network. In your own words, explain how their reaction might in turn affect Wren.",
+      "check": {
+       "q": "What turns a description of impact into a justified conclusion?",
+       "options": [
+        "A longer list of people affected.",
+        "Reasoning that shows how and how much the impact is felt, with evidence.",
+        "A definition of 'social network'.",
+        "A more emotional tone."
+       ],
+       "answer": 1,
+       "why": "A conclusion needs reasoning and evidence about extent and consequences."
+      }
+     },
+     {
+      "need": "Apply relevant sections of legislation, policy and practice in depth to strategies for promoting wellbeing in this case.",
+      "fromSpec": "Learners show in-depth understanding of how legislation, policies and practice apply to strategies for mental wellbeing and mental health promotion.",
+      "means": "Pick specific parts of laws and policies and say how they shape what happens for this person. Use current names, such as the Mental Health Act 1983 as amended and the 2025 reforms.",
+      "example": "The Equality Act 2010 matters because Wren's employer must consider reasonable adjustments, such as shift patterns that protect sleep. The Mental Health Act 1983 (as amended) only applies if Wren needed detention, so its reforms matter mostly as a safeguard.",
+      "nearMiss": "The Mental Health Act and Equality Act protect people with mental health conditions.",
+      "whyNearMiss": "It names laws but not which parts apply or how.",
+      "explainPrompt": "Why might a law be relevant to Wren in theory but not in practice? Answer in your own words.",
+      "check": {
+       "q": "What shows in-depth use of legislation?",
+       "options": [
+        "Naming the relevant part and explaining its effect on this person's care.",
+        "Listing as many Acts as possible.",
+        "Defining what the Act was passed to do.",
+        "Saying the Act applies to everyone."
+       ],
+       "answer": 0,
+       "why": "In-depth application links specific provisions to the individual's situation."
+      }
+     },
+     {
+      "need": "Distinguish promoting, protecting and restoring mental wellbeing and give strategies for each, with a judgement on their importance.",
+      "fromSpec": "Learners evaluate the importance of promoting, protecting and restoring wellbeing and health of an individual with mental ill health.",
+      "means": "Promoting builds wellbeing, protecting prevents harm or relapse, restoring supports recovery. Say which matters most for this person now.",
+      "example": "Sleep routines and mood diaries protect Wren from relapse, while CBT helps restore coping. Because Wren's last hypomanic period created a safety risk at work, protecting should come first at this stage.",
+      "nearMiss": "Wren needs promotion, protection and restoration of mental health.",
+      "whyNearMiss": "It repeats the words with no strategies or priorities.",
+      "explainPrompt": "In your own words, how would 'protecting' look different from 'promoting' for Wren?",
+      "check": {
+       "q": "Which is an example of protecting mental health?",
+       "options": [
+        "A daily mindfulness group for wellbeing.",
+        "A talking therapy to treat an existing problem.",
+        "A health leaflet about stress.",
+        "A crisis plan and regular medicine review to prevent relapse."
+       ],
+       "answer": 3,
+       "why": "Protecting aims to prevent harm or relapse."
+      }
+     },
+     {
+      "need": "Justify assessment and treatment strategies for the individual's condition by saying why each suits this person.",
+      "fromSpec": "Learners draw on knowledge of assessment and treatment strategies for the selected condition, making suitable justifications.",
+      "means": "Explain what each assessment or treatment does, why it fits the condition and what its limits are.",
+      "example": "A mood stabiliser targets the swings in bipolar II, and CBT builds skills to notice early warnings. Both suit Wren better than an antidepressant alone, which does not treat the elevated phases.",
+      "nearMiss": "Wren is given medication and CBT to treat bipolar disorder.",
+      "whyNearMiss": "It names treatments without saying why they suit the condition or Wren.",
+      "explainPrompt": "Pick one treatment. Explain in your own words one reason it might not work for Wren.",
+      "check": {
+       "q": "How do you justify a treatment?",
+       "options": [
+        "By saying it is recommended by NICE.",
+        "By saying it is widely used.",
+        "By linking what it does to the symptoms of this condition and this person's situation.",
+        "By describing how it is delivered."
+       ],
+       "answer": 2,
+       "why": "Justification ties the treatment's purpose to the person's needs."
+      }
+     }
+    ]
+   },
+   "D.D3": {
+    "requirements": [
+     {
+      "need": "Evaluate how accurate assessment leads to a correct diagnosis, including strengths and limits of the methods used.",
+      "fromSpec": "Learners draw on knowledge of assessment strategies and make justifications about their role in reaching an accurate diagnosis.",
+      "means": "Accurate diagnosis depends on good assessment: history, observation, mood records, information from family. Say which parts add reliability and which can mislead.",
+      "example": "A mood diary and the partner's account would have shown Wren's short high-energy periods. Relying only on Wren's report during a low period risks missing them, which fits the four years of treatment for depression.",
+      "nearMiss": "Doctors assess people by asking questions and then diagnose them.",
+      "whyNearMiss": "It describes the process in general terms and does not evaluate its accuracy.",
+      "explainPrompt": "In your own words, what extra information would have helped doctors diagnose Wren sooner?",
+      "check": {
+       "q": "What improves the accuracy of assessment?",
+       "options": [
+        "One long appointment.",
+        "Using several sources over time, such as history, records and family accounts.",
+        "A single questionnaire.",
+        "Avoiding input from relatives."
+       ],
+       "answer": 1,
+       "why": "Accuracy improves when information is gathered from varied sources over time."
+      }
+     },
+     {
+      "need": "Explain how an accurate diagnosis leads to the correct treatment, and what happens when it does not.",
+      "fromSpec": "Learners evaluate how accurate diagnosis of mental ill-health conditions leads to correct treatment.",
+      "means": "Treatments are matched to diagnoses. If the diagnosis is wrong, the treatment may be ineffective or harmful.",
+      "example": "Because Wren's bipolar II was mistaken for depression, an antidepressant on its own may have risked triggering hypomanic episodes. The correct diagnosis opens the way to a mood stabiliser and relapse-prevention planning.",
+      "nearMiss": "A correct diagnosis means the right treatment is given.",
+      "whyNearMiss": "It's true but gives no mechanism, example or consequence.",
+      "explainPrompt": "In your own words, why can a wrong diagnosis make someone feel worse?",
+      "check": {
+       "q": "Which sentence best shows why diagnosis matters?",
+       "options": [
+        "Different conditions need different treatments, so a wrong label can cause the wrong treatment.",
+        "Diagnosis gives people a label.",
+        "Diagnosis is needed by law.",
+        "Doctors need a diagnosis to claim funding."
+       ],
+       "answer": 0,
+       "why": "The link between diagnosis and treatment is the central point."
+      }
+     },
+     {
+      "need": "Reach a balanced, justified judgement on how far diagnosis alone decides outcomes, considering other factors.",
+      "fromSpec": "Learners evaluate and justify conclusions on the importance of accurate diagnosis for treatment.",
+      "means": "Diagnosis is vital but not the only factor. Support, access to services and the person's own engagement also affect results.",
+      "example": "Diagnosis was essential for Wren, but treatment will only work if Wren has stable support, access to CBT without long waits and an employer that adjusts shifts. So accuracy is necessary but not sufficient.",
+      "nearMiss": "Diagnosis is the most important thing in treating mental illness.",
+      "whyNearMiss": "It makes a claim without considering any other factors or giving reasons.",
+      "explainPrompt": "Name one thing that could still go wrong even with a correct diagnosis. Explain in your own words.",
+      "check": {
+       "q": "What makes a judgement balanced?",
+       "options": [
+        "It lists reasons only for one side.",
+        "It uses cautious words like 'maybe'.",
+        "It weighs the importance of diagnosis against other factors that affect outcomes.",
+        "It avoids reaching a conclusion."
+       ],
+       "answer": 2,
+       "why": "Balance means considering what else matters and reaching a conclusion."
+      }
+     }
+    ]
+   }
+  }
+ },
+ "21": {
+  "parallelCase": {
+   "title": "Mr Alun Pryce and the thyroid lump (fictional)",
+   "summary": "Mr Alun Pryce is 66, a retired ferry engineer. His GP found a firm lump in the front of his neck, and blood tests suggest his thyroid gland is overactive. He has a pacemaker fitted five years ago and the make is not yet confirmed as safe for MRI. He has mild kidney disease and no known allergies. He lives with his seven-year-old granddaughter, whom he looks after after school, and with his daughter. He is anxious about hospital treatments and about 'radiation'. The hospital team is considering imaging to find out whether the lump is a harmless nodule or something needing treatment, and then treatment to control the overactive thyroid. The options include ultrasound, a nuclear medicine scan using a gamma camera, X-ray based CT, MRI, radioactive iodine treatment, and a heat-based treatment called radiofrequency ablation. The service user, the hospital and the staff are fictional."
+  },
+  "criteria": {
+   "AB.D1": {
+    "requirements": [
+     {
+      "need": "Evaluate all the ionising and non-ionising diagnostic options in turn, comparing how well each suits the service user's condition.",
+      "fromSpec": "Careful, detailed and logical evaluation of all ionising and non-ionising radiation options first for diagnosis.",
+      "means": "Ionising options (such as X-ray, CT, gamma camera) and non-ionising ones (such as ultrasound, MRI) each have different strengths. Evaluate them against what the team needs to find out.",
+      "example": "Ultrasound shows whether Mr Pryce's lump is solid or fluid-filled without ionising radiation, but cannot show how active the thyroid is. A gamma camera scan can show activity, so it answers the question ultrasound cannot.",
+      "nearMiss": "Ultrasound uses sound waves. A gamma camera detects gamma rays from a tracer. CT uses X-rays. MRI uses magnets.",
+      "whyNearMiss": "It describes each technique but does not weigh them for Mr Pryce.",
+      "explainPrompt": "In your own words, what question about Mr Pryce does ultrasound answer and what does it leave unanswered?",
+      "check": {
+       "q": "What shows a logical evaluation of diagnostic options?",
+       "options": [
+        "Each option is explained fully in turn.",
+        "The newest technology is chosen.",
+        "The cheapest option is always selected.",
+        "Each option is judged against what the team needs to know about this service user."
+       ],
+       "answer": 3,
+       "why": "Evaluation compares options against the clinical question."
+      }
+     },
+     {
+      "need": "Evaluate the ionising and non-ionising treatment options separately, saying how well each could treat this service user's condition.",
+      "fromSpec": "Careful, detailed and logical evaluation of all ionising and non-ionising radiation options for treatment.",
+      "means": "Treatment options work in different ways. Ionising treatments destroy cells with radiation; non-ionising ones may heat tissue. Compare them for this condition.",
+      "example": "Radioactive iodine works well for an overactive thyroid because thyroid cells take up iodine, so the radiation is delivered mostly where it is needed. Radiofrequency ablation heats a nodule with no ionising dose, but suits a single nodule less well than a gland that is overactive as a whole.",
+      "nearMiss": "Radioactive iodine treatment is used for overactive thyroids. Radiofrequency ablation uses heat to destroy tissue.",
+      "whyNearMiss": "It states uses but does not compare how well each suits his condition.",
+      "explainPrompt": "In your own words, why does the thyroid make radioactive iodine a good treatment choice?",
+      "check": {
+       "q": "Why is radioactive iodine useful for thyroid problems?",
+       "options": [
+        "Thyroid cells take up iodine, so the radiation is concentrated in the gland.",
+        "Iodine is a safe, non-ionising chemical.",
+        "The thyroid is close to the skin.",
+        "Iodine heats the tissue directly."
+       ],
+       "answer": 0,
+       "why": "Targeting follows from the biology of how the thyroid takes up iodine."
+      }
+     },
+     {
+      "need": "Explain the physical effect of each option on the body at molecular and cellular level.",
+      "fromSpec": "Learners show they understand the physical effect of each option on the human body at the molecular and cellular level.",
+      "means": "Ionising radiation removes electrons from atoms and molecules and can damage DNA. Non-ionising forms lack that energy, but may heat or vibrate tissue.",
+      "example": "Ionising radiation from iodine-131 can break bonds in DNA directly or make free radicals in water that then damage DNA, so the thyroid cells cannot divide. Ultrasound does not do this because sound waves carry no ionising energy, though they can warm tissue very slightly.",
+      "nearMiss": "Radiation damages cells and can cause cancer. Ultrasound is safe.",
+      "whyNearMiss": "It gives no molecular or cellular detail and treats the two types as 'bad' and 'good'.",
+      "explainPrompt": "Explain in your own words why a particular type of radiation can damage DNA while another cannot.",
+      "check": {
+       "q": "What is the key difference at molecular level?",
+       "options": [
+        "Ionising radiation is always more powerful in everyday terms.",
+        "Ionising radiation has enough energy to remove electrons and damage DNA; non-ionising does not.",
+        "Non-ionising radiation contains no energy.",
+        "Ionising radiation affects only cancer cells."
+       ],
+       "answer": 1,
+       "why": "The ionising energy of each is what decides the molecular effect."
+      }
+     },
+     {
+      "need": "Reach clear, concise conclusions and recommendations that suit the case study's condition and history, without yet evaluating risks.",
+      "fromSpec": "Learners reach clear and concise conclusions concerning the correct response to the case study's condition and medical history. They must not move into risk evaluation, introduced in aim C.",
+      "means": "At this stage recommend techniques based on how well they work for the person's condition and history. Save risks and safety for aim C.",
+      "example": "Given the overactive gland and the need to see activity, a gamma camera scan after an ultrasound looks the best diagnostic route for Mr Pryce. His history of a pacemaker matters only if it rules out an option on suitability alone.",
+      "nearMiss": "Mr Pryce should have ultrasound, then a scan, because they are safest for him.",
+      "whyNearMiss": "'Safest' moves into risk, which is aim C, and no reason is given from his condition.",
+      "explainPrompt": "In your own words, what is the difference between asking 'will this work?' and 'is this safe?'",
+      "check": {
+       "q": "Which belongs in aim A and B, not aim C?",
+       "options": [
+        "Which dose the staff will receive.",
+        "Which side-effects might occur.",
+        "Which technique best answers the clinical question for this service user.",
+        "Which shielding is needed."
+       ],
+       "answer": 2,
+       "why": "Aims A and B are about suitability and effectiveness, not risk."
+      }
+     }
+    ]
+   },
+   "C.D2": {
+    "requirements": [
+     {
+      "need": "Review the precautions that reduce risks and side-effects to the service user for ionising and non-ionising techniques.",
+      "fromSpec": "Learners review the precautions taken to minimise risks and side effects for diagnosis and treatment.",
+      "means": "A precaution is a step that reduces harm. Say what the risk is, what the step is and how well it works.",
+      "example": "To limit Mr Pryce's exposure, the team uses the lowest dose that gives a useful image and checks that scans are justified. Because his kidney disease may slow how fast the tracer leaves his body, the team would also encourage fluids and check the dose suits him.",
+      "nearMiss": "The staff keep radiation doses low and follow safety rules.",
+      "whyNearMiss": "It is too general; it doesn't name a risk, a precaution or how it suits this service user.",
+      "explainPrompt": "Think of one risk for Mr Pryce. In your own words, name one precaution and how you would judge whether it works.",
+      "check": {
+       "q": "Which counts as a precaution for the service user?",
+       "options": [
+        "Telling him radiation is safe.",
+        "Using the lowest dose that still produces a useful result.",
+        "Using more scans to make sure.",
+        "Letting him choose any dose."
+       ],
+       "answer": 1,
+       "why": "Precautions are practical steps that reduce a specific risk."
+      }
+     },
+     {
+      "need": "Cover precautions for the staff who carry out the techniques, not only for the service user.",
+      "fromSpec": "Learners must include both the service users and the members of staff carrying out diagnosis and treatment.",
+      "means": "Staff are exposed repeatedly. Typical measures include reducing time, increasing distance, shielding, wearing dose badges and following regulations such as IRR 2017 and IR(ME)R 2017.",
+      "example": "A nuclear medicine technologist handling the tracer works behind lead shielding and uses tongs to increase distance. A badge records dose over time, so any rise can be investigated.",
+      "nearMiss": "Staff wear lead aprons to protect them from radiation.",
+      "whyNearMiss": "It names one item but doesn't explain the principle or how it fits this procedure.",
+      "explainPrompt": "In your own words, explain why distance protects staff from a source.",
+      "check": {
+       "q": "Which set of measures protects staff using radioactive sources?",
+       "options": [
+        "More time, closer distance and thick clothing.",
+        "Gloves and masks only.",
+        "No protection is needed at low doses.",
+        "Less time near the source, more distance, shielding and monitoring with dose badges."
+       ],
+       "answer": 3,
+       "why": "Time, distance and shielding are the core principles for staff protection."
+      }
+     },
+     {
+      "need": "Include precautions specific to non-ionising techniques as well as ionising ones.",
+      "fromSpec": "Learners consider health and safety precautions for the use of both ionising and non-ionising instrumentation.",
+      "means": "Non-ionising techniques still have hazards: MRI has strong magnetic fields and radio pulses, ultrasound can cause slight heating, and radiofrequency ablation heats tissue.",
+      "example": "MRI is not simply 'safe'. Mr Pryce's pacemaker might be affected by the magnetic field, so the team must check whether it is MR-conditional before any scan. Metal objects must also be kept out of the room.",
+      "nearMiss": "MRI has no radiation, so there are no safety concerns.",
+      "whyNearMiss": "It mistakes 'non-ionising' for 'risk-free' and ignores magnetic hazards.",
+      "explainPrompt": "In your own words, why is the pacemaker a problem for MRI but not for ultrasound?",
+      "check": {
+       "q": "Which is a real hazard of MRI?",
+       "options": [
+        "The strong magnetic field can affect implants such as pacemakers and pull on metal.",
+        "Ionising radiation damages DNA.",
+        "The sound waves burn skin.",
+        "Radioactive tracer stays in the body for days."
+       ],
+       "answer": 0,
+       "why": "Non-ionising techniques have different risks, not none."
+      }
+     },
+     {
+      "need": "Apply the precautions to this service user's circumstances, including people who live with him.",
+      "fromSpec": "Learners review precautions in relation to the specific service user.",
+      "means": "The same procedure may need different precautions for different people. Look at their health, home life and anxieties.",
+      "example": "After radioactive iodine, Mr Pryce would need to keep his distance from his granddaughter for a time because children are more sensitive to radiation. He might need to arrange temporary care for her, which is something the team must plan with the family.",
+      "nearMiss": "After radioiodine treatment, patients must avoid close contact with others for a while.",
+      "whyNearMiss": "It gives the rule but does not apply it to Mr Pryce's household.",
+      "explainPrompt": "What other detail about Mr Pryce's life might make a precaution harder to follow? Answer in your own words.",
+      "check": {
+       "q": "Why must precautions fit the individual?",
+       "options": [
+        "Different people need different doses of radiation.",
+        "Standard rules never apply.",
+        "People's health, home and circumstances change which risks matter and which steps will be followed.",
+        "It saves money."
+       ],
+       "answer": 2,
+       "why": "Applying precautions means thinking about this person's life."
+      }
+     }
+    ]
+   },
+   "C.D3": {
+    "requirements": [
+     {
+      "need": "Justify the final choice of diagnosis and treatment techniques, drawing on what you learned in all the learning aims.",
+      "fromSpec": "Learners draw on what they have learned in all the learning aims to justify the choice of techniques for the service user.",
+      "means": "Bring together how the technique works, how suitable it is and its risks. State your final choice and why it beats the alternatives.",
+      "example": "For Mr Pryce, ultrasound followed by a gamma camera scan is best: both give the information needed, one uses no ionising dose and the other gives functional information that ultrasound lacks. The scan's small dose is acceptable for the benefit.",
+      "nearMiss": "The best choice for Mr Pryce is the gamma camera because it shows the thyroid.",
+      "whyNearMiss": "It gives a choice and one reason but does not use risks or compare with alternatives.",
+      "explainPrompt": "In your own words, what would make you change your choice if Mr Pryce's circumstances changed?",
+      "check": {
+       "q": "What makes a justification complete?",
+       "options": [
+        "It states the choice clearly.",
+        "It brings together effectiveness, risks and benefits to support a choice over alternatives.",
+        "It lists several advantages of one option.",
+        "It uses technical vocabulary."
+       ],
+       "answer": 1,
+       "why": "Justification weighs all relevant factors, not just one."
+      }
+     },
+     {
+      "need": "Weigh the risks and side-effects against the benefits for this service user.",
+      "fromSpec": "Learners justify the choice with reference to risks, side-effects and safety precautions for the service user.",
+      "means": "No technique is risk-free. A good judgement explains why the benefits are worth the risks after precautions.",
+      "example": "Radioactive iodine carries a risk of an underactive thyroid afterwards, but this can be treated with a daily tablet and avoids surgery. For Mr Pryce, with other health concerns, that trade-off is reasonable.",
+      "nearMiss": "Radioactive iodine has side-effects but is effective.",
+      "whyNearMiss": "It mentions side-effects but doesn't weigh them or say whether the trade-off suits him.",
+      "explainPrompt": "In your own words, how would you decide whether a side-effect is 'acceptable'?",
+      "check": {
+       "q": "Which is the best way to handle risks in a justification?",
+       "options": [
+        "Avoid mentioning risks.",
+        "List risks without comment.",
+        "Choose the option with the fewest risks regardless.",
+        "State the risk, explain how precautions reduce it and say why the benefit outweighs what is left."
+       ],
+       "answer": 3,
+       "why": "A justification weighs benefit against remaining risk."
+      }
+     },
+     {
+      "need": "Show how your research supports the justification and recommendations.",
+      "fromSpec": "Learners show how their research supports their justifications and recommendations.",
+      "means": "Refer to sources, such as hospital guidance or professional bodies, and say how they support your choice.",
+      "example": "Guidance from a professional body on thyroid imaging could be used to support choosing ultrasound first, because it avoids a dose when it can answer the main question. I would name the source and say why it is reliable.",
+      "nearMiss": "Research shows that radioactive iodine is a good treatment.",
+      "whyNearMiss": "It does not say what research or how it supports the choice for this person.",
+      "explainPrompt": "In your own words, what would you check to decide if a source is reliable enough to base a recommendation on?",
+      "check": {
+       "q": "Which is the strongest use of research?",
+       "options": [
+        "A list of web links at the end.",
+        "A general statement that studies exist.",
+        "Citing a reliable source and linking it to a specific decision about this service user.",
+        "Quoting a source word for word."
+       ],
+       "answer": 2,
+       "why": "Research is strongest when tied to specific decisions."
+      }
+     },
+     {
+      "need": "Present arguments concisely and professionally, ending with a clear recommendation.",
+      "fromSpec": "Learners articulate their arguments concisely and professionally.",
+      "means": "Use accurate terms, keep to the point and end with the recommendation in clear sentences.",
+      "example": "Recommendation: ultrasound, then gamma camera scan, then radioactive iodine treatment with home arrangements for his granddaughter. The reason in one line: it answers the clinical question with the lowest suitable dose.",
+      "nearMiss": "I think it would probably be best if maybe the scan or ultrasound was done, since it might help the doctors.",
+      "whyNearMiss": "It is vague and hesitant and gives no clear recommendation.",
+      "explainPrompt": "Rewrite the near-miss in your own words as a short, confident recommendation for a different service user of your own choice, not Mr Pryce.",
+      "check": {
+       "q": "What is typical of a professional recommendation?",
+       "options": [
+        "It is clear, precise and backed by a reason.",
+        "It is long and detailed.",
+        "It uses lots of abbreviations.",
+        "It avoids a decision."
+       ],
+       "answer": 0,
+       "why": "Professional writing is clear and committed to a decision."
+      }
+     }
+    ]
+   }
+  }
+ },
+ "22": {
+  "parallelCase": {
+   "title": "Rowan Draycott and haemophilia A (fictional)",
+   "summary": "Rowan Draycott is six and has haemophilia A, a genetic disorder in which blood clots slowly because clotting factor VIII is missing or low. It is X-linked recessive, and Rowan's mother, Priya, is a carrier. Priya was born in a family with no known history, so Rowan's diagnosis after heavy bleeding from a small cut came as a shock. During pregnancy she took folic acid, had no alcohol, but developed pre-eclampsia, and Rowan was born at 34 weeks with a low birth weight. Rowan now receives regular clotting factor treatment, needs to avoid contact sports and sometimes misses school. After three years of trying for a second child, Priya and her husband Callum had fertility investigations and are considering IVF with pre-implantation genetic testing for monogenic conditions (PGT-M), licensed by the Human Fertilisation and Embryology Authority (HFEA). They have also read about gene therapy for haemophilia and wonder about the cost and the ethics. All characters are fictional."
+  },
+  "criteria": {
+   "AB.D1": {
+    "requirements": [
+     {
+      "need": "Evaluate the role of genetics in human reproduction, using the case to show how inheritance works.",
+      "fromSpec": "Learners evaluate and reach reasoned and valid judgements on the role of genetics in human reproduction.",
+      "means": "Genetics decides which genes are passed on through gametes at conception. Evaluating means judging how far genes explain what happens and how far other factors matter.",
+      "example": "Haemophilia A is carried on the X chromosome, so each son of a carrier mother has a 50% chance of inheriting it. This explains why Rowan is affected, but genes do not explain his early birth, which links to pre-eclampsia.",
+      "nearMiss": "Genes are passed from parents to children in sperm and eggs. Haemophilia is a genetic disorder.",
+      "whyNearMiss": "It states facts but doesn't judge how far genetics explains Rowan's situation.",
+      "explainPrompt": "In your own words, explain why Rowan's sister, if he had one, would be affected differently from him.",
+      "check": {
+       "q": "Why is a carrier mother's son more likely to be affected than her daughter?",
+       "options": [
+        "Sons inherit all their genes from their mothers.",
+        "He has one X chromosome, so a faulty gene on it has no healthy copy to compensate.",
+        "Faulty genes only occur on the Y chromosome.",
+        "Daughters cannot inherit the gene."
+       ],
+       "answer": 1,
+       "why": "X-linked recessive conditions show up more in males who have only one X."
+      }
+     },
+     {
+      "need": "Apply in-depth knowledge of how natural conception occurs and the pattern of pre-natal growth to the case.",
+      "fromSpec": "Learners show in-depth understanding of how knowledge applies to detailed situations of natural conception and patterns of pre-natal growth.",
+      "means": "Link fertilisation, implantation and the stages of growth to details in the case.",
+      "example": "Rowan's early birth at 34 weeks falls in the fetal stage, when lungs and brain are still maturing. That helps explain why he might have needed breathing support and a longer hospital stay.",
+      "nearMiss": "Conception happens when sperm fertilises an egg. The embryo grows and becomes a fetus.",
+      "whyNearMiss": "It lists the sequence but doesn't apply it to the case or explain its relevance.",
+      "explainPrompt": "In your own words, explain why timing matters when something affects pre-natal growth.",
+      "check": {
+       "q": "Why does the timing of harm during pregnancy matter?",
+       "options": [
+        "Harm matters only in the first week.",
+        "All stages are equally sensitive.",
+        "Harm matters only after birth.",
+        "Different organs form at different stages, so effects depend on what is developing."
+       ],
+       "answer": 3,
+       "why": "Development is staged, so timing decides effects."
+      }
+     },
+     {
+      "need": "Justify which factors affecting pre-natal development matter most, using genetic and non-genetic evidence.",
+      "fromSpec": "Learners draw on knowledge of factors affecting pre-natal development, making suitable justifications.",
+      "means": "Factors include genetics, maternal health, nutrition, alcohol, smoking, infections and age. Say which is most important in this case and give evidence.",
+      "example": "Priya's pre-eclampsia is the main influence on Rowan's early delivery and low birth weight, because reduced blood flow to the placenta can limit growth. Folic acid helped protect against neural tube defects, but not against this problem.",
+      "nearMiss": "Smoking, alcohol, diet and illness can all affect an unborn baby.",
+      "whyNearMiss": "It lists factors but doesn't identify which applies or how.",
+      "explainPrompt": "Name a factor that Priya could control and one she could not. In your own words, say why that distinction matters.",
+      "check": {
+       "q": "What makes an explanation of pre-natal factors strong?",
+       "options": [
+        "It identifies which factors apply to this case and explains how each affects growth.",
+        "It includes as many factors as possible.",
+        "It names famous cases.",
+        "It focuses only on genetic factors."
+       ],
+       "answer": 0,
+       "why": "Strong answers select and justify."
+      }
+     },
+     {
+      "need": "Explain how pre-natal factors and difficulties with reproduction affect post-natal development and care needs through the life course.",
+      "fromSpec": "Learners make justifications about effects on post-natal development through the life course.",
+      "means": "Link events before birth to needs in infancy, childhood and adulthood.",
+      "example": "Rowan's low birth weight may mean extra monitoring in infancy, and haemophilia means lifelong treatment and joint care. As an adult he may need support with work choices and, if he has children, genetic counselling.",
+      "nearMiss": "Premature babies can have long-term problems. Haemophilia needs treatment.",
+      "whyNearMiss": "It says there are effects but doesn't link them to specific stages or care needs.",
+      "explainPrompt": "In your own words, how might Rowan's needs change from childhood to adulthood?",
+      "check": {
+       "q": "Which statement shows life-course thinking?",
+       "options": [
+        "It lists problems at birth.",
+        "It describes treatments in hospital.",
+        "It links a pre-natal factor to different needs at different stages of life.",
+        "It focuses on the mother's health."
+       ],
+       "answer": 2,
+       "why": "Life-course thinking follows effects across stages."
+      }
+     }
+    ]
+   },
+   "CD.D2": {
+    "requirements": [
+     {
+      "need": "Evaluate how reproductive and gene technologies could promote life chances for the selected individual.",
+      "fromSpec": "Learners show in-depth understanding of how reproductive and gene technologies contribute to healthy life chances for the selected individual.",
+      "means": "Life chances means opportunities for health and a good quality of life. Judge what each technology could realistically change for the person.",
+      "example": "Regular factor VIII replacement already gives Rowan a near-normal childhood, so gene therapy could add the chance of fewer injections. PGT-M would not help Rowan himself but could avoid another affected child.",
+      "nearMiss": "Gene therapy could cure haemophilia and PGT-M would stop it being passed on.",
+      "whyNearMiss": "It makes strong claims without considering what is realistic for Rowan.",
+      "explainPrompt": "In your own words, which technology matters most for Rowan now and which for his family planning?",
+      "check": {
+       "q": "What does 'life chances' include?",
+       "options": [
+        "Life expectancy only.",
+        "Health, opportunities and quality of life, not only survival.",
+        "Income only.",
+        "Number of children."
+       ],
+       "answer": 1,
+       "why": "Life chances are broader than survival."
+      }
+     },
+     {
+      "need": "Justify the validity of legislation and regulation using research, with current names and laws.",
+      "fromSpec": "Learners use research to justify the validity of legislation and regulation governing reproductive and gene technologies.",
+      "means": "Regulation is meant to protect people and prevent misuse. Name the law, explain what it controls and judge whether it is working well. Use the Human Fertilisation and Embryology Act 1990 as amended in 2008 and the HFEA.",
+      "example": "The HFEA licenses clinics and decides which conditions can be tested for under PGT-M, so couples like Priya and Callum use a regulated route. This protects embryos and families, though the list of approved conditions may feel restrictive.",
+      "nearMiss": "The HFE Act controls fertility treatment in the UK.",
+      "whyNearMiss": "It states a fact but does not judge the law or relate it to the case.",
+      "explainPrompt": "In your own words, what is one benefit and one drawback of regulation?",
+      "check": {
+       "q": "What does the HFEA do?",
+       "options": [
+        "It funds IVF treatment.",
+        "It makes decisions for patients.",
+        "It trains genetic counsellors.",
+        "It licenses and regulates fertility treatment and embryo research."
+       ],
+       "answer": 3,
+       "why": "The HFEA regulates, it does not fund or decide for individuals."
+      }
+     },
+     {
+      "need": "Discuss ethical challenges for the individual, the family and society, giving both sides.",
+      "fromSpec": "Learners evaluate the impact of technologies and ethical challenges on a selected individual and society.",
+      "means": "Ethical issues include embryo selection, access, cost and what counts as a disability. Show different views and reach a judgement.",
+      "example": "PGT-M may prevent suffering, but some people argue that selecting against a condition suggests that people like Rowan are less valuable. High cost might also mean only some families can choose it.",
+      "nearMiss": "Some people think PGT-M is wrong because it destroys embryos.",
+      "whyNearMiss": "It gives one view with no balance, reasoning or link to the case.",
+      "explainPrompt": "In your own words, which view do you find most convincing and what would you say to someone who disagrees?",
+      "check": {
+       "q": "Which is the best sign of an ethical evaluation?",
+       "options": [
+        "It uses emotive language.",
+        "It states the writer's opinion strongly.",
+        "It presents more than one perspective and reaches a reasoned judgement.",
+        "It lists all possible ethical theories."
+       ],
+       "answer": 2,
+       "why": "Evaluation balances views and judges."
+      }
+     },
+     {
+      "need": "Explain ethical challenges for professionals working with these technologies.",
+      "fromSpec": "Learners draw on ethical challenges for those working with reproductive and gene technologies.",
+      "means": "Professionals such as doctors, genetic counsellors and embryologists must handle consent, confidentiality, non-directive advice and difficult decisions.",
+      "example": "A genetic counsellor must give Priya and Callum clear information about PGT-M without pushing them. If results suggest a risk to extended relatives, the counsellor faces a confidentiality dilemma.",
+      "nearMiss": "Professionals must be careful when working with genes.",
+      "whyNearMiss": "It is vague and does not name any professional duty or challenge.",
+      "explainPrompt": "In your own words, why is non-directive advice important?",
+      "check": {
+       "q": "What is non-directive counselling?",
+       "options": [
+        "Giving full information and supporting a person's own decision without steering them.",
+        "Telling people what is best.",
+        "Keeping information secret from them.",
+        "Refusing to discuss options."
+       ],
+       "answer": 0,
+       "why": "The counsellor's role is to inform, not decide."
+      }
+     }
+    ]
+   },
+   "D.D3": {
+    "requirements": [
+     {
+      "need": "Evaluate the overall importance of genetics in pre- and post-natal development, bringing the case together.",
+      "fromSpec": "Learners evaluate the importance of the role of genetics in pre and post-natal development.",
+      "means": "Combine what you found about inheritance, pre-natal factors and later needs, and say how much genetics matters compared with other influences.",
+      "example": "Genetics explains Rowan's haemophilia and his lifelong needs, but not his early birth. Overall genetics is crucial for his condition, but environment and healthcare shape how well he does.",
+      "nearMiss": "Genetics is important in development, as shown by Rowan's haemophilia.",
+      "whyNearMiss": "It gives a claim and one example but no weighing of other influences.",
+      "explainPrompt": "In your own words, what would a scientist say genes explain in Rowan's case and what do they not explain?",
+      "check": {
+       "q": "What makes a judgement about genetics balanced?",
+       "options": [
+        "It says genes explain everything.",
+        "It says what genetics explains and what depends on other factors.",
+        "It says genes are irrelevant.",
+        "It lists genetic conditions."
+       ],
+       "answer": 1,
+       "why": "Balanced judgement considers other influences."
+      }
+     },
+     {
+      "need": "Judge how much reproductive and gene technologies contribute to the life chances of individuals and society.",
+      "fromSpec": "Learners evaluate the contribution of reproductive and gene technologies in promoting individuals and society's life chances.",
+      "means": "Look at benefits for individuals and for society, such as fewer cases of serious disease, and at costs.",
+      "example": "For Rowan's family, PGT-M and gene therapy could widen choices. For society, they could reduce the burden of illness but also raise costs and questions about fairness of access.",
+      "nearMiss": "Reproductive and gene technologies are very helpful for families.",
+      "whyNearMiss": "It is a one-sided statement with no consideration of society or costs.",
+      "explainPrompt": "In your own words, who might not benefit from these technologies, and why?",
+      "check": {
+       "q": "Which is a societal benefit?",
+       "options": [
+        "Higher costs for all.",
+        "More decisions for doctors.",
+        "Fewer people suffering from severe inherited conditions.",
+        "Less need for research."
+       ],
+       "answer": 2,
+       "why": "Societal benefits concern wider health outcomes."
+      }
+     },
+     {
+      "need": "Refer to ethical challenges and reach a justified overall conclusion.",
+      "fromSpec": "Learners refer to ethical challenges and justify conclusions.",
+      "means": "End with a decision about whether benefits outweigh concerns and say why.",
+      "example": "On balance, regulated use of PGT-M is justified because it lets families make informed choices, as long as the HFEA keeps oversight and access remains fair.",
+      "nearMiss": "There are pros and cons to gene technology, so it depends.",
+      "whyNearMiss": "It avoids making a judgement.",
+      "explainPrompt": "In your own words, what evidence would change your conclusion?",
+      "check": {
+       "q": "What does a justified conclusion need?",
+       "options": [
+        "A summary of all ideas.",
+        "A neutral statement.",
+        "A single strong reason.",
+        "A clear position with reasons and awareness of the opposing view."
+       ],
+       "answer": 3,
+       "why": "Conclusion must commit and justify."
+      }
+     }
+    ]
+   }
+  }
+ },
+ "23": {
+  "parallelCase": {
+   "title": "Mr Idris Valentine's kidney investigation (fictional)",
+   "summary": "Mr Idris Valentine is 63, a retired joiner who has felt exhausted for months. He looks pale, his ankles are swollen and he has noticed foamy urine. His GP takes blood and a urine sample. The full blood count shows a low haemoglobin with red cells of normal size, and the blood film is examined by a biomedical scientist. Clotting tests are normal. Biochemistry shows raised creatinine and urea, and the urine dipstick finds protein, so a urine albumin to creatinine ratio is requested. He is referred to a kidney clinic, where a biopsy is taken and examined in the histopathology laboratory. The report describes abnormal changes in the kidney's filtering cells. As his haemoglobin falls further, the team plans a procedure and arranges a red cell transfusion, which needs blood grouping, antibody screening and crossmatching. Everyone and every laboratory in this case are fictional."
+  },
+  "criteria": {
+   "AB.D1": {
+    "requirements": [
+     {
+      "need": "Justify why blood tests are often the first line of investigation when someone has an abnormal presentation.",
+      "fromSpec": "Learners show why blood tests are often the first line of investigation when a patient presents with something abnormal.",
+      "means": "Say why blood is a good starting point: it is easy to collect, quick to test and reflects many body systems. Then show how the results decide what happens next.",
+      "example": "For Mr Valentine, one blood sample showed anaemia and signs that his kidneys were not filtering well. This pointed the team to the kidney clinic without any invasive test, which is why blood tests come first.",
+      "nearMiss": "Blood tests are done first because they are quick and easy.",
+      "whyNearMiss": "It gives general reasons without showing what blood tests revealed or how they directed next steps.",
+      "explainPrompt": "In your own words, why might a blood test be unable to give a final diagnosis on its own?",
+      "check": {
+       "q": "Why are blood tests so often the first test?",
+       "options": [
+        "They sample many body systems at once and guide which investigation to do next.",
+        "They are the only test that works.",
+        "They give a final diagnosis every time.",
+        "They are painless."
+       ],
+       "answer": 0,
+       "why": "The strength of blood tests is breadth plus direction for next steps."
+      }
+     },
+     {
+      "need": "Link blood components to the diseases they help detect and explain what each test is looking for.",
+      "fromSpec": "Learners link blood components with a particular disease or type of disease, and explain the tests done and what is being looked for.",
+      "means": "Tests such as a full blood count, blood film and clotting tests look for particular problems. Link each component to a type of illness.",
+      "example": "A low haemoglobin with normal-sized red cells in Mr Valentine suggests a long-term illness such as kidney disease, rather than iron or vitamin deficiency, which often change cell size. That helps narrow the cause.",
+      "nearMiss": "Red blood cells carry oxygen. A full blood count counts them.",
+      "whyNearMiss": "It gives a function and a test but does not link to a disease or explain what the result means.",
+      "explainPrompt": "In your own words, what would a high white cell count make you suspect, and why?",
+      "check": {
+       "q": "Which pairing links a test to what it looks for?",
+       "options": [
+        "A blood film looks for kidney disease.",
+        "A full blood count measures blood sugar.",
+        "A clotting test measures iron.",
+        "Clotting tests look for bleeding or clotting disorders."
+       ],
+       "answer": 3,
+       "why": "Each test has a particular target."
+      }
+     },
+     {
+      "need": "Justify why blood transfusion is such a prominent treatment, using the components used.",
+      "fromSpec": "Learners justify why the blood transfusion process is prominent in treatment.",
+      "means": "Transfusion replaces what the body is missing quickly and safely: red cells for anaemia, platelets for bleeding, plasma for clotting factors.",
+      "example": "Transfusing red cells for Mr Valentine restores oxygen-carrying capacity quickly before his procedure, which medicines alone could not do. Using only the component he lacks avoids giving other parts he does not need.",
+      "nearMiss": "Transfusions are given to people who have lost blood or are ill.",
+      "whyNearMiss": "It states uses but does not justify why transfusion is prominent or why components are chosen.",
+      "explainPrompt": "In your own words, why is it useful that blood can be split into components?",
+      "check": {
+       "q": "Why are blood components often given instead of whole blood?",
+       "options": [
+        "Whole blood cannot be stored.",
+        "Components are cheaper in every case.",
+        "Patients receive only what they lack, which is more efficient and reduces unnecessary exposure.",
+        "Whole blood is not safe."
+       ],
+       "answer": 2,
+       "why": "Component therapy targets the specific need."
+      }
+     },
+     {
+      "need": "Explain the process that makes blood suitable for transfusion, including screening and its limits.",
+      "fromSpec": "Learners include the process involved in getting blood to the stage where it is suitable for transfusion, and name diseases screened.",
+      "means": "You need not describe the whole transfusion service. Do cover donation checks, screening for infections, grouping, processing into components and storage, and say where screening can fail.",
+      "example": "Donated blood is tested for infections such as HIV, hepatitis B and C and syphilis by NHS Blood and Transplant before use. Grouping and crossmatching protect Mr Valentine from a reaction, but screening cannot detect a new infection that no test exists for.",
+      "nearMiss": "Blood is taken from donors, tested and then given to patients.",
+      "whyNearMiss": "It skips the actual steps and names no diseases or limitations.",
+      "explainPrompt": "In your own words, what is the purpose of crossmatching and how is it different from screening for infections?",
+      "check": {
+       "q": "What is the main purpose of grouping and crossmatching?",
+       "options": [
+        "To test for infections.",
+        "To make sure the donor blood is compatible with the patient's blood.",
+        "To increase the amount of blood.",
+        "To store the blood for longer."
+       ],
+       "answer": 1,
+       "why": "Grouping and crossmatching prevent reactions, while screening prevents infection."
+      }
+     }
+    ]
+   },
+   "CD.D2": {
+    "requirements": [
+     {
+      "need": "Explain how cell investigations used alongside biochemical tests make an effective diagnostic tool, showing what each contributes.",
+      "fromSpec": "Learners use detailed analysis and research to show how investigations of cells used alongside biochemical tests can provide an effective diagnostic tool.",
+      "means": "Cell tests show what the cells look like; biochemical tests show what is happening chemically. Together they can confirm and explain a diagnosis.",
+      "example": "In Mr Valentine's case, biochemistry showed raised creatinine and protein in urine, which tells the team that something is wrong with kidney filtering. The biopsy then shows which cells are damaged and how, which explains the cause.",
+      "nearMiss": "Cell tests and biochemical tests are both used to diagnose diseases.",
+      "whyNearMiss": "It says both are used but not what each adds or why they work better together.",
+      "explainPrompt": "In your own words, what could the biopsy tell the team that the urine test could not?",
+      "check": {
+       "q": "Why use both cell and biochemical tests?",
+       "options": [
+        "They are cheaper together.",
+        "They always give the same result.",
+        "Biochemical tests show function and the cell test shows the structural cause.",
+        "One is for adults and one for children."
+       ],
+       "answer": 2,
+       "why": "They answer different questions and together give a fuller picture."
+      }
+     },
+     {
+      "need": "Use a specific worked example, such as abnormal urine protein with abnormal kidney cells, to show the combination in practice.",
+      "fromSpec": "Learners must use examples such as urine analysis where abnormal protein levels are detected and cell samples indicating abnormal growth patterns from a kidney.",
+      "means": "A concrete example makes the argument clearer. Trace it from the sample to the result to the decision.",
+      "example": "Protein in the urine suggests that Mr Valentine's filtration barrier is leaking. The biopsy shows structural changes in the filtering cells, which fits that biochemical result and supports a kidney diagnosis rather than a general illness.",
+      "nearMiss": "Urine tests can show protein, and biopsies can show abnormal cells.",
+      "whyNearMiss": "It names the two tests but doesn't connect the results or explain the conclusion.",
+      "explainPrompt": "In your own words, why does protein in urine matter?",
+      "check": {
+       "q": "What does protein in urine usually suggest?",
+       "options": [
+        "The kidney's filters may be damaged and letting protein leak.",
+        "The person has eaten too much protein.",
+        "The bladder is empty.",
+        "The blood is too thick."
+       ],
+       "answer": 0,
+       "why": "Healthy kidneys keep most protein in the blood."
+      }
+     },
+     {
+      "need": "Show how cell injury, such as from abnormal growth, inflammation or pathogens, helps identify the underlying cause of disease.",
+      "fromSpec": "Learners show how cell pathology uses cell injury to identify underlying reasons and so help in disease identification.",
+      "means": "Here cell injury means damage inside cells from pathogens, abnormal growth or inflammation, not cuts or bruises. Pathologists look for these changes under the microscope.",
+      "example": "In a biopsy, inflammation of the kidney's filtering cells would suggest an immune-related cause. Cancerous growth would look quite different, with abnormal cell shapes and uncontrolled growth patterns.",
+      "nearMiss": "Cell injury is when cells get damaged.",
+      "whyNearMiss": "It defines the term loosely and doesn't show how pathologists use it.",
+      "explainPrompt": "In your own words, how does the pattern of injury help point to a cause?",
+      "check": {
+       "q": "Which is an example of the kind of cell injury this unit means?",
+       "options": [
+        "A cut on a finger.",
+        "A bruise from a knock.",
+        "A burn from hot water.",
+        "Cells dividing out of control to form a tumour."
+       ],
+       "answer": 3,
+       "why": "In cell pathology, injury refers to damage inside cells from disease processes."
+      }
+     },
+     {
+      "need": "Explain how balanced biochemical systems keep us healthy and how tests detect imbalance.",
+      "fromSpec": "Learners show how balanced biochemical systems influence health and disease, and how tests monitor them.",
+      "means": "Body chemistry such as fluid, salts and waste removal is kept steady by homeostasis. Tests show whether levels are normal.",
+      "example": "Healthy kidneys keep creatinine and urea low by filtering them out. Mr Valentine's raised levels show the system is out of balance, which links to his tiredness and swollen ankles.",
+      "nearMiss": "The kidneys clean the blood. Blood tests check the kidneys.",
+      "whyNearMiss": "It gives a function and a test but doesn't link imbalance to symptoms.",
+      "explainPrompt": "In your own words, what does a raised creatinine tell you about a person's homeostasis?",
+      "check": {
+       "q": "What do raised creatinine and urea suggest?",
+       "options": [
+        "The person has drunk too much water.",
+        "The kidneys may not be removing waste well.",
+        "The liver is working too hard.",
+        "The blood is losing oxygen."
+       ],
+       "answer": 1,
+       "why": "These waste products rise when kidney function falls."
+      }
+     }
+    ]
+   },
+   "CD.D3": {
+    "requirements": [
+     {
+      "need": "Evaluate the work of the laboratories: the samples they receive, the tests they run and the reports they send.",
+      "fromSpec": "Learners evaluate the work done by laboratories, in terms of the samples they receive, the tests carried out and the reports produced.",
+      "means": "Focus on what laboratories do, not the work of research scientists. Follow a sample from arrival to report.",
+      "example": "Mr Valentine's samples reach haematology, biochemistry and histopathology labs, each of which tests, checks quality and sends a report to his consultant. The reports combine to give the full picture.",
+      "nearMiss": "Laboratories test samples and send results to doctors.",
+      "whyNearMiss": "It is accurate but too general to evaluate anything.",
+      "explainPrompt": "In your own words, what might go wrong between a sample leaving a patient and a report reaching a doctor?",
+      "check": {
+       "q": "What is the focus of this criterion?",
+       "options": [
+        "The work of the laboratories on samples, tests and reports.",
+        "New research discoveries by scientists.",
+        "The development of new drugs.",
+        "Hospital management."
+       ],
+       "answer": 0,
+       "why": "The criterion is about laboratory services, not research."
+      }
+     },
+     {
+      "need": "Judge how effectively laboratories identify causes of disease and guide treatment, including limitations.",
+      "fromSpec": "Learners evaluate the work of laboratories in diagnosing causes and cures, making justifications.",
+      "means": "Effectiveness means whether results are accurate, timely and useful. Limitations include poor samples, errors and results that need interpreting.",
+      "example": "The labs' results gave Mr Valentine's team a clear cause and direction for treatment. However, a biopsy sample that was too small could have given an unclear result, which shows why quality of sampling matters.",
+      "nearMiss": "Labs are very effective and help diagnose many diseases.",
+      "whyNearMiss": "It is a claim with no evidence or limits.",
+      "explainPrompt": "In your own words, name one limitation of laboratory testing and how it could affect a diagnosis.",
+      "check": {
+       "q": "Which is a limitation of laboratory results?",
+       "options": [
+        "Results are always final.",
+        "Labs cannot test blood.",
+        "Labs only work in hospitals.",
+        "Results can be affected by poor samples and need clinical interpretation."
+       ],
+       "answer": 3,
+       "why": "Lab results are valuable but not perfect."
+      }
+     },
+     {
+      "need": "Use your own research from across the unit to support justifications and recommendations.",
+      "fromSpec": "Learners use all their own research for the unit, making suitable justifications and recommendations.",
+      "means": "Pull together the evidence from every aim and use it to support what you say about labs.",
+      "example": "My research on blood grouping and screening shows how labs protect transfusion patients, while the kidney example shows how tests combine to find a cause. Together they suggest labs are most effective when results are shared between departments.",
+      "nearMiss": "In this unit I learned about blood, cells and chemistry in the lab.",
+      "whyNearMiss": "It reports learning but does not use research to justify anything.",
+      "explainPrompt": "In your own words, what is one finding from earlier in the unit that you could use to support a recommendation?",
+      "check": {
+       "q": "What does it mean to use your research?",
+       "options": [
+        "Repeat earlier sections.",
+        "Add a new topic.",
+        "Refer to earlier findings as evidence for your judgement.",
+        "List your sources."
+       ],
+       "answer": 2,
+       "why": "Research is used when it supports an argument."
+      }
+     },
+     {
+      "need": "Make a clear recommendation arising from your evaluation.",
+      "fromSpec": "Learners make suitable recommendations to help health workers treating patients with abnormal symptoms.",
+      "means": "Suggest a realistic improvement and explain how it would help patients or clinicians.",
+      "example": "To help clinicians like Mr Valentine's, labs could give a combined report linking blood, urine and biopsy results, so the consultant sees a joined-up picture sooner.",
+      "nearMiss": "Labs should be better and faster.",
+      "whyNearMiss": "It is vague and gives no specific action or reason.",
+      "explainPrompt": "In your own words, what makes a recommendation realistic?",
+      "check": {
+       "q": "Which is the strongest recommendation?",
+       "options": [
+        "A general statement of improvement.",
+        "A specific change with a reason showing who benefits.",
+        "A request for more money.",
+        "A list of problems."
+       ],
+       "answer": 1,
+       "why": "Recommendations need specifics and benefits."
+      }
+     }
+    ]
+   }
+  }
+ },
+ "24": {
+  "parallelCase": {
+   "title": "Luca and the missing sugar release (fictional)",
+   "summary": "Luca Ferreira-Holt is nine and has glycogen storage disease type Ia. A change in the gene for the liver enzyme glucose-6-phosphatase means his liver stores glycogen but cannot release glucose into his blood properly, so he can have dangerously low blood glucose between meals. He eats frequent meals and takes uncooked cornstarch, which his amylase digests slowly to give a steady supply of glucose. Luca's aunt Nomvula has type 1 diabetes because her pancreas makes too little insulin. Luca's class did an amylase practical, mixing amylase with starch at different temperatures and pH values and using iodine to show when starch was gone. Starch broke down fastest near body temperature and hardly at all in boiling-hot or very acidic mixtures. The class also compared aerobic and anaerobic respiration of glucose and looked at haemoglobin. Luca's hospital records DNA sequencing results. All characters and results are fictional."
+  },
+  "criteria": {
+   "A.D1": {
+    "requirements": [
+     {
+      "need": "Use practical data and research to assess how changing factors altered a biomolecule's structure, action and function.",
+      "fromSpec": "Learners use research, experimental data and outcome to assess how atomic structure, mode of action and function were affected by changing factors.",
+      "means": "Link your results to the structure: heat or extreme pH changes bonds that hold an enzyme's 3D shape, so its active site no longer fits.",
+      "example": "The class mixture at boiling temperature still showed starch after the same time, which fits denaturation: heat broke the hydrogen bonds that hold amylase's shape, so the active site no longer fitted starch. That tells us structure controls function.",
+      "nearMiss": "Amylase works best at body temperature and does not work when it is too hot.",
+      "whyNearMiss": "It reports a trend but doesn't use results or explain what happened to the structure.",
+      "explainPrompt": "In your own words, why would cooling the mixture back down not always restore a denatured enzyme?",
+      "check": {
+       "q": "What happens to an enzyme at very high temperature?",
+       "options": [
+        "The enzyme is used up.",
+        "Bonds holding its shape break, the active site changes and substrate no longer fits.",
+        "The substrate changes shape.",
+        "The enzyme becomes a new enzyme."
+       ],
+       "answer": 1,
+       "why": "Denaturation changes the active site shape."
+      }
+     },
+     {
+      "need": "Assess the importance of catabolism and anabolism and show how elements are used to build biological molecules.",
+      "fromSpec": "Learners assess the importance of both catabolism and anabolism and discuss the use of elements in producing biological molecules.",
+      "means": "Catabolism breaks molecules down to release energy; anabolism builds molecules using energy. The elements carbon, hydrogen, oxygen, nitrogen and phosphorus make up the main biomolecules.",
+      "example": "Luca's body builds glycogen from glucose (anabolism) and breaks it down for energy (catabolism). Both processes need to work for him to stay well, and the nitrogen in enzymes and the phosphate in energy molecules show why elements matter.",
+      "nearMiss": "Catabolism breaks things down and anabolism builds things up.",
+      "whyNearMiss": "It gives definitions but doesn't assess importance or mention elements.",
+      "explainPrompt": "In your own words, why would the body fail if only catabolism worked?",
+      "check": {
+       "q": "Which is an anabolic process?",
+       "options": [
+        "Building glycogen from glucose.",
+        "Digesting starch to glucose.",
+        "Releasing energy from glucose.",
+        "Breaking down proteins."
+       ],
+       "answer": 0,
+       "why": "Anabolism builds larger molecules from smaller ones."
+      }
+     },
+     {
+      "need": "Compare aerobic and anaerobic respiration of glucose in terms of oxidation, reduction and energy released.",
+      "fromSpec": "Learners compare and assess aerobic and anaerobic respiration of glucose in terms of oxidation, reduction and energy released.",
+      "means": "In respiration glucose is oxidised (it loses hydrogen) and oxygen is reduced to water. Aerobic respiration releases much more energy than anaerobic respiration.",
+      "example": "In aerobic respiration glucose is fully oxidised to carbon dioxide and water, releasing a lot of energy. In anaerobic respiration it stops at lactate in humans, releasing only a small amount, so muscles tire quickly.",
+      "nearMiss": "Aerobic respiration uses oxygen and anaerobic respiration does not.",
+      "whyNearMiss": "It states the main difference but gives no comparison of oxidation, reduction or energy.",
+      "explainPrompt": "In your own words, why does a person have to breathe heavily after sprinting?",
+      "check": {
+       "q": "Why does aerobic respiration release more energy?",
+       "options": [
+        "Glucose is not used.",
+        "It produces lactic acid.",
+        "Glucose is completely oxidised.",
+        "It makes less carbon dioxide."
+       ],
+       "answer": 2,
+       "why": "Full oxidation releases more of the energy stored in glucose."
+      }
+     },
+     {
+      "need": "Explain the role of iron ions in oxygen transport and the danger of carbon dioxide if it is not removed.",
+      "fromSpec": "Learners outline the role of iron ions in oxygen transport and the danger of carbon dioxide if not displaced.",
+      "means": "Iron ions in haemoglobin bind oxygen in the lungs and release it in tissues. Carbon dioxide builds up as acid if not removed.",
+      "example": "Each haemoglobin has iron ions that bind oxygen in the lungs and release it where it is needed. If carbon dioxide were not breathed out it would make the blood more acidic, disturbing enzymes and cells.",
+      "nearMiss": "Haemoglobin carries oxygen around the body.",
+      "whyNearMiss": "It does not mention iron or carbon dioxide.",
+      "explainPrompt": "In your own words, how are iron, oxygen and carbon dioxide connected in the blood?",
+      "check": {
+       "q": "Why is carbon dioxide dangerous if it builds up?",
+       "options": [
+        "It stops haemoglobin forming.",
+        "It makes blood thicker.",
+        "It removes oxygen from the air.",
+        "It makes the blood more acidic, which disrupts enzymes."
+       ],
+       "answer": 3,
+       "why": "Dissolved carbon dioxide lowers pH."
+      }
+     },
+     {
+      "need": "Explain how the elements interact to allow metabolism of energy, without needing the detail of the Krebs cycle.",
+      "fromSpec": "Learners must explain how the elements interact to allow for the metabolism of energy.",
+      "means": "Show how carbon, hydrogen and oxygen in glucose are rearranged to release energy, and how phosphate in ATP stores and transfers it.",
+      "example": "Glucose's carbon, hydrogen and oxygen are rearranged into carbon dioxide and water, and the energy released is captured by joining phosphate to ADP to make ATP.",
+      "nearMiss": "Cells make energy from glucose in respiration.",
+      "whyNearMiss": "It misses how the elements are used.",
+      "explainPrompt": "In your own words, what is the job of phosphate in energy metabolism?",
+      "check": {
+       "q": "What does the phosphate do in ATP?",
+       "options": [
+        "It makes glucose.",
+        "Stores energy in its bonds, which can be released when needed.",
+        "It carries oxygen.",
+        "It breaks down starch."
+       ],
+       "answer": 1,
+       "why": "ATP stores usable energy in phosphate bonds."
+      }
+     }
+    ]
+   },
+   "B.D2": {
+    "requirements": [
+     {
+      "need": "Evaluate how the structure of amylase determines its function and mode of action.",
+      "fromSpec": "Learners evaluate how structure, function and action of biomolecules, in particular amylase, affect metabolic rates.",
+      "means": "Structure means its 3D shape, including the active site and the calcium ion that supports it. Function depends on shape.",
+      "example": "Amylase's active site fits starch, so it can speed up its breakdown. Calcium helps keep the shape stable, so losing it would reduce activity and slow glucose supply.",
+      "nearMiss": "Amylase is an enzyme that digests starch.",
+      "whyNearMiss": "It states the job but not how structure leads to function.",
+      "explainPrompt": "In your own words, explain why a different shape means a different job.",
+      "check": {
+       "q": "Why is an enzyme's shape important?",
+       "options": [
+        "It makes the enzyme larger.",
+        "It dissolves it.",
+        "It stops it moving.",
+        "The active site must fit the substrate."
+       ],
+       "answer": 3,
+       "why": "Active site fit is the basis of specificity."
+      }
+     },
+     {
+      "need": "Evaluate how factors affecting amylase activity change metabolic rate and could lead to metabolic disease.",
+      "fromSpec": "Learners discuss how factors affecting amylase's mode of action impact metabolic rates, resulting in metabolic disease.",
+      "means": "Temperature, pH and inhibitors change enzyme rate. If an enzyme works too slowly, products are not made quickly enough.",
+      "example": "If amylase works poorly, for example because the pancreas is not releasing it, starch is not digested and less glucose enters the blood. For Luca, slow digestion of cornstarch is useful, but too little digestion would leave him exposed to low glucose.",
+      "nearMiss": "If amylase doesn't work properly, digestion of starch is affected.",
+      "whyNearMiss": "It states an effect but doesn't link rate to metabolic disease.",
+      "explainPrompt": "In your own words, why might a small change in pH cause a big change in rate?",
+      "check": {
+       "q": "Which factor can reduce amylase activity?",
+       "options": [
+        "A pH far from its optimum.",
+        "A higher concentration of starch only.",
+        "A larger test tube.",
+        "A warm room."
+       ],
+       "answer": 0,
+       "why": "pH changes the shape of the active site."
+      }
+     },
+     {
+      "need": "Identify intermediate molecules such as pyruvate and explain their relevance to cellular respiration.",
+      "fromSpec": "Learners must be able to recognise intermediate molecules, such as pyruvate, and their relevance to cellular respiration.",
+      "means": "Pyruvate is made when glucose is broken down in glycolysis, and then goes either to aerobic or anaerobic pathways.",
+      "example": "In glycolysis one glucose molecule is split into two pyruvate molecules. With oxygen, pyruvate goes on to be fully oxidised; without oxygen in muscles, it is turned into lactate. The route taken affects how much energy is available.",
+      "nearMiss": "Pyruvate is made during respiration.",
+      "whyNearMiss": "It identifies the molecule but gives no role or consequence.",
+      "explainPrompt": "In your own words, what decides what happens to pyruvate?",
+      "check": {
+       "q": "What happens to pyruvate in human muscles without oxygen?",
+       "options": [
+        "It becomes starch.",
+        "It becomes carbon dioxide and water.",
+        "It is converted to lactate.",
+        "It is released as oxygen."
+       ],
+       "answer": 2,
+       "why": "Without oxygen, pyruvate is converted to lactate."
+      }
+     },
+     {
+      "need": "Reach a justified judgement on how biomolecule structure and action control metabolic rate overall.",
+      "fromSpec": "Learners evaluate how the structure, function and action of biomolecules affect metabolic rates.",
+      "means": "Bring together shape, function and rate in a conclusion that weighs how much each matters.",
+      "example": "In Luca's case, a change in the shape of one enzyme in the liver is enough to disrupt glucose release. So enzyme structure strongly controls metabolic rate, though diet can compensate.",
+      "nearMiss": "Enzymes control metabolic rate.",
+      "whyNearMiss": "It is a claim with no reasoning or example.",
+      "explainPrompt": "In your own words, why can one faulty enzyme affect the whole body?",
+      "check": {
+       "q": "What shows a developed judgement?",
+       "options": [
+        "A definition of enzymes.",
+        "A claim backed by an example and a note about limits.",
+        "A list of enzymes.",
+        "A repeated claim."
+       ],
+       "answer": 1,
+       "why": "Judgement needs reasons and nuance."
+      }
+     }
+    ]
+   },
+   "C.D3": {
+    "requirements": [
+     {
+      "need": "Evaluate how knowledge of biomolecule properties and mode of action shapes research and drug development.",
+      "fromSpec": "Learners evaluate how physical and chemical properties of biomolecules, their mode of action and functions influence research and drug development.",
+      "means": "Knowing how a molecule works lets scientists design treatments. For example, insulin is a protein hormone and can be made by genetically modified bacteria.",
+      "example": "Because insulin is a protein, scientists could insert the human gene into bacteria to make it in large amounts. They also changed some amino acids to produce insulins that act faster or slower, which suits people like Nomvula.",
+      "nearMiss": "Scientists have developed insulin to treat diabetes.",
+      "whyNearMiss": "It states an outcome but not how molecular knowledge led to it.",
+      "explainPrompt": "In your own words, why does knowing a molecule's structure help in drug design?",
+      "check": {
+       "q": "Why can modified insulins act at different speeds?",
+       "options": [
+        "They contain extra sugar.",
+        "They are not proteins.",
+        "Changes to amino acids alter how the insulin is absorbed.",
+        "They are produced by the pancreas."
+       ],
+       "answer": 2,
+       "why": "Altering structure changes properties."
+      }
+     },
+     {
+      "need": "Evaluate how genetic defects in the pancreas or endocrine system affect treatment of diabetes.",
+      "fromSpec": "Learners evaluate treatment of diabetes, for example defects of insulin in diabetics, involving genetic defects in the pancreas or endocrine system.",
+      "means": "In diabetes, insulin is missing, too little or not working properly. Treatment depends on which.",
+      "example": "Nomvula's pancreas makes too little insulin, so injected insulin replaces it. For someone whose cells respond poorly to insulin the problem is different, so the same treatment would be less suitable.",
+      "nearMiss": "People with diabetes take insulin.",
+      "whyNearMiss": "It's generalised and treats all diabetes the same.",
+      "explainPrompt": "In your own words, why is insulin treatment not right for every case?",
+      "check": {
+       "q": "Which statement fits type 1 diabetes?",
+       "options": [
+        "Cells make too much insulin.",
+        "There is too much glucagon.",
+        "The kidneys fail.",
+        "The pancreas produces too little insulin."
+       ],
+       "answer": 3,
+       "why": "Type 1 involves lack of insulin."
+      }
+     },
+     {
+      "need": "Evaluate how understanding the enzyme defect in glycogen storage disease shapes treatment and research.",
+      "fromSpec": "Learners evaluate how biomolecule function influences treatment of glycogen storage disease.",
+      "means": "Link the missing enzyme to the symptoms and the treatment. Mention research aimed at the cause.",
+      "example": "In Luca's condition the liver can store glycogen but not release glucose, so his treatment is regular cornstarch, which gives slowly released glucose. Research on gene therapy aims to fix the enzyme itself, which would be better than managing the symptoms.",
+      "nearMiss": "GSD is treated with cornstarch and frequent meals.",
+      "whyNearMiss": "It names treatment but doesn't link it to the enzyme or to research.",
+      "explainPrompt": "In your own words, why does cornstarch help someone who cannot release glucose from glycogen?",
+      "check": {
+       "q": "Why is cornstarch used?",
+       "options": [
+        "It is digested slowly and gives a steady supply of glucose.",
+        "It is rich in protein.",
+        "It repairs the enzyme.",
+        "It contains insulin."
+       ],
+       "answer": 0,
+       "why": "Slow digestion gives longer-lasting glucose."
+      }
+     },
+     {
+      "need": "Judge the advantages and disadvantages of techniques such as DNA sequencing in research and treatment.",
+      "fromSpec": "Learners evaluate how techniques and technologies, such as DNA sequencing, have influenced research and treatment.",
+      "means": "Sequencing can find the exact gene change, but it does not cure. Weigh benefits against cost, ethics and limits.",
+      "example": "Sequencing Luca's gene confirmed the diagnosis without a liver biopsy and supports genetic counselling for the family. But it doesn't treat the disease and raises privacy questions about storing genetic data.",
+      "nearMiss": "DNA sequencing is a useful technique.",
+      "whyNearMiss": "It makes a claim without any evaluation.",
+      "explainPrompt": "In your own words, what is one thing sequencing cannot do for Luca?",
+      "check": {
+       "q": "Which is a limitation of DNA sequencing?",
+       "options": [
+        "It cannot be used on humans.",
+        "It identifies a change but does not by itself treat the disorder.",
+        "It destroys the DNA.",
+        "It always shows the same result."
+       ],
+       "answer": 1,
+       "why": "Diagnosis is not treatment."
+      }
+     }
+    ]
+   }
+  }
+ },
+ "25": {
+  "parallelCase": {
+   "title": "Joss, Mr Whitcombe and the Harbourside Hub (fictional)",
+   "summary": "The Harbourside Wellbeing Hub is a made-up private centre offering massage, aromatherapy, acupuncture and herbal advice. Therapists are registered with the Complementary and Natural Healthcare Council (CNHC). Joss Ferrant is 29, a paramedic on rotating night shifts, with poor sleep, stress and tight neck and shoulders. Joss self-refers and pays for each session. Mr Anselm Whitcombe is 68 and has persistent lower back pain. He also has atrial fibrillation and takes warfarin, a blood thinner. He wants to try acupuncture and herbal supplements, and has not told his GP. The local NHS trust offers no complementary therapies, so his GP could only advise on pain relief and exercise. The sessions cost a noticeable amount for Mr Whitcombe's pension. Evidence for some therapies is limited, and some herbal products can interact with prescribed medicines. The hub, therapists and service users are all fictional."
+  },
+  "criteria": {
+   "A.D1": {
+    "requirements": [
+     {
+      "need": "Justify how each therapy could contribute to a service user's health and wellbeing, taking a holistic view.",
+      "fromSpec": "Learners take a holistic approach when considering the benefits of therapies, for example in alleviating a disorder and aiding relaxation.",
+      "means": "Holistic means looking at the whole person: body, mind and social life. Explain the benefits across these areas, not only the symptom.",
+      "example": "Massage may ease Joss's neck and shoulder tension, but it may also help Joss relax before sleep and feel more able to cope with night shifts. That covers the physical and emotional parts of the problem.",
+      "nearMiss": "Massage helps relieve muscle tension.",
+      "whyNearMiss": "It names one physical benefit and takes no holistic view.",
+      "explainPrompt": "In your own words, what might the social benefits of a therapy be for Mr Whitcombe?",
+      "check": {
+       "q": "Which is a holistic point?",
+       "options": [
+        "A therapy that relieves a muscle ache.",
+        "A therapy that costs less.",
+        "A therapy that eases pain may also improve mood and help the person stay active.",
+        "A therapy that is natural."
+       ],
+       "answer": 2,
+       "why": "Holistic views connect physical, emotional and social benefits."
+      }
+     },
+     {
+      "need": "Match therapies to the different needs of the service users and give reasons.",
+      "fromSpec": "Learners give reasons to support their views about the importance and relevance of complementary therapies for service users with different needs.",
+      "means": "Different users need different things. Say why a therapy suits one person and might not suit another.",
+      "example": "Aromatherapy massage may suit Joss, whose stress and sleep problems respond to relaxation. For Mr Whitcombe, acupuncture is more relevant to his back pain, but his blood-thinning medicine means the therapist must be told.",
+      "nearMiss": "Aromatherapy and acupuncture are both therapies that can help people.",
+      "whyNearMiss": "It doesn't match any therapy to a person or give reasons.",
+      "explainPrompt": "In your own words, why would the same therapy not suit both people?",
+      "check": {
+       "q": "What makes a therapy relevant to a service user?",
+       "options": [
+        "It addresses their particular needs and fits their health and circumstances.",
+        "It is popular.",
+        "It is cheap.",
+        "It has been used for a long time."
+       ],
+       "answer": 0,
+       "why": "Relevance is about fit with the individual."
+      }
+     },
+     {
+      "need": "Use research to judge how valid your conclusions about benefits are.",
+      "fromSpec": "Learners use research to justify the validity of their conclusions.",
+      "means": "Say what evidence you found, how good it is and whether it supports your point.",
+      "example": "Some studies suggest acupuncture can help with chronic back pain, but results vary and some benefit may come from relaxation or expectation. So I would present it as a possible help, not a proven cure for Mr Whitcombe.",
+      "nearMiss": "Research shows acupuncture works for back pain.",
+      "whyNearMiss": "It overstates the evidence and doesn't say what the research was or how strong.",
+      "explainPrompt": "In your own words, how would you check whether a website's claim about a therapy is reliable?",
+      "check": {
+       "q": "Which is stronger evidence?",
+       "options": [
+        "A testimonial on a clinic website.",
+        "A review of several controlled studies.",
+        "A single story from a friend.",
+        "A claim in a leaflet."
+       ],
+       "answer": 1,
+       "why": "Controlled studies give more reliable evidence."
+      }
+     },
+     {
+      "need": "Present a concise, professional conclusion about the contribution of complementary therapies.",
+      "fromSpec": "Learners articulate arguments professionally and concisely.",
+      "means": "End with a clear overall view, based on your evidence, in professional language.",
+      "example": "Overall, complementary therapies can add to wellbeing, especially relaxation and coping, for people like Joss, but should be used alongside, not instead of, medical care for someone like Mr Whitcombe.",
+      "nearMiss": "Complementary therapies are good and people like them.",
+      "whyNearMiss": "It is informal and not backed by any reasoning.",
+      "explainPrompt": "Rewrite the near-miss in your own words as a conclusion about a different person you invent.",
+      "check": {
+       "q": "What does a professional conclusion do?",
+       "options": [
+        "Lists all therapies.",
+        "Gives personal opinions only.",
+        "Avoids stating a view.",
+        "States a clear view with reasons."
+       ],
+       "answer": 3,
+       "why": "Professional writing is clear and supported."
+      }
+     }
+    ]
+   },
+   "BC.D2": {
+    "requirements": [
+     {
+      "need": "Evaluate the strengths, weaknesses, advantages and disadvantages of complementary therapies, with examples.",
+      "fromSpec": "Learners evaluate provision, including strengths and weaknesses, advantages and disadvantages, with appropriate examples.",
+      "means": "Weigh up what a therapy offers against what is uncertain or risky.",
+      "example": "A strength of massage for Joss is that it is low risk and can aid relaxation. A weakness is that it only helps while sessions continue and costs a lot per session.",
+      "nearMiss": "Massage is relaxing but it can be expensive.",
+      "whyNearMiss": "It gives points without weighing them.",
+      "explainPrompt": "In your own words, which weakness would worry you most and why?",
+      "check": {
+       "q": "What does evaluating strengths and weaknesses involve?",
+       "options": [
+        "Comparing them and judging which matter most.",
+        "Listing them.",
+        "Describing a therapy.",
+        "Quoting a source."
+       ],
+       "answer": 0,
+       "why": "Evaluation requires weighing."
+      }
+     },
+     {
+      "need": "Explain the issues when therapies are used alongside conventional medicine, such as interactions.",
+      "fromSpec": "Learners include relevant issues when therapies are provided alongside conventional medical treatments.",
+      "means": "Some therapies and herbal products can interact with medicines or delay proper care.",
+      "example": "Because Mr Whitcombe takes warfarin, some herbal products may change how it works and raise bleeding risk, and acupuncture needles need extra care. His GP and therapist should both know.",
+      "nearMiss": "Herbal remedies can be risky with some medicines.",
+      "whyNearMiss": "It gives a general warning with no example or link to the person.",
+      "explainPrompt": "In your own words, why is it risky for Mr Whitcombe not to tell his GP?",
+      "check": {
+       "q": "Why must therapists ask about medication?",
+       "options": [
+        "Medicines are always stronger.",
+        "Therapists must prescribe.",
+        "It is a legal formality.",
+        "Some therapies and products can interact with medicines."
+       ],
+       "answer": 3,
+       "why": "Interactions can harm."
+      }
+     },
+     {
+      "need": "Discuss the evidence and the lack of it for some therapies, and the issues of cost-effectiveness and clinical effectiveness.",
+      "fromSpec": "Learners consider concerns about clinical effectiveness and cost-effectiveness, using research to justify their recommendations.",
+      "means": "Some therapies have little scientific support. Value for money matters especially when the NHS does not provide a therapy.",
+      "example": "Where evidence is limited, I would suggest a therapy only as a complement to conventional care, and only if Mr Whitcombe can afford regular sessions. The cost may be hard to justify if the benefit is small.",
+      "nearMiss": "There is not much scientific evidence for some therapies.",
+      "whyNearMiss": "It states the problem but does not apply it.",
+      "explainPrompt": "In your own words, how would limited evidence change your advice to a service user?",
+      "check": {
+       "q": "What does cost-effectiveness mean?",
+       "options": [
+        "How cheap it is.",
+        "Whether it is NHS funded.",
+        "How much benefit you get for the money spent.",
+        "How many people use it."
+       ],
+       "answer": 2,
+       "why": "Cost-effectiveness is benefit relative to cost."
+      }
+     },
+     {
+      "need": "Use research to support your recommendations and proposals, considering regulation and safety.",
+      "fromSpec": "Learners use research to justify the validity of their recommendations, considering factors like safety and regulation.",
+      "means": "Say why registration, such as with the CNHC, matters and how it affects safety.",
+      "example": "I would recommend only a CNHC-registered therapist, because registration means standards, a code of conduct and a complaints route. That reduces risk for someone like Mr Whitcombe.",
+      "nearMiss": "Therapists should be registered.",
+      "whyNearMiss": "It makes a statement without saying why registration matters.",
+      "explainPrompt": "In your own words, what does a regulator add for a service user?",
+      "check": {
+       "q": "What does professional registration provide?",
+       "options": [
+        "A guarantee that a therapy works.",
+        "Standards, a code of conduct and a route for complaints.",
+        "NHS funding.",
+        "Free treatments."
+       ],
+       "answer": 1,
+       "why": "Registration protects users, but does not prove effectiveness."
+      }
+     }
+    ]
+   },
+   "BC.D3": {
+    "requirements": [
+     {
+      "need": "Draw together your knowledge to judge where complementary therapy sits within the health and social care sector.",
+      "fromSpec": "Learners consider the position of complementary therapy within the sector, using detailed analysis and research.",
+      "means": "Look at how therapies fit alongside the NHS, private care and social care, and what their role is.",
+      "example": "Complementary therapies mostly sit outside the NHS, in private provision, and support wellbeing rather than replace treatment. For Joss they could be a useful self-care route, while for Mr Whitcombe they are an extra to medical care.",
+      "nearMiss": "Complementary therapies are used in health and social care.",
+      "whyNearMiss": "It is a general statement with no analysis.",
+      "explainPrompt": "In your own words, where do complementary therapies fit in the sector?",
+      "check": {
+       "q": "Which describes their role?",
+       "options": [
+        "Usually as an addition to conventional care, mostly through private providers.",
+        "As a full replacement for NHS care.",
+        "Only in hospitals.",
+        "Only for minor conditions."
+       ],
+       "answer": 0,
+       "why": "Their position is mainly complementary, not replacement."
+      }
+     },
+     {
+      "need": "Explain the significance of regulation, professional responsibilities and organisational values.",
+      "fromSpec": "Learners record information from relevant sources supporting the significance of regulation, with examples.",
+      "means": "Regulation sets standards for training and conduct. Professionals have duties such as consent, confidentiality and referring on.",
+      "example": "A CNHC-registered therapist must follow a code of conduct, such as keeping records and referring a person to a GP if concerned. That matters for Mr Whitcombe because they would need to check his medicines.",
+      "nearMiss": "Therapists follow rules and codes of ethics.",
+      "whyNearMiss": "It doesn't say which rules or why they matter.",
+      "explainPrompt": "In your own words, what could go wrong with an unregistered therapist?",
+      "check": {
+       "q": "What is a professional responsibility of a therapist?",
+       "options": [
+        "Setting their own prices.",
+        "Guaranteeing results.",
+        "Referring a service user for medical advice when needed.",
+        "Treating without consent."
+       ],
+       "answer": 2,
+       "why": "Responsibilities protect service users."
+      }
+     },
+     {
+      "need": "Explain referral routes and access, comparing NHS and private provision.",
+      "fromSpec": "Learners show clear details about referral systems and choices through NHS and private provision, and factors that affect access.",
+      "means": "Access depends on referral, availability, cost and location.",
+      "example": "With no local NHS provision, Mr Whitcombe's only route is to pay privately, which may be hard on a pension. Joss can self-refer more easily but may not be able to afford regular sessions.",
+      "nearMiss": "Some people get therapies on the NHS and some pay privately.",
+      "whyNearMiss": "It doesn't connect routes to the people or the barriers.",
+      "explainPrompt": "In your own words, how does cost affect fairness of access?",
+      "check": {
+       "q": "Which is a barrier to access?",
+       "options": [
+        "The therapist is registered.",
+        "No local NHS provision combined with high private costs.",
+        "The therapy is old.",
+        "The room is small."
+       ],
+       "answer": 1,
+       "why": "Barriers include cost and availability."
+      }
+     },
+     {
+      "need": "Reach a justified conclusion with supported proposals about the service therapies provide.",
+      "fromSpec": "Learners reach justified and supported judgements with a conclusion and proposals.",
+      "means": "Finish with a position and proposals, such as improving information or links between therapists and GPs.",
+      "example": "I would propose that the hub asks every client about medicines and, with permission, tells their GP. This would make therapies safer and fit them better into overall care.",
+      "nearMiss": "Therapies should be better organised.",
+      "whyNearMiss": "It is vague, with no proposal or evidence.",
+      "explainPrompt": "In your own words, how would you test whether your proposal works?",
+      "check": {
+       "q": "What makes a proposal supported?",
+       "options": [
+        "It is original.",
+        "It is long.",
+        "It is expensive.",
+        "It is linked to evidence and a clear benefit."
+       ],
+       "answer": 3,
+       "why": "Proposals need justification."
+      }
+     }
+    ]
+   }
+  }
+ },
+ "26": {
+  "parallelCase": {
+   "title": "Tamsin Ridley and the long shifts (fictional)",
+   "summary": "Tamsin Ridley is 38, a delivery driver in the made-up city of Eastmere. Eighteen months ago she injured her lower back lifting a parcel, and the pain has continued longer than expected. She now avoids bending or exercising because she fears more damage, and has gained weight. Her depot has tight delivery targets, and Tamsin says she feels 'wound up all the time'. She smokes more when stressed, believes smoking helps her cope, and thinks health problems 'run in the family' so there is little point trying to change. Her partner encourages her to see the doctor. Tamsin's GP has offered a pain management programme including CBT and graded activity, and a stress management course. Tamsin is interested but unsure whether she will cope with the time commitment. Contemporary issues in the local area include smoking, obesity and long-term pain. All people and places are fictional."
+  },
+  "criteria": {
+   "AB.D1": {
+    "requirements": [
+     {
+      "need": "Evaluate concepts of health, ill health and health psychology, reaching a judgement on which are most useful.",
+      "fromSpec": "Learners evaluate and reach reasoned and valid judgements on concepts of health psychology, health and ill health.",
+      "means": "Compare ideas such as the biomedical model, which sees illness as physical, and the biopsychosocial model, which includes thoughts, feelings and social factors.",
+      "example": "The biomedical model sees Tamsin's pain as a back injury. The biopsychosocial model also explains why her fear of movement and stress make it worse, so it is more useful for planning her care.",
+      "nearMiss": "Health psychology looks at how psychology affects health.",
+      "whyNearMiss": "It defines the field but does not compare concepts or judge them.",
+      "explainPrompt": "In your own words, what does the biomedical model miss about Tamsin's situation?",
+      "check": {
+       "q": "Why is a biopsychosocial view helpful?",
+       "options": [
+        "It ignores the body.",
+        "It is the older view.",
+        "It considers thoughts, feelings and social factors as well as the body.",
+        "It only applies to mental illness."
+       ],
+       "answer": 2,
+       "why": "It gives a fuller explanation."
+      }
+     },
+     {
+      "need": "Use research to justify the influences on beliefs and behaviours towards health and ill health.",
+      "fromSpec": "Learners use research to justify the validity of influences on beliefs and behaviours towards health and ill health.",
+      "means": "Influences include family, culture, media, experience and beliefs. Use models such as the Health Belief Model and say how well they explain behaviour.",
+      "example": "The Health Belief Model suggests Tamsin may not change because she sees little benefit and has a barrier: lack of time. It fits her statement that problems run in the family, though it ignores the effect of stress and habit.",
+      "nearMiss": "People's beliefs affect what they do about their health.",
+      "whyNearMiss": "It is true but offers no model, evidence or link to Tamsin.",
+      "explainPrompt": "In your own words, which of Tamsin's beliefs would be hardest to change and why?",
+      "check": {
+       "q": "Which uses a model well?",
+       "options": [
+        "Naming a model.",
+        "Applying a model to explain a person's behaviour and noting where it fits less well.",
+        "Describing the model's history.",
+        "Listing all models."
+       ],
+       "answer": 1,
+       "why": "Application plus evaluation shows depth."
+      }
+     },
+     {
+      "need": "Link health psychology to contemporary health issues and justify your conclusions.",
+      "fromSpec": "Learners make justifications about health psychology in relation to contemporary issues in health.",
+      "means": "Choose a current issue such as smoking, obesity or long-term pain and show how psychology helps understand and manage it.",
+      "example": "Smoking to cope with stress shows a link between emotion and behaviour. Understanding that helps health workers offer stress management alongside stop-smoking support, rather than just telling Tamsin to stop.",
+      "nearMiss": "Smoking is a big health issue and psychology can help.",
+      "whyNearMiss": "It names an issue but doesn't show how psychology helps.",
+      "explainPrompt": "In your own words, why might telling someone to stop smoking not work?",
+      "check": {
+       "q": "What shows a link to a contemporary issue?",
+       "options": [
+        "Mentioning a health campaign.",
+        "Quoting a news story.",
+        "Stating that it is common.",
+        "Explaining how a psychological factor drives behaviour and how that guides action."
+       ],
+       "answer": 3,
+       "why": "The link must explain behaviour and suggest action."
+      }
+     },
+     {
+      "need": "Judge the usefulness and limits of health psychology ideas for understanding health behaviour.",
+      "fromSpec": "Learners draw on knowledge and understanding, making suitable justifications.",
+      "means": "No model explains everything. Say what it explains well and what it misses.",
+      "example": "Health psychology helps explain why Tamsin avoids exercise, but it can overlook practical barriers such as shift times and money. A good plan uses psychology with practical support.",
+      "nearMiss": "Health psychology is useful.",
+      "whyNearMiss": "It is a claim with no limits or reasons.",
+      "explainPrompt": "In your own words, what other factors besides psychology might shape Tamsin's choices?",
+      "check": {
+       "q": "Which is a limit of psychological models?",
+       "options": [
+        "They may overlook practical and social barriers.",
+        "They never apply to real life.",
+        "They are too new.",
+        "They are only for doctors."
+       ],
+       "answer": 0,
+       "why": "Recognising limits strengthens a judgement."
+      }
+     }
+    ]
+   },
+   "C.D2": {
+    "requirements": [
+     {
+      "need": "Evaluate theories and models of stress, comparing what they explain and concluding which suits the service user.",
+      "fromSpec": "Learners justify conclusions on theories and models of stress.",
+      "means": "Examples include Selye's General Adaptation Syndrome and the transactional model (Lazarus and Folkman). Compare them and choose one for this person.",
+      "example": "The General Adaptation Syndrome describes the body's response over time, but the transactional model explains why Tamsin's targets feel threatening to her and not to others. It is therefore a better fit for planning support.",
+      "nearMiss": "Stress can be explained by the General Adaptation Syndrome and the transactional model.",
+      "whyNearMiss": "It names models without comparing or choosing.",
+      "explainPrompt": "In your own words, why do two people react differently to the same stressor?",
+      "check": {
+       "q": "What does the transactional model emphasise?",
+       "options": [
+        "Only the body's hormones.",
+        "Only the workplace.",
+        "Only past experience.",
+        "A person's appraisal of the demand and their ability to cope."
+       ],
+       "answer": 3,
+       "why": "It is about appraisal."
+      }
+     },
+     {
+      "need": "Justify stress-management strategies for the service user, applying them to a less familiar situation.",
+      "fromSpec": "Learners show in-depth understanding which applies to less familiar situations in relation to stress-management strategies for a selected service user.",
+      "means": "Match strategies such as relaxation, time management, social support or cognitive restructuring to the person's problem and constraints.",
+      "example": "For Tamsin, short breathing exercises between deliveries may be more realistic than a long relaxation class, and challenging the belief that she must hit every target addresses the appraisal. These suit her job and thinking style.",
+      "nearMiss": "Tamsin should do relaxation and exercise to reduce stress.",
+      "whyNearMiss": "It is generic and ignores her work pattern.",
+      "explainPrompt": "In your own words, why might a strategy that works for one person fail for Tamsin?",
+      "check": {
+       "q": "How do you justify a strategy?",
+       "options": [
+        "Say it is recommended.",
+        "Explain how it fits the person's problem and circumstances.",
+        "Say it is easy.",
+        "Say others use it."
+       ],
+       "answer": 1,
+       "why": "Justification links strategy to person."
+      }
+     },
+     {
+      "need": "Explain concepts of pain and ill health and justify what psychological theories add to managing them.",
+      "fromSpec": "Learners make justifications on concepts of pain and ill health and the contribution of psychological theories to management.",
+      "means": "Pain is both physical and psychological. The gate control theory explains how thoughts and emotions can open or close the 'gate' for pain signals.",
+      "example": "Gate control theory suggests that anxiety and fear of movement can increase Tamsin's pain, while relaxation and distraction can reduce it. That supports using CBT and graded activity alongside any physical treatment.",
+      "nearMiss": "Pain is a feeling caused by damage and some theories say it is also psychological.",
+      "whyNearMiss": "It states the idea but doesn't name a theory or apply it.",
+      "explainPrompt": "In your own words, how can fear make pain feel worse?",
+      "check": {
+       "q": "What does gate control theory suggest?",
+       "options": [
+        "Psychological factors can increase or reduce the pain signal reaching the brain.",
+        "Pain is only in the mind.",
+        "Pain depends on injury size only.",
+        "Gates are in the skin."
+       ],
+       "answer": 0,
+       "why": "Psychological factors modify pain."
+      }
+     },
+     {
+      "need": "Evaluate the contribution of psychological theories to the management plan, including limits.",
+      "fromSpec": "Learners evaluate the contribution of psychological theories to a management strategy for a service user.",
+      "means": "Say how a theory improves the plan and what it cannot do.",
+      "example": "Self-efficacy theory suggests Tamsin is more likely to exercise if she experiences small successes, which supports graded activity. But it does not address time pressure at work.",
+      "nearMiss": "Theories help people manage pain and stress.",
+      "whyNearMiss": "It makes a claim without examples or limits.",
+      "explainPrompt": "In your own words, how would you know whether the plan is working for Tamsin?",
+      "check": {
+       "q": "What makes an evaluation of a theory's contribution?",
+       "options": [
+        "Explaining the theory.",
+        "Naming the theorist.",
+        "Showing how it informs the plan and where it falls short.",
+        "Stating whether you agree."
+       ],
+       "answer": 2,
+       "why": "Evaluation weighs contribution and limits."
+      }
+     }
+    ]
+   },
+   "D.D3": {
+    "requirements": [
+     {
+      "need": "Evaluate the importance of health psychology in helping people deal with contemporary health issues.",
+      "fromSpec": "Learners evaluate the importance of health psychology in helping individuals deal with contemporary issues in health.",
+      "means": "Explain how psychology shapes how people think about and respond to health issues and how services use it.",
+      "example": "Health psychology helps services understand why people like Tamsin continue smoking despite knowing the risks, and so design support that tackles stress and beliefs, not just information.",
+      "nearMiss": "Health psychology helps people with health problems.",
+      "whyNearMiss": "It is too general.",
+      "explainPrompt": "In your own words, why is giving information alone often not enough?",
+      "check": {
+       "q": "What is a key contribution of health psychology?",
+       "options": [
+        "Providing medical treatment.",
+        "Diagnosing disease.",
+        "Regulating services.",
+        "Explaining why people behave as they do and shaping support to match."
+       ],
+       "answer": 3,
+       "why": "It explains behaviour."
+      }
+     },
+     {
+      "need": "Evaluate its importance for helping individuals cope with stress.",
+      "fromSpec": "Learners evaluate the importance of health psychology in helping individuals deal with stress.",
+      "means": "Show how psychological approaches help people change how they think about and respond to stress.",
+      "example": "Teaching Tamsin to re-appraise targets as challenges rather than threats may lower her stress and reduce her need to smoke. This shows how psychology can change behaviour at its source.",
+      "nearMiss": "Psychology can help people reduce stress.",
+      "whyNearMiss": "It lacks detail on how or why.",
+      "explainPrompt": "In your own words, how could changing a thought change a feeling?",
+      "check": {
+       "q": "How does psychology help with stress?",
+       "options": [
+        "By removing stressors.",
+        "By helping people change how they appraise and respond to stressors.",
+        "By prescribing drugs.",
+        "By telling people to relax."
+       ],
+       "answer": 1,
+       "why": "Psychology addresses appraisal and coping."
+      }
+     },
+     {
+      "need": "Evaluate its importance for helping individuals cope with pain and illness.",
+      "fromSpec": "Learners evaluate the importance of health psychology in helping individuals deal with pain and illness.",
+      "means": "Pain and illness have psychological effects; psychology offers tools to cope and adjust.",
+      "example": "For Tamsin, CBT-based pain management helps her challenge her fear of movement, which could allow her to become more active and reduce disability even if the pain does not fully go.",
+      "nearMiss": "Psychology helps people live with pain.",
+      "whyNearMiss": "It gives no specific approach or outcome.",
+      "explainPrompt": "In your own words, what is the difference between reducing pain and coping with it?",
+      "check": {
+       "q": "What can CBT for pain aim to do?",
+       "options": [
+        "Change unhelpful thoughts and behaviours so the person can function better.",
+        "Remove the cause of pain.",
+        "Replace medication.",
+        "Prove the pain is imagined."
+       ],
+       "answer": 0,
+       "why": "It targets thoughts and behaviours."
+      }
+     },
+     {
+      "need": "Reach an overall balanced judgement about how important health psychology is.",
+      "fromSpec": "Learners justify their overall conclusions on the importance of health psychology.",
+      "means": "Weigh benefits against limits, then state a clear overall view.",
+      "example": "Health psychology is important for Tamsin because her barriers are partly psychological, but it works best with practical help such as flexible shifts. So it is essential but not enough alone.",
+      "nearMiss": "Health psychology is very important.",
+      "whyNearMiss": "It lacks reasoning or balance.",
+      "explainPrompt": "In your own words, state one condition under which health psychology would be less helpful.",
+      "check": {
+       "q": "What does a balanced overall judgement do?",
+       "options": [
+        "Lists only strengths.",
+        "Avoids deciding.",
+        "Weighs strengths against limits and still reaches a conclusion.",
+        "Repeats earlier sections."
+       ],
+       "answer": 2,
+       "why": "Balance plus a decision."
+      }
+     }
+    ]
+   }
+  }
+ }
+}

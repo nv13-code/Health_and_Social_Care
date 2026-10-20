@@ -131,6 +131,7 @@ def main():
 
     (ROOT / "dist").mkdir(exist_ok=True)
     (ROOT / "dist/artifact.html").write_text(body, encoding="utf-8")
+    (ROOT / "dist/hsc-dstar-v2.html").write_text(body, encoding="utf-8")
 
     full = (
         "<!doctype html>\n<html lang=\"en-GB\">\n<head>\n<meta charset=\"utf-8\">\n"
