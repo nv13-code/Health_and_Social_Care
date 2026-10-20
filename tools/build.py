@@ -7,9 +7,12 @@ src/hub.html and writes two outputs:
   index.html          full HTML document (GitHub Pages, SciencePass, any web host)
   dist/artifact.html  page body only (for publishing as a claude.ai artifact)
 
-Usage: python3 tools/build.py
+Usage: python3 tools/build.py [--strict]   (--strict also fails on warnings: stale, unverified)
 """
 import json
+import re
+import sys
+from datetime import date, datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -20,7 +23,90 @@ def load(rel):
     return json.loads(p.read_text(encoding="utf-8")) if p.exists() else None
 
 
+STALE_DAYS = 183
+HARD = {"replaced", "renamed", "repealed"}
+
+
+def walk_strings(obj, path=""):
+    if isinstance(obj, str):
+        yield path, obj
+    elif isinstance(obj, dict):
+        for k, v in obj.items():
+            yield from walk_strings(v, f"{path}.{k}")
+    elif isinstance(obj, list):
+        for i, v in enumerate(obj):
+            yield from walk_strings(v, f"{path}[{i}]")
+
+
+def check_currency(reg):
+    """Fail on content that uses a replaced name without the current one; warn on the rest."""
+    errors, warnings = [], []
+    today = date.today()
+    for e in reg["entries"]:
+        age = (today - datetime.strptime(e["verified"], "%Y-%m-%d").date()).days
+        if age > STALE_DAYS:
+            warnings.append(f"STALE {e['id']}: last verified {e['verified']} ({age} days ago)")
+        if e["status"] == "unverified":
+            warnings.append(f"UNVERIFIED {e['id']}: {e['spec']}")
+        if e.get("secondarySourceOnly"):
+            warnings.append(f"SECONDARY SOURCE ONLY {e['id']}: find a primary source")
+    for f in sorted((ROOT / "content").glob("*.json")):
+        data = json.loads(f.read_text(encoding="utf-8"))
+        for path, text in walk_strings(data):
+            for e in reg["entries"]:
+                if not re.search(e["lint"], text, re.I):
+                    continue
+                if any(m.lower() in text.lower() for m in e["mustAlsoMention"]):
+                    continue
+                msg = f"{f.name}{path}: uses '{e['spec']}' without '{e['now']}'"
+                (errors if e["status"] in HARD else warnings).append(msg)
+    return errors, warnings
+
+
+def write_sv_doc(reg):
+    rows = [e for e in reg["entries"] if e["sv"]]
+    rows.sort(key=lambda e: (min(e["units"]) if e["units"] else 99))
+    out = [
+        "# Substitutions for Standards Verifier approval",
+        "",
+        "**Qualification:** Pearson BTEC Level 3 National Extended Diploma in Health and Social Care (601/7198/4), specification Issue 10 (June 2022)  ",
+        "**Basis:** spec p.7 says outdated references to legislation, policies, regulations and organisations may be substituted with current ones, *subject to confirmation by your Standards Verifier*.  ",
+        f"**Register checked:** {reg['lastFullCheck']} · generated from `data/currency.json` by `tools/build.py`",
+        "",
+        "| Unit(s) | Spec reference | Proposed substitution | Status / since | Evidence | SV decision |",
+        "|---|---|---|---|---|---|",
+    ]
+    for e in rows:
+        units = ", ".join(str(u) for u in e["units"])
+        src = " ".join(f"[{i+1}]({u})" for i, u in enumerate(e["sources"])) or "none yet"
+        flag = " ⚠ unverified" if e["status"] == "unverified" else (" ⚠ secondary source" if e.get("secondarySourceOnly") else "")
+        out.append(f"| {units} | {e['spec']} | {e['now']} | {e['status']}{(' · ' + e['since']) if e['since'] else ''}{flag} | {src} | ☐ Agreed ☐ Not agreed |")
+    out += [
+        "",
+        "Items marked ⚠ need a primary source before they go into an assignment brief.",
+        "",
+        "Standards Verifier: ____________________  Date: __________  ",
+        "Lead Internal Verifier: ____________________  Date: __________",
+        "",
+    ]
+    (ROOT / "docs").mkdir(exist_ok=True)
+    (ROOT / "docs/standards-verifier-substitutions.md").write_text("\n".join(out), encoding="utf-8")
+    return len(rows)
+
+
 def main():
+    strict = "--strict" in sys.argv
+    reg = load("data/currency.json")
+    errors, warnings = check_currency(reg)
+    for w in warnings:
+        print("warning:", w)
+    for e in errors:
+        print("ERROR:", e)
+    if errors or (strict and warnings):
+        sys.exit(f"currency check failed: {len(errors)} errors, {len(warnings)} warnings")
+    n_sv = write_sv_doc(reg)
+    print(f"standards verifier list: {n_sv} substitutions")
+
     coach = {}
     for name in ("coach_a", "coach_b", "coach_c"):
         part = load(f"content/{name}.json")
@@ -31,7 +117,7 @@ def main():
         e = load(f"content/exam_u{u}.json")
         if e:
             exams[str(u)] = e
-    data = {"criteria": load("data/criteria.json"), "coach": coach, "exams": exams}
+    data = {"criteria": load("data/criteria.json"), "coach": coach, "exams": exams, "currency": reg}
     blob = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
 
     src = (ROOT / "src/hub.html").read_text(encoding="utf-8")

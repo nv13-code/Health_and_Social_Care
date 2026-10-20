@@ -1,0 +1,30 @@
+# Substitutions for Standards Verifier approval
+
+**Qualification:** Pearson BTEC Level 3 National Extended Diploma in Health and Social Care (601/7198/4), specification Issue 10 (June 2022)  
+**Basis:** spec p.7 says outdated references to legislation, policies, regulations and organisations may be substituted with current ones, *subject to confirmation by your Standards Verifier*.  
+**Register checked:** 2026-10-20 · generated from `data/currency.json` by `tools/build.py`
+
+| Unit(s) | Spec reference | Proposed substitution | Status / since | Evidence | SV decision |
+|---|---|---|---|---|---|
+| 2 | Care and Social Services Inspectorate Wales (CSSIW) | Care Inspectorate Wales (CIW) | renamed · January 2018 | [1](https://socialcare.wales/resources-guidance/information-and-learning-hub/regulation-and-inspection/overview) [2](https://www.careinspectorate.wales/how-we-inspect-adult-and-childrens-services) | ☐ Agreed ☐ Not agreed |
+| 2 | Care Council for Wales | Social Care Wales | renamed · April 2017 | [1](https://socialcare.wales/resources-guidance/information-and-learning-hub/regulation-and-inspection/overview) | ☐ Agreed ☐ Not agreed |
+| 2, 5 | Health and Care Professions Council (HCPC) as regulator of social workers in England | Social Work England | replaced · 2 December 2019 | [1](https://www.hcpc-uk.org/news-and-events/news/2019/the-regulation-of-social-workers-in-england-has-transferred-to-social-work-england/) | ☐ Agreed ☐ Not agreed |
+| 5, 8, 16 | Clinical Commissioning Groups (CCGs) | Integrated Care Boards (ICBs) | replaced · 1 July 2022 | [1](https://www.legislation.gov.uk/ukpga/2022/31/pdfs/ukpga_20220031_en.pdf) [2](https://www.england.nhs.uk/commissioning/who-commissions-nhs-services/) | ☐ Agreed ☐ Not agreed |
+| 5, 8, 16, 22 | Department of Health (DH), England | Department of Health and Social Care (DHSC) | renamed · January 2018 | [1](https://www.gov.uk/government/news/ministerial-appointments-january-2018) | ☐ Agreed ☐ Not agreed |
+| 5 | Health and Social Care Board (Northern Ireland) | Department of Health (NI) Strategic Planning and Performance Group (SPPG) | replaced · 31 March 2022 | [1](https://www.health-ni.gov.uk/articles/closure-hscb-frequently-asked-questions) | ☐ Agreed ☐ Not agreed |
+| 5, 12, 20 | Mental Health Act 1983 (amended 2007) / Mental Health Act 2007 | Mental Health Act 1983 as amended, plus the Mental Health Act 2025 (being brought in gradually) | reform-pending · Royal Assent 18 December 2025 | [1](https://www.legislation.gov.uk/ukpga/2025/33/data.htm) [2](https://www.gov.uk/government/news/mental-health-bill-receives-royal-assent-revolutionising-care) | ☐ Agreed ☐ Not agreed |
+| 5, 16 | Health and Social Care Act 2012 | Health and Care Act 2022 (which amended and partly reversed the 2012 Act's structures) | historical · 2022 | [1](https://www.legislation.gov.uk/ukpga/2022/31/pdfs/ukpga_20220031_en.pdf) | ☐ Agreed ☐ Not agreed |
+| 5, 12, 18 | Common Assessment Framework (CAF) | Local early help assessments under Working Together to Safeguard Children (England) | unverified ⚠ unverified | none yet | ☐ Agreed ☐ Not agreed |
+| 5 | National Adult Social Care Intelligence Service | Check current adult social care data sources (e.g. official statistics published by NHS England) | unverified ⚠ unverified | none yet | ☐ Agreed ☐ Not agreed |
+| 12 | National Service Framework for Mental Health | Historical (1999 ten-year framework); current national mental health policy should be cited instead | unverified ⚠ unverified | none yet | ☐ Agreed ☐ Not agreed |
+| 19 | Public Health England (PHE) guidance | UK Health Security Agency (UKHSA) and Office for Health Improvement and Disparities (OHID, part of DHSC) | replaced · 1 October 2021 | [1](https://www.gov.uk/government/organisations/public-health-england/about) [2](https://ukhsa.blog.gov.uk/2021/09/23/ukhsa-operational-launch-rebranding-digital-channels/) | ☐ Agreed ☐ Not agreed |
+| 19 | Children's Food Trust recommendations and guidance | School Food Standards (DfE) and current DHSC/OHID guidance | replaced · 2017 (charity closed) ⚠ secondary source | [1](https://www.civilsociety.co.uk/news/children-s-food-trust-closes-with-loss-of-47-jobs.html) | ☐ Agreed ☐ Not agreed |
+| 22 | Human Reproductive Cloning Act 2001 | Human Fertilisation and Embryology Act 1990 as amended by the HFE Act 2008 | repealed · 1 October 2009 | [1](https://www.legislation.gov.uk/ukpga/2001/23/data.htm?view=plain) | ☐ Agreed ☐ Not agreed |
+| 22 | Relevant sections of European Union legislation | Assimilated law (EU-derived law kept in UK law) | renamed · 1 January 2024 | [1](https://www.legislation.gov.uk/ukpga/2023/28) [2](https://www.gov.uk/government/publications/retained-eu-law-dashboard) | ☐ Agreed ☐ Not agreed |
+| 23 | National Blood Authority | NHS Blood and Transplant (NHSBT) | replaced · October 2005 | [1](https://www.legislation.gov.uk/uksi/2005/2532/made/data.xht?view=snippet&wrap=true) [2](https://www.gov.uk/government/organisations/national-blood-authority) | ☐ Agreed ☐ Not agreed |
+| 25 | General Regulatory Council for Complementary Therapies (GRCCT) | Complementary and Natural Healthcare Council (CNHC), a Professional Standards Authority accredited register | unverified ⚠ unverified | [1](https://en.wikipedia.org/wiki/Complementary_and_Natural_Healthcare_Council) | ☐ Agreed ☐ Not agreed |
+
+Items marked ⚠ need a primary source before they go into an assignment brief.
+
+Standards Verifier: ____________________  Date: __________  
+Lead Internal Verifier: ____________________  Date: __________

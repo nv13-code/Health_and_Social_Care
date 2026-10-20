@@ -240,6 +240,13 @@ ul.plain{margin:0;padding-left:1.1rem;display:grid;gap:4px}
 .cd .bignum{font-size:2rem}
 .deadline-row{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:var(--s2);align-items:center;padding:6px 0;border-bottom:1px solid var(--line)}
 .toast{position:fixed;left:50%;bottom:calc(16px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--paper);padding:8px 16px;border-radius:8px;font-weight:700;z-index:50}
+.upd{border:1px solid var(--line);border-left:4px solid var(--amber);border-radius:0 8px 8px 0;background:var(--surface);padding:var(--s3) var(--s4);display:grid;gap:6px}
+.upd.replaced,.upd.renamed,.upd.repealed{border-left-color:var(--red)}
+.upd.unverified{border-left-color:var(--muted);border-left-style:dashed}
+.upd .was{text-decoration:line-through;color:var(--muted)}
+.upd .meta{font-family:var(--f-mono);font-size:var(--t-xs);color:var(--muted)}
+.upd dl{display:grid;grid-template-columns:auto 1fr;gap:2px 10px;margin:0;font-size:var(--t-sm)}
+.upd dt{font-weight:700}.upd dd{margin:0}
 footer{border-top:1px solid var(--line);padding-block:var(--s5);color:var(--muted);font-size:var(--t-sm)}
 details.more>summary{cursor:pointer;font-weight:700}
 @media (prefers-reduced-motion:no-preference){.cells i{transition:background .25s,border-color .25s}.meter span{transition:width .3s}}
@@ -481,6 +488,11 @@ function renderPoints(){
     </div>
   </details>
 
+  <details class="panel more">
+    <summary>Spec updates: ${currencyFor().length} names have changed since 2022 (last checked ${esc(DATA&&DATA.currency?DATA.currency.lastFullCheck:"")})</summary>
+    <div class="stack" style="margin-top:var(--s4)">${currencyFor().map(updCard).join("")}</div>
+  </details>
+
   <div class="stack">
     <h2>The project in four phases</h2>
     <div class="phases">
@@ -491,6 +503,18 @@ function renderPoints(){
     </div>
   </div>`;
 }
+
+
+/* ---------- Spec currency notes ---------- */
+const STATUS_LABEL={replaced:"Replaced",renamed:"Renamed",repealed:"Repealed","reform-pending":"Reform under way","under-review":"Under review",historical:"Historical",unverified:"Not yet verified"};
+function currencyFor(u){return arr(DATA&&DATA.currency&&DATA.currency.entries).filter(e=>u==null||arr(e.units).includes(u))}
+function updCard(e){const host=s=>{try{return new URL(s).hostname.replace(/^www\./,"")}catch(x){return s}};
+  return `<div class="upd ${esc(e.status)}"><div class="row" style="justify-content:space-between"><span><span class="was">${esc(e.spec)}</span> → <b>${esc(e.now)}</b></span><span class="chip">${esc(STATUS_LABEL[e.status]||e.status)}</span></div>
+  ${e.detail?`<p style="font-size:var(--t-sm)">${esc(e.detail)}</p>`:""}
+  <dl>${e.assignments?`<dt>Assignments</dt><dd>${esc(e.assignments)}</dd>`:""}${e.exams?`<dt>Exams</dt><dd>${esc(e.exams)}</dd>`:""}</dl>
+  <span class="meta">${e.since?esc(e.since)+" · ":""}units ${arr(e.units).join(", ")} · checked ${esc(e.verified)}${arr(e.sources).length?" · ":""}${arr(e.sources).map(u=>`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(host(u))}</a>`).join(", ")}${e.sv?" · needs Standards Verifier approval for assignment briefs":""}</span></div>`}
+function currencyPanel(u,title){const list=currencyFor(u);if(!list.length)return "";
+  return `<div class="stack"><h3>${title||"Spec updates for this unit"}</h3><p class="muted" style="font-size:var(--t-sm)">The spec dates from 2022, so some of the names in it have since changed. Use the current name in your work. Your teacher confirms any substitution with Pearson's Standards Verifier.</p>${list.map(updCard).join("")}</div>`}
 
 /* ---------- COACH VIEW ---------- */
 function coachFor(u){return DATA&&DATA.coach?DATA.coach[u]:null}
@@ -541,6 +565,7 @@ function renderCoach(){
           <div class="stack" style="gap:6px"><span class="eyebrow">How it's assessed</span>${co.assignments?`<p>${esc(co.assignments)}</p>`:""}${arr(co.evidence).length?`<ul class="plain">${arr(co.evidence).map(e=>`<li>${esc(e)}</li>`).join("")}</ul>`:""}</div>
         </div>
       </div>
+      ${currencyPanel(u)}
       <div class="stack">
         <h3>All criteria, Pass to Distinction</h3>
         <div class="crit-ladder">
@@ -604,6 +629,7 @@ function exOverview(u,e){
   </div>
   ${f.summary?`<div class="panel stack"><h3>How the paper works</h3><p class="prose">${esc(f.summary)}</p>${arr(f.tips).length?`<ul class="plain">${arr(f.tips).map(t=>`<li>${esc(t)}</li>`).join("")}</ul>`:""}</div>`:""}
   ${e.dDescriptor?`<div class="panel stack"><span class="eyebrow">What a Distinction candidate does (Pearson's descriptor)</span><p class="prose">${esc(e.dDescriptor)}</p></div>`:""}
+  ${currencyPanel(u)}
   ${arr(e.commandWords).length?`<div class="stack"><h3>Command words</h3><div class="grid2">${arr(e.commandWords).map(c=>`<div class="mini-card"><h4>${esc(c.word)}</h4><p class="muted">${esc(c.means)}</p><p>${esc(c.doThis)}</p></div>`).join("")}</div></div>`:""}
   </div>`;
 }

@@ -18,4 +18,10 @@ Progress is stored in the browser's localStorage.
 - `src/hub.html` is the page template.
 - Run `python3 tools/build.py` to rebuild `index.html` (the full page) and `dist/artifact.html` (the body only, for claude.ai artifacts).
 
-Boundaries, legislation and regulator names change. Check them each year.
+## Keeping the spec current
+The spec dates from 2022 and some of the bodies and laws it names have since changed. `data/currency.json` is the register: each entry has the spec wording, current status, current name, date of change, advice for assignments and exams, primary sources and the date it was last verified.
+
+- `tools/build.py` **fails** if any content uses a replaced, renamed or repealed name without the current one. It warns on unverified entries, entries backed only by secondary sources, and entries not checked for over six months. `--strict` turns those warnings into failures.
+- The hub shows the relevant updates on each unit's coaching page, on the exam overview, and in a full list on the Points tab.
+- `docs/standards-verifier-substitutions.md` is generated from the register. It is the one-page list of substitutions for Standards Verifier sign-off: spec p.7 allows substitutions, subject to the Standards Verifier's confirmation.
+- A scheduled re-check runs on 1 April and 1 November, ahead of the May/June and January exam series.
