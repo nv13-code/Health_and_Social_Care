@@ -462,7 +462,7 @@
  "14": {
   "parallelCase": {
    "title": "Hollis and Dilys in Ashbourne Reach",
-   "summary": "Ashbourne Reach is a fictional market town with a health centre, a small community hospital, a day centre run by a local charity and a home care agency. Hollis Brandt is 52, a self-employed joiner, who has rheumatoid arthritis. His hands are swollen and stiff in the mornings, he is tired most days, and he is worried about losing work. Dilys Penhallow is 70, a retired school cook, who lives with her husband. Blood tests at a routine check showed her kidneys are working at about half their normal level, a diagnosis of chronic kidney disease. She has no symptoms yet, but she has high blood pressure and a family history of kidney problems. Dilys finds hospital trips hard because her husband no longer drives, and she dislikes taking many tablets. For her care plan you must recommend investigations, treatment and support that fit her needs, the town's services and the limits of what the options can achieve."
+   "summary": "Ashbourne Reach is a fictional market town with a health centre, a small community hospital, a day centre run by a local charity and a home care agency. Hollis Brandt is 52, a self-employed joiner, who has rheumatoid arthritis. His hands are swollen and stiff in the mornings, he is tired most days, and he is worried about losing work. Dilys Penhallow is 70, a retired school cook, who lives with her husband. Blood tests at a routine check showed her kidneys are working at about half their normal level, a diagnosis of chronic kidney disease. She has no symptoms yet, but she has high blood pressure and a family history of kidney problems. Dilys finds hospital trips hard because her husband no longer drives, and she dislikes taking many tablets. A care plan for Dilys would need to recommend investigations, treatment and support that fit her needs, the town's services and the limits of what the options can achieve. Hollis's investigations so far include blood tests and an X-ray of his hands. Dilys's husband, Emrys, is her only regular carer and has his own bad back. The town's community transport scheme runs two mornings a week."
   },
   "criteria": {
    "A.D1": {
@@ -472,59 +472,99 @@
       "fromSpec": "Justify conclusions on the effects of different physiological disorders on body systems and functions.",
       "means": "Say which effects are most serious and why, rather than listing symptoms.",
       "example": "In rheumatoid arthritis the immune system attacks the joint lining, so pain and stiffness limit grip. For Hollis this matters most for his job, so the effect on work is probably greater than the pain itself.",
-      "nearMiss": "Rheumatoid arthritis causes pain, swelling and stiffness in joints.",
-      "whyNearMiss": "It is accurate but describes only, without linking to function or judging importance.",
-      "explainPrompt": "What does the example judge to be the biggest effect? Why does it link the body system to Hollis's work?",
+      "nearMiss": "In rheumatoid arthritis the immune system attacks the joint lining, causing pain, swelling and stiffness that limit grip and make joiner's work harder for Hollis. Fatigue and worry add to this.",
+      "whyNearMiss": "It is accurate and applied to Hollis, but it lists effects side by side and never judges which matters most.",
+      "explainPrompt": "What does the example judge to be the biggest effect? What word or phrase shows it is ranking rather than listing?",
       "check": {
-       "q": "Which sentence judges?",
+       "q": "Which sentence judges rather than describes?",
        "options": [
-        "Rheumatoid arthritis affects the joints.",
-        "Joint swelling is common in arthritis.",
-        "Stiff hands matter more to Hollis than the pain, as he needs grip to work.",
-        "Hollis is 52."
+        "Rheumatoid arthritis damages Hollis's joints and makes his hands stiff and swollen.",
+        "Hollis's stiff hands matter more than the pain, because grip is how he earns a living.",
+        "Hollis has swollen hands, tiredness and worry about work, and these are all symptoms.",
+        "Joint swelling and stiffness are common in rheumatoid arthritis, according to the NHS."
        ],
-       "answer": 2,
-       "why": "Judgement ranks effects with reasons."
+       "answer": 1,
+       "why": "Only the second ranks one effect above another and gives a reason. The first applies the science but only describes, the third lists symptoms, and the fourth is a general fact with a source but no judgement about Hollis."
       }
      },
      {
-      "need": "Explain causes, signs and symptoms in depth and apply them to less familiar situations.",
+      "need": "Explain causes, signs and symptoms in depth and apply them to a less familiar situation.",
       "fromSpec": "Show in-depth understanding applied to less familiar situations of causes, signs and symptoms.",
-      "means": "Use accurate science and then use it on an unusual or less obvious case. For example, a disease with no symptoms at first.",
-      "example": "Chronic kidney disease often has no symptoms until late, so Dilys feels well while her blood tests show damage. That means screening, not symptoms, is how it is found and monitored.",
-      "nearMiss": "Kidney disease can cause tiredness and swollen ankles.",
-      "whyNearMiss": "Symptoms are listed generally, not applied to Dilys's no-symptom situation.",
-      "explainPrompt": "Why is Dilys's lack of symptoms important for how her condition is found? Say in your own words.",
+      "means": "Use accurate science, then use it on an unusual case, such as a disease with no symptoms at first.",
+      "example": "Chronic kidney disease often has no symptoms until late, so Dilys feels well while her blood tests show damage. Her high blood pressure is both a possible cause and a result of the damage, so screening, not symptoms, is how it is found and monitored.",
+      "nearMiss": "Dilys's high blood pressure and family history raise her risk of chronic kidney disease, which damages the kidneys' filters. As it progresses she would be expected to feel tired and have swollen ankles.",
+      "whyNearMiss": "It links cause to Dilys, but treats her as symptomatic and misses that she feels well, which is the unusual feature that needs explaining.",
+      "explainPrompt": "Why is Dilys's lack of symptoms important for how her condition is found? Say it in your own words.",
       "check": {
-       "q": "Dilys feels well. Which is the best explanation?",
+       "q": "Dilys feels well but her kidneys work at about half normal. Which explanation shows in-depth understanding?",
        "options": [
-        "She cannot have kidney disease.",
-        "Her blood tests must be wrong.",
-        "Symptoms always come first.",
-        "CKD can be silent early on, so it is found through routine tests."
+        "Her blood tests must be wrong, because kidney disease always causes tiredness first.",
+        "Chronic kidney disease can be silent until late, so it is found through routine tests such as eGFR.",
+        "Her kidneys cannot be damaged, because she has no pain in her back.",
+        "Her high blood pressure is the only problem, and her kidneys are normal."
        ],
-       "answer": 3,
-       "why": "Applying knowledge to an unusual case shows depth."
+       "answer": 1,
+       "why": "Kidney damage can be silent, so tests find it before symptoms. The first and third assume symptoms must come first or must include pain, which is not so in kidney disease, and the fourth ignores that high blood pressure and kidney damage affect each other."
+      }
+     },
+     {
+      "need": "Apply the science to the second disorder rather than repeating the first.",
+      "fromSpec": "Show in-depth understanding in less familiar situations for two different disorders.",
+      "means": "Show how the causes and signs of each disorder differ, not just copy a template.",
+      "example": "Rheumatoid arthritis is an autoimmune disease, where the body's defences attack its own joints, so Hollis's symptoms are worse in the morning and come in flares. Dilys's condition is a gradual loss of filtering, so her signs appear only when blood tests are repeated over months.",
+      "nearMiss": "Hollis and Dilys both have long-term conditions that affect how their bodies work and need regular care and appointments.",
+      "whyNearMiss": "It is true of both, but does not separate the cause or the signs of either, so it could be written without knowing either disorder.",
+      "explainPrompt": "What differences between the two disorders does the example highlight? Why does that matter?",
+      "check": {
+       "q": "How do you show real understanding of two different disorders?",
+       "options": [
+        "Describe both conditions using the same headings and sentences.",
+        "Explain a cause or sign that is specific to each, such as autoimmune flares for one and silent decline for the other.",
+        "Add more medical words to the description of the first disorder.",
+        "Say that all long-term conditions have the same general effects."
+       ],
+       "answer": 1,
+       "why": "Specific causes and signs for each show understanding. Using the same wording or generalising about all long-term conditions hides differences, and more medical words add length, not understanding."
       }
      },
      {
       "need": "Evaluate the impact on wellbeing and life, using local settings and research.",
       "fromSpec": "Use detailed analysis and research of local settings to make proposals for support.",
-      "means": "Include emotional, social and practical effects. Show you know what local services could do.",
+      "means": "Cover emotional, social and practical effects. Show you know what local services could do.",
       "example": "Hollis's worry about work may affect his mood as much as the pain. A local occupational therapist could adapt tools to keep him working, which would address the cause of his stress.",
-      "nearMiss": "Hollis is worried about work and may feel low.",
-      "whyNearMiss": "It notes the worry but gives no analysis or local solution.",
-      "explainPrompt": "How does the example connect the emotional effect to a practical solution?",
+      "nearMiss": "Hollis's rheumatoid arthritis affects him physically, emotionally and socially. He is worried about losing work and may feel low, and his tiredness could limit his social life.",
+      "whyNearMiss": "It covers several areas of wellbeing but does not link any one to a local response or say which effect is most important.",
+      "explainPrompt": "How does the example connect the emotional effect to a practical local solution?",
       "check": {
-       "q": "What makes impact analysis detailed?",
+       "q": "What makes an impact evaluation detailed?",
        "options": [
-        "Using longer sentences.",
+        "Using longer sentences and more medical vocabulary.",
         "Linking effects on body, mind and social life and proposing a specific local response.",
-        "Repeating the diagnosis.",
-        "Using more medical words."
+        "Repeating the diagnosis before each point.",
+        "Describing the worst possible outcome for the person."
        ],
        "answer": 1,
-       "why": "Depth comes from connections and local relevance."
+       "why": "Depth comes from connections and local relevance. Long sentences and vocabulary are style, repeating the diagnosis adds nothing, and worst-case description is not evaluation of the likely impact."
+      }
+     },
+     {
+      "need": "Reach a concise, professional overall judgement for each service user.",
+      "fromSpec": "Articulate arguments and views concisely and professionally to justify conclusions.",
+      "means": "Finish with a short judgement that says which impact matters most and what it depends on.",
+      "example": "Overall, Hollis's disorder affects his work and independence more than his life expectancy, while Dilys's affects her future health more than her daily life. So support for Hollis should be quick and practical, and for Dilys it should be steady and preventive.",
+      "nearMiss": "In conclusion, both disorders have a big impact on the lives of Hollis and Dilys and affect their health and wellbeing in many ways.",
+      "whyNearMiss": "It is a polite summary, but it makes no distinction between the two people and gives no basis for decisions.",
+      "explainPrompt": "What does the final judgement say that differs between the two people? Why does it matter for support?",
+      "check": {
+       "q": "Which closing sentence is a justified conclusion?",
+       "options": [
+        "Both conditions are serious and have many effects on wellbeing.",
+        "Hollis needs quick practical help to keep working, whereas Dilys needs steady monitoring, because the impacts differ in speed and type.",
+        "Rheumatoid arthritis and chronic kidney disease are different disorders.",
+        "More research is needed into both conditions."
+       ],
+       "answer": 1,
+       "why": "A justified conclusion distinguishes the people and says why. The others are accurate but do not decide anything: one repeats that conditions are serious, one states that they differ, and one defers to future research."
       }
      }
     ]
@@ -536,39 +576,79 @@
       "fromSpec": "Draw on knowledge of investigative and diagnostic procedures, making suitable justifications.",
       "means": "Say what each test shows, why it was chosen and what its limits are.",
       "example": "An eGFR blood test shows how well Dilys's kidneys filter, and a urine test for protein shows damage. Together they are less invasive than a scan and track change over time.",
-      "nearMiss": "Dilys had a blood test and urine test.",
-      "whyNearMiss": "No reason or findings are given.",
-      "explainPrompt": "What does each test tell the doctor in the example? Why is that a justification?",
+      "nearMiss": "Dilys had a blood test (eGFR) and a urine test for protein. The blood test measures how well the kidneys filter and the urine test shows whether the kidneys are leaking protein.",
+      "whyNearMiss": "It says what each test measures, which is good, but gives no reason these tests were chosen over others and no limit.",
+      "explainPrompt": "What does each test tell the doctor in the example? Which words turn that into a justification?",
       "check": {
        "q": "Which sentence justifies an investigation?",
        "options": [
-        "A blood test measures kidney filtering and can be repeated cheaply to track change.",
-        "A blood test was done at the health centre.",
-        "Blood tests are common.",
-        "Dilys had a test."
+        "A blood test was done at the health centre to check Dilys's kidneys.",
+        "Blood tests are the most common investigation in health care.",
+        "An eGFR test shows how well the kidneys filter and can be repeated cheaply to track change.",
+        "Dilys had a blood test and a urine test."
        ],
-       "answer": 0,
-       "why": "Justification is about what the test shows and why it fits."
+       "answer": 2,
+       "why": "Justification says what the test shows and why it fits. The first and fourth report that a test happened, and 'most common' says nothing about why it suits this person."
+      }
+     },
+     {
+      "need": "Show you understand the limits of tests and why more than one is needed.",
+      "fromSpec": "Draw on knowledge of investigative and diagnostic procedures, making suitable justifications.",
+      "means": "State what a test cannot show, and which second test fills the gap.",
+      "example": "A blood test for rheumatoid factor can be negative in some people with rheumatoid arthritis and positive in some without it. So Hollis's diagnosis also depends on his symptoms, inflammation markers and an X-ray of his hands.",
+      "nearMiss": "Hollis had a blood test for rheumatoid factor and an X-ray of his hands. The blood test looks for an antibody linked to rheumatoid arthritis and the X-ray looks for joint damage.",
+      "whyNearMiss": "It says what each test looks for but does not say that a result alone may be misleading, so it never justifies using both.",
+      "explainPrompt": "What is the limit of the blood test in the example? How does that justify the other tests?",
+      "check": {
+       "q": "A single eGFR reading for Dilys is lower than normal. What should happen next?",
+       "options": [
+        "Diagnose chronic kidney disease straight away from the single reading.",
+        "Repeat the test over about three months and add a urine test, because one result can vary.",
+        "Ignore the result, since she feels well.",
+        "Order a kidney biopsy immediately, as it is the most accurate test."
+       ],
+       "answer": 1,
+       "why": "Chronic kidney disease is confirmed by repeated results over time with a urine test. Diagnosing from one reading ignores variation, ignoring the result relies on symptoms, and a biopsy is invasive and kept for unclear cases."
       }
      },
      {
       "need": "Justify treatment options, with benefits and drawbacks.",
       "fromSpec": "Justify the potential benefits of treatment options.",
       "means": "Compare options and say which suits the person and why, including drawbacks.",
-      "example": "Blood pressure medication slows damage to Dilys's kidneys, so is a priority. Its disadvantage is more tablets, which she dislikes, so the plan needs a simple routine.",
-      "nearMiss": "Medicine helps with blood pressure.",
-      "whyNearMiss": "It is too general and does not weigh benefit against drawback.",
+      "example": "Blood pressure medication slows damage to Dilys's kidneys, so it is a priority. Its disadvantage is more tablets, which she dislikes, so the plan needs a simple routine.",
+      "nearMiss": "Blood pressure medication helps to protect Dilys's kidneys, but it can cause side effects, so her doctor will review it regularly.",
+      "whyNearMiss": "It names a benefit and a drawback, but does not weigh them for Dilys or connect them to her dislike of tablets.",
       "explainPrompt": "Why does the example state a disadvantage? How does that help make a recommendation?",
       "check": {
        "q": "What does justifying a treatment involve?",
        "options": [
-        "Listing every drug.",
+        "Listing every drug that could be used.",
         "Saying doctors recommend it.",
         "Weighing benefits against drawbacks for this person.",
-        "Describing the hospital."
+        "Describing how the drug works inside the body."
        ],
        "answer": 2,
-       "why": "Justification is a balanced argument."
+       "why": "Justification weighs benefit against drawback for the individual. Listing drugs, quoting authority and describing mechanisms are knowledge, not a reasoned choice for this person."
+      }
+     },
+     {
+      "need": "Compare treatment for two different disorders, including how their aims differ.",
+      "fromSpec": "Make suitable justifications of treatment options for two different disorders.",
+      "means": "Say what each treatment is trying to achieve, and why that differs.",
+      "example": "Hollis's treatment aims to control inflammation early and keep him working, so disease-modifying drugs and physiotherapy are justified, though they need regular blood monitoring. Dilys's aims to slow decline, so controlling blood pressure and diet is justified over more invasive options.",
+      "nearMiss": "Hollis may be given drugs and physiotherapy for rheumatoid arthritis, and Dilys may be given blood pressure medication and diet advice for chronic kidney disease.",
+      "whyNearMiss": "It names plausible treatments for each person but not the aim of each, so there is no justification of why these suit their disorders.",
+      "explainPrompt": "What is the aim of each treatment in the example? Why does the aim differ?",
+      "check": {
+       "q": "Why do the treatment plans for Hollis and Dilys look different?",
+       "options": [
+        "Because Hollis is younger and so needs more medicine.",
+        "Because each plan aims at a different outcome: control inflammation and keep working, or slow decline.",
+        "Because one of the conditions is more serious than the other.",
+        "They should look the same, since both are long-term conditions."
+       ],
+       "answer": 1,
+       "why": "Plans differ because their aims differ. Age alone does not set the treatment, saying one is more serious is an unsupported ranking, and long-term conditions are not treated alike."
       }
      },
      {
@@ -576,39 +656,39 @@
       "fromSpec": "Use detailed analysis and research of local settings to propose treatment, support, carers and care settings.",
       "means": "Name the kinds of services and carers available locally and explain which fit each service user.",
       "example": "Hollis could use the community hospital's physiotherapy and the day centre's peer group. Dilys's husband is her main informal carer, but the agency could help with transport.",
-      "nearMiss": "There are lots of services in Ashbourne Reach to help.",
-      "whyNearMiss": "No services or carers are identified or matched.",
+      "nearMiss": "Ashbourne Reach has a health centre, a community hospital, a day centre and a home care agency, and these could support Hollis and Dilys with their conditions.",
+      "whyNearMiss": "It lists the services accurately but matches none to a need, so it shows research but not application.",
       "explainPrompt": "How does the example match each service to a person? Why is that better than listing?",
       "check": {
-       "q": "Which is the strongest?",
+       "q": "Which is the strongest use of local research?",
        "options": [
-        "A long list of all services.",
-        "Matching a named service to a need identified earlier.",
-        "A map of the town.",
-        "A general statement."
+        "A long list of every service in the town.",
+        "Matching a named local service to a need identified earlier.",
+        "A map showing where the services are.",
+        "A general statement that the town has good services."
        ],
        "answer": 1,
-       "why": "Matching shows research is applied."
+       "why": "Matching shows research applied. A list or map presents information without choosing, and a general statement is not evidence."
       }
      },
      {
-      "need": "Apply knowledge to a different disorder and situation, rather than repeating the same points.",
-      "fromSpec": "Show in-depth understanding in less familiar situations for two different disorders.",
-      "means": "Make clear how the two disorders differ in tests, treatment and carers, not just copy a template.",
-      "example": "Hollis's care aims to control inflammation and keep him working, while Dilys's aims to slow decline. So his plan needs rapid review of medicines while hers needs regular monitoring.",
-      "nearMiss": "Both Hollis and Dilys need regular care and appointments.",
-      "whyNearMiss": "It does not distinguish between the two disorders.",
-      "explainPrompt": "What differences does the example highlight? Why does this matter?",
+      "need": "Justify carers and care settings, including the strain on informal carers.",
+      "fromSpec": "Use research to propose types of carers and care settings for two service users.",
+      "means": "Compare informal and formal carers and say what support the carer needs.",
+      "example": "Emrys is Dilys's only regular carer and has a bad back, so relying on him for hospital trips is risky. A carer's assessment and community transport on two mornings a week would protect his health and keep her appointments.",
+      "nearMiss": "Dilys's husband Emrys looks after her at home, and the home care agency could also help. Formal and informal carers both have a role.",
+      "whyNearMiss": "It identifies both kinds of carer but ignores the strain on Emrys, so it does not justify any change to the arrangement.",
+      "explainPrompt": "What problem with the current carer does the example spot? How does the proposal address it?",
       "check": {
-       "q": "How do you show that two plans are different?",
+       "q": "Why should a care plan consider the informal carer's own needs?",
        "options": [
-        "Use the same wording.",
-        "Use different font.",
-        "Change their names.",
-        "Point out different aims, tests and support."
+        "Because informal carers are paid and need contracts.",
+        "Because the arrangement may fail if the carer's own health or time is stretched.",
+        "Because carers always want to stop caring.",
+        "It should not, because the plan is about the service user only."
        ],
-       "answer": 3,
-       "why": "Differences show understanding."
+       "answer": 1,
+       "why": "Plans fail when carers are overstretched. Informal carers are usually unpaid, many do not want to stop, and the plan is stronger when it protects the whole care arrangement."
       }
      }
     ]
@@ -620,19 +700,19 @@
       "fromSpec": "Make the most appropriate selections within given constraints and desired outcomes.",
       "means": "State the constraints (transport, tablets, budget) and choose accordingly.",
       "example": "Because Dilys's husband no longer drives, blood tests at the health centre rather than the hospital fit her ability to attend and still give the data needed.",
-      "nearMiss": "Dilys should have regular blood tests.",
-      "whyNearMiss": "No constraint is considered, so the choice is not justified.",
+      "nearMiss": "Dilys should have regular blood tests at the health centre, because they show how well her kidneys are working.",
+      "whyNearMiss": "It gives a sensible test and reason, but never names the constraint (no driver) that makes the health centre the best choice.",
       "explainPrompt": "Which constraint shapes the choice in the example?",
       "check": {
-       "q": "What is a constraint?",
+       "q": "What is a constraint in a care plan?",
        "options": [
         "Something that limits what is possible, such as transport or time.",
-        "A medical test.",
-        "A type of drug.",
-        "A symptom."
+        "A medical test used to check progress.",
+        "A type of drug used in the plan.",
+        "A symptom the person has."
        ],
        "answer": 0,
-       "why": "Constraints limit choices."
+       "why": "A constraint limits choices. Tests, drugs and symptoms are parts of the plan or the condition, not limits on it."
       }
      },
      {
@@ -640,39 +720,79 @@
       "fromSpec": "Use knowledge to match solutions to potential barriers or innovate and show lateral thinking.",
       "means": "Identify what might stop the plan working and solve it, perhaps in a creative way.",
       "example": "Dilys dislikes taking many tablets, so the pharmacy could provide a weekly pill organiser and one check-in call, which keeps the treatment without adding pressure.",
-      "nearMiss": "Dilys should take her tablets.",
-      "whyNearMiss": "It ignores her barrier.",
+      "nearMiss": "Dilys dislikes tablets, so her doctor should explain why each medicine matters and review whether all of them are needed.",
+      "whyNearMiss": "It is a sensible response, but a standard one: it does not adapt the routine to her barrier or draw on a local service.",
       "explainPrompt": "How does the example turn a barrier into an action?",
       "check": {
-       "q": "Which is an innovative solution?",
+       "q": "Which is the most innovative response to Dilys disliking tablets?",
        "options": [
-        "Telling her to try harder.",
-        "Giving more tablets.",
-        "A pill organiser and check-in call tailored to her.",
-        "Skipping treatment."
+        "Telling her she must take them or her kidneys will fail.",
+        "Prescribing extra tablets to cover missed doses.",
+        "Using a weekly pill organiser and one check-in call from the pharmacy.",
+        "Stopping her blood pressure medication."
        ],
        "answer": 2,
-       "why": "Innovation is tailored."
+       "why": "A tailored routine tackles the barrier without adding pressure. Threats can cause anxiety and avoidance, extra tablets worsen the barrier, and stopping treatment removes the benefit."
       }
      },
      {
-      "need": "Judge the limitations of your methods compared with the outcomes you want.",
+      "need": "Judge the limitations of the methods compared with the outcomes wanted.",
       "fromSpec": "Make valid judgements about limitations of methods in relation to desired outcomes.",
-      "means": "No treatment is perfect. State what your plan cannot achieve and what happens next.",
+      "means": "No treatment is perfect. State what the plan cannot achieve and what happens next.",
       "example": "Medication and diet slow kidney decline but cannot restore lost function. So the plan includes reviewing her blood results every few months and discussing future options with her specialist.",
-      "nearMiss": "The plan will help Dilys's kidneys.",
-      "whyNearMiss": "It claims benefit without any limits.",
+      "nearMiss": "The plan should slow Dilys's kidney decline, though it may not work for everyone, so her progress will be reviewed.",
+      "whyNearMiss": "It hints that the plan may fail but does not say what it cannot achieve or what would be done if it does.",
       "explainPrompt": "What does the example admit the plan cannot do? Why does that make it stronger?",
       "check": {
-       "q": "Why include limitations?",
+       "q": "Why include limitations in a plan?",
        "options": [
         "It makes the plan longer.",
         "It shows realistic judgement and prepares for change.",
-        "It makes the plan look weaker.",
+        "It shows the plan is weak.",
         "It is required by law."
        ],
        "answer": 1,
-       "why": "Honest limits support valid judgement."
+       "why": "Honest limits support valid judgement and lead to review points. Length is not a purpose, admitting limits does not weaken a plan, and no law requires it."
+      }
+     },
+     {
+      "need": "Show how consent and confidentiality shape the plan.",
+      "fromSpec": "Respect confidentiality at all times and obtain formal consent from service users to report any information.",
+      "means": "Explain how the service user's identity is protected and agreement is recorded, before you use their details.",
+      "example": "For Hollis, the plan would use a made-up name and leave out his workplace, because a joiner in a small town could be identified. His written agreement would be kept before any personal detail was used.",
+      "nearMiss": "Hollis's details will be kept private and he has been told how the information will be used.",
+      "whyNearMiss": "It states the right intention, but gives no step that protects identity and no record of consent.",
+      "explainPrompt": "Which details in the example could identify Hollis? What is done about them?",
+      "check": {
+       "q": "Which action best respects consent and confidentiality?",
+       "options": [
+        "Using the person's real name because they know you.",
+        "Getting agreement once, verbally, and keeping no record.",
+        "Changing identifying details and keeping a signed consent form.",
+        "Asking a family member to agree instead of the person."
+       ],
+       "answer": 2,
+       "why": "Formal consent and protected identity are both needed. Knowing someone does not replace consent, verbal agreement leaves no record, and a family member cannot give consent unless the person lacks capacity and proper procedures are followed."
+      }
+     },
+     {
+      "need": "Show the factors considered when planning, and how plans are modified.",
+      "fromSpec": "Use knowledge to plan treatment, including the factors that need to be considered, and modify to deal with contingencies.",
+      "means": "Name the factors (age, preferences, other conditions, money, carers) and say what you would change if something went wrong.",
+      "example": "For Dilys, age, high blood pressure, a carer with a bad back and a dislike of tablets all shape the plan. If her blood results fall faster than expected, the plan would bring forward the specialist review.",
+      "nearMiss": "Dilys is 70 and has high blood pressure, so her plan includes blood pressure treatment and regular tests.",
+      "whyNearMiss": "It uses two factors but not carer, preference or money, and says nothing about what changes if the plan does not work.",
+      "explainPrompt": "Which factors does the example use? What would trigger a change to the plan?",
+      "check": {
+       "q": "What does it mean to plan for a contingency?",
+       "options": [
+        "To pick the cheapest option available.",
+        "To prepare what will change if the plan does not work as hoped.",
+        "To avoid any mention of risk.",
+        "To repeat the plan every month."
+       ],
+       "answer": 1,
+       "why": "Contingency planning prepares alternatives. The cheapest option is a constraint, avoiding risk hides problems, and repeating a plan unchanged ignores the need to adapt."
       }
      }
     ]
@@ -692,59 +812,79 @@
       "fromSpec": "Draw on a number of information sources about microbe control methods for two different micro-organisms.",
       "means": "Use more than one reliable source for each microbe and compare what they say.",
       "example": "Public health guidance and a hospital infection-control guide both advise keeping hot water above a set temperature to control Legionella. Two sources agreeing makes the method more credible.",
-      "nearMiss": "One website says how to control Legionella.",
-      "whyNearMiss": "Only a single source is used and it is not compared.",
+      "nearMiss": "A health protection agency page and a hospital guide both explain how to control Legionella in water systems, and both were used to describe the methods.",
+      "whyNearMiss": "Two sources are used, but they are not compared or weighed, so the answer reports rather than judges.",
       "explainPrompt": "Why does agreement between two sources make the example stronger? What would you check if they disagreed?",
       "check": {
-       "q": "How many sources show breadth?",
+       "q": "How do several sources show breadth?",
        "options": [
-        "One long source.",
-        "Several reliable sources, compared with each other.",
-        "A friend's advice.",
-        "A video only."
+        "A single long source is read carefully.",
+        "Several reliable sources are compared with each other.",
+        "A friend's advice is added to one source.",
+        "A video is the only source used."
        ],
        "answer": 1,
-       "why": "Distinction uses a number of sources."
+       "why": "Comparing reliable sources shows breadth and judgement. One long source or a video is a single voice, and a friend's advice is not a reliable source."
       }
      },
      {
       "need": "Give reasons why some control methods are used and others are not.",
       "fromSpec": "Come to a supported judgement and give reasons why some are used and not others.",
-      "means": "Say why a method is suitable for one microbe and not for another or in this setting.",
-      "example": "Alcohol hand gel is weak against norovirus, so handwashing with soap and water and cleaning with chlorine-based products are preferred. This is why the kitchen should not rely on gel alone.",
-      "nearMiss": "Hand gel and soap are both used to control microbes.",
-      "whyNearMiss": "It lists the methods but does not say why one is better.",
+      "means": "Say why a method suits one microbe and not another, or this setting.",
+      "example": "Alcohol hand gel is weak against norovirus, so handwashing with soap and water and cleaning with chlorine-based products are preferred. Gel alone would leave the kitchen at risk.",
+      "nearMiss": "Soap and water and alcohol gel are both used to control microbes in the kitchen, and chlorine products are used on surfaces. Soap and water are better than gel in many cases.",
+      "whyNearMiss": "It prefers one method but without explaining why it works better against norovirus, so the preference is asserted not justified.",
       "explainPrompt": "What does the example say about alcohol gel and norovirus? Why does that decide the method?",
       "check": {
-       "q": "Why might a method not be used?",
+       "q": "Why might a control method not be used for a particular microbe?",
        "options": [
+        "It is old, so it must be out of date.",
         "It may not work on that microbe or in that setting.",
-        "Because it is old.",
-        "Because it is cheap.",
-        "Because it is long."
+        "It is cheap, so it cannot be effective.",
+        "It takes too long to read the label."
        ],
-       "answer": 0,
-       "why": "Methods are chosen because of their effect and context."
+       "answer": 1,
+       "why": "Methods are chosen because of their effect on the microbe and the setting. Age and cost do not decide effectiveness, and label length is irrelevant."
+      }
+     },
+     {
+      "need": "Link the control method to the microbe's biology, such as whether it can grow outside a host.",
+      "fromSpec": "Reach a supported judgement drawing on information sources about microbe control.",
+      "means": "Explain what the method removes or damages and why that affects this microbe.",
+      "example": "Legionella multiplies in warm, stagnant water, so keeping hot water hot and flushing little-used outlets removes the conditions it needs. Norovirus is a virus that cannot multiply in water or on surfaces, so temperature control would not help; cleaning and excluding sick staff are the controls.",
+      "nearMiss": "Legionella is a bacterium and norovirus is a virus, so they need different methods. Water temperature control is used for Legionella and hygiene for norovirus.",
+      "whyNearMiss": "It names the right methods for each microbe but does not explain, from their biology, why those methods fit.",
+      "explainPrompt": "What does Legionella need that temperature control removes? Why does the same method not help for norovirus?",
+      "check": {
+       "q": "Why does temperature control of the water not control norovirus?",
+       "options": [
+        "Because norovirus is a bacterium that likes cold water.",
+        "Because norovirus is a virus that cannot multiply outside a host, so water temperature does not limit it.",
+        "Because norovirus is killed by antibiotics instead.",
+        "Because the shower water is too hot for any virus."
+       ],
+       "answer": 1,
+       "why": "Viruses only multiply inside host cells, so temperature control of water does not limit them. Norovirus is not a bacterium, antibiotics do not work on viruses, and heat is not the reason."
       }
      },
      {
       "need": "Reach a justified conclusion in concise, professional language.",
       "fromSpec": "Articulate arguments concisely and professionally to reach justified conclusions.",
       "means": "Finish with a clear view on the best control method for each microbe, with brief reasons.",
-      "example": "For Legionella, temperature control and flushing outlets are most reliable since the bacteria multiply in warm, stagnant water. For norovirus, hygiene and isolation of sick staff are best because it spreads person to person.",
-      "nearMiss": "In conclusion, microbes are controlled by many methods.",
-      "whyNearMiss": "It is a vague summary with no justified choice.",
+      "example": "For Legionella, temperature control and flushing outlets are most reliable since the bacteria multiply in warm, stagnant water. For norovirus, hygiene and exclusion of sick staff are best because it spreads person to person.",
+      "nearMiss": "In conclusion, microbes are controlled by hot water temperatures, flushing, hand washing and cleaning, and each has a role at Tidewater.",
+      "whyNearMiss": "It lists the methods but never chooses a best one for each microbe or says why.",
       "explainPrompt": "Which words in the example make it a justified conclusion?",
       "check": {
        "q": "A good conclusion includes:",
        "options": [
-        "A summary of all the methods.",
-        "A personal opinion.",
-        "A named best method for each microbe and reasons.",
-        "A question."
+        "A summary of every method discussed.",
+        "A personal opinion about microbes.",
+        "A named best method for each microbe with a brief reason.",
+        "A question for further research."
        ],
        "answer": 2,
-       "why": "Clear choice plus reasons."
+       "why": "A clear choice with reasons is a justified conclusion. A summary repeats, opinion lacks evidence, and a question leaves the matter unresolved."
       }
      }
     ]
@@ -756,39 +896,59 @@
       "fromSpec": "Give a clear, objective account of reasons for outbreaks becoming global.",
       "means": "Name several causes (travel, trade, urban living, climate) and explain how each helps a named disease spread.",
       "example": "Dengue is carried by mosquitoes whose range grows as temperatures rise, while air travel lets infected people move before symptoms show. Together these explain faster spread.",
-      "nearMiss": "Diseases spread because the world is more connected.",
-      "whyNearMiss": "It is too general and no named disease or mechanism is shown.",
+      "nearMiss": "Dengue is spreading to new countries because of climate change and global travel, which are both increasing, and this is a growing public health problem.",
+      "whyNearMiss": "It names two causes but not how either works, so the account asserts rather than explains.",
       "explainPrompt": "Which two causes does the example link to dengue? Why do they matter together?",
       "check": {
-       "q": "What makes the account objective?",
+       "q": "What makes an account objective?",
        "options": [
+        "Strong adjectives that show how serious it is.",
         "Facts and reasons, not opinion.",
-        "Strong adjectives.",
-        "A personal story.",
+        "A personal story about an outbreak.",
         "Short sentences."
        ],
-       "answer": 0,
-       "why": "Objective means evidence-based."
+       "answer": 1,
+       "why": "Objective means evidence-based. Strong adjectives, personal stories and sentence length affect tone, not objectivity."
+      }
+     },
+     {
+      "need": "Rank the causes of global spread and judge which matter most.",
+      "fromSpec": "Use breadth of information across learning aims B and C to critically discuss why diseases are spreading more frequently on a global scale.",
+      "means": "Compare the causes and say which has the largest effect for a named disease, and why.",
+      "example": "For cholera, urban crowding and poor sanitation probably matter more than air travel, because the disease spreads through contaminated water. For dengue, travel and climate matter more, because the vector and the infected people move.",
+      "nearMiss": "Travel, trade, urbanisation and climate change all increase the spread of disease, and cholera and dengue are examples of this.",
+      "whyNearMiss": "It lists causes accurately and names diseases, but weighs none of them, so the 'critical' element is missing.",
+      "explainPrompt": "What reason does the example give for ranking different causes for different diseases?",
+      "check": {
+       "q": "Which statement is a critical discussion of causes?",
+       "options": [
+        "Air travel spreads all diseases equally quickly.",
+        "The most important cause depends on how the disease spreads, so water matters for cholera and travel for dengue.",
+        "Climate change is the only reason that diseases spread.",
+        "Disease has always spread, so the causes do not matter."
+       ],
+       "answer": 1,
+       "why": "Ranking by the disease's route is critical discussion. 'All equally' and 'only one reason' ignore differences, and 'causes do not matter' avoids the question."
       }
      },
      {
       "need": "Describe the likely consequences of a pandemic for individuals, families, societies and health workers.",
       "fromSpec": "Describe likely consequences including effects on individuals, families and health workers.",
-      "means": "Cover different groups. Include the effect on health workers and societal attitudes.",
+      "means": "Cover different groups and include health workers and societal attitudes.",
       "example": "In a cholera pandemic, families might lose a wage earner, and health workers face infection risk and long hours. Fear can lead communities to stigmatise sufferers, which makes people hide symptoms.",
-      "nearMiss": "Many people would die and hospitals would be busy.",
-      "whyNearMiss": "It names only one or two consequences.",
-      "explainPrompt": "Name the three groups in the example. Why does stigma matter for control?",
+      "nearMiss": "In a pandemic many people become ill and some die, families are affected, and hospitals and health workers are under pressure.",
+      "whyNearMiss": "It names several groups but treats them in one line each, with no link to how they affect each other or the control of the disease.",
+      "explainPrompt": "Name the groups in the example. Why does stigma matter for control?",
       "check": {
-       "q": "Which group is easy to forget?",
+       "q": "Which group is easily forgotten when describing consequences?",
        "options": [
+        "Health workers and their families.",
         "Politicians.",
         "Tourists.",
-        "Pets.",
-        "Health workers and their families."
+        "Pets."
        ],
-       "answer": 3,
-       "why": "Health workers have particular risks."
+       "answer": 0,
+       "why": "Health workers face particular risks and their families share them. The others are less central to outbreak consequences, though tourists may spread disease."
       }
      },
      {
@@ -796,39 +956,59 @@
       "fromSpec": "Consider whether tested and untested drugs will be used, and the ethical dilemmas raised.",
       "means": "Explain the dilemma: hope of benefit versus risk and fairness.",
       "example": "In an outbreak with no proven treatment, giving an untested drug may save lives but could also cause harm. Fair access is a second dilemma, since limited doses must be shared.",
-      "nearMiss": "Untested drugs are risky.",
-      "whyNearMiss": "The dilemma is not explained.",
+      "nearMiss": "Untested drugs could help people in an outbreak but may be unsafe, so some people think they should not be used and others think they should.",
+      "whyNearMiss": "It states both sides but does not say what makes it a dilemma or mention fairness, so it stops at 'some say'.",
       "explainPrompt": "What are the two dilemmas in the example? Explain them in your own words.",
       "check": {
-       "q": "Which is an ethical dilemma?",
+       "q": "Which situation is an ethical dilemma?",
        "options": [
-        "Choosing a colour.",
-        "Choosing between possible benefit and unknown harm.",
-        "Choosing a hospital.",
-        "Choosing a date."
+        "Choosing a colour for the hospital walls.",
+        "Choosing between possible benefit and unknown harm from an untested drug.",
+        "Choosing which hospital to visit.",
+        "Choosing a date for a staff meeting."
        ],
        "answer": 1,
-       "why": "Ethics means balancing competing rights."
+       "why": "A dilemma balances competing rights or risks. The others are practical choices with no ethical conflict."
+      }
+     },
+     {
+      "need": "Consider sensitivity to different societal attitudes and the position of health workers.",
+      "fromSpec": "Consider the position of health workers dealing with the outbreak and sensitivity to different societal attitudes.",
+      "means": "Explain how beliefs and practices affect control, and how workers should respond respectfully.",
+      "example": "In some communities traditional burial practices involve close contact with the body, which can spread infection. Health workers who explain the risk and agree safe alternatives with community leaders are more likely to be trusted than those who simply forbid the practice.",
+      "nearMiss": "Different communities have different attitudes and beliefs about disease, and health workers should be sensitive when dealing with an outbreak.",
+      "whyNearMiss": "It states the principle but gives no example of an attitude or response, so it cannot be applied.",
+      "explainPrompt": "What attitude does the example mention? How should health workers respond?",
+      "check": {
+       "q": "Why is respect for local beliefs important during an outbreak?",
+       "options": [
+        "It is polite but has no effect on control.",
+        "People who feel respected are more likely to follow safety advice.",
+        "It lets health workers ignore the science.",
+        "It means every belief should be followed."
+       ],
+       "answer": 1,
+       "why": "Trust improves cooperation. Respect is not just politeness, does not replace evidence, and does not mean abandoning safe practice."
       }
      },
      {
       "need": "Use research across both learning aims to critically discuss why global spread is increasing.",
       "fromSpec": "Use breadth of information across B and C to critically discuss why diseases spread more frequently globally.",
-      "means": "Link what you know about transmission, immunity and control to global conditions, and focus on world control, not one country.",
+      "means": "Link transmission, immunity and control to global conditions, and focus on world control, not one country.",
       "example": "Control at global level is harder than in one country because borders, health systems and vaccine supply differ. This explains why an outbreak controlled locally can still return.",
-      "nearMiss": "Control methods are useful in outbreaks.",
-      "whyNearMiss": "It does not draw links or consider global control.",
+      "nearMiss": "Countries work together to control outbreaks by sharing information and vaccines, and control methods are useful in outbreaks.",
+      "whyNearMiss": "It is true, but treats global control as a simple version of local control, with no obstacles or differences shown.",
       "explainPrompt": "What does the example say makes global control harder?",
       "check": {
-       "q": "Why is global control different?",
+       "q": "Why is global control different from controlling an outbreak in one country?",
        "options": [
-        "There is only one disease.",
+        "There is only one disease to control.",
         "Diseases are weaker abroad.",
-        "Different countries have different resources and rules.",
+        "Countries have different resources, rules and vaccine access.",
         "Travel stops during outbreaks."
        ],
        "answer": 2,
-       "why": "Global control depends on coordination."
+       "why": "Global control depends on coordination across unequal systems. Diseases do not weaken abroad and travel does not stop fully."
       }
      }
     ]
@@ -840,19 +1020,19 @@
       "fromSpec": "The interrelationship can have positive and negative effects; present the facts.",
       "means": "Give real examples of benefits and harms, such as gut bacteria and infections.",
       "example": "Gut bacteria help digest food and compete with harmful microbes, but some of the same species can cause infection if they enter the wrong part of the body.",
-      "nearMiss": "Microbes can be good and bad.",
-      "whyNearMiss": "No specific facts.",
+      "nearMiss": "Microbes can be beneficial, such as in food production and digestion, and harmful, such as in infections, so the relationship has both positives and negatives.",
+      "whyNearMiss": "It has both sides, but gives categories not specific facts, so nothing can be checked.",
       "explainPrompt": "How does the example show the same microbes can be good and harmful?",
       "check": {
        "q": "Which is a fact about benefit?",
        "options": [
         "Kefir uses live microbes to ferment milk.",
         "Microbes are everywhere.",
-        "Microbes are tiny.",
+        "Microbes are very small.",
         "Microbes are interesting."
        ],
        "answer": 0,
-       "why": "Facts need to be specific."
+       "why": "Facts are specific and checkable. The others are general statements that do not show benefit."
       }
      },
      {
@@ -860,8 +1040,8 @@
       "fromSpec": "Use facts to interpret whether the interrelationship is of overall benefit or not; a definite conclusion is not required.",
       "means": "Weigh the evidence. You may conclude 'it depends', but say what it depends on.",
       "example": "Fermented foods and gut bacteria support health daily, while serious infections are rarer but more severe. The benefit appears greater, although antibiotic resistance could shift the balance.",
-      "nearMiss": "Microbes are mostly helpful.",
-      "whyNearMiss": "It gives an opinion without evidence.",
+      "nearMiss": "Microbes bring both benefits, such as food and digestion, and harms, such as disease, so the overall effect depends on the microbe and the situation.",
+      "whyNearMiss": "It says 'it depends' but not on what, and does not weigh frequency or severity.",
       "explainPrompt": "What facts does the example use to weigh the balance?",
       "check": {
        "q": "Is a definite conclusion required?",
@@ -872,7 +1052,7 @@
         "No, but any argument needs facts."
        ],
        "answer": 3,
-       "why": "The guidance accepts balanced views."
+       "why": "The guidance accepts balanced views backed by facts. 'Always' and 'never' go beyond the guidance."
       }
      },
      {
@@ -880,19 +1060,39 @@
       "fromSpec": "Draw on knowledge gained across the unit to reach supported judgements.",
       "means": "Link back to control methods, disease spread and immunity.",
       "example": "Antibiotic use controls infection but also affects the helpful gut bacteria and encourages resistance. This links control (A) with the benefit and harm of microbes (D).",
-      "nearMiss": "Antibiotics can be helpful.",
-      "whyNearMiss": "It does not link to other parts of the unit.",
+      "nearMiss": "Antibiotics are helpful because they kill bacteria that cause disease, and they are used in hospitals and homes like Tidewater.",
+      "whyNearMiss": "It gives one use of antibiotics, with no link to resistance or gut bacteria, so no other part of the unit is drawn in.",
       "explainPrompt": "Which other part of the unit does the example connect to?",
       "check": {
        "q": "Why link across the unit?",
        "options": [
-        "It makes work longer.",
+        "It makes the work longer.",
         "It repeats earlier work.",
         "It shows deeper understanding.",
-        "It is required in every unit."
+        "It is a legal requirement."
        ],
        "answer": 2,
-       "why": "Linking shows synthesis."
+       "why": "Linking shows synthesis. Length is not a purpose, and repetition adds nothing."
+      }
+     },
+     {
+      "need": "Discuss the beneficial role of microbes and their possible future uses.",
+      "fromSpec": "Discuss the importance of useful microbes, their social benefits and possible future uses.",
+      "means": "Give a current use, its benefit to people, and one realistic future use.",
+      "example": "Bacteria are used to make insulin and yeast to make bread, so their benefit is large and everyday. A future use could be microbes that clean oil spills, but this is still being developed, so the claim is cautious.",
+      "nearMiss": "Microbes are used to make food, medicines and cleaning products, and in the future they might be used for many more things.",
+      "whyNearMiss": "It names uses but gives no example or benefit, and the future claim is vague.",
+      "explainPrompt": "What is the current benefit in the example? How does it keep the future claim cautious?",
+      "check": {
+       "q": "What makes a claim about future uses of microbes credible?",
+       "options": [
+        "It is stated with certainty.",
+        "It is based on current research and acknowledges uncertainty.",
+        "It uses long scientific words.",
+        "It is the first idea that comes to mind."
+       ],
+       "answer": 1,
+       "why": "Credible claims link to current research and admit uncertainty. Certainty, vocabulary and first ideas are not evidence."
       }
      }
     ]
