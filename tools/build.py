@@ -190,7 +190,15 @@ def main():
     blob = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
 
     src = (ROOT / "src/hub.html").read_text(encoding="utf-8")
+    import base64
+    faces = [("Atkinson Hyperlegible", 400, "atkinson-hyperlegible-latin-400-normal"), ("Atkinson Hyperlegible", 700, "atkinson-hyperlegible-latin-700-normal"),
+             ("Bricolage Grotesque", 700, "bricolage-grotesque-latin-700-normal"), ("Bricolage Grotesque", 800, "bricolage-grotesque-latin-800-normal"),
+             ("IBM Plex Mono", 400, "ibm-plex-mono-latin-400-normal"), ("IBM Plex Mono", 600, "ibm-plex-mono-latin-600-normal")]
+    css = "".join(f"@font-face{{font-family:'{n}';font-style:normal;font-weight:{w};font-display:swap;src:url(data:font/woff2;base64,{base64.b64encode((ROOT / 'assets/fonts' / (f + '.woff2')).read_bytes()).decode()}) format('woff2')}}" for n, w, f in faces)
+    src = src.replace("/*__FONTS__*/", "/* Fonts are bundled (SIL OFL, see assets/fonts) so the page makes no outside requests. */" + css)
     body = src.replace("/*__DATA__*/null", blob)
+    if re.search(r"https://fonts\.(googleapis|gstatic)", body):
+        sys.exit("privacy check failed: page loads fonts from Google")
     assert body != src, "data placeholder not found"
 
     (ROOT / "dist").mkdir(exist_ok=True)

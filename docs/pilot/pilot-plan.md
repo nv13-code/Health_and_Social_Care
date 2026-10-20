@@ -34,9 +34,10 @@
 - [ ] Assessment decision recorded; no post-decision coaching given (Pearson rules).
 
 ## Data and safeguarding
-- Progress is stored in the student's own Claude account. The tutor sees only what the student chooses to share. The pilot summary holds numbers only and never their writing.
+- **No personal information is retained.** Students' writing isn't saved by default. Saved progress (ticks, ratings, quiz progress) stays in the student's own browser or their own Claude account, expires after 12 months without use, and can be deleted at any time. See `PRIVACY.md`.
+- The tutor sees only the anonymous pilot summary, and only if the student chooses to share it. Don't attach a name to it in any pilot records: use a code such as "P1".
+- Think-aloud notes: record behaviours and quotes only, with no names, and delete them once the pilot decision is made.
 - The hub covers sensitive topics and has content notes and a help panel. Make sure the student knows who the college's DSL is.
-- Under-18 student: get your centre's agreement for the pilot. If any data is collected beyond what the student shares voluntarily, check with your data protection lead.
 
 ## Decision at week 6
 - **Scale to a class** if most of the success measures are met. Accounts would then move to SciencePass, which needs a DPIA.

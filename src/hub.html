@@ -1,10 +1,8 @@
 <title>HSC D* Project</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="A student hub for the Pearson BTEC Level 3 National Extended Diploma in Health and Social Care: track points towards D*D*D*, coach every internal unit to Distinction, and revise for Units 1–4.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
 <style>
+/*__FONTS__*/
 /* Layout: sticky care-chart header carrying the 18-point budget; four tabbed workspaces below, each a single readable column that splits into list + detail on wide screens. */
 :root{
   --ui:#74857f;
@@ -337,7 +335,7 @@ details.more>summary{cursor:pointer;font-weight:700}
   <div class="row" role="group" aria-label="Reading settings"><span class="muted">Text size</span><button class="btn small" data-act="fs" data-v="">Standard</button><button class="btn small" data-act="fs" data-v="l">Large</button><button class="btn small" data-act="fs" data-v="xl">Extra large</button><button class="btn small" data-act="ls">Wider spacing</button></div>
   <p>Some cases and questions in this hub cover abuse, self-harm, suicide, bullying, dementia and mental ill health. They are factual, with no detail about methods. You can skip any of them. If a topic upsets you, help is listed above.</p>
   <p>Built from the Pearson BTEC Level 3 National Extended Diploma in Health and Social Care specification (Issue 10, June 2022). Default exam grade boundaries are from Pearson's June 2026 series. Boundaries change every series, so treat the points from raw marks as estimates. Your teacher's assessment decisions and Pearson's results are what count.</p>
-  <p>When you open this page signed in to claude.ai, your progress saves privately to your account and follows you between devices. Nobody else can see it, including the page's owner. A copy also stays in this browser. <b>Backup</b> in the Planner tab gives you a code you can keep as an extra copy.</p>
+  <p>No names, no tracking and no outside requests. Your writing isn't saved unless you turn that on. Ticks, ratings and quiz progress are kept in this browser and, if you're signed in to Claude, privately in your own account. Saved progress is deleted after 12 months without use, and you can delete it any time. See <b>Planner → Your privacy</b>.</p>
 </div></footer>
 <div class="toast" id="toast" role="status" hidden></div>
 <div id="sr" class="sr-only" role="status" aria-live="polite"></div>
@@ -395,8 +393,15 @@ const VERBS = {
 const KEY = "hsc-dstar-v1";
 function blank(){return {pathway:"standard",opt:[],grades:{},marks:{},extMode:{},bounds:JSON.parse(JSON.stringify(DEFAULT_BOUNDS)),status:{},checks:{},rag:{},quiz:{},drafts:{},selfmark:{},dates:{},deadlines:[],tab:"today",coachUnit:5,srs:{},calib:{1:{n:0,c:0},2:{n:0,c:0},3:{n:0,c:0}},daily:null,dailyCap:15,calLog:[],streak:0,lastDone:"",cal:[],tasksDone:{},guide:{},examUnit:1,examSub:"overview"}}
 let S = blank();
-try{const raw=localStorage.getItem(KEY); if(raw){S=Object.assign(blank(),JSON.parse(raw));}}catch(e){}
-function save(){S._t=Date.now();try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}cloudQueue()}
+try{const raw=localStorage.getItem(KEY); if(raw){const o=JSON.parse(raw); if(o._t&&Date.now()-o._t>365*86400000){localStorage.removeItem(KEY)}else{S=Object.assign(blank(),o)}}}catch(e){}
+/* Privacy: by default nothing a student types (answers, explanations, notes) is stored anywhere.
+   Only ticks, ratings, grades, dates and quiz progress are saved. Free text lives in memory for this visit. */
+const TEXT_FIELDS=["exp","pre","loc"];
+function storable(){const o=JSON.parse(JSON.stringify(S));
+  if(!S.keepText){o.drafts={};Object.values(o.guide||{}).forEach(g=>TEXT_FIELDS.forEach(f=>delete g[f]));}
+  delete o.gwOpen;return o}
+function save(){S._t=Date.now();try{localStorage.setItem(KEY,JSON.stringify(storable()))}catch(e){}cloudQueue()}
+const RETAIN_DAYS=365;
 
 /* ---------- Account sync (claude.ai artifact db; private to the signed-in viewer) ---------- */
 const CLOUD={ref:null,state:"local",timer:null,busy:false,again:false};
@@ -406,7 +411,7 @@ function syncLabel(){const el=document.getElementById("syncPill");if(!el)return;
 function cloudQueue(){if(!CLOUD.ref)return;clearTimeout(CLOUD.timer);CLOUD.timer=setTimeout(cloudPush,1200)}
 async function cloudPush(){if(!CLOUD.ref)return;if(CLOUD.busy){CLOUD.again=true;return}
   CLOUD.busy=true;CLOUD.state="saving";syncLabel();
-  try{await CLOUD.ref.set({v:1,updatedAt:S._t||Date.now(),json:JSON.stringify(S)});CLOUD.state="saved"}
+  try{await CLOUD.ref.set({v:1,updatedAt:S._t||Date.now(),json:JSON.stringify(storable())});CLOUD.state="saved"}
   catch(e){const c=e&&e.code;
     if(c==="invalid_argument"){CLOUD.state="readonly";CLOUD.ref=null}
     else if(c==="quota_exceeded"){CLOUD.state="error";toast("Your account storage is full. Clear long drafts or old ones to keep saving.")}
@@ -421,7 +426,8 @@ async function cloudInit(){
     const ref=db.collection("data/users/"+id).doc("progress");
     const snap=await ref.get();
     const d=snap.exists?snap.data():null;
-    if(d&&typeof d.json==="string"&&(Number(d.updatedAt)||0)>(S._t||0)){
+    if(d&&(Number(d.updatedAt)||0)<Date.now()-RETAIN_DAYS*86400000){try{await ref.delete()}catch(e){}}
+    else if(d&&typeof d.json==="string"&&(Number(d.updatedAt)||0)>(S._t||0)){
       try{S=Object.assign(blank(),JSON.parse(d.json));try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){};render();toast("Progress loaded from your account")}catch(e){}
     }
     CLOUD.ref=ref;CLOUD.state="saved";syncLabel();
@@ -668,9 +674,9 @@ function walkthrough(u,code){
     body=`<div class="stack-lg">
       <div class="stack" style="gap:6px"><span class="eyebrow">Step ${step+1} of ${n} · what the work must show</span><h4 style="font-size:var(--t-lg)">${esc(r.need)}</h4>
         <p>${esc(r.means)}</p><p class="muted" style="font-size:var(--t-sm)"><b>From the spec's assessment guidance:</b> ${esc(r.fromSpec)}</p></div>
-      ${wordCount(st.pre)<5||!st.preDone?`<div class="stack" style="gap:6px"><label class="eyebrow" for="gp-${esc(k.replace(/\W/g,""))}">1 · Try it first</label><p>Before you look at any examples: in a sentence or two, what would strong evidence for this look like?</p>
+      ${!st.preDone?`<div class="stack" style="gap:6px"><label class="eyebrow" for="gp-${esc(k.replace(/\W/g,""))}">1 · Try it first</label><p>Before you look at any examples: in a sentence or two, what would strong evidence for this look like?</p>
         <textarea id="gp-${esc(k.replace(/\W/g,""))}" style="min-height:70px" data-act="gwpre" data-k="${esc(k)}" placeholder="Your best guess is fine. Having a go first makes the examples easier to learn from.">${esc(st.pre||"")}</textarea>
-        <div><button class="btn primary" data-act="gwpredone" data-k="${esc(k)}">Show me the examples</button></div></div>`:`<div class="stack" style="gap:6px"><span class="eyebrow">Your first try</span><p class="starter">${esc(st.pre)}</p></div>
+        <div><button class="btn primary" data-act="gwpredone" data-k="${esc(k)}">Show me the examples</button></div></div>`:`${st.pre?`<div class="stack" style="gap:6px"><span class="eyebrow">Your first try</span><p class="starter">${esc(st.pre)}</p></div>`:""}
       <div class="stack" style="gap:6px"><span class="eyebrow">2 · Which of these shows Distinction-level thinking? (practice case)</span>
         <div class="pair">${cards.map(([id,txt],j)=>`<button class="pick ${st.pick?(id==="a"?"right":st.pick===id?"wrong":""):""}" data-act="gwpick" data-k="${esc(k)}" data-v="${id}" ${st.pick?"disabled":""}><span class="k">${"AB"[j]}</span><span>${esc(txt)}</span></button>`).join("")}</div>
         ${st.pick?`<p class="muted" style="font-size:var(--t-sm)">You picked ${st.pick===(flip?"b":"a")?"A":"B"}. Explain your choice below before you see the answer.</p>`:""}</div>
@@ -679,7 +685,7 @@ function walkthrough(u,code){
         ${st.rev?`<div class="feedback"><b>${st.pick==="a"?"You picked the stronger one.":"The other one was stronger."}</b> The weaker one falls short because ${esc(String(r.whyNearMiss||"").replace(/^[A-Z]/,c=>c.toLowerCase()))} Compare that with what you wrote.</div>`:`<div><button class="btn" data-act="gwrev" data-k="${esc(k)}">Check my reasoning</button> <span class="muted" style="font-size:var(--t-xs)">Write at least 10 words first</span></div>`}</div>`:""}
       ${st.rev&&chk.q?`<div class="stack" style="gap:6px"><span class="eyebrow">4 · Check</span><p style="font-weight:700">${esc(chk.q)}</p><div class="opts">${arr(chk.options).map((o,j)=>`<button data-act="gwchk" data-k="${esc(k)}" data-i="${j}" ${st.chk!=null?"disabled":""} class="${st.chk!=null?(j===chk.answer?"right":j===st.chk?"wrong":""):""}"><span class="k">${"ABCD"[j]}</span><span>${esc(o)}</span></button>`).join("")}</div>${st.chk!=null?`<div class="feedback"><b>${st.chk===chk.answer?"Correct.":"Not quite."}</b> ${esc(chk.why)}</div>`:""}</div>`:""}
       ${(st.chk!=null||(st.rev&&!chk.q))&&!ownWorkDone(u)?`<div class="stack" style="gap:6px"><span class="eyebrow">5 · Now your own work</span>${ownWorkGate(u)}</div>`:""}
-      ${(st.chk!=null||(st.rev&&!chk.q))&&ownWorkDone(u)?`<div class="stack" style="gap:6px"><span class="eyebrow">5 · Now your own work</span><label for="gl-${esc(k.replace(/\W/g,""))}">Where does your draft show this? Give a page, heading or paragraph.</label>
+      ${(st.chk!=null||(st.rev&&!chk.q))&&ownWorkDone(u)?`<div class="stack" style="gap:6px"><span class="eyebrow">5 · Now your own work</span><label for="gl-${esc(k.replace(/\W/g,""))}">Where does your draft show this? Give a page, heading or paragraph.${S.keepText?"":" <span class=\"muted\" style=\"font-size:var(--t-xs)\">(not saved after you close the page)</span>"}</label>
         <input type="text" id="gl-${esc(k.replace(/\W/g,""))}" data-act="gwloc" data-k="${esc(k)}" value="${esc(st.loc||"")}" placeholder="e.g. Section 2, paragraphs 3–4">
         <div class="seg" role="group" aria-label="Does your draft show this?">${[["no","Not yet"],["part","Partly"],["yes","Yes"]].map(([v,l])=>`<button data-act="gwst" data-k="${esc(k)}" data-v="${v}" aria-pressed="${st.st===v}">${l}</button>`).join("")}</div></div>`:""}
       `}
@@ -885,7 +891,7 @@ function exLong(u,e){
       ${q.context?`<div class="casebox">${esc(q.context)}</div>`:""}
       <p class="q-stem">${esc(q.q)}</p>
       ${framesPanel(q.command,"x|"+q.id)}
-      <label for="draft-${esc(q.id)}" class="eyebrow">Your answer (saved as you type)</label>
+      <label for="draft-${esc(q.id)}" class="eyebrow">Your answer ${S.keepText?"(saved as you type)":"(not saved after you close the page; turn on saving in Planner → Your privacy)"}</label>
       <textarea id="draft-${esc(q.id)}" data-act="draft" data-id="${esc(q.id)}" placeholder="Write under timed conditions first, then reveal the marking points.">${esc(draft)}</textarea>
       <div class="row" style="justify-content:space-between"><span class="wc" id="wc-${esc(q.id)}">${wordCount(draft)} words</span><button class="btn ${reveal?"":"primary"}" data-act="reveal" data-id="${esc(q.id)}">${reveal?"Hide marking guide":"Reveal marking guide"}</button></div>
       ${reveal?`<div class="stack">
@@ -1045,7 +1051,7 @@ function pilotSummary(){const L=arr(S.calLog);const t=todayISO();
   return {generated:t,daysActive:days.size,sessionRun:S.streak||0,questionsAnswered:L.length,recallByGap:recall,
     confidence:Object.fromEntries([[1,"guessing"],[2,"fairly sure"],[3,"certain"]].map(([k,l])=>[l,cal[k].n?{answered:cal[k].n,pctCorrect:Math.round(cal[k].c/cal[k].n*100)}:null])),
     walkthroughSteps:{started:gw.filter(g=>g.pre).length,explained:gw.filter(g=>g.rev).length,checkCorrect:null,mappedYes:gw.filter(g=>g.st==="yes").length,mappedPartly:gw.filter(g=>g.st==="part").length},
-    tasksTicked:Object.keys(S.tasksDone||{}).length,assignmentsInCalendar:(S.cal||[]).length,unitsGraded:Object.fromEntries(Object.entries(S.grades||{}))}}
+    tasksTicked:Object.keys(S.tasksDone||{}).length,assignmentsInCalendar:(S.cal||[]).length}}
 
 /* ---------- PLANNER ---------- */
 function weakness(u,t){const c=topicRag(u,t);const n=c.r+c.a+c.g+c.n||1;return (c.r*3+c.a*2+c.n*2+c.g*1)/n}
@@ -1085,7 +1091,7 @@ function renderPlanner(){
     <p class="muted">Add each assignment's launch and hand-in dates from your centre's assessment plan. The hub spreads five milestones between them and puts each one in your weekly tasks. If your Lead IV approves a resubmission, add the date you got the assessment decision: a resubmission has to be in within 15 working days of it. Missing a deadline without an agreed extension can rule out a resubmission.</p>
     <div class="cal-form">
       <label for="calUnit">Unit<select id="calUnit">${coachUnits().map(u=>`<option value="${u}">Unit ${u}</option>`).join("")}</select></label>
-      <label for="calName">Assignment<input type="text" id="calName" placeholder="e.g. Learning aims A and B"></label>
+      <label for="calName">Assignment<select id="calName">${["Learning aim A","Learning aim B","Learning aim C","Learning aim D","Learning aims A and B","Learning aims B and C","Learning aims C and D","Learning aims A, B and C","Whole unit","Resubmission"].map(o=>`<option>${o}</option>`).join("")}</select></label>
       <label for="calLaunch">Launch date<input type="date" id="calLaunch"></label>
       <label for="calHandin">Hand-in date<input type="date" id="calHandin"></label>
       <button class="btn primary" data-act="caladd">Add</button>
@@ -1109,13 +1115,24 @@ function renderPlanner(){
       <div class="mini-card"><h4>1 re-rating</h4><p>Update your topic ratings every Sunday so next week's plan adapts.</p></div>
     </div>
   </div>
+  <div class="panel stack" id="privacy">
+    <h3>Your privacy</h3>
+    <ul class="plain">
+      <li><b>No names, no email, no tracking.</b> The hub never asks who you are and doesn't load anything from other websites.</li>
+      <li><b>Your writing isn't saved.</b> Anything you type (practice answers, explanations, first tries, where your evidence is) stays on screen until you close or reload the page, then it's gone.</li>
+      <li><b>What is saved:</b> ticks, ratings, grades you enter, dates and quiz progress. They're kept in this browser and, if you're signed in to Claude, privately in your own account. Nobody else can see them.</li>
+      <li><b>Automatic expiry:</b> if you don't open the hub for 12 months, your saved progress is deleted the next time it loads.</li>
+      <li><b>You're in control:</b> use <b>Delete everything</b> below at any time.</li>
+    </ul>
+    <label class="inline" for="keepText"><input type="checkbox" id="keepText" data-act="keeptextbox" ${S.keepText?"checked":""}> Save my writing too, so my practice answers and notes are kept between visits. Leave this off on a shared computer.</label>
+  </div>
   <div class="panel stack">
     <h3>Backup</h3>
     <p class="muted">Signed in, your progress already saves to your account. The backup code is an extra copy: keep it somewhere safe, or paste it here and press Restore to bring progress back.</p>
-    <div class="row"><button class="btn" data-act="pilot">Copy pilot summary</button><span class="muted" style="font-size:var(--t-sm)">Numbers only (how much you remember over time, confidence, progress), never your writing. Share it with your tutor only if you want to.</span></div>
-    <div class="row"><button class="btn primary" data-act="backup">Copy backup code</button><button class="btn" data-act="restore">Restore from code</button><button class="btn ghost" data-act="resetall">Clear everything</button></div>
+    <div class="row"><button class="btn" data-act="pilot">Copy pilot summary</button><span class="muted" style="font-size:var(--t-sm)">Anonymous numbers only (how much you remember over time, confidence, progress), never your writing, grades or name. Share it with your tutor only if you want to.</span></div>
+    <div class="row"><button class="btn primary" data-act="backup">Copy backup code</button><button class="btn" data-act="restore">Restore from code</button><button class="btn ghost" data-act="resetall">Delete everything</button></div>
     <textarea id="backupBox" style="min-height:90px" placeholder="Backup code appears here, or paste one to restore" aria-label="Backup code"></textarea>
-    <div id="resetConfirm" hidden class="notice bad row"><span>This deletes all your grades, ratings and drafts in this browser.</span><button class="btn small" data-act="resetyes">Yes, clear it</button><button class="btn small ghost" data-act="resetno">Keep it</button></div>
+    <div id="resetConfirm" hidden class="notice bad row"><span>This permanently deletes all your progress from this browser and, if you're signed in, from your account.</span><button class="btn small" data-act="resetyes">Yes, clear it</button><button class="btn small ghost" data-act="resetno">Keep it</button></div>
   </div>`;
 }
 
@@ -1139,14 +1156,16 @@ document.addEventListener("click",e=>{
     case "quizexit": QZ=null; break;
     case "longpick": S["long"+S.examUnit]=Number(b.dataset.i); break;
     case "reveal": S["rev"+b.dataset.id]=!S["rev"+b.dataset.id]; break;
-    case "backup": {const code=btoa(unescape(encodeURIComponent(JSON.stringify(S))));const box=$("#backupBox");box.value=code;
+    case "backup": {const code=btoa(unescape(encodeURIComponent(JSON.stringify(storable()))));const box=$("#backupBox");box.value=code;
       const fallback=()=>{box.focus();box.select();toast("Code selected. Copy it now.")};
       try{navigator.clipboard.writeText(code).then(()=>toast("Backup code copied"),fallback)}catch(err){fallback()} return;}
     case "pilot": {const txt=JSON.stringify(pilotSummary(),null,1);const box=$("#backupBox");box.value=txt;const fb=()=>{box.focus();box.select();toast("Summary selected. Copy it now.")};try{navigator.clipboard.writeText(txt).then(()=>toast("Pilot summary copied"),fb)}catch(e){fb()}return;}
     case "restore": {try{const obj=JSON.parse(decodeURIComponent(escape(atob($("#backupBox").value.trim()))));S=Object.assign(blank(),obj);save();toast("Progress restored")}catch(err){toast("That code didn't work. Check you pasted all of it.");return} break;}
     case "resetall": $("#resetConfirm").hidden=false; return;
     case "resetno": $("#resetConfirm").hidden=true; return;
-    case "resetyes": S=blank(); save(); toast("Cleared"); break;
+    case "resetyes": {S=blank();try{localStorage.removeItem(KEY);localStorage.removeItem("hsc-fs");localStorage.removeItem("hsc-ls")}catch(e){}
+      if(CLOUD.ref){CLOUD.ref.delete().then(()=>toast("Deleted from this browser and your account"),()=>toast("Deleted here. Couldn't reach your account, so try again when you're online"))}else toast("Deleted from this browser");
+      render();return;}
     case "gwopen": S.gwOpen=b.dataset.k; S.gwStep=0; break;
     case "gwclose": S.gwOpen=null; break;
     case "gwstep": S.gwStep=Number(b.dataset.i); break;
@@ -1168,7 +1187,7 @@ document.addEventListener("click",e=>{
     case "dailyextra": {const D=S.daily;const t=todayISO();const rest=allMCQ().filter(q=>!D.ids.includes(q.id)).sort((a,b)=>((S.srs[a.id]||{due:"0"}).due<(S.srs[b.id]||{due:"0"}).due?-1:1));D.ids.push(...interleave(rest.slice(0,6)).map(q=>q.id));break;}
     case "gotab": setTab(b.dataset.t,true); return;
     case "go": {const [tab,u,sub]=b.dataset.g.split(",");S.examUnit=Number(u);S.examSub=sub;QZ=null;setTab(tab,true);return;}
-    case "caladd": {const h=$("#calHandin").value;if(!h){toast("Add a hand-in date");return}S.cal.push({id:"c"+Date.now().toString(36),u:Number($("#calUnit").value),name:$("#calName").value.trim()||"Assignment",launch:$("#calLaunch").value,handin:h,decision:""});toast("Added to your calendar");break;}
+    case "caladd": {const h=$("#calHandin").value;if(!h){toast("Add a hand-in date");return}S.cal.push({id:"c"+Date.now().toString(36),u:Number($("#calUnit").value),name:$("#calName").value||"Assignment",launch:$("#calLaunch").value,handin:h,decision:""});toast("Added to your calendar");break;}
     case "caldel": S.cal=S.cal.filter(c=>c.id!==b.dataset.id); break;
     case "ics": {try{const blob=new Blob([icsText()],{type:"text/calendar"});const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="hsc-dstar-calendar.ics";document.body.appendChild(a);a.click();a.remove()}catch(e){toast("Download didn't start in this browser")}return;}
     default: return;
@@ -1189,6 +1208,7 @@ document.addEventListener("change",e=>{
     case "dailycap": S.dailyCap=Number(el.value); break;
     case "task": if(el.checked)S.tasksDone[el.dataset.k]=1; else delete S.tasksDone[el.dataset.k]; break;
     case "ownwork": {S.ownWork=S.ownWork||{};const a=new Set(S.ownWork[u]||[]);const i=Number(el.dataset.i);el.checked?a.add(i):a.delete(i);S.ownWork[u]=[...a];break;}
+    case "keeptextbox": S.keepText=el.checked; break;
     case "caldec": {const c=S.cal.find(c=>c.id===el.dataset.id);if(c)c.decision=el.value;break;}
     case "bound": {const k=el.dataset.k;const v=Number(el.value);if(!isNaN(v))S.bounds[u][k]=v;break;}
     case "mark": S.marks[u]=el.value===""?null:Number(el.value); break;

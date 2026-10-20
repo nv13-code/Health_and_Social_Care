@@ -20,6 +20,9 @@
 2. Work through each **Guided walkthrough**. The examples use a made-up case on purpose. Learn the thinking, then write about your own brief in your own words.
 3. Before you hand in, complete the **evidence map**: every requirement should say *Yes*, with a place in your work you could show your tutor.
 
+## Your privacy
+The hub never asks your name and doesn't track you. What you type isn't saved: it disappears when you close the page, unless you turn on **Save my writing** in Planner → Your privacy. Your ticks and quiz progress are saved privately for you only. **Delete everything** removes them.
+
 ## Keep it honest
 The hub never writes your assignment, and nothing you type in it is read by anyone. Don't paste its examples, or anything an AI writes, into your work. You sign a declaration that the work is yours.
 

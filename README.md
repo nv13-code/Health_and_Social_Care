@@ -13,7 +13,10 @@ Open `index.html` in a browser, or host it on GitHub Pages or SciencePass. It's 
 - **Assessment calendar.** Launch and hand-in dates generate five milestones per assignment. Adding the date of an assessment decision works out the 15-working-day resubmission deadline. Events can be added to Google Calendar, and outside Claude the full calendar downloads as an .ics file with a daily 5pm quiz reminder.
 - **Planner.** Exam countdowns, a weekly revision plan that adapts to topic ratings, internal deadlines and backup codes.
 
-Progress saves privately to the viewer's claude.ai account when the hub is published as an artifact with the `db` and `user` capabilities. Otherwise it is kept in browser localStorage, and a backup code is available as an extra copy.
+Structured progress (never free text, unless the student opts in) saves privately to the viewer's claude.ai account when the hub is published as an artifact with the `db` and `user` capabilities. Otherwise it is kept in browser localStorage, and a backup code is available as an extra copy.
+
+## Privacy
+No personal information is retained. Free text isn't stored by default, there are no outside requests (fonts are bundled), saved progress expires after 12 months without use, and students can delete everything. See `PRIVACY.md`.
 
 ## Editing
 - `data/criteria.json` holds the learning aims and assessment criteria taken from the spec.
