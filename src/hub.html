@@ -58,6 +58,10 @@ header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;backgroun
 .cells i.over{background:var(--ink);border-color:var(--ink)}
 .cells.big{width:100%;gap:4px}
 .cells.big i{height:34px;border-radius:4px}
+.sync{font-family:var(--f-mono);font-size:var(--t-xs);padding:2px 8px;border-radius:999px;border:1px solid var(--line);color:var(--muted);white-space:nowrap}
+.sync[data-state="saved"]{color:var(--green);border-color:var(--green)}
+.sync[data-state="saving"]{color:var(--amber);border-color:var(--amber)}
+.sync[data-state="error"]{color:var(--red);border-color:var(--red)}
 .proj-pill{font-family:var(--f-mono);font-weight:600;font-size:var(--t-sm);padding:2px 10px;border-radius:999px;background:var(--accent-soft);color:var(--accent);white-space:nowrap}
 nav.tabs{display:flex;gap:var(--s1);overflow-x:auto;scrollbar-width:none}
 nav.tabs::-webkit-scrollbar{display:none}
@@ -260,6 +264,7 @@ details.more>summary{cursor:pointer;font-weight:700}
         <span class="eyebrow">Points you can still lose</span>
         <div class="cells" id="miniCells" aria-hidden="true"></div>
         <span class="proj-pill" id="miniProj">D*D*D*</span>
+        <span class="sync" id="syncPill" data-state="local">Saved in this browser</span>
       </div>
     </div>
     <nav class="tabs" role="tablist" aria-label="Sections">
@@ -279,7 +284,7 @@ details.more>summary{cursor:pointer;font-weight:700}
 </main>
 <footer><div class="wrap stack">
   <p>Built from the Pearson BTEC Level 3 National Extended Diploma in Health and Social Care specification (Issue 10, June 2022). Default exam grade boundaries are from Pearson's June 2026 series. Boundaries change every series, so treat the points from raw marks as estimates. Your teacher's assessment decisions and Pearson's results are what count.</p>
-  <p>Progress is saved in this browser only. Use <b>Backup</b> in the Planner tab to move it to another device.</p>
+  <p>When you open this page signed in to claude.ai, your progress saves privately to your account and follows you between devices. Nobody else can see it, including the page's owner. A copy also stays in this browser. <b>Backup</b> in the Planner tab gives you a code you can keep as an extra copy.</p>
 </div></footer>
 <div class="toast" id="toast" hidden></div>
 
@@ -336,7 +341,38 @@ const KEY = "hsc-dstar-v1";
 function blank(){return {pathway:"standard",opt:[],grades:{},marks:{},extMode:{},bounds:JSON.parse(JSON.stringify(DEFAULT_BOUNDS)),status:{},checks:{},rag:{},quiz:{},drafts:{},selfmark:{},dates:{},deadlines:[],tab:"points",coachUnit:5,examUnit:1,examSub:"overview"}}
 let S = blank();
 try{const raw=localStorage.getItem(KEY); if(raw){S=Object.assign(blank(),JSON.parse(raw));}}catch(e){}
-function save(){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}}
+function save(){S._t=Date.now();try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}cloudQueue()}
+
+/* ---------- Account sync (claude.ai artifact db; private to the signed-in viewer) ---------- */
+const CLOUD={ref:null,state:"local",timer:null,busy:false,again:false};
+function syncLabel(){const el=document.getElementById("syncPill");if(!el)return;
+  const m={local:["Saved in this browser","Not signed in to an account, so progress stays on this device"],saving:["Saving…","Saving to your account"],saved:["Saved to your account","Progress follows you to any device where you're signed in"],error:["Not saved to account","Couldn't reach your account. Progress is kept in this browser and will retry"],readonly:["Saved in this browser","You can view this page but not save to it. Ask the owner for Contributor access"]}[CLOUD.state];
+  el.textContent=m[0];el.title=m[1];el.dataset.state=CLOUD.state}
+function cloudQueue(){if(!CLOUD.ref)return;clearTimeout(CLOUD.timer);CLOUD.timer=setTimeout(cloudPush,1200)}
+async function cloudPush(){if(!CLOUD.ref)return;if(CLOUD.busy){CLOUD.again=true;return}
+  CLOUD.busy=true;CLOUD.state="saving";syncLabel();
+  try{await CLOUD.ref.set({v:1,updatedAt:S._t||Date.now(),json:JSON.stringify(S)});CLOUD.state="saved"}
+  catch(e){const c=e&&e.code;
+    if(c==="invalid_argument"){CLOUD.state="readonly";CLOUD.ref=null}
+    else if(c==="quota_exceeded"){CLOUD.state="error";toast("Your account storage is full. Clear long drafts or old ones to keep saving.")}
+    else{CLOUD.state="error";setTimeout(cloudQueue,8000)}}
+  CLOUD.busy=false;syncLabel();if(CLOUD.again){CLOUD.again=false;cloudQueue()}}
+async function cloudInit(){
+  try{
+    if(!window.claude||!window.claude.use)return syncLabel();
+    const [db,user]=await Promise.all([window.claude.use("db"),window.claude.use("user")]);
+    if(!db||!user)return syncLabel();
+    const id=await user.id(); if(!id)return syncLabel();
+    const ref=db.collection("data/users/"+id).doc("progress");
+    const snap=await ref.get();
+    const d=snap.exists?snap.data():null;
+    if(d&&typeof d.json==="string"&&(Number(d.updatedAt)||0)>(S._t||0)){
+      try{S=Object.assign(blank(),JSON.parse(d.json));try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){};render();toast("Progress loaded from your account")}catch(e){}
+    }
+    CLOUD.ref=ref;CLOUD.state="saved";syncLabel();
+    if(!d||(S._t||0)>(Number(d.updatedAt)||0))cloudPush();
+  }catch(e){CLOUD.state="error";syncLabel()}
+}
 
 /* ---------- Helpers ---------- */
 const $ = (s,el=document)=>el.querySelector(s);
@@ -378,7 +414,7 @@ function calc(){
       else { if(r.grade==="U"&&MAND_INT.includes(u))issues.push(`Unit ${u} is mandatory and needs at least a Pass.`); if(r.grade!=="U")glhPass+=UNITS[u].glh } }
     else glhPass+=UNITS[u].glh;
   });
-  const slots=5-S.opt.length; projected+=slots*16; // empty optional slots assumed at D
+  const slots=5-S.opt.length; projected+=slots*16; glhPass+=slots*60; // empty optional slots assumed at D
   if(glhPass<900)issues.push("At least 900 GLH must be at Pass or above (Near Pass or above for exams).");
   const grade=(THRESH.find(t=>projected>=t[0])||THRESH[THRESH.length-1])[1];
   return{banked,projected,lost,setCount,grade,issues,left:BUDGET-lost};
@@ -771,7 +807,7 @@ function renderPlanner(){
   </div>
   <div class="panel stack">
     <h3>Backup</h3>
-    <p class="muted">Your progress lives in this browser. Copy the backup code to keep it safe or move it to another device, then paste it there and press Restore.</p>
+    <p class="muted">Signed in, your progress already saves to your account. The backup code is an extra copy: keep it somewhere safe, or paste it here and press Restore to bring progress back.</p>
     <div class="row"><button class="btn primary" data-act="backup">Copy backup code</button><button class="btn" data-act="restore">Restore from code</button><button class="btn ghost" data-act="resetall">Clear everything</button></div>
     <textarea id="backupBox" style="min-height:90px" placeholder="Backup code appears here, or paste one to restore" aria-label="Backup code"></textarea>
     <div id="resetConfirm" hidden class="notice bad row"><span>This deletes all your grades, ratings and drafts in this browser.</span><button class="btn small" data-act="resetyes">Yes, clear it</button><button class="btn small ghost" data-act="resetno">Keep it</button></div>
@@ -834,4 +870,5 @@ document.addEventListener("toggle",e=>{const d=e.target;if(d.matches&&d.matches(
 /* ---------- Boot ---------- */
 const startTab=(location.hash||"").replace("#","");
 setTab(TABS.includes(startTab)?startTab:(S.tab||"points"));
+syncLabel(); cloudInit();
 </script>
