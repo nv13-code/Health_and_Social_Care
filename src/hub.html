@@ -364,7 +364,7 @@ const VERBS = {
 
 /* ---------- State ---------- */
 const KEY = "hsc-dstar-v1";
-function blank(){return {pathway:"standard",opt:[],grades:{},marks:{},extMode:{},bounds:JSON.parse(JSON.stringify(DEFAULT_BOUNDS)),status:{},checks:{},rag:{},quiz:{},drafts:{},selfmark:{},dates:{},deadlines:[],tab:"today",coachUnit:5,srs:{},calib:{1:{n:0,c:0},2:{n:0,c:0},3:{n:0,c:0}},daily:null,dailyCap:12,streak:0,lastDone:"",cal:[],tasksDone:{},guide:{},examUnit:1,examSub:"overview"}}
+function blank(){return {pathway:"standard",opt:[],grades:{},marks:{},extMode:{},bounds:JSON.parse(JSON.stringify(DEFAULT_BOUNDS)),status:{},checks:{},rag:{},quiz:{},drafts:{},selfmark:{},dates:{},deadlines:[],tab:"today",coachUnit:5,srs:{},calib:{1:{n:0,c:0},2:{n:0,c:0},3:{n:0,c:0}},daily:null,dailyCap:15,calLog:[],streak:0,lastDone:"",cal:[],tasksDone:{},guide:{},examUnit:1,examSub:"overview"}}
 let S = blank();
 try{const raw=localStorage.getItem(KEY); if(raw){S=Object.assign(blank(),JSON.parse(raw));}}catch(e){}
 function save(){S._t=Date.now();try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}cloudQueue()}
@@ -605,13 +605,14 @@ function walkthrough(u,code){
         <p>${esc(r.means)}</p><p class="muted" style="font-size:var(--t-sm)"><b>From the spec's assessment guidance:</b> ${esc(r.fromSpec)}</p></div>
       <div class="stack" style="gap:6px"><span class="eyebrow">1 · Which of these shows Distinction-level thinking? (practice case)</span>
         <div class="pair">${cards.map(([id,txt],j)=>`<button class="pick ${st.pick?(id==="a"?"right":st.pick===id?"wrong":""):""}" data-act="gwpick" data-k="${esc(k)}" data-v="${id}" ${st.pick?"disabled":""}><span class="k">${"AB"[j]}</span><span>${esc(txt)}</span></button>`).join("")}</div>
-        ${st.pick?`<div class="feedback"><b>${st.pick==="a"?"Yes.":"Look again."}</b> The weaker one falls short because ${esc(String(r.whyNearMiss||"").replace(/^[A-Z]/,c=>c.toLowerCase()))}</div>`:""}</div>
-      <div class="stack" style="gap:6px"><label class="eyebrow" for="gx-${esc(k.replace(/\W/g,""))}">2 · Explain it in your own words</label><p>${esc(r.explainPrompt)}</p>
-        <textarea id="gx-${esc(k.replace(/\W/g,""))}" style="min-height:90px" data-act="gwexp" data-k="${esc(k)}" placeholder="Writing your explanation is what makes it stick.">${esc(st.exp||"")}</textarea></div>
-      ${chk.q?`<div class="stack" style="gap:6px"><span class="eyebrow">3 · Check</span><p style="font-weight:700">${esc(chk.q)}</p><div class="opts">${arr(chk.options).map((o,j)=>`<button data-act="gwchk" data-k="${esc(k)}" data-i="${j}" ${st.chk!=null?"disabled":""} class="${st.chk!=null?(j===chk.answer?"right":j===st.chk?"wrong":""):""}"><span class="k">${"ABCD"[j]}</span><span>${esc(o)}</span></button>`).join("")}</div>${st.chk!=null?`<div class="feedback"><b>${st.chk===chk.answer?"Correct.":"Not quite."}</b> ${esc(chk.why)}</div>`:""}</div>`:""}
-      <div class="stack" style="gap:6px"><span class="eyebrow">4 · Now your own work</span><label for="gl-${esc(k.replace(/\W/g,""))}">Where does your draft show this? Give a page, heading or paragraph.</label>
+        ${st.pick?`<p class="muted" style="font-size:var(--t-sm)">You picked ${st.pick===(flip?"b":"a")?"A":"B"}. Explain your choice below before you see the answer.</p>`:""}</div>
+      ${st.pick?`<div class="stack" style="gap:6px"><label class="eyebrow" for="gx-${esc(k.replace(/\W/g,""))}">2 · Explain it in your own words</label><p>${esc(r.explainPrompt)}</p>
+        <textarea id="gx-${esc(k.replace(/\W/g,""))}" style="min-height:90px" data-act="gwexp" data-k="${esc(k)}" placeholder="At least a sentence or two. Writing it is what makes it stick.">${esc(st.exp||"")}</textarea>
+        ${st.rev?`<div class="feedback"><b>${st.pick==="a"?"You picked the stronger one.":"The other one was stronger."}</b> The weaker one falls short because ${esc(String(r.whyNearMiss||"").replace(/^[A-Z]/,c=>c.toLowerCase()))} Compare that with what you wrote.</div>`:`<div><button class="btn" data-act="gwrev" data-k="${esc(k)}">Check my reasoning</button> <span class="muted" style="font-size:var(--t-xs)">Write at least 10 words first</span></div>`}</div>`:""}
+      ${st.rev&&chk.q?`<div class="stack" style="gap:6px"><span class="eyebrow">3 · Check</span><p style="font-weight:700">${esc(chk.q)}</p><div class="opts">${arr(chk.options).map((o,j)=>`<button data-act="gwchk" data-k="${esc(k)}" data-i="${j}" ${st.chk!=null?"disabled":""} class="${st.chk!=null?(j===chk.answer?"right":j===st.chk?"wrong":""):""}"><span class="k">${"ABCD"[j]}</span><span>${esc(o)}</span></button>`).join("")}</div>${st.chk!=null?`<div class="feedback"><b>${st.chk===chk.answer?"Correct.":"Not quite."}</b> ${esc(chk.why)}</div>`:""}</div>`:""}
+      ${st.chk!=null||(st.rev&&!chk.q)?`<div class="stack" style="gap:6px"><span class="eyebrow">4 · Now your own work</span><label for="gl-${esc(k.replace(/\W/g,""))}">Where does your draft show this? Give a page, heading or paragraph.</label>
         <input type="text" id="gl-${esc(k.replace(/\W/g,""))}" data-act="gwloc" data-k="${esc(k)}" value="${esc(st.loc||"")}" placeholder="e.g. Section 2, paragraphs 3–4">
-        <div class="seg" role="group" aria-label="Does your draft show this?">${[["no","Not yet"],["part","Partly"],["yes","Yes"]].map(([v,l])=>`<button data-act="gwst" data-k="${esc(k)}" data-v="${v}" aria-pressed="${st.st===v}">${l}</button>`).join("")}</div></div>
+        <div class="seg" role="group" aria-label="Does your draft show this?">${[["no","Not yet"],["part","Partly"],["yes","Yes"]].map(([v,l])=>`<button data-act="gwst" data-k="${esc(k)}" data-v="${v}" aria-pressed="${st.st===v}">${l}</button>`).join("")}</div></div>`:""}
       <div class="row"><button class="btn" data-act="gwstep" data-i="${Math.max(0,step-1)}" ${step===0?"disabled":""}>Back</button><button class="btn primary" data-act="gwstep" data-i="${step+1}">${step+1<n?"Next step":"See evidence map"}</button></div>
     </div>`;
   }
@@ -843,17 +844,27 @@ function weakFirst(q){const e=exam(q.unit);const t=arr(e&&e.topics).find(t=>t.id
 function buildDaily(force){
   const t=todayISO(); S.srs=S.srs||{};
   if(!force&&S.daily&&S.daily.date===t)return S.daily;
-  const cap=Number(S.dailyCap)||12; const qs=allMCQ();
+  const cap=Number(S.dailyCap)||15; const qs=allMCQ();
   const due=qs.filter(q=>S.srs[q.id]&&S.srs[q.id].due<=t).sort((a,b)=>S.srs[a.id].due<S.srs[b.id].due?-1:S.srs[a.id].box-S.srs[b.id].box);
   const fresh=qs.filter(q=>!S.srs[q.id]).sort((a,b)=>weakFirst(a)-weakFirst(b)||Math.random()-.5);
-  const pick=due.slice(0,cap); const room=Math.min(cap-pick.length,Math.max(4,cap-due.length));
-  pick.push(...interleave(fresh).slice(0,Math.max(0,room)));
+  // reserve 4 new slots each day (fewer if the backlog is large), most-overdue reviews first
+  const newSlots=Math.min(fresh.length,due.length>cap*2?2:4); const pick=due.slice(0,cap-newSlots);
+  pick.push(...interleave(fresh).slice(0,cap-pick.length));
   S.daily={date:t,ids:interleave(pick).map(q=>q.id),i:0,res:[],requeued:[],conf:null,picked:null};
   return S.daily;
 }
+function examCapDays(u){const d=S.dates[u];if(!d)return null;const n=dayDiff(todayISO(),d);return n>0?n:null}
 function srsAnswer(q,ok,conf){
-  const t=todayISO(); const s=S.srs[q.id]||{box:0,seen:0};
-  s.seen++; s.box=ok?Math.min(5,s.box+1):1; s.due=addDays(t,ok?BOX_DAYS[s.box]:1); S.srs[q.id]=s;
+  const t=todayISO(); const s=S.srs[q.id]||{box:0,seen:0}; const early=s.due&&s.due>t;
+  s.seen++;
+  if(!ok){s.box=1;s.due=addDays(t,1);if(conf===3)s.flag=t}
+  else if(early){/* reviewed before it was due: keep the schedule */}
+  else if(conf===1){s.box=Math.max(1,s.box);s.due=addDays(t,1)} // a lucky guess isn't learning yet
+  else{s.box=Math.min(5,s.box+1);let gap=BOX_DAYS[s.box];const left=examCapDays(q.unit);
+    if(left){gap=Math.min(gap,Math.max(1,Math.round(left*0.15)));if(left>3&&dayDiff(t,addDays(t,gap))>left-3)gap=left-3}
+    s.due=addDays(t,gap)}
+  S.srs[q.id]=s;
+  S.calLog=(S.calLog||[]).filter(e=>dayDiff(e.d,t)<=60); S.calLog.push({d:t,c:conf,ok,u:q.unit,tp:q.topic});
   const k=S.quiz[q.id]||{n:0,c:0};k.n++;if(ok)k.c++;k.last=ok;S.quiz[q.id]=k;
   S.calib=S.calib||{1:{n:0,c:0},2:{n:0,c:0},3:{n:0,c:0}}; S.calib[conf].n++; if(ok)S.calib[conf].c++;
 }
@@ -891,12 +902,15 @@ function icsText(){const esc_=s=>String(s).replace(/[\\,;]/g,m=>"\\"+m).replace(
 function renderToday(){
   migrateCal(); const D=buildDaily(); const t=todayISO();
   const total=D.ids.length, i=D.i, q=i<total?mcqById(D.ids[i]):null;
-  const cb=S.calib||{1:{n:0,c:0},2:{n:0,c:0},3:{n:0,c:0}}; const pct=k=>cb[k].n?Math.round(cb[k].c/cb[k].n*100):null;
+  const recent=arr(S.calLog).filter(e=>dayDiff(e.d,t)<7); const cb={1:{n:0,c:0},2:{n:0,c:0},3:{n:0,c:0}}; recent.forEach(e=>{cb[e.c].n++;if(e.ok)cb[e.c].c++});
+  const pct=k=>cb[k].n?Math.round(cb[k].c/cb[k].n*100):null;
+  const watch={};arr(S.calLog).filter(e=>e.c===3&&!e.ok&&dayDiff(e.d,t)<14).forEach(e=>{const k=e.u+"|"+e.tp;watch[k]=(watch[k]||0)+1});
+  const watchList=Object.entries(watch).sort((a,b)=>b[1]-a[1]).slice(0,5).map(([k,n])=>{const [u,tp]=k.split("|");const tt=arr(exam(Number(u))&&exam(Number(u)).topics).find(x=>x.id===tp);return `Unit ${u} ${tp}${tt?" "+tt.title:""} (${n})`});
   const boxes=[0,0,0,0,0,0]; allMCQ().forEach(x=>{const s=S.srs&&S.srs[x.id];boxes[s?s.box:0]++});
   const tasks=weekTasks(); const cl=clashes();
   let quiz;
   if(!total) quiz=`<p class="muted">No questions yet.</p>`;
-  else if(!q){ quiz=`<div class="stack"><h3>Done for today: ${D.res.filter(Boolean).length}/${D.res.length}</h3><div class="progress-dots">${D.res.map(r=>`<i class="${r?"ok":"no"}"></i>`).join("")}</div><p>Questions you got right come back in ${BOX_DAYS.slice(1).join(", ")} days as you keep getting them right. Ones you missed come back tomorrow.</p><div><button class="btn" data-act="dailyextra">Six more questions</button></div></div>`; }
+  else if(!q){ quiz=`<div class="stack"><h3>Done for today: ${D.res.filter(Boolean).length}/${D.res.length}</h3><div class="progress-dots">${D.res.map(r=>`<i class="${r?"ok":"no"}"></i>`).join("")}</div><p>Ones you missed or guessed come back tomorrow. Ones you knew come back after longer and longer gaps.</p><div><button class="btn" data-act="dailyextra">Six more questions</button></div></div>`; }
   else { const conf=D.conf, picked=D.picked;
     quiz=`<div class="q-card">
       <div class="row" style="justify-content:space-between"><span class="eyebrow">Question ${i+1} of ${total} · Unit ${q.unit} · ${esc(q.topic)}</span><div class="progress-dots">${D.ids.map((_,k)=>`<i class="${k<D.res.length?(D.res[k]?"ok":"no"):""} ${k===i?"now":""}"></i>`).join("")}</div></div>
@@ -911,19 +925,20 @@ function renderToday(){
   <div class="split2">
     <div class="panel stack" style="min-width:0">
       <div class="row" style="justify-content:space-between"><h3>Daily retrieval · about 15 minutes</h3>
-        <label class="inline muted" style="font-size:var(--t-sm)">Questions a day <select id="dailyCap" data-act="dailycap">${[8,12,16,20].map(n=>`<option ${Number(S.dailyCap||12)===n?"selected":""}>${n}</option>`).join("")}</select></label></div>
+        <label class="inline muted" style="font-size:var(--t-sm)">Questions a day <select id="dailyCap" data-act="dailycap">${[10,15,20,25].map(n=>`<option ${Number(S.dailyCap||15)===n?"selected":""}>${n}</option>`).join("")}</select></label></div>
       ${quiz}
     </div>
     <div class="stack" style="min-width:0">
       <div class="panel stack">
-        <h3>How sure vs how right</h3>
-        ${[3,2,1].map(k=>`<div class="calib"><span>${["","Guessing","Fairly sure","Certain"][k]}</span><span class="meter"><span style="width:${pct(k)??0}%"></span></span><span class="mono">${pct(k)==null?"–":pct(k)+"%"}</span></div>`).join("")}
+        <h3>How sure vs how right <span class="muted" style="font-size:var(--t-sm);font-weight:400">· last 7 days</span></h3>
+        ${[3,2,1].map(k=>`<div class="calib"><span>${["","Guessing","Fairly sure","Certain"][k]}</span><span class="meter"><span style="width:${pct(k)??0}%"></span></span><span class="mono">${pct(k)==null?"–":`${cb[k].c}/${cb[k].n}`}</span></div>`).join("")}
+        ${watchList.length?`<div class="stack" style="gap:4px"><span class="eyebrow">Certain but wrong · last 14 days</span><ul class="plain" style="font-size:var(--t-sm)">${watchList.map(w=>`<li>${esc(w)}</li>`).join("")}</ul></div>`:""}
         <p class="muted" style="font-size:var(--t-sm)">${cb[3].n>=5&&pct(3)<85?"You're often wrong when you feel certain. Slow down on those topics and check the reasoning, not just the answer.":cb[1].n>=5&&pct(1)>60?"You know more than you think when you guess. Trust your first reasoning a bit more.":"Rate your confidence honestly. The gap between feeling sure and being right is what this tracks."}</p>
       </div>
       <div class="panel stack">
         <h3>Memory strength</h3>
         <div class="boxes">${boxes.map((n,k)=>`<div><span class="bn mono">${n}</span><span class="bl">${k===0?"Not seen":k===5?"Secure":"Box "+k}</span></div>`).join("")}</div>
-        <p class="muted" style="font-size:var(--t-sm)">${allMCQ().length} questions across Units 1–4. Each right answer moves a question up a box and pushes it further away: 1, 3, 7, 14, then 30 days.</p>
+        <p class="muted" style="font-size:var(--t-sm)">${allMCQ().length} questions across Units 1–4. Each right answer you were sure of moves a question up a box and pushes it further away: 1, 3, 7, 14, then 30 days. Gaps shrink as an exam gets close, and everything comes back once more three days before it. A lucky guess doesn't move a question up.</p>
       </div>
     </div>
   </div>
@@ -1036,10 +1051,11 @@ document.addEventListener("click",e=>{
     case "gwclose": S.gwOpen=null; break;
     case "gwstep": S.gwStep=Number(b.dataset.i); break;
     case "gwpick": gState(b.dataset.k).pick=b.dataset.v; break;
+    case "gwrev": {const st=gState(b.dataset.k);if(wordCount(st.exp)<10){toast("Write at least 10 words first");return}st.rev=true;break;}
     case "gwchk": gState(b.dataset.k).chk=Number(b.dataset.i); break;
     case "gwst": gState(b.dataset.k).st=b.dataset.v; break;
     case "conf": S.daily.conf=Number(b.dataset.c); break;
-    case "danswer": {const D=S.daily;if(D.picked!=null)return;const q=mcqById(D.ids[D.i]);const k=Number(b.dataset.i);D.picked=k;const ok=k===q.answer;D.res.push(ok);srsAnswer(q,ok,D.conf);if(!ok&&!D.requeued.includes(q.id)){D.requeued.push(q.id);D.ids.push(q.id)}break;}
+    case "danswer": {const D=S.daily;if(D.picked!=null)return;const q=mcqById(D.ids[D.i]);const k=Number(b.dataset.i);D.picked=k;const ok=k===q.answer;D.res.push(ok);const first=D.ids.indexOf(q.id)===D.i;if(first)srsAnswer(q,ok,D.conf);if(!ok&&!D.requeued.includes(q.id)){D.requeued.push(q.id);D.ids.push(q.id)}break;}
     case "dnext": {const D=S.daily;D.i++;D.conf=null;D.picked=null;if(D.i>=D.ids.length)finishDaily();break;}
     case "dailyextra": {const D=S.daily;const t=todayISO();const rest=allMCQ().filter(q=>!D.ids.includes(q.id)).sort((a,b)=>((S.srs[a.id]||{due:"0"}).due<(S.srs[b.id]||{due:"0"}).due?-1:1));D.ids.push(...interleave(rest.slice(0,6)).map(q=>q.id));break;}
     case "gotab": setTab(b.dataset.t,true); return;
