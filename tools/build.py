@@ -63,6 +63,51 @@ def check_currency(reg):
     return errors, warnings
 
 
+def iter_items():
+    """Yield (label, question dict) for every multiple-choice item in content."""
+    for u in (1, 2, 3, 4):
+        e = load(f"content/exam_u{u}.json") or {}
+        for q in e.get("mcq", []):
+            yield f"exam_u{u}:{q.get('id')}", {"options": q.get("options"), "answer": q.get("answer")}
+    for name in ("guide_a", "guide_b", "guide_c"):
+        g = load(f"content/{name}.json") or {}
+        for unit, ud in g.items():
+            for code, c in ud.get("criteria", {}).items():
+                for i, r in enumerate(c.get("requirements", [])):
+                    ch = r.get("check") or {}
+                    yield f"{name}:{unit}:{code}:{i}", {"options": ch.get("options"), "answer": ch.get("answer")}
+
+
+def check_items():
+    """Structural checks on every question, plus cue checks (key is the longest option, position bias)."""
+    errors, warnings = [], []
+    n = longest = 0
+    pos = [0, 0, 0, 0]
+    for label, q in iter_items():
+        opts, a = q["options"], q["answer"]
+        if not isinstance(opts, list) or len(opts) != 4 or not all(isinstance(o, str) and o.strip() for o in opts):
+            errors.append(f"{label}: needs exactly 4 non-empty options")
+            continue
+        if not isinstance(a, int) or not 0 <= a <= 3:
+            errors.append(f"{label}: answer must be 0-3")
+            continue
+        if len(set(o.strip().lower() for o in opts)) < 4:
+            errors.append(f"{label}: duplicate options")
+        n += 1
+        pos[a] += 1
+        lens = [len(o) for o in opts]
+        if lens[a] == max(lens) and lens[a] > 1.15 * sorted(lens)[-2]:
+            longest += 1
+    if n:
+        rate = longest / n
+        msg = f"key is clearly the longest option in {longest}/{n} questions ({rate:.0%})"
+        (warnings if rate > 0.25 else []).append("CUE " + msg)
+        print("question check:", msg, "| answer positions", pos)
+        if max(pos) > 0.4 * n:
+            warnings.append(f"CUE answer position bias {pos}")
+    return errors, warnings
+
+
 def write_sv_doc(reg):
     rows = [e for e in reg["entries"] if e["sv"]]
     rows.sort(key=lambda e: (min(e["units"]) if e["units"] else 99))
@@ -98,6 +143,9 @@ def main():
     strict = "--strict" in sys.argv
     reg = load("data/currency.json")
     errors, warnings = check_currency(reg)
+    qe, qw = check_items()
+    errors += qe
+    warnings += qw
     for w in warnings:
         print("warning:", w)
     for e in errors:
