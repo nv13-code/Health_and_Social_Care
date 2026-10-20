@@ -12,19 +12,19 @@
       "fromSpec": "Evaluate long-term effects on the individual, family and society, reaching reasoned and valid judgements.",
       "means": "Evaluate means weighing up which effects matter most and for whom, then saying so. A description of effects on three groups is only the first step.",
       "example": "For Wren, the diagnosis matters most to her own language and friendships. In the short term the family feels it hardest because of lost work hours and ferry trips. Society's share, mainly education and health costs, is smaller but lasts the longest.",
-      "nearMiss": "Wren's hearing loss affects her, her family and society. Her mum has cut her hours and the school needs extra support.",
-      "whyNearMiss": "It lists effects on each group but never judges which is most significant or why.",
+      "nearMiss": "Wren's diagnosis affects her language and friendships, her family through her mother's reduced hours and ferry trips to the mainland, and society through education and health costs. Each group faces different effects.",
+      "whyNearMiss": "It covers all three groups with accurate detail from the case, but gives them equal weight and never judges which is most significant or why.",
       "explainPrompt": "Why does the example rank the effects instead of just listing them? What would be lost if it simply said 'it affects everyone'?",
       "check": {
-       "q": "Which sentence is an evaluative judgement about Wren's diagnosis?",
+       "q": "Which sentence makes an evaluative judgement about the significance of Wren's diagnosis?",
        "options": [
-        "Wren was diagnosed at age three and wears hearing aids.",
-        "Her mother works fewer hours and travels to the mainland.",
-        "The family feels the diagnosis hardest in the short term, but society's costs last longest.",
-        "A teacher of the deaf visits the school weekly."
+        "Wren's diagnosis affects Wren, her family and society, and each group has different needs.",
+        "Wren's diagnosis led to hearing aids, a weekly teacher of the deaf and an EHC plan for her.",
+        "Wren's diagnosis is significant, because severe hearing loss in both ears is a serious condition.",
+        "The family feels the diagnosis hardest in the short term, but society's costs last longest."
        ],
-       "answer": 2,
-       "why": "Only the correct option weighs effects against each other and gives a reason; the others are facts."
+       "answer": 3,
+       "why": "The key weighs the groups against each other and over time, which is a judgement. The tempting option covers all three groups but never says which matters most, which is the Merit-level trap of analysis without a verdict."
       }
      },
      {
@@ -32,19 +32,19 @@
       "fromSpec": "Consider emotional, physical, social, intellectual and financial impact on the individual, family and society.",
       "means": "Make sure none of the five types of impact is missing. Where one does not apply, say why in a few words.",
       "example": "Desmond's tiredness limits what he can do (physical), and forgetting appointments feeds his frustration (emotional). The cost to society is mainly financial, through his budget, while his daughter carries unpaid time as well as worry.",
-      "nearMiss": "Desmond finds life harder because of his injury and it is expensive for everyone.",
-      "whyNearMiss": "'Harder' and 'expensive' are vague; the types of impact are not named or linked to Desmond's actual situation.",
+      "nearMiss": "Desmond's tiredness limits what he can do (physical), forgetting appointments frustrates him (emotional) and planning his day is hard (intellectual). His support worker costs money (financial).",
+      "whyNearMiss": "It names several types of impact accurately for Desmond, but never covers his daughter or society, so the three groups are not all addressed.",
       "explainPrompt": "Which two types of impact does the example link together, and why is linking them better than treating each separately?",
       "check": {
-       "q": "A learner writes only about emotional and physical impact on Wren. What is the most useful next step?",
+       "q": "A learner's answer covers only the emotional and physical impact on Wren. Which change best meets the guidance?",
        "options": [
-        "Add social, intellectual and financial impact, for Wren and for her family and society.",
-        "Add a longer description of how hearing aids work.",
-        "Repeat the emotional points in different words.",
-        "Remove the family section so the work is shorter."
+        "Explain the physical and emotional impact in more depth, since depth earns higher marks.",
+        "Cover social, intellectual and financial impact too, for Wren, her family and society.",
+        "Cover all five types of impact for Wren alone, since the guidance is about the individual.",
+        "Add Wren's family and society, but keep to physical and emotional impact for each."
        ],
-       "answer": 0,
-       "why": "The guidance requires all five types across the individual, family and society."
+       "answer": 1,
+       "why": "The guidance asks for all five types across all three groups, so both gaps must be filled. Going deeper on the same two types is the tempting move because depth feels like Distinction, but it leaves three types missing."
       }
      },
      {
@@ -52,19 +52,19 @@
       "fromSpec": "Use detailed analysis and research from recognised sources to reach valid, justified conclusions.",
       "means": "Name where your evidence comes from (for example a national charity or NHS source) and use it to support the point, not as decoration.",
       "example": "A national deaf children's charity reports that language delay is a common risk when hearing loss is found late. That supports the view that Wren's reading gap is linked to her hearing loss, not to a lack of ability, because her number work is typical.",
-      "nearMiss": "Research shows that deaf children can struggle at school. This is true for Wren as well.",
-      "whyNearMiss": "The source is not named and the claim is not tied to Wren's evidence, so it cannot support a conclusion.",
+      "nearMiss": "A national deaf children's charity reports that language delay is a common risk when hearing loss is found late. Wren was diagnosed at three, and her reading is behind her age group.",
+      "whyNearMiss": "A named source and Wren's facts both appear, but they sit side by side. It never uses the research to argue that her reading gap comes from her hearing loss and not from ability.",
       "explainPrompt": "What does the example do with the source after quoting it? Say in your own words how that makes the conclusion stronger.",
       "check": {
-       "q": "Which use of research is strongest?",
+       "q": "Which use of research is strongest when judging why Wren's reading is behind?",
        "options": [
-        "Putting several quotations together with no comment.",
-        "Using a named source, then showing how it explains something specific in the case.",
-        "Saying 'research shows' without a source.",
-        "Copying a definition of hearing loss from a website."
+        "Naming a deaf children's charity report, then using it to explain Wren's reading gap.",
+        "Quoting several named reports on deafness one after another to show the range of reading.",
+        "Stating that national research shows deaf children often struggle with reading at school.",
+        "Copying a definition of severe hearing loss from a named health website, with no comment."
        ],
-       "answer": 1,
-       "why": "Distinction research is named, relevant and used to justify a conclusion about the individual."
+       "answer": 0,
+       "why": "A named source only supports a conclusion when it is used to explain something specific, here Wren's reading gap. Stacking named reports is the tempting option: it looks like thorough research but never applies any of it to the case."
       }
      },
      {
@@ -72,19 +72,19 @@
       "fromSpec": "Learners will articulate arguments and views concisely; evaluate possible long-term effects.",
       "means": "Look ahead to adulthood and later life as well as now. Keep each argument short and clear, with the judgement first.",
       "example": "Left unsupported, Desmond's difficulty planning could lead to loneliness within a few years, because he has few other contacts on the island. This makes the peer group the most important part of his long-term wellbeing.",
-      "nearMiss": "Desmond has a brain injury and will have it for a long time. It will always be hard for him.",
-      "whyNearMiss": "It says 'long time' but gives no specific long-term effect or reasoning.",
+      "nearMiss": "Desmond's brain injury is likely to affect his memory and planning for many years. Living alone, he may find daily tasks hard and may feel lonely at times.",
+      "whyNearMiss": "It points to a long period and to possible loneliness, but never argues how lack of contact would lead to later decline or which long-term need matters most.",
       "explainPrompt": "Find the 'because' in the example. Why does that word matter for a long-term judgement?",
       "check": {
-       "q": "Which is a long-term effect that is argued, not just stated?",
+       "q": "Which sentence argues a long-term effect for Desmond, rather than just stating one?",
        "options": [
-        "Desmond finds it hard to remember things.",
-        "Desmond is 61 and lives alone.",
-        "Desmond had an accident two years ago.",
-        "Without regular contact, Desmond may become isolated, which could worsen his memory and mood over the years."
+        "His brain injury is likely to last, so Desmond will keep having memory problems for many years.",
+        "His support hours may be cut next year, which would make daily planning harder for him.",
+        "Without regular contact he may become isolated, which could worsen his memory and mood.",
+        "Desmond has memory problems, tiredness and trouble planning his day, and he lives alone."
        ],
-       "answer": 3,
-       "why": "Only the correct option predicts a later consequence and explains the link."
+       "answer": 2,
+       "why": "A long-term effect needs a predicted later consequence and the reason for it. The most tempting wrong option says the injury will last, which states duration but argues no consequence."
       }
      }
     ]
@@ -96,19 +96,19 @@
       "fromSpec": "Use research to justify the appropriateness of support and adaptations that help individuals overcome challenges.",
       "means": "Justify means giving reasons it is the right choice for this person, ideally compared with another option.",
       "example": "A support worker is a sensible fit for Desmond because brain injury guidance stresses routine and prompts. Visits on three mornings give structure without taking away his independence, which an all-day carer would.",
-      "nearMiss": "Desmond has a support worker three mornings a week. This helps him with daily tasks.",
-      "whyNearMiss": "It describes the support but gives no reason it suits Desmond or why alternatives were not chosen.",
+      "nearMiss": "Three mornings of support suit Desmond because they help him plan his day. This is sensible because his memory problems make daily planning hard.",
+      "whyNearMiss": "It gives a reason linked to Desmond, but cites no research and compares no alternative, so the choice is reasoned but not justified at Distinction level.",
       "explainPrompt": "What is the example comparing the support worker with? Why does that comparison make it a justification?",
       "check": {
-       "q": "What turns a description of support into a justification?",
+       "q": "Which sentence justifies the support worker for Desmond, not just describes it?",
        "options": [
-        "Listing every professional involved.",
-        "Saying the support is helpful.",
-        "Explaining why it suits this person, backed by research and compared with alternatives.",
-        "Describing the equipment in more detail."
+        "The support worker visits Desmond three mornings a week and helps with his daily tasks and planning.",
+        "Three mornings suit Desmond because brain injury guidance stresses routine, unlike an all-day carer.",
+        "A support worker is helpful for Desmond because it makes his week easier to manage day to day.",
+        "A personal health budget is the best way to pay for a support worker for people like Desmond, who live alone."
        ],
-       "answer": 2,
-       "why": "Justification needs reasons, evidence and a sense of why this choice over others."
+       "answer": 1,
+       "why": "Justification gives a reason the support suits this person, backed by evidence and a comparison with alternatives. The tempting description is accurate and applied to Desmond, but it only says what the support is, which is the Merit-level trap."
       }
      },
      {
@@ -116,19 +116,19 @@
       "fromSpec": "Refer to relevant statutory guidance, e.g. EHC plans and local offers for children; personal health budgets for adults.",
       "means": "Name the law or system, say what it gives the person, and judge how well it works. For the Common Assessment Framework, check the current framework with your tutor.",
       "example": "Wren's Education, Health and Care plan, set up under the Children and Families Act 2014, legally commits the school and health services to provide her teacher of the deaf. Without it her weekly support would depend on goodwill.",
-      "nearMiss": "Wren has an EHC plan. It is a plan for children with special needs.",
-      "whyNearMiss": "It defines the plan but does not say what it gives Wren or judge its importance.",
+      "nearMiss": "Wren's Education, Health and Care plan was set up under the Children and Families Act 2014 and commits the school and health services to provide her teacher of the deaf.",
+      "whyNearMiss": "It names the Act and what the plan provides, accurately and for Wren, but it does not judge the plan's importance, such as how it protects her support if budgets tighten.",
       "explainPrompt": "Why does the phrase 'depend on goodwill' strengthen the example? Explain it as if to a classmate.",
       "check": {
-       "q": "Which statement shows distinction-level use of statutory provision?",
+       "q": "Which statement shows Distinction-level use of statutory provision for Wren?",
        "options": [
-        "The plan was introduced in 2014.",
-        "The plan gives Wren a legal right to specified support, so it protects her if budgets tighten.",
-        "Statutory means it is in law.",
-        "Many children have a plan."
+        "Wren's EHC plan was set up under the Children and Families Act 2014 for children with special needs.",
+        "Wren's EHC plan lists her teacher of the deaf and is reviewed by her school each year.",
+        "Her EHC plan gives Wren a legal right to named support, which protects it if budgets tighten.",
+        "Statutory support is provided by law, and Wren's plan is one example of statutory provision for her."
        ],
-       "answer": 1,
-       "why": "Distinction links the provision to a real effect on the individual."
+       "answer": 2,
+       "why": "The key shows what the law gives Wren and why it matters to her. Naming the Act is the tempting Merit-level option: it identifies the provision but never says what it gives her."
       }
      },
      {
@@ -136,19 +136,19 @@
       "fromSpec": "Apply understanding to less familiar situations.",
       "means": "Go beyond the obvious case: for example, several supports at once, or a challenge that leads to another challenge.",
       "example": "Wren's hearing loss limits her reading, which could reduce her confidence in class. Her support therefore needs to join up speech and language therapy with the teacher of the deaf, because treating each alone would miss that link.",
-      "nearMiss": "Wren has hearing aids and a teacher of the deaf. Both help her at school.",
-      "whyNearMiss": "It treats each support as separate and does not consider how challenges connect.",
+      "nearMiss": "Wren's hearing loss limits her reading, and she has support from hearing aids and a teacher of the deaf. Her reading may also affect her confidence in class.",
+      "whyNearMiss": "It notes the link between hearing, reading and confidence, but stops there and does not say what combined support those linked challenges need.",
       "explainPrompt": "What second challenge does the example find hiding behind the first? Why does that change what support is needed?",
       "check": {
-       "q": "Which shows application to a more complex situation?",
+       "q": "Which response applies understanding to Wren's more complex situation?",
        "options": [
-        "Repeating the definition of hearing loss.",
-        "Adding a third example of equipment.",
-        "Describing the island's geography.",
-        "Explaining how one challenge causes another and what combined support is needed."
+        "Describing her hearing aids and her teacher of the deaf as two separate supports at school.",
+        "Adding that many deaf children use hearing aids and learn British Sign Language at school.",
+        "Defining severe hearing loss and stating the age at which Wren's loss was found.",
+        "Explaining that her hearing loss limits her reading, so her supports must be joined up."
        ],
        "answer": 3,
-       "why": "Linking challenges and combined support is what shows application beyond the obvious."
+       "why": "The key links one challenge to another and says what combined support follows. The tempting separate-supports option is accurate and applied to Wren, but it treats each support alone and never shows how her challenges connect."
       }
      }
     ]
@@ -160,19 +160,19 @@
       "fromSpec": "Evaluate the advantages or otherwise of the support provided to the two individuals.",
       "means": "Evaluate means looking at gaps and drawbacks too. Do not only say the support is good.",
       "example": "The personal health budget gives Desmond control, but it only covers three mornings. In the afternoons, when his fatigue is worst, he has no support, so the benefit is real but incomplete.",
-      "nearMiss": "Desmond's budget helps him a lot. He is happy with his support worker.",
-      "whyNearMiss": "Only positives are given; there is no weighing of limits or gaps.",
+      "nearMiss": "The personal health budget gives Desmond control, and it pays for a support worker on three mornings. It does not cover the afternoons.",
+      "whyNearMiss": "It states one advantage and one limit accurately, but never weighs them against each other or says how much the gap matters to him.",
       "explainPrompt": "Which words in the example show that something is missing from Desmond's support?",
       "check": {
-       "q": "A learner says 'the support works well' for both people. What is missing?",
+       "q": "A learner says the support 'works well' for both people. What is missing for Distinction?",
        "options": [
-        "Any disadvantages or gaps, and evidence for how effective it really is.",
-        "More description of the people.",
-        "A longer introduction.",
-        "A list of charities."
+        "Any limits or gaps, weighed against the benefits with evidence.",
+        "More detail on how each person's support is arranged and who provides it.",
+        "A third example of support for each person, to show wider coverage of help.",
+        "The same view restated more firmly, using stronger positive wording."
        ],
        "answer": 0,
-       "why": "Evaluation requires advantages and disadvantages, backed by evidence."
+       "why": "Evaluation weighs disadvantages as well as advantages, using evidence. Adding more detail about the support is the tempting fix, but it only lengthens the description."
       }
      },
      {
@@ -180,19 +180,19 @@
       "fromSpec": "Reach justified conclusions about how effective support was for improving wellbeing in one or more areas.",
       "means": "Say how effective it was and in which areas (physical, intellectual, emotional, social), with evidence such as an interview or observation.",
       "example": "Wren's signing group improved her social wellbeing, as her teacher reports she now plays with classmates. Her intellectual wellbeing has gained less, since her reading age is still behind, so the support is partly effective.",
-      "nearMiss": "Wren's support has helped her wellbeing in lots of ways.",
-      "whyNearMiss": "No area of wellbeing is named and there is no evidence or degree of effectiveness.",
+      "nearMiss": "Wren's signing group improved her social wellbeing, as her teacher reports she now plays with classmates. Her reading is still behind her age group.",
+      "whyNearMiss": "Both areas have evidence, but the answer never concludes how effective the support is overall, so the evidence is reported but not judged.",
       "explainPrompt": "How does the example decide that the support is only 'partly' effective? What evidence does it rely on?",
       "check": {
-       "q": "Which is a justified conclusion about effectiveness?",
+       "q": "Which is a justified conclusion about how effective Wren's support has been?",
        "options": [
-        "Support is very important for deaf children.",
-        "Wren likes her teacher.",
-        "Support improved social wellbeing, shown by reported play with classmates, but reading is still behind.",
-        "Hearing aids make sounds louder."
+        "Wren's support has helped her wellbeing in several different ways, so it has been very effective.",
+        "It improved her social wellbeing, as she plays with classmates, but her reading is still behind.",
+        "Her social wellbeing has improved, which shows the support has been fully effective for her.",
+        "Her reading age is still behind, which shows the support has not been effective for her."
        ],
-       "answer": 2,
-       "why": "It names areas, gives evidence and reaches a balanced judgement."
+       "answer": 1,
+       "why": "A justified conclusion names an area, gives evidence for it and says how far the support worked. The tempting 'fully effective' option has real evidence for one area but stretches it into a verdict on all of them."
       }
      },
      {
@@ -200,19 +200,19 @@
       "fromSpec": "Reach justified conclusions on possible long- and short-term effects of early intervention on wellbeing and life chances.",
       "means": "Compare what early support changes now with what it might change in adulthood, using research to back it up.",
       "example": "Wren's support at three should help her language catch up before secondary school. Research from deaf charities suggests earlier support improves later education and work chances, so delay could have cost her more than the weekly visits cost the council.",
-      "nearMiss": "Early help is good for children. The sooner the better.",
-      "whyNearMiss": "It is a general statement with no short- or long-term effect and no research.",
+      "nearMiss": "Research from deaf charities suggests earlier support improves later education and work chances, and Wren has had support since she was three.",
+      "whyNearMiss": "It cites research and applies it to Wren, but never judges the effect, such as whether it will close her reading gap or how its benefit compares with its cost.",
       "explainPrompt": "What are the 'short-term' and 'long-term' effects in the example? Where is the research used?",
       "check": {
-       "q": "Which sentence best shows life chances?",
+       "q": "Which sentence best uses research to judge the long-term effect of early support on Wren?",
        "options": [
-        "Wren is seven years old.",
-        "Earlier language support may improve Wren's later qualifications and job choices.",
-        "Wren has hearing aids.",
-        "Wren lives on an island."
+        "Research links earlier language support to better school and work outcomes, so Wren's help matters.",
+        "Early support helped Wren make friends at school this year, which shows how well it works.",
+        "Deaf charities' research shows that deaf children benefit from early support, and Wren has had some.",
+        "Early support costs the council a weekly visit, so it is an expense that the council can review later."
        ],
-       "answer": 1,
-       "why": "Life chances means longer-term opportunities such as education and work."
+       "answer": 0,
+       "why": "Life chances are later opportunities such as qualifications and work, and the key links early help to them through research. The research-name option is tempting because it cites evidence, but it never says what that means for Wren's later chances."
       }
      },
      {
@@ -220,19 +220,19 @@
       "fromSpec": "Refer to relevant research to justify the validity of recommendations and proposals.",
       "means": "If you suggest improving support, explain why it would work, using evidence such as research or professional interviews.",
       "example": "The council should keep Desmond's peer group funding, as brain injury charities report that peer contact reduces isolation. It is cheaper than crisis care and protects his independence.",
-      "nearMiss": "The council should give Desmond more help because it would be nice.",
-      "whyNearMiss": "The recommendation has no research and its reasoning is only an opinion.",
+      "nearMiss": "The council should keep Desmond's peer group funding because it protects his independence and is cheaper than crisis care.",
+      "whyNearMiss": "It gives reasons linked to Desmond, but cites no research or professional source for them, so the recommendation is argued but not validated.",
       "explainPrompt": "Why is the recommendation in the example more convincing than the near-miss one?",
       "check": {
-       "q": "What makes a recommendation valid at distinction level?",
+       "q": "Which recommendation about Desmond is valid at Distinction level?",
        "options": [
-        "It is the first idea you think of.",
-        "It is written in formal language.",
-        "It asks for more money.",
-        "It is backed by research or professional evidence and linked to the person's needs."
+        "Increase Desmond's support hours, because he has a brain injury and lives alone on the island.",
+        "Keep the peer group funded, because it is cheaper than the crisis care he might otherwise need.",
+        "Keep the peer group funded, because the council already pays for it and he attends every week.",
+        "Keep the peer group, because brain injury charities report that contact cuts isolation."
        ],
        "answer": 3,
-       "why": "Validity comes from evidence, not from tone or opinion."
+       "why": "A valid recommendation is backed by research or professional evidence and tied to the person's needs. The cost option is tempting because it sounds like reasoning, but it is an assertion with no evidence behind it."
       }
      }
     ]
@@ -252,19 +252,19 @@
       "fromSpec": "Use detailed analysis and research to justify procedures, relating them to the laboratory context.",
       "means": "Do not just say what happens. Say why it happens in this type of lab, with evidence.",
       "example": "In Tarn Valley's lab, the unidentified urine sample is opened in a safety cabinet because the organism might be harmful to staff. This justifies the extra time, since an infection in a care home could spread.",
-      "nearMiss": "The urine sample is opened in a safety cabinet and then put onto agar plates.",
-      "whyNearMiss": "It describes the steps but gives no reason for them and does not link to the lab.",
+      "nearMiss": "The unidentified urine sample is opened in a safety cabinet, which is standard practice in the lab, before it is cultured on agar plates.",
+      "whyNearMiss": "It is accurate and set in the lab, but 'standard practice' says what is done, not why; it never explains the risk from an unidentified organism.",
       "explainPrompt": "Which words in the example give a reason? Why does it matter that the reason relates to the care home?",
       "check": {
-       "q": "Which is a justification?",
+       "q": "Which sentence justifies a procedure used in the Tarn Valley lab?",
        "options": [
-        "The sample is opened in a cabinet and then cultured.",
-        "The sample is opened in a cabinet because unknown organisms could harm staff or contaminate other samples.",
-        "Safety cabinets are blue.",
-        "Samples are sent from care homes."
+        "The urine sample is opened in a safety cabinet and then spread onto agar plates for culture.",
+        "The urine sample is opened in a safety cabinet, which is the standard way to handle it here.",
+        "The urine sample is opened in a safety cabinet because unknown organisms could harm staff.",
+        "The urine sample is opened in a safety cabinet, as the lab's own written procedures require."
        ],
-       "answer": 1,
-       "why": "A justification says why, and links to the setting."
+       "answer": 2,
+       "why": "A justification gives the reason for a step, here the risk from an unidentified organism. The 'standard way' option sounds like a reason, but saying a step is routine or required explains nothing about why it is done."
       }
      },
      {
@@ -272,19 +272,19 @@
       "fromSpec": "Procedures must include health and safety and recording methods.",
       "means": "Cover safety (such as COSHH, PPE, safe disposal) and how samples are labelled and recorded, and say why each is needed.",
       "example": "Labelling the sample before it leaves the care home reduces the risk of a wrong result being given to the wrong resident. Logging each step on the record system lets staff trace a mistake, so it protects both patients and staff.",
-      "nearMiss": "All samples are labelled and recorded and staff wear gloves.",
-      "whyNearMiss": "Procedures are listed but not justified, and the link to patient safety is missing.",
+      "nearMiss": "All samples are labelled and logged on the record system, and staff wear gloves and use the safety cabinet. This keeps patients and staff safe.",
+      "whyNearMiss": "It covers both safety and recording and links them to safety in general, but justifies neither, for example how labelling stops a result going to the wrong resident.",
       "explainPrompt": "What harm could happen if the labelling step failed? How does the example show that?",
       "check": {
-       "q": "A learner covers PPE and disposal but not recording. What is missing?",
+       "q": "A learner explains PPE and waste disposal but not recording. What should be added?",
        "options": [
-        "Nothing, because safety covers everything.",
-        "A description of the microscope.",
-        "How samples are identified, recorded and traced, with reasons.",
-        "A longer list of PPE."
+        "Why gloves and lab coats are worn, such as to protect the skin from splashes.",
+        "Which disinfectant is used on the benches, with its strength and contact time.",
+        "How the final result is reported to the doctor, such as by phone or on the system.",
+        "Why samples are labelled and logged, such as to trace a result to the patient."
        ],
-       "answer": 2,
-       "why": "Both safety and recording methods are required for distinction."
+       "answer": 3,
+       "why": "Recording methods such as labelling and logging are a separate requirement from health and safety, and must also be justified. Extra safety detail is the tempting error, as it deepens one half while the recording half stays missing."
       }
      },
      {
@@ -292,19 +292,19 @@
       "fromSpec": "Learners must articulate arguments concisely and professionally, and use research to justify conclusions.",
       "means": "Use reliable guidance (for example from the Health and Safety Executive or UK Health Security Agency) and write in a formal, concise style.",
       "example": "Health and Safety Executive guidance expects staff to assess the risk before handling any biological agent. This supports the lab's practice of treating all unidentified samples as potentially hazardous.",
-      "nearMiss": "Labs must be careful with samples, as read online.",
-      "whyNearMiss": "The source is unnamed and the style is informal.",
+      "nearMiss": "The Health and Safety Executive publishes guidance on handling biological agents, and the Tarn Valley lab follows safe handling procedures.",
+      "whyNearMiss": "It names a proper source and the lab, but the guidance is not used to support or justify any practice, so the source is mentioned rather than used.",
       "explainPrompt": "Rewrite the near-miss sentence in your head: what source and wording would make it professional? Say what you would change.",
       "check": {
-       "q": "Which wording is most suitable?",
+       "q": "Which sentence uses research most professionally?",
        "options": [
-        "Guidance from a named safety body is cited and used to justify the lab's practice.",
-        "I read this online and it seems right.",
-        "Everyone knows labs are risky.",
-        "My teacher said so."
+        "A health website says labs must be careful with samples, so the lab's caution is right.",
+        "Guidance from the Health and Safety Executive is long and covers many laws and rules for labs.",
+        "Health and Safety Executive guidance requires risk assessment, which supports the lab's caution.",
+        "It is well known that biological samples are risky, which supports the lab's caution in handling."
        ],
-       "answer": 0,
-       "why": "Named, relevant sources and formal language are required."
+       "answer": 2,
+       "why": "Professional use names the source and uses its content to support a specific lab practice. Naming a body without using its content, the tempting option, shows a source exists but supports no conclusion."
       }
      }
     ]
@@ -316,19 +316,19 @@
       "fromSpec": "Justify decisions in using chosen techniques and methods in terms of results and the desired outcome.",
       "means": "State the outcome first (for example, identify the shape and Gram type of bacteria), then say why the technique fits it.",
       "example": "The aim was to tell whether the tap bacteria were Gram positive or negative. A Gram stain was chosen because it separates the groups by cell wall, so it narrows treatment choices quickly, unlike plain culture.",
-      "nearMiss": "A Gram stain was used on the colonies. It is a common technique.",
-      "whyNearMiss": "It says what was used but does not link it to the outcome.",
+      "nearMiss": "A Gram stain was used on the tap bacteria colonies because it is a quick technique that is widely used in labs.",
+      "whyNearMiss": "It gives a reason, but the reason is general convenience, not the aim of separating Gram positive and Gram negative bacteria, so the technique is not linked to the outcome.",
       "explainPrompt": "How does the example connect the aim to the technique? Where does it compare with another method?",
       "check": {
-       "q": "Which sentence justifies a technique?",
+       "q": "Which sentence justifies using a Gram stain on the tap bacteria?",
        "options": [
-        "Gram staining uses crystal violet.",
-        "We did a Gram stain on Tuesday.",
-        "Gram staining is a common technique.",
-        "Gram staining was chosen because the aim was to separate bacteria by cell wall type."
+        "A Gram stain was chosen because the aim was to separate the bacteria by cell wall type.",
+        "A Gram stain was chosen because it is a quick technique that is widely used in many labs.",
+        "A Gram stain was chosen because it shows the shape and size of the bacteria clearly.",
+        "A Gram stain was chosen because it identifies the exact species growing on the plate."
        ],
-       "answer": 3,
-       "why": "Justification connects the technique to the desired outcome."
+       "answer": 0,
+       "why": "Justification links the technique to the outcome wanted, here separating Gram positive from Gram negative cells. 'Quick and widely used' is the tempting option because it sounds like a reason, but it describes the technique, not the aim."
       }
      },
      {
@@ -336,19 +336,19 @@
       "fromSpec": "Show how techniques were used proficiently; use observations and laboratory notebook evidence.",
       "means": "Your notebook and teacher observation are the evidence. Record what you changed and why, such as re-streaking a contaminated plate.",
       "example": "If a practical plate in the fictional lab became contaminated, a strong account would say what went wrong, which step was repeated with flamed loops, and how the learner's own record shows the aim was still met.",
-      "nearMiss": "One plate had contamination. It was done again.",
-      "whyNearMiss": "No reason or method is given, so it does not show skill.",
+      "nearMiss": "One plate became contaminated, so it was repeated with flamed loops and gave a clean result.",
+      "whyNearMiss": "It records the fault and the fix, but gives no cause and does not show how the repeat kept the aim on track, so the reasoning behind the change is missing.",
       "explainPrompt": "What evidence in the example shows proficiency? Why would the notebook entry matter to an assessor?",
       "check": {
-       "q": "What shows proficiency in practical work?",
+       "q": "One plate became contaminated. Which record best shows proficient practical work?",
        "options": [
-        "A record of what you did, what went wrong and how you fixed it safely.",
-        "A clean plate with no explanation.",
-        "A neat final report only.",
-        "Doing it the same as a friend."
+        "A note that the plate was contaminated, then a clean repeat plate in the final results table.",
+        "A note of the likely cause, the repeat with flamed loops, and how the aim was still met.",
+        "A neat results table that leaves out the failed plate so that the report stays clear.",
+        "A copy of the method sheet showing the steps that the learner was meant to follow."
        ],
-       "answer": 0,
-       "why": "Proficiency is shown through documented work, including adaptations."
+       "answer": 1,
+       "why": "Proficiency is shown by recording what went wrong, what was changed and why the aim was still met. Leaving out the failed plate looks tidy, which is why it tempts, but it hides the evidence of skill and adaptation."
       }
      },
      {
@@ -356,19 +356,19 @@
       "fromSpec": "Make valid judgements about risks and limitations of techniques in relation to the usefulness of outcomes.",
       "means": "Think about what could go wrong or limit the result (fading stains, contamination, small samples) and how that affects how far you can trust it.",
       "example": "A temporary stain fades within a day, so the slide cannot be rechecked by a colleague. In a hospital this would limit its use for a second opinion, so photographing the slide immediately is essential.",
-      "nearMiss": "The stain faded, which was a problem.",
-      "whyNearMiss": "The problem is noted but the effect on usefulness is not judged.",
+      "nearMiss": "The stain faded within a day, so the slide could not be rechecked later. This is a limitation of the technique.",
+      "whyNearMiss": "It states the limitation and its direct effect, but does not judge how much this matters for diagnosis or say what would reduce the problem, such as photographing the slide.",
       "explainPrompt": "What does the example say the fading stain stops anyone doing? How does it fix this?",
       "check": {
-       "q": "Which is a limitation with a judgement?",
+       "q": "Which sentence makes a valid judgement about a limitation of the technique?",
        "options": [
-        "A stain can fade.",
-        "A fading stain limits second opinions, so photomicrographs are needed to keep a record.",
-        "Temporary slides are made fast.",
-        "Stains are expensive."
+        "The stain fades within a day, which is a limitation and a risk for the practical work.",
+        "A fading stain is a minor problem, because the colonies were already seen once by the group.",
+        "A fading stain stops colleagues rechecking the slide, so a photograph is needed at once.",
+        "A fading stain is the main limit of the method, and it was noticed within a day."
        ],
-       "answer": 1,
-       "why": "Limitations matter only when you say what effect they have."
+       "answer": 2,
+       "why": "A valid judgement says what the limitation does to the usefulness of the result and what to do about it. Calling it a minor problem is a judgement, but it ignores the colleague's second opinion, so it is not valid."
       }
      },
      {
@@ -376,19 +376,19 @@
       "fromSpec": "Show how techniques and methods were used to arrive at solutions.",
       "means": "Finish with what your results told you and how the method got you there. Use peer results to explain odd outcomes.",
       "example": "In a serial dilution, growth that stops at the second-strongest disinfectant concentration would support recommending a dilution for the sink. Agreement between independent groups would make an error less likely, but only the learner's own results can be reported as theirs.",
-      "nearMiss": "The results showed the disinfectant worked and an answer was found.",
-      "whyNearMiss": "No actual result or solution is stated, and peer results are not used.",
+      "nearMiss": "The disinfectant stopped growth at the second-strongest concentration, which suggests a dilution could be recommended for the sink.",
+      "whyNearMiss": "It states a result and a recommendation, but ignores the other groups' results, so it never checks whether the finding is reliable or explains any difference.",
       "explainPrompt": "Why does the example mention the peer group? What would be less certain without it?",
       "check": {
-       "q": "What is the best way to explain an unusual result?",
+       "q": "A group's serial dilution shows growth at a strength where other groups saw none. What is the best way to handle it?",
        "options": [
-        "Leave it out of the report.",
-        "Say it was an accident.",
-        "Compare it with peer results and say what might have caused it.",
-        "Repeat it until it fits."
+        "Compare it with the other groups' results and suggest causes such as contamination.",
+        "Use the other groups' result instead, since agreement between groups shows who is correct.",
+        "Repeat the dilution until it matches the others, then report only that result.",
+        "Leave it out, because one unusual plate does not change the overall trend."
        ],
-       "answer": 2,
-       "why": "Unusual results should be explained using peer data, not hidden."
+       "answer": 0,
+       "why": "Unusual results should be reported as the learner's own and explained using peer data and possible causes. Adopting the peers' result is tempting because agreement looks reliable, but only your own results can be reported as yours."
       }
      }
     ]
@@ -400,19 +400,19 @@
       "fromSpec": "Gather together main aspects of processes and techniques; evaluate strengths, weaknesses, advantages and disadvantages.",
       "means": "Compare the techniques side by side rather than describing them one at a time.",
       "example": "Culture identifies the organism and its antibiotic sensitivity but takes one to two days. A Gram stain is quick but gives less detail. Together they balance speed against certainty.",
-      "nearMiss": "Culture takes a long time. A Gram stain is fast. Both are used in the lab.",
-      "whyNearMiss": "Facts are given separately with no comparison or balance.",
+      "nearMiss": "Culture takes one to two days and identifies the organism and its antibiotic sensitivity. A Gram stain is quick but gives less detail.",
+      "whyNearMiss": "It compares the two accurately but leaves the comparison there; it never says how speed trades off against certainty or how the two work together.",
       "explainPrompt": "What does 'together they balance' tell you about how the example evaluates? Explain it in your own words.",
       "check": {
-       "q": "Which is evaluative?",
+       "q": "Which sentence weighs culture against Gram staining?",
        "options": [
-        "Cultures are grown on agar.",
-        "Gram stains are purple or pink.",
-        "Labs have many tests.",
-        "A quick stain gives early information, while slower culture gives certainty."
+        "Culture takes one to two days, but a Gram stain can be read within an hour or so.",
+        "A quick stain gives early information, while slower culture gives more certainty.",
+        "Culture and Gram staining are both common techniques that help to study bacteria.",
+        "Culture is better than Gram staining because it is the more thorough technique overall."
        ],
-       "answer": 3,
-       "why": "Evaluation compares trade-offs."
+       "answer": 1,
+       "why": "Evaluation shows the trade-off between speed and certainty. Timing each technique, the tempting option, compares facts but never says what the difference means for the doctor."
       }
      },
      {
@@ -420,19 +420,19 @@
       "fromSpec": "Relate this to usefulness in providing a diagnosis that health care workers can use.",
       "means": "Ask how a doctor or nurse would use the result and whether it is fast, clear and reliable enough.",
       "example": "For the care home resident, a Gram stain result within hours would let the doctor start suitable treatment sooner. The full culture still matters because it checks the first choice was right.",
-      "nearMiss": "The tests help doctors to know what is wrong.",
-      "whyNearMiss": "It does not say how or how fast the results help treatment.",
+      "nearMiss": "For the care home resident, a Gram stain result within hours would help the doctor to start treatment sooner.",
+      "whyNearMiss": "It links the result to speed and treatment, but ignores reliability; it never says what the culture adds or what could go wrong if the early result were acted on alone.",
       "explainPrompt": "What does the doctor do differently because of the result? Say it in your own words.",
       "check": {
-       "q": "What does a useful result need for health professionals?",
+       "q": "What makes a result useful to the doctor treating the care home resident?",
        "options": [
-        "To be complicated.",
-        "To be clear, timely and reliable enough for a decision.",
-        "To be purple.",
-        "To be long."
+        "It contains detailed data about the organism, whether or not it arrives in time.",
+        "It has been checked and confirmed twice by the lab, even if this takes several days.",
+        "It matches what the doctor expected, so that no further tests are needed.",
+        "It is clear, timely and reliable enough for the doctor to decide on treatment."
        ],
-       "answer": 1,
-       "why": "Usefulness is measured by whether staff can act on the result."
+       "answer": 3,
+       "why": "Usefulness depends on whether a professional can act on the result. Detail and double-checking, the tempting options, improve quality, but a result that arrives late cannot help the resident."
       }
      },
      {
@@ -440,19 +440,19 @@
       "fromSpec": "Evaluate and reach valid judgements, recognising limitations compared with a commercial laboratory.",
       "means": "End with a clear overall view and be honest about what a student lab cannot do.",
       "example": "College methods show the principles but lack the automation and controls of a hospital lab. Overall, staining plus culture is the most useful pair, though only the hospital's quality checks would make results safe for patients.",
-      "nearMiss": "The college lab is good, but a hospital lab is better.",
-      "whyNearMiss": "A preference is stated with no reasons or detail.",
+      "nearMiss": "College methods show the principles of staining and culture, but a hospital lab has more automation and quality controls.",
+      "whyNearMiss": "It compares the two settings accurately, but gives no overall verdict on which technique is most useful or what would make results safe for patients.",
       "explainPrompt": "What is the 'overall judgement' in the example, and what evidence does it rest on?",
       "check": {
-       "q": "What should a final judgement in the report include?",
+       "q": "Which final judgement is strongest in a report comparing college and hospital methods?",
        "options": [
-        "A new topic.",
-        "More method steps.",
-        "A clear verdict supported by points from your results.",
-        "An apology."
+        "The hospital lab is better, because it has more equipment and trained staff than the college.",
+        "The college methods are as good as the hospital's, because both use agar and Gram stains.",
+        "Stain plus culture is most useful, but only hospital quality checks make results safe to use.",
+        "Both labs use useful methods, and each has strengths and weaknesses that were discussed earlier."
        ],
        "answer": 2,
-       "why": "Final judgement must be reasoned."
+       "why": "The strongest verdict chooses between the methods and gives a reason from the results and the comparison. Saying both labs have strengths and weaknesses, the tempting option, summarises but decides nothing."
       }
      }
     ]
@@ -478,13 +478,13 @@
       "check": {
        "q": "Which sentence judges rather than describes?",
        "options": [
-        "Rheumatoid arthritis damages Hollis's joints and makes his hands stiff and swollen.",
-        "Hollis's stiff hands matter more than the pain, because grip is how he earns a living.",
-        "Hollis has swollen hands, tiredness and worry about work, and these are all symptoms.",
-        "Joint swelling and stiffness are common in rheumatoid arthritis, according to the NHS."
+        "Rheumatoid arthritis damages Hollis's joints and makes his hands swollen and stiff in the mornings.",
+        "Hollis has swollen hands, tiredness and worry about work, and these are all symptoms of the disease.",
+        "Swollen, stiff joints are common in rheumatoid arthritis, according to the NHS, and affect Hollis.",
+        "Hollis's stiff hands matter more than the pain, because grip is how he earns a living."
        ],
-       "answer": 1,
-       "why": "Only the second ranks one effect above another and gives a reason. The first applies the science but only describes, the third lists symptoms, and the fourth is a general fact with a source but no judgement about Hollis."
+       "answer": 3,
+       "why": "Only the key ranks one effect above another and gives a reason. The tempting option applies the science accurately to Hollis but only describes it, which is the Merit-level trap of analysis without judgement."
       }
      },
      {
@@ -498,13 +498,13 @@
       "check": {
        "q": "Dilys feels well but her kidneys work at about half normal. Which explanation shows in-depth understanding?",
        "options": [
-        "Her blood tests must be wrong, because kidney disease always causes tiredness first.",
-        "Chronic kidney disease can be silent until late, so it is found through routine tests such as eGFR.",
-        "Her kidneys cannot be damaged, because she has no pain in her back.",
-        "Her high blood pressure is the only problem, and her kidneys are normal."
+        "Chronic kidney disease can stay silent until late, so tests such as eGFR find it early.",
+        "The result must be wrong, because kidney disease always causes tiredness before the tests change.",
+        "Her kidneys cannot be damaged, because kidney disease would always cause pain in her back.",
+        "The damage comes from her age alone, so her high blood pressure plays no part in the disease."
        ],
-       "answer": 1,
-       "why": "Kidney damage can be silent, so tests find it before symptoms. The first and third assume symptoms must come first or must include pain, which is not so in kidney disease, and the fourth ignores that high blood pressure and kidney damage affect each other."
+       "answer": 0,
+       "why": "Kidney damage can be silent, so routine tests find it before symptoms appear, which is the unusual feature here. The tempting 'tiredness first' option assumes symptoms must lead, which is not so in chronic kidney disease."
       }
      },
      {
@@ -518,13 +518,13 @@
       "check": {
        "q": "How do you show real understanding of two different disorders?",
        "options": [
-        "Describe both conditions using the same headings and sentences.",
-        "Explain a cause or sign that is specific to each, such as autoimmune flares for one and silent decline for the other.",
-        "Add more medical words to the description of the first disorder.",
-        "Say that all long-term conditions have the same general effects."
+        "Describe both with the same headings and sentences, so that they can be compared directly.",
+        "Explain a cause or sign specific to each, such as autoimmune flares and silent decline.",
+        "Explain the general effects of long-term conditions, which apply equally to both people.",
+        "Use more medical terms in the first description, then refer back to it for the second."
        ],
        "answer": 1,
-       "why": "Specific causes and signs for each show understanding. Using the same wording or generalising about all long-term conditions hides differences, and more medical words add length, not understanding."
+       "why": "Specific causes and signs for each disorder show understanding of both. Matching headings or general long-term effects, the tempting options, produce text that could be written without knowing either disorder."
       }
      },
      {
@@ -538,13 +538,13 @@
       "check": {
        "q": "What makes an impact evaluation detailed?",
        "options": [
-        "Using longer sentences and more medical vocabulary.",
-        "Linking effects on body, mind and social life and proposing a specific local response.",
-        "Repeating the diagnosis before each point.",
-        "Describing the worst possible outcome for the person."
+        "It uses longer sentences and more medical vocabulary to describe the person's condition.",
+        "It describes the worst outcome the condition could cause for the person, in full.",
+        "It covers body, mind and social life in turn, giving equal space to each.",
+        "It links effects on body, mind and social life and proposes a specific local response."
        ],
-       "answer": 1,
-       "why": "Depth comes from connections and local relevance. Long sentences and vocabulary are style, repeating the diagnosis adds nothing, and worst-case description is not evaluation of the likely impact."
+       "answer": 3,
+       "why": "Depth comes from linking effects together and responding locally. Covering body, mind and social life in separate paragraphs is the tempting Merit-level answer: it is broad but never connects the effects or proposes a response."
       }
      },
      {
@@ -558,13 +558,13 @@
       "check": {
        "q": "Which closing sentence is a justified conclusion?",
        "options": [
-        "Both conditions are serious and have many effects on wellbeing.",
-        "Hollis needs quick practical help to keep working, whereas Dilys needs steady monitoring, because the impacts differ in speed and type.",
-        "Rheumatoid arthritis and chronic kidney disease are different disorders.",
-        "More research is needed into both conditions."
+        "Both conditions are serious and long-term, so both people need regular care and support from services.",
+        "Hollis needs quick practical help to work, whereas Dilys needs steady monitoring, as impacts differ.",
+        "Rheumatoid arthritis and chronic kidney disease are different disorders with quite different effects.",
+        "Hollis is more affected than Dilys, because his disorder has symptoms that hers does not have."
        ],
        "answer": 1,
-       "why": "A justified conclusion distinguishes the people and says why. The others are accurate but do not decide anything: one repeats that conditions are serious, one states that they differ, and one defers to future research."
+       "why": "A justified conclusion distinguishes the two people and says why. The tempting 'both are serious' option is accurate but decides nothing, and the ranking option rests on symptoms alone, which is not a reasoned basis for support."
       }
      }
     ]
@@ -582,13 +582,13 @@
       "check": {
        "q": "Which sentence justifies an investigation?",
        "options": [
-        "A blood test was done at the health centre to check Dilys's kidneys.",
-        "Blood tests are the most common investigation in health care.",
-        "An eGFR test shows how well the kidneys filter and can be repeated cheaply to track change.",
-        "Dilys had a blood test and a urine test."
+        "An eGFR test is a blood test that measures kidney filtering, and it was done on Dilys.",
+        "Blood tests are the most common investigation in health care, so one suits Dilys well.",
+        "An eGFR test shows kidney filtering and can be repeated cheaply to track change.",
+        "A kidney biopsy gives the most accurate answer, so it is the best choice for Dilys."
        ],
        "answer": 2,
-       "why": "Justification says what the test shows and why it fits. The first and fourth report that a test happened, and 'most common' says nothing about why it suits this person."
+       "why": "Justification says why a test fits this person, here its low cost and use for tracking change. Saying what a test measures, the tempting Merit-level option, describes the test without explaining why it was chosen over others."
       }
      },
      {
@@ -602,13 +602,13 @@
       "check": {
        "q": "A single eGFR reading for Dilys is lower than normal. What should happen next?",
        "options": [
-        "Diagnose chronic kidney disease straight away from the single reading.",
-        "Repeat the test over about three months and add a urine test, because one result can vary.",
-        "Ignore the result, since she feels well.",
-        "Order a kidney biopsy immediately, as it is the most accurate test."
+        "Repeat the test after about three months and add a urine test, since results vary.",
+        "Diagnose chronic kidney disease straight away, because eGFR is a reliable test on its own.",
+        "Ignore the result for now, because she feels well and has no symptoms to explain it.",
+        "Order a kidney biopsy immediately, because it is the most accurate test of kidney damage."
        ],
-       "answer": 1,
-       "why": "Chronic kidney disease is confirmed by repeated results over time with a urine test. Diagnosing from one reading ignores variation, ignoring the result relies on symptoms, and a biopsy is invasive and kept for unclear cases."
+       "answer": 0,
+       "why": "Chronic kidney disease is confirmed by repeated results over time with a urine test. Diagnosing from one reading is the tempting option, but it ignores that a single result can vary and that the limits of a test are why more than one is needed."
       }
      },
      {
@@ -622,13 +622,13 @@
       "check": {
        "q": "What does justifying a treatment involve?",
        "options": [
-        "Listing every drug that could be used.",
-        "Saying doctors recommend it.",
-        "Weighing benefits against drawbacks for this person.",
-        "Describing how the drug works inside the body."
+        "Listing every drug that could treat the condition, with its usual dose and timing.",
+        "Stating that doctors recommend the treatment, since they are trained to decide.",
+        "Explaining how the drug works inside the body to produce its beneficial effect.",
+        "Weighing the benefits against the drawbacks for this particular person."
        ],
-       "answer": 2,
-       "why": "Justification weighs benefit against drawback for the individual. Listing drugs, quoting authority and describing mechanisms are knowledge, not a reasoned choice for this person."
+       "answer": 3,
+       "why": "Justification weighs benefit against drawback for the individual. Explaining how a drug works, the tempting option, is accurate science, but it describes the mechanism and never reasons about whether the treatment suits this person."
       }
      },
      {
@@ -642,13 +642,13 @@
       "check": {
        "q": "Why do the treatment plans for Hollis and Dilys look different?",
        "options": [
-        "Because Hollis is younger and so needs more medicine.",
-        "Because each plan aims at a different outcome: control inflammation and keep working, or slow decline.",
-        "Because one of the conditions is more serious than the other.",
-        "They should look the same, since both are long-term conditions."
+        "Each plan aims at a different outcome: control inflammation and work, or slow decline.",
+        "Hollis is younger than Dilys, so he needs more medicine to control his condition.",
+        "One condition is more serious than the other, so it needs a stronger treatment plan.",
+        "Both are long-term conditions, so both plans should aim to control symptoms in the same way."
        ],
-       "answer": 1,
-       "why": "Plans differ because their aims differ. Age alone does not set the treatment, saying one is more serious is an unsupported ranking, and long-term conditions are not treated alike."
+       "answer": 0,
+       "why": "Plans differ because their aims differ. The tempting 'same aim' option treats all long-term conditions alike, and the age and seriousness options rest on assumptions that do not set treatment."
       }
      },
      {
@@ -662,13 +662,13 @@
       "check": {
        "q": "Which is the strongest use of local research?",
        "options": [
-        "A long list of every service in the town.",
-        "Matching a named local service to a need identified earlier.",
-        "A map showing where the services are.",
-        "A general statement that the town has good services."
+        "Listing every service in the town, with what each one offers in general.",
+        "Giving a general conclusion that the town's services are good overall.",
+        "Matching a named local service to a need that was identified earlier.",
+        "Quoting national research on carers without saying what the town provides."
        ],
-       "answer": 1,
-       "why": "Matching shows research applied. A list or map presents information without choosing, and a general statement is not evidence."
+       "answer": 2,
+       "why": "Matching shows research applied. Listing every service, the tempting Merit-level option, presents information without choosing, and national research alone is not local."
       }
      },
      {
@@ -682,13 +682,13 @@
       "check": {
        "q": "Why should a care plan consider the informal carer's own needs?",
        "options": [
-        "Because informal carers are paid and need contracts.",
+        "Because informal carers are paid by the council and so need contracts and rights.",
         "Because the arrangement may fail if the carer's own health or time is stretched.",
-        "Because carers always want to stop caring.",
-        "It should not, because the plan is about the service user only."
+        "Because informal carers usually want to stop caring and need a replacement found.",
+        "Because the plan is judged only on the service user's needs, not on the carer's."
        ],
        "answer": 1,
-       "why": "Plans fail when carers are overstretched. Informal carers are usually unpaid, many do not want to stop, and the plan is stronger when it protects the whole care arrangement."
+       "why": "Plans fail when carers are overstretched, so the carer's strain belongs in the plan. The 'service user only' option is tempting because the plan is about Dilys, but it ignores that her care depends on Emrys."
       }
      }
     ]
@@ -706,13 +706,13 @@
       "check": {
        "q": "What is a constraint in a care plan?",
        "options": [
+        "A target the plan aims to reach, such as steadier blood pressure.",
+        "A symptom or sign that the person has and the plan must reduce.",
         "Something that limits what is possible, such as transport or time.",
-        "A medical test used to check progress.",
-        "A type of drug used in the plan.",
-        "A symptom the person has."
+        "A treatment that the plan uses, such as a drug or a change of diet."
        ],
-       "answer": 0,
-       "why": "A constraint limits choices. Tests, drugs and symptoms are parts of the plan or the condition, not limits on it."
+       "answer": 2,
+       "why": "A constraint limits the choices open to the planner. The tempting 'target' option confuses a constraint with an outcome, and symptoms and treatments are parts of the condition or the plan, not limits on it."
       }
      },
      {
@@ -726,13 +726,13 @@
       "check": {
        "q": "Which is the most innovative response to Dilys disliking tablets?",
        "options": [
-        "Telling her she must take them or her kidneys will fail.",
-        "Prescribing extra tablets to cover missed doses.",
+        "Telling her she must take every tablet or her kidneys will fail quickly.",
         "Using a weekly pill organiser and one check-in call from the pharmacy.",
-        "Stopping her blood pressure medication."
+        "Prescribing extra tablets as back-up in case she misses some doses.",
+        "Giving her a leaflet that explains each tablet and why it matters."
        ],
-       "answer": 2,
-       "why": "A tailored routine tackles the barrier without adding pressure. Threats can cause anxiety and avoidance, extra tablets worsen the barrier, and stopping treatment removes the benefit."
+       "answer": 1,
+       "why": "A tailored routine tackles the barrier without adding pressure. The leaflet is the tempting standard response: sensible, but it does not adapt the routine, while threats cause anxiety and extra tablets worsen the barrier."
       }
      },
      {
@@ -746,13 +746,13 @@
       "check": {
        "q": "Why include limitations in a plan?",
        "options": [
-        "It makes the plan longer.",
-        "It shows realistic judgement and prepares for change.",
-        "It shows the plan is weak.",
-        "It is required by law."
+        "They show realistic judgement and let the plan prepare for change.",
+        "They protect the planner, because failure can then be blamed on the condition.",
+        "They show that the plan is weak, so a stronger one should be written instead.",
+        "They are required by law for any plan about a long-term condition."
        ],
-       "answer": 1,
-       "why": "Honest limits support valid judgement and lead to review points. Length is not a purpose, admitting limits does not weaken a plan, and no law requires it."
+       "answer": 0,
+       "why": "Honest limits support valid judgement and lead to review points. The 'protect the planner' option is tempting but treats limits as an excuse, and admitting limits does not make a plan weak or satisfy a legal rule."
       }
      },
      {
@@ -766,13 +766,13 @@
       "check": {
        "q": "Which action best respects consent and confidentiality?",
        "options": [
-        "Using the person's real name because they know you.",
-        "Getting agreement once, verbally, and keeping no record.",
-        "Changing identifying details and keeping a signed consent form.",
-        "Asking a family member to agree instead of the person."
+        "Using the person's real name, because the planner already knows them well.",
+        "Getting agreement once, verbally, and keeping no written record of it.",
+        "Asking a family member to agree instead, since they know the person's wishes.",
+        "Changing identifying details and keeping a signed consent form on file."
        ],
-       "answer": 2,
-       "why": "Formal consent and protected identity are both needed. Knowing someone does not replace consent, verbal agreement leaves no record, and a family member cannot give consent unless the person lacks capacity and proper procedures are followed."
+       "answer": 3,
+       "why": "Formal consent and a protected identity are both needed. Verbal agreement is the tempting option because the person did agree, but it leaves no record, and knowing someone or asking a relative does not replace consent."
       }
      },
      {
@@ -786,13 +786,13 @@
       "check": {
        "q": "What does it mean to plan for a contingency?",
        "options": [
-        "To pick the cheapest option available.",
+        "To choose the cheapest option, so that the plan stays within budget.",
         "To prepare what will change if the plan does not work as hoped.",
-        "To avoid any mention of risk.",
-        "To repeat the plan every month."
+        "To leave risks out of the plan, so that it does not worry the person.",
+        "To repeat the same plan every month until the person's condition improves."
        ],
        "answer": 1,
-       "why": "Contingency planning prepares alternatives. The cheapest option is a constraint, avoiding risk hides problems, and repeating a plan unchanged ignores the need to adapt."
+       "why": "Contingency planning prepares alternatives in advance. The cheapest option is the tempting confusion, since it is a constraint, and leaving out risks or repeating an unchanged plan ignores the need to adapt."
       }
      }
     ]
@@ -818,13 +818,13 @@
       "check": {
        "q": "How do several sources show breadth?",
        "options": [
-        "A single long source is read carefully.",
-        "Several reliable sources are compared with each other.",
-        "A friend's advice is added to one source.",
-        "A video is the only source used."
+        "By reading one long, detailed source carefully and quoting it throughout.",
+        "By using a different source for each point and describing each in turn.",
+        "By relying on one clear video that covers both microbes in a short clip.",
+        "By comparing reliable sources and noting where they agree or differ."
        ],
-       "answer": 1,
-       "why": "Comparing reliable sources shows breadth and judgement. One long source or a video is a single voice, and a friend's advice is not a reliable source."
+       "answer": 3,
+       "why": "Comparing reliable sources shows breadth and judgement. Using a different source for each point is the tempting Merit-level option: it spreads sources out but never weighs them against each other."
       }
      },
      {
@@ -838,13 +838,13 @@
       "check": {
        "q": "Why might a control method not be used for a particular microbe?",
        "options": [
-        "It is old, so it must be out of date.",
-        "It may not work on that microbe or in that setting.",
-        "It is cheap, so it cannot be effective.",
-        "It takes too long to read the label."
+        "It is old, so it is likely to be out of date and unsafe to use.",
+        "It is cheap, so it is unlikely to be effective enough for the job.",
+        "It may not work against that microbe or in that setting.",
+        "It is used for other microbes, so it cannot work on this one."
        ],
-       "answer": 1,
-       "why": "Methods are chosen because of their effect on the microbe and the setting. Age and cost do not decide effectiveness, and label length is irrelevant."
+       "answer": 2,
+       "why": "Methods are chosen because of their effect on the microbe and the setting. Age, cost and use against other microbes do not decide effectiveness, and alcohol gel shows this, as it works on many microbes but poorly on norovirus."
       }
      },
      {
@@ -858,13 +858,13 @@
       "check": {
        "q": "Why does temperature control of the water not control norovirus?",
        "options": [
-        "Because norovirus is a bacterium that likes cold water.",
-        "Because norovirus is a virus that cannot multiply outside a host, so water temperature does not limit it.",
-        "Because norovirus is killed by antibiotics instead.",
-        "Because the shower water is too hot for any virus."
+        "Norovirus is a virus that cannot multiply outside a host, so heating water does not limit it.",
+        "Norovirus is a bacterium that prefers cold water, so heating the water would not affect it at all.",
+        "Norovirus is killed by antibiotics, so temperature control is not needed to deal with it at all.",
+        "Norovirus is a virus, and viruses cannot be controlled by any method outside a hospital setting."
        ],
-       "answer": 1,
-       "why": "Viruses only multiply inside host cells, so temperature control of water does not limit them. Norovirus is not a bacterium, antibiotics do not work on viruses, and heat is not the reason."
+       "answer": 0,
+       "why": "Viruses only multiply inside host cells, so water temperature cannot limit norovirus as it limits Legionella. The tempting bacterium and antibiotic options confuse viruses with bacteria."
       }
      },
      {
@@ -878,13 +878,13 @@
       "check": {
        "q": "A good conclusion includes:",
        "options": [
-        "A summary of every method discussed.",
-        "A personal opinion about microbes.",
-        "A named best method for each microbe with a brief reason.",
-        "A question for further research."
+        "A summary of every method discussed, in the order that they appeared.",
+        "A balanced list of the strengths and weaknesses of each method.",
+        "A recommendation to use all of the methods together, to be safe.",
+        "A named best method for each microbe, with a brief reason."
        ],
-       "answer": 2,
-       "why": "A clear choice with reasons is a justified conclusion. A summary repeats, opinion lacks evidence, and a question leaves the matter unresolved."
+       "answer": 3,
+       "why": "A clear choice with a reason is a justified conclusion. The balanced list of strengths and weaknesses is the tempting Merit-level option, as it analyses each method but never chooses one."
       }
      }
     ]
@@ -900,15 +900,15 @@
       "whyNearMiss": "It names two causes but not how either works, so the account asserts rather than explains.",
       "explainPrompt": "Which two causes does the example link to dengue? Why do they matter together?",
       "check": {
-       "q": "What makes an account objective?",
+       "q": "What makes an account of global spread objective?",
        "options": [
-        "Strong adjectives that show how serious it is.",
-        "Facts and reasons, not opinion.",
-        "A personal story about an outbreak.",
-        "Short sentences."
+        "It rests on evidence and reasons, and keeps opinion out of the account.",
+        "It uses strong adjectives to show how serious the global spread has become.",
+        "It includes a personal story about one outbreak to show its human effects.",
+        "It uses short, simple sentences so that every point is easy to follow."
        ],
-       "answer": 1,
-       "why": "Objective means evidence-based. Strong adjectives, personal stories and sentence length affect tone, not objectivity."
+       "answer": 0,
+       "why": "Objective means evidence-based. Strong adjectives, personal stories and short sentences change the tone or readability, but none of them makes an account more objective."
       }
      },
      {
@@ -920,15 +920,15 @@
       "whyNearMiss": "It lists causes accurately and names diseases, but weighs none of them, so the 'critical' element is missing.",
       "explainPrompt": "What reason does the example give for ranking different causes for different diseases?",
       "check": {
-       "q": "Which statement is a critical discussion of causes?",
+       "q": "Which statement is a critical discussion of the causes of global spread?",
        "options": [
-        "Air travel spreads all diseases equally quickly.",
-        "The most important cause depends on how the disease spreads, so water matters for cholera and travel for dengue.",
-        "Climate change is the only reason that diseases spread.",
-        "Disease has always spread, so the causes do not matter."
+        "Air travel spreads all diseases equally quickly, so it ranks first for every outbreak.",
+        "The most important cause depends on the route: water for cholera, travel for dengue.",
+        "Climate change is the only real reason that diseases now spread more widely.",
+        "Travel, trade, urban growth and climate all contribute to the spread of disease."
        ],
        "answer": 1,
-       "why": "Ranking by the disease's route is critical discussion. 'All equally' and 'only one reason' ignore differences, and 'causes do not matter' avoids the question."
+       "why": "Ranking causes by the disease's route is critical discussion. Listing travel, trade, urban growth and climate is the tempting Merit-level option: it is accurate, but it weighs none of them."
       }
      },
      {
@@ -940,15 +940,15 @@
       "whyNearMiss": "It names several groups but treats them in one line each, with no link to how they affect each other or the control of the disease.",
       "explainPrompt": "Name the groups in the example. Why does stigma matter for control?",
       "check": {
-       "q": "Which group is easily forgotten when describing consequences?",
+       "q": "Which statement best describes the consequences of a pandemic across different groups?",
        "options": [
-        "Health workers and their families.",
-        "Politicians.",
-        "Tourists.",
-        "Pets."
+        "Many people become ill and some die, so families and societies are affected as well.",
+        "Health workers face infection risk because they spend long hours treating the sick.",
+        "Fear of stigma makes sufferers hide symptoms, which makes control harder for health workers.",
+        "Pandemics mainly affect the individuals who are ill, since other groups are not directly harmed."
        ],
-       "answer": 0,
-       "why": "Health workers face particular risks and their families share them. The others are less central to outbreak consequences, though tourists may spread disease."
+       "answer": 2,
+       "why": "Describing consequences well shows how effects on one group reach another. The tempting 'many become ill' option names groups in a single line, and the health worker option is true but covers one group alone."
       }
      },
      {
@@ -962,13 +962,13 @@
       "check": {
        "q": "Which situation is an ethical dilemma?",
        "options": [
-        "Choosing a colour for the hospital walls.",
-        "Choosing between possible benefit and unknown harm from an untested drug.",
-        "Choosing which hospital to visit.",
-        "Choosing a date for a staff meeting."
+        "Deciding which of two proven treatments is cheaper for the hospital to buy this year.",
+        "Deciding to give a proven treatment to a patient who has agreed to take the treatment.",
+        "Deciding which hospital to send a patient to when both offer exactly the same treatment.",
+        "Deciding whether to give an untested drug that might save lives but could cause harm."
        ],
-       "answer": 1,
-       "why": "A dilemma balances competing rights or risks. The others are practical choices with no ethical conflict."
+       "answer": 3,
+       "why": "A dilemma balances competing benefits and harms, as with an untested drug. The other options are practical choices or decisions where no right or risk is in conflict."
       }
      },
      {
@@ -982,13 +982,13 @@
       "check": {
        "q": "Why is respect for local beliefs important during an outbreak?",
        "options": [
-        "It is polite but has no effect on control.",
+        "It is a matter of politeness only and makes little difference to control.",
         "People who feel respected are more likely to follow safety advice.",
-        "It lets health workers ignore the science.",
-        "It means every belief should be followed."
+        "It allows health workers to set aside the science where beliefs differ.",
+        "It means every local belief should be followed, even if it spreads infection."
        ],
        "answer": 1,
-       "why": "Trust improves cooperation. Respect is not just politeness, does not replace evidence, and does not mean abandoning safe practice."
+       "why": "Trust improves cooperation, so respect has a practical effect on control. Respect is not just politeness, does not replace evidence, and does not mean giving up safe practice."
       }
      },
      {
@@ -1002,13 +1002,13 @@
       "check": {
        "q": "Why is global control different from controlling an outbreak in one country?",
        "options": [
-        "There is only one disease to control.",
-        "Diseases are weaker abroad.",
-        "Countries have different resources, rules and vaccine access.",
-        "Travel stops during outbreaks."
+        "Diseases become weaker as they spread to countries far from the source.",
+        "Travel stops during outbreaks, so countries manage the disease separately.",
+        "Countries have different resources, rules and access to vaccines.",
+        "Global control is the same as local control, only across more people."
        ],
        "answer": 2,
-       "why": "Global control depends on coordination across unequal systems. Diseases do not weaken abroad and travel does not stop fully."
+       "why": "Global control depends on coordination between unequal health systems. The tempting 'same, only bigger' option treats it as simple local control scaled up, which ignores differences between countries."
       }
      }
     ]
@@ -1024,15 +1024,15 @@
       "whyNearMiss": "It has both sides, but gives categories not specific facts, so nothing can be checked.",
       "explainPrompt": "How does the example show the same microbes can be good and harmful?",
       "check": {
-       "q": "Which is a fact about benefit?",
+       "q": "Which statement is a checkable fact about a benefit of microbes?",
        "options": [
-        "Kefir uses live microbes to ferment milk.",
-        "Microbes are everywhere.",
-        "Microbes are very small.",
-        "Microbes are interesting."
+        "Kefir is made when live bacteria and yeasts ferment milk into a drink.",
+        "Microbes are beneficial in many areas of life, including food and health.",
+        "Beneficial microbes are more important to people than harmful microbes.",
+        "Most microbes help people, so the relationship is mainly positive."
        ],
        "answer": 0,
-       "why": "Facts are specific and checkable. The others are general statements that do not show benefit."
+       "why": "A fact is specific and checkable, and kefir fermentation can be checked. Saying microbes are beneficial in many areas, the tempting option, names a category with no fact behind it."
       }
      },
      {
@@ -1044,15 +1044,15 @@
       "whyNearMiss": "It says 'it depends' but not on what, and does not weigh frequency or severity.",
       "explainPrompt": "What facts does the example use to weigh the balance?",
       "check": {
-       "q": "Is a definite conclusion required?",
+       "q": "Is a definite conclusion required about whether the relationship is beneficial?",
        "options": [
-        "Yes, always.",
-        "Never include a view.",
-        "Only if it is long.",
-        "No, but any argument needs facts."
+        "Yes, a clear verdict is always required, even when the facts are mixed.",
+        "No, because a balanced description of both sides is enough on its own.",
+        "Yes, but only if it is a view that most scientists would accept.",
+        "Not always, but any view that is given must be argued with facts."
        ],
        "answer": 3,
-       "why": "The guidance accepts balanced views backed by facts. 'Always' and 'never' go beyond the guidance."
+       "why": "The guidance accepts a balanced view if it is backed by facts. The balanced description option is tempting but stops at 'it depends'; 'always' and 'consensus only' go beyond the guidance."
       }
      },
      {
@@ -1064,15 +1064,15 @@
       "whyNearMiss": "It gives one use of antibiotics, with no link to resistance or gut bacteria, so no other part of the unit is drawn in.",
       "explainPrompt": "Which other part of the unit does the example connect to?",
       "check": {
-       "q": "Why link across the unit?",
+       "q": "Why link ideas across the unit when judging microbes?",
        "options": [
-        "It makes the work longer.",
-        "It repeats earlier work.",
-        "It shows deeper understanding.",
-        "It is a legal requirement."
+        "It makes the answer longer, which shows that the topic has been covered.",
+        "It repeats earlier learning, which proves that it has been remembered.",
+        "It shows how different parts of the topic affect each other.",
+        "It shows wider reading, because each linked topic needs its own source."
        ],
        "answer": 2,
-       "why": "Linking shows synthesis. Length is not a purpose, and repetition adds nothing."
+       "why": "Linking shows synthesis: antibiotics connect control with the benefits and harms of microbes. Length, repetition and extra sources add words, not understanding."
       }
      },
      {
@@ -1086,13 +1086,13 @@
       "check": {
        "q": "What makes a claim about future uses of microbes credible?",
        "options": [
-        "It is stated with certainty.",
-        "It is based on current research and acknowledges uncertainty.",
-        "It uses long scientific words.",
-        "It is the first idea that comes to mind."
+        "It is based on current research and openly acknowledges what is uncertain.",
+        "It is stated with certainty, so that it sounds more convincing to a reader.",
+        "It uses scientific terms without explanation, so that it sounds more expert.",
+        "It describes the most exciting possible use first, to catch the reader's interest."
        ],
-       "answer": 1,
-       "why": "Credible claims link to current research and admit uncertainty. Certainty, vocabulary and first ideas are not evidence."
+       "answer": 0,
+       "why": "Credible claims link to current research and admit what is still being developed. Certainty, technical vocabulary and excitement make a claim sound strong without making it supported."
       }
      }
     ]
@@ -1112,19 +1112,19 @@
       "fromSpec": "Evaluate and reach reasoned judgements on the background to policy making and the role of government affecting one local setting.",
       "means": "Weigh how well policy gets from national government to local practice, and say what that means for the setting.",
       "example": "Government sets duties in law and funds them through departments and local authorities. For Fenhaven, this means the young carers' duty is national, but the money is local and short-term, so the policy's effect depends on grants.",
-      "nearMiss": "The government makes laws and local authorities carry them out.",
-      "whyNearMiss": "It describes the process but does not judge how well it works locally.",
+      "nearMiss": "Parliament passes the Children and Families Act 2014, which gives young carers a right to assessment, and local authorities carry out the duty.",
+      "whyNearMiss": "It describes accurately how a national duty reaches local level, but never judges how well the process works for Fenhaven, such as the effect of short-term local funding.",
       "explainPrompt": "What does the example say about the gap between national duties and local money? Explain why this is a judgement.",
       "check": {
-       "q": "Which statement is evaluative?",
+       "q": "Which statement evaluates the policy-making process rather than describing it?",
        "options": [
-        "Parliament passes Acts.",
-        "Local authorities exist in England.",
+        "Parliament passes Acts, and local authorities then carry out the duties that they set.",
         "National duties are only as effective as the local funding that delivers them.",
-        "The Department of Health and Social Care leads health policy."
+        "Government departments lead policy, while local authorities run services for young carers.",
+        "The Children and Families Act 2014 gave young carers a right to an assessment."
        ],
-       "answer": 2,
-       "why": "Evaluation judges effect, not just structure."
+       "answer": 1,
+       "why": "Evaluation judges how well the process works in practice, here by tying national duties to local funding. The tempting description of Parliament and local authorities is accurate but only outlines the steps."
       }
      },
      {
@@ -1132,19 +1132,19 @@
       "fromSpec": "Draw on the factors that influence policy making, making suitable justifications.",
       "means": "Choose the most influential factors for your setting and say why they matter more than others.",
       "example": "The national charity's report and the newspaper story have raised the profile of hidden young carers. Funding is more influential locally, because without a grant the project cannot act on the attention.",
-      "nearMiss": "Newspapers and charities influence policy.",
-      "whyNearMiss": "Factors are named, but their weight is not judged.",
+      "nearMiss": "The national charity's report and the newspaper story raised the profile of hidden young carers, and the grant ending threatens the project's funding.",
+      "whyNearMiss": "It names three real factors from the case, but never ranks them or says which matters most, so influence is described but not judged.",
       "explainPrompt": "Why does the example rank funding above the media? Do you agree?",
       "check": {
-       "q": "Why rank factors?",
+       "q": "Which statement judges the weight of the factors that influence policy on young carers?",
        "options": [
-        "To show which has most influence and why.",
-        "To make the list longer.",
-        "To avoid choosing.",
-        "To be neutral."
+        "A newspaper story and a national charity report both helped to influence policy on young carers.",
+        "Media coverage is the strongest factor, because a story reaches more people than a report does.",
+        "All the factors matter equally, because policy responds to funding, media and pressure groups.",
+        "Funding matters more locally than media coverage, as without a grant the project cannot act."
        ],
-       "answer": 0,
-       "why": "Ranking shows reasoning."
+       "answer": 3,
+       "why": "A judged ranking says which factor matters most and why, in this case. Naming the newspaper story and the charity report, the tempting option, identifies factors but gives them no weight."
       }
      },
      {
@@ -1152,19 +1152,19 @@
       "fromSpec": "Evaluate how practice of a local setting is affected by government policy in meeting a specific need of a service user group.",
       "means": "Pick one need (for example, identifying hidden young carers) and track the policy through to what workers actually do.",
       "example": "The duty to assess young carers means Quayside must identify them. A register helps, but busy receptionists may miss clues, so the policy only works if staff are trained to ask.",
-      "nearMiss": "Quayside has a young carers register.",
-      "whyNearMiss": "It states a practice without linking to policy or judging how well it meets the need.",
+      "nearMiss": "The duty to assess young carers means Quayside keeps a young carers register to identify them.",
+      "whyNearMiss": "It links the duty to the register, but does not judge how well the register meets the need, for example whether staff are trained to spot young carers.",
       "explainPrompt": "What problem does the example find in turning policy into practice?",
       "check": {
-       "q": "A strong link between policy and practice shows:",
+       "q": "Which answer best links policy to practice at Quayside Surgery?",
        "options": [
-        "A copy of the law.",
-        "The route from the duty to staff action and its weaknesses.",
-        "A staff list.",
-        "The date of the policy."
+        "Quayside has a young carers register, which shows that it follows the policy.",
+        "The duty to assess leads to a register, which works only if staff are trained to ask.",
+        "The Children and Families Act 2014 sets out the duty to assess young carers at Quayside.",
+        "Quayside must follow the Act, so its practice meets the needs of every young carer."
        ],
        "answer": 1,
-       "why": "Practice-level evidence is needed."
+       "why": "A strong link traces the route from duty to staff action and notes where it may fail. Having a register, the tempting option, shows an action was taken but assumes that this means the duty is met."
       }
      },
      {
@@ -1172,19 +1172,19 @@
       "fromSpec": "Use secondary research to justify the validity of organisations' priorities in representing service users' needs.",
       "means": "Compare what an organisation says its priorities are with what research says service users need.",
       "example": "Research from national carers' charities suggests young carers most want to be recognised at school. Fenhaven's priority of school liaison therefore matches need well, although its grant limits how many it can reach.",
-      "nearMiss": "Fenhaven wants to help young carers.",
-      "whyNearMiss": "The priority is not checked against research.",
+      "nearMiss": "Fenhaven offers after-school clubs, school liaison and breaks. Research from national carers' charities suggests young carers most want to be recognised at school.",
+      "whyNearMiss": "Both the research and Fenhaven's services are stated accurately, but they are not compared, so it never judges whether the priorities match what young carers need.",
       "explainPrompt": "What evidence is used to test Fenhaven's priority? Why is secondary research suitable here?",
       "check": {
-       "q": "What is secondary research?",
+       "q": "Which is the best use of secondary research to test Fenhaven's priorities?",
        "options": [
-        "Your own interviews.",
-        "A guess.",
-        "A poll of friends.",
-        "Information collected by others, such as published reports."
+        "Comparing a national carers' charity report on young carers' wants with Fenhaven's priorities.",
+        "Interviewing young carers at the project about what they want from the service it offers.",
+        "Describing Fenhaven's clubs, school liaison and breaks from the project's own leaflet and website.",
+        "Quoting a newspaper story about hidden young carers without checking where it got its facts."
        ],
-       "answer": 3,
-       "why": "Secondary research is published work."
+       "answer": 0,
+       "why": "Secondary research is published work by others, here used to test the priorities against need. Interviewing young carers is tempting because it asks them directly, but it is primary research, a different thing."
       }
      }
     ]
@@ -1196,19 +1196,19 @@
       "fromSpec": "Reach original and valid conclusions about how policy and codes affect individuals working in two different settings.",
       "means": "Describe what the law and codes require of staff, then judge how helpful or difficult that is in each setting.",
       "example": "A registered social worker must follow professional standards, which gives clear boundaries but adds recording work. A GP receptionist's duty to protect data is similar but less specialised, so training matters more.",
-      "nearMiss": "Workers have to follow laws and codes.",
-      "whyNearMiss": "No specific effect or comparison.",
+      "nearMiss": "A registered social worker must follow Social Work England standards, and a GP receptionist must follow data protection law.",
+      "whyNearMiss": "Both workers are described accurately, but nothing compares how the rules affect them, such as the boundaries gained against the extra recording or the training needed.",
       "explainPrompt": "How does the example compare the two roles? What conclusion does it reach?",
       "check": {
-       "q": "Which compares two settings?",
+       "q": "Which statement compares the effect of codes of practice in the two settings?",
        "options": [
-        "All staff follow rules.",
-        "Both must protect information, but the social worker has stronger professional standards to guide them.",
-        "Rules are important.",
-        "The surgery is bigger."
+        "Registered social workers follow standards set by Social Work England, which guide their daily work.",
+        "Staff in both settings must follow laws and codes, which are important for safe practice overall.",
+        "Both must protect information, but social workers have stronger professional standards.",
+        "The surgery is a larger organisation than the project, so it has many more rules to follow."
        ],
-       "answer": 1,
-       "why": "Comparison needs both settings."
+       "answer": 2,
+       "why": "A comparison needs both settings and a difference between them. The social worker option is the tempting Merit-level answer: it is accurate and specific, but it covers one setting only."
       }
      },
      {
@@ -1216,19 +1216,19 @@
       "fromSpec": "Reach valid conclusions about how legislation and codes affect individuals using the settings.",
       "means": "Say how rights and protections look from a service user's side, including any downsides such as delays.",
       "example": "Data protection law gives young carers confidentiality, which builds trust. Yet it can stop the surgery telling the school about a child's caring role, so the protection may also slow help.",
-      "nearMiss": "Laws protect young carers.",
-      "whyNearMiss": "No explanation or downside.",
+      "nearMiss": "Data protection law gives young carers confidentiality, which builds trust in both the project and the surgery.",
+      "whyNearMiss": "It gives an accurate benefit for service users but no drawback, so the evaluation is one-sided; the same law can slow information sharing with the school.",
       "explainPrompt": "What is the benefit and the drawback of confidentiality in the example?",
       "check": {
-       "q": "A balanced evaluation includes:",
+       "q": "Which evaluation of data protection law for young carers is balanced?",
        "options": [
-        "Both benefits and drawbacks for service users.",
-        "Only benefits.",
-        "Only drawbacks.",
-        "Only definitions."
+        "It protects confidentiality, which builds trust and makes young carers more likely to seek help.",
+        "It builds trust, but it can stop the surgery telling the school about a child's caring role.",
+        "It stops the surgery sharing information with others, which can delay help for a young carer.",
+        "It is a law that all staff in both settings must follow when handling any personal data."
        ],
-       "answer": 0,
-       "why": "Evaluation weighs both."
+       "answer": 1,
+       "why": "Evaluation weighs benefits against drawbacks for service users. The benefit-only option is tempting because it is accurate and applied, but it gives one side, which is the Merit-level trap."
       }
      },
      {
@@ -1236,19 +1236,19 @@
       "fromSpec": "Draw on research to deepen understanding and arrive at original and valid conclusions about implementation.",
       "means": "Use sources about each setting, such as its website or inspection reports, then say something that is your own judgement.",
       "example": "The project's published safeguarding policy matches the Children and Families Act 2014, but its reliance on volunteers suggests that implementation could be uneven. It follows the law yet is vulnerable.",
-      "nearMiss": "Fenhaven follows the law.",
-      "whyNearMiss": "No evidence from research and no original view.",
+      "nearMiss": "The project's published safeguarding policy matches the Children and Families Act 2014, and it relies on volunteers to run its clubs.",
+      "whyNearMiss": "Both findings are accurate, but nothing is concluded from them; it never judges whether relying on volunteers might make delivery uneven.",
       "explainPrompt": "What is the 'original' part of the conclusion?",
       "check": {
-       "q": "What makes a conclusion original?",
+       "q": "Which conclusion about Fenhaven's safeguarding is reasoned from original research?",
        "options": [
-        "It is unusual.",
-        "It is long.",
-        "It is reasoned from your evidence, not copied.",
-        "It is surprising."
+        "Its published policy matches the Children and Families Act 2014, so it follows the law.",
+        "A national charity says that projects like Fenhaven often struggle to deliver policy evenly.",
+        "Safeguarding is vital in work with young carers, and Fenhaven clearly treats it seriously.",
+        "Its policy matches the Act, but reliance on volunteers suggests delivery could be uneven."
        ],
-       "answer": 2,
-       "why": "Originality is your reasoning from evidence."
+       "answer": 3,
+       "why": "An original conclusion is reasoned from your own evidence, here by comparing the policy with how it is delivered. Matching the policy to the Act, the tempting option, reports a finding but draws no conclusion about delivery."
       }
      }
     ]
@@ -1260,19 +1260,19 @@
       "fromSpec": "Evaluate whether policy making has improved health and wellbeing of service users.",
       "means": "Look for outcomes, not just intentions: are users better off?",
       "example": "The Children and Families Act 2014 gave young carers a right to assessment, and Fenhaven reports more referrals. But numbers do not show whether wellbeing improved, so the evidence is only partly convincing.",
-      "nearMiss": "Policy has helped young carers.",
-      "whyNearMiss": "A claim with no evidence or doubt.",
+      "nearMiss": "The Children and Families Act 2014 gave young carers a right to assessment, and Fenhaven reports more referrals.",
+      "whyNearMiss": "It gives real evidence, but treats more referrals as if they showed improved wellbeing, without questioning whether wellbeing has actually changed.",
       "explainPrompt": "What does the example say it cannot prove? Why is that good evaluation?",
       "check": {
-       "q": "Which is outcome evidence?",
+       "q": "Which is evidence that policy has improved young carers' wellbeing?",
        "options": [
-        "The Act was passed in 2014.",
-        "The project has a policy.",
-        "The surgery has a register.",
-        "Young carers report feeling less isolated after joining the project."
+        "Fenhaven reports more referrals since the Children and Families Act 2014.",
+        "The surgery has set up a young carers register, as the Act expects.",
+        "Young carers report feeling less isolated after joining the project.",
+        "The project has a published safeguarding policy that follows the law."
        ],
-       "answer": 3,
-       "why": "Outcomes show improvement."
+       "answer": 2,
+       "why": "Outcome evidence shows a change in young carers' lives. More referrals, the tempting option, show that the duty is being used, but they do not show that anyone's wellbeing has improved."
       }
      },
      {
@@ -1280,19 +1280,19 @@
       "fromSpec": "Evaluate whether policy making has improved wellbeing in different settings.",
       "means": "Say whether improvement is similar or different in a charity and a health setting, and why.",
       "example": "In the surgery the register helps identify adults and children quickly, but the charity can offer breaks, so wellbeing gains look larger in the charity.",
-      "nearMiss": "Both settings help young carers.",
-      "whyNearMiss": "No difference or reason.",
+      "nearMiss": "Both the surgery and the charity help young carers, the surgery through its register and the charity through clubs and breaks.",
+      "whyNearMiss": "It describes what each setting does, but compares nothing; it never says where wellbeing gains look larger or why.",
       "explainPrompt": "Why might the same policy produce different results in the two settings?",
       "check": {
-       "q": "What explains differences between settings?",
+       "q": "Which best explains why wellbeing gains differ between the surgery and the charity?",
        "options": [
-        "The names.",
-        "Their roles, funding and ability to offer practical support.",
-        "The colour of signs.",
-        "The weather."
+        "Their roles, funding and ability to offer practical support differ.",
+        "The charity has fewer service users, so each one receives better care.",
+        "Young carers at the surgery are healthier, so they have less need of support.",
+        "The surgery is part of the NHS, so it values young carers' wellbeing less."
        ],
-       "answer": 1,
-       "why": "Context shapes results."
+       "answer": 0,
+       "why": "Context shapes results: the charity can offer breaks and clubs, but the surgery's role is mainly identification. The 'fewer service users' option is tempting but assumes numbers, not roles and funding, drive the difference."
       }
      },
      {
@@ -1300,19 +1300,19 @@
       "fromSpec": "Use research to reach valid conclusions on how policy and commissioning affect settings.",
       "means": "Name current bodies correctly and say how they affect services. Integrated Care Boards replaced Clinical Commissioning Groups in 2022.",
       "example": "Integrated Care Boards decide how NHS money is used locally, so whether Quayside prioritises young carers partly depends on their plans. This links a national policy to a local gap.",
-      "nearMiss": "The old commissioning body funds the surgery.",
-      "whyNearMiss": "It names no body and says nothing about its effect.",
+      "nearMiss": "Integrated Care Boards decide how NHS money is used locally, and they replaced Clinical Commissioning Groups. Quayside is commissioned through its Integrated Care Board.",
+      "whyNearMiss": "It names the body correctly and its role, but does not link it to the local result, so it never explains how the board's plans affect whether Quayside prioritises young carers.",
       "explainPrompt": "Which body does the example name, and what does it control?",
       "check": {
-       "q": "Which is the current body?",
+       "q": "Which body now decides how NHS money is used locally, including for Quayside Surgery?",
        "options": [
-        "Integrated Care Board.",
-        "The body that used to commission services before 2022.",
-        "A national government department.",
-        "A local council committee."
+        "The Clinical Commissioning Group, which still commissions services.",
+        "The Integrated Care Board, which covers the surgery's local area.",
+        "The Department of Health and Social Care, which commissions each practice.",
+        "The council's social care committee, which funds GP practices."
        ],
-       "answer": 0,
-       "why": "Integrated Care Boards replaced CCGs."
+       "answer": 1,
+       "why": "Integrated Care Boards replaced Clinical Commissioning Groups in 2022. The CCG option is tempting because it was the older name for the same role, so it is out of date."
       }
      }
     ]
@@ -1332,19 +1332,19 @@
       "fromSpec": "Evaluate the effects of different types of dementia on all aspects of an individual's life.",
       "means": "Do not stop at today's symptoms. Show how physical, mental, emotional and social life change over time and which changes matter most.",
       "example": "Bernard's fluctuating alertness limits his independence now, but as the condition progresses falls and confusion will probably affect his social life and Marit's health too. The social and emotional decline may therefore be as serious as the physical.",
-      "nearMiss": "Bernard has Lewy body dementia and sees things that are not there.",
-      "whyNearMiss": "It describes a symptom with no change over time or wider effect.",
+      "nearMiss": "Bernard has dementia with Lewy bodies, and his alertness fluctuates, he sees small animals that are not there and he has a shuffling walk.",
+      "whyNearMiss": "It is accurate and applied to Bernard, but lists current symptoms with no change over time and no judgement of wider effects on his life or Marit's.",
       "explainPrompt": "How does the example move from today to later? What does 'as serious as the physical' judge?",
       "check": {
-       "q": "Which shows progression?",
+       "q": "Which sentence judges the progressive effects of dementia on Bernard's wellbeing?",
        "options": [
-        "Bernard has hallucinations.",
-        "Over time falls and confusion will probably increase and reduce his social contact.",
-        "Bernard is 73.",
-        "Bernard likes tea."
+        "Falls and confusion will probably cut his social contact, harming him as much as his movement.",
+        "Bernard has hallucinations, drowsy days and a shuffling walk, and these affect his daily life now.",
+        "Bernard's dementia will get worse over time, so he will need more care than he does at present.",
+        "Bernard's dementia affects his physical, social and emotional health, each in a different way."
        ],
-       "answer": 1,
-       "why": "Progression shows change over time."
+       "answer": 0,
+       "why": "Judging progression means predicting how effects change over time and across areas of life, and which matter most. The tempting symptoms option describes his current condition accurately but shows no change and no wider effect."
       }
      },
      {
@@ -1352,19 +1352,19 @@
       "fromSpec": "Draw together knowledge of types, causes, symptoms and effects.",
       "means": "Link what causes Lewy body dementia to the symptoms and then to daily life.",
       "example": "In dementia with Lewy bodies, protein deposits in the brain affect alertness and movement, which explains why Bernard has both confusion and a shuffling walk. This is different from the memory-led picture many people expect.",
-      "nearMiss": "Lewy body dementia is a type of dementia.",
-      "whyNearMiss": "It names the type but links nothing.",
+      "nearMiss": "Bernard has dementia with Lewy bodies, which causes confusion, hallucinations and a shuffling walk, so he needs help with daily care.",
+      "whyNearMiss": "It joins type to symptoms and needs, but gives no cause of the symptoms, so it never explains why Lewy body dementia affects both thinking and movement.",
       "explainPrompt": "How does the example connect cause, symptom and effect? Why is that different from a definition?",
       "check": {
-       "q": "Which links cause to symptom?",
+       "q": "Which sentence links the cause of Bernard's dementia to his symptoms?",
        "options": [
-        "Protein deposits affect movement, causing shuffling walk.",
-        "Dementia is common.",
-        "Bernard is retired.",
-        "Dementia has types."
+        "Bernard has dementia with Lewy bodies, which causes hallucinations, confusion and a shuffling walk.",
+        "Dementia is simply caused by ageing, so memory loss is the main sign of Bernard's condition.",
+        "Protein deposits in his brain affect alertness and movement, so he is confused and shuffles.",
+        "Lewy body dementia is the same as Alzheimer's disease, with memory loss always coming first."
        ],
-       "answer": 0,
-       "why": "Linking shows understanding."
+       "answer": 2,
+       "why": "Linking shows how a cause leads to symptoms. The tempting type-and-symptoms option names both but gives no cause, and the other two confuse ageing and Alzheimer's disease with Lewy body dementia."
       }
      },
      {
@@ -1372,19 +1372,19 @@
       "fromSpec": "Give anonymised examples from settings of how workers' understanding of progressive effects leads to good practice.",
       "means": "Use short examples with no names or identifying detail. Show a worker adapting care because they understood the condition.",
       "example": "A care worker who knew that alertness fluctuates scheduled personal care in the late morning when the resident was clearest, which reduced distress. (Anonymised.)",
-      "nearMiss": "Care workers help people with dementia and they are kind.",
-      "whyNearMiss": "No specific example or link to understanding.",
+      "nearMiss": "A care worker who understood dementia adapted her routine to suit the resident, which helped to reduce distress. (Anonymised.)",
+      "whyNearMiss": "It is anonymised and links to understanding, but is vague; it says nothing about the feature of progression, such as fluctuating alertness, that the worker acted on.",
       "explainPrompt": "Why does the example not use a name? What does the worker's knowledge change?",
       "check": {
-       "q": "Which is correct for anonymised examples?",
+       "q": "Which is an anonymised example of good practice based on understanding progression?",
        "options": [
-        "They use real names.",
-        "They are made up.",
-        "They are optional.",
-        "They contain no identifying detail but still show practice."
+        "A care worker timed washing for when Bernard Achterberg was clearest, which reduced his distress.",
+        "Care workers are kind to residents with dementia and try hard to make them comfortable.",
+        "A care worker timed washing for late morning, because the manager's rota required it that way.",
+        "A care worker timed washing for late morning, when a resident was clearest, which cut distress."
        ],
        "answer": 3,
-       "why": "Confidentiality matters."
+       "why": "An anonymised example removes identifying detail but still shows practice based on understanding. The named version is tempting because it is specific, but it breaches confidentiality."
       }
      },
      {
@@ -1392,19 +1392,19 @@
       "fromSpec": "Carry out detailed independent research and analysis, accurately referenced.",
       "means": "Cite recognised sources such as the Alzheimer's Society or NICE, and use them for reasoning.",
       "example": "Alzheimer's Society guidance explains that some antipsychotic drugs can be harmful in Lewy body dementia. This supports the judgement that medicine reviews are essential in Bernard's care.",
-      "nearMiss": "Dementia was read about online.",
-      "whyNearMiss": "No source, no link to a conclusion.",
+      "nearMiss": "Alzheimer's Society guidance explains that some antipsychotic drugs can be harmful in Lewy body dementia, and Bernard's medicines are reviewed by a community nurse.",
+      "whyNearMiss": "The source is named and accurate, but it is not used to reach a judgement, so the conclusion that Bernard's medicines need regular review is never drawn.",
       "explainPrompt": "How is the source used in the example?",
       "check": {
-       "q": "A good reference is:",
+       "q": "Which use of a reference best justifies a conclusion about Bernard's medicines?",
        "options": [
-        "Anything online.",
-        "Hidden.",
-        "Named, accurate and used in the argument.",
-        "A copy of text."
+        "Alzheimer's Society guidance on harmful antipsychotics supports regular medicine reviews for him.",
+        "Alzheimer's Society guidance on dementia is listed in the references at the end of the report.",
+        "A website says some drugs may be harmful in dementia, so his medicines should be reviewed.",
+        "Alzheimer's Society guidance says that dementia affects memory, thinking and everyday life for people."
        ],
-       "answer": 2,
-       "why": "References support conclusions."
+       "answer": 0,
+       "why": "A good reference is named, accurate and used in the argument. Listing it at the end is the tempting option: the source is named, but it supports no conclusion."
       }
      }
     ]
@@ -1416,19 +1416,19 @@
       "fromSpec": "Justify the strengths and advantages of holistic person-centred care; apply to all aspects of daily living.",
       "means": "Show how care covers physical, emotional, social and practical needs and why that gives better outcomes.",
       "example": "Planning care around Bernard's love of fixing things, for example a safe task in the building, supports his identity and mood as well as his activity. A task-only routine would miss this.",
-      "nearMiss": "Bernard gets care in the morning and evening.",
-      "whyNearMiss": "Care is described but not linked to the whole person.",
+      "nearMiss": "Care staff visit Bernard twice daily to support him with daily living, and a community nurse reviews his medicines. This keeps him safe and well.",
+      "whyNearMiss": "It covers physical care and safety, but is task-based; it does not link care to Bernard's identity or wishes, such as his wish to stay useful.",
       "explainPrompt": "How does the example connect a hobby to wellbeing?",
       "check": {
-       "q": "Holistic means:",
+       "q": "Which approach to Bernard's care is holistic and person-centred?",
        "options": [
-        "Caring for the family only.",
-        "Caring for the whole person, not just the condition.",
-        "Only medical care.",
-        "Only the home."
+        "Include washing, meals and medicines, each at a set time, twice a day.",
+        "Include support for Marit as well as Bernard, but nothing based on his own interests.",
+        "Include every health professional who is involved and when each will visit Bernard.",
+        "Include a safe repair task and calm spaces, as well as washing and medicines."
        ],
-       "answer": 1,
-       "why": "Holistic covers all needs."
+       "answer": 3,
+       "why": "Holistic person-centred care fits the whole person, including identity and interests. The tempting task-based routine covers his physical needs well, but it would miss what makes him who he is."
       }
      },
      {
@@ -1436,19 +1436,19 @@
       "fromSpec": "Include the consequences of not following a person-centred approach.",
       "means": "Say what could go wrong: loss of dignity, distress, loss of skills.",
       "example": "If staff rushed Bernard through a noisy lounge routine, he might become agitated and withdraw. His independence could shrink faster than necessary.",
-      "nearMiss": "Not being person-centred is bad.",
-      "whyNearMiss": "No consequence is explained.",
+      "nearMiss": "If staff did not follow a person-centred approach, Bernard might be unhappy and his care might be less good.",
+      "whyNearMiss": "A consequence is named, but only vaguely; it does not explain how or what Bernard would lose, such as his independence.",
       "explainPrompt": "What consequences does the example suggest for Bernard?",
       "check": {
-       "q": "Which is a consequence?",
+       "q": "Which is a consequence of not following a person-centred approach with Bernard?",
        "options": [
-        "Distress and loss of independence.",
-        "More paperwork.",
-        "Quicker care.",
-        "Better sleep."
+        "Staff may finish their routines more quickly, so his care is improved overall.",
+        "He may become agitated and withdraw, and his independence may shrink sooner.",
+        "His dementia would progress faster because of the way that staff treat him daily.",
+        "He would be more settled, because a fixed routine is always more predictable."
        ],
-       "answer": 0,
-       "why": "Consequences must be specific."
+       "answer": 1,
+       "why": "A consequence has to be specific to the person: distress and loss of independence for Bernard. The 'faster progression' option is tempting, but care approaches affect distress and function, not the underlying disease."
       }
      },
      {
@@ -1456,19 +1456,19 @@
       "fromSpec": "Carry out independent detailed research into the care for the individual; accurately referenced.",
       "means": "Link published person-centred principles to what Bernard actually receives.",
       "example": "Kitwood's person-centred approach stresses personhood. For Bernard, using his preferred mug and calm spaces respects this, which backs the claim that small choices matter.",
-      "nearMiss": "Person-centred care is important for everyone.",
-      "whyNearMiss": "Not linked to the individual or sources.",
+      "nearMiss": "Kitwood's person-centred approach stresses personhood, and person-centred care is important for people with dementia such as Bernard.",
+      "whyNearMiss": "Kitwood is named and linked to Bernard's dementia, but not to any specific detail of his care, so the claim that small choices matter is not backed.",
       "explainPrompt": "How does the example tie a theory to Bernard's life?",
       "check": {
-       "q": "Why use research?",
+       "q": "Which use of research best backs the claim that small choices matter for Bernard?",
        "options": [
-        "To fill space.",
-        "To be formal.",
-        "To justify your claims.",
-        "To look clever."
+        "Kitwood's work on personhood is cited to show that person-centred care matters for everyone.",
+        "Kitwood wrote a well-known book on dementia care, which many care workers have read.",
+        "Kitwood's work on personhood shows why his preferred mug and calm spaces respect him.",
+        "A study shows that people with dementia like familiar objects such as a favourite mug."
        ],
        "answer": 2,
-       "why": "Research supports justification."
+       "why": "Research justifies a claim when a named source is tied to the individual's details. Citing Kitwood for everyone, the tempting option, is named and accurate but never reaches Bernard's mug or his dislike of noisy lounges."
       }
      }
     ]
@@ -1480,19 +1480,19 @@
       "fromSpec": "Evaluate how managing and alleviating symptoms meets the needs of the individual.",
       "means": "Judge how far each part of the care meets his needs, and where gaps remain.",
       "example": "Visiting twice daily covers basic care, but Marit's worry about falls suggests night-time risk is not covered. Current practice is good for routine needs but incomplete for safety.",
-      "nearMiss": "Bernard has care twice a day.",
-      "whyNearMiss": "No judgement about how well it meets need.",
+      "nearMiss": "Care staff visit twice daily and a community nurse reviews Bernard's medication, which meets his routine needs.",
+      "whyNearMiss": "It judges the practice, but only its strengths; it never considers whether gaps remain, such as Marit's worry about falls at night.",
       "explainPrompt": "Which gap does the example find?",
       "check": {
-       "q": "Evaluation of practice looks for:",
+       "q": "Which evaluation of Bernard's current care is complete?",
        "options": [
-        "Only strengths.",
-        "Only costs.",
-        "Only staff names.",
-        "Strengths and gaps against needs."
+        "Twice-daily visits, a nurse's medicine review and tea in his mug show good practice.",
+        "Twice-daily visits are too few, and Marit is tired and worried about falls at night.",
+        "Bernard has care staff twice daily, and a community nurse reviews his medicines.",
+        "Visits twice daily cover routine needs, but night-time falls risk is uncovered."
        ],
        "answer": 3,
-       "why": "Both strengths and gaps."
+       "why": "Evaluating practice looks for strengths and gaps against needs. The strengths-only option is the tempting Merit-level answer: it is accurate and applied, but it never asks what the care leaves uncovered."
       }
      },
      {
@@ -1500,19 +1500,19 @@
       "fromSpec": "Base conclusions on research into current best practice and professional opinion.",
       "means": "Cite current guidance (such as NICE or recognised charities) and professional views and use them.",
       "example": "NICE guidance advises regular medication review for people with dementia, and the community nurse's review follows this, so this part of practice is sound.",
-      "nearMiss": "The nurse reviews medicines.",
-      "whyNearMiss": "No evidence of best practice.",
+      "nearMiss": "The community nurse reviews Bernard's medication, which is good practice for someone with dementia.",
+      "whyNearMiss": "It judges the practice sound but cites no guidance, such as NICE, so the judgement rests on assertion.",
       "explainPrompt": "What does the example compare Bernard's care with?",
       "check": {
-       "q": "Best practice is:",
+       "q": "What makes a source of best practice suitable for justifying a judgement?",
        "options": [
-        "What staff prefer.",
-        "Current, evidence-based guidance.",
-        "What is cheapest.",
-        "What is oldest."
+        "It is current, evidence-based guidance, such as NICE guidance.",
+        "It reflects what most care staff at Skerrow Bay prefer to do.",
+        "It is the lowest-cost approach that the local council could afford.",
+        "It is a long-established approach that staff have always used."
        ],
-       "answer": 1,
-       "why": "Best practice is evidence-based."
+       "answer": 0,
+       "why": "Best practice rests on current evidence. Long-established habit is the tempting option because experience feels reliable, but familiarity is not evidence, and cost and preference do not show what works."
       }
      },
      {
@@ -1520,19 +1520,19 @@
       "fromSpec": "Show how research deepened understanding to arrive at original and valid conclusions, using vocational language.",
       "means": "Say what you learned and how it changed your view, using correct terms.",
       "example": "A first view might be that memory support is the priority, but research shows that fluctuating cognition and movement are key in this type of dementia. Falls prevention then matters more than memory aids.",
-      "nearMiss": "Research helped with understanding more about dementia.",
-      "whyNearMiss": "Vague; no change in view.",
+      "nearMiss": "Research showed that dementia with Lewy bodies affects alertness and movement as well as memory, which gave a fuller picture of Bernard's needs.",
+      "whyNearMiss": "It shows research widening understanding, but no view changes and no priority is concluded, such as falls prevention over memory aids.",
       "explainPrompt": "What changed in the writer's thinking?",
       "check": {
-       "q": "Original conclusion means:",
+       "q": "Which statement shows research changing a first view into an original conclusion?",
        "options": [
-        "A view that comes from your own reasoning.",
-        "A copied view.",
-        "A strange view.",
-        "A quick view."
+        "Research gave a much clearer picture of the types of dementia and the symptoms of each type.",
+        "Memory aids seemed the priority, but research on movement and alertness puts falls first.",
+        "Alzheimer's Society guidance confirmed that memory support is the priority for Bernard's care.",
+        "Research suggests several priorities, so memory aids and falls prevention should both be covered."
        ],
-       "answer": 0,
-       "why": "Original means your reasoning."
+       "answer": 1,
+       "why": "An original conclusion shows the view changing because of research and reaches a reasoned priority. The tempting 'several priorities' option sounds balanced, but it reaches no conclusion about which matters more."
       }
      },
      {
@@ -1540,19 +1540,19 @@
       "fromSpec": "Use analysis of type of dementia, symptoms, needs and care provision to justify validity.",
       "means": "Join the four together in one argument.",
       "example": "Because Lewy body dementia affects movement and alertness, Bernard needs falls checks and flexible timing. The care plan should be flexible for these needs, which it currently only partly does.",
-      "nearMiss": "Bernard has a care plan.",
-      "whyNearMiss": "Not linked.",
+      "nearMiss": "Because Lewy body dementia affects movement and alertness, Bernard needs falls checks and flexible timing of care.",
+      "whyNearMiss": "It links type, symptoms and needs, but stops before provision; it never judges whether the care plan currently meets those needs.",
       "explainPrompt": "Which four ideas does the example link?",
       "check": {
-       "q": "Good linking shows:",
+       "q": "Which sentence links type, symptoms, needs and care provision for Bernard?",
        "options": [
-        "Four lists.",
-        "Four headings.",
-        "How type leads to needs and then provision.",
-        "Four sources."
+        "Bernard has Lewy body dementia, a shuffling walk, falls checks and a care plan in place.",
+        "Bernard's care plan covers his needs, which come from the type of dementia that he has.",
+        "Lewy body dementia affects movement, so falls checks are needed, but only partly given.",
+        "Bernard's dementia affects movement and alertness, and so he needs regular falls checks."
        ],
        "answer": 2,
-       "why": "Linking is needed."
+       "why": "Good linking runs from type to needs to provision, and judges the fit. The tempting 'type to needs' option is accurate and applied, but stops before asking whether the care plan provides what he needs."
       }
      }
     ]
@@ -1572,19 +1572,19 @@
       "fromSpec": "Evaluate the extent to which theories can be applied in practice to support children at different stages.",
       "means": "Say how useful each theory is for each child, not just what it says.",
       "example": "Vygotsky's idea of learning with a more knowledgeable other helps explain Kit's language, since practitioners can model and extend his words. It helps less in explaining why his speech is delayed.",
-      "nearMiss": "Vygotsky said children learn with others.",
-      "whyNearMiss": "A summary of the theory but no application or judgement.",
+      "nearMiss": "Vygotsky's idea of a more knowledgeable other helps explain Kit's language, since practitioners can model and extend his words.",
+      "whyNearMiss": "It applies the theory accurately to Kit, but only in its favour; it never judges a limit, such as the theory not explaining why his speech is delayed.",
       "explainPrompt": "What does the example say Vygotsky explains well, and what not?",
       "check": {
-       "q": "Which is evaluative?",
+       "q": "Which statement evaluates Vygotsky's theory for Kit?",
        "options": [
-        "It guides how to support Kit's language but does not explain the cause of delay.",
-        "Vygotsky was Russian.",
-        "He wrote about zone of development.",
-        "He is famous."
+        "Vygotsky's idea of a more knowledgeable other means that adults can model words for Kit.",
+        "Vygotsky's theory is important and is still widely used in early years settings today.",
+        "Vygotsky described a zone of proximal development, between what a child can do alone and with help.",
+        "It guides how to support Kit's language, but does not explain why his speech is delayed."
        ],
-       "answer": 0,
-       "why": "Evaluation judges usefulness."
+       "answer": 3,
+       "why": "Evaluation judges how far a theory helps, including what it cannot explain. The tempting option applies the theory to Kit accurately but only in its favour, so no limit is weighed."
       }
      },
      {
@@ -1592,19 +1592,19 @@
       "fromSpec": "Consider advantages and disadvantages of selected theories.",
       "means": "Every theory has strengths and limits. Name both.",
       "example": "Piaget's stages help staff expect what Amara can do in play, but they underestimate what children achieve with an adult's support, so a nursery practitioner should not rely on them alone.",
-      "nearMiss": "Piaget's theory is good.",
-      "whyNearMiss": "No disadvantages.",
+      "nearMiss": "Piaget's stages help staff to expect what Amara can do in play, so the nursery can plan suitable activities for her.",
+      "whyNearMiss": "It gives an advantage applied to Amara, but no disadvantage, so the theory is not weighed.",
       "explainPrompt": "What limit does the example find in Piaget's theory?",
       "check": {
-       "q": "A fair evaluation includes:",
+       "q": "Which evaluation of Piaget's theory for nursery practice is fair?",
        "options": [
-        "Only strengths.",
-        "Both strengths and weaknesses.",
-        "Only a list.",
-        "Only dates."
+        "Stages help staff expect what Amara can do, but understate what adult support enables.",
+        "Piaget's stages help staff to expect what Amara can do in her play at five.",
+        "Piaget's theory is outdated, so it is of no use to staff working with young children today.",
+        "Piaget described stages of development, from sensorimotor to formal operational thinking."
        ],
-       "answer": 1,
-       "why": "Balance is needed."
+       "answer": 0,
+       "why": "A fair evaluation weighs strengths and weaknesses. The strengths-only option is tempting because it is accurate and applied to Amara, but it gives one side, and the weaknesses-only option is equally one-sided."
       }
      },
      {
@@ -1612,19 +1612,19 @@
       "fromSpec": "Use detailed analysis and research to reach reasoned and valid conclusions and recommendations, articulated concisely and professionally.",
       "means": "Support points with recognised sources and finish with practical recommendations.",
       "example": "Bowlby's attachment work suggests Amara's distress at change may link to security, so predictable routines and warning before changes would fit. Research on attachment backs this approach.",
-      "nearMiss": "Amara should be helped because she is upset.",
-      "whyNearMiss": "No theory, research or reasoning.",
+      "nearMiss": "Amara should be given warning before games change, because she gets upset when routines change and this may help her feel secure.",
+      "whyNearMiss": "It gives a sensible, applied recommendation with a reason from her behaviour, but names no theory or research to support it.",
       "explainPrompt": "Which part of the example is the recommendation and which is the research?",
       "check": {
-       "q": "A good recommendation is:",
+       "q": "Which recommendation for Amara is linked to theory and evidence?",
        "options": [
-        "A guess.",
-        "A wish.",
-        "Linked to theory and evidence.",
-        "A rule."
+        "Give her warning before changes, because she gets upset when games change.",
+        "Give her harder activities, because she reads simple books and threads beads easily.",
+        "Give warning before changes, as attachment research links security to routine.",
+        "Ask her parents to review routines at home, because attachment difficulties start there."
        ],
        "answer": 2,
-       "why": "Recommendations follow evidence."
+       "why": "A good recommendation is reasoned from theory and research, here Bowlby's attachment work. The tempting observation-only option is sensible and applied, but gives no theory or evidence to support it."
       }
      }
     ]
@@ -1636,19 +1636,19 @@
       "fromSpec": "Evaluate strengths and weaknesses of each approach in identifying differing needs and atypical development.",
       "means": "Compare approaches such as narrative notes, checklists and time samples for what they can and cannot show.",
       "example": "A checklist quickly shows that Kit has fewer words than expected, but narrative notes show he communicates by pointing and gesture. The narrative gives richer insight, though it takes longer.",
-      "nearMiss": "We used checklists and narrative notes.",
-      "whyNearMiss": "Methods are named but not evaluated.",
+      "nearMiss": "A checklist shows that Kit has fewer words than expected, and narrative notes show that he communicates by pointing and gesture.",
+      "whyNearMiss": "Each method is applied to Kit correctly, but the answer does not weigh their strengths and weaknesses, such as speed against richness of detail.",
       "explainPrompt": "What does each method reveal in the example? Which is richer?",
       "check": {
-       "q": "Which shows evaluation?",
+       "q": "Which statement evaluates assessment methods?",
        "options": [
-        "A checklist has boxes.",
-        "A narrative is written.",
-        "A time sample is timed.",
-        "A checklist is quick but narrow, while narrative shows more detail but takes time."
+        "A checklist shows that Kit has fewer words than expected, and a narrative shows he points.",
+        "A checklist is quick but narrow, while a narrative shows more detail but takes time.",
+        "A time sample records what a child is doing at set intervals during the session.",
+        "Checklists, narrative notes and time samples are all used by staff at Cedarwood."
        ],
-       "answer": 3,
-       "why": "Compare what each shows."
+       "answer": 1,
+       "why": "Evaluation weighs what each method shows against its limits. The tempting option applies both methods to Kit accurately, but it only reports what each found and never weighs one against the other."
       }
      },
      {
@@ -1656,19 +1656,19 @@
       "fromSpec": "Make reasoned judgements about the risks and limitations of the assessment methods used.",
       "means": "Think about observer bias, the setting, child's mood, and how typical the observation was.",
       "example": "Watching Kit on a day he was tired may under-represent his language. Repeating the observation on another day would reduce this risk.",
-      "nearMiss": "The observation could have been wrong.",
-      "whyNearMiss": "No reason or fix.",
+      "nearMiss": "Observing Kit on a day he was tired might not show his full language, so the observation could have been wrong.",
+      "whyNearMiss": "It identifies the limitation and gives a reason, but proposes no way to reduce it, such as repeating the observation on another day.",
       "explainPrompt": "What risk does the example identify? How does it deal with it?",
       "check": {
-       "q": "Which reduces observer bias?",
+       "q": "Staff observed Kit once, on a day he was tired. Which step best reduces the risk of bias?",
        "options": [
-        "Repeating observations at different times.",
-        "Watching once.",
-        "Guessing.",
-        "Ignoring the child."
+        "Make the observation longer on the same day, so that there is more evidence.",
+        "Use a checklist, because ticks are objective and not affected by mood.",
+        "Compare Kit with other three-year-olds, to check whether he is typical.",
+        "Repeat the observation on other days and at different times of the day."
        ],
-       "answer": 0,
-       "why": "Repeated observations help."
+       "answer": 3,
+       "why": "Repeating observations in different contexts reduces the effect of one bad day. A longer observation on the same day is tempting because more evidence feels safer, but it keeps the same bias."
       }
      },
      {
@@ -1676,19 +1676,19 @@
       "fromSpec": "Draw on the observations carried out to show a valid insight into children's stages.",
       "means": "Refer to what you saw and link it to milestones.",
       "example": "Observing Amara thread tiny beads suggests fine motor control above her age expectation, and her upset when games change suggests she may need support with flexibility.",
-      "nearMiss": "Amara is good at things.",
-      "whyNearMiss": "No observations.",
+      "nearMiss": "Amara threads small beads easily and gets upset when games change.",
+      "whyNearMiss": "The observations are specific and accurate, but they are not interpreted; it does not link them to expected milestones or say what they show about her stage of development.",
       "explainPrompt": "Which observed behaviour supports each point?",
       "check": {
-       "q": "What makes observation valid?",
+       "q": "What makes an observation valid evidence of Amara's stage of development?",
        "options": [
-        "It is long.",
-        "It is linked to evidence and milestones.",
-        "It is neat.",
-        "It is dated."
+        "It records everything Amara did, in great detail, over the whole morning.",
+        "It records what she did and links it to the milestones expected at her age.",
+        "It describes how she seemed, such as 'upset' or 'clever', in the observer's words.",
+        "It is dated and signed, so that others can see who made it and when."
        ],
        "answer": 1,
-       "why": "Valid means evidence-based."
+       "why": "Valid observation records evidence and interprets it against milestones. A very detailed record is the tempting option, since detail feels thorough, but without milestones it shows nothing about her stage."
       }
      },
      {
@@ -1696,19 +1696,19 @@
       "fromSpec": "Consider how assessment methods contribute to the process and support children to reach their full potential.",
       "means": "Say what the assessment leads to.",
       "example": "The observations give Kit's grandmother and therapist a shared picture of his communication, so help can be targeted. Without them, his needs could have stayed hidden.",
-      "nearMiss": "Assessment is useful.",
-      "whyNearMiss": "No explanation of purpose.",
+      "nearMiss": "Observation of Kit's communication shows that he uses about ten words and points, which is useful information for staff.",
+      "whyNearMiss": "It is accurate and useful, but does not say how the information is used, such as who it informs or how help is targeted.",
       "explainPrompt": "Who uses the information in the example?",
       "check": {
-       "q": "Why assess?",
+       "q": "What is the main purpose of assessing Kit's communication?",
        "options": [
-        "To compare children.",
-        "To fill forms.",
-        "To plan help.",
-        "To label children."
+        "To compare Kit with other children and see where he ranks.",
+        "To record what staff have done, as evidence for inspectors.",
+        "To plan help that is targeted to what Kit needs most now.",
+        "To label Kit's difficulty early so that everyone recognises it."
        ],
        "answer": 2,
-       "why": "Assessment informs support."
+       "why": "Assessment informs support. Comparing Kit with other children is the tempting option, as milestones involve comparison, but ranking him is not the purpose, and labelling does not help him."
       }
      }
     ]
@@ -1720,19 +1720,19 @@
       "fromSpec": "Make reasoned judgements about how theories and assessment enable early recognition.",
       "means": "Show how a theory tells you what to expect and assessment shows what is happening.",
       "example": "Developmental milestones tell staff that Kit's ten words at 3 years 2 months are fewer than expected. The observations confirm the gap, so the theory and assessment together flag the concern.",
-      "nearMiss": "Theories help staff see developmental issues.",
-      "whyNearMiss": "No link between theory and evidence.",
+      "nearMiss": "Developmental theory gives staff a picture of how children usually develop, and the observations record what Kit can do.",
+      "whyNearMiss": "Both theory and observation are mentioned, but they are not combined; it never says that the milestones show that ten words are fewer than expected.",
       "explainPrompt": "How do the two work together in the example?",
       "check": {
-       "q": "What does theory add to assessment?",
+       "q": "What does theory add to an assessment of Kit?",
        "options": [
-        "It replaces observation.",
-        "It makes it faster.",
-        "It is not needed.",
-        "It tells you what is expected."
+        "It gives a benchmark of what is typically expected at his age.",
+        "It replaces observation with predictions of what a child can do.",
+        "It explains the cause of any delay that observations show.",
+        "It lets staff compare Kit with older children to see how far behind."
        ],
-       "answer": 3,
-       "why": "Theory gives a benchmark."
+       "answer": 0,
+       "why": "Theory gives a benchmark against which observations are interpreted. The 'cause of delay' option is tempting because Kit's speech is delayed, but theories of development do not by themselves explain why a particular child is delayed."
       }
      },
      {
@@ -1740,19 +1740,19 @@
       "fromSpec": "Consider the importance of early recognition.",
       "means": "Say what changes if help starts earlier.",
       "example": "Early help for Kit's language can prevent frustration and help him prepare for school. Later help often costs more effort.",
-      "nearMiss": "Early is better.",
-      "whyNearMiss": "No reason.",
+      "nearMiss": "Early recognition is important because Kit's language needs support, and problems could get worse if help is delayed.",
+      "whyNearMiss": "It gives a reason, but a general one; it names no specific consequence for Kit, such as frustration or readiness for school.",
       "explainPrompt": "Which consequence of early help does the example give?",
       "check": {
-       "q": "Which is a reason?",
+       "q": "Which is a reason that early recognition matters for Kit?",
        "options": [
-        "It prevents difficulties building up.",
-        "Staff like it.",
-        "It is tidy.",
-        "It is quick."
+        "It means the nursery will have fewer children needing extra support in later years.",
+        "It shows the setting is meeting the requirements of its next inspection visit.",
+        "Difficulties can be tackled before they build up and affect his school readiness.",
+        "It proves that Kit has a language disorder, so a diagnosis can be recorded."
        ],
-       "answer": 0,
-       "why": "Specific reasons are needed."
+       "answer": 2,
+       "why": "Early recognition matters because it prevents difficulties building up for the child. The diagnosis option is tempting, but recognising a concern early is not the same as proving a disorder."
       }
      },
      {
@@ -1760,19 +1760,19 @@
       "fromSpec": "Suggest forms of intervention and support that can be put in place as a result of assessment.",
       "means": "Name realistic steps and who does them.",
       "example": "A referral to the speech and language therapist and daily small-group story time would support Kit. For Amara, extension activities and a visual timetable would challenge and reassure her.",
-      "nearMiss": "Kit should get help.",
-      "whyNearMiss": "Not specific.",
+      "nearMiss": "Kit should be referred to the speech and language therapist, and Amara should be given some extra activities.",
+      "whyNearMiss": "Kit's action is specific, but Amara's is vague, so the answer does not follow from assessment with a clear action for both children.",
       "explainPrompt": "Who does what in the example?",
       "check": {
-       "q": "A specific intervention is:",
+       "q": "Which is a specific intervention for Kit?",
        "options": [
-        "Help in general.",
-        "A named action and person.",
-        "More time.",
-        "Some support."
+        "Refer Kit to the speech and language therapist and begin small-group story time.",
+        "Give Kit extra support with his talking, as soon as his needs have been agreed.",
+        "Spend more time with Kit during the day, to help his language to develop further.",
+        "Ask Kit's grandmother to keep supporting him in whichever way she thinks best."
        ],
-       "answer": 1,
-       "why": "Specifics are required."
+       "answer": 0,
+       "why": "A specific intervention names an action and who will carry it out. The other options are tempting because they sound caring, but each leaves out who does what."
       }
      },
      {
@@ -1780,19 +1780,19 @@
       "fromSpec": "Arrive at a justified conclusion of how this can have a positive impact on outcomes.",
       "means": "Finish by judging the likely effect, with caution.",
       "example": "Targeted support will probably improve Kit's communication and confidence, although progress will vary. Amara's needs are met by routine and challenge, which supports both her achievement and her security.",
-      "nearMiss": "It will all work out.",
-      "whyNearMiss": "No reasons.",
+      "nearMiss": "Targeted support will improve Kit's communication and confidence, and Amara's needs are met by routine and challenge.",
+      "whyNearMiss": "It is a positive conclusion linked to both children, but it is stated as certain and does not admit that progress will vary.",
       "explainPrompt": "What caution does the example include?",
       "check": {
-       "q": "A justified conclusion:",
+       "q": "Which conclusion about the impact of support on outcomes is justified?",
        "options": [
-        "Is certain.",
-        "Is short.",
-        "Uses evidence and admits uncertainty.",
-        "Is cheerful."
+        "Targeted support will improve Kit's communication, and he will catch up by school.",
+        "Targeted support will probably improve Kit's talking, though progress will vary.",
+        "Support will be good for both children, because early help is always positive.",
+        "Kit's progress cannot be predicted, so no conclusion about support can be reached."
        ],
-       "answer": 2,
-       "why": "Be balanced."
+       "answer": 1,
+       "why": "A justified conclusion uses evidence and admits uncertainty. The tempting 'will catch up' option is confident and positive, but a certain prediction is not justified when progress varies."
       }
      }
     ]

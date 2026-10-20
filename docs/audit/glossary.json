@@ -1,0 +1,302 @@
+[
+ {
+  "term": "holistic care",
+  "tier": 3,
+  "def": "Care that looks at the whole person: body, mind, feelings, relationships and surroundings, not just their illness."
+ },
+ {
+  "term": "person-centred care",
+  "tier": 3,
+  "def": "Care planned around what the person wants, needs and values. The person helps make the decisions."
+ },
+ {
+  "term": "safeguarding",
+  "tier": 3,
+  "def": "Protecting children and adults at risk from abuse, neglect and harm, and acting quickly when you are worried."
+ },
+ {
+  "term": "confidentiality",
+  "tier": 3,
+  "def": "Keeping a person's private information safe. You share it only with people who need to know, usually with permission."
+ },
+ {
+  "term": "informed consent",
+  "tier": 3,
+  "def": "A person agrees to care or research after being told, in words they understand, what it involves and the risks."
+ },
+ {
+  "term": "discrimination",
+  "tier": 3,
+  "def": "Treating someone unfairly because of who they are, for example their age, disability, race, sex or religion."
+ },
+ {
+  "term": "protected characteristic",
+  "tier": 3,
+  "def": "A personal feature the Equality Act 2010 protects from unfair treatment, such as age, disability, race or religion."
+ },
+ {
+  "term": "advocacy",
+  "tier": 3,
+  "def": "Speaking up for a person, or helping them speak up, so their views and rights are heard."
+ },
+ {
+  "term": "empowerment",
+  "tier": 3,
+  "def": "Helping people gain more control over their own lives and choices."
+ },
+ {
+  "term": "dignity",
+  "tier": 3,
+  "def": "Treating a person with respect so they feel valued and in control, for example by protecting their privacy."
+ },
+ {
+  "term": "multi-agency working",
+  "tier": 3,
+  "def": "Different organisations, such as the NHS, the council and charities, working together to support one person."
+ },
+ {
+  "term": "multidisciplinary team",
+  "tier": 3,
+  "def": "A group of professionals with different jobs, such as nurse, therapist and social worker, planning care together."
+ },
+ {
+  "term": "key worker",
+  "tier": 3,
+  "def": "The main professional who coordinates a person's support and is their usual point of contact."
+ },
+ {
+  "term": "care plan",
+  "tier": 3,
+  "def": "A written plan of a person's needs, goals and the support they will get. It is reviewed regularly."
+ },
+ {
+  "term": "risk assessment",
+  "tier": 3,
+  "def": "Checking what could cause harm, how likely and how serious it is, and deciding how to reduce it."
+ },
+ {
+  "term": "reflective practice",
+  "tier": 3,
+  "def": "Thinking carefully about what you did, how it went and what you will do differently next time."
+ },
+ {
+  "term": "witness statement",
+  "tier": 3,
+  "def": "A signed account from a supervisor or observer of what you did on placement, used as evidence."
+ },
+ {
+  "term": "domiciliary care",
+  "tier": 3,
+  "def": "Care given in a person's own home, for example help with washing, dressing or taking medicine."
+ },
+ {
+  "term": "Care Quality Commission (CQC)",
+  "tier": 3,
+  "def": "The organisation that inspects and rates health and social care services in England and can require improvements."
+ },
+ {
+  "term": "Integrated Care Board (ICB)",
+  "tier": 3,
+  "def": "An NHS organisation that plans and pays for health services for the people in its local area."
+ },
+ {
+  "term": "health inequality",
+  "tier": 3,
+  "def": "An unfair, avoidable gap in health between groups of people, for example between richer and poorer areas."
+ },
+ {
+  "term": "screening",
+  "tier": 3,
+  "def": "Testing people who seem healthy to find a condition early, so treatment can start sooner."
+ },
+ {
+  "term": "diagnosis",
+  "tier": 3,
+  "def": "A professional's decision about which illness or condition a person has, based on symptoms, tests and examination."
+ },
+ {
+  "term": "rehabilitation",
+  "tier": 3,
+  "def": "Treatment and support that helps someone regain skills and independence after illness, injury or surgery."
+ },
+ {
+  "term": "palliative care",
+  "tier": 3,
+  "def": "Care for people with an illness that cannot be cured, focusing on comfort, pain relief and quality of life."
+ },
+ {
+  "term": "stigma",
+  "tier": 3,
+  "def": "Unfair negative views that make a person feel ashamed or judged, for example about mental illness."
+ },
+ {
+  "term": "attachment",
+  "tier": 3,
+  "def": "The close emotional bond between a baby and the person who cares for them. It affects later relationships."
+ },
+ {
+  "term": "schema",
+  "tier": 3,
+  "def": "A mental framework built from experience that helps a child organise and understand the world (Piaget)."
+ },
+ {
+  "term": "self-esteem",
+  "tier": 3,
+  "def": "How much a person values and respects themselves, and how worthy they feel."
+ },
+ {
+  "term": "nature-nurture debate",
+  "tier": 3,
+  "def": "The argument about whether development is shaped more by inherited genes (nature) or by experience and surroundings (nurture)."
+ },
+ {
+  "term": "stress-diathesis model",
+  "tier": 3,
+  "def": "Explains mental illness as an inherited weakness (diathesis) combined with a stressful event that triggers it."
+ },
+ {
+  "term": "dementia",
+  "tier": 3,
+  "def": "A group of conditions that damage the brain over time, causing memory loss, confusion and difficulty with daily life."
+ },
+ {
+  "term": "outbreak",
+  "tier": 3,
+  "def": "A sudden rise in cases of an infection in one place, for example in a nursery."
+ },
+ {
+  "term": "pathogen",
+  "tier": 3,
+  "def": "A micro-organism, such as a bacterium or virus, that can cause disease."
+ },
+ {
+  "term": "infection prevention and control",
+  "tier": 3,
+  "def": "Actions that stop infections spreading, such as handwashing, cleaning, protective equipment and keeping ill people apart."
+ },
+ {
+  "term": "homeostasis",
+  "tier": 3,
+  "def": "The body keeping its inside conditions, such as temperature and blood glucose, steady when outside conditions change."
+ },
+ {
+  "term": "enzyme",
+  "tier": 3,
+  "def": "A protein that speeds up a chemical reaction in the body, for example amylase breaking down starch."
+ },
+ {
+  "term": "allele",
+  "tier": 3,
+  "def": "One version of a gene. You inherit one allele of each gene from each parent."
+ },
+ {
+  "term": "biopsy",
+  "tier": 3,
+  "def": "Taking a small sample of tissue from the body to examine under a microscope for disease."
+ },
+ {
+  "term": "epidemic / pandemic",
+  "tier": 3,
+  "def": "An epidemic is a fast spread of an infectious disease in an area. A pandemic spreads across the world."
+ },
+ {
+  "term": "evaluate",
+  "tier": 2,
+  "def": "Weigh up strengths and weaknesses using evidence, then reach a judgement you can support."
+ },
+ {
+  "term": "justify",
+  "tier": 2,
+  "def": "Give reasons and evidence to show that a choice or decision is right or reasonable."
+ },
+ {
+  "term": "analyse",
+  "tier": 2,
+  "def": "Break something into parts and explain how the parts connect or what they show."
+ },
+ {
+  "term": "assess",
+  "tier": 2,
+  "def": "Weigh up the important factors in a situation and decide which matter most."
+ },
+ {
+  "term": "compare",
+  "tier": 2,
+  "def": "Say how two or more things are similar and how they are different."
+ },
+ {
+  "term": "discuss",
+  "tier": 2,
+  "def": "Look at different sides of a topic and explain how important each one is."
+ },
+ {
+  "term": "explain",
+  "tier": 2,
+  "def": "Give reasons: say what happens or what is true, and why."
+ },
+ {
+  "term": "describe",
+  "tier": 2,
+  "def": "Give a clear account of what something is like, using details."
+ },
+ {
+  "term": "outline",
+  "tier": 2,
+  "def": "Give the main points briefly, without lots of detail."
+ },
+ {
+  "term": "to what extent",
+  "tier": 2,
+  "def": "How far is a statement true? Give arguments on both sides, then decide how strongly you agree."
+ },
+ {
+  "term": "evidence",
+  "tier": 2,
+  "def": "Facts, examples or information that show something is true or support your point."
+ },
+ {
+  "term": "judgement",
+  "tier": 2,
+  "def": "A decision or opinion you reach after weighing up the evidence."
+ },
+ {
+  "term": "context",
+  "tier": 2,
+  "def": "The situation around something that helps explain it, such as a person's age, home and needs."
+ },
+ {
+  "term": "factor",
+  "tier": 2,
+  "def": "One of the things that causes or influences a result. It is not the same as a fact."
+ },
+ {
+  "term": "impact",
+  "tier": 2,
+  "def": "The effect something has on a person or situation."
+ },
+ {
+  "term": "limitation",
+  "tier": 2,
+  "def": "A weakness that makes something less useful, reliable or complete."
+ },
+ {
+  "term": "recommend",
+  "tier": 2,
+  "def": "Suggest what should be done and give reasons why it is the best choice."
+ },
+ {
+  "term": "perspective",
+  "tier": 2,
+  "def": "A particular way of seeing something, based on a person's experience or on a theory."
+ },
+ {
+  "term": "specific",
+  "tier": 2,
+  "def": "Exact and clear, not general. Name the real person, place or detail."
+ },
+ {
+  "term": "relevant",
+  "tier": 2,
+  "def": "Closely connected to the question or case, so it helps answer it."
+ }
+]
