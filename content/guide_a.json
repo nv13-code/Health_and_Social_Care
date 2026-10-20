@@ -2,38 +2,38 @@
  "5": {
   "parallelCase": {
    "title": "Ferndale Lodge hostel",
-   "summary": "Ferndale Lodge is a fictional 20-bed hostel for homeless adults, run by a charity and funded by the local council and the Integrated Care Board (ICB). Rosa, 58, is a trans woman with early COPD. She avoids services because staff in a past hospital stay used the wrong name. She has not told the council housing officer about her gender history. Idris, 19, is a care leaver with dyslexia. He misses appointments because he cannot read the letters, and he has told his key worker, quietly, that he sometimes self-harms and asked her to tell nobody. The team is a key worker, an outreach nurse, a social worker registered with Social Work England and a housing officer. The nurse wants to tell housing about Rosa's breathing problems to speed up a move. The manager has one quiet room and one mentoring place to share between the two. Staff use phone calls, easy-read letters and a shared support plan."
+   "summary": "Where: Ferndale Lodge is a fictional 20-bed hostel for homeless adults. A charity runs it.\nFunders: The local council and the Integrated Care Board (ICB, the NHS body that plans local health care) pay for it.\nWho: Rosa, 58, is a trans woman with early COPD, a long-term lung condition. Jamal, 19, is a care leaver with dyslexia.\nWhat's happening: Rosa avoids services because hospital staff once used the wrong name. She has not told the council housing officer about her gender history. Jamal misses appointments because he cannot read the letters. He has quietly told his key worker that he sometimes self-harms. He asked her to tell nobody.\nStrengths: Rosa chairs the residents' meeting. Jamal cooks the Sunday meal for the whole hostel.\nWhat they want: Rosa wants to be called by her own name and to feel safe. Jamal wants to choose who knows about his private life.\nWho's involved: A key worker, an outreach nurse, a social worker registered with Social Work England and a housing officer.\nThe decision: The nurse wants to tell housing about Rosa's breathing problems to speed up a move. The manager has one quiet room and one mentoring place to share between the two.\nSupport so far: Staff use phone calls, easy-read letters and a shared support plan."
   },
   "criteria": {
    "A.D1": {
     "requirements": [
      {
-      "need": "Select case details that raise real equality, diversity or discrimination issues, and say why each one matters.",
+      "need": "Pick case details that show unfair treatment or risk of it, and say why each one matters.",
       "fromSpec": "Select material from the case studies to explore issues around equality and diversity and preventing discrimination.",
       "means": "Pick the moments in the case that show unfair treatment or risk of it, then explain the effect on that person. Do not list every fact.",
       "example": "Rosa's hospital stay, when staff used the wrong name, matters because one disrespectful moment has made her avoid health care ever since. That is how discrimination quietly harms health.",
       "nearMiss": "Rosa's hospital stay, when staff used the wrong name, is an example of discrimination because it breached her protected characteristic of gender reassignment under the Equality Act 2010.",
-      "whyNearMiss": "It picks the right detail and labels it correctly, but never says what the incident did to Rosa, so 'why it matters' is missing.",
-      "explainPrompt": "In your own words, why does the example name the effect on Rosa's behaviour and not only the event?",
+      "whyNearMiss": "It picks the right detail and names it correctly. But it never says what the event did to Rosa, so 'why it matters' is missing.",
+      "explainPrompt": "In your own words, why does the example give the effect on Rosa's behaviour and not only the event?",
       "check": {
        "q": "Which sentence best shows a case detail chosen for a reason?",
        "options": [
         "Being called the wrong name made Rosa avoid care, so her health risk grew.",
         "Rosa was called the wrong name in hospital, which is a form of discrimination.",
         "Rosa is a trans woman, a protected characteristic under the Equality Act 2010.",
-        "Idris cannot read his letters, which shows the hostel has some equality issues."
+        "Jamal cannot read his letters, which shows the hostel has some equality issues."
        ],
        "answer": 0,
        "why": "The key links the event to what it did to Rosa's behaviour and health, which is what explaining why a detail matters means. The tempting option only labels the event as discrimination, so it names the issue without saying what it caused."
       }
      },
      {
-      "need": "Apply an empathy theory, and the skills and attributes professionals need, to show how discrimination was prevented.",
+      "need": "Use a theory of empathy, and the skills staff need, to show how discrimination was prevented.",
       "fromSpec": "Draw together empathy theories and how they are applied, with personal skills and attributes, to promote anti-discriminatory practice.",
       "means": "Name the theory, then show it working in a real moment in the case, using correct care terms such as the six Cs.",
       "example": "Rogers' idea of unconditional positive regard shows in the key worker using Rosa's chosen name without comment. That is the care and respect the six Cs describe, and it let Rosa start trusting her.",
       "nearMiss": "Rogers' unconditional positive regard means accepting someone without conditions. The key worker showed this to Rosa, and it helped her to trust the service.",
-      "whyNearMiss": "The theory is named and linked to Rosa, but the key worker's specific action is missing, so the reader cannot see the theory working in a real moment.",
+      "whyNearMiss": "The theory is named and linked to Rosa. But the key worker's own action is missing, so we cannot see the theory working in a real moment.",
       "explainPrompt": "What would you have to add to the near miss for a reader to see the theory working inside the case?",
       "check": {
        "q": "Which shows a theory being applied, not just described?",
@@ -48,13 +48,13 @@
       }
      },
      {
-      "need": "Weigh the advantages and disadvantages of the theories, using research, to reach a reasoned conclusion.",
+      "need": "Weigh the good and bad points of the theories, using research, and reach a reasoned conclusion.",
       "fromSpec": "Consider the advantages and disadvantages of theories and use detailed analysis and research to reach reasoned and valid conclusions and recommendations.",
-      "means": "Say what the theory does well for these individuals and where it falls short, then decide how useful it is overall.",
+      "means": "Say what the theory does well for these people and where it falls short. Then decide how useful it is overall.",
       "example": "Unconditional positive regard rebuilds Rosa's trust, but it gives little guidance when she refuses nursing advice. So staff also need clear practical steps, and the theory is useful but not enough alone.",
       "nearMiss": "Rogers' approach helps Rosa because the key worker's acceptance rebuilt her trust, and research on client-centred practice supports it, so staff should keep using it.",
-      "whyNearMiss": "It applies the theory and cites support, but gives only advantages, so there is no disadvantage and no decision about how far it can be relied on.",
-      "explainPrompt": "Which words in the example show the writer making a judgement and not just describing?",
+      "whyNearMiss": "It applies the theory and gives support. But it gives only good points. There is no weakness and no decision about how far to trust the theory.",
+      "explainPrompt": "Which words in the example show the writer making a judgement, not just describing?",
       "check": {
        "q": "What turns a description of a theory into an evaluation?",
        "options": [
@@ -68,18 +68,18 @@
       }
      },
      {
-      "need": "Judge how successful the promotion of anti-discriminatory practice was for each individual, and recommend improvements.",
+      "need": "Judge how well the team promoted fair treatment for each person, and suggest improvements.",
       "fromSpec": "Make reasoned judgements about how successfully anti-discriminatory practice has been promoted for each case study, and draw reasoned conclusions and recommendations.",
       "means": "Give a verdict for each person, with evidence from the case, then say what should change next.",
       "example": "Using Rosa's chosen name on hostel records was largely successful because she now attends clinic. However, council letters still use her old name, so the hostel should check external records before sending anything on her behalf.",
-      "nearMiss": "Using Rosa's chosen name was successful because she now attends clinic, and the easy-read letters should help Idris too, so the support promoted equality for both residents.",
-      "whyNearMiss": "It supports the verdict with evidence, but reports only successes, so there is no weakness and no recommended change.",
-      "explainPrompt": "Why does the example say 'largely' successful instead of just successful?",
+      "nearMiss": "Using Rosa's chosen name was successful because she now attends clinic, and the easy-read letters should help Jamal too, so the support promoted equality for both residents.",
+      "whyNearMiss": "It backs the verdict with evidence. But it reports only successes, so it gives no weakness and no change to make.",
+      "explainPrompt": "Why does the example say 'largely' successful, not just successful?",
       "check": {
        "q": "Which conclusion is closest to Distinction thinking?",
        "options": [
         "It was largely successful for both residents because staff used chosen names and easy-read letters.",
-        "It worked for Rosa but not for Idris, because his dyslexia was not fully considered by the team.",
+        "It worked for Rosa but not for Jamal, because his dyslexia was not fully considered by the team.",
         "It worked for Rosa on hostel records but not on council letters, so external checks are needed.",
         "It had strengths and weaknesses, so the hostel should review its equality practice soon."
        ],
@@ -92,32 +92,32 @@
    "BC.D2": {
     "requirements": [
      {
-      "need": "Make reasoned judgements on how ethical issues, such as confidentiality, influence planning of support.",
+      "need": "Make reasoned judgements about how ethical issues, such as confidentiality, change how support is planned.",
       "fromSpec": "Make reasoned judgements about different ethical issues and their influence on planning support to meet individual care and support needs.",
-      "means": "Show how an ethical dilemma changes what the plan says and does, and defend your view.",
-      "example": "Idris's request for secrecy clashes with Ferndale Lodge's duty to keep him safe. A plan for him would state in plain words, in advance, when staff must share, so he still chooses what else he tells them. The tension is sharper here because he fears his key worker will tell the council.",
-      "nearMiss": "Idris's request for secrecy clashes with the hostel's duty to keep him safe, so staff must weigh his confidentiality against the risk of harm when they plan his support.",
-      "whyNearMiss": "It applies the dilemma to Idris, but never says what the plan would actually do about it, so the influence on planning is missing.",
+      "means": "Show how an ethical dilemma changes what the plan says and does. Then defend your view.",
+      "example": "Jamal's request for secrecy clashes with Ferndale Lodge's duty to keep him safe. A plan for him would state in plain words, in advance, when staff must share, so he still chooses what else he tells them. The tension is sharper here because he fears his key worker will tell the council.",
+      "nearMiss": "Jamal's request for secrecy clashes with the hostel's duty to keep him safe, so staff must weigh his confidentiality against the risk of harm when they plan his support.",
+      "whyNearMiss": "It applies the dilemma to Jamal. But it never says what the plan would do about it, so the effect on planning is missing.",
       "explainPrompt": "How does the example change what the support plan includes?",
       "check": {
        "q": "Which sentence best shows an ethical issue influencing planning?",
        "options": [
-        "Idris's wish for secrecy conflicts with the hostel's duty to keep him safe from harm.",
-        "The plan sets out, in advance, exactly when staff would have to share Idris's information.",
-        "Staff must balance Idris's right to confidentiality against the risk that he harms himself.",
+        "Jamal's wish for secrecy conflicts with the hostel's duty to keep him safe from harm.",
+        "The plan sets out, in advance, exactly when staff would have to share Jamal's information.",
+        "Staff must balance Jamal's right to confidentiality against the risk that he harms himself.",
         "The hostel's confidentiality policy says staff must pass on information that suggests a risk."
        ],
        "answer": 1,
-       "why": "Planning is influenced when the ethical tension produces a concrete decision, here a sharing rule agreed with Idris in advance. The tempting options name the dilemma and stop, which is analysis without a judgement about the plan."
+       "why": "Planning is influenced when the ethical tension produces a concrete decision, here a sharing rule agreed with Jamal in advance. The tempting options name the dilemma and stop, which is analysis without a judgement about the plan."
       }
      },
      {
-      "need": "Show how professionals could minimise risk and balance limited resources, and justify the choice made.",
+      "need": "Show how professionals could lower risk and share limited resources, and explain the choice.",
       "fromSpec": "Suggest how professionals could best minimise risk and balance resources to reach a justified conclusion of the positive impact on the individual.",
-      "means": "Where two needs compete for the same limited resource, decide which gets priority, and give reasons.",
-      "example": "With one quiet room and one mentoring place, the room should go to Rosa because shared dormitories worsen her COPD. A volunteer reader can support Idris cheaply, so both risks are reduced.",
-      "nearMiss": "The quiet room should go to Rosa because she has COPD, and the mentoring place should go to Idris because he is a care leaver.",
-      "whyNearMiss": "It makes choices with a reason for each, but ignores what the other person loses and does not show how both risks are reduced.",
+      "means": "Two needs compete for the same limited resource. Decide which need comes first, and give reasons.",
+      "example": "With one quiet room and one mentoring place, the room should go to Rosa because shared dormitories worsen her COPD. A volunteer reader can support Jamal cheaply, so both risks are reduced.",
+      "nearMiss": "The quiet room should go to Rosa because she has COPD, and the mentoring place should go to Jamal because he is a care leaver.",
+      "whyNearMiss": "It gives a reason for each choice. But it ignores what the other person loses, and it does not show how both risks are lowered.",
       "explainPrompt": "What two things does the example do that the near miss does not?",
       "check": {
        "q": "What makes a resources judgement 'justified'?",
@@ -132,13 +132,13 @@
       }
      },
      {
-      "need": "Weigh the advantages and disadvantages of strategies and techniques used to overcome individuals' challenges.",
+      "need": "Weigh the good and bad points of the strategies used to help people overcome their challenges.",
       "fromSpec": "Consider the advantages and disadvantages of strategies and use detailed analysis and research to reach reasoned and valid conclusions and recommendations.",
-      "means": "For each strategy, say what it achieves, what its limits are, and which you would recommend.",
-      "example": "Easy-read letters and text reminders help Idris attend, but depend on his phone credit and do not build his reading confidence. A reading mentor is the better long-term choice, with reminders as back-up.",
-      "nearMiss": "Text reminders help Idris attend because he forgets appointments, and they are cheap and quick for staff to send, so they are the best strategy.",
-      "whyNearMiss": "It gives reasons and a verdict, but only advantages, with no limitation or alternative such as a reading mentor, so the judgement is one-sided.",
-      "explainPrompt": "Rewrite the near miss in your own words by adding one disadvantage of text reminders.",
+      "means": "For each strategy, say what it achieves and what its limits are. Then say which you would recommend.",
+      "example": "Easy-read letters and text reminders help Jamal attend, but depend on his phone credit and do not build his reading confidence. A reading mentor is the better long-term choice, with reminders as back-up.",
+      "nearMiss": "Text reminders help Jamal attend because he forgets appointments, and they are cheap and quick for staff to send, so they are the best strategy.",
+      "whyNearMiss": "It gives reasons and a verdict, but only good points. It has no limit and no other option, such as a reading mentor, so the judgement is one-sided.",
+      "explainPrompt": "Rewrite the near miss in your own words. Add one disadvantage of text reminders.",
       "check": {
        "q": "What must a strategy evaluation include to be complete?",
        "options": [
@@ -152,12 +152,12 @@
       }
      },
      {
-      "need": "Explain how legislation and codes of practice help to overcome challenges, and how conflicts of interest can be resolved.",
+      "need": "Explain how laws and codes of practice help to overcome challenges, and how a conflict of interest can be settled.",
       "fromSpec": "Explore a range of legislation and codes of practice, their influence in overcoming challenges, ethical issues, resulting conflicts of interest and how these can be resolved.",
-      "means": "Name the right law or code, say what it requires in this situation, and show how it helps settle a clash between interests.",
+      "means": "Name the right law or code and say what it requires here. Then show how it helps settle a clash between interests.",
       "example": "The Equality Act 2010 protects Rosa's gender reassignment, so differing treatment is unlawful. When the charity's funding targets push for fast move-ons, Rosa's right to dignity means staff should explain why her move needs a careful pace.",
       "nearMiss": "When the charity's funding targets push for fast move-ons, this conflicts with Rosa's needs, and the Equality Act 2010 protects her from unfair treatment.",
-      "whyNearMiss": "It identifies the conflict and names the law in the case, but never says how the conflict would be resolved.",
+      "whyNearMiss": "It spots the conflict and names the law. But it never says how the conflict would be settled.",
       "explainPrompt": "What is the conflict of interest in the example, and who are the two sides?",
       "check": {
        "q": "A conflict of interest in care is best described as:",
@@ -172,15 +172,15 @@
       }
      },
      {
-      "need": "Make reasoned judgements about how successful the communication techniques used by professionals were.",
+      "need": "Make reasoned judgements about how well the staff's communication worked.",
       "fromSpec": "Consider different approaches used by professionals when communicating with individuals with care needs and make reasoned judgements about the success of the communication techniques.",
-      "means": "Look at how staff communicated, decide whether it worked for that person, and give the evidence.",
-      "example": "The key worker's unhurried talks and open questions helped Idris to admit he self-harms, so the style worked. But follow-up letters he could not read show the team misjudged the written method for him.",
-      "nearMiss": "The key worker used open questions and active listening, and Idris told her about his self-harm, so the technique was effective.",
-      "whyNearMiss": "It judges success from Idris's response, but ignores the written follow-up he could not read, so the verdict is one-sided.",
+      "means": "Look at how staff communicated. Decide if it worked for that person, and give the evidence.",
+      "example": "The key worker's unhurried talks and open questions helped Jamal to admit he self-harms, so the style worked. But follow-up letters he could not read show the team misjudged the written method for him.",
+      "nearMiss": "The key worker used open questions and active listening, and Jamal told her about his self-harm, so the technique was effective.",
+      "whyNearMiss": "It judges success from Jamal's reply. But it ignores the written follow-up he could not read, so the verdict is one-sided.",
       "explainPrompt": "What evidence does the example use to decide the technique worked?",
       "check": {
-       "q": "What shows a communication technique was successful?",
+       "q": "What shows that a way of communicating worked?",
        "options": [
         "The person's response shows they understood or felt able to open up to staff.",
         "The professional used open questions and active listening throughout the talk.",
@@ -196,15 +196,15 @@
    "D.D3": {
     "requirements": [
      {
-      "need": "Justify why each organisation or professional is suitable to meet the individual's needs.",
+      "need": "Explain why each organisation or professional is right to meet the person's needs.",
       "fromSpec": "Consider how different organisations and professionals on the teams work together to justify the suitability of each in providing support.",
-      "means": "For three professionals or organisations, say what their role is and why they, not someone else, are right for that need.",
+      "means": "Choose three professionals or organisations. Say what each one does and why they, not someone else, are right for that need.",
       "example": "The outreach nurse suits Rosa's COPD because she can see Rosa at the hostel, where Rosa feels safe. The housing officer holds the power to rehouse but lacks the health knowledge, so they need each other.",
       "nearMiss": "The outreach nurse is suitable for Rosa because she has COPD and the nurse is trained in respiratory health, while the housing officer deals with housing.",
-      "whyNearMiss": "It links the nurse's skills to Rosa's need, but does not say why she is better placed than alternatives, for example by seeing Rosa at the hostel where she feels safe.",
+      "whyNearMiss": "It links the nurse's skills to Rosa's need. But it does not say why she is better placed than others, for example by seeing Rosa at the hostel where she feels safe.",
       "explainPrompt": "In the example, why does 'they need each other' matter to the argument?",
       "check": {
-       "q": "To justify a professional's suitability you must show:",
+       "q": "To justify why a professional is right, you must show:",
        "options": [
         "What their role involves and which groups of people they usually support.",
         "Why their skills and access fit this person's need better than others.",
@@ -216,13 +216,13 @@
       }
      },
      {
-      "need": "Show how support from different disciplines combines into a full package, including how organisations commission and provide care.",
+      "need": "Show how support from different professions joins into one full package. Include how organisations commission (plan and buy) and provide care.",
       "fromSpec": "Understand how support from different disciplines can be combined to provide a full package of care, and how organisations work together to commission and provide care.",
-      "means": "Explain how the pieces fit together, and who pays for or arranges them, such as the council and the ICB.",
+      "means": "Explain how the pieces fit together. Say who pays for or arranges each one, such as the council and the ICB.",
       "example": "Rosa's package joins nursing for her lungs, housing for a stable home and key-working for trust. The ICB funds the nursing and the council funds housing, so the hostel has to coordinate two budgets.",
       "nearMiss": "Rosa receives nursing from the ICB-funded nurse, housing support from the council and key working from the hostel, so she gets support from all three organisations.",
-      "whyNearMiss": "It lists who provides each part, but never shows how the parts are combined or what coordinating two budgets means for the hostel.",
-      "explainPrompt": "What do you learn from the example about how funding affects teamwork?",
+      "whyNearMiss": "It lists who provides each part. But it never shows how the parts join up, or what two budgets mean for the hostel.",
+      "explainPrompt": "What does the example tell you about how funding affects teamwork?",
       "check": {
        "q": "Which body now commissions most local NHS services in England?",
        "options": [
@@ -236,13 +236,13 @@
       }
      },
      {
-      "need": "Make reasoned judgements on the importance of legislation and codes of practice for managing information.",
+      "need": "Make reasoned judgements about why laws and codes on handling information matter.",
       "fromSpec": "Make reasoned judgements about the importance of legislation and codes of practice in managing information and maintaining confidentiality.",
-      "means": "Say what the law or code requires about sharing information, and why that matters for these individuals.",
+      "means": "Say what the law or code requires when sharing information. Say why that matters for these people.",
       "example": "UK GDPR and the Data Protection Act 2018 mean the nurse needs a lawful reason, and ideally Rosa's consent, before telling housing about her COPD. Asking first protects trust, which keeps her using the service.",
       "nearMiss": "UK GDPR means the nurse must have a lawful reason to share Rosa's COPD with housing, so she should only share it when it is needed to help Rosa.",
-      "whyNearMiss": "It applies the law to the nurse and Rosa, but does not judge why it matters, since Rosa's trust and use of the service would suffer if she was not asked first.",
-      "explainPrompt": "Why might asking Rosa first lead to better outcomes than simply passing the information on?",
+      "whyNearMiss": "It applies the law to the nurse and Rosa. But it does not judge why this matters: Rosa's trust, and her use of the service, would suffer if she was not asked first.",
+      "explainPrompt": "Why might asking Rosa first lead to better results than just passing the information on?",
       "check": {
        "q": "Which approach best matches good practice before sharing someone's information?",
        "options": [
@@ -256,15 +256,15 @@
       }
      },
      {
-      "need": "Apply your reasoning to a complex situation where confidentiality becomes an ethical issue, explaining the professional's responsibilities.",
+      "need": "Apply your reasoning to a hard situation where confidentiality is an ethical issue. Explain what the professional must do.",
       "fromSpec": "Draw on roles and responsibilities of three professionals to show understanding of complex situations such as end-of-life plans or child-protection cases when confidentiality becomes an ethical issue.",
-      "means": "Choose a hard situation, say who holds which responsibility, and decide what sharing is justified.",
-      "example": "Telling the social worker about Idris's self-harm without his consent is justified only if there is a real risk of serious harm. The key worker should tell him what will be shared, with whom and why.",
-      "nearMiss": "Telling the social worker about Idris's self-harm is right because staff have a duty of care to keep him safe, so confidentiality can be broken.",
-      "whyNearMiss": "It balances duty against confidentiality, but sets no threshold such as real risk of serious harm, and does not say Idris should be told what is shared.",
+      "means": "Choose a hard situation. Say who is responsible for what, and decide what sharing is justified.",
+      "example": "Telling the social worker about Jamal's self-harm without his consent is justified only if there is a real risk of serious harm. The key worker should tell him what will be shared, with whom and why.",
+      "nearMiss": "Telling the social worker about Jamal's self-harm is right because staff have a duty of care to keep him safe, so confidentiality can be broken.",
+      "whyNearMiss": "It balances duty against confidentiality. But it sets no threshold, such as a real risk of serious harm, and it does not say Jamal should be told what is shared.",
       "explainPrompt": "What two things must be balanced in the example, and which one wins when risk is high?",
       "check": {
-       "q": "When can confidentiality ethically be broken?",
+       "q": "When can confidentiality be broken?",
        "options": [
         "When another agency's professional asks for the information in writing.",
         "When serious harm is a real risk and sharing is necessary and proportionate.",
@@ -280,12 +280,12 @@
    "D.D4": {
     "requirements": [
      {
-      "need": "Bring together learning from the earlier aims to judge how well teamwork met each person's needs.",
+      "need": "Bring together what you learned in earlier aims to judge how well the team met each person's needs.",
       "fromSpec": "Draw on and bring together knowledge and understanding across learning aims to make suitable judgements on how successful multi-agency and multidisciplinary working meets individual needs.",
-      "means": "Pull in your earlier points on discrimination, ethics and communication, and use them to judge the teamwork.",
-      "example": "The team reached Rosa because the nurse used her chosen name and agreed the sharing in advance. The same care was missing for Idris, whose letters ignored his dyslexia, so teamwork worked only where individual needs had been spotted.",
-      "nearMiss": "The team worked well for Rosa, using her chosen name and agreeing what to share, and they sent Idris easy-read letters and phoned him, so each person's needs were met.",
-      "whyNearMiss": "It draws on several aims, but takes the team's methods at face value and does not test whether they actually worked for Idris.",
+      "means": "Use your earlier points on discrimination, ethics and communication. Use them to judge the teamwork.",
+      "example": "The team reached Rosa because the nurse used her chosen name and agreed the sharing in advance. The same care was missing for Jamal, whose letters ignored his dyslexia, so teamwork worked only where individual needs had been spotted.",
+      "nearMiss": "The team worked well for Rosa, using her chosen name and agreeing what to share, and they sent Jamal easy-read letters and phoned him, so each person's needs were met.",
+      "whyNearMiss": "It draws on several aims. But it accepts the team's methods as they are, and does not test if they worked for Jamal.",
       "explainPrompt": "Which earlier ideas from this unit can you spot being used in the example?",
       "check": {
        "q": "What does 'bringing together' learning aims look like in practice?",
@@ -300,15 +300,15 @@
       }
      },
      {
-      "need": "Evaluate how the team promoted each person's right to equality and independence while balancing ethical issues.",
+      "need": "Evaluate how well the team protected each person's right to equality and independence while balancing ethical issues.",
       "fromSpec": "Evaluate how an individual's right to equality and independence can be promoted through enabling individuals to overcome challenges, balanced with overcoming ethical issues.",
-      "means": "Show how the team helps people do things for themselves, and where this clashes with risk or confidentiality.",
-      "example": "Offering Idris a reading mentor builds his independence, while a shared safety plan limits his privacy a little. The team balanced the two by agreeing the limits with him, which kept his dignity intact.",
-      "nearMiss": "Idris's independence is supported by the reading mentor, but staff must also keep him safe, so they need to balance his independence with his safety.",
-      "whyNearMiss": "It names the tension and applies it to Idris, but says nothing about how the team actually resolved it or whether his dignity was kept.",
+      "means": "Show how the team helps people do things for themselves. Then show where this clashes with risk or confidentiality.",
+      "example": "Offering Jamal a reading mentor builds his independence, while a shared safety plan limits his privacy a little. The team balanced the two by agreeing the limits with him, which kept his dignity intact.",
+      "nearMiss": "Jamal's independence is supported by the reading mentor, but staff must also keep him safe, so they need to balance his independence with his safety.",
+      "whyNearMiss": "It names the tension and applies it to Jamal. But it does not say how the team settled it, or whether his dignity was kept.",
       "explainPrompt": "What does the team give up, and what does it protect, in the example?",
       "check": {
-       "q": "Why must independence be 'balanced' with ethical issues?",
+       "q": "Why must independence be 'balanced' against ethical issues?",
        "options": [
         "A person's choice can conflict with their safety or privacy, so both are weighed.",
         "Safety outweighs independence in every case, so choice only matters when risk is low.",
@@ -316,16 +316,16 @@
         "Independence can only be offered once every ethical risk has been removed."
        ],
        "answer": 0,
-       "why": "Rights and risks can pull against each other, so the team must weigh both each time. The tempting option, safety always first, turns the balance into a fixed rule and would remove Idris's choices unnecessarily."
+       "why": "Rights and risks can pull against each other, so the team must weigh both each time. The tempting option, safety always first, turns the balance into a fixed rule and would remove Jamal's choices unnecessarily."
       }
      },
      {
-      "need": "Judge how effective the team's working practices were, including strengths and weaknesses.",
+      "need": "Judge how well the team's ways of working worked. Include strengths and weaknesses.",
       "fromSpec": "Discuss how effective the team's working practices are for meeting individual needs.",
-      "means": "Look at meetings, shared records, referrals and communication, and say what worked and what slowed support down.",
+      "means": "Look at meetings, shared records, referrals and communication. Say what worked and what slowed support down.",
       "example": "A shared support plan stopped Rosa having to repeat her story to each professional. But the housing officer works from a different system and waits weeks for updates, which delays her move.",
       "nearMiss": "The shared support plan is effective because Rosa does not have to repeat her story to each professional, so it saves her time.",
-      "whyNearMiss": "It gives a strength with evidence, but ignores a weakness such as the housing officer's separate system, so the judgement is one-sided.",
+      "whyNearMiss": "It gives a strength with evidence. But it ignores a weakness, such as the housing officer's separate system, so the judgement is one-sided.",
       "explainPrompt": "How could you tell from the example that the writer has looked at both sides?",
       "check": {
        "q": "Which is the strongest evidence that a team practice is effective?",
@@ -340,12 +340,12 @@
       }
      },
      {
-      "need": "Reach a justified overall conclusion on how far multi-agency working met needs, with a recommendation.",
+      "need": "Reach a justified overall conclusion on how far multi-agency working met needs. Multi-agency means different organisations working together. Add a recommendation.",
       "fromSpec": "Make suitable judgements on how successful multi-agency and multidisciplinary working meets individual needs.",
-      "means": "Give a final verdict that weighs everything you discussed, then say what should improve.",
-      "example": "Overall the teamwork met Rosa's needs well but only partly met Idris's, because his information needs were missed. A single named coordinator and an easy-read plan would close that gap.",
-      "nearMiss": "Overall the teamwork met Rosa's needs well but only partly met Idris's, because the team did not meet his information needs.",
-      "whyNearMiss": "It gives a clear, evidenced verdict for each person, but ends without saying what should change.",
+      "means": "Give a final verdict that weighs everything you discussed. Then say what should get better.",
+      "example": "Overall the teamwork met Rosa's needs well but only partly met Jamal's, because his information needs were missed. A single named coordinator and an easy-read plan would close that gap.",
+      "nearMiss": "Overall the teamwork met Rosa's needs well but only partly met Jamal's, because the team did not meet his information needs.",
+      "whyNearMiss": "It gives a clear verdict with evidence for each person. But it ends without saying what should change.",
       "explainPrompt": "Which words show the verdict is different for each person?",
       "check": {
        "q": "A strong conclusion should:",
@@ -365,20 +365,20 @@
  },
  "6": {
   "parallelCase": {
-   "title": "Kit at Saltmarsh Day Centre",
-   "summary": "Kit is a 17-year-old learner starting a four-week placement at Saltmarsh Day Centre, a fictional centre for adults recovering from brain injury. Before starting, Kit read the centre's policies, checked the dress code and wrote a plan with two goals: to speak more clearly to people with memory problems, and to manage time better after arriving late to two classes. The supervisor, Mrs Adeyemi, asked Kit to help with a cooking group, record attendance and keep a tidy log. In week two a client, Walt, became frustrated because instructions came too fast. Kit slowed down and used picture cards, then asked the supervisor for feedback. Kit also noticed that rushing to finish tasks tempted skipping hand washing, and that the centre bans photos, which limits what Kit can record in the log. By the end, Kit used the supervisor's witness statement and the log to plan college applications for adult nursing."
+   "title": "Ari at Saltmarsh Day Centre",
+   "summary": "Who: Ari is a 17-year-old learner. Ari is starting a four-week placement at Saltmarsh Day Centre. It is a fictional centre for adults recovering from brain injury.\nBefore starting: Ari read the centre's policies and checked the dress code. Ari wrote a plan with two goals. One goal is to speak more clearly to people with memory problems. The other is to manage time better, after arriving late to two classes.\nWhat Ari does: The supervisor, Mrs Adeyemi, asked Ari to help with a cooking group, record attendance and keep a tidy log.\nWhat happens: In week two, a client called Walt became frustrated because instructions came too fast. Ari slowed down and used picture cards. Then Ari asked the supervisor for feedback.\nOther things to know: Ari noticed that rushing to finish tasks tempted skipping hand washing. The centre bans photos, which limits what Ari can record in the log.\nWhat Ari wants: Ari wants to apply to college for adult nursing. By the end, Ari used the supervisor's witness statement and the log to plan the applications."
   },
   "criteria": {
    "AB.D1": {
     "requirements": [
      {
-      "need": "Use research to justify what employers expect from a learner on placement.",
+      "need": "Use research to explain what employers expect from a learner on placement.",
       "fromSpec": "Use research to justify the expectations of work experience and articulate views concisely.",
-      "means": "Show what you found out (policies, codes, job roles) and say why it matters for how you behave on placement.",
-      "example": "Reading the centre's confidentiality policy before starting told Kit not to name clients outside work. This protects clients and also makes Kit someone a supervisor would trust to write a good reference.",
-      "nearMiss": "Kit read the placement's confidentiality policy and learned that clients must not be named outside work, which is what employers expect of learners.",
-      "whyNearMiss": "It reports what Kit found and says it is expected, but never explains the consequence or why an employer wants it.",
-      "explainPrompt": "In your own words, what extra reasoning does the example add after the fact that Kit read the policy?",
+      "means": "Show what you found out (policies, codes, job roles). Say why it matters for how you behave on placement.",
+      "example": "Reading the centre's confidentiality policy before starting told Ari not to name clients outside work. This protects clients and also makes Ari someone a supervisor would trust to write a good reference.",
+      "nearMiss": "Ari read the placement's confidentiality policy and learned that clients must not be named outside work, which is what employers expect of learners.",
+      "whyNearMiss": "It reports what Ari found and says it is expected. But it never explains the result of it, or why an employer wants it.",
+      "explainPrompt": "In your own words, what reasoning does the example add after the fact that Ari read the policy?",
       "check": {
        "q": "What turns a research fact into a justification?",
        "options": [
@@ -392,12 +392,12 @@
       }
      },
      {
-      "need": "Combine learning from preparation and planning to justify the specific targets in your placement plan.",
+      "need": "Combine what you learned in preparation and planning to justify the targets in your plan.",
       "fromSpec": "Draw on and show synthesis of knowledge across learning aims A and B to make suitable justifications and recommendations for the planned placement.",
-      "means": "Show how what you learned about the setting and yourself led to your targets, so the plan is clearly not generic.",
-      "example": "Kit's goal to speak clearly links to research about the client group's memory difficulties. Without that research the goal would be a vague wish; with it, Kit can plan to use short sentences and picture cards.",
-      "nearMiss": "Kit's goal to speak clearly is a sensible goal for a placement with people who have memory problems, and Kit plans to use short sentences and picture cards.",
-      "whyNearMiss": "The goal fits the setting and has a plan, but nothing says what Kit learned that makes it the right goal, so it is not justified by the research.",
+      "means": "Show how what you learned about the setting and yourself led to your targets. Then the plan is clearly not generic.",
+      "example": "Ari's goal to speak clearly links to research about the client group's memory difficulties. Without that research the goal would be a vague wish; with it, Ari can plan to use short sentences and picture cards.",
+      "nearMiss": "Ari's goal to speak clearly is a sensible goal for a placement with people who have memory problems, and Ari plans to use short sentences and picture cards.",
+      "whyNearMiss": "The goal fits the setting and has a plan. But nothing says what Ari learned to make it the right goal, so the research does not justify it.",
       "explainPrompt": "Where does the example show the link between research and the goal?",
       "check": {
        "q": "What shows synthesis across aims?",
@@ -412,20 +412,20 @@
       }
      },
      {
-      "need": "Reach a valid judgement on how far preparation helped, including its limits and a recommendation.",
+      "need": "Reach a valid judgement on how far preparation helped. Include its limits and a recommendation.",
       "fromSpec": "Reach valid judgements about the benefits of preparation for work experience placements.",
-      "means": "Weigh what preparation achieved and what it could not, then say what you would do differently.",
-      "example": "Preparation's biggest benefit for Kit was confidence: Kit asked sensible questions on day one. It could not prepare Kit for seeing a client upset, so a pre-placement call with the supervisor would be a worthwhile addition.",
-      "nearMiss": "Preparation was very useful for Kit because it gave Kit the confidence to ask sensible questions on day one.",
-      "whyNearMiss": "It names a specific benefit from the case, but gives no limit and no recommendation, so it judges only one side.",
-      "explainPrompt": "What does the example say preparation could not do, and why does that make the judgement stronger?",
+      "means": "Weigh what preparation achieved and what it could not do. Then say what you would do differently.",
+      "example": "Preparation's biggest benefit for Ari was confidence: Ari asked sensible questions on day one. It could not prepare Ari for seeing a client upset, so a pre-placement call with the supervisor would be a worthwhile addition.",
+      "nearMiss": "Preparation was very useful for Ari because it gave Ari the confidence to ask sensible questions on day one.",
+      "whyNearMiss": "It names a real benefit from the case. But it gives no limit and no recommendation, so it judges only one side.",
+      "explainPrompt": "What does the example say preparation could not do? Why does that make the judgement stronger?",
       "check": {
        "q": "Which statement is a judgement and not a description?",
        "options": [
-        "Preparation was useful because Kit had read the policies and written a plan.",
-        "Preparation was useful because Kit had read the policies and written a good plan.",
-        "Preparation gave Kit confidence but could not prepare Kit for strong feelings.",
-        "Preparation covered the policies, the dress code and two personal goals for Kit."
+        "Preparation was useful because Ari had read the policies and written a plan.",
+        "Preparation was useful because Ari had read the policies and written a good plan.",
+        "Preparation gave Ari confidence but could not prepare Ari for strong feelings.",
+        "Preparation covered the policies, the dress code and two personal goals for Ari."
        ],
        "answer": 2,
        "why": "A judgement says how far something helped and where it fell short. The tempting option praises preparation with a reason, but a judgement with no limit is only a one-sided opinion."
@@ -436,12 +436,12 @@
    "C.D2": {
     "requirements": [
      {
-      "need": "Select the best skill or technique for each situation and audience, and justify the choice.",
+      "need": "Choose the best skill or technique for each situation and audience, and explain your choice.",
       "fromSpec": "Select appropriate skills and techniques best suited to the situation, communicating professionally using appropriate methods for the audience.",
-      "means": "Show that you chose different methods for different people (clients, colleagues, supervisor) and explain why each fitted.",
-      "example": "With Walt, Kit chose slow speech and picture cards because he struggled to follow quick instructions. In the team meeting Kit gave a short factual update instead, because colleagues needed brief information.",
-      "nearMiss": "Kit used slow speech and picture cards with Walt, which helped him to follow the recipe.",
-      "whyNearMiss": "It describes a good technique used well, but not why it was chosen for Walt or how Kit would communicate with a different audience.",
+      "means": "Show that you chose different methods for different people (clients, colleagues, supervisor). Explain why each one fitted.",
+      "example": "With Walt, Ari chose slow speech and picture cards because he struggled to follow quick instructions. In the team meeting Ari gave a short factual update instead, because colleagues needed brief information.",
+      "nearMiss": "Ari used slow speech and picture cards with Walt, which helped him to follow the recipe.",
+      "whyNearMiss": "It describes a good technique used well. But it does not say why it was chosen for Walt, or how Ari would talk to a different audience.",
       "explainPrompt": "Why would picture cards be a poor choice for the team meeting?",
       "check": {
        "q": "Which shows 'selecting' a technique?",
@@ -456,15 +456,15 @@
       }
      },
      {
-      "need": "Show initiative that stays within your responsibilities and the setting's procedures.",
+      "need": "Show initiative (doing useful things without being told) within your role and the setting's procedures.",
       "fromSpec": "Show initiative while acting in expected constraints, according to own responsibilities and the setting's procedures.",
-      "means": "Give an example of doing something useful without being told, while staying inside what a learner is allowed to do.",
-      "example": "Kit noticed the sign-in sheets were running low and printed more without being asked. When Walt asked for help with a cooker, Kit fetched the supervisor, because supporting cooker use was outside a learner's role.",
-      "nearMiss": "Kit showed initiative by noticing the sign-in sheets were running low and printing more without being asked.",
-      "whyNearMiss": "It shows genuine initiative in a safe task, but not that Kit also knows the limits of a learner's role, for example fetching the supervisor for the cooker.",
-      "explainPrompt": "What is the difference between initiative and overstepping in the example?",
+      "means": "Give an example of doing something useful without being told. Stay inside what a learner is allowed to do.",
+      "example": "Ari noticed the sign-in sheets were running low and printed more without being asked. When Walt asked for help with a cooker, Ari fetched the supervisor, because supporting cooker use was outside a learner's role.",
+      "nearMiss": "Ari showed initiative by noticing the sign-in sheets were running low and printing more without being asked.",
+      "whyNearMiss": "It shows real initiative in a safe task. But it does not show that Ari also knows the limits of a learner's role, for example fetching the supervisor for the cooker.",
+      "explainPrompt": "What is the difference between initiative and going beyond your role in the example?",
       "check": {
-       "q": "Which is initiative within constraints?",
+       "q": "Which is initiative within your role?",
        "options": [
         "Spotting something that needs doing and doing it, or asking, in your role.",
         "Helping a client with anything they ask for, because their wishes come first.",
@@ -476,13 +476,13 @@
       }
      },
      {
-      "need": "Judge the risks and limitations of the techniques you used and how they affected outcomes.",
+      "need": "Judge the risks and limits of the techniques you used, and how they affected the results.",
       "fromSpec": "Make valid judgements about the risks and limitations of techniques and processes used and how they impact the desired outcomes.",
-      "means": "For a technique you used, say what could go wrong or what it could not do, and how that affected the result.",
-      "example": "Picture cards helped Walt follow the recipe, but slowed the group down and risked treating him like a child. Kit reduced this by asking Walt which cards he wanted.",
-      "nearMiss": "Picture cards helped Walt follow the recipe, and Kit checked with the supervisor that they suited the group, so they were an effective choice.",
-      "whyNearMiss": "It judges effectiveness with some evidence, but identifies no risk or limitation, such as slowing the group or seeming childish.",
-      "explainPrompt": "How did Kit's response in the example reduce the risk?",
+      "means": "For a technique you used, say what could go wrong or what it could not do. Then say how that affected the result.",
+      "example": "Picture cards helped Walt follow the recipe, but slowed the group down and risked treating him like a child. Ari reduced this by asking Walt which cards he wanted.",
+      "nearMiss": "Picture cards helped Walt follow the recipe, and Ari checked with the supervisor that they suited the group, so they were an effective choice.",
+      "whyNearMiss": "It judges how well the cards worked, with some evidence. But it names no risk or limit, such as slowing the group or seeming childish.",
+      "explainPrompt": "How did Ari's response in the example reduce the risk?",
       "check": {
        "q": "A limitation of a technique is:",
        "options": [
@@ -496,33 +496,33 @@
       }
      },
      {
-      "need": "Show how you managed yourself: prioritising tasks, monitoring progress and justifying decisions.",
+      "need": "Show how you managed yourself: putting tasks in order, checking your progress and explaining your decisions.",
       "fromSpec": "Manage themselves successfully to prioritise activities and monitor their progress, and justify any decisions related to their work situation.",
       "means": "Explain how you decided what to do first, tracked your progress and made decisions under pressure.",
-      "example": "When the register and the cooking group overlapped, Kit did the register first because attendance affects safety in an emergency. Kit then ticked this off a daily list to monitor progress.",
-      "nearMiss": "Kit prioritised well by doing the register first and then the cooking group, and ticked each job off a daily list to check progress.",
-      "whyNearMiss": "It shows priorities and monitoring, but gives no reason why the register came first, so the decision is not justified.",
+      "example": "When the register and the cooking group overlapped, Ari did the register first because attendance affects safety in an emergency. Ari then ticked this off a daily list to monitor progress.",
+      "nearMiss": "Ari prioritised well by doing the register first and then the cooking group, and ticked each job off a daily list to check progress.",
+      "whyNearMiss": "It shows priorities and checking. But it gives no reason why the register came first, so the decision is not justified.",
       "explainPrompt": "What reason does the example give for putting the register first?",
       "check": {
-       "q": "Which decision is justified?",
+       "q": "Which decision has a good reason?",
        "options": [
         "Doing the cooking group first because the clients were already waiting for the activity.",
         "Doing the quickest job first so that more tasks were ticked off by lunchtime.",
         "Doing the register first because attendance matters for safety in an emergency.",
-        "Doing the job the supervisor mentioned first, to show Kit follows requests."
+        "Doing the job the supervisor mentioned first, to show Ari follows requests."
        ],
        "answer": 2,
        "why": "A justified decision gives a reason linked to safety or outcomes for clients. The tempting options give reasons too, but they rank by convenience or visibility, not by consequence."
       }
      },
      {
-      "need": "Show you sought feedback yourself, responded to it, and evaluated your reasoning for decisions.",
+      "need": "Show that you asked for feedback yourself, used it, and checked your own reasoning for decisions.",
       "fromSpec": "Engage actively with others and use own initiative to gain feedback and create opportunities for improvement; evaluate reasoning and respond effectively to feedback.",
-      "means": "Show that you asked for feedback, say what you changed, and reflect on whether your thinking was sound. A detailed witness statement should back this up.",
-      "example": "After the cooking group, Mrs Adeyemi could comment that Kit was rushing. A stronger reflection by a learner like Kit would say what the comment shows, what Kit changed, and how Kit would check whether it worked.",
-      "nearMiss": "Kit asked the supervisor for feedback after the cooking group, slowed down as she suggested, and recorded the change in the log.",
-      "whyNearMiss": "Kit sought the feedback and changed practice, but never checks whether the change worked or reasons about why it was needed.",
-      "explainPrompt": "What did Kit do after the feedback that shows it was used?",
+      "means": "Show that you asked for feedback. Say what you changed, and reflect on whether your thinking was sound. A detailed witness statement should back this up.",
+      "example": "After the cooking group, Mrs Adeyemi could comment that Ari was rushing. A stronger reflection by a learner like Ari would say what the comment shows, what Ari changed, and how Ari would check whether it worked.",
+      "nearMiss": "Ari asked the supervisor for feedback after the cooking group, slowed down as she suggested, and recorded the change in the log.",
+      "whyNearMiss": "Ari asked for the feedback and changed practice. But Ari never checks if the change worked, or why it was needed.",
+      "explainPrompt": "What did Ari do after the feedback that shows it was used?",
       "check": {
        "q": "Which shows you used feedback well?",
        "options": [
@@ -540,13 +540,13 @@
    "D.D3": {
     "requirements": [
      {
-      "need": "Draw together planning and performance evidence to gain valid insights into your strengths and gaps.",
+      "need": "Draw together your plan and your performance evidence to gain valid insights into your strengths and gaps.",
       "fromSpec": "Draw together learning and experiences across the learning aims, demonstrating valid insights into planning and performance.",
-      "means": "Compare what you planned with what happened, using evidence from your log and feedback, and say what that tells you.",
-      "example": "If Kit's own log and the supervisor's statement disagree, the better reflection compares them. Here the log shows lateness is rare, so the statement matters more for any hygiene-step weakness, and Kit would set the target from the evidence that is strongest.",
-      "nearMiss": "Kit's log and the supervisor's statement both show that Kit met the goal to speak clearly, and the time management goal was also met.",
-      "whyNearMiss": "It compares two sources, but only to confirm success, so it does not weigh which is stronger or draw out a gap.",
-      "explainPrompt": "What did Kit discover that was not in the original plan?",
+      "means": "Compare what you planned with what happened, using evidence from your log and feedback. Say what that tells you.",
+      "example": "If Ari's own log and the supervisor's statement disagree, the better reflection compares them. Here the log shows lateness is rare, so the statement matters more for any hygiene-step weakness, and Ari would set the target from the evidence that is strongest.",
+      "nearMiss": "Ari's log and the supervisor's statement both show that Ari met the goal to speak clearly, and the time management goal was also met.",
+      "whyNearMiss": "It compares two sources, but only to confirm success. It does not weigh which source is stronger or draw out a gap.",
+      "explainPrompt": "What did Ari discover that was not in the original plan?",
       "check": {
        "q": "What counts as an insight?",
        "options": [
@@ -560,12 +560,12 @@
       }
      },
      {
-      "need": "Justify how reflection on feedback changed your personal and professional development targets.",
+      "need": "Explain how thinking about feedback changed your personal and professional targets.",
       "fromSpec": "Justify how planning for and reflecting on skills developed have informed own future plans for personal and professional development.",
       "means": "Show a before and after: what you aimed for, what you learned, and the new target that follows.",
-      "example": "If feedback showed that Kit's clear speech helped Walt, the target should move on to supporting clients with more complex communication needs. That is a better target than repeating 'improve communication'.",
-      "nearMiss": "Kit's clear speech helped Walt, so Kit will keep working on communication and aim to get even better at it.",
-      "whyNearMiss": "It uses what reflection showed, but the target stays the same broad aim, so it is not sharpened or moved on.",
+      "example": "If feedback showed that Ari's clear speech helped Walt, the target should move on to supporting clients with more complex communication needs. That is a better target than repeating 'improve communication'.",
+      "nearMiss": "Ari's clear speech helped Walt, so Ari will keep working on communication and aim to get even better at it.",
+      "whyNearMiss": "It uses what reflection showed. But the target stays the same broad aim, so it is not sharper or moved on.",
       "explainPrompt": "How does the new target in the example differ from the old one, and why?",
       "check": {
        "q": "A development target that is 'informed by reflection' will:",
@@ -580,12 +580,12 @@
       }
      },
      {
-      "need": "Link your development plan to realistic future steps in education or work.",
+      "need": "Link your development plan to realistic next steps in education or work.",
       "fromSpec": "Plan own personal and professional development, informed by experiences across the learning aims.",
-      "means": "Set out specific next steps such as courses, experience or skills, and say how placement evidence supports them.",
-      "example": "Kit might use a supervisor's statement, if one exists, as evidence of patience and reliability when applying for nursing courses. To fill a hygiene gap, an infection-control refresher before the next placement would be a sensible step.",
-      "nearMiss": "Kit plans to apply for adult nursing courses and will use the supervisor's statement and the log as evidence of patience and reliability.",
-      "whyNearMiss": "It links the plan to a real future step and uses evidence, but names no step that would close a weakness found on placement.",
+      "means": "Set out clear next steps such as courses, experience or skills. Say how your placement evidence supports them.",
+      "example": "Ari might use a supervisor's statement, if one exists, as evidence of patience and reliability when applying for nursing courses. To fill a hygiene gap, an infection-control refresher before the next placement would be a sensible step.",
+      "nearMiss": "Ari plans to apply for adult nursing courses and will use the supervisor's statement and the log as evidence of patience and reliability.",
+      "whyNearMiss": "It links the plan to a real next step and uses evidence. But it names no step that would close a weakness found on placement.",
       "explainPrompt": "Which two details in the example make the plan realistic?",
       "check": {
        "q": "Which is the most useful development step?",
@@ -606,19 +606,19 @@
  "7": {
   "parallelCase": {
    "title": "Oakapple Home Care",
-   "summary": "Oakapple Home Care is a fictional agency sending care workers into people's homes in a rural area. Care worker Dev visits Mrs Halloran, 81, who has early dementia and lives with her grandson. Dev notices bruises on her wrist, finds her purse empty although her pension is paid, and hears the grandson say she cannot go out. Mrs Halloran says she wants to stay in her own home and does not want a fuss. Dev works alone, uses a hoist with some clients, handles medication and cleaning products, and once found a loose rug. A neighbour of another client has complained that visits are often late and rushed. The agency has a safeguarding policy, a lone-working policy and a complaints procedure. The council's adult safeguarding team, the GP and the Care Quality Commission could all become involved."
+   "summary": "Who: Dev is a care worker at Oakapple Home Care. This is a fictional agency that sends care workers into people's homes in a rural area. Dev visits Mrs Halloran, 81.\nAbout Mrs Halloran: She has early dementia and lives with her grandson. She still grows her own vegetables and has clear views about her life.\nWhat's happening: Dev notices bruises on her wrist. Dev finds her purse empty although her pension is paid. Dev hears the grandson say she cannot go out.\nWhat she wants: Mrs Halloran says she wants to stay in her own home. She does not want a fuss.\nOther things to know: Dev works alone and uses a hoist (a lifting machine) with some clients. Dev handles medication and cleaning products, and once found a loose rug. A neighbour of another client has complained that visits are often late and rushed.\nWho's involved: The agency has a safeguarding policy, a lone-working policy and a complaints procedure. The council's adult safeguarding team and the GP could become involved. So could the Care Quality Commission (CQC, which inspects care services)."
   },
   "criteria": {
    "A.D1": {
     "requirements": [
      {
-      "need": "Evaluate how a duty of care must be balanced against an individual's rights in a complex situation.",
+      "need": "Evaluate how a duty of care (a worker's legal duty to keep people safe) must be balanced against a person's rights.",
       "fromSpec": "Apply understanding to more complex situations and reach reasoned judgements on the significance of a duty of care in promoting safe practice.",
-      "means": "Show the tension between protecting someone and respecting their choices, and decide where the balance should fall.",
+      "means": "Show the tension between protecting someone and respecting their choices. Then decide where the balance should fall.",
       "example": "Dev owes Mrs Halloran a duty of care, yet she wants no fuss. Because the bruises and missing money suggest harm she may not be able to assess, protecting her outweighs her wish to avoid a fuss, though Dev must still involve her in decisions.",
       "nearMiss": "Dev owes Mrs Halloran a duty of care but she wants no fuss, so Dev has to balance keeping her safe against her right to choose.",
-      "whyNearMiss": "It applies the tension to Mrs Halloran, but stops short of deciding which should win and why, so it is analysis without a judgement.",
-      "explainPrompt": "What reason does the example give for protection outweighing her wish for no fuss?",
+      "whyNearMiss": "It applies the tension to Mrs Halloran. But it stops before deciding which should win and why, so it is analysis without a judgement.",
+      "explainPrompt": "What reason does the example give for protection winning over her wish for no fuss?",
       "check": {
        "q": "Which describes a duty of care?",
        "options": [
@@ -632,12 +632,12 @@
       }
      },
      {
-      "need": "Evaluate how well complaints procedures address a failure in a duty of care.",
+      "need": "Evaluate how well complaints procedures deal with a failure in a duty of care.",
       "fromSpec": "Understand how complaints and appeals procedures address failure in a duty of care, and judge their significance in promoting safe practice.",
-      "means": "Follow a complaint through, say what it can put right, and note where it falls short.",
+      "means": "Follow a complaint through. Say what it can put right, and where it falls short.",
       "example": "The neighbour's complaint about late, rushed visits can trigger an investigation and a change to rotas, so it helps safety. But clients with dementia may never complain, so complaints alone cannot protect them.",
       "nearMiss": "The neighbour's complaint about late, rushed visits can lead to an investigation and a change to rotas, so the procedure helps keep clients safe.",
-      "whyNearMiss": "It shows the procedure working in the case, but never asks who would not complain, so it names no limit.",
+      "whyNearMiss": "It shows the procedure working in the case. But it never asks who would not complain, so it names no limit.",
       "explainPrompt": "Who might never use the complaints procedure in the example, and why does that matter?",
       "check": {
        "q": "A weakness of relying on complaints to keep people safe is:",
@@ -652,12 +652,12 @@
       }
      },
      {
-      "need": "Draw together duty of care and complaints knowledge to judge the safe practice in a complex case.",
+      "need": "Draw together duty of care and complaints to judge safe practice in a hard case.",
       "fromSpec": "Draw on and bring together knowledge about duty of care and safeguarding procedures to promote safe practice, including where different agencies may respond.",
-      "means": "Use both ideas in one argument, so that the reader can see how they work together in the situation.",
+      "means": "Use both ideas in one argument. The reader should see how they work together in the situation.",
       "example": "Duty of care makes Dev act on the bruises today, while the complaints procedure catches problems like rushed visits that nobody reports. Together they cover both the harm seen in the home and the quiet, ongoing poor practice.",
       "nearMiss": "Dev has a duty of care to act on the bruises, and Oakapple's complaints procedure lets clients and neighbours raise concerns about poor care.",
-      "whyNearMiss": "Both ideas are applied to Oakapple, but they sit side by side, so nothing shows how one covers what the other misses.",
+      "whyNearMiss": "Both ideas are applied to Oakapple, but they sit side by side. Nothing shows how one covers what the other misses.",
       "explainPrompt": "How does the example show duty of care and complaints doing different jobs?",
       "check": {
        "q": "Which sentence combines two ideas?",
@@ -672,12 +672,12 @@
       }
      },
      {
-      "need": "Reach a concise, valid judgement on how far duty of care and complaints promote safe practice.",
+      "need": "Reach a short, valid judgement on how far duty of care and complaints help keep practice safe.",
       "fromSpec": "Articulate arguments concisely to reach reasoned and valid judgements on the significance of a duty of care and complaints procedures in promoting safe practice.",
       "means": "Give a clear verdict in a few sentences, with the main reasons and the limits.",
       "example": "Duty of care is the stronger safeguard because it makes workers act before harm grows. Complaints procedures are useful but reactive, so Oakapple should add regular check-ins with relatives and clients.",
       "nearMiss": "Duty of care is the stronger safeguard because it makes workers act before harm grows, while complaints only deal with problems after they happen.",
-      "whyNearMiss": "It ranks the two and gives a reason, but ends without a limit or recommendation such as regular check-ins.",
+      "whyNearMiss": "It ranks the two and gives a reason. But it ends without a limit or a recommendation, such as regular check-ins.",
       "explainPrompt": "What does the example rank, and what reason does it give?",
       "check": {
        "q": "A concise judgement should:",
@@ -696,12 +696,12 @@
    "B.D2": {
     "requirements": [
      {
-      "need": "Recognise signs and contributing factors of abuse and neglect in a situation with several factors.",
+      "need": "Spot the signs and the factors that add to abuse and neglect, when there are several.",
       "fromSpec": "Recognise and respond to evidence or concerns about abuse and neglect in more complex situations.",
-      "means": "Spot the different signs, link them, and show how factors such as dementia or carer stress could contribute.",
+      "means": "Spot the different signs and link them. Show how factors such as dementia or carer stress could add to the risk.",
       "example": "Bruising, missing money and restricted movement together point to possible physical and financial abuse. Dementia, isolation and a carer under strain could all raise the risk.",
       "nearMiss": "Dev saw bruises on Mrs Halloran's wrist and an empty purse, which could be signs of physical and financial abuse.",
-      "whyNearMiss": "It spots two signs and names the abuse types, but does not link them as a pattern or mention risk factors such as dementia and isolation.",
+      "whyNearMiss": "It spots two signs and names the types of abuse. But it does not link them as a pattern or mention risk factors such as dementia and isolation.",
       "explainPrompt": "Why does it matter that the example looks at signs together?",
       "check": {
        "q": "Why look at several signs together?",
@@ -716,15 +716,15 @@
       }
      },
      {
-      "need": "Justify each step of the procedure for responding to a concern.",
+      "need": "Explain why each step of the procedure for responding to a concern is needed.",
       "fromSpec": "Justify procedures for responding to concerns about abuse and neglect in the selected setting.",
       "means": "For each step, say what the worker does and why that step exists.",
       "example": "Dev reports to the manager at once and records exactly what was seen, because accurate records are evidence. Dev does not question the grandson, because that could put Mrs Halloran at greater risk or damage a later investigation.",
       "nearMiss": "Dev should report to the manager at once and record exactly what was seen, because the safeguarding policy says to.",
-      "whyNearMiss": "It gives a reason, but only that the policy requires it, not what each step protects, such as evidence or Mrs Halloran's safety.",
+      "whyNearMiss": "It gives a reason, but only that the policy says so. It does not say what each step protects, such as evidence or Mrs Halloran's safety.",
       "explainPrompt": "Choose one step from the example and say what could go wrong if it were skipped.",
       "check": {
-       "q": "Why should a worker avoid investigating abuse themselves?",
+       "q": "Why should a worker not investigate abuse themselves?",
        "options": [
         "Care workers are not allowed to speak to a client about their injuries at all.",
         "Only the manager is permitted to hear what a client says about being harmed.",
@@ -738,10 +738,10 @@
      {
       "need": "Explain why different agencies may need to respond, and justify the role of each.",
       "fromSpec": "Recognise and respond to concerns in situations where different agencies may need to respond.",
-      "means": "Name the agencies, say what each can do that others cannot, and show how they work together.",
+      "means": "Name the agencies. Say what each one can do that the others cannot, and show how they work together.",
       "example": "The council's adult safeguarding team can investigate and make a plan under the Care Act 2014. The GP can examine the bruising, and the police must be involved if a crime such as theft is suspected.",
       "nearMiss": "The council's adult safeguarding team makes enquiries, the GP examines injuries and the police investigate crimes. Each of them has a role in a safeguarding case.",
-      "whyNearMiss": "The roles are correct, but are not applied to the bruises or missing money, so it does not justify why each agency is needed in this case.",
+      "whyNearMiss": "The roles are correct. But they are not applied to the bruises or missing money, so it does not show why each agency is needed in this case.",
       "explainPrompt": "Why can't one agency deal with all of the concerns alone?",
       "check": {
        "q": "Which agency has the power to investigate a suspected crime such as theft?",
@@ -756,13 +756,13 @@
       }
      },
      {
-      "need": "Judge the strengths and limits of the procedure, including capacity and consent.",
+      "need": "Judge the strengths and limits of the procedure. Include capacity (the ability to make a decision) and consent.",
       "fromSpec": "Reach reasoned and valid judgements on the significance of safeguarding procedures in promoting safe practice.",
-      "means": "Say what the procedure does well and where it struggles, for example when the person refuses help or lacks capacity.",
+      "means": "Say what the procedure does well and where it struggles. For example, the person may refuse help or lack capacity.",
       "example": "The procedure gets several agencies involved quickly, but it relies on Mrs Halloran's cooperation. If she cannot understand the risks, the Mental Capacity Act 2005 means decisions must be made in her best interests.",
       "nearMiss": "The safeguarding procedure is useful because it involves several agencies quickly, so Mrs Halloran is protected.",
-      "whyNearMiss": "It gives a strength with a reason, but names no limit, such as relying on Mrs Halloran's cooperation or her capacity.",
-      "explainPrompt": "What difficulty does the example show that a procedure alone cannot solve?",
+      "whyNearMiss": "It gives a strength with a reason. But it names no limit, such as relying on Mrs Halloran's cooperation or her capacity.",
+      "explainPrompt": "What problem does the example show that a procedure alone cannot solve?",
       "check": {
        "q": "If a person lacks capacity to decide, decisions about their care should be:",
        "options": [
@@ -780,13 +780,13 @@
    "CD.D3": {
     "requirements": [
      {
-      "need": "Judge how effective key health and safety laws are in practice, giving reasons.",
+      "need": "Judge how well key health and safety laws work in practice, and give reasons.",
       "fromSpec": "Justify the effectiveness of health and safety legislation, policies and procedures in maintaining health and safety in a health and social care setting.",
-      "means": "Name a law, say what it requires, and judge whether it actually keeps people safe in this setting.",
+      "means": "Name a law and say what it requires. Then judge whether it really keeps people safe in this setting.",
       "example": "The Health and Safety at Work etc. Act 1974 makes the agency assess risks such as lone working. It is effective only if assessments are actually completed and reviewed, so the law sets the standard and practice decides the outcome.",
       "nearMiss": "The Health and Safety at Work etc. Act 1974 requires Oakapple to assess risks such as lone working, so it protects Dev and clients.",
-      "whyNearMiss": "It applies the law to the agency but never judges whether assessments are completed and reviewed, so effectiveness is assumed.",
-      "explainPrompt": "In the example, what does effectiveness depend on besides the law itself?",
+      "whyNearMiss": "It applies the law to the agency. But it never judges whether assessments are completed and reviewed, so it assumes the law works.",
+      "explainPrompt": "In the example, what does success depend on besides the law itself?",
       "check": {
        "q": "Why is a law not enough on its own?",
        "options": [
@@ -800,12 +800,12 @@
       }
      },
      {
-      "need": "Apply your knowledge to a complex situation where more than one law or procedure applies.",
+      "need": "Apply your knowledge to a hard situation where more than one law or procedure applies.",
       "fromSpec": "Relate knowledge to more complex situations that are affected by different health and safety laws or procedures.",
-      "means": "Choose a situation where several rules overlap and show how they work together or conflict.",
+      "means": "Choose a situation where several rules overlap. Show how they work together or clash.",
       "example": "Using a hoist involves the Manual Handling Operations Regulations 1992 and equipment checks under LOLER 1998. If the sling is damaged or Dev is alone, the two sets of rules show that she should not lift until a second worker or a new sling is available.",
       "nearMiss": "Using a hoist falls under the Manual Handling Operations Regulations 1992 and LOLER 1998, so Dev must follow both when she helps a client to move.",
-      "whyNearMiss": "Both rules are applied to the hoist, but Dev's actual decision, such as not lifting alone or with a damaged sling, is missing.",
+      "whyNearMiss": "Both rules are applied to the hoist. But Dev's actual decision is missing, such as not lifting alone or with a damaged sling.",
       "explainPrompt": "How do the two rules in the example affect what Dev decides to do?",
       "check": {
        "q": "What makes a situation 'complex' for health and safety?",
@@ -820,13 +820,13 @@
       }
      },
      {
-      "need": "Justify how COSHH, RIDDOR or similar procedures protect people in the setting.",
+      "need": "Explain how COSHH, RIDDOR or similar procedures protect people in the setting.",
       "fromSpec": "Justify health and safety legislation, policies and procedures with reference to the setting.",
-      "means": "Pick procedures that matter for this setting and explain how they reduce a specific danger.",
+      "means": "Pick procedures that matter for this setting. Explain how they lower a specific danger.",
       "example": "COSHH Regulations 2002 require cleaning products to be labelled and stored safely, so Dev does not mix chemicals in a client's kitchen. RIDDOR requires reporting of serious injuries, which lets the Health and Safety Executive see patterns.",
       "nearMiss": "COSHH requires cleaning products to be labelled and stored safely, and RIDDOR requires serious injuries to be reported to the Health and Safety Executive.",
-      "whyNearMiss": "Both regulations are explained correctly, but it does not show how they protect Dev or clients in a home, such as avoiding mixing chemicals.",
-      "explainPrompt": "What specific danger does each procedure reduce in the example?",
+      "whyNearMiss": "Both rules are explained correctly. But it does not show how they protect Dev or clients in a home, for example by avoiding mixing chemicals.",
+      "explainPrompt": "What danger does each procedure reduce in the example?",
       "check": {
        "q": "RIDDOR relates mainly to:",
        "options": [
@@ -840,12 +840,12 @@
       }
      },
      {
-      "need": "Argue concisely to a valid conclusion on the overall effectiveness of the legislation, policies and procedures.",
+      "need": "Argue briefly to a valid conclusion on how well the laws, policies and procedures work as a whole.",
       "fromSpec": "Articulate arguments and views concisely to justify conclusions about the effectiveness of health and safety legislation, policies and procedures.",
       "means": "Finish with a clear, short verdict that weighs the law, the agency's policies and day-to-day practice.",
       "example": "Together the law and policies give Oakapple a sound framework, but home care is unusual because no one watches the worker. Training and regular spot checks are where the framework is most likely to fail.",
       "nearMiss": "Together the law and policies give Oakapple a sound framework for keeping clients and workers safe, and training helps to make them work.",
-      "whyNearMiss": "It reaches a verdict and mentions training, but is not tied to the setting, so it does not say where in home care the framework is most likely to fail.",
+      "whyNearMiss": "It reaches a verdict and mentions training. But it is not tied to the setting, so it does not say where in home care the framework is most likely to fail.",
       "explainPrompt": "What is it about home care in the example that creates a weakness?",
       "check": {
        "q": "Which conclusion is strongest?",
@@ -864,12 +864,12 @@
    "CD.D4": {
     "requirements": [
      {
-      "need": "Evaluate the responsibilities of employers, employees and others, and which matter most for service users' safety.",
+      "need": "Evaluate who is responsible for what: employers, employees and others. Judge which matters most for service users' safety.",
       "fromSpec": "Understand health and safety responsibilities of employers, employees and others and how they contribute to safe practice.",
-      "means": "Set out who is responsible for what, and judge where responsibility is most important or most likely to break down.",
+      "means": "Set out who is responsible for what. Then judge where responsibility matters most or is most likely to break down.",
       "example": "Oakapple must provide training and equipment, and Dev must use them correctly and report hazards. The employer's duty matters most because Dev cannot use a sling the agency did not supply.",
       "nearMiss": "Oakapple must provide training and equipment, and Dev must use them correctly and report hazards, so both have responsibilities for keeping clients safe.",
-      "whyNearMiss": "Both sets of duties are described correctly, but it does not judge which matters more for service users' safety.",
+      "whyNearMiss": "Both sets of duties are described correctly. But it does not judge which matters more for service users' safety.",
       "explainPrompt": "How does the example rank the two sets of responsibilities, and why?",
       "check": {
        "q": "Which of these is an employee's health and safety duty?",
@@ -884,12 +884,12 @@
       }
      },
      {
-      "need": "Evaluate how emergency and safe practice procedures contribute to service users' welfare.",
+      "need": "Evaluate how emergency and safe practice procedures help service users.",
       "fromSpec": "Discuss how individual responsibilities and health, safety and emergency procedures contribute to safe practice in the setting.",
-      "means": "Pick a procedure, show how it works in the setting, and decide how much difference it makes to the service user.",
+      "means": "Pick a procedure and show how it works in the setting. Then decide how much difference it makes to the service user.",
       "example": "A lone-working check-in means that if Dev is injured at a client's home, someone knows within the hour. This protects Dev and the client, who might otherwise be left without care.",
       "nearMiss": "A lone-working check-in is important because it makes sure that someone knows where Dev is during visits.",
-      "whyNearMiss": "It explains the procedure's purpose for staff, but not its effect on service users, such as clients left without care.",
+      "whyNearMiss": "It explains the procedure's purpose for staff. But it does not say what it does for service users, such as clients left without care.",
       "explainPrompt": "Why does the example mention the client as well as Dev?",
       "check": {
        "q": "What shows a procedure's importance for service users?",
@@ -904,12 +904,12 @@
       }
      },
      {
-      "need": "Bring together learning across the aims to link safe practice, safeguarding and welfare.",
+      "need": "Bring together what you learned across the aims to link safe practice, safeguarding and welfare.",
       "fromSpec": "Draw on and bring together understanding across the learning aims to reach valid judgements about the importance of safe practice procedures and responsibilities.",
-      "means": "Show how health and safety, safeguarding and duty of care overlap in the same situation.",
+      "means": "Show how health and safety, safeguarding and duty of care overlap in one situation.",
       "example": "A loose rug is a health and safety hazard, but if a relative removed grab rails to restrict a client it becomes a safeguarding concern too. Dev's duty of care covers both, so the same worker needs both kinds of knowledge.",
       "nearMiss": "A loose rug is a health and safety hazard, and a relative stopping Mrs Halloran going out is a safeguarding concern, so Dev needs to know about both.",
-      "whyNearMiss": "Both topics are applied to the case, but to different incidents, so it does not show them interacting in one situation.",
+      "whyNearMiss": "Both topics are applied to the case, but to different events. So it does not show them working together in one situation.",
       "explainPrompt": "How does the example show the same incident belonging to two topics?",
       "check": {
        "q": "What does 'bring together' mean?",
@@ -924,15 +924,15 @@
       }
      },
      {
-      "need": "Judge the consequences when procedures fail, and recommend how to strengthen them.",
+      "need": "Judge what happens when procedures fail, and recommend how to make them stronger.",
       "fromSpec": "Reach valid judgements about the importance of safe practice procedures and responsibilities in maintaining and promoting service users' health, safety and welfare.",
-      "means": "Show what could happen if a procedure is not followed, then say what should be done to make it work.",
+      "means": "Show what could happen if a procedure is not followed. Then say what should be done to make it work.",
       "example": "If Dev skips the risk check on the rug, Mrs Halloran may fall and lose independence. Oakapple could make the check part of every first-visit form and review it each month.",
       "nearMiss": "If the rug check is skipped, Mrs Halloran might fall and lose her independence, so Oakapple should retrain staff on spotting trip hazards.",
-      "whyNearMiss": "It names a specific consequence and a recommendation, but retraining relies on memory and does not build the check into the visit or make it reviewable.",
-      "explainPrompt": "What does the example change about how the procedure runs, not just a reminder to try harder?",
+      "whyNearMiss": "It names a specific result and a recommendation. But retraining relies on memory. It does not build the check into the visit or make it easy to review.",
+      "explainPrompt": "What does the example change about how the procedure runs, and not just remind staff to try harder?",
       "check": {
-       "q": "Which recommendation is best?",
+       "q": "Which recommendation is best here?",
        "options": [
         "Add the rug check to the first-visit form and review it each month.",
         "Train staff again on the dangers of trips and falls in clients' homes.",
@@ -950,21 +950,21 @@
  "8": {
   "parallelCase": {
    "title": "Saltby blood pressure checks",
-   "summary": "Saltby is a fictional coastal town. Local data shows a higher share of residents over 65 than the national figure, more households on low incomes, older damp housing and lower take-up of screening. The council's public health team and the local Integrated Care Board follow national public health policy, which aims to reduce preventable heart disease and strokes and narrow gaps between areas. They monitor health using census data, hospital admissions and GP records. A national campaign encouraged adults to get their blood pressure checked, using adverts, pharmacy checks and the slogan 'Check yours today'. Saltby pharmacies offered free checks, but men aged 40 to 60 who work shifts on the fishing boats rarely came. In a local survey they said they felt fine, did not want bad news, and found the pharmacies closed when they finished work."
+   "summary": "Where: Saltby is a fictional coastal town.\nWhat local data shows: More residents are over 65 than the national figure. More households have low incomes. Housing is older and damp. Fewer people take up screening.\nWho plans: The council's public health team and the local Integrated Care Board follow national public health policy. The policy aims to reduce preventable heart disease and strokes. It also aims to narrow gaps between areas. They monitor health using census data, hospital admissions and GP records.\nThe campaign: A national campaign encouraged adults to get their blood pressure checked. It used adverts, pharmacy checks and the slogan 'Check yours today'.\nWhat happened: Saltby pharmacies offered free checks. Older residents and women used them well. Men aged 40 to 60 who work shifts on the fishing boats rarely came.\nWhat the men said: In a local survey they said they felt fine and did not want bad news. They also found the pharmacies closed when they finished work."
   },
   "criteria": {
    "AB.D1": {
     "requirements": [
      {
-      "need": "Show in-depth understanding of the strategies used to develop public health policy, and how monitoring feeds into them.",
+      "need": "Show deep understanding of how public health policy is made, and how monitoring feeds into it.",
       "fromSpec": "Show in-depth understanding of strategies used to develop policy and how these, and population health status monitoring, are used to create public health policy.",
-      "means": "Explain how data such as hospital admissions and surveys leads to decisions and policy, not just what the data are.",
+      "means": "Explain how data such as hospital admissions and surveys leads to decisions and policy. Do not only say what the data are.",
       "example": "Rising hospital admissions for stroke in Saltby, shown in local health data, led the public health team to ask why. This evidence helped justify a policy focus on blood pressure, because early treatment prevents later illness.",
       "nearMiss": "Public health teams use hospital admissions and GP records to find out which illnesses are rising, which helps them decide where to focus services.",
-      "whyNearMiss": "It shows data feeding decisions in general, but lacks a Saltby example, such as rising stroke admissions leading to a blood pressure focus.",
+      "whyNearMiss": "It shows data feeding decisions in general. But it lacks a Saltby example, such as rising stroke admissions leading to a focus on blood pressure.",
       "explainPrompt": "What link does the example make between the data and the policy decision?",
       "check": {
-       "q": "How does population health monitoring influence policy?",
+       "q": "How does monitoring the population's health affect policy?",
        "options": [
         "It sets the targets, so policymakers simply adopt whatever it recommends.",
         "It evaluates campaigns only once they have finished, so it cannot affect planning.",
@@ -976,12 +976,12 @@
       }
      },
      {
-      "need": "Use one example from each of the four factors affecting health to show their effect on the population.",
+      "need": "Use one example from each of the four factors that affect health, to show their effect on the population.",
       "fromSpec": "Draw together understanding of the four factors affecting health, and include one example from each.",
-      "means": "Choose one clear example for each factor, relate it to the area, and show how each affects health.",
+      "means": "Choose one clear example for each factor. Link it to the area and show how it affects health.",
       "example": "Damp housing (environmental) worsens breathing problems, and low income (economic) limits fresh food choices. Social isolation among older residents and drinking habits (lifestyle) also raise risk, and each is linked to the heart disease aim.",
       "nearMiss": "Damp housing in Saltby is an environmental factor that harms health, and low income is an economic factor that harms health.",
-      "whyNearMiss": "The examples are local, but two of the four factors are missing and the effect on health is stated only in general terms.",
+      "whyNearMiss": "The examples are local. But two of the four factors are missing, and the effect on health is stated only in general terms.",
       "explainPrompt": "How does the example link each factor to the area's health, not just name it?",
       "check": {
        "q": "What is needed for a good example of a factor?",
@@ -996,12 +996,12 @@
       }
      },
      {
-      "need": "Compare local demographic data with national data and draw justified conclusions and recommendations.",
+      "need": "Compare local demographic data (facts about the people who live there) with national data. Draw justified conclusions and recommendations.",
       "fromSpec": "Refer to local demographic data and compare this to national data to make suitable justifications and recommendations.",
-      "means": "Put local and national figures side by side, say what is different, and say what the area should do about it.",
+      "means": "Put local and national figures side by side. Say what is different, and say what the area should do about it.",
       "example": "Saltby has a higher share of over-65s than the national figure, so more people are at risk of high blood pressure. The council should therefore place checks where older people already go, such as the library and day centre.",
       "nearMiss": "Saltby has a higher share of over-65s than the national figure, so it is likely to have more health needs than average.",
-      "whyNearMiss": "It explains the difference and draws a reasonable conclusion, but does not recommend what the council should do about it.",
+      "whyNearMiss": "It explains the difference and draws a fair conclusion. But it does not recommend what the council should do.",
       "explainPrompt": "What action follows from the comparison in the example?",
       "check": {
        "q": "Why compare local data with national data?",
@@ -1016,12 +1016,12 @@
       }
      },
      {
-      "need": "Use research to judge the socio-economic impact of improving the population's health.",
+      "need": "Use research to judge how better health affects society and the economy.",
       "fromSpec": "Use research to deepen understanding and arrive at valid conclusions on the socio-economic impact of improving the health of the population.",
       "means": "Show how better health affects people's lives, jobs, costs to services and fairness between areas.",
       "example": "Fewer strokes mean fewer people losing work or independence, and less pressure on hospital beds and social care. But if gains reach healthier areas first, the gap between areas could widen.",
       "nearMiss": "Fewer people with strokes means less pressure on hospitals and social care, so improving health saves the NHS money.",
-      "whyNearMiss": "It names specific effects and a cost link, but has no counterpoint, such as gains reaching healthier areas first and widening the gap.",
+      "whyNearMiss": "It names specific effects and a cost link. But it has no counterpoint, such as gains reaching healthier areas first and widening the gap.",
       "explainPrompt": "What risk does the example raise about who benefits?",
       "check": {
        "q": "Which is a socio-economic impact?",
@@ -1036,12 +1036,12 @@
       }
      },
      {
-      "need": "Evaluate how far public health policy has met its aims in the area, in a concise, professional argument.",
+      "need": "Evaluate how far public health policy has met its aims in the area. Write a short, professional argument.",
       "fromSpec": "Argue concisely and professionally to evaluate how far public health policy has met its aims in a specific demographic area.",
-      "means": "Give an overall judgement of how far the policy has worked locally, with evidence and recommendations.",
+      "means": "Give an overall judgement of how far the policy has worked locally. Add evidence and recommendations.",
       "example": "The policy has partly met its aim in Saltby: checks are available and older residents use them. It has not narrowed the gap for shift-working men, so policy needs an approach that reaches them.",
       "nearMiss": "The policy has partly met its aim in Saltby because checks are available and older residents use them, but some groups have not benefited.",
-      "whyNearMiss": "It gives a balanced, evidenced verdict, but does not name the group missed or say what should change.",
+      "whyNearMiss": "It gives a balanced verdict with evidence. But it does not name the group that was missed or say what should change.",
       "explainPrompt": "What does 'partly met' allow the writer to say that 'met' does not?",
       "check": {
        "q": "Which verdict is best?",
@@ -1060,12 +1060,12 @@
    "C.D2": {
     "requirements": [
      {
-      "need": "Justify the approaches used to promote and protect health in the campaign, with reasons.",
+      "need": "Explain why the campaign used its approaches to promote and protect health.",
       "fromSpec": "Make suitable justifications for the approaches used to promote health, protect against and control ill health in a campaign.",
-      "means": "Say what approach the campaign used (for example adverts or pharmacy checks) and why it suits the aim and audience.",
+      "means": "Say what approach the campaign used (for example adverts or pharmacy checks). Explain why it suits the aim and the audience.",
       "example": "Pharmacy checks bring a free test close to home with no appointment, which suits busy adults. But for people who feel well, adverts alone may not create a reason to go.",
       "nearMiss": "The campaign used adverts to raise awareness and pharmacy checks to offer a free test close to home, which suits busy adults.",
-      "whyNearMiss": "It gives reasons why the approaches suit adults, but never questions whether they suit people who feel well, so the justification is untested.",
+      "whyNearMiss": "It gives reasons why the approaches suit adults. But it never asks if they suit people who feel well, so the argument is untested.",
       "explainPrompt": "Which words in the example show the approach is being justified?",
       "check": {
        "q": "To justify an approach you must:",
@@ -1080,15 +1080,15 @@
       }
      },
      {
-      "need": "Distinguish promoting and protecting health from preventing and controlling disease, using the campaign.",
+      "need": "Explain the difference between promoting and protecting health, and preventing and controlling disease, using the campaign.",
       "fromSpec": "Approaches used to promote and protect health and prevent and control disease in a selected health promotion campaign.",
-      "means": "Show which parts of the campaign promote health and which prevent or control disease, and why both are needed.",
+      "means": "Show which parts of the campaign promote health and which prevent or control disease. Say why both are needed.",
       "example": "The adverts promote health by raising awareness. The checks help prevent strokes and control existing high blood pressure by finding it early and starting treatment.",
       "nearMiss": "The adverts promote health and the blood pressure checks prevent disease, so the campaign did both.",
-      "whyNearMiss": "It separates the two ideas correctly, but does not explain how each approach works or which part controls existing high blood pressure.",
+      "whyNearMiss": "It separates the two ideas correctly. But it does not explain how each approach works, or which part controls existing high blood pressure.",
       "explainPrompt": "Which part of the campaign does each job in the example?",
       "check": {
-       "q": "Which activity best fits 'preventing and controlling disease'?",
+       "q": "Which activity best fits preventing and controlling disease?",
        "options": [
         "An advert explaining why blood pressure matters for heart health in later life.",
         "A blood pressure check that finds problems early and leads to treatment.",
@@ -1100,12 +1100,12 @@
       }
      },
      {
-      "need": "Link the campaign's approaches to behaviour change theories or models, and judge their usefulness.",
+      "need": "Link the campaign's approaches to models of behaviour change, and judge how useful they are.",
       "fromSpec": "Interrelate objectives, approaches and the theories or models of behaviour change to draw conclusions on their success.",
-      "means": "Pick a model (for example the Health Belief Model), apply it to a barrier, and decide how well it explains what happened.",
+      "means": "Pick a model (for example the Health Belief Model) and apply it to a barrier. Decide how well it explains what happened.",
       "example": "The Health Belief Model suggests people act when they see the risk as serious and the barriers as low. Shift-working men saw little risk and found closed pharmacies a barrier, so the campaign needed to address both.",
       "nearMiss": "The Health Belief Model suggests people act when they see a risk as serious, so the campaign should have shown shift-working men that high blood pressure is serious.",
-      "whyNearMiss": "It applies the model to the right group, but uses only perceived seriousness, ignores the barrier of closed pharmacies and does not judge how useful the model is.",
+      "whyNearMiss": "It applies the model to the right group. But it uses only how serious the risk seems, ignores the closed pharmacies and does not judge how useful the model is.",
       "explainPrompt": "What two parts of the model does the example apply?",
       "check": {
        "q": "Applying a behaviour change model means:",
@@ -1120,12 +1120,12 @@
       }
      },
      {
-      "need": "Back up your justifications with relevant research and make recommendations.",
+      "need": "Back up your reasons with relevant research. Make recommendations.",
       "fromSpec": "Justifications must be backed by relevant research; learners make suitable justifications and recommendations for the approaches used.",
-      "means": "Cite reliable sources for your claims, and then recommend what the campaign should keep, change or add.",
+      "means": "Use reliable sources for your claims. Then recommend what the campaign should keep, change or add.",
       "example": "Campaign evaluation reports and local survey findings agree that opening hours are a barrier. The recommendation is to offer checks at the harbour and in the evenings, which is easily done.",
       "nearMiss": "A local survey found that shift-working men struggled to get to pharmacies, so the campaign should offer checks at more convenient times.",
-      "whyNearMiss": "It uses a survey and makes a sensible recommendation, but relies on one source and names no specific time or place.",
+      "whyNearMiss": "It uses a survey and makes a sensible recommendation. But it relies on one source and names no specific time or place.",
       "explainPrompt": "What turns the near miss into a researched recommendation?",
       "check": {
        "q": "Which source is most suitable for evidence?",
@@ -1144,13 +1144,13 @@
    "D.D3": {
     "requirements": [
      {
-      "need": "Judge success against the campaign's own objectives using evidence of behaviour change.",
+      "need": "Judge success against the campaign's own objectives, using evidence that behaviour changed.",
       "fromSpec": "Include a full evaluation of how successfully the campaign met its objectives in encouraging behaviour change and improved health.",
-      "means": "State the campaign's objectives, then show with evidence how far each was met.",
+      "means": "State the campaign's objectives. Then show with evidence how far each was met.",
       "example": "The objective was more adults getting checked. Pharmacy records show more checks overall, which counts as success, but the campaign did not meet its aim of reaching people who rarely use health services.",
       "nearMiss": "Many people recalled the adverts and said in the survey that they now understood why blood pressure checks matter, so the campaign was successful.",
-      "whyNearMiss": "It uses survey evidence of awareness and understanding, which are real but early outcomes, so it does not show anyone changed what they did.",
-      "explainPrompt": "What is the difference between seeing an advert and changing behaviour?",
+      "whyNearMiss": "It uses survey evidence of awareness and understanding. These are real but early results, so it does not show anyone changed what they did.",
+      "explainPrompt": "What is the difference between seeing an advert and changing what you do?",
       "check": {
        "q": "Which is the best evidence of behaviour change?",
        "options": [
@@ -1164,12 +1164,12 @@
       }
      },
      {
-      "need": "Apply a theory or model to explain barriers to change and how they were overcome or not.",
+      "need": "Apply a theory or model to explain barriers to change, and how they were overcome or not.",
       "fromSpec": "Use detailed analysis and research to justify the validity of conclusions on behaviour change.",
-      "means": "Explain why some people did not change, using a model, and judge whether the campaign tackled the barrier.",
+      "means": "Explain why some people did not change, using a model. Judge whether the campaign tackled the barrier.",
       "example": "The Stages of Change model places men who 'feel fine' at the pre-contemplation stage, where they are not yet thinking about change. Adverts about the benefits are unlikely to move them, so the campaign fell short.",
       "nearMiss": "The Stages of Change model places men who feel fine at the pre-contemplation stage, where they are not yet thinking about change.",
-      "whyNearMiss": "The model is applied to the right group, but it does not say what this meant for the campaign or whether the adverts could move them.",
+      "whyNearMiss": "The model is applied to the right group. But it does not say what this meant for the campaign, or whether the adverts could move them.",
       "explainPrompt": "How does the model explain why adverts failed for some men?",
       "check": {
        "q": "Why might information alone fail to change behaviour?",
@@ -1184,12 +1184,12 @@
       }
      },
      {
-      "need": "Analyse who changed behaviour and who did not, using demographic evidence.",
+      "need": "Analyse who changed behaviour and who did not, using evidence about age, gender and other groups.",
       "fromSpec": "Use detailed analysis and research to justify the validity of conclusions.",
-      "means": "Break the results down by group, such as age or gender, and point out who the campaign missed.",
+      "means": "Break the results down by group, such as age or gender. Point out who the campaign missed.",
       "example": "Check-up figures were higher for women and over-65s, but men aged 40 to 60 were under-represented. Overall success therefore hides a gap in the group at greatest risk of undiagnosed high blood pressure.",
       "nearMiss": "Checks were higher among women and over-65s than among men aged 40 to 60, so the campaign did not reach everybody.",
-      "whyNearMiss": "It breaks the figures down and spots the gap, but does not say why the gap matters, since these men are at greatest risk of undiagnosed high blood pressure.",
+      "whyNearMiss": "It breaks the figures down and spots the gap. But it does not say why the gap matters: these men are at greatest risk of undiagnosed high blood pressure.",
       "explainPrompt": "Why does the example say overall success can hide a gap?",
       "check": {
        "q": "Why break results down by group?",
@@ -1204,12 +1204,12 @@
       }
      },
      {
-      "need": "Reach a valid conclusion, noting limits of the evidence and recommendations.",
+      "need": "Reach a valid conclusion. Note the limits of the evidence, and make recommendations.",
       "fromSpec": "Justifications must be backed up by relevant research, and learners must articulate arguments concisely and professionally.",
-      "means": "Say how confident you can be in the evidence, for example whether a rise in checks was caused by the campaign, and what should follow.",
+      "means": "Say how sure you can be of the evidence, for example whether the campaign caused a rise in checks. Then say what should follow.",
       "example": "More checks followed the campaign, but other things, such as pharmacy staff promoting the checks, may also have helped, so the campaign cannot take all the credit. A follow-up study of blood pressure results would give stronger evidence.",
       "nearMiss": "More checks followed the campaign, which suggests it worked, although some people may have gone for other reasons.",
-      "whyNearMiss": "It acknowledges a possible limit, but does not name the other factor or say what extra evidence would settle the question.",
+      "whyNearMiss": "It admits a possible limit. But it does not name the other factor or say what extra evidence would settle the question.",
       "explainPrompt": "What other cause does the example consider?",
       "check": {
        "q": "Why mention limits of the evidence?",
@@ -1228,12 +1228,12 @@
    "D.D4": {
     "requirements": [
      {
-      "need": "Link the campaign explicitly to the aims of the public health policy.",
+      "need": "Link the campaign clearly to the aims of the public health policy.",
       "fromSpec": "Illustrate how far a specific health promotion campaign meets the aims of the related public health policy.",
-      "means": "State the policy aim and show clearly how the campaign contributes to it, or does not.",
+      "means": "State the policy aim. Show clearly how the campaign helps meet it, or does not.",
       "example": "The policy aims to reduce preventable strokes and narrow area gaps. Checks help the first aim by finding high blood pressure early, but a campaign that mostly reaches people already using services does little for the second.",
       "nearMiss": "The policy aims to reduce preventable strokes, and the campaign tries to find high blood pressure early, which is a cause of strokes, so the campaign supports the policy.",
-      "whyNearMiss": "It names the aim and gives a sensible link, but ignores the aim of narrowing gaps and gives no evidence that the campaign changed anything.",
+      "whyNearMiss": "It names the aim and gives a sensible link. But it ignores the aim of narrowing gaps, and gives no evidence that the campaign changed anything.",
       "explainPrompt": "Which two policy aims does the example separate, and why?",
       "check": {
        "q": "What shows a campaign meets a policy aim?",
@@ -1248,12 +1248,12 @@
       }
      },
      {
-      "need": "Judge whether the strategies and approaches improved health in the demographic area.",
+      "need": "Judge whether the strategies and approaches improved health in the area.",
       "fromSpec": "Make suitable justifications for the approaches used and evaluate the improved health of a demographic area.",
-      "means": "Look at whether the approaches fitted the local population and whether health outcomes moved.",
+      "means": "Look at whether the approaches fitted the local people and whether health results changed.",
       "example": "Pharmacy checks fitted the many older residents who visit regularly, but did not suit shift-working men. Health outcomes will take years to show, so more checks is the best short-term evidence.",
       "nearMiss": "More people had blood pressure checks after the campaign, so it has probably improved health in Saltby.",
-      "whyNearMiss": "It uses a real measure, but treats more checks as improved health without noting that outcomes take years or which groups improved.",
+      "whyNearMiss": "It uses a real measure. But it treats more checks as better health, without noting that results take years or which groups improved.",
       "explainPrompt": "Why does the example use 'more checks' rather than 'better health' as evidence?",
       "check": {
        "q": "Why is it hard to prove a campaign has improved health quickly?",
@@ -1268,13 +1268,13 @@
       }
      },
      {
-      "need": "Make justified recommendations and argue concisely and professionally.",
+      "need": "Make justified recommendations. Write them briefly and professionally.",
       "fromSpec": "Make suitable justifications and recommendations; articulate arguments concisely and professionally.",
-      "means": "Finish with clear, practical recommendations that follow from your evidence, expressed briefly.",
+      "means": "Finish with clear, practical recommendations that follow from your evidence. Keep them short.",
       "example": "Saltby should offer harbourside evening checks and train pharmacists to ask men about risk, because evidence shows access and low perceived risk are the main barriers. These changes cost little and target the group the campaign missed.",
       "nearMiss": "Saltby should offer checks at times and places that suit shift-working men, because they said opening hours were a barrier.",
-      "whyNearMiss": "It follows from the survey, but the times and places are not specified, so the council cannot act on it.",
-      "explainPrompt": "How does the example connect each recommendation to a barrier?",
+      "whyNearMiss": "It follows from the survey. But the times and places are not specific, so the council cannot act on it.",
+      "explainPrompt": "How does the example link each recommendation to a barrier?",
       "check": {
        "q": "A strong recommendation is:",
        "options": [
@@ -1294,7 +1294,7 @@
  "9": {
   "parallelCase": {
    "title": "Tilbury Brook Nursery outbreak",
-   "summary": "Tilbury Brook Nursery is a fictional day nursery for 40 children aged one to four. In one week, eleven children and two staff develop vomiting and diarrhoea, and the manager suspects norovirus. Separately, one child has impetigo, a skin infection usually caused by bacteria, on the face. Toddlers share toys and put them in their mouths, and the changing area is close to the snack area. One staff member in the baby room is pregnant. A placement learner, Jo, has the manager's permission to clean toys and a changing mat, wash hands correctly, wear gloves and an apron to deal with vomit, and dispose of waste in the right bags. The room leader decides who must stay at home, the cook handles food hygiene and the manager reports the outbreak to the local health protection team at the UK Health Security Agency (UKHSA). Jo's supervisor watches and gives feedback."
+   "summary": "Where: Tilbury Brook Nursery is a fictional day nursery for 40 children aged one to four. It already has a cleaning routine and a 48-hour exclusion rule.\nWhat's happening: In one week, eleven children and two staff develop vomiting and diarrhoea. The manager suspects norovirus. Separately, one child has impetigo on the face. This is a skin infection usually caused by bacteria.\nOther things to know: Toddlers share toys and put them in their mouths. The changing area is close to the snack area. One staff member in the baby room is pregnant.\nJo's part: Jo is a placement learner. The manager gave Jo permission to clean toys and a changing mat and to wash hands correctly. Jo may wear gloves and an apron to deal with vomit, and dispose of waste in the right bags.\nWho's involved: Jo's supervisor watches and gives feedback. The room leader decides who must stay at home. The cook handles food hygiene.\nReporting: The manager reports the outbreak to the local health protection team at the UK Health Security Agency (UKHSA)."
   },
   "criteria": {
    "A.D1": {
@@ -1302,10 +1302,10 @@
      {
       "need": "Analyse the conditions micro-organisms need to survive and grow, and apply them to the setting.",
       "fromSpec": "Analyse the transmission of infections, including conditions for the growth of micro-organisms.",
-      "means": "Explain what helps bacteria and viruses multiply (warmth, moisture, food, time, a host) and where those conditions appear in the nursery.",
+      "means": "Explain what helps bacteria and viruses multiply (warmth, moisture, food, time, a host). Show where those conditions appear in the nursery.",
       "example": "Bacteria such as those causing impetigo multiply in warm, moist places, and so a damp towel or a shared toy can help them spread. Viruses like norovirus cannot multiply outside a host, but they survive on surfaces long enough to be picked up.",
       "nearMiss": "Bacteria such as those causing impetigo multiply in warm, moist places, so a damp towel or shared toy can help them to spread. Norovirus also survives on surfaces long enough to be picked up.",
-      "whyNearMiss": "Both organisms are applied to the nursery, but it does not analyse how viruses differ from bacteria in what they need to grow, so the conditions are only partly explained.",
+      "whyNearMiss": "Both germs are applied to the nursery. But it does not explain how viruses differ from bacteria in what they need to grow, so the conditions are only partly explained.",
       "explainPrompt": "What difference between bacteria and viruses does the example show?",
       "check": {
        "q": "Which statement about viruses is correct?",
@@ -1320,12 +1320,12 @@
       }
      },
      {
-      "need": "Link the cause of each infection clearly to how the disease is transmitted and contracted.",
+      "need": "Link the cause of each infection clearly to how the disease is passed on and caught.",
       "fromSpec": "Clearly link the cause of infection and how the resulting disease is transmitted and contracted.",
-      "means": "Follow the chain from agent to source to exit, route, entry and new host, for each infection.",
+      "means": "Follow the chain from germ to source to exit, route, entry and new host, for each infection.",
       "example": "Norovirus leaves in vomit and faeces, spreads from hands or surfaces to mouths (the faecal-oral route), and infects the next child when they swallow it. Impetigo bacteria pass by direct skin contact or shared items and enter through broken skin.",
       "nearMiss": "Norovirus is passed on through vomit and faeces and impetigo through touch, so both spread easily between toddlers.",
-      "whyNearMiss": "It names how each infection spreads, but not how the next child contracts it, for example by swallowing it or through broken skin.",
+      "whyNearMiss": "It names how each infection spreads. But it does not say how the next child catches it, for example by swallowing it or through broken skin.",
       "explainPrompt": "Where does each infection enter the body in the example?",
       "check": {
        "q": "In the chain of infection, what comes straight after the 'portal of exit'?",
@@ -1340,12 +1340,12 @@
       }
      },
      {
-      "need": "Assess host, environmental and social factors that influence transmission, using different sources.",
+      "need": "Assess the host, environmental and social factors that affect how infection spreads. Use different sources.",
       "fromSpec": "Assess how host, environmental and social factors influence the transmission and contraction of infections, using information from different relevant sources.",
-      "means": "Look at each type of factor and judge which has the biggest influence in this setting, using more than one source.",
+      "means": "Look at each type of factor. Judge which has the biggest effect in this setting, using more than one source.",
       "example": "Young children have immature immune systems (host), toys are shared (environment) and children play close together (social). Public health guidance and the nursery's records agree that close contact is the biggest driver here.",
       "nearMiss": "Young children have immature immune systems and share toys, which makes it easier for infections to spread in the nursery.",
-      "whyNearMiss": "It covers a host and an environmental factor, but omits the social factor and compares no sources to say which matters most.",
+      "whyNearMiss": "It covers a host factor and an environmental factor. But it leaves out the social factor, and it compares no sources to say which matters most.",
       "explainPrompt": "How does the example show the writer has compared the factors?",
       "check": {
        "q": "Which is an environmental factor?",
@@ -1360,12 +1360,12 @@
       }
      },
      {
-      "need": "Reach concise, valid conclusions backed by data and research relevant to health and social care.",
+      "need": "Reach short, valid conclusions backed by data and research that fit health and social care.",
       "fromSpec": "Articulate arguments concisely and professionally and use detailed analysis and research to reach valid conclusions.",
-      "means": "Finish with a short professional conclusion on how and why infection spreads, using reliable data.",
+      "means": "Finish with a short, professional conclusion on how and why infection spreads. Use reliable data.",
       "example": "Using UKHSA guidance on gastro outbreaks, the main cause of spread here is likely to be contaminated hands and surfaces in the toddler room, not the food. Hand hygiene and surface cleaning are therefore the priority.",
       "nearMiss": "UKHSA guidance says handwashing and surface cleaning stop norovirus spreading, so the nursery should do both.",
-      "whyNearMiss": "It uses a reliable source, but only repeats the guidance; it does not use the nursery's situation to decide which route was the main cause.",
+      "whyNearMiss": "It uses a reliable source, but only repeats the guidance. It does not use the nursery's situation to decide which route was the main cause.",
       "explainPrompt": "What does the example conclude is the main cause, and what evidence supports it?",
       "check": {
        "q": "Which source suits a conclusion about outbreak control?",
@@ -1384,12 +1384,12 @@
    "B.D2": {
     "requirements": [
      {
-      "need": "Justify the most appropriate procedure for each situation, based on the organism and the surface or person involved.",
+      "need": "Justify the most suitable procedure for each situation, based on the germ and the surface or person.",
       "fromSpec": "Justify how they used the most appropriate procedures and techniques in the context of infection control.",
-      "means": "Say why you chose a method over alternatives, linked to what you were dealing with.",
+      "means": "Say why you chose one method over others. Link your choice to what you were dealing with.",
       "example": "After the vomiting incident in the toddler room, soap and running water are preferred to alcohol gel because gel is less effective against norovirus, and the nursery's cleaning routine then uses a chlorine-based product on hard surfaces. The practitioner in this case is the nursery assistant, Jo.",
       "nearMiss": "Jo washed hands with soap and water and cleaned the surfaces with a chlorine-based product, as the nursery's cleaning routine says.",
-      "whyNearMiss": "It names the correct methods and the nursery routine, but gives no reason linked to norovirus, so the choice is described and not justified.",
+      "whyNearMiss": "It names the right methods and the nursery routine. But it gives no reason linked to norovirus, so the choice is described and not justified.",
       "explainPrompt": "Why does the organism matter when choosing what to use?",
       "check": {
        "q": "Why is soap and water preferred after dealing with norovirus?",
@@ -1404,12 +1404,12 @@
       }
      },
      {
-      "need": "Show how you adapted procedures when a situation changed or several procedures were needed at once.",
+      "need": "Show how you changed procedures when a situation changed, or when several procedures were needed at once.",
       "fromSpec": "Apply skills in more complex situations where several procedures must be followed to protect service users and staff, such as personal hygiene, surfaces and equipment, waste.",
-      "means": "Describe a moment when you changed or combined steps, such as hand hygiene, PPE, cleaning and waste disposal, and explain why.",
+      "means": "Describe a moment when you changed or combined steps, such as hand hygiene, PPE (protective equipment), cleaning and waste disposal. Explain why.",
       "example": "When a child was sick in the book corner, Jo cleared children away, put on gloves and apron, cleaned and then disinfected, bagged waste and washed hands. Jo then replaced PPE before going to the next room, to avoid carrying germs.",
       "nearMiss": "When a child was sick in the book corner, Jo put on gloves and an apron, cleaned and disinfected the area, bagged the waste and washed hands.",
-      "whyNearMiss": "It gives a correct order of procedures, but not how Jo adapted when the situation changed, such as clearing children away or changing PPE before the next room.",
+      "whyNearMiss": "It gives a correct order of procedures. But it does not show how Jo adapted when the situation changed, such as clearing children away or changing PPE before the next room.",
       "explainPrompt": "Which step in the example protects other children and not only Jo?",
       "check": {
        "q": "Why remove and replace PPE between areas?",
@@ -1424,15 +1424,15 @@
       }
      },
      {
-      "need": "Judge the risks and limitations of the techniques you used in different situations.",
+      "need": "Judge the risks and limits of the techniques you used in different situations.",
       "fromSpec": "Make valid judgements about the risks and limitations of the techniques and procedures used in different situations.",
-      "means": "Say what could go wrong with a technique, or what it cannot do, and how you managed that.",
+      "means": "Say what could go wrong with a technique, or what it cannot do. Say how you managed that.",
       "example": "Gloves can give a false sense of security if hands are not washed after removing them. Disinfectant also needs time on the surface to work, so wiping it straight off would leave a risk.",
       "nearMiss": "Gloves and an apron protect Jo from infection, and Jo washed hands after removing them as the nursery requires.",
-      "whyNearMiss": "It describes safe practice well, but does not judge a limit of the technique, such as gloves giving a false sense of security or disinfectant needing contact time.",
+      "whyNearMiss": "It describes safe practice well. But it does not judge a limit of the technique, such as gloves giving a false sense of security or disinfectant needing time on the surface.",
       "explainPrompt": "What do the two limitations in the example have in common?",
       "check": {
-       "q": "A limitation of a decontamination technique is:",
+       "q": "A limit of a cleaning technique is:",
        "options": [
         "A reason the technique should never be used in a nursery.",
         "A condition where it is less effective or could be misused.",
@@ -1444,12 +1444,12 @@
       }
      },
      {
-      "need": "Show how your skills developed and improved through feedback and practice.",
+      "need": "Show how your skills grew and improved through feedback and practice.",
       "fromSpec": "Show they developed, applied and improved their infection control skills, sharing results with the manager before submitting evidence.",
-      "means": "Give evidence of improvement over time, such as feedback from the supervisor and what you changed.",
+      "means": "Give evidence of improvement over time, such as supervisor feedback and what you changed.",
       "example": "A learner like Jo would use their own records of hand-washing practice over several weeks. A strong comparison shows what changed between the first and later records and links the change to better protection for the toddlers.",
       "nearMiss": "Jo's first hand-washing record showed missed steps and Jo's latest record shows all steps completed, so Jo improved.",
-      "whyNearMiss": "It compares early and later records, but does not say what feedback caused the change or what it means for protecting the toddlers.",
+      "whyNearMiss": "It compares early and later records. But it does not say what feedback caused the change, or what it means for protecting the toddlers.",
       "explainPrompt": "What two pieces of evidence in the example show improvement?",
       "check": {
        "q": "What evidence of improving a skill is strongest?",
@@ -1468,12 +1468,12 @@
    "C.D3": {
     "requirements": [
      {
-      "need": "Evaluate the useful aspects of the setting's procedures and how workers put them into practice.",
+      "need": "Evaluate the useful parts of the setting's procedures, and how workers put them into practice.",
       "fromSpec": "Evaluate the procedures that workers carry out to prevent and control infection, giving the useful aspects and how workers put them into practice.",
-      "means": "Pick procedures, say what makes them useful, and show whether staff really follow them.",
+      "means": "Pick procedures and say what makes them useful. Show whether staff really follow them.",
       "example": "At Tilbury Brook, eleven children and two staff are affected, so the 48-hour exclusion rule matters most for the staff and children sharing the toddler room. It only works if parents hear it clearly and the room leader checks at the door, and the manager needs a plan for staff cover while two staff are off.",
       "nearMiss": "The nursery's 48-hour exclusion rule is a useful procedure because it keeps sick children away from the toddler room, which should reduce the spread.",
-      "whyNearMiss": "It judges the procedure as useful with a reason, but does not consider how it works in practice, such as parents being told clearly or staff cover during the outbreak.",
+      "whyNearMiss": "It judges the procedure as useful and gives a reason. But it does not look at how it works in practice, such as parents being told clearly or staff cover during the outbreak.",
       "explainPrompt": "What stops the exclusion rule from working, according to the example?",
       "check": {
        "q": "To evaluate a procedure you should:",
@@ -1488,12 +1488,12 @@
       }
      },
      {
-      "need": "Explain the roles and responsibilities of different workers in infection prevention and control.",
+      "need": "Explain the roles and duties of different workers in preventing and controlling infection.",
       "fromSpec": "Cover the roles and responsibilities of formal carers and other workers in infection prevention and control.",
-      "means": "For different workers, say what they do and how their part fits with others.",
+      "means": "For different workers, say what each one does and how their part fits with the others.",
       "example": "The manager reports outbreaks to UKHSA and keeps records, the room leader decides on exclusions and supervises hygiene, and the cook follows food-hygiene rules. If any one fails, the others cannot make up for it.",
       "nearMiss": "The manager reports the outbreak to UKHSA, the room leader decides on exclusions and the cook follows food hygiene rules.",
-      "whyNearMiss": "The roles are accurate, but not linked: it does not explain what happens if one worker fails or how the roles depend on each other.",
+      "whyNearMiss": "The roles are accurate but not linked. It does not explain what happens if one worker fails, or how the roles depend on each other.",
       "explainPrompt": "Why does the example say one failure can't be made up by others?",
       "check": {
        "q": "Who would normally report a nursery outbreak to the health protection team?",
@@ -1508,12 +1508,12 @@
       }
      },
      {
-      "need": "Assess procedures across different situations, linked to legislation.",
+      "need": "Assess procedures across different situations, and link them to laws.",
       "fromSpec": "Assess infection prevention and control procedures for different health or social care situations, using vocational language.",
-      "means": "Test the procedures against several situations, such as routine days, outbreaks and food preparation, and link them to laws like COSHH.",
+      "means": "Test the procedures against several situations, such as routine days, outbreaks and food preparation. Link them to laws like COSHH.",
       "example": "On a normal day Tilbury Brook's hand washing and toy cleaning are enough, but eleven sick children in one week mean the manager needs enhanced cleaning and keeping affected children in one group. The cleaning chemicals then need safe storage under COSHH, which is easy to overlook in a rush.",
       "nearMiss": "Tilbury Brook's routine hand washing and toy cleaning are enough on a normal day, but during the outbreak the nursery needs to clean more often.",
-      "whyNearMiss": "It compares a normal day with the outbreak, but never links either to legislation such as COSHH, which the requirement asks for.",
+      "whyNearMiss": "It compares a normal day with the outbreak. But it never links either to a law such as COSHH, which the requirement asks for.",
       "explainPrompt": "How do an outbreak and a normal day differ in the example?",
       "check": {
        "q": "COSHH helps infection control by:",
@@ -1528,12 +1528,12 @@
       }
      },
      {
-      "need": "Reach an overall evaluation in professional language, with a recommendation.",
+      "need": "Reach an overall evaluation in professional language. Add a recommendation.",
       "fromSpec": "Draw on knowledge from across the learning aims and reach conclusions using professional vocational language.",
-      "means": "Give a final verdict on how successfully the nursery prevents and controls infection, with a recommendation.",
+      "means": "Give a final verdict on how well the nursery prevents and controls infection. Add a recommendation.",
       "example": "The nursery's prevention is good for routine days but weaker on toy sharing, so spread continued. Introducing a daily toy cleaning rota and a rotation of toys would reduce cross-contamination.",
       "nearMiss": "The nursery's infection control is good on routine days, but spread continued because toddlers share toys.",
-      "whyNearMiss": "It balances a strength and a weakness with evidence from the case, but ends with no recommendation for what the nursery should change.",
+      "whyNearMiss": "It balances a strength and a weakness with evidence from the case. But it ends with no recommendation for what the nursery should change.",
       "explainPrompt": "Which words show the writer has found a weakness as well as a strength?",
       "check": {
        "q": "Which sentence is written in professional language?",
@@ -1554,18 +1554,18 @@
  "10": {
   "parallelCase": {
    "title": "Coalbrook Health Hub",
-   "summary": "Coalbrook is a fictional former quarrying town. Its Health Hub is a community health centre with GPs, nurses, a health visitor and a link worker. Staff notice two patterns. Older former quarry workers have a lot of breathing problems and often wait until they are very ill before booking an appointment. Women who work shifts at the local food factory miss appointments and screening more often than others. The manager uses census figures and local records to plan evening clinics and a walk-in session. Staff disagree about health: a GP treats lung disease as a biological problem, while the link worker says that housing, job insecurity and a 'tough it out' culture decide who becomes ill and who asks for help. A funding bid argues an ageing population will increase demand, while a younger family estate nearby has different needs. The manager must decide how functionalist, Marxist, feminist and interactionist ideas could shape the hub's services."
+   "summary": "Where: Coalbrook is a fictional former quarrying town. Its Health Hub is a community health centre with GPs, nurses, a health visitor and a link worker.\nWhat staff notice: Older former quarry workers have many breathing problems. They often wait until they are very ill before booking an appointment. Women who work shifts at the local food factory miss appointments and screening more often than others.\nStrengths: The quarry workers have a social club where men look out for each other.\nWhat the manager does: The manager uses census figures and local records to plan evening clinics and a walk-in session.\nDifferent views: A GP treats lung disease as a biological problem. The link worker disagrees. She says housing, job insecurity and a 'tough it out' culture decide who becomes ill and who asks for help.\nOther things to know: A funding bid argues that an ageing population will increase demand. A younger family estate nearby has different needs.\nThe decision: The manager must decide how functionalist, Marxist, feminist and interactionist ideas could shape the hub's services."
   },
   "criteria": {
    "AB.D1": {
     "requirements": [
      {
-      "need": "Evaluate the validity of key sociological perspectives using research.",
+      "need": "Evaluate how valid the main sociological perspectives are, using research. A perspective is a way of explaining society and health.",
       "fromSpec": "Use research to justify the validity of the key sociological perspectives.",
-      "means": "Explain what each perspective claims, then judge how convincing it is using evidence.",
+      "means": "Explain what each perspective claims. Then judge how convincing it is, using evidence.",
       "example": "A Marxist view explains why poorer ex-quarry workers have worse lung health, because of unequal work and housing. It is less convincing for explaining why wealthier people also delay seeking help, which suggests culture matters too.",
       "nearMiss": "A Marxist view explains why poorer ex-quarry workers have worse lung health, because of unequal work and housing, and research on class and health supports this.",
-      "whyNearMiss": "It applies the perspective and cites evidence, but only in support, with no weakness to judge its validity.",
+      "whyNearMiss": "It applies the perspective and gives evidence, but only in support. It has no weakness, so it does not judge validity.",
       "explainPrompt": "What does the example say the Marxist view explains well, and what does it not?",
       "check": {
        "q": "Evaluating a perspective means:",
@@ -1580,12 +1580,12 @@
       }
      },
      {
-      "need": "Evaluate the biomedical model against alternatives, and judge what each adds to understanding.",
+      "need": "Evaluate the biomedical model against other models. Judge what each adds.",
       "fromSpec": "Draw on knowledge and understanding of the biomedical model of health and alternatives.",
-      "means": "Compare the biomedical model with models such as the social model and decide when each is most useful.",
+      "means": "Compare the biomedical model with models such as the social model. Decide when each is most useful.",
       "example": "The biomedical model is strong at treating lung disease but ignores why so many ex-quarry workers developed it. A social model explains the housing and work causes, so the hub needs both for treatment and prevention.",
       "nearMiss": "The biomedical model sees lung disease as a biological problem that a GP can treat, while the social model looks at causes such as housing and work.",
-      "whyNearMiss": "Both models are applied to Coalbrook, but it does not judge what each adds or where either falls short, so no view is reached.",
+      "whyNearMiss": "Both models are applied to Coalbrook. But it does not judge what each adds or where either falls short, so it reaches no view.",
       "explainPrompt": "What does the example say the hub needs, and why both models?",
       "check": {
        "q": "A limitation of the biomedical model is:",
@@ -1600,12 +1600,12 @@
       }
      },
      {
-      "need": "Evaluate the concepts of health, ill health and disability, reaching reasoned judgements.",
+      "need": "Evaluate the ideas of health, ill health and disability. Reach reasoned judgements.",
       "fromSpec": "Evaluate the concepts of health, ill health and disability to reach reasoned and valid judgements.",
-      "means": "Compare definitions (for example negative and positive health, medical and social views of disability) and decide which is most useful.",
+      "means": "Compare definitions, such as negative and positive health, or medical and social views of disability. Decide which is most useful.",
       "example": "Seeing health as only 'no disease' misses the stress and isolation of older ex-quarry workers. The social model of disability helps by showing that poor access, not just impairment, disables people, which the hub can change.",
       "nearMiss": "Health can mean more than the absence of disease, and the social model of disability says that barriers in society disable people.",
-      "whyNearMiss": "Both concepts are explained correctly, but neither is applied to the older ex-quarry workers or used to reach a judgement.",
+      "whyNearMiss": "Both ideas are explained correctly. But neither is applied to the older ex-quarry workers or used to reach a judgement.",
       "explainPrompt": "Which concept does the example judge to be more useful for the hub, and why?",
       "check": {
        "q": "The social model of disability says people are disabled mainly by:",
@@ -1620,12 +1620,12 @@
       }
      },
      {
-      "need": "Relate the concepts and perspectives to service provision in a local setting.",
+      "need": "Relate the ideas and perspectives to services in a local setting.",
       "fromSpec": "Evaluate the role of sociological perspectives in understanding society and models and concepts of health in relation to service provision in a local setting.",
-      "means": "Show how the ideas shape what a local service does, and whether that is helpful.",
+      "means": "Show how the ideas shape what a local service does, and whether that helps.",
       "example": "The link worker's social view led the hub to offer a housing advice drop-in. This tackles causes, though it takes longer to show results than a clinic treating symptoms.",
       "nearMiss": "The link worker's social view helps staff to understand that housing affects health, so the hub treats patients with this in mind.",
-      "whyNearMiss": "It links the social view to the hub in general, but names no actual service and gives no judgement of how well it works.",
+      "whyNearMiss": "It links the social view to the hub in general. But it names no actual service and gives no judgement of how well it works.",
       "explainPrompt": "Which service in the example comes from which perspective?",
       "check": {
        "q": "Which shows a perspective shaping a service?",
@@ -1646,10 +1646,10 @@
      {
       "need": "Evaluate sociological explanations for patterns of health and ill health in at least two social groups.",
       "fromSpec": "Make recommendations and proposals on patterns and trends in health and ill health within at least two social groups.",
-      "means": "Choose two groups, describe the pattern, and weigh explanations such as the cultural or the structural for each.",
+      "means": "Choose two groups and describe the pattern. Weigh explanations such as cultural or structural ones for each.",
       "example": "The pattern among shift-working women could reflect structural causes, such as inflexible hours, more than choice. The tough-it-out habits among older ex-quarry men look more cultural. The hub should treat the two groups differently.",
       "nearMiss": "Older ex-quarry men have breathing problems because of the work they did, and shift-working women miss appointments because of their hours.",
-      "whyNearMiss": "It gives plausible causes for both groups, but does not name or evaluate any sociological explanation, such as structural or cultural factors.",
+      "whyNearMiss": "It gives likely causes for both groups. But it does not name or evaluate any sociological explanation, such as structural or cultural factors.",
       "explainPrompt": "Why does the example suggest different responses for the two groups?",
       "check": {
        "q": "Which is a structural explanation of ill health?",
@@ -1664,12 +1664,12 @@
       }
      },
      {
-      "need": "Evaluate how demographic data is used in service provision to reduce inequality.",
+      "need": "Evaluate how demographic data is used to reduce inequality in services.",
       "fromSpec": "Justify conclusions on demographic change and data, and how demographic data is used in service provision to reduce social inequality.",
       "means": "Say what data is used (such as census and local records), what it shows, and how it changes services.",
       "example": "Census data showing an ageing population led to a bid for more respiratory nurses, and shift data led to evening clinics. But data can miss people not registered with a GP, so the hub also needs outreach.",
       "nearMiss": "The hub used census data showing an ageing population to bid for more respiratory nurses, and shift data to plan evening clinics.",
-      "whyNearMiss": "It names which data led to which service, but weighs no limit, such as people not registered with a GP, so the use of data is described and not evaluated.",
+      "whyNearMiss": "It names which data led to which service. But it weighs no limit, such as people not registered with a GP, so data use is described and not evaluated.",
       "explainPrompt": "What limitation of data does the example point out?",
       "check": {
        "q": "A weakness of using demographic data is:",
@@ -1684,12 +1684,12 @@
       }
      },
      {
-      "need": "Use detailed analysis and research to reach original, valid conclusions on inequalities.",
+      "need": "Use detailed analysis and research to reach your own valid conclusions about inequalities.",
       "fromSpec": "Draw on research to deepen understanding and arrive at original and valid conclusions on inequalities within society.",
-      "means": "Go beyond repeating sources by combining ideas to reach your own reasoned view, supported by evidence.",
+      "means": "Go beyond repeating your sources. Combine ideas to reach your own reasoned view, backed by evidence.",
       "example": "Putting the two groups side by side suggests inequality in Coalbrook comes less from a lack of services than from services that do not fit working lives. That is a conclusion drawn by comparing the groups, not copied from a source.",
       "nearMiss": "Research shows that people in poorer areas, such as former quarrying towns, have worse health, so Coalbrook has health inequalities.",
-      "whyNearMiss": "It applies a general finding to Coalbrook, but draws no conclusion from comparing the two groups, so nothing original comes from the case.",
+      "whyNearMiss": "It applies a general finding to Coalbrook. But it draws no conclusion from comparing the two groups, so nothing original comes from the case.",
       "explainPrompt": "What does the example work out by comparing the two groups?",
       "check": {
        "q": "An original conclusion is one that:",
@@ -1706,10 +1706,10 @@
      {
       "need": "Make justified recommendations to reduce inequality for each group.",
       "fromSpec": "Use detailed analysis and research to make recommendations and proposals on patterns and trends.",
-      "means": "Propose specific changes that follow from your explanation and say why they should work.",
+      "means": "Propose specific changes that follow from your explanation. Say why they should work.",
       "example": "Offer early evening and weekend screening for factory shift workers, and run a health check at the quarry workers' social club where men are already comfortable. Each fits the cause identified for that group.",
       "nearMiss": "For shift workers the hub should offer flexible appointments, since their hours make it hard for them to attend.",
-      "whyNearMiss": "It targets a cause for shift-working women, but gives no recommendation for the older ex-quarry men.",
+      "whyNearMiss": "It targets a cause for shift-working women. But it gives no recommendation for the older ex-quarry men.",
       "explainPrompt": "How does each recommendation in the example match its group's cause?",
       "check": {
        "q": "A good recommendation about inequality:",
@@ -1728,12 +1728,12 @@
    "C.D3": {
     "requirements": [
      {
-      "need": "Evaluate how important the perspectives used are for understanding society and health in the setting.",
+      "need": "Evaluate how important the perspectives are for understanding society and health here.",
       "fromSpec": "Evaluate the importance of the sociological perspectives used in a health and social care setting in relation to understanding society.",
       "means": "Judge how far each perspective helps staff understand the community they serve.",
       "example": "Feminist ideas help the hub see why shift-working women carry both paid work and care, which a purely biomedical view overlooks. This is important because it explains missed appointments without blaming the women.",
       "nearMiss": "Feminist ideas help the hub understand why shift-working women miss appointments, because they carry both paid work and care.",
-      "whyNearMiss": "It applies the idea to the right group, but does not say what difference it makes, such as avoiding blame or seeing what a biomedical view would miss.",
+      "whyNearMiss": "It applies the idea to the right group. But it does not say what difference it makes, such as avoiding blame or seeing what a biomedical view would miss.",
       "explainPrompt": "What does feminism let the hub notice that the biomedical view does not?",
       "check": {
        "q": "Why is a perspective 'important' in a setting?",
@@ -1748,12 +1748,12 @@
       }
      },
      {
-      "need": "Evaluate how the perspectives help reduce social inequality, including their limits.",
+      "need": "Evaluate how the perspectives help reduce social inequality. Include their limits.",
       "fromSpec": "Evaluate the importance of perspectives in reducing social inequality.",
-      "means": "Show how using a perspective leads to actions that narrow gaps, and say where it falls short.",
+      "means": "Show how using a perspective leads to actions that narrow gaps. Say where it falls short.",
       "example": "Marxist thinking points the hub towards campaigning on housing and pay, which reach deeper causes. But the hub cannot change employers' pay, so it must also offer flexible clinics.",
       "nearMiss": "Marxist ideas show that inequality in housing and pay affects health, so the hub should campaign on these issues.",
-      "whyNearMiss": "It gives an action that follows from the perspective, but ignores the limit that the hub cannot change employers' pay.",
+      "whyNearMiss": "It gives an action that follows from the perspective. But it ignores the limit that the hub cannot change employers' pay.",
       "explainPrompt": "What can the hub do and what can it not do, according to the example?",
       "check": {
        "q": "A limit of a perspective in practice may be:",
@@ -1768,13 +1768,13 @@
       }
      },
      {
-      "need": "Judge which perspectives most improve service provision for different groups, and conclude.",
+      "need": "Judge which perspectives do most to improve services for different groups, and conclude.",
       "fromSpec": "Evaluate the importance of the perspectives in improving service provision for different social groups.",
-      "means": "Decide which ideas improved services most, for whom, and whether a mix works best.",
+      "means": "Decide which ideas improved services most, and for whom. Say if a mix works best.",
       "example": "Interactionist ideas about labels helped staff stop calling missed appointments 'non-compliance', which improved trust. A mix of perspectives serves Coalbrook best because no single view explains every group.",
       "nearMiss": "Interactionist ideas about labels helped staff to stop calling missed appointments 'non-compliance', which improved trust, so they are useful for service provision.",
-      "whyNearMiss": "It judges one perspective with a case example, but does not compare it with others or say that a mix serves different groups best.",
-      "explainPrompt": "What conclusion does the example reach about using one perspective or several?",
+      "whyNearMiss": "It judges one perspective using a case example. But it does not compare it with others, or say that a mix serves different groups best.",
+      "explainPrompt": "What does the example conclude about using one perspective or several?",
       "check": {
        "q": "A convincing final judgement should:",
        "options": [
@@ -1794,18 +1794,18 @@
  "11": {
   "parallelCase": {
    "title": "Leon and Ada",
-   "summary": "Leon, 16, attends Hawthorn Court, a fictional young people's day unit, after repeated angry outbursts at school and home. He shouts when told what to do and has said his dad shouted at everyone at home. Staff use a reward chart for calm behaviour, model calm responses and offer a quiet space. Ada, 72, is on a stroke rehabilitation ward at the fictional Wexcombe Community Hospital. Since her stroke she has stopped joining therapy, says 'I'm no use now' and refuses to eat with others. Her team uses goal setting, talks through her thoughts about recovery, and has person-centred conversations about what matters to her. Both teams discuss whether early experiences, learned habits, thoughts or the need for self-worth best explain the behaviours. A placement student must recommend changes to practice in each setting, such as staff training, a quiet space and flexible mealtimes."
+   "summary": "Who: Leon, 16, attends Hawthorn Court, a fictional young people's day unit. Ada, 72, is on a stroke rehabilitation ward at the fictional Wexcombe Community Hospital.\nLeon: He has had repeated angry outbursts at school and home. He shouts when told what to do. He has said his dad shouted at everyone at home. He is a keen drummer and helps younger members.\nAda: She is a retired driving instructor. Since her stroke she has stopped joining therapy. She says 'What is the point of trying?' She refuses to eat with others.\nWhat staff do at the unit: Staff use a reward chart for calm behaviour. They model calm responses and offer a quiet space.\nWhat staff do on the ward: Ada's team uses goal setting and talks through her thoughts about recovery. They also have person-centred conversations about what matters to her.\nThe question: Both teams discuss what best explains the behaviours. The choices are early experiences, learned habits, thoughts or the need for self-worth.\nThe task: A placement student must recommend changes to practice in each setting. Examples are staff training, a quiet space and flexible mealtimes."
   },
   "criteria": {
    "AB.D1": {
     "requirements": [
      {
-      "need": "Evaluate how valid each principal psychological perspective is, using research.",
+      "need": "Evaluate how valid each main psychological perspective is, using research. A perspective is a way of explaining behaviour.",
       "fromSpec": "Evaluate and reach reasoned and valid judgements on principal psychological perspectives; use research to justify their validity.",
-      "means": "For each perspective, say what it explains well, where it falls short, and how strong the evidence is.",
+      "means": "For each perspective, say what it explains well and where it falls short. Say how strong the evidence is.",
       "example": "Social learning theory explains how Leon may have copied his dad's shouting, and research on observation supports this. It is weaker at explaining why his brother, in the same home, stays calm.",
       "nearMiss": "Social learning theory explains how Leon may have copied his dad's shouting, and research on observation supports it.",
-      "whyNearMiss": "It applies the theory and cites support, but gives no weakness, so validity is not evaluated.",
+      "whyNearMiss": "It applies the theory and gives support. But it gives no weakness, so it does not evaluate validity.",
       "explainPrompt": "What does the example say the theory cannot explain, and why does it matter?",
       "check": {
        "q": "A limitation of social learning theory is that it:",
@@ -1820,12 +1820,12 @@
       }
      },
      {
-      "need": "Use factors that affect development and behaviour to justify which perspective fits each service user.",
+      "need": "Use factors that affect behaviour to justify which perspective fits each service user.",
       "fromSpec": "Draw on knowledge of factors that affect human development and specific behaviours, making justifications for perspectives.",
-      "means": "Name factors such as family, life events or biology, and link them to the perspective that explains the behaviour best.",
+      "means": "Name factors such as family, life events or biology. Link them to the perspective that explains the behaviour best.",
       "example": "Leon's home environment and role models point to social learning. Ada's loss of independence and self-worth after her stroke point more strongly to the humanistic perspective.",
       "nearMiss": "Nature and nurture both affect development, and Leon's family and Ada's illness are factors that could influence their behaviour.",
-      "whyNearMiss": "It applies factors to both people, but does not connect them to a perspective, so nothing is justified.",
+      "whyNearMiss": "It applies factors to both people. But it does not connect them to a perspective, so nothing is justified.",
       "explainPrompt": "Which factor in the example leads to which perspective?",
       "check": {
        "q": "Why link factors to perspectives?",
@@ -1840,12 +1840,12 @@
       }
      },
      {
-      "need": "Justify how perspectives contribute to managing and treating the behaviours of two service users.",
+      "need": "Justify how perspectives help staff manage and treat the behaviour of two service users.",
       "fromSpec": "Make justifications on perspectives' contribution to the management and treatment of two selected service users with different behaviours.",
-      "means": "For each person, say what the perspective suggests staff do and why that suits the behaviour.",
-      "example": "For Leon, a behaviourist reward chart reinforces calm behaviour quickly, while modelling calm responses supports social learning. For Ada, a cognitive approach challenges the thought 'I'm no use now' and sets small, achievable goals.",
+      "means": "For each person, say what the perspective suggests staff do, and why that suits the behaviour.",
+      "example": "For Leon, a behaviourist reward chart reinforces calm behaviour quickly, while modelling calm responses supports social learning. For Ada, a cognitive approach challenges the thought 'What is the point of trying?' and sets small, achievable goals.",
       "nearMiss": "Leon's reward chart is a behaviourist approach and Ada's talks about her thoughts are a cognitive approach, so both services use psychology to help them.",
-      "whyNearMiss": "It matches each method to a perspective, but does not say why that perspective suits Leon's or Ada's cause.",
+      "whyNearMiss": "It matches each method to a perspective. But it does not say why that perspective suits the cause of Leon's or Ada's behaviour.",
       "explainPrompt": "How does each action in the example connect to a perspective?",
       "check": {
        "q": "Which statement justifies a treatment?",
@@ -1860,12 +1860,12 @@
       }
      },
      {
-      "need": "Reach a reasoned overall judgement on what the perspectives add to understanding development and behaviour.",
+      "need": "Reach a reasoned overall judgement on what the perspectives add to understanding behaviour.",
       "fromSpec": "Evaluate the role of psychological perspectives in the understanding of human development and the management and treatment of behaviours.",
-      "means": "Weigh the perspectives together and decide how much each adds, noting where combining them is better.",
+      "means": "Weigh the perspectives together and decide how much each adds. Note where combining them is better.",
       "example": "No single perspective explains both service users. Behaviourist and social learning ideas fit Leon's learned shouting, while humanistic and cognitive ideas fit Ada's loss of self-worth, so a mix works best.",
       "nearMiss": "Behaviourist and social learning ideas fit Leon's learned shouting, and humanistic ideas fit Ada's loss of self-worth.",
-      "whyNearMiss": "It matches perspectives to each person, but never reaches an overall judgement about what the perspectives add, such as that a mix works best.",
+      "whyNearMiss": "It matches perspectives to each person. But it never reaches an overall judgement about what they add, such as that a mix works best.",
       "explainPrompt": "Why does the example not choose one perspective for both people?",
       "check": {
        "q": "An eclectic approach means:",
@@ -1884,12 +1884,12 @@
    "C.D2": {
     "requirements": [
      {
-      "need": "Evaluate how professionals apply perspectives in practice to enhance service users' social functioning.",
+      "need": "Evaluate how professionals use perspectives to improve service users' social functioning. This means taking part in everyday life.",
       "fromSpec": "Evaluate the application of psychological perspectives in local settings in enabling professionals to enhance the social functioning of service users.",
-      "means": "Describe what staff do, link it to a perspective, and judge how far it helps the person take part in everyday life.",
+      "means": "Describe what staff do and link it to a perspective. Judge how far it helps the person take part in everyday life.",
       "example": "The reward chart helps Leon manage anger so he can stay in class and keep friends. But it rewards outward behaviour only and does not tackle the feelings behind it, so its effect on social functioning is partial.",
       "nearMiss": "The reward chart helps Leon to manage his anger, so he can stay in class and keep his friends, which improves his social functioning.",
-      "whyNearMiss": "It links the approach to social functioning with specific outcomes, but does not judge how far, such as the chart rewarding outward behaviour only.",
+      "whyNearMiss": "It links the approach to social functioning with specific results. But it does not judge how far, such as the chart rewarding outward behaviour only.",
       "explainPrompt": "What does 'partial' tell you about the writer's judgement?",
       "check": {
        "q": "Social functioning is best described as:",
@@ -1904,12 +1904,12 @@
       }
      },
      {
-      "need": "Compare how the perspectives are applied in two different settings.",
+      "need": "Compare how the perspectives are used in two different settings.",
       "fromSpec": "Apply psychological perspectives in two local health and social care settings, showing how knowledge is applied to detailed situations.",
-      "means": "Show how the day unit and the ward use ideas differently, and what that tells you.",
+      "means": "Show how the day unit and the ward use ideas differently. Say what that tells you.",
       "example": "Hawthorn Court works on behaviour and role models in a group, while the ward works one-to-one on Ada's thoughts and sense of purpose. The ward's flexibility suits an adult with a sudden loss, while the unit's routine suits a young person who needs boundaries.",
       "nearMiss": "Hawthorn Court uses a reward chart and modelling for Leon, while the ward uses goal setting and conversations for Ada.",
-      "whyNearMiss": "It sets the settings side by side correctly, but does not explain why they differ, such as the ward's flexibility for a sudden loss against the unit's boundaries for a young person.",
+      "whyNearMiss": "It sets the settings side by side correctly. But it does not explain why they differ, such as the ward's flexibility for a sudden loss against the unit's boundaries for a young person.",
       "explainPrompt": "Why do the settings use different approaches in the example?",
       "check": {
        "q": "A good comparison of settings should show:",
@@ -1924,12 +1924,12 @@
       }
      },
      {
-      "need": "Judge the strengths and limits of the approaches used, supported by research.",
+      "need": "Judge the strengths and limits of the approaches used, backed by research.",
       "fromSpec": "Evaluate the application of psychological perspectives, using research.",
-      "means": "Say what evidence supports or challenges each approach and give a balanced verdict.",
+      "means": "Say what evidence supports or challenges each approach. Give a balanced verdict.",
       "example": "Evidence suggests that cognitive approaches can help with low mood after illness, which supports the ward's approach for Ada. They need her to be able to engage in conversation, so they may not suit everyone after a stroke.",
       "nearMiss": "Research suggests that cognitive approaches can help with low mood after illness, so the ward's approach for Ada is likely to be effective.",
-      "whyNearMiss": "It supports the ward's approach with evidence, but gives no limit, such as needing Ada to be able to take part in conversation.",
+      "whyNearMiss": "It supports the ward's approach with evidence. But it gives no limit, such as needing Ada to be able to take part in conversation.",
       "explainPrompt": "Which condition does the example say is needed for this approach to work?",
       "check": {
        "q": "Why consider a limit to an approach?",
@@ -1944,12 +1944,12 @@
       }
      },
      {
-      "need": "Make evidence-based recommendations for practice in each setting.",
+      "need": "Make recommendations for practice in each setting, based on evidence.",
       "fromSpec": "Use detailed analysis and research to make recommendations and proposals on the practices in two different health and social care settings.",
-      "means": "Suggest realistic changes for each setting, and say how each would help the service user.",
+      "means": "Suggest realistic changes for each setting. Say how each would help the service user.",
       "example": "Hawthorn Court should train staff to use calm-down plans along with the reward chart. The ward should offer flexible mealtimes so Ada can eat with others when she feels ready.",
       "nearMiss": "Hawthorn Court should train staff in calm-down plans, and the ward should give Ada more choice in her daily routine.",
-      "whyNearMiss": "The recommendations are specific to each setting, but neither is supported by research or linked to the cause of the behaviour.",
+      "whyNearMiss": "The recommendations fit each setting. But neither is backed by research or linked to the cause of the behaviour.",
       "explainPrompt": "How does each recommendation in the example link to the service user's behaviour?",
       "check": {
        "q": "Which recommendation is best?",
@@ -1973,7 +1973,7 @@
       "means": "Judge how much each perspective helps staff understand how people develop and why they act as they do.",
       "example": "Psychodynamic ideas about early relationships help staff see why Leon distrusts authority, which a simple reward chart would miss. They are less testable than behaviourist ideas, so staff should use them as insight, not proof.",
       "nearMiss": "Psychodynamic ideas about early relationships are important because they help staff understand why Leon distrusts authority.",
-      "whyNearMiss": "It applies the perspective to Leon with a reason, but does not compare it with a reward chart or note limits such as testability.",
+      "whyNearMiss": "It applies the perspective to Leon and gives a reason. But it does not compare it with a reward chart or note limits such as testability.",
       "explainPrompt": "What does the example say about the strength and weakness of psychodynamic ideas?",
       "check": {
        "q": "Why might a perspective be less reliable?",
@@ -1990,10 +1990,10 @@
      {
       "need": "Evaluate how important the perspectives are for managing and treating behaviour.",
       "fromSpec": "Evaluate importance for managing and treating behaviours to enhance the social functioning of service users.",
-      "means": "Judge how much each perspective changes what staff do, and whether those changes work.",
+      "means": "Judge how much each perspective changes what staff do. Say whether those changes work.",
       "example": "Behaviourist methods give staff clear, quick tools for Leon's outbursts, which makes them very important in the short term. Ada's recovery relies more on humanistic care, because her behaviour comes from lost identity, not learned habit.",
       "nearMiss": "Behaviourist methods give staff clear, quick tools for Leon's outbursts, so they are very important for managing his behaviour.",
-      "whyNearMiss": "It judges importance with a case example, but only for Leon and without a limit, so it does not say which approaches matter more for whom.",
+      "whyNearMiss": "It judges importance with a case example, but only for Leon and without a limit. So it does not say which approaches matter more for whom.",
       "explainPrompt": "Why does the example rate the approaches differently for the two people?",
       "check": {
        "q": "Which statement is an evaluation?",
@@ -2008,12 +2008,12 @@
       }
      },
      {
-      "need": "Reach a concise conclusion on the importance of combining perspectives, linked to social functioning.",
+      "need": "Reach a short conclusion on why combining perspectives matters for social functioning.",
       "fromSpec": "Evaluate importance of the psychological perspectives in relation to understanding human development and managing behaviours to enhance social functioning.",
-      "means": "Finish with a short verdict on which perspectives matter most and how together they help people take part in daily life.",
+      "means": "Finish with a short verdict on which perspectives matter most. Say how together they help people take part in daily life.",
       "example": "The perspectives matter most in combination: behavioural tools keep Leon in school, while humanistic and cognitive support restores Ada's confidence. Both improve social functioning, but only when matched to the cause.",
       "nearMiss": "Behavioural tools keep Leon in school and humanistic support restores Ada's confidence, so psychological perspectives matter for both service users.",
-      "whyNearMiss": "It uses evidence for both service users, but does not link the conclusion to social functioning or say that combined perspectives work only when matched to the cause.",
+      "whyNearMiss": "It uses evidence for both service users. But it does not link the conclusion to social functioning, or say that combined perspectives work only when matched to the cause.",
       "explainPrompt": "What condition does the example set for perspectives to improve social functioning?",
       "check": {
        "q": "A good conclusion links back to:",
