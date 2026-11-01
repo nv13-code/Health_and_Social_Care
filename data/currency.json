@@ -184,7 +184,7 @@
    "status": "reform-pending",
    "now": "Mental Health Act 1983 as amended, plus the Mental Health Act 2025 (being brought in gradually)",
    "since": "Royal Assent 18 December 2025",
-   "detail": "The 2025 Act amends, not replaces, the 1983 Act. Most provisions are not yet in force and need commencement regulations; two sections came into force on 18 February 2026. The 2007 Act was itself an amending Act, so cite 'the Mental Health Act 1983 (as amended)'.",
+   "detail": "The 2025 Act amends, not replaces, the 1983 Act. Most provisions are not yet in force and need further commencement regulations. Two sections came into force on 18 February 2026, and the Mental Health Act 2025 (Commencement No. 1) Regulations 2026 (SI 2026/34) brought sections 51 and 52 into force on 6 April 2026. The 2007 Act was itself an amending Act, so cite 'the Mental Health Act 1983 (as amended)'.",
    "assignments": "Describe the 1983 Act (as amended) as the law in force and the 2025 Act as reform being phased in; check which parts are in force on the day you submit.",
    "exams": "The 1983 Act (as amended) is safe; credit is likely for awareness of the 2025 reforms.",
    "sv": true,
@@ -195,9 +195,10 @@
    ],
    "sources": [
     "https://www.legislation.gov.uk/ukpga/2025/33/data.htm",
-    "https://www.gov.uk/government/news/mental-health-bill-receives-royal-assent-revolutionising-care"
+    "https://www.gov.uk/government/news/mental-health-bill-receives-royal-assent-revolutionising-care",
+    "https://www.mentalhealthlaw.co.uk/Mental_Health_Act_2025_(Commencement_No._1)_Regulations_2026"
    ],
-   "verified": "2026-10-20"
+   "verified": "2026-11-01"
   },
   {
    "id": "hrca",
@@ -298,21 +299,26 @@
     7
    ],
    "status": "under-review",
-   "now": "Fundamental standards (2014 Regulations) assessed through CQC's single assessment framework",
-   "since": "Single assessment framework introduced 2023–24; CQC consulted on changes in October 2025",
-   "detail": "The framework is being revised after a 2024 review and a 2025 consultation. Check CQC's current assessment approach when writing.",
-   "assignments": "Refer to the fundamental standards and CQC's current assessment approach; date your reference.",
+   "now": "Fundamental standards (2014 Regulations), currently assessed through CQC's single assessment framework (quality statements); new sector-specific frameworks based on key lines of enquiry are being piloted",
+   "since": "Single assessment framework 2023–24; draft sector frameworks published 24 March 2026; pilots June–October 2026, evaluation November 2026; no go-live date announced",
+   "detail": "CQC's single assessment framework replaced the old key lines of enquiry (KLOEs) with quality statements. In March 2026 CQC published four draft sector frameworks (adult social care; mental health; primary care and community; hospitals) that bring back key lines of enquiry in place of quality statements. These were piloted from June to October 2026 and have no legal standing yet. Any mention of KLOEs must say which framework is meant and when.",
+   "assignments": "Refer to the fundamental standards and CQC's assessment approach in force on the day you submit; date your reference and say whether you mean the single assessment framework or the new sector frameworks.",
    "exams": "Unit 2: CQC's role (registration, inspection, ratings, enforcement) is stable.",
    "sv": false,
    "lint": "key lines of enquiry|\\bKLOEs?\\b",
    "mustAlsoMention": [
-    "single assessment framework"
+    "single assessment framework",
+    "quality statement",
+    "2026"
    ],
    "sources": [
+    "https://www.cqc.org.uk/news/our-march-update",
+    "https://www.cqc.org.uk/about-us/improving-how-we-work/0626-update",
+    "https://www.cqc.org.uk/guidance-regulation/providers/assessment/assessing-quality-and-performance",
     "https://www.cqc.org.uk/news/our-new-single-assessment-framework",
     "https://www.cqc.org.uk/sites/default/files/2025-10/20251014%20CQC%20Consultation%20document%20FINAL.pdf"
    ],
-   "verified": "2026-10-20"
+   "verified": "2026-11-01"
   },
   {
    "id": "hsca2012",
@@ -345,9 +351,9 @@
     16
    ],
    "status": "reform-pending",
-   "now": "Still exists; the Health Bill (introduced May 2026) would abolish it and move its functions into DHSC",
-   "since": "Bill in Parliament, 2026",
-   "detail": "Until the Bill is passed and commenced, NHS England is a live organisation.",
+   "now": "Still exists; the Health Bill (introduced 14 May 2026) would abolish it and move its functions into DHSC",
+   "since": "Bill in Parliament: House of Lords committee stage from 28 October 2026",
+   "detail": "Until the Bill receives Royal Assent and the abolition is commenced, NHS England is a live organisation. As of 1 November 2026 the Bill had not received Royal Assent.",
    "assignments": "Describe NHS England as current, noting the planned merger into DHSC.",
    "exams": "Safe to name NHS England.",
    "sv": false,
@@ -356,10 +362,12 @@
     "Bill"
    ],
    "sources": [
+    "https://bills.parliament.uk/bills/4124",
+    "https://www.health.org.uk/news-and-comment/consultation-responses/briefing-health-bill-house-of-lords-committee-stage",
     "https://www.nuffieldtrust.org.uk/resource/whats-in-the-new-health-bill",
     "https://www.gov.uk/government/publications/health-bill-role-and-functions-of-the-restructured-dhsc-fact-sheet/health-bill-role-and-functions-of-the-restructured-dhsc-fact-sheet"
    ],
-   "verified": "2026-10-20"
+   "verified": "2026-11-01"
   },
   {
    "id": "dpa",
@@ -371,9 +379,9 @@
     7
    ],
    "status": "reform-pending",
-   "now": "Data Protection Act 2018 and UK GDPR, as amended by the Data (Use and Access) Act 2025 (phased in)",
-   "since": "Royal Assent 19 June 2025; main data protection changes commencing during 2026",
-   "detail": "The 2025 Act amends rather than replaces the DPA 2018 and UK GDPR. The core principles students learn (lawful basis, confidentiality, security, purpose limitation) are unchanged.",
+   "now": "Data Protection Act 2018 and UK GDPR, as amended by the Data (Use and Access) Act 2025",
+   "since": "Royal Assent 19 June 2025; main UK GDPR/DPA changes (Part 5) in force from 5 February 2026; further stages continuing",
+   "detail": "The 2025 Act amends rather than replaces the DPA 2018 and UK GDPR. Its main data protection changes came into force on 5 February 2026; some parts (for example health and adult social care information standards) still have no commencement date. The core principles students learn (lawful basis, confidentiality, security, purpose limitation) are unchanged. On 30 September 2026 the Information Commission replaced the Information Commissioner's Office (see the ICO entry).",
    "assignments": "Cite DPA 2018 and UK GDPR; mention the 2025 amendments if relevant.",
    "exams": "DPA 2018 / UK GDPR is safe.",
    "sv": false,
@@ -382,10 +390,40 @@
     "2018"
    ],
    "sources": [
+    "https://www.gov.uk/guidance/data-use-and-access-act-2025-plans-for-commencement",
     "https://www.legislation.gov.uk/uksi/2025/904/made",
     "https://www.kennedyslaw.com/en/thought-leadership/article/2026/the-data-use-and-access-act-2025-commencement-dates-and-planned-guidance-for-2026"
    ],
-   "verified": "2026-10-20"
+   "verified": "2026-11-01"
+  },
+  {
+   "id": "ico",
+   "spec": "Information Commissioner's Office (ICO) (UK data protection regulator; used widely in teaching data protection, not confirmed as named in the spec)",
+   "units": [
+    2,
+    4,
+    5,
+    7
+   ],
+   "status": "replaced",
+   "now": "Information Commission",
+   "since": "30 September 2026",
+   "detail": "The Data (Use and Access) Act 2025 abolished the Information Commissioner and transferred the functions to the Information Commission, a body corporate with a board. It is still the UK's data protection regulator.",
+   "assignments": "Name the Information Commission as the regulator; you may mention the ICO as its predecessor.",
+   "exams": "Recognise both names; the regulator's role is unchanged.",
+   "sv": false,
+   "lint": "Information Commissioner|\\bICO\\b",
+   "mustAlsoMention": [
+    "Information Commission ",
+    "Information Commission,",
+    "Information Commission.",
+    "Information Commission)"
+   ],
+   "sources": [
+    "https://www.gov.uk/government/news/information-commission-succeeds-the-ico-as-uks-data-protection-regulator",
+    "https://www.gov.uk/guidance/data-use-and-access-act-2025-plans-for-commencement"
+   ],
+   "verified": "2026-11-01"
   },
   {
    "id": "grcct",
